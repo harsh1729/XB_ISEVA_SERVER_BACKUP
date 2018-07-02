@@ -1,0 +1,27 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2017-08-10 01:25:36 --> Severity: Notice --> Undefined property: stdClass::$catid /home/xercextx/public_html/isevaepaper/application/models/User_model.php 103
+ERROR - 2017-08-10 01:25:37 --> Severity: Notice --> Undefined property: stdClass::$firmname /home/xercextx/public_html/isevaepaper/application/models/User_model.php 106
+ERROR - 2017-08-10 01:25:37 --> Severity: Notice --> Undefined property: stdClass::$firmcontact /home/xercextx/public_html/isevaepaper/application/models/User_model.php 107
+ERROR - 2017-08-10 01:27:56 --> Severity: Notice --> Undefined property: stdClass::$catid /home/xercextx/public_html/isevaepaper/application/models/User_model.php 103
+ERROR - 2017-08-10 01:27:56 --> Severity: Notice --> Undefined property: stdClass::$firmname /home/xercextx/public_html/isevaepaper/application/models/User_model.php 106
+ERROR - 2017-08-10 01:27:56 --> Severity: Notice --> Undefined property: stdClass::$firmcontact /home/xercextx/public_html/isevaepaper/application/models/User_model.php 107
+ERROR - 2017-08-10 01:35:01 --> 404 Page Not Found: Pdf/pdf3004657273368_thumb_1.jpg
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_1.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_1.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_2.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_2.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_3.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_3.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_4.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_4.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_5.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_5.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_6.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_6.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_7.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_7.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_8.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_8.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_thumb_9.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
+ERROR - 2017-08-10 01:35:41 --> Severity: Warning --> unlink(/home/xercextx/public_html/isevaepaper/pdf/pdf3004657273368_9.jpg): No such file or directory /home/xercextx/public_html/isevaepaper/application/models/Epaper_model.php 101
