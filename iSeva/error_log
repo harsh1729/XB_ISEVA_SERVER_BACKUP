@@ -1,0 +1,468 @@
+[06-Jan-2016 09:04:42 Etc/GMT] PHP Fatal error:  Call to undefined method User_model::updateuserid() in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 52
+[06-Jan-2016 09:10:45 Etc/GMT] PHP Fatal error:  Call to undefined method User_model::updateuserid() in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 52
+[08-Jan-2016 11:57:17 Etc/GMT] PHP Fatal error:  Call to undefined function json_docode() in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 92
+[08-Jan-2016 13:13:47 Etc/GMT] PHP Fatal error:  Call to undefined method Offers_model::add() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Offers.php on line 21
+[09-Jan-2016 01:13:53 Etc/GMT] PHP Fatal error:  Call to undefined method User_model::getbasicdetails() in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 155
+[09-Jan-2016 03:38:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'functin' (T_STRING), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/controllers/client_requests/Offers.php on line 55
+[09-Jan-2016 03:38:54 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Offers_model.php on line 73
+[09-Jan-2016 03:40:20 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Offers_model.php on line 73
+[11-Feb-2016 20:17:42 Etc/GMT] PHP Parse error:  syntax error, unexpected '"userid"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Category_model.php on line 140
+[11-Feb-2016 20:18:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"userid"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Category_model.php on line 140
+[12-Feb-2016 07:48:24 Etc/GMT] PHP Fatal error:  Call to undefined method Businessextra_model::getrandomcate() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 60
+[12-Feb-2016 07:49:25 Etc/GMT] PHP Fatal error:  Call to undefined method Businessextra_model::getrandomcate() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 60
+[12-Feb-2016 07:49:28 Etc/GMT] PHP Fatal error:  Call to undefined method Businessextra_model::getrandomcate() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 60
+[12-Feb-2016 07:50:56 Etc/GMT] PHP Fatal error:  Call to undefined method Businessextra_model::getrandomcate() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 60
+[12-Feb-2016 16:39:39 Etc/GMT] PHP Fatal error:  Call to undefined function getgcmuserid() in /home/xercextx/public_html/iservice/application/models/Gcmuser_model.php on line 55
+[12-Feb-2016 16:59:31 Etc/GMT] PHP Fatal error:  Call to undefined function getgcmuserid() in /home/xercextx/public_html/iservice/application/models/Gcmuser_model.php on line 55
+[12-Feb-2016 16:59:52 Etc/GMT] PHP Fatal error:  Call to undefined function getgcmuserid() in /home/xercextx/public_html/iservice/application/models/Gcmuser_model.php on line 55
+[12-Feb-2016 17:14:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '$gcmid' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 25
+[12-Feb-2016 17:15:54 Etc/GMT] PHP Parse error:  syntax error, unexpected '$gcmid' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 25
+[12-Feb-2016 17:28:19 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/xercextx/public_html/iservice/application/models/City_model.php on line 26
+[12-Feb-2016 17:29:02 Etc/GMT] PHP Parse error:  syntax error, unexpected '" gn"' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 26
+[12-Feb-2016 17:29:03 Etc/GMT] PHP Fatal error:  Call to undefined function set_checkbox() in /home/xercextx/public_html/iservice/application/views/view-parts/managecategory-view-js-files.php on line 54
+[12-Feb-2016 17:29:43 Etc/GMT] PHP Fatal error:  Call to undefined function set_checkbox() in /home/xercextx/public_html/iservice/application/views/view-parts/managecategory-view-js-files.php on line 54
+[12-Feb-2016 17:29:50 Etc/GMT] PHP Fatal error:  Call to undefined function set_checkbox() in /home/xercextx/public_html/iservice/application/views/view-parts/managecategory-view-js-files.php on line 54
+[12-Feb-2016 17:48:06 Etc/GMT] PHP Fatal error:  Call to a member function result() on a non-object in /home/xercextx/public_html/iservice/application/models/Gcmuser_model.php on line 47
+[13-Feb-2016 06:33:40 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 54
+[13-Feb-2016 06:34:15 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 54
+[13-Feb-2016 06:37:47 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 54
+[13-Feb-2016 06:40:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 54
+[13-Feb-2016 13:06:00 Etc/GMT] PHP Fatal error:  Call to a member function getgcmuserid() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Category.php on line 59
+[13-Feb-2016 13:06:15 Etc/GMT] PHP Fatal error:  Call to a member function getgcmuserid() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Category.php on line 59
+[13-Feb-2016 13:08:01 Etc/GMT] PHP Fatal error:  Call to a member function getgcmuserid() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Category.php on line 59
+[13-Feb-2016 13:14:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 80
+[13-Feb-2016 13:14:18 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 80
+[13-Feb-2016 13:15:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 80
+[13-Feb-2016 13:15:31 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/City_model.php on line 80
+[13-Feb-2016 13:16:56 Etc/GMT] PHP Fatal error:  Call to a member function getgcmuserid() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Category.php on line 59
+[13-Feb-2016 13:18:45 Etc/GMT] PHP Fatal error:  Call to a member function getcityidsby_imei() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Category.php on line 60
+[13-Feb-2016 13:19:56 Etc/GMT] PHP Fatal error:  Call to a member function getcityidsby_imei() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Category.php on line 60
+[15-Feb-2016 15:07:27 Etc/GMT] PHP Fatal error:  Call to a member function get() on a non-object in /home/xercextx/public_html/iservice/application/controllers/Advertisement.php on line 25
+[15-Feb-2016 15:33:27 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 6
+[15-Feb-2016 15:33:32 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 6
+[15-Feb-2016 15:33:35 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 6
+[15-Feb-2016 15:33:36 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 6
+[15-Feb-2016 15:33:38 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 6
+[15-Feb-2016 15:33:50 Etc/GMT] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 6
+[15-Feb-2016 21:50:48 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:50:53 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:50:56 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:50:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:20 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:21 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:21 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:22 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:23 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:51:42 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 118
+[15-Feb-2016 21:52:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 119
+[15-Feb-2016 21:52:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 119
+[15-Feb-2016 21:52:52 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 119
+[15-Feb-2016 22:11:32 Etc/GMT] PHP Fatal error:  Call to a member function getcityidsby_imei() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 52
+[15-Feb-2016 22:12:10 Etc/GMT] PHP Fatal error:  Call to a member function getcityidsby_imei() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 52
+[15-Feb-2016 22:15:57 Etc/GMT] PHP Fatal error:  Call to a member function getcityidsby_imei() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 52
+[15-Feb-2016 22:16:18 Etc/GMT] PHP Fatal error:  Call to a member function getcityidsby_imei() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Businessextra.php on line 52
+[16-Feb-2016 07:58:15 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/xercextx/public_html/iservice/application/models/User_model.php on line 99
+[16-Feb-2016 07:59:41 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/xercextx/public_html/iservice/application/models/User_model.php on line 99
+[16-Feb-2016 08:00:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/xercextx/public_html/iservice/application/models/User_model.php on line 99
+[16-Feb-2016 08:00:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/xercextx/public_html/iservice/application/models/User_model.php on line 99
+[20-Feb-2016 08:03:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '$catid' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 254
+[20-Feb-2016 08:04:02 Etc/GMT] PHP Parse error:  syntax error, unexpected '$catid' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 254
+[20-Feb-2016 08:11:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 249
+[24-Feb-2016 09:32:13 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 188
+[24-Feb-2016 09:32:38 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/controllers/client_requests/User.php on line 188
+[24-Feb-2016 10:32:13 Etc/GMT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 282
+[24-Feb-2016 11:43:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/xercextx/public_html/iservice/application/models/User_model.php on line 369
+[27-Feb-2016 05:42:45 Etc/GMT] PHP Fatal error:  Call to a member function format() on a non-object in /home/xercextx/public_html/iservice/application/models/Category_model.php on line 183
+[27-Feb-2016 05:42:51 Etc/GMT] PHP Fatal error:  Call to a member function format() on a non-object in /home/xercextx/public_html/iservice/application/models/Category_model.php on line 183
+[27-Feb-2016 06:33:05 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[27-Feb-2016 06:33:21 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[27-Feb-2016 06:33:34 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[27-Feb-2016 06:34:06 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[27-Feb-2016 06:34:09 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[27-Feb-2016 06:34:13 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[27-Feb-2016 06:36:21 Etc/GMT] PHP Fatal error:  Cannot redeclare Businessextra_model::getrandomAdvercat() in /home/xercextx/public_html/iservice/application/models/Businessextra_model.php on line 172
+[10-May-2016 09:22:46 Etc/GMT] PHP Fatal error:  Call to a member function is_logged_in() on a non-object in /home/xercextx/public_html/iservice/application/controllers/admin_requests/Gcm.php on line 41
+[10-May-2016 14:26:39 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/models/Gcmuser_model.php on line 160
+[14-Sep-2016 07:51:03 Etc/GMT] PHP Parse error:  syntax error, unexpected 'fuction' (T_STRING), expecting function (T_FUNCTION) in /home/xercextx/public_html/iservice/application/controllers/client_requests/Jobs.php on line 106
+[14-Sep-2016 07:51:36 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/xercextx/public_html/iservice/application/models/Jobs_model.php on line 144
+[14-Sep-2016 07:53:43 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/xercextx/public_html/iservice/application/models/Jobs_model.php on line 196
+[14-Sep-2016 10:06:43 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/xercextx/public_html/iservice/application/models/Jobs_model.php on line 196
+[24-Sep-2016 07:23:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '$contact_exists' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Jobs_model.php on line 26
+[24-Sep-2016 07:24:35 Etc/GMT] PHP Parse error:  syntax error, unexpected '$contact_exists' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Jobs_model.php on line 26
+[10-Oct-2016 08:34:09 Etc/GMT] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/xercextx/public_html/iservice/application/models/Jobs_model.php on line 343
+[22-Oct-2016 11:09:32 Etc/GMT] PHP Parse error:  syntax error, unexpected '[' in /home/xercextx/public_html/iservice/application/controllers/Users.php on line 55
+[02-Mar-2017 06:54:32 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:17 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:23 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:26 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:26 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:26 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:27 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:27 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 06:55:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 07:04:47 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 53
+[02-Mar-2017 07:08:43 Etc/GMT] PHP Fatal error:  Call to undefined method Promocode_model::get_all_promocode() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Promocodes.php on line 24
+[02-Mar-2017 07:16:01 Etc/GMT] PHP Fatal error:  Call to undefined method Promocode_model::get_all_promocode() in /home/xercextx/public_html/iservice/application/controllers/client_requests/Promocodes.php on line 24
+[02-Mar-2017 13:26:31 Etc/GMT] PHP Fatal error:  Non-abstract method Transaction_model::add_transaction() must contain body in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 15
+[02-Mar-2017 13:27:46 Etc/GMT] PHP Fatal error:  Non-abstract method Transaction_model::add_transaction() must contain body in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 15
+[02-Mar-2017 13:29:36 Etc/GMT] PHP Fatal error:  Call to a member function add_transaction() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 23
+[02-Mar-2017 13:39:12 Etc/GMT] PHP Fatal error:  Call to a member function update_success_payment() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 32
+[02-Mar-2017 13:39:13 Etc/GMT] PHP Fatal error:  Call to a member function update_success_booking() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 48
+[02-Mar-2017 13:39:13 Etc/GMT] PHP Fatal error:  Call to a member function update_start_booking_ticket() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 40
+[02-Mar-2017 13:43:13 Etc/GMT] PHP Fatal error:  Call to a member function update_success_payment() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 32
+[02-Mar-2017 13:46:51 Etc/GMT] PHP Fatal error:  Call to a member function update_success_payment() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 32
+[02-Mar-2017 13:48:39 Etc/GMT] PHP Fatal error:  Call to a member function update_start_booking_ticket() on a non-object in /home/xercextx/public_html/iservice/application/controllers/client_requests/Transaction.php on line 40
+[04-Mar-2017 07:14:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 80
+[04-Mar-2017 12:06:13 Etc/GMT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 76
+[04-Mar-2017 14:29:21 Etc/GMT] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 81
+[04-Mar-2017 14:29:27 Etc/GMT] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 81
+[04-Mar-2017 14:29:38 Etc/GMT] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 81
+[06-Mar-2017 11:58:33 Etc/GMT] PHP Parse error:  syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 15
+[08-Mar-2017 11:36:41 Etc/GMT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 215
+[08-Mar-2017 14:46:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"transaction_status"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 40
+[08-Mar-2017 14:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"transaction_status"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 40
+[08-Mar-2017 14:48:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"transaction_status"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 40
+[08-Mar-2017 14:48:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"transaction_status"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 40
+[08-Mar-2017 14:48:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"transaction_status"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 40
+[08-Mar-2017 14:48:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '"transaction_status"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 40
+[08-Mar-2017 14:53:03 Etc/GMT] PHP Parse error:  syntax error, unexpected ''method'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 216
+[14-Mar-2017 10:29:50 Etc/GMT] PHP Fatal error:  Call to undefined method Promocode_model::get_all() in /home/xercextx/public_html/iservice/application/controllers/Travel.php on line 20
+[14-Mar-2017 10:38:58 Etc/GMT] PHP Fatal error:  Call to undefined method Promocode_model::add_promocode() in /home/xercextx/public_html/iservice/application/controllers/admin_requests/Promocode.php on line 36
+[14-Mar-2017 10:50:47 Etc/GMT] PHP Fatal error:  Call to undefined method Transaction_model::get_booked_all_ticket() in /home/xercextx/public_html/iservice/application/controllers/Booked_tickets.php on line 20
+[15-Mar-2017 08:27:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '*' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 84
+[15-Mar-2017 08:27:41 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 85
+[17-Mar-2017 07:24:58 Etc/GMT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 439
+[17-Mar-2017 07:25:42 Etc/GMT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 439
+[17-Mar-2017 07:26:29 Etc/GMT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 440
+[21-Mar-2017 10:34:13 Etc/GMT] PHP Notice:  Array to string conversion in /home/xercextx/public_html/iservice/send_sms.php on line 15
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: p_name0 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: p_seat0 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: p_name1 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: p_seat1 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: p_name2 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: p_seat2 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_condition0 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_percentage0 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_condition1 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_percentage1 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_condition2 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_percentage2 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_condition3 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:19:42 Etc/GMT] PHP Notice:  Undefined index: cd_percentage3 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: p_name0 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: p_seat0 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: p_name1 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: p_seat1 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: p_name2 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: p_seat2 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition0 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage0 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition1 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage1 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition2 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage2 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition3 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:21:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage3 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: p_name0 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: p_seat0 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: p_name1 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: p_seat1 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: p_name2 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: p_seat2 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_condition0 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_percentage0 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_condition1 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_percentage1 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_condition2 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_percentage2 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_condition3 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:22:14 Etc/GMT] PHP Notice:  Undefined index: cd_percentage3 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: p_name0 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: p_seat0 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: p_name1 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: p_seat1 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: p_name2 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: p_seat2 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition0 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage0 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition1 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage1 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition2 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage2 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_condition3 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:02 Etc/GMT] PHP Notice:  Undefined index: cd_percentage3 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: p_name0 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: p_seat0 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: p_name1 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: p_seat1 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: p_name2 in /home/xercextx/public_html/iservice/testmail.php on line 97
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: p_seat2 in /home/xercextx/public_html/iservice/testmail.php on line 98
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_condition0 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_percentage0 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_condition1 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_percentage1 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_condition2 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_percentage2 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_condition3 in /home/xercextx/public_html/iservice/testmail.php on line 164
+[23-Mar-2017 06:23:49 Etc/GMT] PHP Notice:  Undefined index: cd_percentage3 in /home/xercextx/public_html/iservice/testmail.php on line 165
+[31-Mar-2017 07:32:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '$userdata' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/User_model.php on line 686
+[04-Apr-2017 07:41:41 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:42 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:45 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:48 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:50 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:41:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:02 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:17 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:17 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:17 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:18 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:23 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:23 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:42:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:47:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:48:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:05 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:08 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:08 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:08 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:08 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:09 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:09 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:09 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:09 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:49:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:54:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:54:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[04-Apr-2017 07:57:15 Etc/GMT] PHP Parse error:  syntax error, unexpected '"&pass="' (T_CONSTANT_ENCAPSED_STRING) in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 542
+[07-Apr-2017 10:28:24 Etc/GMT] PHP Fatal error:  Call to undefined function encodeForURL() in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 545
+[07-Apr-2017 10:32:36 Etc/GMT] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 581
+[07-Apr-2017 10:33:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/xercextx/public_html/iservice/application/models/Transaction_model.php on line 587
+[08-Apr-2017 07:53:53 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 179
+[08-Apr-2017 07:53:54 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 179
+[08-Apr-2017 07:54:33 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 179
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/xercextx/public_html/iservice/testmail.php on line 5
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: pnr_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: from_city in /home/xercextx/public_html/iservice/testmail.php on line 7
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: to_city in /home/xercextx/public_html/iservice/testmail.php on line 8
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: date_of_journey in /home/xercextx/public_html/iservice/testmail.php on line 9
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: reporing_time in /home/xercextx/public_html/iservice/testmail.php on line 10
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: departure_time in /home/xercextx/public_html/iservice/testmail.php on line 11
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: status in /home/xercextx/public_html/iservice/testmail.php on line 12
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: boarding_address in /home/xercextx/public_html/iservice/testmail.php on line 13
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: bus_type in /home/xercextx/public_html/iservice/testmail.php on line 14
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: company_name in /home/xercextx/public_html/iservice/testmail.php on line 15
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: contact_no in /home/xercextx/public_html/iservice/testmail.php on line 16
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: total_fare in /home/xercextx/public_html/iservice/testmail.php on line 17
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: p_length in /home/xercextx/public_html/iservice/testmail.php on line 18
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: cd_length in /home/xercextx/public_html/iservice/testmail.php on line 19
+[01-May-2017 12:39:15 Etc/GMT] PHP Notice:  Undefined index: to_mail in /home/xercextx/public_html/iservice/testmail.php on line 20
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/xercextx/public_html/iservice/testmail.php on line 5
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: pnr_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: from_city in /home/xercextx/public_html/iservice/testmail.php on line 7
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: to_city in /home/xercextx/public_html/iservice/testmail.php on line 8
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: date_of_journey in /home/xercextx/public_html/iservice/testmail.php on line 9
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: reporing_time in /home/xercextx/public_html/iservice/testmail.php on line 10
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: departure_time in /home/xercextx/public_html/iservice/testmail.php on line 11
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: status in /home/xercextx/public_html/iservice/testmail.php on line 12
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: boarding_address in /home/xercextx/public_html/iservice/testmail.php on line 13
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: bus_type in /home/xercextx/public_html/iservice/testmail.php on line 14
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: company_name in /home/xercextx/public_html/iservice/testmail.php on line 15
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: contact_no in /home/xercextx/public_html/iservice/testmail.php on line 16
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: total_fare in /home/xercextx/public_html/iservice/testmail.php on line 17
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: p_length in /home/xercextx/public_html/iservice/testmail.php on line 18
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: cd_length in /home/xercextx/public_html/iservice/testmail.php on line 19
+[14-May-2017 13:56:11 Etc/GMT] PHP Notice:  Undefined index: to_mail in /home/xercextx/public_html/iservice/testmail.php on line 20
+[16-Aug-2017 13:53:56 Etc/GMT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting ',' or ';' in /home/xercextx/public_html/iservice/application/controllers/client_requests/Promocodes.php on line 79
+[16-Aug-2017 13:57:07 Etc/GMT] PHP Fatal error:  Call to undefined function get_commition_echarge() in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 354
+[16-Aug-2017 13:57:49 Etc/GMT] PHP Fatal error:  Call to undefined function get_commition_echarge() in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 354
+[16-Aug-2017 13:58:25 Etc/GMT] PHP Fatal error:  Call to undefined function get_commition_echarge() in /home/xercextx/public_html/iservice/application/models/Promocode_model.php on line 354
+[07-Sep-2017 14:00:13 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[08-Sep-2017 11:18:49 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[10-Sep-2017 05:08:55 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[11-Sep-2017 02:02:16 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[11-Sep-2017 12:45:02 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 243
+[11-Sep-2017 12:52:44 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 245
+[11-Sep-2017 12:54:29 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 245
+[11-Sep-2017 12:55:28 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 247
+[11-Sep-2017 12:56:04 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 242
+[11-Sep-2017 12:58:18 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 245
+[11-Sep-2017 13:07:03 Etc/GMT] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 52
+[11-Sep-2017 13:07:55 Etc/GMT] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 52
+[11-Sep-2017 13:08:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 52
+[11-Sep-2017 13:13:25 Etc/GMT] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 52
+[11-Sep-2017 13:14:17 Etc/GMT] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 52
+[11-Sep-2017 13:15:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/xercextx/public_html/iservice/email_booking_confirmation_receipt.php on line 52
+[17-Sep-2017 06:04:39 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[17-Sep-2017 15:17:23 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[18-Sep-2017 13:36:45 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[19-Sep-2017 14:02:49 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/xercextx/public_html/iservice/testmail.php on line 5
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: pnr_no in /home/xercextx/public_html/iservice/testmail.php on line 7
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: from_city in /home/xercextx/public_html/iservice/testmail.php on line 8
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: to_city in /home/xercextx/public_html/iservice/testmail.php on line 9
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: date_of_journey in /home/xercextx/public_html/iservice/testmail.php on line 10
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: reporing_time in /home/xercextx/public_html/iservice/testmail.php on line 11
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: departure_time in /home/xercextx/public_html/iservice/testmail.php on line 12
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: status in /home/xercextx/public_html/iservice/testmail.php on line 13
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: boarding_address in /home/xercextx/public_html/iservice/testmail.php on line 14
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: bus_type in /home/xercextx/public_html/iservice/testmail.php on line 15
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: company_name in /home/xercextx/public_html/iservice/testmail.php on line 16
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: contact_no in /home/xercextx/public_html/iservice/testmail.php on line 17
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: total_fare in /home/xercextx/public_html/iservice/testmail.php on line 18
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: p_length in /home/xercextx/public_html/iservice/testmail.php on line 19
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: cd_length in /home/xercextx/public_html/iservice/testmail.php on line 20
+[22-Sep-2017 19:29:34 Etc/GMT] PHP Notice:  Undefined index: to_mail in /home/xercextx/public_html/iservice/testmail.php on line 21
+[24-Sep-2017 05:18:40 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[28-Sep-2017 09:34:55 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[30-Sep-2017 14:49:54 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[01-Oct-2017 07:18:44 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[01-Oct-2017 07:19:01 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[09-Oct-2017 03:45:20 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[09-Oct-2017 18:44:23 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[13-Oct-2017 12:00:09 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[15-Oct-2017 01:30:50 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[19-Oct-2017 14:51:08 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[20-Oct-2017 14:47:48 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[28-Oct-2017 13:33:48 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[30-Oct-2017 10:08:12 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[31-Oct-2017 12:25:15 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[31-Oct-2017 12:30:49 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[07-Nov-2017 08:34:45 Etc/GMT] PHP Notice:  Undefined index: ticket_no in /home/xercextx/public_html/iservice/testmail.php on line 6
+[27-Jan-2018 07:42:59 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/home/xercextx/public_html/iservice/system/core/Security.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/xercextx/public_html/iservice/system/core/Common.php on line 163
+[27-Jan-2018 10:08:22 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/home/xercextx/public_html/iservice/system/core/Security.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/xercextx/public_html/iservice/system/core/Common.php on line 163
+[27-Jan-2018 10:08:22 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/home/xercextx/public_html/iservice/system/core/Security.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/xercextx/public_html/iservice/system/core/Common.php on line 163
+[27-Jan-2018 10:08:22 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/home/xercextx/public_html/iservice/system/core/Security.php' (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/xercextx/public_html/iservice/system/core/Common.php on line 163

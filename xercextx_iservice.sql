@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10.14
--- http://www.phpmyadmin.net
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 14, 2017 at 07:37 AM
+-- Generation Time: Jun 25, 2018 at 06:53 AM
 -- Server version: 5.6.27-75.0-log
--- PHP Version: 5.6.20
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `xercextx_iservice`
@@ -26,12 +26,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `asset`
 --
 
-CREATE TABLE IF NOT EXISTS `asset` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `asset` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
-  `description` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+  `description` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `asset`
@@ -51,8 +50,8 @@ INSERT INTO `asset` (`id`, `name`, `description`) VALUES
 -- Table structure for table `business_extra`
 --
 
-CREATE TABLE IF NOT EXISTS `business_extra` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `business_extra` (
+  `id` int(11) NOT NULL,
   `b_extra_master_id` int(11) NOT NULL,
   `catid` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
@@ -63,9 +62,8 @@ CREATE TABLE IF NOT EXISTS `business_extra` (
   `isenable` int(11) NOT NULL DEFAULT '1',
   `ispreffred` int(11) NOT NULL DEFAULT '0',
   `cityid` int(11) NOT NULL,
-  `isbusiness` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=229 ;
+  `isbusiness` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `business_extra`
@@ -133,7 +131,7 @@ INSERT INTO `business_extra` (`id`, `b_extra_master_id`, `catid`, `userid`, `hea
 (63, 1, 2, 1, '', 'lkikj', '2016-04-14', '2016-04-24', 0, 0, 1, 1),
 (64, 2, 12, 154, 'SHINE ON IS OFFERING DISCOUNT ONSELECTED AD JEWELLERY, AD BANGLES,\nANTIQUE JEWELLERY& KUNDAN JEWELLERY.', 'UPTO 30% OFF ON AD JEWELLERY.\n25% OFF ON KUNDAN JEWELLERY\nUPTO 30% OFF ON ANT८QUE JEWELLERY', '2016-04-14', '2016-04-24', 1, 0, 1, 0),
 (65, 2, 50, 133, 'NAVRATRI OFFER', 'BUY 4000 RUPEES CLOTHES AND GET ONE TSHIRT FREE', '2016-04-14', '2016-04-24', 1, 0, 1, 0),
-(66, 3, 24, 150, 'Baisakhi Celebration ', 'students from Bachpan School celebrate the festival of "Baisakhi"', '2016-04-14', '2016-04-24', 0, 0, 1, 0),
+(66, 3, 24, 150, 'Baisakhi Celebration ', 'students from Bachpan School celebrate the festival of \"Baisakhi\"', '2016-04-14', '2016-04-24', 0, 0, 1, 0),
 (67, 3, 24, 150, 'Baisakhi Celebration ', 'Baisakhi', '2016-04-14', '2016-04-24', 0, 0, 1, 0),
 (68, 2, 23, 155, 'New batches', 'IELTS,SPOKEN ENGLISH', '2016-04-15', '2016-04-25', 1, 0, 1, 0),
 (69, 2, 23, 148, 'New Batch start 21 Apr. ', 'DEAR STUDENT NEW BATCH START FIRST GRADE , 2 GRADE , Police,  Gramsewak', '2016-04-18', '2016-04-28', 1, 0, 1, 0),
@@ -155,7 +153,7 @@ INSERT INTO `business_extra` (`id`, `b_extra_master_id`, `catid`, `userid`, `hea
 (85, 1, 14, 1, '', 'ppp', '2016-05-07', '2016-05-17', 0, 0, 1, 1),
 (86, 1, 14, 0, '', 'kkk', '2016-05-07', '2016-05-17', 0, 0, 1, 1),
 (87, 1, 3, 1, '', 'hhhh', '2016-05-07', '2016-05-17', 0, 0, 1, 1),
-(88, 2, 45, 195, 'OFFER', 'AIR CONDITIONER SERVICE ONLY 250/-RS,\nINSTALLATION (SPLIT AC) CHARGE 800/-R''S\nSALE AND REPAIR LLOYD ,HITACHI,VOLTAS ,ALL KIND OF AC', '2016-05-10', '2016-11-06', 1, 0, 1, 0),
+(88, 2, 45, 195, 'OFFER', 'AIR CONDITIONER SERVICE ONLY 250/-RS,\nINSTALLATION (SPLIT AC) CHARGE 800/-R\'S\nSALE AND REPAIR LLOYD ,HITACHI,VOLTAS ,ALL KIND OF AC', '2016-05-10', '2016-11-06', 1, 0, 1, 0),
 (89, 2, 95, 201, 'real stone  in lower price ', '9414630000', '2016-05-12', '2016-11-08', 1, 0, 1, 0),
 (90, 1, 2, 1, '', 'dfdfdf', '2016-05-13', '2016-05-23', 0, 0, 1, 1),
 (91, 1, 11, 1, '', 'fgfgf', '2016-05-13', '2016-05-23', 1, 0, 1, 1),
@@ -219,10 +217,10 @@ INSERT INTO `business_extra` (`id`, `b_extra_master_id`, `catid`, `userid`, `hea
 (160, 7, 0, 1, 'SBI Recruitment 2016', 'SBI Vacancy Details:\r\nTotal No.of Posts: 103\r\nName of the Posts:\r\n1. Acquisition Relationship Managers: 34 Posts\r\n2. Relationship Manager: 55 Posts\r\n3. Relationship Manager (Team Lead): 01 Post\r\n4. Zoanl Head/ Senior RM-Sales (Corporate & SMEs): 01 Post\r\n5. Zoanl Head/ Senior RM-Sales (Retail HNI): 02 Posts\r\n6. Compliance Officer: 01 Post\r\n7. Investment Counsellors: 09 Posts\r\n\r\nAge Limit: Candidates age should be between 22 to 35 years for Sl.No-1, 23 to 35 years for Sl.No-2 & 7, 25 to 40 years for Sl.No-3 & 6, 30 to years for Sl.No-4 & 5 as on 01-12-2016. Age relaxation applicable 5 years for SC/ ST , 3 years for OBC, 15 years for PWD (SC/ ST), 13 years for PWD (OBC), 10 years for PWD (GEN) candidates.\r\n\r\nEducational Qualification: Candidates should possess Graduation from Government recognized University or Institution with relevant experiences.\r\n\r\nSelection Process: Candidates will be selected based on Merit & Personal Interview.\r\n\r\nApplication Fee: Candidates should pay Rs. 600/- for General & OBC candidates, Rs. 100/- for SC/ ST/ PWD candidates (non-refundable) through using debit card/ credit card/ Internet Banking.\r\n\r\nImportant Dates:\r\n\r\nStarting Date for Online Application & Fee Payment	25-11-2016\r\nLast Date for Online Application & Fee Payment	12-12-2016 \r\nLast Date for Submission of Hard copy of Application	16-12-2016\r\nLast Date for Editing Application Details	12-12-2016\r\nLast Date for Printing of Online Application	27-12-2016\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
 (161, 7, 0, 1, 'Bank of Baroda,755 Full Time Sweeper cum Peon/ Peon', 'Bank of Baroda Vacancy Details:\r\nTotal No. of Posts: 755 \r\nName of the Post:\r\n1. Sweeper cum Peon: 265 Posts\r\n2. Peon: 07 Posts\r\n3. Full time Sweeper cum Peon: 143 Posts\r\n4. Full time Sweeper cum Peon: 209 Posts\r\n5. Peon: 08 Posts\r\n6. Sweeper cum Peon: 121 Posts\r\n7. Sweeper cum Peon: 02 Posts\r\n\r\nAge Limit: Candidates age limit should be between 18 – 26 years as on 22-11-2016 for Sl No. 01, as on 13-12-2016 for Sl No. 02, as on 03-12-2016 for Sl No. 03, as on 15-12-2016 for Sl No. 04 & 05. Age relaxation is applicable to 05 years for SC/ ST, 03 years for OBC & 10 years for PWD Candidates.\r\n\r\nEducational Qualification: Candidates should have passed in Xth Standard examination or its equivalent.\r\n\r\nSelection Process: Candidates will be selcted based on merit & examination.\r\n\r\nApplication Fee: Candidates should pay Rs. 100/- for SC/ ST/ PWD/ EX SM Candidates and Rs. 400/- for all other candidates through online & off line\r\n\r\nOnline: Candidates should pay fee through online by using Credit Card, Debit Card & Net banking\r\n\r\nOffline: Candidates should pay fee through off line by Pay-in-slip/ Cash Voucher/ Challan.\r\n\r\nImportant Dates:\r\nStarting Date to Apply Online: 23-11-2016\r\nLast Date to Apply Online for Post No. 01 to 05: 13-12-2016\r\nLast Date to Apply Online for Sl No. 06 & 07: 15-12-2016\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0);
 INSERT INTO `business_extra` (`id`, `b_extra_master_id`, `catid`, `userid`, `heading`, `content`, `publishdatetime`, `expirydatetime`, `isenable`, `ispreffred`, `cityid`, `isbusiness`) VALUES
-(162, 7, 0, 1, 'PUNJAB POLICE', 'Punjab Police Recruitment 2017 of Constables and Sub Inspector (SI) for Sports Persons (Both Male and Female) in various Cadre of Punjab Police against 3% sports quota. The Punjab Police Online registration start from 24th November 2016 and close on 14th December 2016.\r\n\r\nName of the Post\r\n\r\nTotal Vacancies\r\n\r\nAge Limit (as on 01/01/2016)\r\n\r\nPay Scale\r\n\r\nConstable\r\n\r\n289 (Male – 253, Female – 36)\r\n\r\n18 to 28 Years\r\n\r\n₹ 10300-34800 + Grade Pay ₹ 3200/-\r\n\r\nSub Inspector (SI)\r\n\r\n17 (Male – 10, Female – 07)\r\n\r\n18 to 28 Years\r\n\r\n₹ 10300-34800 + Grade Pay ₹ 4600/-\r\n\r\nEducational Qualification:\r\n\r\nConstable -> 10+2 or its equivalent from a recognized Education Board/ University and the candidate must have passed matriculation examination with Punjabi as one of the compulsory or elective subjects or any other equivalent examination in Punjabi language.\r\n\r\nSub Inspector -> Graduation / Degree in any discipline for all candidates or its equivalent from a recognized University and the candidate must have passed matriculation examination with Punjabi as one of the compulsory or elective subjects or any other equivalent examination in Punjabi language.\r\n\r\nSports Requirement: Representation by candidate at International level competitions recognized by Indian Olympic Association/ National Federations is mandatory.\r\n\r\nPhysical Standards: Minimum Height required 5''-5" Inches for Male, 5''-2" Inches for Female (Both posts).\r\n\r\nSelection Process: The Selection Process shall consist of various stages as below:-\r\n\r\nFor Constable ->\r\n\r\n(a) Scrutiny of application forms. \r\n\r\n\r\n(b) Physical Trials consisting of Substance Abuse (Drug Addiction) Test and Physical Measurement Test (PMT). \r\n(c) Sports Trials (Concerned discipline) - 25 marks \r\n(d) Counseling & Scrutiny of sports achievements - 25 Marks (certificates)\r\nFor Sub-Inspector ->\r\n\r\n(a) Scrutiny of application forms. \r\n(b) Physical Trials consisting of Substance Abuse (Drug Addiction) Test and Physical Measurement Test (PMT). \r\n(c) Sports Trials (Concerned discipline) - 20 marks \r\n(d) Scrutiny of sports achievements (certificates) - 25 Marks \r\n(e) Interview-cum-Personality Test - 05 Marks\r\n\r\nApplication Fee: ₹ 700/- for General and OBC category candidates; ₹ 300/- for SC / ST / BC Category candidates. The fee to be paid online / offline mode.\r\n\r\nHow to Apply: Eligible Sports Persons Apply Online through Punjab Police Recruitment Portal from 24/11/2016 to 14/12/2016.\r\n\r\nImportant Dates:\r\n\r\nClosing date for Online Applications -> 14/12/2016 till 11:59 PM \r\nClosing date for deposit of Application Fee (Online) -> 14/12/2016 \r\nClosing date for deposit of Application Fee (Offline) -> 16/12/2016\r\n\r\n\r\nDEPARTMENT OF JAILS. PUNJAB RECRUITMENT OF WARDERS (MALE) /MATRONS (FEMALE)- 2016\r\n\r\nName of the Post\r\n\r\nNo of Vacancies\r\n\r\nWarder (Male)\r\n\r\n210\r\n\r\nMatrons (Female)\r\n\r\n57\r\n\r\nAge Limit: 18 to 25 Years as on 1st January 2016. No relaxation will be given in age to any candidate.\r\n\r\nEducational Qualification: 10+2 (Matric with 12th Class) or its equivalent from a recognized education Board/ University. The candidate must have also passed Matriculation examination with Punjabi as one of the compulsory or elective subjects or any other equivalent examination in Punjabi language.\r\n\r\nSelection Process: Recruitment Boards under the overall supervision of the Central Recruitment Board shall conduct the recruitments for Jail Warders (Male)/ Matrons (Female), The Physical Measurement Test (PMT) and the Physical Screening Test (PST) of a candidate shall be conducted on a single day, and the entire process for each candidate shall be got video-graphed. The candidates will be assigned the nearest Recruitment Centre for PMT and PST. Only candidates who clear the PMT and PST will be enlisted based on the merit list.\r\n\r\nPhysical Measurement Test:\r\n\r\nFor Warders (Male) –>\r\n\r\nCandidate\r\n\r\nMinimum Height required\r\n\r\nChest\r\n\r\nMale\r\n\r\n5 feet 7 inches\r\n\r\n33'' Unexpanded 34-1/2'' Expanded\r\n\r\nDogras/Gurkhas (Mate)\r\n\r\n5 feet 4-1/2 inches\r\n\r\n33'' Unexpanded 34-1/2'' Expanded\r\n\r\nFor Matrons (Female) –>\r\n\r\nCandidate\r\n\r\nMinimum Height required\r\n\r\nWeight\r\n\r\nFemale\r\n\r\n5 Feet 3 inches\r\n\r\n50 Kg and above\r\n\r\nApplication Fee: ₹ 400/- for General Category; ₹ 100/- for SC / ST / BC Category; No fee for Ex-Servicemen candidates. For depositing the fees, the candidate would have an option of either depositing the same online through (i) Net Banking (ii) Credit/Debit Card payment or the candidate can deposit the fees offline manually through the Fee Challan Form available on official website. \r\n\r\nHow to Apply: Eligible Interested candidates shall only apply online through Punjab Police Recruitment Portal on or before 28/11/2016 up to 11:59 PM.\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
-(163, 7, 0, 1, 'Bank of Baroda,755, S.O., SUB STAFF', 'Bank of Baroda (BoB) invites online applications for recruitment of Specialist Officers (SO) in Bank of Baroda Project 2016-17. The Online registration start from 9th November 2016 and close on 2nd December 2016.\r\n\r\nRECRUITMENT OF SPECIALIST OFFICERS IN BANK OF BARODA – PROJECT 2016-17\r\n\r\nName of the Post / Grade\r\n\r\nTotal Vacancies\r\n\r\nScale of Pay\r\n\r\nSpecialist Officer – JMG/S-I\r\n\r\n66\r\n\r\n₹ 23700 x 980 [7] - 30560 x 1145(2) - 32850 x 1310(7) - 42020\r\n\r\nSpecialist Officer – MMG/S-II\r\n\r\n676\r\n\r\n₹ 31705 x 1145 [1] - 32850 x 1310(10) - 45950\r\n\r\nSpecialist Officer – MMG/S-III\r\n\r\n256\r\n\r\n₹ 42020 x 1310 [5] - ₹ 48570 x 1460 [2] - 51490\r\n\r\nSpecialist Officer – SMG/S-IV\r\n\r\n41\r\n\r\n₹ 50030 x 1460 [4] - 55870 x 1650 [2] - 59170\r\n\r\nSpecialist Officers Stream wise Vacancies:\r\n\r\nStream\r\n\r\nTotal Vacancies\r\n\r\nAge Limit (as on 01/11/2016)\r\n\r\nPay Scale\r\n\r\nCredit Analysts (Chartered Accountants)\r\n\r\n40\r\n\r\n28 to 40 Years\r\n\r\nS-IV\r\n\r\nFinance /Credit\r\n\r\n440\r\n\r\n28 to 40 Years\r\n\r\nS-ll / S-lll\r\n\r\nTrade Finance\r\n\r\n100\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nTreasury\r\n\r\n29\r\n\r\n25 to 30 Years\r\n\r\nS-ll / S-lll\r\n\r\nRisk Management\r\n\r\n10\r\n\r\n25 to 32 Years\r\n\r\nS-lll\r\n\r\nAgriculture product specialists\r\n\r\n05\r\n\r\n28 to 40 Years\r\n\r\nS-lll\r\n\r\nMarketing\r\n\r\n200\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nPlanning\r\n\r\n68\r\n\r\n23 to 30 Years\r\n\r\nS-l / S-ll\r\n\r\nEconomists\r\n\r\n05\r\n\r\n25 to 30 Years for S-II / 30 to 40 Years for S-IV\r\n\r\nS-ll / S-IV\r\n\r\nLaw\r\n\r\n17\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nInformation Technology\r\n\r\n22\r\n\r\n25 to 30 Years for S-II / 25 to 40 Years for S-III\r\n\r\nS-ll / S-lll\r\n\r\nHRM\r\n\r\n40\r\n\r\n25 to 32 Years for S-II / 28 to 40 Years for S-III\r\n\r\nS-ll / S-lll\r\n\r\nSecurity\r\n\r\n32\r\n\r\n25 to 35 Years\r\n\r\nS-ll\r\n\r\nFire\r\n\r\n09\r\n\r\n21 to 30 Years\r\n\r\nS-l\r\n\r\nElectrical engineers / Civil engineers / Architects\r\n\r\n10\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nOfficial Language (Hindi)\r\n\r\n12\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nEducational Qualification and Experience: (as on 09/11/2016)\r\n\r\nCredit Analysts (Chartered Accountants) -> Qualified Chartered Accountant. Minimum 5 years Post-qualification experience out of which minimum 3 years experience in Large Corporate Banking / Finance.\r\n\r\nFinance / Credit (S-II) -> Full time MBA / Full time PGDBM / Full time PGDM with specialization in Finance / CFA/ ICWA/ CA. Post-qualification experience of minimum 2 years in Credit Processing/ Credit Appraisal, Corporate Credit Relationship Management in Banking/ Financial Sector (Experience of working in Credit Deptt. in large Banks will be preferable). 2 years Full Time PGPM with Specialization in Finance.\r\n\r\nFinance / Credit (S-III) -> Full time MBA / Full time PGDBM / Full time PGDM with specialization in Finance / CFA/ ICWA/ CA. Post-qualification experience of minimum 4 years in Credit Processing/Credit Appraisal, Corporate Credit Relationship Management, in the Banking/ Financial Sector (Experience of working in Credit Deptt. in large Banks will be preferable). For candidates with CA qualification, the Post-qualification experience shall be relaxed to 3 years. 2 years Full Time PGPM with Specialization in Finance.\r\n\r\nTrade Finance -> Full time MBA / Full time PGDBM / Full time PGDM with specialization in Finance / CFA/ ICWA/ CA. Post-qualification experience of minimum 2 years in Credit & Forex / Trade Finance function.in Banking/ Financial Sector (Experience of working in trade finance function including exports / imports / foreign remittances / LC / BG areas in large Banks will be preferable). 2 years Full Time PGPM with Specialization in Finance.\r\n\r\nTreasury - Product Sales -> Full time M.B.A or equivalent with specialization in Marketing, preferably from a premier institution. Minimum 2 to 3 years of Post-qualification experience in Treasury functions of Banks.\r\n\r\nTreasury - Dealers/ Traders -> Graduation or equivalent. Minimum 2 years Post-qualification experience of Trading in Forex and Debt Markets in Banks.\r\n\r\nTreasury -Relationship Managers (Forex/Derivatives) -> Full time M.B.A or equivalent with specialization in Marketing and Sales. Minimum 3 to 5 years of Post-qualification experience as Relationship Manager for Treasury functions/Treasury product sales.\r\n\r\nTreasury - Equity Analyst -> Full time M.B.A or equivalent with specialization in Finance, preferably from a premier institution. CA/CFA/FRM will be preferred. Minimum 3 to 5 years of Post-qualification experience as Equity Analyst in Banks/Corporates.\r\n\r\nRisk Management -> Full Time MBA or Full Time PG in Econometrics/ Statistics/ Financial Risk Management/ Data science or Full Time PG in Risk Mgmt./ Maths/ Economics/ Financial Engg. from a recognized University/ Other reputed Institutions such as Indian Statistical Institution, Kolkata. Knowledge of statistical packages such as SAS/ R / PYTHON etc. is preferable. Post-qualification experience of minimum 2 - 3 years in Credit Rating Model/ Score Card Development / Credit Risk Management/Credit Management / Market Risk / Treasury Operations / Model Validation in the Banking/ Financial Sector.\r\n\r\nAgriculture product specialist -> Graduate Degree with minimum 03 Years post qualification experience.\r\n\r\nMarketing -> Full time MBA / Full time PGDBM / Full time PGDM / Full Time Post-Graduate qualification with specialization in Marketing. Minimum 03 years of experience in a Banking / Financial Services industry of which at least 2 years in same organization as Relationship/ Key Account Manager for sale of liability products (CA, SB, Demat, Credit cards, POS, Internet Payment Gateway, Cash Management Services, etc) or Asset Products (Retail / mortgage loans, etc.)\r\n\r\nPlanning (S-I) -> M.A. Economics or M.Sc. Statistics/M.Com (Banking), or M.Sc./M.A. (Operations Research) or Full Time MBA (Finance) from a recognized university/ reputed institute. Knowledge of MS Office/ Excel/ Access/ PowerPoint is essential.  02 years Full Time PGDM/ 2 years Full Time PG DBM/ 2 years Full Time PGPM with specialization in Finance.\r\n\r\nPlanning (S-II) -> M.A. Economics or M.Sc. Statistics/M.Com (Banking), or M.Sc./M.A. (Operations Research), or Full Time M.B.A (Finance) from a recognized University/ Institute. Knowledge of MS Office/ Excel/ Access/ PowerPoint is essential. Post-qualification experience of minimum 3 years in Statistical Analysis, Forecasting and Budgeting, Data Analysis in the Banking/ Financial Sector. 02 years Full Time PGDM/ 2 years Full Time PG DBM/ 2 years Full Time PGPM with specialization in Finance.\r\n\r\nEconomists (S-II) -> Economics Graduate and M.A (Economics) / Full Time MBA (Finance). Post-qualification experience of minimum 2 years in financial institutions. 02 years Full Time PGDM/ 2 years Full Time PG DBM/ 2 years Full Time PGPM with specialization in Finance.\r\n\r\nEconomist (S-IV) -> Economics Graduate and M.A (Economics). Preferably with M.Phil/Ph. D. in economics. Minimum 6 years Post-qualification experience.\r\n\r\nLaw -> A Bachelor Degree in Law. (Candidates with Higher Qualification and experience will be preferred.) Minimum 03 years post qualification experience.\r\n\r\nIT - Software Development –> 04 years Engineering/ Technology Degree in Computer Science/Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics & Instrumentation (OR) Post Graduate Degree in Electronics/ Electronics & Tele Communication/ Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications (OR) Graduate having passed DOEACC ''B'' level Additional Qualification like Degree/Diploma/ Certificate in Networking, Programming, Languages, Database, IT security, etc. is desirable. Minimum 04 Years post qualification experience.\r\n\r\nIT - Data Scientist -> PhD/MS or equivalents in applied mathematics, statistics, Computer Science. Minimum 04 Years post qualification experience.\r\n\r\nIT - Software Testing -> 04 years Engineering/ Technology Degree in Computer Science/ Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics & Instrumentation (OR) Post Graduate Degree in Electronics/ Electronics & Tele Communication/Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications. (OR) Graduate having passed DOEACC ''B'' level Additional Qualification like Degree/Diploma/ Certificate in Networking, Programming, Languages, Database, IT security, etc. is desirable. Minimum 06 Years post qualification experience.\r\n\r\nIT - Database Management -> 04 year Engineering/ Technology Degree in Computer Science/Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics &Instrumentation OR Post Graduate Degree in Electronics/ Electronics & Tele Communication/Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications OR Graduate having passed DOEACC ''B'' level Additional Qualification like Degree/ Diploma/ Certificate in Networking, Programming, Languages, Database, IT security, etc. is desirable. Minimum 06 Years post qualification experience.\r\n\r\nIT - Data Analyst -> 4 year Engineering/ Technology Degree in Computer Science/ Information Technology (OR) Post Graduate Degree in Computer Science/ Information Technology/ Computer Applications Desirable: Additional qualification like Degree/ Diploma/ Certificate in Networking, Programming languages, Database, IT Security etc.  Minimum 06 Years post qualification experience.\r\n\r\nIT security (CISA) -> 4 year Engineering/ Technology Degree in Computer Science/Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics & Instrumentation OR Post Graduate Degree in Electronics/ Electronics & Tele Communication/ Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications OR Engineering Graduate and minimum One year Diploma in IT / Computer Science from recognised university / Institute (OR) Graduate / Post Graduate in Science / Commerce and minimum One year Diploma in IT / Computer Science from recognised University / Institute. CISA / CISSP / CISM certification is essential. Desirable : ISO 27001 LA Certification. Minimum 3 to 5 years of post qualification experience.\r\n\r\nHRM -> Full time MBA/ Full Time PG DMin HRM/Personnel Management / Industrial Relations/HRD or Full Time Post Graduation (2 Years) in Social Work having specialization in HRM/PM/IR/HRD. Post qualification experience of minimum 2 years in Banks/Financial Institutions in Specialized Area of Human Resources Management including Disciplinary action, HRD, recruitment / promotions, training, performance appraisals, etc. 02 years Full Time PGDBM/ 02 years Full Time PGPM with specialization in HRM/ Personnel Management/ Industrial Relations/ HRD.\r\n\r\nHRM -> Full time MBA/ Full Time PGDM(2 Years) in HRM/Personnel Management / Industrial Relations/HRD or Full Time Post Graduation(2 years) in Social Work having specialization in HRM/PM/IR/HRD. Post qualification experience of minimum 4 years in Banks/Financial Institutions in Specialized Area of Human Resources Management including Disciplinary action, HRD, recruitment / promotions, training, performance appraisals, etc. 02 years Full Time PGDBM/ 02 years Full Time PGPM with specialization in HRM/ Personnel Management/ Industrial Relations/ HRD.\r\n\r\nSecurity -> Graduation degree in any discipline. An officer not below the rank of Captain of Indian Army or equivalent rank in India Navy / Air Force with a minimum of 5 years of commissioned service or an Officer not below the rank of Asst SP/Dy SP/ Asst Comdt/ Dy SP/ Asst Comdt/ Dy Comdt of Indian Police / Para Military Forces with a minimum of 5 years service as an officer in such Force.\r\n\r\nFire -> BE (Fire) or equivalent from National Fire Service College, Nagpur / any other College or Institution duly approved by All India Council for Technical Education (AICTE) (OR) Graduate from a recognized University/ Institute and having Grade I Fire Examination Certificate of IFE (India).\r\n\r\nElectrical Engineers -> BE (Electrical) or equivalent. Minimum 3 years of post-qualification experience in supervising / monitoring electrical work in buildings / projects.\r\n\r\nCivil engineers / Architects -> BE [Civil] or equivalent / B.E. [Architecture] or equivalent. Minimum 3 years of post-qualification experience in construction, purchase/ renovation, maintenance of new & existing premises in large organisation.\r\n\r\nOfficial Language [Hindi] -> M.A. in Hindi OR English OR Sanskrit AND Hindi and English as subject at degree level. Desirable : P.G. Diploma in translation from a recognized Institute. Minimum 2 years post-qualification experience as an Official Language Officer in a Central Government/ Public Sector Bank/ Undertaking/ Financial Institution.\r\n\r\nSelection Process:\r\n\r\n(1) For Scale I Posts -> The selection process will comprise of online written test, in the discipline of Fire and Planning, followed by GD/Interview of the shortlisted candidates. \r\n\r\n\r\n(2) For the posts in Scale II, Scale III & Scale IV -> The applications will be shortlisted and candidates will then be called for GD/Interview. However, for Scale II and Scale III, if the number of eligible applications received is large, then Bank reserves the right to hold an Online Written Test also.\r\nApplication Fee and Intimation Charges (A Non-Refundable): ₹ 100/- for SC / ST / PWD Category candidates; ₹ 600/- for General and OBC Category Candidates. The Candidates have to make the payment of requisite fee/intimation charges through Online mode only. The online payment can be made using only Debit Cards (RuPay/Visa/MasterCard/Maestro), Credit Cards, Internet Banking, IMPS, Cash Cards/ Mobile Wallets.\r\n\r\nHow to Apply: Interested Eligible Candidates are required to Apply Online through Bank of Baroda Online Recruitment Portal on or before 29/11/2016 (Last date extended up to 02/12/2016). \r\n\r\nImportant Dates:\r\n\r\nThe starting date for Online Registration -> 09/11/2016 \r\nThe Last date for Online Registration of Application -> 29/11/2016 \r\nPayment of Fee Online -> 09/11/2016 to 29/11/2016\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
-(164, 7, 0, 1, 'NATIONAL HOUSING BANK', 'National Housing Bank (NHB) invites Online applications for requirement of talented and committed professionals in junior management, senior management and top executive cadre posts in 2016-17. The closing date for online registration is 30th November 2016.\r\n\r\nAbout: National Housing Bank is the apex Financial Institution in the country for housing, set up under an Act of Parliament and is a wholly owned subsidiary of Reserve Bank of India (RBI).\r\n\r\nName of the Post\r\n\r\nNo of Vacancies\r\n\r\nPay Scale\r\n\r\nAssistant Manager (AM)\r\n\r\n14 (General Stream – 12, Law – 01)\r\n\r\nJMG Scale - I ₹ 23700-980/ 7-30560-1145/ 2-32850-1310/ 7-42020\r\n\r\nAssistant General Manager (AGM)\r\n\r\n02 (Law – 01, Economy & Strategy – 01)\r\n\r\nSMG Scale ₹ 59170-1650/2-62470-1800/2-66070\r\n\r\nDeputy General Manager (DGM)\r\n\r\n01\r\n\r\nTEG Scale VI ₹ 68680-1960/ 4-76520\r\n\r\nChief Finance Officer (CFO)\r\n\r\n01\r\n\r\nTEG Scale VII ₹ 76520-2120/ 4-85000\r\n\r\nAge Limit: (Age Relaxation - 05 Years for SC / ST, 03 Years for OBC-NCL, FOr others as per Govt. Rules)\r\n\r\nAssistant Manager -> Candidates must have been born not earlier than 02.10.1988 and not later than 01.10.1995 (both dates inclusive) \r\n\r\n\r\nAssistant General Manager -> Minimum Age Limit is 33 years and Maximum Age limit is 50 years as on 01.10.2016. Candidates must have been born not earlier than 02.10.1966 and not later than 01.10.1983 (both dates inclusive) \r\nDeputy General Manager -> Minimum Age Limit is 35 years and Maximum Age limit is 55 years as on 01.10.2016. Candidates must have been born not earlier than 02.10.1961 and not later than 01.10.1981 (both dates inclusive) \r\nChief Finance Officer -> Minimum Age Limit is 40 years and Maximum Age limit is 55 years as on 01.10.2016 Candidates must have been born not earlier than 02.10.1961 and not later than 01.10.1976 (both dates inclusive)\r\nEducational Qualifications:\r\n\r\nAM (General Stream) ->\r\n\r\n(1) Bachelor''s Degree in any discipline with minimum of 60% marks (55% in case of candidates belonging to SC/ST) or Master''s Degree in any discipline with aggregate minimum of 55% marks or CA/ICWA/MBA with minimum 55% marks (50% in case of candidates belonging to SC/ST). \r\n(2) Preference will be given to candidates having Professional/ MBA degree.\r\n\r\nAM (Law) ->\r\n\r\n(1) Bachelor''s Degree in Law from a recognised University with aggregate minimum of 60% marks Or Master''s Degree in Law with aggregate minimum of 50%. \r\n(2) While no prior experience is required.\r\n\r\nAGM (Law) ->\r\n\r\n(1) Graduate with a degree in Law or a Law Graduate who has passed 5 years integrated law course from a recognized university in India. \r\n(2) Minimum of 15 years post qualification experience.\r\n\r\nAGM (Economy & Strategy) ->\r\n\r\n(1) A Post Graduate degree in Economics with minimum 50% marks or equivalent from a recognized institute/university. Weightage may be given to candidates with M. Phil / PhD/ other degree and equivalent qualifications. \r\n(2) Minimum of 15 years post qualification experience.\r\n\r\nDGM ->\r\n\r\n(1) Graduate/ Post graduate with a degree in finance/ any other discipline from a recognized Institute/ University. \r\n(2) Minimum of 15 years post qualification experience.\r\n\r\nCFO ->\r\n\r\n(1) Should have strong academic credentials and be a qualified Chartered Accountant. Additional advanced qualifications like CPA, CFA or FSA will be an added advantage. \r\n(2) Minimum of 18 years of broad experience in the finance function in banks/large corporates/ PSUs/ FIs/ financial services organization is essential, out of which minimum 10 years of experience in Banks/FIs.\r\n\r\nSelection Process:\r\n\r\n(1) For Assistant Manager Posts -> Online Test, Interview and/ or Group Discussion only. \r\n(2) For AGM, DGM, CFO Posts -> Shortlisted candidates will be called for Personal Interview.\r\n\r\nApplication Fee: Online payment of ₹ 500/- as non-refundable application fee for General, OBC, Ex-Servicemen, J & Domicile and 1984 riot candidates. The Online payment of ₹ 50/- as non-refundable communication charges for SC/ST candidates who are applying for post of Assistant Managers.\r\n\r\nHow to Apply: Eligible Candidates can apply online only. The last date for submission of online applications is 20/11/2016 (Last date extended up to 30/11/2016).\r\n\r\nImportant Dates:\r\n\r\nClosing date for Online registration of application -> 30/11/2016 \r\nClosure for editing application details -> 30/11/2016 \r\nLast date for printing your application -> 15/12/2016 \r\nOnline Fee Payment -> 27/10/2016 to 30/11/2016\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
-(165, 7, 0, 1, 'NMRC , NOIDA METRO', 'Noida Metro Rail Corporation Limited (NMRC) required young, dynamic and motivated Indian Citizens for opening of following Non-Executive Recruitment positions in NMRC Company 2016-2017. The NMRC Recruitment 2016-17 Online registration open from 5th November 2016 and close on 15th December 2016.\r\n\r\nADVT NO: NMRC / OM / HR /I/ 2016\r\n\r\nPost Code\r\n\r\nName of Post\r\n\r\nTotal Vacancies\r\n\r\nPay Grade (IDA)\r\n\r\nNE01\r\n\r\nStation Controller/ Train Operator (SC/TO)\r\n\r\n194 (38 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 02\r\n\r\nCustomer Relations Assistant (CRA)\r\n\r\n65 (13 Vacancy reserved for Female)\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE 03\r\n\r\nJunior Engineer/ Electrical\r\n\r\n59 (11 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 04\r\n\r\nJunior Engineer/ Electronics\r\n\r\n63 (12 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 05\r\n\r\nJunior Engineer/ Mechanical\r\n\r\n18 (03 Vacancy reserved for Female)\r\n\r\n₹ 13500 - ­25520\r\n\r\nNE 06\r\n\r\nJunior Engineer/ Civil\r\n\r\n20 (04 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 07\r\n\r\nAccount Assistant\r\n\r\n08 (01 Vacancy reserved for Female)\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE08\r\n\r\nOffice Assistant\r\n\r\n06 (01 Vacancy reserved for Female)\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE09\r\n\r\nStenographer\r\n\r\n01\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE10\r\n\r\nMaintainer\r\n\r\n311 (Electrician - 112, Fitter - 55, Electronic Mechanic - 129, Ref & AC Mechanic - 15) [61 reserved for Female]\r\n\r\n₹ 8000 - ­14140\r\n\r\nAge Limit (as on 01/07/2016): 18 to 25 Years for Maintainer Post; 18 to 28 Years for all other posts.\r\n\r\nEducational Qualifications: [From a Government Recognized University / Institute]\r\n\r\nStation Controller/ Train Operator -> 03 Years Engineering Diploma in Electrical/ Electronic or equivalent or B.Sc Hons in (Physics/ Chemistry/ Maths) or B.Sc (Physics/ Chemistry/ Maths).\r\n\r\nCustomer Relations Assistant -> Three/Four years Graduation course in any discipline and computer literacy (Certificate in Computer Application Course of a minimum 6 weeks duration).\r\n\r\nJunior Engineers -> Three years Engineering Diploma in concerned discipline (Civil / Electrical / Electronics / Mechanical) or equivalent trade.\r\n\r\nAccount Assistant –> B.Com Degree or equivalent graduation.\r\n\r\nOffice Assistant -> Bachelor''s Degree (B.A./ B.Sc./ B.Com) or Equivalent.\r\n\r\nStenographer -> Any Degree with 01 Year course in Office Management and Secretarial Practice/ equivalent. Shorthand Speed-80 wpm/ English, Typing Speed-40 wpm/ English, Desirable - proficiency in shorthand/ typing in Hindi.\r\n\r\nMaintainer -> ITI (NCVT/SCVT) in required trade (Electrician / Fitter / Electronic Mechanic / Ref & AC Mechanic).\r\n\r\nSelection process:\r\n\r\n(1) For the post of Station Controller/ Train Operator (post code-NE01) and Customer Relations Assistant (post code-NE02) -> the selection methodology will comprise four-stage process:- Written Test (two papers), Psycho Test (qualifying) & Personal Interview followed by Medical examination in Aye-one category. \r\n\r\n\r\n(2) For the post of Junior Engineers (Electrical/Electronics/Mechanical/Civil), (post codes NE03, NE04, NE05, & NE06) -> the selection methodology will comprise three-stage process:- Written Test (two papers), Personal Interview followed by Medical examinations in Aye-one category not below Aye-three. \r\n(3) For the post of Account Asstt, Office Asstt & Stenographer (post codes NE07, NE08 & NE09) -> the selection methodology will comprise two-stage process:- Written Test (two papers), followed by Medical examination in Cee-One category. There will be no interview for this category of post. \r\n(4) For the post of Maintainer (post codes NE10) -> the selection methodology will comprise two-stage process:- Written Test (one paper), followed by Medical examination in Bee-One category. There will be no interview for these categories of posts.\r\nApplication Fee (A Non-refundable fee): The candidates belonging to General (UR) and OBC category are required to pay ₹ 400/- (plus Bank Charges), for candidates belonging to SC/ST/PWD category are required to pay ₹ 150/- (plus Bank Charges). The fee can be made through Prescribed Bank Challan. The Bank challan will be available to download after filling online application, The system generated Bank challan will be in triplicate (1st copy - Bank Copy, 2nd copy - Candidate''s Copy and 3rd copy - NMRC''s Copy). Candidates are required to take a print out of this system generated Bank Challan and deposit the requisite Written Examination Fee (for fee details see para "Payment of application fee") in any branch of State Bank of India (SBI) after a minimum of 24 hrs of generation of the Bank Challan. Only, State Bank of India (SBI) has been authorized by DMRC to collect the application fee, in a specially opened DMRC Account No. 33700092265.\r\n\r\nHow to Apply: Candidates are required to apply online through Delhi Metro Rail Website. The last date for registration of Online applications is 15/12/2016 (19/12/2016 – According to New press release) up to 23:59 Hours. For any clarification / queries email to helpdesknmrc2016@gmail.com .\r\n\r\nImportant Dates:\r\n\r\nThe Closing date for Online Registration -> 15th December 2016 up to 23:59 Hours. \r\nThe Application Fee to be Paid -> From 7th November 2016 to 19th December 2016. \r\nBank Challan will be generated up to -> 15th December 2016 up to 23:59 Hours.\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
+(162, 7, 0, 1, 'PUNJAB POLICE', 'Punjab Police Recruitment 2017 of Constables and Sub Inspector (SI) for Sports Persons (Both Male and Female) in various Cadre of Punjab Police against 3% sports quota. The Punjab Police Online registration start from 24th November 2016 and close on 14th December 2016.\r\n\r\nName of the Post\r\n\r\nTotal Vacancies\r\n\r\nAge Limit (as on 01/01/2016)\r\n\r\nPay Scale\r\n\r\nConstable\r\n\r\n289 (Male – 253, Female – 36)\r\n\r\n18 to 28 Years\r\n\r\n₹ 10300-34800 + Grade Pay ₹ 3200/-\r\n\r\nSub Inspector (SI)\r\n\r\n17 (Male – 10, Female – 07)\r\n\r\n18 to 28 Years\r\n\r\n₹ 10300-34800 + Grade Pay ₹ 4600/-\r\n\r\nEducational Qualification:\r\n\r\nConstable -> 10+2 or its equivalent from a recognized Education Board/ University and the candidate must have passed matriculation examination with Punjabi as one of the compulsory or elective subjects or any other equivalent examination in Punjabi language.\r\n\r\nSub Inspector -> Graduation / Degree in any discipline for all candidates or its equivalent from a recognized University and the candidate must have passed matriculation examination with Punjabi as one of the compulsory or elective subjects or any other equivalent examination in Punjabi language.\r\n\r\nSports Requirement: Representation by candidate at International level competitions recognized by Indian Olympic Association/ National Federations is mandatory.\r\n\r\nPhysical Standards: Minimum Height required 5\'-5\" Inches for Male, 5\'-2\" Inches for Female (Both posts).\r\n\r\nSelection Process: The Selection Process shall consist of various stages as below:-\r\n\r\nFor Constable ->\r\n\r\n(a) Scrutiny of application forms. \r\n\r\n\r\n(b) Physical Trials consisting of Substance Abuse (Drug Addiction) Test and Physical Measurement Test (PMT). \r\n(c) Sports Trials (Concerned discipline) - 25 marks \r\n(d) Counseling & Scrutiny of sports achievements - 25 Marks (certificates)\r\nFor Sub-Inspector ->\r\n\r\n(a) Scrutiny of application forms. \r\n(b) Physical Trials consisting of Substance Abuse (Drug Addiction) Test and Physical Measurement Test (PMT). \r\n(c) Sports Trials (Concerned discipline) - 20 marks \r\n(d) Scrutiny of sports achievements (certificates) - 25 Marks \r\n(e) Interview-cum-Personality Test - 05 Marks\r\n\r\nApplication Fee: ₹ 700/- for General and OBC category candidates; ₹ 300/- for SC / ST / BC Category candidates. The fee to be paid online / offline mode.\r\n\r\nHow to Apply: Eligible Sports Persons Apply Online through Punjab Police Recruitment Portal from 24/11/2016 to 14/12/2016.\r\n\r\nImportant Dates:\r\n\r\nClosing date for Online Applications -> 14/12/2016 till 11:59 PM \r\nClosing date for deposit of Application Fee (Online) -> 14/12/2016 \r\nClosing date for deposit of Application Fee (Offline) -> 16/12/2016\r\n\r\n\r\nDEPARTMENT OF JAILS. PUNJAB RECRUITMENT OF WARDERS (MALE) /MATRONS (FEMALE)- 2016\r\n\r\nName of the Post\r\n\r\nNo of Vacancies\r\n\r\nWarder (Male)\r\n\r\n210\r\n\r\nMatrons (Female)\r\n\r\n57\r\n\r\nAge Limit: 18 to 25 Years as on 1st January 2016. No relaxation will be given in age to any candidate.\r\n\r\nEducational Qualification: 10+2 (Matric with 12th Class) or its equivalent from a recognized education Board/ University. The candidate must have also passed Matriculation examination with Punjabi as one of the compulsory or elective subjects or any other equivalent examination in Punjabi language.\r\n\r\nSelection Process: Recruitment Boards under the overall supervision of the Central Recruitment Board shall conduct the recruitments for Jail Warders (Male)/ Matrons (Female), The Physical Measurement Test (PMT) and the Physical Screening Test (PST) of a candidate shall be conducted on a single day, and the entire process for each candidate shall be got video-graphed. The candidates will be assigned the nearest Recruitment Centre for PMT and PST. Only candidates who clear the PMT and PST will be enlisted based on the merit list.\r\n\r\nPhysical Measurement Test:\r\n\r\nFor Warders (Male) –>\r\n\r\nCandidate\r\n\r\nMinimum Height required\r\n\r\nChest\r\n\r\nMale\r\n\r\n5 feet 7 inches\r\n\r\n33\' Unexpanded 34-1/2\' Expanded\r\n\r\nDogras/Gurkhas (Mate)\r\n\r\n5 feet 4-1/2 inches\r\n\r\n33\' Unexpanded 34-1/2\' Expanded\r\n\r\nFor Matrons (Female) –>\r\n\r\nCandidate\r\n\r\nMinimum Height required\r\n\r\nWeight\r\n\r\nFemale\r\n\r\n5 Feet 3 inches\r\n\r\n50 Kg and above\r\n\r\nApplication Fee: ₹ 400/- for General Category; ₹ 100/- for SC / ST / BC Category; No fee for Ex-Servicemen candidates. For depositing the fees, the candidate would have an option of either depositing the same online through (i) Net Banking (ii) Credit/Debit Card payment or the candidate can deposit the fees offline manually through the Fee Challan Form available on official website. \r\n\r\nHow to Apply: Eligible Interested candidates shall only apply online through Punjab Police Recruitment Portal on or before 28/11/2016 up to 11:59 PM.\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
+(163, 7, 0, 1, 'Bank of Baroda,755, S.O., SUB STAFF', 'Bank of Baroda (BoB) invites online applications for recruitment of Specialist Officers (SO) in Bank of Baroda Project 2016-17. The Online registration start from 9th November 2016 and close on 2nd December 2016.\r\n\r\nRECRUITMENT OF SPECIALIST OFFICERS IN BANK OF BARODA – PROJECT 2016-17\r\n\r\nName of the Post / Grade\r\n\r\nTotal Vacancies\r\n\r\nScale of Pay\r\n\r\nSpecialist Officer – JMG/S-I\r\n\r\n66\r\n\r\n₹ 23700 x 980 [7] - 30560 x 1145(2) - 32850 x 1310(7) - 42020\r\n\r\nSpecialist Officer – MMG/S-II\r\n\r\n676\r\n\r\n₹ 31705 x 1145 [1] - 32850 x 1310(10) - 45950\r\n\r\nSpecialist Officer – MMG/S-III\r\n\r\n256\r\n\r\n₹ 42020 x 1310 [5] - ₹ 48570 x 1460 [2] - 51490\r\n\r\nSpecialist Officer – SMG/S-IV\r\n\r\n41\r\n\r\n₹ 50030 x 1460 [4] - 55870 x 1650 [2] - 59170\r\n\r\nSpecialist Officers Stream wise Vacancies:\r\n\r\nStream\r\n\r\nTotal Vacancies\r\n\r\nAge Limit (as on 01/11/2016)\r\n\r\nPay Scale\r\n\r\nCredit Analysts (Chartered Accountants)\r\n\r\n40\r\n\r\n28 to 40 Years\r\n\r\nS-IV\r\n\r\nFinance /Credit\r\n\r\n440\r\n\r\n28 to 40 Years\r\n\r\nS-ll / S-lll\r\n\r\nTrade Finance\r\n\r\n100\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nTreasury\r\n\r\n29\r\n\r\n25 to 30 Years\r\n\r\nS-ll / S-lll\r\n\r\nRisk Management\r\n\r\n10\r\n\r\n25 to 32 Years\r\n\r\nS-lll\r\n\r\nAgriculture product specialists\r\n\r\n05\r\n\r\n28 to 40 Years\r\n\r\nS-lll\r\n\r\nMarketing\r\n\r\n200\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nPlanning\r\n\r\n68\r\n\r\n23 to 30 Years\r\n\r\nS-l / S-ll\r\n\r\nEconomists\r\n\r\n05\r\n\r\n25 to 30 Years for S-II / 30 to 40 Years for S-IV\r\n\r\nS-ll / S-IV\r\n\r\nLaw\r\n\r\n17\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nInformation Technology\r\n\r\n22\r\n\r\n25 to 30 Years for S-II / 25 to 40 Years for S-III\r\n\r\nS-ll / S-lll\r\n\r\nHRM\r\n\r\n40\r\n\r\n25 to 32 Years for S-II / 28 to 40 Years for S-III\r\n\r\nS-ll / S-lll\r\n\r\nSecurity\r\n\r\n32\r\n\r\n25 to 35 Years\r\n\r\nS-ll\r\n\r\nFire\r\n\r\n09\r\n\r\n21 to 30 Years\r\n\r\nS-l\r\n\r\nElectrical engineers / Civil engineers / Architects\r\n\r\n10\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nOfficial Language (Hindi)\r\n\r\n12\r\n\r\n25 to 32 Years\r\n\r\nS-ll\r\n\r\nEducational Qualification and Experience: (as on 09/11/2016)\r\n\r\nCredit Analysts (Chartered Accountants) -> Qualified Chartered Accountant. Minimum 5 years Post-qualification experience out of which minimum 3 years experience in Large Corporate Banking / Finance.\r\n\r\nFinance / Credit (S-II) -> Full time MBA / Full time PGDBM / Full time PGDM with specialization in Finance / CFA/ ICWA/ CA. Post-qualification experience of minimum 2 years in Credit Processing/ Credit Appraisal, Corporate Credit Relationship Management in Banking/ Financial Sector (Experience of working in Credit Deptt. in large Banks will be preferable). 2 years Full Time PGPM with Specialization in Finance.\r\n\r\nFinance / Credit (S-III) -> Full time MBA / Full time PGDBM / Full time PGDM with specialization in Finance / CFA/ ICWA/ CA. Post-qualification experience of minimum 4 years in Credit Processing/Credit Appraisal, Corporate Credit Relationship Management, in the Banking/ Financial Sector (Experience of working in Credit Deptt. in large Banks will be preferable). For candidates with CA qualification, the Post-qualification experience shall be relaxed to 3 years. 2 years Full Time PGPM with Specialization in Finance.\r\n\r\nTrade Finance -> Full time MBA / Full time PGDBM / Full time PGDM with specialization in Finance / CFA/ ICWA/ CA. Post-qualification experience of minimum 2 years in Credit & Forex / Trade Finance function.in Banking/ Financial Sector (Experience of working in trade finance function including exports / imports / foreign remittances / LC / BG areas in large Banks will be preferable). 2 years Full Time PGPM with Specialization in Finance.\r\n\r\nTreasury - Product Sales -> Full time M.B.A or equivalent with specialization in Marketing, preferably from a premier institution. Minimum 2 to 3 years of Post-qualification experience in Treasury functions of Banks.\r\n\r\nTreasury - Dealers/ Traders -> Graduation or equivalent. Minimum 2 years Post-qualification experience of Trading in Forex and Debt Markets in Banks.\r\n\r\nTreasury -Relationship Managers (Forex/Derivatives) -> Full time M.B.A or equivalent with specialization in Marketing and Sales. Minimum 3 to 5 years of Post-qualification experience as Relationship Manager for Treasury functions/Treasury product sales.\r\n\r\nTreasury - Equity Analyst -> Full time M.B.A or equivalent with specialization in Finance, preferably from a premier institution. CA/CFA/FRM will be preferred. Minimum 3 to 5 years of Post-qualification experience as Equity Analyst in Banks/Corporates.\r\n\r\nRisk Management -> Full Time MBA or Full Time PG in Econometrics/ Statistics/ Financial Risk Management/ Data science or Full Time PG in Risk Mgmt./ Maths/ Economics/ Financial Engg. from a recognized University/ Other reputed Institutions such as Indian Statistical Institution, Kolkata. Knowledge of statistical packages such as SAS/ R / PYTHON etc. is preferable. Post-qualification experience of minimum 2 - 3 years in Credit Rating Model/ Score Card Development / Credit Risk Management/Credit Management / Market Risk / Treasury Operations / Model Validation in the Banking/ Financial Sector.\r\n\r\nAgriculture product specialist -> Graduate Degree with minimum 03 Years post qualification experience.\r\n\r\nMarketing -> Full time MBA / Full time PGDBM / Full time PGDM / Full Time Post-Graduate qualification with specialization in Marketing. Minimum 03 years of experience in a Banking / Financial Services industry of which at least 2 years in same organization as Relationship/ Key Account Manager for sale of liability products (CA, SB, Demat, Credit cards, POS, Internet Payment Gateway, Cash Management Services, etc) or Asset Products (Retail / mortgage loans, etc.)\r\n\r\nPlanning (S-I) -> M.A. Economics or M.Sc. Statistics/M.Com (Banking), or M.Sc./M.A. (Operations Research) or Full Time MBA (Finance) from a recognized university/ reputed institute. Knowledge of MS Office/ Excel/ Access/ PowerPoint is essential.  02 years Full Time PGDM/ 2 years Full Time PG DBM/ 2 years Full Time PGPM with specialization in Finance.\r\n\r\nPlanning (S-II) -> M.A. Economics or M.Sc. Statistics/M.Com (Banking), or M.Sc./M.A. (Operations Research), or Full Time M.B.A (Finance) from a recognized University/ Institute. Knowledge of MS Office/ Excel/ Access/ PowerPoint is essential. Post-qualification experience of minimum 3 years in Statistical Analysis, Forecasting and Budgeting, Data Analysis in the Banking/ Financial Sector. 02 years Full Time PGDM/ 2 years Full Time PG DBM/ 2 years Full Time PGPM with specialization in Finance.\r\n\r\nEconomists (S-II) -> Economics Graduate and M.A (Economics) / Full Time MBA (Finance). Post-qualification experience of minimum 2 years in financial institutions. 02 years Full Time PGDM/ 2 years Full Time PG DBM/ 2 years Full Time PGPM with specialization in Finance.\r\n\r\nEconomist (S-IV) -> Economics Graduate and M.A (Economics). Preferably with M.Phil/Ph. D. in economics. Minimum 6 years Post-qualification experience.\r\n\r\nLaw -> A Bachelor Degree in Law. (Candidates with Higher Qualification and experience will be preferred.) Minimum 03 years post qualification experience.\r\n\r\nIT - Software Development –> 04 years Engineering/ Technology Degree in Computer Science/Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics & Instrumentation (OR) Post Graduate Degree in Electronics/ Electronics & Tele Communication/ Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications (OR) Graduate having passed DOEACC \'B\' level Additional Qualification like Degree/Diploma/ Certificate in Networking, Programming, Languages, Database, IT security, etc. is desirable. Minimum 04 Years post qualification experience.\r\n\r\nIT - Data Scientist -> PhD/MS or equivalents in applied mathematics, statistics, Computer Science. Minimum 04 Years post qualification experience.\r\n\r\nIT - Software Testing -> 04 years Engineering/ Technology Degree in Computer Science/ Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics & Instrumentation (OR) Post Graduate Degree in Electronics/ Electronics & Tele Communication/Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications. (OR) Graduate having passed DOEACC \'B\' level Additional Qualification like Degree/Diploma/ Certificate in Networking, Programming, Languages, Database, IT security, etc. is desirable. Minimum 06 Years post qualification experience.\r\n\r\nIT - Database Management -> 04 year Engineering/ Technology Degree in Computer Science/Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics &Instrumentation OR Post Graduate Degree in Electronics/ Electronics & Tele Communication/Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications OR Graduate having passed DOEACC \'B\' level Additional Qualification like Degree/ Diploma/ Certificate in Networking, Programming, Languages, Database, IT security, etc. is desirable. Minimum 06 Years post qualification experience.\r\n\r\nIT - Data Analyst -> 4 year Engineering/ Technology Degree in Computer Science/ Information Technology (OR) Post Graduate Degree in Computer Science/ Information Technology/ Computer Applications Desirable: Additional qualification like Degree/ Diploma/ Certificate in Networking, Programming languages, Database, IT Security etc.  Minimum 06 Years post qualification experience.\r\n\r\nIT security (CISA) -> 4 year Engineering/ Technology Degree in Computer Science/Computer Science & Engineering/ Computer Engineering/Computer Applications/ Information Technology/ Electronics/ Electronics & Telecommunications/ Electronics & Communication/ Electronics & Instrumentation OR Post Graduate Degree in Electronics/ Electronics & Tele Communication/ Electronics & Communication/ Electronics & Instrumentation/ Computer Science/ Information Technology/ Computer Applications OR Engineering Graduate and minimum One year Diploma in IT / Computer Science from recognised university / Institute (OR) Graduate / Post Graduate in Science / Commerce and minimum One year Diploma in IT / Computer Science from recognised University / Institute. CISA / CISSP / CISM certification is essential. Desirable : ISO 27001 LA Certification. Minimum 3 to 5 years of post qualification experience.\r\n\r\nHRM -> Full time MBA/ Full Time PG DMin HRM/Personnel Management / Industrial Relations/HRD or Full Time Post Graduation (2 Years) in Social Work having specialization in HRM/PM/IR/HRD. Post qualification experience of minimum 2 years in Banks/Financial Institutions in Specialized Area of Human Resources Management including Disciplinary action, HRD, recruitment / promotions, training, performance appraisals, etc. 02 years Full Time PGDBM/ 02 years Full Time PGPM with specialization in HRM/ Personnel Management/ Industrial Relations/ HRD.\r\n\r\nHRM -> Full time MBA/ Full Time PGDM(2 Years) in HRM/Personnel Management / Industrial Relations/HRD or Full Time Post Graduation(2 years) in Social Work having specialization in HRM/PM/IR/HRD. Post qualification experience of minimum 4 years in Banks/Financial Institutions in Specialized Area of Human Resources Management including Disciplinary action, HRD, recruitment / promotions, training, performance appraisals, etc. 02 years Full Time PGDBM/ 02 years Full Time PGPM with specialization in HRM/ Personnel Management/ Industrial Relations/ HRD.\r\n\r\nSecurity -> Graduation degree in any discipline. An officer not below the rank of Captain of Indian Army or equivalent rank in India Navy / Air Force with a minimum of 5 years of commissioned service or an Officer not below the rank of Asst SP/Dy SP/ Asst Comdt/ Dy SP/ Asst Comdt/ Dy Comdt of Indian Police / Para Military Forces with a minimum of 5 years service as an officer in such Force.\r\n\r\nFire -> BE (Fire) or equivalent from National Fire Service College, Nagpur / any other College or Institution duly approved by All India Council for Technical Education (AICTE) (OR) Graduate from a recognized University/ Institute and having Grade I Fire Examination Certificate of IFE (India).\r\n\r\nElectrical Engineers -> BE (Electrical) or equivalent. Minimum 3 years of post-qualification experience in supervising / monitoring electrical work in buildings / projects.\r\n\r\nCivil engineers / Architects -> BE [Civil] or equivalent / B.E. [Architecture] or equivalent. Minimum 3 years of post-qualification experience in construction, purchase/ renovation, maintenance of new & existing premises in large organisation.\r\n\r\nOfficial Language [Hindi] -> M.A. in Hindi OR English OR Sanskrit AND Hindi and English as subject at degree level. Desirable : P.G. Diploma in translation from a recognized Institute. Minimum 2 years post-qualification experience as an Official Language Officer in a Central Government/ Public Sector Bank/ Undertaking/ Financial Institution.\r\n\r\nSelection Process:\r\n\r\n(1) For Scale I Posts -> The selection process will comprise of online written test, in the discipline of Fire and Planning, followed by GD/Interview of the shortlisted candidates. \r\n\r\n\r\n(2) For the posts in Scale II, Scale III & Scale IV -> The applications will be shortlisted and candidates will then be called for GD/Interview. However, for Scale II and Scale III, if the number of eligible applications received is large, then Bank reserves the right to hold an Online Written Test also.\r\nApplication Fee and Intimation Charges (A Non-Refundable): ₹ 100/- for SC / ST / PWD Category candidates; ₹ 600/- for General and OBC Category Candidates. The Candidates have to make the payment of requisite fee/intimation charges through Online mode only. The online payment can be made using only Debit Cards (RuPay/Visa/MasterCard/Maestro), Credit Cards, Internet Banking, IMPS, Cash Cards/ Mobile Wallets.\r\n\r\nHow to Apply: Interested Eligible Candidates are required to Apply Online through Bank of Baroda Online Recruitment Portal on or before 29/11/2016 (Last date extended up to 02/12/2016). \r\n\r\nImportant Dates:\r\n\r\nThe starting date for Online Registration -> 09/11/2016 \r\nThe Last date for Online Registration of Application -> 29/11/2016 \r\nPayment of Fee Online -> 09/11/2016 to 29/11/2016\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
+(164, 7, 0, 1, 'NATIONAL HOUSING BANK', 'National Housing Bank (NHB) invites Online applications for requirement of talented and committed professionals in junior management, senior management and top executive cadre posts in 2016-17. The closing date for online registration is 30th November 2016.\r\n\r\nAbout: National Housing Bank is the apex Financial Institution in the country for housing, set up under an Act of Parliament and is a wholly owned subsidiary of Reserve Bank of India (RBI).\r\n\r\nName of the Post\r\n\r\nNo of Vacancies\r\n\r\nPay Scale\r\n\r\nAssistant Manager (AM)\r\n\r\n14 (General Stream – 12, Law – 01)\r\n\r\nJMG Scale - I ₹ 23700-980/ 7-30560-1145/ 2-32850-1310/ 7-42020\r\n\r\nAssistant General Manager (AGM)\r\n\r\n02 (Law – 01, Economy & Strategy – 01)\r\n\r\nSMG Scale ₹ 59170-1650/2-62470-1800/2-66070\r\n\r\nDeputy General Manager (DGM)\r\n\r\n01\r\n\r\nTEG Scale VI ₹ 68680-1960/ 4-76520\r\n\r\nChief Finance Officer (CFO)\r\n\r\n01\r\n\r\nTEG Scale VII ₹ 76520-2120/ 4-85000\r\n\r\nAge Limit: (Age Relaxation - 05 Years for SC / ST, 03 Years for OBC-NCL, FOr others as per Govt. Rules)\r\n\r\nAssistant Manager -> Candidates must have been born not earlier than 02.10.1988 and not later than 01.10.1995 (both dates inclusive) \r\n\r\n\r\nAssistant General Manager -> Minimum Age Limit is 33 years and Maximum Age limit is 50 years as on 01.10.2016. Candidates must have been born not earlier than 02.10.1966 and not later than 01.10.1983 (both dates inclusive) \r\nDeputy General Manager -> Minimum Age Limit is 35 years and Maximum Age limit is 55 years as on 01.10.2016. Candidates must have been born not earlier than 02.10.1961 and not later than 01.10.1981 (both dates inclusive) \r\nChief Finance Officer -> Minimum Age Limit is 40 years and Maximum Age limit is 55 years as on 01.10.2016 Candidates must have been born not earlier than 02.10.1961 and not later than 01.10.1976 (both dates inclusive)\r\nEducational Qualifications:\r\n\r\nAM (General Stream) ->\r\n\r\n(1) Bachelor\'s Degree in any discipline with minimum of 60% marks (55% in case of candidates belonging to SC/ST) or Master\'s Degree in any discipline with aggregate minimum of 55% marks or CA/ICWA/MBA with minimum 55% marks (50% in case of candidates belonging to SC/ST). \r\n(2) Preference will be given to candidates having Professional/ MBA degree.\r\n\r\nAM (Law) ->\r\n\r\n(1) Bachelor\'s Degree in Law from a recognised University with aggregate minimum of 60% marks Or Master\'s Degree in Law with aggregate minimum of 50%. \r\n(2) While no prior experience is required.\r\n\r\nAGM (Law) ->\r\n\r\n(1) Graduate with a degree in Law or a Law Graduate who has passed 5 years integrated law course from a recognized university in India. \r\n(2) Minimum of 15 years post qualification experience.\r\n\r\nAGM (Economy & Strategy) ->\r\n\r\n(1) A Post Graduate degree in Economics with minimum 50% marks or equivalent from a recognized institute/university. Weightage may be given to candidates with M. Phil / PhD/ other degree and equivalent qualifications. \r\n(2) Minimum of 15 years post qualification experience.\r\n\r\nDGM ->\r\n\r\n(1) Graduate/ Post graduate with a degree in finance/ any other discipline from a recognized Institute/ University. \r\n(2) Minimum of 15 years post qualification experience.\r\n\r\nCFO ->\r\n\r\n(1) Should have strong academic credentials and be a qualified Chartered Accountant. Additional advanced qualifications like CPA, CFA or FSA will be an added advantage. \r\n(2) Minimum of 18 years of broad experience in the finance function in banks/large corporates/ PSUs/ FIs/ financial services organization is essential, out of which minimum 10 years of experience in Banks/FIs.\r\n\r\nSelection Process:\r\n\r\n(1) For Assistant Manager Posts -> Online Test, Interview and/ or Group Discussion only. \r\n(2) For AGM, DGM, CFO Posts -> Shortlisted candidates will be called for Personal Interview.\r\n\r\nApplication Fee: Online payment of ₹ 500/- as non-refundable application fee for General, OBC, Ex-Servicemen, J & Domicile and 1984 riot candidates. The Online payment of ₹ 50/- as non-refundable communication charges for SC/ST candidates who are applying for post of Assistant Managers.\r\n\r\nHow to Apply: Eligible Candidates can apply online only. The last date for submission of online applications is 20/11/2016 (Last date extended up to 30/11/2016).\r\n\r\nImportant Dates:\r\n\r\nClosing date for Online registration of application -> 30/11/2016 \r\nClosure for editing application details -> 30/11/2016 \r\nLast date for printing your application -> 15/12/2016 \r\nOnline Fee Payment -> 27/10/2016 to 30/11/2016\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
+(165, 7, 0, 1, 'NMRC , NOIDA METRO', 'Noida Metro Rail Corporation Limited (NMRC) required young, dynamic and motivated Indian Citizens for opening of following Non-Executive Recruitment positions in NMRC Company 2016-2017. The NMRC Recruitment 2016-17 Online registration open from 5th November 2016 and close on 15th December 2016.\r\n\r\nADVT NO: NMRC / OM / HR /I/ 2016\r\n\r\nPost Code\r\n\r\nName of Post\r\n\r\nTotal Vacancies\r\n\r\nPay Grade (IDA)\r\n\r\nNE01\r\n\r\nStation Controller/ Train Operator (SC/TO)\r\n\r\n194 (38 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 02\r\n\r\nCustomer Relations Assistant (CRA)\r\n\r\n65 (13 Vacancy reserved for Female)\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE 03\r\n\r\nJunior Engineer/ Electrical\r\n\r\n59 (11 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 04\r\n\r\nJunior Engineer/ Electronics\r\n\r\n63 (12 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 05\r\n\r\nJunior Engineer/ Mechanical\r\n\r\n18 (03 Vacancy reserved for Female)\r\n\r\n₹ 13500 - ­25520\r\n\r\nNE 06\r\n\r\nJunior Engineer/ Civil\r\n\r\n20 (04 Vacancy reserved for Female)\r\n\r\n₹ 13500­ - 25520\r\n\r\nNE 07\r\n\r\nAccount Assistant\r\n\r\n08 (01 Vacancy reserved for Female)\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE08\r\n\r\nOffice Assistant\r\n\r\n06 (01 Vacancy reserved for Female)\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE09\r\n\r\nStenographer\r\n\r\n01\r\n\r\n₹ 10170 - ­18500\r\n\r\nNE10\r\n\r\nMaintainer\r\n\r\n311 (Electrician - 112, Fitter - 55, Electronic Mechanic - 129, Ref & AC Mechanic - 15) [61 reserved for Female]\r\n\r\n₹ 8000 - ­14140\r\n\r\nAge Limit (as on 01/07/2016): 18 to 25 Years for Maintainer Post; 18 to 28 Years for all other posts.\r\n\r\nEducational Qualifications: [From a Government Recognized University / Institute]\r\n\r\nStation Controller/ Train Operator -> 03 Years Engineering Diploma in Electrical/ Electronic or equivalent or B.Sc Hons in (Physics/ Chemistry/ Maths) or B.Sc (Physics/ Chemistry/ Maths).\r\n\r\nCustomer Relations Assistant -> Three/Four years Graduation course in any discipline and computer literacy (Certificate in Computer Application Course of a minimum 6 weeks duration).\r\n\r\nJunior Engineers -> Three years Engineering Diploma in concerned discipline (Civil / Electrical / Electronics / Mechanical) or equivalent trade.\r\n\r\nAccount Assistant –> B.Com Degree or equivalent graduation.\r\n\r\nOffice Assistant -> Bachelor\'s Degree (B.A./ B.Sc./ B.Com) or Equivalent.\r\n\r\nStenographer -> Any Degree with 01 Year course in Office Management and Secretarial Practice/ equivalent. Shorthand Speed-80 wpm/ English, Typing Speed-40 wpm/ English, Desirable - proficiency in shorthand/ typing in Hindi.\r\n\r\nMaintainer -> ITI (NCVT/SCVT) in required trade (Electrician / Fitter / Electronic Mechanic / Ref & AC Mechanic).\r\n\r\nSelection process:\r\n\r\n(1) For the post of Station Controller/ Train Operator (post code-NE01) and Customer Relations Assistant (post code-NE02) -> the selection methodology will comprise four-stage process:- Written Test (two papers), Psycho Test (qualifying) & Personal Interview followed by Medical examination in Aye-one category. \r\n\r\n\r\n(2) For the post of Junior Engineers (Electrical/Electronics/Mechanical/Civil), (post codes NE03, NE04, NE05, & NE06) -> the selection methodology will comprise three-stage process:- Written Test (two papers), Personal Interview followed by Medical examinations in Aye-one category not below Aye-three. \r\n(3) For the post of Account Asstt, Office Asstt & Stenographer (post codes NE07, NE08 & NE09) -> the selection methodology will comprise two-stage process:- Written Test (two papers), followed by Medical examination in Cee-One category. There will be no interview for this category of post. \r\n(4) For the post of Maintainer (post codes NE10) -> the selection methodology will comprise two-stage process:- Written Test (one paper), followed by Medical examination in Bee-One category. There will be no interview for these categories of posts.\r\nApplication Fee (A Non-refundable fee): The candidates belonging to General (UR) and OBC category are required to pay ₹ 400/- (plus Bank Charges), for candidates belonging to SC/ST/PWD category are required to pay ₹ 150/- (plus Bank Charges). The fee can be made through Prescribed Bank Challan. The Bank challan will be available to download after filling online application, The system generated Bank challan will be in triplicate (1st copy - Bank Copy, 2nd copy - Candidate\'s Copy and 3rd copy - NMRC\'s Copy). Candidates are required to take a print out of this system generated Bank Challan and deposit the requisite Written Examination Fee (for fee details see para \"Payment of application fee\") in any branch of State Bank of India (SBI) after a minimum of 24 hrs of generation of the Bank Challan. Only, State Bank of India (SBI) has been authorized by DMRC to collect the application fee, in a specially opened DMRC Account No. 33700092265.\r\n\r\nHow to Apply: Candidates are required to apply online through Delhi Metro Rail Website. The last date for registration of Online applications is 15/12/2016 (19/12/2016 – According to New press release) up to 23:59 Hours. For any clarification / queries email to helpdesknmrc2016@gmail.com .\r\n\r\nImportant Dates:\r\n\r\nThe Closing date for Online Registration -> 15th December 2016 up to 23:59 Hours. \r\nThe Application Fee to be Paid -> From 7th November 2016 to 19th December 2016. \r\nBank Challan will be generated up to -> 15th December 2016 up to 23:59 Hours.\r\n\r\n\r\n\r\n', '2016-11-27', '2016-12-07', 0, 0, 0, 0),
 (166, 2, 23, 552, 'tutorial for JET\n', 'we provide full complete JET coaching with surety of selection\nfor more info contact us \nmob 9352881111', '2016-11-30', '2017-05-29', 0, 0, 1, 0),
 (167, 2, 23, 552, 'RAS batch 2017\nfully designed specifically for target RAS \nspecial faculty from delhi and jaipur\nfully digital study with coordinations', 'special experienced faculty from delhi and jaipur\nfully digital study\nall rajasthan test rank ', '2016-12-23', '2017-06-21', 1, 0, 1, 0),
 (168, 7, 0, 1, 'Syndicate Bank -400 Probationary Officer ', 'Total No. of Posts: 400\r\nName of the Post: Probationary Officer in Junior Management Grade/ Scale-I\r\n1. Unreserved: 202 Posts\r\n2. OBC: 108 Posts\r\n3. SC: 60 Posts\r\n4. ST: 30 Posts\r\n\r\nAge Limit: Candidates age limit should be between 20 to 28 years as on 01-10-2016 (i.e. a candidate must have been born not earlier than 02-10-1988 and not later than 01-10-1996 and (both days inclusive)). Age relaxation is applicable to 05 years for SC/ ST, 03 years for OBC (Non-Creamy Layer) candidates & 10 years for PWD candidates and other relaxation details refer the notification.\r\n\r\nEducational Qualification: Candidates should possess Degree (Graduation) with minimum 60% (55% for SC/ ST/ PWD) marks in any discipline from a recognized University or any equivalent qualification as such recognized by Central Government.\r\n\r\nSelection Process: Candidates will be selected based on online test followed by Group Discussion or/ and Personal Interview.\r\n\r\nApplication Fee: Candidates should pay Rs. 600/- (Application Fee + Intimation Charges) for General & Other candidates and Rs. 100/- (Intimation Charges Only) for SC/ ST/ PWD candidates through online by using only Master/ Visa Debit or Credit cards or Internet Banking.\r\n\r\nHow to Apply: Eligible candidates may apply online through the website www.syndicatebank.in from 14-12-2016 to 28-12-2016.\r\n\r\nInstructions to Apply Online:\r\n1. Before applying online candidates should have valid e mail id & contact number\r\n2. Candidates should scan their photograph & Signature\r\n3. Candidates log on the website www.syndicatebank.in\r\n4. Click on Annoucement ————-> Careers\r\n5. Select the desired post & clik on Apply Online\r\n6. Read all instructions & fill all the details\r\n7. Check once before submit the form\r\n8. Now take a print out of online application for future use\r\n\r\nImportant Dates:\r\n\r\nStarting Date to Apply Online and Payment of Fee	14-12-2016\r\nLast Date to Apply Online and Payment of Fee	28-12-2016\r\nLast Date for Editing Application Details	28-12-2016\r\nLast date for printing your application	12-01-2017\r\nDate for Download of Call letter for Examination	After 14-02-2017\r\nDate of Online Test (Tentative)	26-02-2017\r\n\r\n\r\n', '2016-12-29', '2017-01-08', 0, 0, 0, 0),
@@ -281,7 +279,7 @@ INSERT INTO `business_extra` (`id`, `b_extra_master_id`, `catid`, `userid`, `hea
 (219, 2, 25, 711, 'VACANCY', 'REQUIRED MALE / FEMALE\n\nQUALIFICATION B.A.D \nEXPERIENCE 1-2 YEARS\n\nSALARY 10,000  ABOVE', '2017-07-18', '2018-01-14', 1, 0, 5, 0),
 (220, 3, 25, 711, 'sfghj', 'cghhj', '2017-07-18', '2018-01-14', 1, 0, 5, 0),
 (221, 2, 65, 712, 'RAKHI OFFER', '20 %  /  DISCOUNT ON UPPER SLEEPER FOR LADIES', '2017-07-18', '2018-01-14', 1, 0, 5, 0),
-(222, 3, 25, 714, 'RECRUITMENT / VACANCY', 'REQUIRED.            :-      MALE /  FEMALE\nQUALIFICATION   : -    GRADUATE\nEXPERIENCE.        :-     1 - 2 YEAR''S\nSALARY                  :-      10,000\n', '2017-07-18', '2018-01-14', 1, 0, 5, 0),
+(222, 3, 25, 714, 'RECRUITMENT / VACANCY', 'REQUIRED.            :-      MALE /  FEMALE\nQUALIFICATION   : -    GRADUATE\nEXPERIENCE.        :-     1 - 2 YEAR\'S\nSALARY                  :-      10,000\n', '2017-07-18', '2018-01-14', 1, 0, 5, 0),
 (223, 3, 25, 715, 'REQUIRED', 'REQUIREMENT MALE/ FAMALE\n\nQUAFALATION. B.A\n\nEXPERIENCE 1-2 YEARS\n\nSALARY.         10,000/ ABOVE\n\n', '2017-07-18', '2018-01-14', 0, 0, 5, 0),
 (224, 2, 65, 728, 'THE BLUE TURBAN IS AVAILABLE FOR PHOTISHOOT', 'HOTEL THE BLUE TURBAN ROOF TOP IS AVAILABLE  FOR PHOTO & VIDEO SHOOT \nLIKE PRE WEDDING SHOOT, FOR MODELING PORTFOLIO SHOOT, MOVIE ,SERIAL ETC.\n\nFEEL FREE TO CONTACT US FOR EXCITING OFFERS  ', '2017-07-20', '2018-01-16', 1, 0, 5, 0),
 (225, 7, 0, 1, 'OBC BANK', 'Oriental Bank of Commerce Vacancy Details:\r\nTotal No of Posts: 296\r\nName of the Post: Advocate\r\nName of the District:\r\n1. Ajmer: 08 Posts\r\n2. Alwar: 11 Posts\r\n3. Baran: 03 Posts\r\n4. Bhopal: 22 Posts\r\n5. Bikaner: 22 Posts\r\n6. Bundi: 03 Posts\r\n7. Churu: 03 Posts\r\n8. Dausa: 03 Posts\r\n9. Dewas: 03 Posts\r\n10. Gurgaon: 03 Posts\r\n11. Gwalior: 10 Posts\r\n12. Hanumangarh: 29 Posts\r\n13. Indore: 11 Posts\r\n14. Jaipur: 58 Posts\r\n15. Jodhpur: 10 Posts\r\n16. Kota: 09 Posts\r\n17. Morena: 06 Posts\r\n18. Nagaur: 03 Posts\r\n19. Pali: 04 Posts\r\n20. Raisen: 04 Posts\r\n21. Rajsamand: 04 Posts\r\n22. Rewari : 10 Posts\r\n23. Sehore: 05 Posts\r\n24. Sikar: 03 Posts\r\n25. Sriganganagar: 36 Posts\r\n26. Udaipur: 05 Posts\r\n27. Ujjain: 04 Posts\r\n28. Vidisha: 04 Posts\r\n\r\nEducational Qualification: Candidates should be advocate shall be empanelled for Civil Courts/ Title Search/ Securitization Act/ Consumer Forum/ Central Government Industrial Tribunal/ Complaint under Sec. 138 of Negotiable Instruments Act (if amount involved is less than 10 lac) etc., advocate shall consist of advocates from amongst the energetic and promising members of the bar preferably with excellent academic background, have a minimum 5 years of standing practice at the Bar or is ex banker having length of service or retired executive of reputed PSU having experience as enumerated here under and shall have attended different types of matters before the Courts / Forum/ Tribunals, have expertise in most of the following fields such as Documentation, title search, Banking laws, Recovery litigation before Courts and Securitization Act, District Consumer Forum, Criminal Complaints, Complaints u/s 138 N.I. Act, Labour Cases/ CGIT.\r\n\r\nSelection Process: Candidates will be selected based on applicants performance in Interview.\r\n\r\nHow to Apply: Eligible candidates can send their application in prescribed application format along with relevant documents to Oriental Bank of Commerce on or before 26-08-2017 till 05.00 PM\r\n\r\nLast Date for Receipt of Application: 26-08-2017 till 05.00 PM\r\n\r\n\r\n\r\n\r\nOriental Bank of Commerce Recruitment 2017 – 86 Advocate Posts: Oriental Bank of Commerce has given an employment notification for the recruitment of 86 Advocate vacancies on various Junior, Senior Panel (Districts). Eligible candidates may apply in the prescribed format on or before 31-08-2017 at 05.00 pm. Other details like educational qualification, how to apply are given below…\r\n\r\nOriental Bank of Commerce Vacancy Details:\r\nTotal No of Posts: 86\r\nName of the Post: Advocate\r\nName of the Districts:\r\n1. Agra: 06 Posts\r\n2. Aligarh: 03 Posts\r\n3. Barabanki: 03 Posts\r\n4. Bhdohi: 02 Posts\r\n5. Bharatpur: 02 Posts\r\n6. Chandauli: 02 Posts\r\n7. Deoria: 03 Posts\r\n8. Fatehpur: 02 Posts\r\n9. Firojabad: 03 Posts\r\n10. Gorakhpur: 07 Posts\r\n11. Hathras: 03 Posts\r\n12. Kanpur Nagar: 06 Posts\r\n13. Lucknow: 19 Posts\r\n14. Mathura: 06 Posts\r\n15. Raebareilly: 02 Posts\r\n16. Sant Kabir Nagar: 02 Posts\r\n17. Sant Ravidas Nagar: 02 Posts\r\n18. Sitapur: 03 Posts\r\n19. Unnao: 03 Posts\r\n20. Varanasi: 07 Posts\r\n\r\nEducational Qualification: Candidates should have advocate shall be empanelled for Civil Courts/ Title Search/ Securitization Act/ Consumer Forum/ Central Government Industrial Tribunal/ High Court/ State Commission/ DRT/ DRAT/ National Commission/ Supreme Court/ Criminal Complaint under Sec. 138 of Negotiable Instruments Act (if amount involved is less than 10 lac) etc. and minimum 5 years of standing practice at the Bar or is ex banker having length of service or retired executive of reputed PSU having experience as enumerated here under and shall have attended different types of matters before the Courts / Forum/ Tribunals, have expertise in most of the following fields such as Documentation, title search, Banking laws, Recovery litigation before Courts and Securitization Act, District Consumer Forum, Criminal Complaints, Complaints u/s 138 N.I. Act, Labour Cases/ CGIT.\r\n\r\nSelection Process: Candidates will be selected based on interview.\r\n\r\nHow to Apply: Eligible candidates can send their application in the prescribed format along with relevant documents to Oriental Bank of Commerce on or before 31-08-2017 at 05.00 pm.\r\n\r\nLast Date for Receipt of Application: 31-08-2017 at 05.00 pm.\r\n\r\n\r\n\r\n', '2017-08-10', '2017-08-20', 1, 0, 0, 0),
@@ -295,13 +293,12 @@ INSERT INTO `business_extra` (`id`, `b_extra_master_id`, `catid`, `userid`, `hea
 -- Table structure for table `business_extra_images`
 --
 
-CREATE TABLE IF NOT EXISTS `business_extra_images` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `business_extra_images` (
+  `id` int(11) NOT NULL,
   `business_extra_id` int(11) NOT NULL,
   `imageid` int(11) NOT NULL,
-  `sort_order` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=304 ;
+  `sort_order` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `business_extra_images`
@@ -613,13 +610,12 @@ INSERT INTO `business_extra_images` (`id`, `business_extra_id`, `imageid`, `sort
 -- Table structure for table `business_extra_master`
 --
 
-CREATE TABLE IF NOT EXISTS `business_extra_master` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `business_extra_master` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `catid` int(11) NOT NULL,
-  `imageid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+  `imageid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `business_extra_master`
@@ -628,7 +624,6 @@ CREATE TABLE IF NOT EXISTS `business_extra_master` (
 INSERT INTO `business_extra_master` (`id`, `name`, `catid`, `imageid`) VALUES
 (1, 'Advertisement', 0, 0),
 (2, 'Offers', 0, 0),
-(3, 'Local Jobs', 123, 3203),
 (4, 'On Rent', 4, 412),
 (5, 'To Sale', 4, 413),
 (7, 'Govt Jobs', 123, 3202);
@@ -639,14 +634,12 @@ INSERT INTO `business_extra_master` (`id`, `name`, `catid`, `imageid`) VALUES
 -- Table structure for table `call_number`
 --
 
-CREATE TABLE IF NOT EXISTS `call_number` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `call_number` (
+  `id` int(11) NOT NULL,
   `number` text COLLATE utf8_unicode_ci NOT NULL,
   `imei` text COLLATE utf8_unicode_ci NOT NULL,
-  `datetime` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+  `datetime` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -654,13 +647,12 @@ CREATE TABLE IF NOT EXISTS `call_number` (
 -- Table structure for table `catcontrolmapping`
 --
 
-CREATE TABLE IF NOT EXISTS `catcontrolmapping` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `catcontrolmapping` (
+  `id` int(11) NOT NULL,
   `catid` int(11) NOT NULL,
   `controlsid` int(11) NOT NULL,
-  `screenid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=184 ;
+  `screenid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `catcontrolmapping`
@@ -857,13 +849,12 @@ INSERT INTO `catcontrolmapping` (`id`, `catid`, `controlsid`, `screenid`) VALUES
 -- Table structure for table `catcontroluservalue`
 --
 
-CREATE TABLE IF NOT EXISTS `catcontroluservalue` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `catcontroluservalue` (
+  `id` int(11) NOT NULL,
   `catcontrolmapid` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
-  `value` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1147 ;
+  `value` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `catcontroluservalue`
@@ -1527,7 +1518,7 @@ INSERT INTO `catcontroluservalue` (`id`, `catcontrolmapid`, `userid`, `value`) V
 (655, 92, 252, ''),
 (656, 91, 252, ''),
 (657, 90, 252, '94141955762'),
-(658, 83, 252, 'DR NEEL"S DENTAL CLINIC'),
+(658, 83, 252, 'DR NEEL\"S DENTAL CLINIC'),
 (659, 86, 252, '10:00 AM -  8:00 PM'),
 (660, 87, 252, '10:00 AM -  8:00 PM'),
 (661, 88, 252, '10:00 AM -  8:00 PM'),
@@ -2015,7 +2006,19 @@ INSERT INTO `catcontroluservalue` (`id`, `catcontrolmapid`, `userid`, `value`) V
 (1143, 183, 705, 'ANNUAL FUNCTION 30 SEPT  '),
 (1144, 183, 711, 'admission opem'),
 (1145, 183, 714, 'ADMISSION OPEN'),
-(1146, 183, 724, 'YOGA CLASSES  AN KARATE  CLASSES ');
+(1146, 183, 724, 'YOGA CLASSES  AN KARATE  CLASSES '),
+(1147, 17, 808, 'test'),
+(1148, 18, 808, 'gnsjcusjfj@gjsjc.cjs'),
+(1149, 19, 808, 'djscjsjcjd djjsjf'),
+(1150, 20, 808, '9957415085'),
+(1151, 21, 808, 'sgnr'),
+(1152, 22, 808, 'nothing'),
+(1153, 17, 813, 'cjsfjsc'),
+(1154, 18, 813, 'cjajccjjj@fjakc.fjs'),
+(1155, 19, 813, 'fsskckff djskfkf'),
+(1156, 20, 813, '8583528475'),
+(1157, 21, 813, 'sgnr'),
+(1158, 22, 813, 'ffs');
 
 -- --------------------------------------------------------
 
@@ -2023,15 +2026,14 @@ INSERT INTO `catcontroluservalue` (`id`, `catcontrolmapid`, `userid`, `value`) V
 -- Table structure for table `category`
 --
 
-CREATE TABLE IF NOT EXISTS `category` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `category` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `parentid` int(11) NOT NULL DEFAULT '0',
   `sortorder` int(11) NOT NULL,
   `imageid` text COLLATE utf8_unicode_ci NOT NULL,
-  `isenable` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=153 ;
+  `isenable` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `category`
@@ -2179,8 +2181,8 @@ INSERT INTO `category` (`id`, `name`, `parentid`, `sortorder`, `imageid`, `isena
 (147, 'Printing Press', 5, 16, '3232', 0),
 (148, 'Tent House', 5, 17, '3228', 0),
 (149, 'Handlooms', 10, 24, '3233', 0),
-(150, 'Men''s Grooming', 5, 18, '3613', 1),
-(151, 'Women''s Grooming', 5, 19, '3614', 1),
+(150, 'Men\'s Grooming', 5, 18, '3613', 1),
+(151, 'Women\'s Grooming', 5, 19, '3614', 1),
 (152, 'Emitra Center', 8, 15, '4513', 1);
 
 -- --------------------------------------------------------
@@ -2189,14 +2191,11 @@ INSERT INTO `category` (`id`, `name`, `parentid`, `sortorder`, `imageid`, `isena
 -- Table structure for table `city`
 --
 
-CREATE TABLE IF NOT EXISTS `city` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `city` (
+  `id` int(11) NOT NULL,
   `name` varchar(220) COLLATE utf8_unicode_ci NOT NULL,
-  `pincode` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `name` (`name`),
-  UNIQUE KEY `pincode` (`pincode`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+  `pincode` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `city`
@@ -2213,24 +2212,23 @@ INSERT INTO `city` (`id`, `name`, `pincode`) VALUES
 -- Table structure for table `commition_travel`
 --
 
-CREATE TABLE IF NOT EXISTS `commition_travel` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `commition_travel` (
+  `id` int(11) NOT NULL,
   `commition` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `extra_charge` int(11) NOT NULL,
   `password` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `userid` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `version_name` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `force_update` tinyint(1) NOT NULL,
-  `api_url` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+  `api_url` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `commition_travel`
 --
 
 INSERT INTO `commition_travel` (`id`, `commition`, `extra_charge`, `password`, `userid`, `version_name`, `force_update`, `api_url`) VALUES
-(1, '0', 5, 'vikrant1729', 'ISEVA', '10', 2, 'http://affapi.mantistechnologies.com/service.asmx');
+(1, '0', 5, 'vikrant1729', 'ISEVA', '13', 3, 'http://affapi.mantistechnologies.com/service.asmx');
 
 -- --------------------------------------------------------
 
@@ -2238,15 +2236,14 @@ INSERT INTO `commition_travel` (`id`, `commition`, `extra_charge`, `password`, `
 -- Table structure for table `controls`
 --
 
-CREATE TABLE IF NOT EXISTS `controls` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `controls` (
+  `id` int(11) NOT NULL,
   `mastercontrolid` int(11) NOT NULL,
   `label` text COLLATE utf8_unicode_ci NOT NULL,
   `isrequired` int(2) NOT NULL DEFAULT '0',
   `placeholder` text COLLATE utf8_unicode_ci NOT NULL,
-  `sortorder` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=184 ;
+  `sortorder` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `controls`
@@ -2443,13 +2440,12 @@ INSERT INTO `controls` (`id`, `mastercontrolid`, `label`, `isrequired`, `placeho
 -- Table structure for table `controlsmetadata`
 --
 
-CREATE TABLE IF NOT EXISTS `controlsmetadata` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `controlsmetadata` (
+  `id` int(11) NOT NULL,
   `controlsid` int(11) NOT NULL,
   `name` text NOT NULL,
-  `sortorder` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `sortorder` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -2457,985 +2453,19 @@ CREATE TABLE IF NOT EXISTS `controlsmetadata` (
 -- Table structure for table `epaper`
 --
 
-CREATE TABLE IF NOT EXISTS `epaper` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `epaper` (
+  `id` int(11) NOT NULL,
   `epaper_userid` int(11) NOT NULL,
   `datetime` text COLLATE utf8_unicode_ci NOT NULL,
   `epaper_name` text COLLATE utf8_unicode_ci NOT NULL,
-  `total_page` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1042 ;
+  `total_page` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `epaper`
 --
 
 INSERT INTO `epaper` (`id`, `epaper_userid`, `datetime`, `epaper_name`, `total_page`) VALUES
-(1, 2, '2016-05-19', '2928322141348.pdf', 2),
-(2, 2, '2016-05-26', '2928492454764.pdf', 12),
-(3, 2, '2016-10-11', '2952356701553.pdf', 31),
-(20, 9, '2016-10-08', '2953030603149.pdf', 3),
-(27, 9, '2016-10-04', '2953033825767.pdf', 1),
-(28, 9, '2016-10-17', '2953398758537.pdf', 28),
-(29, 9, '2016-10-19', '2953712118506.pdf', 28),
-(32, 9, '2016-10-21', '2954051026355.pdf', 19),
-(33, 10, '2016-10-21', '2954052460881.pdf', 20),
-(34, 13, '2016-10-21', '2954093125944.pdf', 8),
-(36, 14, '2016-10-21', '2954104282545.pdf', 12),
-(37, 10, '2016-10-22', '2954211196274.pdf', 27),
-(38, 9, '2016-10-22', '2954212688114.pdf', 28),
-(39, 13, '2016-10-22', '2954258333183.pdf', 8),
-(40, 10, '2016-10-23', '2954386606613.pdf', 23),
-(41, 9, '2016-10-23', '2954389088195.pdf', 19),
-(42, 14, '2016-10-22', '2954498499963.pdf', 12),
-(43, 14, '2016-10-23', '2954499240157.pdf', 11),
-(44, 10, '2016-10-24', '2954561370899.pdf', 18),
-(45, 9, '2016-10-24', '2954562521617.pdf', 19),
-(46, 13, '2016-10-24', '2954603182320.pdf', 8),
-(47, 14, '2016-10-24', '2954613054313.pdf', 12),
-(48, 14, '2016-10-25', '2954750337637.pdf', 12),
-(49, 10, '2016-10-25', '2954751026925.pdf', 20),
-(50, 9, '2016-10-25', '2954751830334.pdf', 19),
-(51, 2, '2016-10-24', '2954761540939.pdf', 28),
-(52, 2, '2016-10-25', '2954762706682.pdf', 12),
-(55, 13, '2016-10-25', '2954782069070.pdf', 8),
-(56, 10, '2016-10-26', '2954901955393.pdf', 24),
-(57, 9, '2016-10-26', '2954903228749.pdf', 19),
-(59, 14, '2016-10-26', '2954915659031.pdf', 12),
-(60, 13, '2016-10-26', '2954947650548.pdf', 8),
-(61, 10, '2016-10-27', '2955074455529.pdf', 24),
-(62, 9, '2016-10-27', '2955075612029.pdf', 19),
-(63, 13, '2016-10-27', '2955121296999.pdf', 8),
-(64, 10, '2016-10-28', '2955248166256.pdf', 48),
-(65, 13, '2016-10-28', '2955296374215.pdf', 8),
-(66, 10, '2016-10-29', '2955426522434.pdf', 18),
-(67, 9, '2016-10-29', '2955427389724.pdf', 16),
-(68, 13, '2016-10-29', '2955474065695.pdf', 8),
-(69, 10, '2016-10-30', '2955593304747.pdf', 28),
-(70, 9, '2016-10-30', '2955594213532.pdf', 22),
-(71, 13, '2016-10-30', '2955631917379.pdf', 8),
-(72, 13, '2016-11-01', '2955983313540.pdf', 8),
-(73, 10, '2016-11-02', '2956112110125.pdf', 14),
-(74, 9, '2016-11-02', '2956113017689.pdf', 14),
-(76, 13, '2016-11-02', '2956160378354.pdf', 8),
-(77, 14, '2016-11-02', '2956187022231.pdf', 12),
-(78, 14, '2016-11-03', '2956217790836.pdf', 12),
-(79, 10, '2016-11-03', '2956287114442.pdf', 16),
-(80, 9, '2016-11-03', '2956287105298.pdf', 14),
-(81, 13, '2016-11-03', '2956330521465.pdf', 8),
-(82, 14, '2016-11-04', '2956390928757.pdf', 12),
-(83, 10, '2016-11-04', '2956457108961.pdf', 14),
-(84, 9, '2016-11-04', '2956457118170.pdf', 14),
-(85, 13, '2016-11-04', '2956507000820.pdf', 8),
-(86, 9, '2016-11-05', '2956631024492.pdf', 14),
-(87, 10, '2016-11-05', '2956631034380.pdf', 16),
-(88, 13, '2016-11-05', '2956678028295.pdf', 8),
-(89, 9, '2016-11-06', '2956807749651.pdf', 18),
-(90, 10, '2016-11-06', '2956807762651.pdf', 20),
-(91, 10, '2016-11-07', '2956972960328.pdf', 14),
-(92, 9, '2016-11-07', '2956972969704.pdf', 14),
-(93, 13, '2016-11-07', '2957024527710.pdf', 8),
-(94, 10, '2016-11-08', '2957145918281.pdf', 16),
-(95, 9, '2016-11-08', '2957145928189.pdf', 16),
-(96, 13, '2016-11-08', '2957196803431.pdf', 8),
-(97, 14, '2016-11-05', '2957214579953.pdf', 12),
-(98, 10, '2016-11-09', '2957318330257.pdf', 16),
-(99, 9, '2016-11-09', '2957318342583.pdf', 14),
-(100, 14, '2016-11-06', '2957350163636.pdf', 16),
-(101, 14, '2016-11-07', '2957351718941.pdf', 12),
-(102, 14, '2016-11-08', '2957352169616.pdf', 12),
-(103, 14, '2016-11-09', '2957353097209.pdf', 12),
-(104, 13, '2016-11-09', '2957370889604.pdf', 8),
-(105, 9, '2016-11-10', '2957492292182.pdf', 16),
-(106, 10, '2016-11-10', '2957492985717.pdf', 16),
-(107, 13, '2016-11-10', '2957535980803.pdf', 8),
-(108, 9, '2016-11-11', '2957661929575.pdf', 14),
-(109, 13, '2016-11-11', '2957709100925.pdf', 8),
-(110, 9, '2016-11-12', '2957839281103.pdf', 14),
-(111, 13, '2016-11-12', '2957884278449.pdf', 8),
-(112, 14, '2016-11-10', '2958188597463.pdf', 12),
-(113, 14, '2016-11-11', '2958189201469.pdf', 12),
-(114, 14, '2016-11-12', '2958196099983.pdf', 12),
-(115, 13, '2016-11-14', '2958232053786.pdf', 8),
-(116, 14, '2016-11-13', '2958293384285.pdf', 16),
-(117, 14, '2016-11-14', '2958294750023.pdf', 12),
-(118, 9, '2016-11-15', '2958355701141.pdf', 14),
-(119, 10, '2016-11-15', '2958356293142.pdf', 14),
-(120, 13, '2016-11-15', '2958401268328.pdf', 8),
-(121, 9, '2016-11-16', '2958528830066.pdf', 14),
-(122, 10, '2016-11-16', '2958529452887.pdf', 14),
-(123, 13, '2016-11-16', '2958573753660.pdf', 8),
-(124, 9, '2016-11-17', '2958703204916.pdf', 14),
-(125, 10, '2016-11-17', '2958703620199.pdf', 14),
-(126, 13, '2016-11-17', '2958748116406.pdf', 8),
-(127, 9, '2016-11-18', '2958875056846.pdf', 14),
-(128, 10, '2016-11-18', '2958876058728.pdf', 14),
-(129, 13, '2016-11-18', '2958923245997.pdf', 8),
-(130, 9, '2016-11-19', '2959049467425.pdf', 14),
-(131, 10, '2016-11-19', '2959050092647.pdf', 14),
-(132, 14, '2016-11-15', '2959071391643.pdf', 12),
-(133, 14, '2016-11-16', '2959073171097.pdf', 12),
-(134, 14, '2016-11-17', '2959075066041.pdf', 12),
-(135, 14, '2016-11-18', '2959076821451.pdf', 12),
-(136, 14, '2016-11-19', '2959077551042.pdf', 12),
-(137, 13, '2016-11-19', '2959093063971.pdf', 8),
-(138, 9, '2016-11-20', '2959227634357.pdf', 16),
-(139, 10, '2016-11-20', '2959229083716.pdf', 16),
-(140, 9, '2016-11-21', '2959392833436.pdf', 14),
-(141, 10, '2016-11-21', '2959393403066.pdf', 14),
-(142, 13, '2016-11-21', '2959442137269.pdf', 8),
-(143, 9, '2016-11-22', '2959566732550.pdf', 14),
-(144, 10, '2016-11-22', '2959567467163.pdf', 14),
-(145, 13, '2016-11-22', '2959610352082.pdf', 8),
-(146, 9, '2016-11-23', '2959739476804.pdf', 14),
-(147, 10, '2016-11-23', '2959740117139.pdf', 14),
-(148, 9, '2016-11-24', '2959912271405.pdf', 14),
-(149, 10, '2016-11-24', '2959912902320.pdf', 14),
-(150, 9, '2016-11-25', '2960082897494.pdf', 14),
-(151, 10, '2016-11-25', '2960083493971.pdf', 14),
-(152, 14, '2016-11-25', '2960084556750.pdf', 12),
-(153, 9, '2016-11-26', '2960256338342.pdf', 14),
-(154, 14, '2016-11-26', '2960257081468.pdf', 12),
-(155, 10, '2016-11-26', '2960257532028.pdf', 14),
-(156, 13, '2016-11-25', '2960297862342.pdf', 8),
-(157, 13, '2016-11-26', '2960304614424.pdf', 8),
-(158, 9, '2016-11-27', '2960428109511.pdf', 14),
-(159, 10, '2016-11-27', '2960428605738.pdf', 16),
-(160, 14, '2016-11-27', '2960428710595.pdf', 16),
-(161, 9, '2016-11-28', '2960602118016.pdf', 14),
-(162, 10, '2016-11-28', '2960602572362.pdf', 14),
-(163, 14, '2016-11-28', '2960603373969.pdf', 12),
-(164, 9, '2016-11-29', '2960773407882.pdf', 14),
-(165, 10, '2016-11-29', '2960773855533.pdf', 14),
-(166, 14, '2016-11-29', '2960773959839.pdf', 12),
-(167, 9, '2016-11-30', '2960948053511.pdf', 14),
-(168, 10, '2016-11-30', '2960948180435.pdf', 14),
-(169, 14, '2016-11-30', '2960949123969.pdf', 12),
-(170, 9, '2016-12-01', '2961120407973.pdf', 14),
-(171, 10, '2016-12-01', '2961120598740.pdf', 14),
-(172, 14, '2016-12-01', '2961121549153.pdf', 12),
-(174, 10, '2016-12-02', '2961294812404.pdf', 14),
-(175, 14, '2016-12-02', '2961295435685.pdf', 12),
-(176, 9, '2016-12-02', '2961295428676.pdf', 14),
-(177, 9, '2016-12-03', '2961469030206.pdf', 16),
-(178, 10, '2016-12-03', '2961469224689.pdf', 16),
-(179, 14, '2016-12-03', '2961469929909.pdf', 12),
-(180, 10, '2016-12-04', '2961640822086.pdf', 20),
-(181, 9, '2016-12-04', '2961641137207.pdf', 18),
-(182, 14, '2016-12-04', '2961644042285.pdf', 16),
-(183, 9, '2016-12-05', '2961810689471.pdf', 14),
-(184, 14, '2016-12-05', '2961811578474.pdf', 12),
-(185, 10, '2016-12-05', '2961816617427.pdf', 14),
-(186, 14, '2016-12-06', '2961983833437.pdf', 12),
-(187, 10, '2016-12-06', '2961984409849.pdf', 14),
-(188, 9, '2016-12-06', '2961985353160.pdf', 14),
-(189, 14, '2016-12-07', '2962159274034.pdf', 12),
-(190, 9, '2016-12-07', '2962159210337.pdf', 14),
-(191, 10, '2016-12-07', '2962160996415.pdf', 14),
-(192, 9, '2016-12-08', '2962328783079.pdf', 14),
-(193, 10, '2016-12-08', '2962329229447.pdf', 14),
-(194, 14, '2016-12-08', '2962329500220.pdf', 12),
-(195, 10, '2016-12-09', '2962506404245.pdf', 16),
-(196, 9, '2016-12-09', '2962506398697.pdf', 18),
-(197, 14, '2016-12-09', '2962507362419.pdf', 12),
-(198, 9, '2016-12-10', '2962679726577.pdf', 16),
-(199, 10, '2016-12-10', '2962680099799.pdf', 18),
-(200, 14, '2016-12-10', '2962680454040.pdf', 12),
-(201, 9, '2016-12-11', '2962852343016.pdf', 18),
-(202, 10, '2016-12-11', '2962852371610.pdf', 22),
-(203, 14, '2016-12-11', '2962853821975.pdf', 16),
-(205, 10, '2016-12-12', '2963026120022.pdf', 16),
-(206, 14, '2016-12-12', '2963030116706.pdf', 12),
-(207, 9, '2016-12-12', '2963030540692.pdf', 14),
-(208, 10, '2016-12-13', '2963194655886.pdf', 12),
-(209, 14, '2016-12-13', '2963195218864.pdf', 12),
-(210, 9, '2016-12-13', '2963197333069.pdf', 14),
-(211, 14, '2016-12-14', '2963367014245.pdf', 12),
-(212, 9, '2016-12-14', '2963367005817.pdf', 14),
-(213, 10, '2016-12-14', '2963368695463.pdf', 16),
-(214, 14, '2016-12-15', '2963539372525.pdf', 12),
-(215, 9, '2016-12-15', '2963539660444.pdf', 18),
-(216, 10, '2016-12-15', '2963539959764.pdf', 18),
-(217, 14, '2016-12-16', '2963714421161.pdf', 12),
-(218, 10, '2016-12-16', '2963714878384.pdf', 14),
-(219, 9, '2016-12-16', '2963715286952.pdf', 14),
-(220, 9, '2016-12-17', '2963899986031.pdf', 14),
-(221, 14, '2016-12-17', '2963901235021.pdf', 12),
-(222, 10, '2016-12-17', '2963903935668.pdf', 18),
-(223, 13, '2016-12-17', '2963939835135.pdf', 8),
-(224, 14, '2016-12-18', '2964060869271.pdf', 16),
-(225, 9, '2016-12-18', '2964061072008.pdf', 20),
-(226, 10, '2016-12-18', '2964061964659.pdf', 20),
-(227, 14, '2016-12-19', '2964230293053.pdf', 12),
-(228, 9, '2016-12-19', '2964230446502.pdf', 14),
-(229, 10, '2016-12-19', '2964232461099.pdf', 14),
-(230, 13, '2016-12-19', '2964278219823.pdf', 8),
-(231, 13, '2016-12-21', '2964622296326.pdf', 8),
-(232, 14, '2016-12-22', '2964750722127.pdf', 12),
-(233, 10, '2016-12-22', '2964751746135.pdf', 14),
-(234, 9, '2016-12-22', '2964751836646.pdf', 14),
-(235, 13, '2016-12-22', '2964799010233.pdf', 8),
-(236, 14, '2016-12-23', '2964923983603.pdf', 12),
-(237, 9, '2016-12-23', '2964924475733.pdf', 16),
-(238, 10, '2016-12-23', '2964925399081.pdf', 18),
-(239, 13, '2016-12-23', '2964970838176.pdf', 8),
-(240, 14, '2016-12-24', '2965098144694.pdf', 12),
-(241, 9, '2016-12-24', '2965099063660.pdf', 16),
-(242, 10, '2016-12-24', '2965099071257.pdf', 18),
-(243, 13, '2016-12-24', '2965141296147.pdf', 8),
-(244, 14, '2016-12-25', '2965266921629.pdf', 16),
-(245, 9, '2016-12-25', '2965267515401.pdf', 20),
-(246, 10, '2016-12-25', '2965268412501.pdf', 20),
-(247, 14, '2016-12-26', '2965444400272.pdf', 12),
-(248, 9, '2016-12-26', '2965446176659.pdf', 14),
-(249, 10, '2016-12-26', '2965448638338.pdf', 14),
-(250, 14, '2016-12-27', '2965613628595.pdf', 12),
-(251, 10, '2016-12-27', '2965614678347.pdf', 14),
-(252, 9, '2016-12-27', '2965614667316.pdf', 14),
-(253, 13, '2016-12-27', '2965659568457.pdf', 8),
-(254, 14, '2016-12-28', '2965789815057.pdf', 12),
-(255, 9, '2016-12-28', '2965791022818.pdf', 14),
-(256, 10, '2016-12-28', '2965791660364.pdf', 14),
-(257, 13, '2016-12-28', '2965831837317.pdf', 8),
-(258, 14, '2016-12-29', '2965960488479.pdf', 12),
-(259, 9, '2016-12-29', '2965960906331.pdf', 14),
-(260, 10, '2016-12-29', '2965961135659.pdf', 16),
-(261, 13, '2016-12-29', '2966004726830.pdf', 8),
-(262, 14, '2016-12-30', '2966134032372.pdf', 12),
-(263, 9, '2016-12-30', '2966134004590.pdf', 14),
-(264, 10, '2016-12-30', '2966135490372.pdf', 16),
-(265, 13, '2016-12-30', '2966178772793.pdf', 8),
-(266, 14, '2016-12-31', '2966308483841.pdf', 12),
-(267, 9, '2016-12-31', '2966308645238.pdf', 14),
-(268, 10, '2016-12-31', '2966309318091.pdf', 14),
-(269, 13, '2016-12-31', '2966351857819.pdf', 8),
-(270, 9, '2017-01-01', '2966480701301.pdf', 18),
-(271, 14, '2017-01-01', '2966480708534.pdf', 18),
-(272, 10, '2017-01-01', '2966482232406.pdf', 22),
-(273, 9, '2017-01-02', '2966653643519.pdf', 14),
-(274, 14, '2017-01-02', '2966653773642.pdf', 12),
-(275, 10, '2017-01-02', '2966654709218.pdf', 14),
-(276, 13, '2017-01-02', '2966698193033.pdf', 8),
-(277, 14, '2017-01-03', '2966826790420.pdf', 12),
-(278, 9, '2017-01-03', '2966826811975.pdf', 14),
-(279, 10, '2017-01-03', '2966827691364.pdf', 14),
-(280, 13, '2017-01-03', '2966869694685.pdf', 8),
-(281, 14, '2017-01-04', '2966995294960.pdf', 12),
-(282, 9, '2017-01-04', '2966995388274.pdf', 14),
-(283, 10, '2017-01-04', '2966996008660.pdf', 16),
-(284, 13, '2017-01-04', '2967042436601.pdf', 8),
-(285, 14, '2017-01-05', '2967171978277.pdf', 12),
-(286, 9, '2017-01-05', '2967171868013.pdf', 14),
-(287, 10, '2017-01-05', '2967172991868.pdf', 14),
-(288, 13, '2017-01-05', '2967215483580.pdf', 8),
-(289, 14, '2017-01-06', '2967340708797.pdf', 11),
-(290, 9, '2017-01-06', '2967340700727.pdf', 14),
-(291, 10, '2017-01-06', '2967343236632.pdf', 14),
-(292, 13, '2017-01-06', '2967389264302.pdf', 8),
-(293, 9, '2017-01-07', '2967534570838.pdf', 14),
-(294, 13, '2017-01-07', '2967561192697.pdf', 8),
-(295, 9, '2017-01-08', '2967713167451.pdf', 18),
-(296, 10, '2017-01-07', '2967725519596.pdf', 14),
-(297, 10, '2017-01-08', '2967727899711.pdf', 20),
-(298, 13, '2017-01-09', '2967908606045.pdf', 8),
-(299, 14, '2017-01-10', '2968031331213.pdf', 12),
-(300, 9, '2017-01-10', '2968031398583.pdf', 14),
-(301, 10, '2017-01-10', '2968039245640.pdf', 14),
-(302, 13, '2017-01-10', '2968080676584.pdf', 8),
-(303, 14, '2017-01-11', '2968209191707.pdf', 12),
-(304, 9, '2017-01-11', '2968209339223.pdf', 14),
-(305, 10, '2017-01-11', '2968210009236.pdf', 14),
-(306, 13, '2017-01-11', '2968254733790.pdf', 8),
-(307, 14, '2017-01-12', '2968381690918.pdf', 12),
-(308, 9, '2017-01-12', '2968382231731.pdf', 14),
-(309, 10, '2017-01-12', '2968382580901.pdf', 14),
-(310, 14, '2017-01-13', '2968555153673.pdf', 12),
-(311, 9, '2017-01-13', '2968555164227.pdf', 14),
-(312, 10, '2017-01-13', '2968556667929.pdf', 14),
-(313, 13, '2017-01-13', '2968600383567.pdf', 8),
-(314, 14, '2017-01-14', '2968727461699.pdf', 12),
-(315, 9, '2017-01-14', '2968727423884.pdf', 14),
-(317, 10, '2017-01-14', '2968731672299.pdf', 16),
-(318, 14, '2017-01-15', '2968899304854.pdf', 17),
-(319, 9, '2017-01-15', '2968899299459.pdf', 16),
-(320, 10, '2017-01-15', '2968900561746.pdf', 20),
-(321, 14, '2017-01-16', '2969070550707.pdf', 12),
-(322, 9, '2017-01-16', '2969070633409.pdf', 14),
-(323, 10, '2017-01-16', '2969073080480.pdf', 14),
-(324, 13, '2017-01-16', '2969115072038.pdf', 8),
-(325, 14, '2017-01-17', '2969245322495.pdf', 12),
-(326, 9, '2017-01-17', '2969245315939.pdf', 14),
-(327, 10, '2017-01-17', '2969246719027.pdf', 14),
-(328, 13, '2017-01-17', '2969288368404.pdf', 8),
-(329, 14, '2017-01-18', '2969417395436.pdf', 12),
-(330, 9, '2017-01-18', '2969417607236.pdf', 14),
-(331, 10, '2017-01-18', '2969418587706.pdf', 14),
-(332, 13, '2017-01-18', '2969461594196.pdf', 8),
-(333, 14, '2017-01-19', '2969591026326.pdf', 12),
-(334, 9, '2017-01-19', '2969591020184.pdf', 18),
-(335, 10, '2017-01-19', '2969592701679.pdf', 18),
-(336, 13, '2017-01-19', '2969636363044.pdf', 8),
-(337, 14, '2017-01-20', '2969762387372.pdf', 12),
-(338, 9, '2017-01-20', '2969763221496.pdf', 16),
-(339, 10, '2017-01-20', '2969763516656.pdf', 18),
-(340, 13, '2017-01-20', '2969807888366.pdf', 8),
-(341, 14, '2017-01-21', '2969957435740.pdf', 12),
-(342, 9, '2017-01-21', '2969957722885.pdf', 18),
-(343, 10, '2017-01-21', '2969958082211.pdf', 18),
-(344, 13, '2017-01-21', '2969983830388.pdf', 8),
-(345, 14, '2017-01-22', '2970109500133.pdf', 16),
-(346, 9, '2017-01-22', '2970109972629.pdf', 18),
-(347, 10, '2017-01-22', '2970110456214.pdf', 18),
-(348, 14, '2017-01-23', '2970281044658.pdf', 12),
-(349, 9, '2017-01-23', '2970281805065.pdf', 14),
-(350, 10, '2017-01-23', '2970282064532.pdf', 14),
-(351, 13, '2017-01-23', '2970325407300.pdf', 8),
-(352, 14, '2017-01-24', '2970456346163.pdf', 12),
-(353, 9, '2017-01-24', '2970456825398.pdf', 14),
-(354, 10, '2017-01-24', '2970457324397.pdf', 14),
-(355, 13, '2017-01-24', '2970498649863.pdf', 8),
-(356, 14, '2017-01-25', '2970626621834.pdf', 12),
-(357, 9, '2017-01-25', '2970626615348.pdf', 14),
-(358, 10, '2017-01-25', '2970627877850.pdf', 14),
-(359, 13, '2017-01-25', '2970676685551.pdf', 8),
-(360, 14, '2017-01-26', '2970799377670.pdf', 14),
-(361, 9, '2017-01-26', '2970799371629.pdf', 20),
-(362, 10, '2017-01-26', '2970800653351.pdf', 22),
-(363, 13, '2017-01-26', '2970840012357.pdf', 8),
-(364, 13, '2017-01-27', '2971017433895.pdf', 8),
-(365, 14, '2017-01-28', '2971147157579.pdf', 12),
-(366, 9, '2017-01-28', '2971147531445.pdf', 20),
-(367, 10, '2017-01-28', '2971147949154.pdf', 20),
-(368, 13, '2017-01-28', '2971187979829.pdf', 8),
-(369, 14, '2017-01-29', '2971318364415.pdf', 17),
-(370, 9, '2017-01-29', '2971318628776.pdf', 18),
-(371, 10, '2017-01-29', '2971319449881.pdf', 20),
-(372, 14, '2017-01-30', '2971490390915.pdf', 12),
-(373, 9, '2017-01-30', '2971490312996.pdf', 14),
-(374, 10, '2017-01-30', '2971491379723.pdf', 14),
-(375, 13, '2017-01-30', '2971535902309.pdf', 8),
-(376, 14, '2017-01-31', '2971665070352.pdf', 12),
-(377, 9, '2017-01-31', '2971665061893.pdf', 14),
-(378, 10, '2017-01-31', '2971666196384.pdf', 16),
-(379, 13, '2017-01-31', '2971710306486.pdf', 8),
-(380, 9, '2017-02-01', '2971848004479.pdf', 14),
-(381, 14, '2017-02-01', '2971849912381.pdf', 12),
-(382, 10, '2017-02-01', '2971851124346.pdf', 16),
-(383, 13, '2017-02-01', '2971880465807.pdf', 8),
-(384, 14, '2017-02-02', '2972013183252.pdf', 12),
-(385, 9, '2017-02-02', '2972013366931.pdf', 18),
-(386, 10, '2017-02-02', '2972015187419.pdf', 20),
-(387, 13, '2017-02-02', '2972056384628.pdf', 8),
-(388, 13, '2017-02-03', '2972227541475.pdf', 8),
-(389, 13, '2017-02-04', '2972405711443.pdf', 8),
-(390, 13, '2017-02-06', '2972743801005.pdf', 8),
-(391, 13, '2017-02-07', '2972920484786.pdf', 8),
-(392, 14, '2017-02-07', '2972944093582.pdf', 12),
-(393, 9, '2017-02-07', '2972946239986.pdf', 14),
-(394, 10, '2017-02-07', '2972946433197.pdf', 14),
-(395, 14, '2017-02-08', '2973049141818.pdf', 12),
-(396, 9, '2017-02-08', '2973050068336.pdf', 14),
-(397, 13, '2017-02-08', '2973090758539.pdf', 8),
-(398, 14, '2017-02-09', '2973230873058.pdf', 12),
-(399, 9, '2017-02-09', '2973230906957.pdf', 14),
-(400, 10, '2017-02-09', '2973231873737.pdf', 16),
-(401, 13, '2017-02-09', '2973262489691.pdf', 8),
-(402, 14, '2017-02-10', '2973395511587.pdf', 12),
-(403, 9, '2017-02-10', '2973395948854.pdf', 16),
-(404, 10, '2017-02-10', '2973396393015.pdf', 18),
-(405, 13, '2017-02-10', '2973435487032.pdf', 8),
-(406, 14, '2017-02-11', '2973566496736.pdf', 12),
-(407, 9, '2017-02-11', '2973566468993.pdf', 18),
-(408, 10, '2017-02-11', '2973567188879.pdf', 20),
-(409, 13, '2017-02-11', '2973607823530.pdf', 8),
-(410, 14, '2017-02-12', '2973738578826.pdf', 17),
-(411, 9, '2017-02-12', '2973738586869.pdf', 18),
-(412, 10, '2017-02-12', '2973739778986.pdf', 20),
-(413, 14, '2017-02-13', '2973911457349.pdf', 12),
-(414, 9, '2017-02-13', '2973911450156.pdf', 14),
-(415, 10, '2017-02-13', '2973912221612.pdf', 14),
-(416, 13, '2017-02-13', '2973953373333.pdf', 8),
-(417, 14, '2017-02-14', '2974081822039.pdf', 12),
-(418, 9, '2017-02-14', '2974082229627.pdf', 16),
-(419, 10, '2017-02-14', '2974082820783.pdf', 14),
-(420, 13, '2017-02-14', '2974128115901.pdf', 8),
-(421, 14, '2017-02-15', '2974254977426.pdf', 12),
-(422, 9, '2017-02-15', '2974254903097.pdf', 16),
-(423, 10, '2017-02-15', '2974255914965.pdf', 16),
-(424, 13, '2017-02-15', '2974300742181.pdf', 8),
-(425, 14, '2017-02-16', '2974428887680.pdf', 12),
-(426, 9, '2017-02-16', '2974429064533.pdf', 14),
-(427, 10, '2017-02-16', '2974430222464.pdf', 16),
-(428, 13, '2017-02-16', '2974473842912.pdf', 8),
-(429, 14, '2017-02-17', '2974598817429.pdf', 12),
-(430, 9, '2017-02-17', '2974598811218.pdf', 14),
-(431, 10, '2017-02-17', '2974599759995.pdf', 14),
-(432, 14, '2017-02-18', '2974774684364.pdf', 12),
-(433, 9, '2017-02-18', '2974774694397.pdf', 14),
-(434, 10, '2017-02-18', '2974775671030.pdf', 14),
-(435, 13, '2017-02-18', '2974817995424.pdf', 8),
-(436, 14, '2017-02-19', '2974946418927.pdf', 16),
-(437, 9, '2017-02-19', '2974946712629.pdf', 18),
-(438, 10, '2017-02-19', '2974947298749.pdf', 20),
-(439, 14, '2017-02-20', '2975117891710.pdf', 12),
-(440, 9, '2017-02-20', '2975117987663.pdf', 14),
-(441, 10, '2017-02-20', '2975118813850.pdf', 14),
-(442, 14, '2017-02-21', '2975287466604.pdf', 12),
-(443, 9, '2017-02-21', '2975287561742.pdf', 14),
-(445, 10, '2017-02-21', '2975289139300.pdf', 14),
-(446, 13, '2017-02-21', '2975334622951.pdf', 8),
-(447, 14, '2017-02-22', '2975465136105.pdf', 12),
-(448, 9, '2017-02-22', '2975465242091.pdf', 14),
-(449, 10, '2017-02-22', '2975465821462.pdf', 16),
-(450, 13, '2017-02-22', '2975508797564.pdf', 8),
-(451, 14, '2017-02-23', '2975633219106.pdf', 12),
-(452, 9, '2017-02-23', '2975633376274.pdf', 14),
-(453, 10, '2017-02-23', '2975634125406.pdf', 14),
-(454, 13, '2017-02-23', '2975681526785.pdf', 8),
-(455, 14, '2017-02-24', '2975813357386.pdf', 12),
-(456, 9, '2017-02-24', '2975815090914.pdf', 18),
-(457, 13, '2017-02-24', '2975851912399.pdf', 8),
-(458, 13, '2017-02-25', '2976026579949.pdf', 8),
-(459, 14, '2017-02-26', '2976152698180.pdf', 16),
-(460, 9, '2017-02-26', '2976153143231.pdf', 16),
-(461, 10, '2017-02-26', '2976153863455.pdf', 20),
-(462, 14, '2017-02-27', '2976331138208.pdf', 12),
-(463, 9, '2017-02-27', '2976331132297.pdf', 14),
-(464, 10, '2017-02-27', '2976332131431.pdf', 16),
-(465, 14, '2017-02-28', '2976502033148.pdf', 12),
-(466, 9, '2017-02-28', '2976502028125.pdf', 14),
-(467, 14, '2017-03-01', '2976677006436.pdf', 12),
-(468, 9, '2017-03-01', '2976677623428.pdf', 14),
-(469, 13, '2017-03-01', '2976718701539.pdf', 8),
-(470, 13, '2017-03-02', '2976893946968.pdf', 8),
-(471, 14, '2017-03-03', '2977022018678.pdf', 12),
-(472, 9, '2017-03-03', '2977022715327.pdf', 14),
-(473, 10, '2017-03-03', '2977036837138.pdf', 16),
-(474, 13, '2017-03-03', '2977065767851.pdf', 8),
-(475, 14, '2017-03-04', '2977191466785.pdf', 12),
-(476, 9, '2017-03-04', '2977191858133.pdf', 16),
-(477, 10, '2017-03-04', '2977193085341.pdf', 14),
-(478, 13, '2017-03-04', '2977238044564.pdf', 8),
-(479, 14, '2017-03-05', '2977364980768.pdf', 16),
-(480, 9, '2017-03-05', '2977364989784.pdf', 20),
-(481, 10, '2017-03-05', '2977366659377.pdf', 20),
-(482, 14, '2017-03-06', '2977531460940.pdf', 12),
-(483, 9, '2017-03-06', '2977532606564.pdf', 14),
-(484, 10, '2017-03-06', '2977533462270.pdf', 14),
-(485, 13, '2017-03-06', '2977582467095.pdf', 8),
-(486, 14, '2017-03-07', '2977709685592.pdf', 12),
-(487, 9, '2017-03-07', '2977710202373.pdf', 18),
-(488, 10, '2017-03-07', '2977710874231.pdf', 18),
-(489, 13, '2017-03-07', '2977755960712.pdf', 8),
-(490, 14, '2017-03-08', '2977876769584.pdf', 12),
-(491, 9, '2017-03-08', '2977877274112.pdf', 16),
-(492, 9, '2017-03-08', '2977877540421.pdf', 16),
-(493, 13, '2017-03-08', '2977929892399.pdf', 8),
-(494, 14, '2017-03-09', '2978048588454.pdf', 12),
-(495, 9, '2017-03-09', '2978048580395.pdf', 16),
-(496, 10, '2017-03-09', '2978049547006.pdf', 16),
-(497, 13, '2017-03-09', '2978100737175.pdf', 8),
-(498, 14, '2017-03-10', '2978224999553.pdf', 12),
-(499, 9, '2017-03-10', '2978225004515.pdf', 18),
-(500, 10, '2017-03-10', '2978226481996.pdf', 18),
-(501, 13, '2017-03-10', '2978276897014.pdf', 8),
-(502, 14, '2017-03-11', '2978400447151.pdf', 11),
-(503, 9, '2017-03-11', '2978400442406.pdf', 15),
-(504, 10, '2017-03-11', '2978401232263.pdf', 18),
-(505, 13, '2017-03-11', '2978274343947.pdf', 8),
-(506, 14, '2017-03-12', '2978564079358.pdf', 17),
-(507, 9, '2017-03-12', '2978564397504.pdf', 24),
-(508, 10, '2017-03-12', '2978564822121.pdf', 24),
-(509, 13, '2017-03-14', '2978790875156.pdf', 8),
-(510, 14, '2017-03-15', '2979109446804.pdf', 12),
-(511, 9, '2017-03-15', '2979116090757.pdf', 14),
-(512, 13, '2017-03-15', '2978965437572.pdf', 8),
-(513, 14, '2017-03-16', '2979261681093.pdf', 12),
-(514, 10, '2017-03-16', '2979262970427.pdf', 16),
-(515, 9, '2017-03-16', '2979263104507.pdf', 18),
-(516, 13, '2017-03-16', '2979142564195.pdf', 8),
-(518, 9, '2017-03-17', '2979432883963.pdf', 18),
-(520, 10, '2017-03-17', '2979434449170.pdf', 18),
-(521, 14, '2017-03-17', '2979434663914.pdf', 12),
-(522, 13, '2017-03-17', '2979312123523.pdf', 8),
-(523, 14, '2017-03-18', '2979608573898.pdf', 12),
-(524, 9, '2017-03-18', '2979609128135.pdf', 18),
-(525, 10, '2017-03-18', '2979609773453.pdf', 18),
-(526, 13, '2017-03-18', '2979482941929.pdf', 8),
-(527, 14, '2017-03-20', '2979952455469.pdf', 12),
-(528, 9, '2017-03-20', '2979952627915.pdf', 14),
-(529, 10, '2017-03-20', '2979953390793.pdf', 16),
-(530, 13, '2017-03-20', '2979829755599.pdf', 8),
-(531, 17, '2017-03-21', '2980125020125.pdf', 23),
-(532, 16, '2017-03-21', '2980125842229.pdf', 38),
-(533, 18, '2017-03-21', '2980127234176.pdf', 18),
-(534, 14, '2017-03-21', '2980127845194.pdf', 12),
-(535, 9, '2017-03-21', '2980127834899.pdf', 16),
-(536, 10, '2017-03-21', '2980128700312.pdf', 16),
-(537, 19, '2017-03-21', '2980128811281.pdf', 16),
-(538, 13, '2017-03-21', '2980001464912.pdf', 8),
-(539, 9, '2017-03-22', '2980302536332.pdf', 18),
-(540, 14, '2017-03-22', '2980302960015.pdf', 12),
-(541, 10, '2017-03-22', '2980303270949.pdf', 18),
-(542, 13, '2017-03-22', '2980176646560.pdf', 8),
-(543, 17, '2017-03-23', '2980468484166.pdf', 24),
-(544, 14, '2017-03-23', '2980470892735.pdf', 12),
-(545, 9, '2017-03-23', '2980471381200.pdf', 16),
-(546, 10, '2017-03-23', '2980472139274.pdf', 16),
-(547, 16, '2017-03-23', '2980475771619.pdf', 44),
-(548, 18, '2017-03-23', '2980479312790.pdf', 20),
-(549, 19, '2017-03-23', '2980479973937.pdf', 18),
-(550, 19, '2017-03-22', '2980480785358.pdf', 18),
-(551, 16, '2017-03-22', '2980486511322.pdf', 28),
-(552, 18, '2017-03-22', '2980487689146.pdf', 20),
-(553, 13, '2017-03-23', '2980347750947.pdf', 8),
-(554, 16, '2017-03-24', '2980634434255.pdf', 36),
-(555, 17, '2017-03-24', '2980637624629.pdf', 24),
-(556, 18, '2017-03-24', '2980639696899.pdf', 18),
-(557, 19, '2017-03-24', '2980640444862.pdf', 18),
-(558, 14, '2017-03-24', '2980646580235.pdf', 12),
-(559, 9, '2017-03-24', '2980646847871.pdf', 14),
-(560, 10, '2017-03-24', '2980647357183.pdf', 16),
-(561, 13, '2017-03-24', '2980520296731.pdf', 8),
-(562, 16, '2017-03-25', '2980811172944.pdf', 44),
-(563, 17, '2017-03-25', '2980812421106.pdf', 27),
-(564, 18, '2017-03-25', '2980813418850.pdf', 22),
-(565, 19, '2017-03-25', '2980813913304.pdf', 20),
-(566, 14, '2017-03-25', '2980817026807.pdf', 12),
-(567, 9, '2017-03-25', '2980817481103.pdf', 18),
-(568, 10, '2017-03-25', '2980817681131.pdf', 18),
-(569, 13, '2017-03-25', '2980693259258.pdf', 8),
-(570, 16, '2017-03-26', '2980989420286.pdf', 38),
-(571, 17, '2017-03-26', '2980991397451.pdf', 30),
-(572, 14, '2017-03-26', '2980992234621.pdf', 17),
-(573, 9, '2017-03-26', '2980992361204.pdf', 20),
-(574, 18, '2017-03-26', '2980992586065.pdf', 24),
-(575, 10, '2017-03-26', '2980993218468.pdf', 22),
-(576, 19, '2017-03-26', '2980994993941.pdf', 24),
-(577, 14, '2017-03-27', '2981158635507.pdf', 12),
-(578, 9, '2017-03-27', '2981158786317.pdf', 18),
-(579, 10, '2017-03-27', '2981159342989.pdf', 18),
-(580, 16, '2017-03-27', '2981168070050.pdf', 36),
-(581, 17, '2017-03-27', '2981169093388.pdf', 24),
-(582, 18, '2017-03-27', '2981171206905.pdf', 22),
-(583, 19, '2017-03-27', '2981174605013.pdf', 20),
-(584, 13, '2017-03-27', '2981041094398.pdf', 8),
-(585, 14, '2017-03-28', '2981338661081.pdf', 12),
-(586, 9, '2017-03-28', '2981339016156.pdf', 16),
-(587, 10, '2017-03-28', '2981339460121.pdf', 16),
-(588, 13, '2017-03-28', '2981211509369.pdf', 8),
-(589, 16, '2017-03-28', '2981452185880.pdf', 38),
-(590, 17, '2017-03-28', '2981453516866.pdf', 23),
-(591, 18, '2017-03-28', '2981454221240.pdf', 20),
-(592, 19, '2017-03-28', '2981454833289.pdf', 18),
-(593, 14, '2017-03-29', '2981506336384.pdf', 16),
-(594, 9, '2017-03-29', '2981506821866.pdf', 20),
-(595, 10, '2017-03-29', '2981508154236.pdf', 29),
-(596, 13, '2017-03-29', '2981382101189.pdf', 8),
-(597, 16, '2017-03-30', '2981675434068.pdf', 46),
-(598, 17, '2017-03-30', '2981676634939.pdf', 26),
-(599, 18, '2017-03-30', '2981676915155.pdf', 24),
-(600, 19, '2017-03-30', '2981678036094.pdf', 20),
-(601, 14, '2017-03-30', '2981679115400.pdf', 12),
-(602, 9, '2017-03-30', '2981679274698.pdf', 20),
-(603, 16, '2017-03-29', '2981679179948.pdf', 30),
-(604, 10, '2017-03-30', '2981680451670.pdf', 20),
-(605, 17, '2017-03-29', '2981680486067.pdf', 23),
-(606, 18, '2017-03-29', '2981680653313.pdf', 23),
-(607, 19, '2017-03-29', '2981682640654.pdf', 21),
-(608, 13, '2017-03-30', '2981559267859.pdf', 8),
-(609, 14, '2017-03-31', '2981853382778.pdf', 12),
-(610, 9, '2017-03-31', '2981854138216.pdf', 22),
-(611, 10, '2017-03-31', '2981855337200.pdf', 20),
-(612, 13, '2017-03-31', '2981730380432.pdf', 8),
-(613, 14, '2017-04-01', '2982025218801.pdf', 12),
-(614, 9, '2017-04-01', '2982026373104.pdf', 17),
-(615, 10, '2017-04-01', '2982026377983.pdf', 18),
-(616, 16, '2017-04-01', '2982030011813.pdf', 44),
-(617, 17, '2017-04-01', '2982031468316.pdf', 23),
-(618, 18, '2017-04-01', '2982032046246.pdf', 22),
-(619, 19, '2017-04-01', '2982032679638.pdf', 18),
-(620, 13, '2017-04-01', '2981906098707.pdf', 8),
-(621, 16, '2017-04-02', '2982210171156.pdf', 32),
-(622, 17, '2017-04-02', '2982210474974.pdf', 31),
-(623, 18, '2017-04-02', '2982212532221.pdf', 23),
-(624, 19, '2017-04-02', '2982212688859.pdf', 23),
-(625, 14, '2017-04-02', '2982230957059.pdf', 17),
-(626, 9, '2017-04-02', '2982231898741.pdf', 22),
-(627, 17, '2017-04-03', '2982364448451.pdf', 22),
-(628, 19, '2017-04-03', '2982365353886.pdf', 16),
-(629, 17, '2017-04-03', '2982364965894.pdf', 36),
-(630, 18, '2017-04-03', '2982366861515.pdf', 18),
-(631, 14, '2017-04-03', '2982371306835.pdf', 12),
-(632, 9, '2017-04-03', '2982371567032.pdf', 12),
-(633, 16, '2017-04-03', '2982372073499.pdf', 36),
-(635, 10, '2017-04-03', '2982394667727.pdf', 18),
-(636, 13, '2017-04-03', '2982261016530.pdf', 8),
-(637, 13, '2017-04-04', '2982421921206.pdf', 8),
-(638, 14, '2017-04-05', '2982721392380.pdf', 12),
-(639, 9, '2017-04-05', '2982721776101.pdf', 14),
-(640, 13, '2017-04-05', '2982596085356.pdf', 8),
-(641, 14, '2017-04-06', '2982891611365.pdf', 12),
-(642, 9, '2017-04-06', '2982892009753.pdf', 14),
-(643, 13, '2017-04-06', '2982770612249.pdf', 8),
-(644, 14, '2017-04-07', '2983061398077.pdf', 12),
-(645, 9, '2017-04-07', '2983061391369.pdf', 16),
-(646, 13, '2017-04-07', '2982940160207.pdf', 8),
-(647, 10, '2017-04-07', '2983135109005.pdf', 18),
-(648, 10, '2017-04-08', '2983226189862.pdf', 20),
-(649, 14, '2017-04-08', '2983231287167.pdf', 12),
-(650, 9, '2017-04-08', '2983231296070.pdf', 18),
-(651, 13, '2017-04-08', '2983114739659.pdf', 8),
-(652, 14, '2017-04-10', '2983577336052.pdf', 12),
-(653, 9, '2017-04-10', '2983577615545.pdf', 14),
-(654, 10, '2017-04-10', '2983583554114.pdf', 18),
-(655, 13, '2017-04-10', '2983460958387.pdf', 8),
-(656, 10, '2017-04-11', '2983743167789.pdf', 18),
-(657, 14, '2017-04-11', '2983754096788.pdf', 12),
-(658, 9, '2017-04-11', '2983754091793.pdf', 16),
-(659, 13, '2017-04-11', '2983634389447.pdf', 8),
-(660, 10, '2017-04-12', '2983916483793.pdf', 22),
-(661, 14, '2017-04-12', '2983925722332.pdf', 12),
-(662, 9, '2017-04-12', '2983926274265.pdf', 20),
-(663, 13, '2017-04-12', '2983804102697.pdf', 8),
-(664, 14, '2017-04-13', '2984095116767.pdf', 12),
-(665, 9, '2017-04-13', '2984095357237.pdf', 14),
-(666, 10, '2017-04-13', '2984098804463.pdf', 14),
-(667, 14, '2017-04-14', '2984268850697.pdf', 12),
-(668, 9, '2017-04-14', '2984268860189.pdf', 18),
-(669, 10, '2017-04-14', '2984279507913.pdf', 20),
-(670, 13, '2017-04-14', '2984151545071.pdf', 8),
-(671, 9, '2017-04-15', '2984441742799.pdf', 16),
-(672, 14, '2017-04-15', '2984441975842.pdf', 12),
-(673, 10, '2017-04-15', '2984448336076.pdf', 18),
-(674, 13, '2017-04-15', '2984318610636.pdf', 8),
-(675, 14, '2017-04-16', '2984611695251.pdf', 17),
-(676, 9, '2017-04-16', '2984612001331.pdf', 20),
-(677, 14, '2017-04-17', '2984783982712.pdf', 12),
-(678, 9, '2017-04-17', '2984784059915.pdf', 16),
-(679, 13, '2017-04-17', '2984667283686.pdf', 8),
-(680, 14, '2017-04-18', '2984956135161.pdf', 12),
-(681, 9, '2017-04-18', '2984956695627.pdf', 16),
-(682, 10, '2017-04-18', '2984959305443.pdf', 16),
-(683, 13, '2017-04-18', '2984839848445.pdf', 8),
-(684, 14, '2017-04-19', '2985131184903.pdf', 12),
-(685, 9, '2017-04-19', '2985131155654.pdf', 18),
-(686, 10, '2017-04-19', '2985132219189.pdf', 18),
-(687, 13, '2017-04-19', '2985011827694.pdf', 8),
-(688, 14, '2017-04-20', '2985305346618.pdf', 12),
-(689, 9, '2017-04-20', '2985305340983.pdf', 14),
-(690, 10, '2017-04-20', '2985306748277.pdf', 14),
-(691, 14, '2017-04-21', '2985478331041.pdf', 14),
-(692, 9, '2017-04-21', '2985478325817.pdf', 20),
-(693, 10, '2017-04-21', '2985479430610.pdf', 20),
-(694, 13, '2017-04-20', '2985374920834.pdf', 8),
-(695, 13, '2017-04-21', '2985375843086.pdf', 8),
-(696, 9, '2017-04-22', '2985649523555.pdf', 20),
-(697, 14, '2017-04-22', '2985649785778.pdf', 12),
-(698, 10, '2017-04-22', '2985650670230.pdf', 20),
-(699, 9, '2017-04-23', '2985844257999.pdf', 18),
-(700, 14, '2017-04-23', '2985844464706.pdf', 14),
-(701, 9, '2017-04-24', '2985996487355.pdf', 14),
-(702, 10, '2017-04-24', '2985996684732.pdf', 14),
-(703, 14, '2017-04-24', '2985997592348.pdf', 12),
-(704, 13, '2017-04-24', '2985874763347.pdf', 8),
-(705, 14, '2017-04-25', '2986168224603.pdf', 12),
-(706, 9, '2017-04-25', '2986168788773.pdf', 18),
-(707, 10, '2017-04-25', '2986170197607.pdf', 20),
-(708, 14, '2017-04-26', '2986340069317.pdf', 12),
-(709, 9, '2017-04-26', '2986340295675.pdf', 16),
-(710, 10, '2017-04-26', '2986340873222.pdf', 16),
-(711, 13, '2017-04-26', '2986223549618.pdf', 8),
-(712, 14, '2017-04-27', '2986512928546.pdf', 12),
-(713, 9, '2017-04-27', '2986513233008.pdf', 16),
-(714, 10, '2017-04-27', '2986513909395.pdf', 18),
-(715, 13, '2017-04-27', '2986399519685.pdf', 8),
-(716, 9, '2017-04-28', '2986689428834.pdf', 20),
-(717, 13, '2017-04-28', '2986568603766.pdf', 8),
-(718, 9, '2017-04-29', '2986860561030.pdf', 22),
-(719, 14, '2017-04-29', '2986860836460.pdf', 14),
-(720, 13, '2017-04-29', '2986739572127.pdf', 8),
-(721, 9, '2017-04-30', '2987037934957.pdf', 20),
-(722, 10, '2017-04-30', '2987037940697.pdf', 22),
-(723, 14, '2017-04-30', '2987039082489.pdf', 17),
-(724, 14, '2017-05-01', '2987204681898.pdf', 12),
-(725, 9, '2017-05-01', '2987205174287.pdf', 14),
-(726, 13, '2017-05-01', '2987084948354.pdf', 8),
-(727, 13, '2017-05-02', '2987260019879.pdf', 8),
-(728, 14, '2017-05-03', '2987548116823.pdf', 12),
-(729, 9, '2017-05-03', '2987548029863.pdf', 18),
-(730, 10, '2017-05-03', '2987549421590.pdf', 18),
-(731, 13, '2017-05-03', '2987430821679.pdf', 8),
-(732, 9, '2017-05-04', '2987723302449.pdf', 14),
-(733, 10, '2017-05-04', '2987723732337.pdf', 14),
-(734, 14, '2017-05-04', '2987723963863.pdf', 12),
-(735, 13, '2017-05-04', '2987606029174.pdf', 8),
-(736, 9, '2017-05-05', '2987894203350.pdf', 22),
-(737, 10, '2017-05-05', '2987894324139.pdf', 24),
-(738, 14, '2017-05-05', '2987895913174.pdf', 12),
-(739, 13, '2017-05-05', '2987780959434.pdf', 8),
-(740, 9, '2017-05-06', '2988063405175.pdf', 20),
-(741, 10, '2017-05-06', '2988063522901.pdf', 18),
-(742, 14, '2017-05-06', '2988064565848.pdf', 12),
-(743, 13, '2017-05-06', '2987951038636.pdf', 8),
-(744, 9, '2017-05-07', '2988246198997.pdf', 21),
-(745, 10, '2017-05-07', '2988246203561.pdf', 21),
-(746, 14, '2017-05-07', '2988247898636.pdf', 17),
-(747, 9, '2017-05-08', '2988411933949.pdf', 14),
-(748, 10, '2017-05-08', '2988412054338.pdf', 14),
-(749, 14, '2017-05-08', '2988412629707.pdf', 12),
-(750, 10, '2017-05-09', '2988585101725.pdf', 14),
-(751, 9, '2017-05-09', '2988585406978.pdf', 16),
-(752, 14, '2017-05-09', '2988585631644.pdf', 12),
-(753, 9, '2017-05-10', '2988756257904.pdf', 20),
-(754, 10, '2017-05-10', '2988756367915.pdf', 18),
-(755, 14, '2017-05-10', '2988757232423.pdf', 12),
-(756, 13, '2017-05-10', '2988641807331.pdf', 8),
-(757, 9, '2017-05-11', '2988931057815.pdf', 16),
-(758, 10, '2017-05-11', '2988931306546.pdf', 16),
-(759, 14, '2017-05-11', '2988932349231.pdf', 12),
-(760, 13, '2017-05-11', '2988818321317.pdf', 8),
-(761, 9, '2017-05-12', '2989100314602.pdf', 20),
-(762, 10, '2017-05-12', '2989100432986.pdf', 20),
-(763, 14, '2017-05-12', '2989101587904.pdf', 12),
-(764, 13, '2017-05-12', '2988993729926.pdf', 8),
-(765, 10, '2017-05-13', '2989275719283.pdf', 18),
-(766, 9, '2017-05-13', '2989275693632.pdf', 20),
-(767, 14, '2017-05-13', '2989276674646.pdf', 12),
-(768, 13, '2017-05-13', '2989160484577.pdf', 8),
-(769, 9, '2017-05-14', '2989455010547.pdf', 20),
-(770, 10, '2017-05-14', '2989455037835.pdf', 20),
-(771, 14, '2017-05-14', '2989456384065.pdf', 17),
-(772, 9, '2017-05-15', '2989617961173.pdf', 18),
-(773, 10, '2017-05-15', '2989618303797.pdf', 16),
-(774, 14, '2017-05-15', '2989618666142.pdf', 12),
-(775, 13, '2017-05-15', '2989512393992.pdf', 8),
-(776, 9, '2017-05-16', '2989792305314.pdf', 20),
-(777, 10, '2017-05-16', '2989792379877.pdf', 20),
-(778, 14, '2017-05-16', '2989793789178.pdf', 12),
-(779, 13, '2017-05-16', '2989679786150.pdf', 8),
-(780, 9, '2017-05-17', '2989965425537.pdf', 20),
-(781, 14, '2017-05-17', '2989966099392.pdf', 12),
-(783, 10, '2017-05-17', '2989967027493.pdf', 22),
-(784, 13, '2017-05-17', '2989851778736.pdf', 8),
-(785, 9, '2017-05-18', '2990140804091.pdf', 20),
-(786, 10, '2017-05-18', '2990140903666.pdf', 20),
-(787, 14, '2017-05-18', '2990141840424.pdf', 12),
-(788, 13, '2017-05-18', '2990027126917.pdf', 8),
-(789, 10, '2017-05-19', '2990311471372.pdf', 20),
-(790, 9, '2017-05-19', '2990311465778.pdf', 20),
-(791, 14, '2017-05-19', '2990312852320.pdf', 12),
-(792, 13, '2017-05-19', '2990198752688.pdf', 8),
-(793, 10, '2017-05-20', '2990488110752.pdf', 16),
-(794, 9, '2017-05-20', '2990488105004.pdf', 16),
-(795, 14, '2017-05-20', '2990489030853.pdf', 12),
-(796, 13, '2017-05-20', '2990375038778.pdf', 8),
-(797, 9, '2017-05-21', '2990661750208.pdf', 22),
-(798, 10, '2017-05-21', '2990661755549.pdf', 22),
-(799, 14, '2017-05-21', '2990663741443.pdf', 17),
-(800, 9, '2017-05-22', '2990834571152.pdf', 17),
-(801, 10, '2017-05-22', '2990834578736.pdf', 17),
-(802, 14, '2017-05-22', '2990835532967.pdf', 12),
-(803, 13, '2017-05-22', '2990890948251.pdf', 8),
-(804, 9, '2017-05-23', '2991008710185.pdf', 18),
-(805, 14, '2017-05-23', '2991009525366.pdf', 12),
-(806, 10, '2017-05-23', '2991009294008.pdf', 18),
-(807, 10, '2017-05-24', '2991179731766.pdf', 20),
-(808, 9, '2017-05-24', '2991179725691.pdf', 20),
-(809, 14, '2017-05-24', '2991180765534.pdf', 12),
-(810, 13, '2017-05-24', '2991236778392.pdf', 8),
-(811, 9, '2017-05-25', '2991354886857.pdf', 20),
-(812, 10, '2017-05-25', '2991354915965.pdf', 20),
-(813, 14, '2017-05-25', '2991359344679.pdf', 12),
-(814, 13, '2017-05-25', '2991410655201.pdf', 8),
-(815, 9, '2017-05-26', '2991525453294.pdf', 20),
-(816, 10, '2017-05-26', '2991525718182.pdf', 22),
-(817, 14, '2017-05-26', '2991526566552.pdf', 12),
-(818, 13, '2017-05-26', '2991581993361.pdf', 8),
-(819, 9, '2017-05-27', '2991702221111.pdf', 20),
-(820, 10, '2017-05-27', '2991702329780.pdf', 20),
-(821, 14, '2017-05-27', '2991703364561.pdf', 14),
-(822, 13, '2017-05-27', '2991754630245.pdf', 8),
-(823, 9, '2017-05-28', '2991880451999.pdf', 22),
-(824, 10, '2017-05-28', '2991880722035.pdf', 23),
-(825, 14, '2017-05-28', '2991881759603.pdf', 16),
-(826, 10, '2017-05-29', '2992059614652.pdf', 18),
-(827, 9, '2017-05-29', '2992059609680.pdf', 20),
-(828, 14, '2017-05-29', '2992060999794.pdf', 12),
-(829, 13, '2017-05-29', '2992104825965.pdf', 8),
-(830, 9, '2017-05-30', '2992226172281.pdf', 18),
-(831, 10, '2017-05-30', '2992226835725.pdf', 20),
-(832, 14, '2017-05-30', '2992228102963.pdf', 12),
-(833, 13, '2017-05-30', '2992272607397.pdf', 8),
-(834, 9, '2017-05-31', '2992401732385.pdf', 20),
-(835, 10, '2017-05-31', '2992401738342.pdf', 20),
-(836, 14, '2017-05-31', '2992402717550.pdf', 12),
-(837, 13, '2017-05-31', '2992445814243.pdf', 8),
-(838, 10, '2017-06-01', '2992570741155.pdf', 20),
-(839, 9, '2017-06-01', '2992570746595.pdf', 20),
-(840, 14, '2017-06-01', '2992573146709.pdf', 14),
-(841, 13, '2017-06-01', '2992618912290.pdf', 8),
-(842, 9, '2017-06-02', '2992740438584.pdf', 16),
-(843, 10, '2017-06-02', '2992740595629.pdf', 18),
-(844, 14, '2017-06-02', '2992741340773.pdf', 12),
-(845, 13, '2017-06-02', '2992789960757.pdf', 8),
-(846, 9, '2017-06-03', '2992912729261.pdf', 18),
-(847, 10, '2017-06-03', '2992912803856.pdf', 18),
-(848, 14, '2017-06-03', '2992914047917.pdf', 12),
-(849, 13, '2017-06-03', '2992964267131.pdf', 8),
-(850, 9, '2017-06-04', '2993093360958.pdf', 20),
-(851, 10, '2017-06-04', '2993093492812.pdf', 22),
-(852, 14, '2017-06-04', '2993095595333.pdf', 17),
-(853, 9, '2017-06-05', '2993258282945.pdf', 16),
-(854, 10, '2017-06-05', '2993258457550.pdf', 16),
-(855, 14, '2017-06-05', '2993259378692.pdf', 12),
-(856, 13, '2017-06-05', '2993313148461.pdf', 8),
-(857, 13, '2017-06-06', '2993482523381.pdf', 8),
-(858, 9, '2017-06-07', '2993605424682.pdf', 20),
-(859, 10, '2017-06-07', '2993605687894.pdf', 18),
-(860, 14, '2017-06-07', '2993606263291.pdf', 12),
-(861, 13, '2017-06-07', '2993657949903.pdf', 8),
-(862, 9, '2017-06-08', '2993774326029.pdf', 16),
-(863, 10, '2017-06-08', '2993774528652.pdf', 16),
-(864, 14, '2017-06-08', '2993775271625.pdf', 12),
-(865, 14, '2017-06-09', '2993945959178.pdf', 12),
-(866, 13, '2017-06-09', '2993999804194.pdf', 8),
-(867, 10, '2017-06-10', '2994121541804.pdf', 20),
-(868, 9, '2017-06-10', '2994121710258.pdf', 18),
-(869, 14, '2017-06-10', '2994124051636.pdf', 12),
-(870, 9, '2017-06-11', '2994299594939.pdf', 20),
-(871, 10, '2017-06-11', '2994299900851.pdf', 22),
-(872, 14, '2017-06-11', '2994301030405.pdf', 17),
-(873, 9, '2017-06-12', '2994463870983.pdf', 20),
-(874, 10, '2017-06-12', '2994464090287.pdf', 20),
-(875, 14, '2017-06-12', '2994465366109.pdf', 12),
-(876, 9, '2017-06-13', '2994636673757.pdf', 20),
-(877, 10, '2017-06-13', '2994636678859.pdf', 20),
-(878, 14, '2017-06-13', '2994638162923.pdf', 12),
-(879, 9, '2017-06-14', '2994809241926.pdf', 18),
-(880, 10, '2017-06-14', '2994809645078.pdf', 20),
-(881, 14, '2017-06-14', '2994810293922.pdf', 12),
-(882, 10, '2017-06-15', '2994986237878.pdf', 18),
-(883, 9, '2017-06-15', '2994986584832.pdf', 18),
-(884, 14, '2017-06-15', '2994987364571.pdf', 12),
-(885, 9, '2017-06-16', '2995156393218.pdf', 20),
-(886, 10, '2017-06-16', '2995156870784.pdf', 22),
-(887, 14, '2017-06-16', '2995157159274.pdf', 12),
-(888, 9, '2017-06-17', '2995329648415.pdf', 20),
-(889, 10, '2017-06-17', '2995329782470.pdf', 20),
-(890, 14, '2017-06-17', '2995330702391.pdf', 12),
-(891, 9, '2017-06-19', '2995677567362.pdf', 18),
-(892, 10, '2017-06-19', '2995677759074.pdf', 19),
-(893, 14, '2017-06-19', '2995678596761.pdf', 14),
-(894, 9, '2017-06-20', '2995846618305.pdf', 16),
-(895, 14, '2017-06-20', '2995847210104.pdf', 12),
-(896, 9, '2017-06-21', '2996018005795.pdf', 20),
-(897, 14, '2017-06-21', '2996018450715.pdf', 12),
-(898, 14, '2017-06-22', '2996191875548.pdf', 12),
-(899, 9, '2017-06-22', '2996191868678.pdf', 20),
-(900, 9, '2017-06-23', '2996363884555.pdf', 18),
-(901, 14, '2017-06-23', '2996364484605.pdf', 12),
-(902, 9, '2017-06-24', '2996537329772.pdf', 20),
-(903, 14, '2017-06-24', '2996537758345.pdf', 12),
-(904, 10, '2017-06-24', '2996538667161.pdf', 20),
-(905, 14, '2017-06-25', '2996710924709.pdf', 17),
-(906, 9, '2017-06-25', '2996710876087.pdf', 28),
-(907, 10, '2017-06-25', '2996713114805.pdf', 26),
-(908, 14, '2017-06-26', '2996884395249.pdf', 12),
-(909, 10, '2017-06-26', '2996885499119.pdf', 18),
-(910, 9, '2017-06-26', '2996885494206.pdf', 20),
-(911, 9, '2017-06-27', '2997055032389.pdf', 20),
-(912, 14, '2017-06-27', '2997055739129.pdf', 12),
-(913, 14, '2017-06-28', '2997230584012.pdf', 12),
-(914, 9, '2017-06-28', '2997230500826.pdf', 18),
-(915, 14, '2017-06-29', '2997402457014.pdf', 12),
-(916, 9, '2017-06-29', '2997402372409.pdf', 20),
-(917, 14, '2017-06-30', '2997573779297.pdf', 12),
-(918, 9, '2017-06-30', '2997573909530.pdf', 22),
-(919, 10, '2017-07-01', '2997746144768.pdf', 12),
-(920, 9, '2017-07-01', '2997746139163.pdf', 20),
-(921, 14, '2017-07-01', '2997746986767.pdf', 12),
-(922, 9, '2017-07-03', '2998088962158.pdf', 14),
-(923, 14, '2017-07-03', '2998089577888.pdf', 12),
-(924, 10, '2017-07-04', '2998263253017.pdf', 12),
-(925, 9, '2017-07-04', '2998263153465.pdf', 14),
-(926, 14, '2017-07-05', '2998436032942.pdf', 12),
-(927, 9, '2017-07-05', '2998435943943.pdf', 14),
-(928, 9, '2017-07-06', '2998610261299.pdf', 16),
-(929, 14, '2017-07-06', '2998610464104.pdf', 12),
-(930, 9, '2017-07-07', '2998782834187.pdf', 18),
-(931, 14, '2017-07-07', '2998783089963.pdf', 12),
-(932, 14, '2017-07-08', '2998955800783.pdf', 12),
-(933, 9, '2017-07-08', '2998955795642.pdf', 16),
-(934, 9, '2017-07-10', '2999299648667.pdf', 14),
-(935, 14, '2017-07-10', '2999299826533.pdf', 12),
-(936, 9, '2017-07-11', '2999480055615.pdf', 14),
-(937, 14, '2017-07-11', '2999480472255.pdf', 12),
-(938, 9, '2017-07-12', '2999646566377.pdf', 16),
-(939, 14, '2017-07-12', '2999646864937.pdf', 12),
-(940, 14, '2017-07-13', '2999819553611.pdf', 12),
-(941, 9, '2017-07-13', '2999819562054.pdf', 16),
-(942, 9, '2017-07-14', '2999990753588.pdf', 16),
-(943, 14, '2017-07-14', '2999991076202.pdf', 12),
-(944, 9, '2017-07-15', '3000163499125.pdf', 18),
-(946, 14, '2017-07-15', '3000164631122.pdf', 12),
-(947, 9, '2017-07-17', '3000510850707.pdf', 14),
-(948, 14, '2017-07-17', '3000511057005.pdf', 12),
-(949, 9, '2017-07-18', '3000682523732.pdf', 14),
-(950, 14, '2017-07-18', '3000682793072.pdf', 12),
-(951, 14, '2017-07-19', '3000859042663.pdf', 12),
-(952, 9, '2017-07-19', '3000859030848.pdf', 18),
-(953, 17, '2017-07-19', '3000860038019.pdf', 19),
-(954, 10, '2017-07-19', '3000860118637.pdf', 18),
-(955, 20, '2017-07-19', '3000865786397.pdf', 19),
-(956, 20, '2017-07-20', '3001036469149.pdf', 23),
-(957, 9, '2017-07-20', '3001036879216.pdf', 16),
-(958, 14, '2017-07-20', '3001037742480.pdf', 12),
-(959, 10, '2017-07-20', '3001037732885.pdf', 20),
-(960, 20, '2017-07-21', '3001205296158.pdf', 23),
-(961, 9, '2017-07-21', '3001205549662.pdf', 14),
-(962, 10, '2017-07-21', '3001206721360.pdf', 14),
-(963, 14, '2017-07-21', '3001207298976.pdf', 12),
-(964, 20, '2017-07-22', '3001373146812.pdf', 24),
-(966, 10, '2017-07-22', '3001374345114.pdf', 16),
-(967, 9, '2017-07-22', '3001374463236.pdf', 16),
-(968, 14, '2017-07-22', '3001375747441.pdf', 12),
-(969, 9, '2017-07-23', '3001551621215.pdf', 16),
-(970, 20, '2017-07-23', '3001551423586.pdf', 31),
-(971, 10, '2017-07-23', '3001553360704.pdf', 18),
-(972, 9, '2017-07-24', '3001719696880.pdf', 14),
-(973, 20, '2017-07-24', '3001719669186.pdf', 18),
-(974, 14, '2017-07-24', '3001720727074.pdf', 12),
-(975, 10, '2017-07-24', '3001720684787.pdf', 14),
-(976, 20, '2017-07-25', '3001891944396.pdf', 23),
-(977, 9, '2017-07-25', '3001892482739.pdf', 14),
-(978, 10, '2017-07-25', '3001893100267.pdf', 14),
-(979, 14, '2017-07-25', '3001893537014.pdf', 12),
-(980, 9, '2017-07-26', '3002064001959.pdf', 18),
-(981, 20, '2017-07-26', '3002063986664.pdf', 24),
-(982, 14, '2017-07-26', '3002065277542.pdf', 12),
-(983, 10, '2017-07-26', '3002065537415.pdf', 18),
-(984, 20, '2017-07-27', '3002238925322.pdf', 23),
-(986, 10, '2017-07-27', '3002240726087.pdf', 14),
-(987, 9, '2017-07-27', '3002241363870.pdf', 14),
-(988, 14, '2017-07-27', '3002241798522.pdf', 12),
-(989, 9, '2017-07-28', '3002411986920.pdf', 14),
-(991, 10, '2017-07-28', '3002412841494.pdf', 14),
-(992, 14, '2017-07-28', '3002413902176.pdf', 12),
-(993, 20, '2017-07-28', '3002413613088.pdf', 23),
-(994, 9, '2017-07-29', '3002584918510.pdf', 16),
-(995, 20, '2017-07-29', '3002585008467.pdf', 27),
-(996, 14, '2017-07-29', '3002586305640.pdf', 12),
-(997, 10, '2017-07-29', '3002586186689.pdf', 20),
-(998, 20, '2017-07-30', '3002766559626.pdf', 30),
-(999, 9, '2017-07-30', '3002767587071.pdf', 14),
-(1000, 10, '2017-07-30', '3002768274297.pdf', 18),
-(1001, 14, '2017-07-30', '3002769108781.pdf', 17),
-(1002, 20, '2017-07-31', '3002936198154.pdf', 18),
-(1003, 9, '2017-07-31', '3002936470949.pdf', 14),
-(1004, 10, '2017-07-31', '3002937079505.pdf', 14),
-(1005, 14, '2017-07-31', '3002937321029.pdf', 12),
 (1006, 10, '2017-08-01', '3003105058795.pdf', 14),
 (1007, 20, '2017-08-01', '3003105051365.pdf', 21),
 (1008, 14, '2017-08-01', '3003106522221.pdf', 12),
@@ -3466,7 +2496,32 @@ INSERT INTO `epaper` (`id`, `epaper_userid`, `datetime`, `epaper_name`, `total_p
 (1038, 20, '2017-08-13', '3005182978756.pdf', 27),
 (1039, 9, '2017-08-13', '3005183542855.pdf', 18),
 (1040, 20, '2017-08-14', '3005346802640.pdf', 18),
-(1041, 9, '2017-08-14', '3005346974431.pdf', 14);
+(1041, 9, '2017-08-14', '3005346974431.pdf', 14),
+(1042, 20, '2017-08-16', '3005697414614.pdf', 38),
+(1043, 9, '2017-08-16', '3005697950525.pdf', 30),
+(1044, 9, '2017-08-17', '3005866629057.pdf', 14),
+(1046, 20, '2017-08-17', '3005868134886.pdf', 23),
+(1047, 9, '2017-08-18', '3006038901325.pdf', 16),
+(1048, 20, '2017-08-18', '3006038845402.pdf', 23),
+(1049, 9, '2017-08-19', '3006213583242.pdf', 16),
+(1050, 20, '2017-08-19', '3006213449507.pdf', 23),
+(1051, 9, '2017-08-20', '3006394247695.pdf', 18),
+(1052, 20, '2017-08-20', '3006394102487.pdf', 31),
+(1053, 20, '2017-08-21', '3006556906224.pdf', 18),
+(1054, 9, '2017-08-21', '3006557172236.pdf', 14),
+(1055, 9, '2017-08-22', '3006731663813.pdf', 14),
+(1056, 20, '2017-08-22', '3006731618137.pdf', 21),
+(1057, 20, '2017-08-23', '3006904900018.pdf', 24),
+(1058, 9, '2017-08-23', '3006905743237.pdf', 18),
+(1059, 9, '2017-08-24', '3007080051411.pdf', 14),
+(1060, 20, '2017-08-24', '3007079925785.pdf', 21),
+(1061, 9, '2017-08-31', '3008299397693.pdf', 14),
+(1062, 20, '2017-08-31', '3008299392807.pdf', 21),
+(1063, 9, '2017-09-06', '3010535614081.pdf', 14),
+(1064, 20, '2017-09-15', '3010878406765.pdf', 27),
+(1065, 9, '2017-09-15', '3010879356893.pdf', 20),
+(1066, 9, '2017-09-16', '3011056004692.pdf', 18),
+(1067, 20, '2017-09-16', '3011057278818.pdf', 23);
 
 -- --------------------------------------------------------
 
@@ -3474,8 +2529,8 @@ INSERT INTO `epaper` (`id`, `epaper_userid`, `datetime`, `epaper_name`, `total_p
 -- Table structure for table `epaper_user`
 --
 
-CREATE TABLE IF NOT EXISTS `epaper_user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `epaper_user` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `contact` text COLLATE utf8_unicode_ci NOT NULL,
   `address` text COLLATE utf8_unicode_ci NOT NULL,
@@ -3483,10 +2538,8 @@ CREATE TABLE IF NOT EXISTS `epaper_user` (
   `imageid` int(11) NOT NULL,
   `username` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `password` text COLLATE utf8_unicode_ci NOT NULL,
-  `isactive` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=21 ;
+  `isactive` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `epaper_user`
@@ -3520,17 +2573,16 @@ INSERT INTO `epaper_user` (`id`, `name`, `contact`, `address`, `cityid`, `imagei
 -- Table structure for table `gallery`
 --
 
-CREATE TABLE IF NOT EXISTS `gallery` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `gallery` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `datetime` datetime NOT NULL,
   `size` int(11) NOT NULL,
   `width` int(11) NOT NULL,
   `height` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
-  `isactive` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4514 ;
+  `isactive` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `gallery`
@@ -7812,7 +6864,36 @@ INSERT INTO `gallery` (`id`, `name`, `datetime`, `size`, `width`, `height`, `use
 (4510, '15023416651502341841.png', '2017-08-10 05:07:45', 7334, 200, 200, 1, 1),
 (4511, '15023417971502342001.jpg', '2017-08-10 05:09:57', 13555, 310, 162, 1, 1),
 (4512, '15023418801502342228.png', '2017-08-10 05:11:20', 5216, 259, 194, 1, 1),
-(4513, '15024289621502429450.png', '2017-08-11 05:22:42', 5623, 150, 150, 1, 1);
+(4513, '15024289621502429450.png', '2017-08-11 05:22:42', 5623, 150, 150, 1, 1),
+(4514, '15028765021502876825.jpg', '2017-08-16 09:41:42', 165220, 960, 1280, -1, 1),
+(4515, '15028765071502876728.jpg', '2017-08-16 09:41:47', 135793, 960, 1280, -1, 1),
+(4516, '15028765071502876713.jpg', '2017-08-16 09:41:47', 136851, 960, 1280, -1, 1),
+(4517, '15028765071502876808.jpg', '2017-08-16 09:41:47', 135793, 960, 1280, -1, 1),
+(4518, '15028765071502876749.jpg', '2017-08-16 09:41:47', 144279, 960, 1280, -1, 1),
+(4519, '15028765071502876995.jpg', '2017-08-16 09:41:47', 141700, 960, 1280, -1, 1),
+(4520, '15030361321503036573.jpg', '2017-08-18 06:02:12', 71910, 780, 1040, -1, 1),
+(4521, '15030361341503036234.jpg', '2017-08-18 06:02:14', 71910, 780, 1040, -1, 1),
+(4522, '15030361341503036461.jpg', '2017-08-18 06:02:14', 72237, 780, 1040, -1, 1),
+(4523, '15030368171503037031.jpg', '2017-08-18 06:13:37', 56255, 780, 1040, -1, 1),
+(4524, '15030368171503037033.jpg', '2017-08-18 06:13:37', 43692, 780, 1040, -1, 1),
+(4525, '15030708961503071031.jpg', '2017-08-18 15:41:36', 65547, 780, 1040, -1, 1),
+(4526, '15030708971503071182.jpg', '2017-08-18 15:41:37', 86039, 780, 1040, -1, 1),
+(4527, '15030709221503071033.jpg', '2017-08-18 15:42:02', 77099, 780, 1040, -1, 1),
+(4528, '15030709221503071351.jpg', '2017-08-18 15:42:02', 64113, 780, 1040, -1, 1),
+(4529, '15070326561507033110.jpeg', '2017-10-03 12:10:56', 660054, 0, 0, -1, 0),
+(4530, '15070326561507033001.jpg', '2017-10-03 12:10:56', 18873, 129, 181, -1, 1),
+(4531, '15105656501510566140.jpg', '2017-11-13 09:34:10', 27407, 480, 480, -1, 1),
+(4532, '15105656501510566070.png', '2017-11-13 09:34:10', 26222, 664, 158, -1, 1),
+(4533, '15105656501510565803.jpg', '2017-11-13 09:34:10', 10362, 115, 204, -1, 1),
+(4534, '15105663961510566775.jpg', '2017-11-13 09:46:36', 306249, 2576, 1932, -1, 1),
+(4535, '15105663971510566698.jpg', '2017-11-13 09:46:37', 298449, 2576, 1932, -1, 1),
+(4536, '15105663971510566534.jpg', '2017-11-13 09:46:37', 10380, 193, 258, -1, 1),
+(4537, '15105731751510573590.jpg', '2017-11-13 11:39:35', 48283, 720, 736, -1, 1),
+(4538, '15105731761510573665.jpg', '2017-11-13 11:39:36', 6542, 153, 204, -1, 1),
+(4539, '15105731761510573301.jpg', '2017-11-13 11:39:36', 378304, 3264, 2448, -1, 1),
+(4540, '15106330681510633559.jpg', '2017-11-14 04:17:48', 859126, 4160, 3120, -1, 1),
+(4541, '15106331321510633451.jpg', '2017-11-14 04:18:52', 859126, 4160, 3120, -1, 1),
+(4542, '15133357661513336089.jpg', '2017-12-15 11:02:46', 3176898, 0, 0, -1, 0);
 
 -- --------------------------------------------------------
 
@@ -7820,14 +6901,13 @@ INSERT INTO `gallery` (`id`, `name`, `datetime`, `size`, `width`, `height`, `use
 -- Table structure for table `gcmuser`
 --
 
-CREATE TABLE IF NOT EXISTS `gcmuser` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `gcmuser` (
+  `id` int(11) NOT NULL,
   `gcmtextid` text COLLATE utf8_unicode_ci NOT NULL,
   `imei` text COLLATE utf8_unicode_ci NOT NULL,
   `userid` int(11) NOT NULL,
-  `datetime` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2209 ;
+  `datetime` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `gcmuser`
@@ -7902,7 +6982,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (78, 'APA91bFk9pubCh6AXtq2PIBrIk2eldFy9UeosRdyVf9u_6hh01mwrecIrbAH7oZUxx3531s_uGQemHYcSZrO4_E5nJpGPDKgERanGW4slI9nll6ZAjiNH2g', '5edd5a0599319d7e', 0, '2016-04-12 05:44:01'),
 (79, 'APA91bGEDJta2CxwgrnIe5FrNKRMubxvoLD2yjLUCtOiimEgE12r0AsSlx-DvSS5iRx-KQO8jmvIPrZSnV9FcQYZwRr6R6YGobFCt7lmcw_0_-tj3fInt3o', '73a571ad70a7e5a0', 0, '2016-04-12 05:54:59'),
 (80, 'APA91bGjufUR8rsiu8awmQ9qKnwaWFqzn64JyPw8nVbzUUWAsE5jygP1A-bGqCPKl2i9O7JSY9wAgfiwKT_tBAcmLD7Tuv4n7ejhfGT5DIyoaAGdgcE9W8Y', 'efc224ab7975b34c', 0, '2016-04-13 06:53:47'),
-(81, 'APA91bHjr5k0qHkEV9KbsOsvwGUJfBILmwZDyQI6Kf5G5R2SxmXxxRPlt933URFPpjOrwcbyIzlfnUnZJR77wX-8iNZIiqzarLF8--lIirAoq1kzSVsvVTk', 'd6979e78773c101e', 0, '2016-04-13 07:03:25'),
+(81, 'APA91bHjr5k0qHkEV9KbsOsvwGUJfBILmwZDyQI6Kf5G5R2SxmXxxRPlt933URFPpjOrwcbyIzlfnUnZJR77wX-8iNZIiqzarLF8--lIirAoq1kzSVsvVTk', 'd6979e78773c101e', 0, '2017-12-11 14:18:54'),
 (82, 'APA91bFDyB5OKXfaqv1GpN6MZl5lhH7K0ACOy6E8rreW6_IvK8Lut7Lk9t8vbvltSLDeJ3XqUNcJ7Jk70ZXVigAJQLYOAdd8jCEvCYkMPwCqILx2zgYLW1U', '15d6c2dced27d878', 0, '2016-04-13 08:21:47'),
 (83, 'APA91bHGNJdgFJmafRADmGfR4e3fqVqodI1KcjJl3bOJz-Kc7Cr0GzITgPd-xldv3ElWzSDJD3-3ZfWaP9s2jvsyZo8zqNC1KCWNofWqzjjbDsKzTiPUwRM', 'ab88e4cd51bbebc5', 0, '2016-04-13 13:19:07'),
 (84, 'APA91bElVObE-xkRzGk-z831wtLkWHzeKuiYS76HjNh2_sjtQeE86U9Ig7CVJkznZXdzIU3hqeqNFEqH6OolbBMfRyxyeEeWEnkjasnQO9f5S2gRluf_mhI', '89b7dfe35b74f503', 0, '2016-04-28 19:47:07'),
@@ -7913,7 +6993,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (89, 'APA91bG09iUl1bFp4pre94_s74ORc038DDFjOPpLxseBjqIqRs_7Eqj4rmckiy86jWT3MiV7PrnZmaWj_4DBnEbiR4vapSx0RwklZhLpgLXsT1f9wn5JkaE', '2d0ea97b685f0ba1', 0, '2016-04-14 10:19:55'),
 (90, 'APA91bEeeO8hdHRoCmgMv7nzf9T6_qSxQsUxnameQA-OZiNSvFI8fB2YASIWZQsr1p9xd0PfaQx0586WM2FPRH37kq_9-vU-bQCGqVRY2A1uV_C3HSfkBtg', '25821304b372cd23', 0, '2016-04-14 14:32:28'),
 (91, 'APA91bEimNgK3XIWBuCMKbjfhQVTiltkZXrNv4lQIaq3CDim_mL2_nvjFUmW26ZmUo_ibHVLchnfB_3JQ2eYRz9IisElR_NQNqOY0gZL30lWAIpVyMAKMMc', 'd4a55caa243a0661', 0, '2016-04-15 05:43:15'),
-(92, 'APA91bGRyfDg0U8P9q7ZYp_jd1xtNkNMAT5fv5I9cMzF8hsLyDbV1EKZ1ZccEkBJtLagKUgv-TkUDv3tYgWqRJRdLZbHErdtNohmMnrplMfz2KdbFdLI1kY', '2187f429b027412f', 0, '2016-04-16 14:34:58'),
+(92, 'APA91bF1FsOtw0BOxhUZItYQYrLuQZu3kYOhwIYud8CQyE21LBl56abSrri9cplj0mzQxoenKqaetfLO2Cdvool7w-WZVKQI_bJzs-tKQOv3-bO3enhYrXA', '2187f429b027412f', 0, '2017-12-23 04:28:57'),
 (93, 'APA91bE_0spHEN9XYvU6FFqh9Iya8qzv_5AX0Lf0TdsHaXO3a0KqKGLjf9wYtvNJjD2OvEqac9fZiq95zL6c259gW3WiOm--NAvHSDH9G-7O5sGYJTIGlDw', '1ec36c0b98ca7a9b', 0, '2016-04-17 06:15:05'),
 (94, 'APA91bFqPs5y9_HxOcuCfk7f9h3Op2zIWItlWeHrnWqW1-Pik9CaNmyU4FZKF8y6UL5Za6RCQ2R110ULPV7QUT4TGWQ6GXBcODkPBFzFgeJzV02MoV5qGCw', '71f6e60943cb385e', 0, '2016-04-18 07:20:35'),
 (95, 'APA91bGYV4-CvHxoGwB36n6pp48GB73jv0a6QGpLehxdzERLzTWwij1tSUNBoh1fvGN9fiNdt143VWSD6CiE2Gpe6n3XBVGRQ_kev-cIy3rXIAWbblqFERI', 'f0f9e38c80fb08d8', 0, '2016-04-18 07:57:09'),
@@ -8432,7 +7512,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (607, 'APA91bGOeB76j6Ph6YAbFScgwyNSQ77y9UJ8PAiUGrVqL7uziV1zS_77T2SodmqzmAy7cZy81kKOLrcodyrtR49QI2AkJqUHKq94myTCHKtFApO64DaZaGQ', '865291020841143', 0, '2016-06-03 10:57:11'),
 (608, 'APA91bHPn7S5z7NxgpiaA0un0A2se-cJAmlUwxnxBl8rUuYTf1MC98kCXQ11BiiFN67EVF8_4XPPOajMB22dt1WjH6G3RwgJE-RMhFiT8N_0zkXXYUD1RUw', '351540060971546', 0, '2016-06-03 11:36:40'),
-(609, 'APA91bGMcU9Y5QiT1iSluK3y-c-jULGD3nw3bpgfCj_hqI49-N-zl_r7xZ4a2jjMvDLkRf_21Y49-f3SuJcV-KlpW61Dyhoem_-PybASjfzT_DR2xvdTvxA', '911495350263505', 0, '2017-08-09 05:48:12'),
+(609, 'APA91bHWFiipYZmnLrBO_Rs0Vj1FNhTO3dsDUJCH7FtOZyrI6_U2KqV2PHgzuLRcLsDLYXwrgF-Xsa3P8aoqhqk70AJzuJt1gIIovy9ZaXZ5DuEl4go-a9s', '911495350263505', 813, '2017-11-21 08:56:51'),
 (610, '', '864495023585281', 0, '2016-06-04 06:18:53'),
 (611, '', '867645023175056', 0, '2016-06-04 06:29:49'),
 (612, 'APA91bFKpm_kmpzJngph7jVX1xTKpJoXfHsw6lvQN4B6Wb9qCQfcCpHtUQe-4hc4htllE_MkkAcdwjPzWvNUuuY1eHPIQ4KNyHJIdKiSRDfJXK4jDhV_tbU', '869328021034736', 0, '2016-06-07 17:33:34'),
@@ -8722,7 +7802,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (896, 'APA91bEv8AtAoOuk-CYQr2tpFFddbdzT5xdytnnf1rzC6oAe30Y6yTT-UPPY46C25CH6jqXgyv6TwS_jWlEQeu5BXj8jLb42hcW7FspG05MOge1FopJkaUQ', '358271064004497', 0, '2017-06-15 16:16:02'),
 (897, 'APA91bE-52LSU5pqG8zLcoyiYCb2IyNeBNFBi6kUS-6BFa0p8gL101unjxXuVyboqGsKa7-RmTfx2JWiVccRRSAPvN03_oAfvP8ZB2ORtnk10o9kww30uAo', '911313251778044', 0, '2016-07-01 12:43:22'),
 (898, 'APA91bF0n9TE6alDV9GW3VR0h6ED7avanYdrKNgREjazeRWVOdt-t3FLjTEIj37leJU56xXEhO7WSbusdtYGkLjGPMbt5YMAXq0Osu4trvXIf1KZKVL_vYU', '861375035837727', 518, '2017-01-10 13:49:30'),
-(899, 'APA91bHusZhv6z0j6mE3EEABCxHIUmYGyC8PKbx8z2f03KqYJQHlM1KBw6XJXossEpd19sVaaWNAAnDPfOMUDTAInMdAUiMgHOl-W1_1mrOKRkwfpJQMNCU', '911478806127334', 0, '2017-07-02 06:50:08'),
+(899, 'APA91bHusZhv6z0j6mE3EEABCxHIUmYGyC8PKbx8z2f03KqYJQHlM1KBw6XJXossEpd19sVaaWNAAnDPfOMUDTAInMdAUiMgHOl-W1_1mrOKRkwfpJQMNCU', '911478806127334', 0, '2017-12-01 04:25:00'),
 (900, 'APA91bGxvOM2kS_nO-hPsny_6HtUC056o1-T7DawX4KHCgz8ldNZAs7Z9oSXfKeSk3yBTM2j4BUqEVNg5Uq86GLaHWEjl-6OcCK6gpRT0UQUUeyh60XVhzc', '867865021039449', 0, '2016-07-02 07:13:07'),
 (901, 'APA91bE9XaIQY9GUEijMLFrWoAPj_WxOq1cwFuEp6Ld9VU9kqIB2Ti-TkyhmPDsByTQeiOMmA9fv4Js3kXhie3GKwKzCnLvS81erT777moexDXVe73G3Z7w', '911257200240509', 0, '2016-07-02 08:21:27'),
 (902, 'APA91bFz1-b0DAwz7GI9z0dcfngJjfBaWXdocmnUry8uJvEXM73mVFWQvozgTAozZJsZ7He3BN0o2VG_nU-lAVjr8KMkYTqY7HYsbERUaGPzMI5RZUnY5kQ', '911448450586010', 0, '2016-07-02 08:32:36'),
@@ -8765,7 +7845,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (939, 'APA91bGy5BABKdUX1ebHuaLPphvDJ1Xcc18qZFUq4Jc6MGzYoyGqQNDJZ7AJuGJuv_7qQXG5-N6khNcUeXhzixN6LrW2HGZSAdObmxM_fXUxypWwcwp3f8g', '354833050321252', 0, '2016-07-11 11:30:12'),
 (940, 'APA91bGAw_dABn9idMdsD0aBIuDlGru-6nzcZ-pyPHDeQs4loD7zSb5oVs2Ght_ohyojKUkwtJUmJzBHjoNWH20yqFPHZ2y3r_VseNv4T5jKOKCPZeShi-E', '351669083880432', 0, '2016-07-11 13:56:30'),
 (941, 'APA91bE-pMBqonzi8Zz0xvk9p4IxU7Zb04n9jLk5rUdQv7S1jcuPIshBamBWn8s7g8Yr1oGwx5D0r9AL--FlUzFEtdFSOxOjQ11K_e6IEmUMVl_iYJXsImE', '352607060101892', 0, '2016-08-23 05:08:13'),
-(942, 'APA91bEiHEYdQMMf_G7FzH9kHcd6Mef5RSXosOVANaJPoleDI03nI3wGRR3mxXfacLegpmEmK7-Sjtp1u-FGBAyRPoia9ol2IWFYrNS1yxvyYpY22QqqaRI', '869102023477981', 0, '2017-06-05 07:35:48'),
+(942, 'APA91bEiHEYdQMMf_G7FzH9kHcd6Mef5RSXosOVANaJPoleDI03nI3wGRR3mxXfacLegpmEmK7-Sjtp1u-FGBAyRPoia9ol2IWFYrNS1yxvyYpY22QqqaRI', '869102023477981', 0, '2017-12-01 02:10:13'),
 (943, 'APA91bGrgFbJ-WVyd3iSz4H1t0gS0fE4-xrPqkK0HNKtqJM1XF_KkK-BmbzstCURjvTT3sJ57UeRjLWod_WeiSFx_vvDY7u5DCwYHduBBqCs_Wh31JTvZhg', '352532070724402', 0, '2016-07-12 06:52:41'),
 (944, 'APA91bEAcHq7cUorLTiRNhWt0IOGDqUZ8csot8TIeo3NHGM1UnhNYbrsT4uh2oKnpJS8eUUcB7gsYYD6U2sWnyYmI7asC-moDMS4QsoGB6wDuZ83gsd_ACo', '866376020978588', 0, '2016-07-12 12:10:49'),
 (945, 'APA91bFBDqdLFTlcVRyYkSZH28VQfGiN4JlLZGVr1n1oPV0xfrdYgU9A2msUMAFsyzBH2JyvkGd0dAEVIxWPogo38qzpVZ_N9K_0bdnoH2ZocBC_lWAMc48', '866778029234881', 0, '2016-07-12 16:20:08'),
@@ -8874,7 +7954,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1047, 'APA91bFQWtnWh8iPYf88eadhZDuIZNY_cCe1LNydomY8mG1VMj3aPXtprg5fvxWOWFfSa_wTkzo5myyHeFLW6CgQjAH3ra2Smr8zeJT7ERy_EI38zFBmH38', '352167052561082', 0, '2016-08-03 06:02:54'),
 (1048, 'APA91bFavsisjaEkGSwVc3iKJ7mwz1oFrUqtAiBOVlVPtTjilE2Ef3C7vy8el9J1XRjwvhqJAx_fCBlj6Eihok8uoBGpQvJSfU2s5cTuGj04WOoC2MiG2Jg', '356273077236662', 0, '2016-08-03 06:10:22'),
 (1049, 'APA91bGVwJt3XxfNywmrLyaIt3jc-nhGlsQWzxWUa9spdEl0f-skCLD1DSEq5cItwls1-TVQnei_yMEUaVqOAki8SDT1DtWq639jkr5ZEWQhpVPSiVR34tU', '356320064132980', 0, '2016-08-17 18:06:42'),
-(1050, 'APA91bGb_4ocFiRnOJC6atwzHrbcVjo4oaAP2oBai5qHt6syobq6E9NSc_A65Rj5nczL28EpklkcDai7b8dZ4O68uf6heT-XB2K7yOT_8Z7uCW_LsPlqsfw', '351993070496931', 0, '2017-08-07 07:42:17'),
+(1050, 'APA91bGb_4ocFiRnOJC6atwzHrbcVjo4oaAP2oBai5qHt6syobq6E9NSc_A65Rj5nczL28EpklkcDai7b8dZ4O68uf6heT-XB2K7yOT_8Z7uCW_LsPlqsfw', '351993070496931', 0, '2017-09-26 01:55:18'),
 (1051, 'APA91bHrhm7UwOv1smOmiOfX9TPXOSi5swSQTGGn7VjfnWY2dHi8nsJsjGRSD_WpsJ2tPl6YoOkt1sVQNGKzyNOG88NsTMJg9b0xwmozZoxUszfdZGx0oc4', '869025022602269', 0, '2016-08-03 06:18:58'),
 (1052, 'APA91bEn_27Dkr5yxLoeRvqt7mfnUq-_bzKpx9mbVUuDIrNPDgQdcKwKuNEohp79bzPUkej-DnB8xKJL2DLWzh207pDU99_94FpearbipyitBu1XP4IG28Y', '355004055199965', 0, '2016-08-18 13:35:44'),
 (1053, '', '862704028536831', 0, '2016-08-03 06:28:42'),
@@ -8889,7 +7969,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1062, 'APA91bFCX54asjSUL2kK5ODGOFrvhwOFIrVpbw4F1S2Oh5dY1ZPkORGoW9ALfKAm9KzTY4vVVd-EFHbvx2JJZcCfBkx3XscgfQ6jFTDLmzS5BvT5GEMzg5I', '860849031020927', 0, '2016-08-11 15:54:38'),
 (1063, 'APA91bHbd_NWjpv-vZQ6-IkoXII-UyClJQpGhZD2wuOitT1sPet3PGv6psdvI_-YpSiC7wFsgHFVK6XuCubVf88KxUxR00oPV7W7hZDR8DA3cTfVPqQeKO4', '911422351725902', 0, '2016-08-24 15:41:31'),
 (1064, 'APA91bEqHA6hBnorz68fSbFUebC2JqrMl7Fgsy02GYkXGZqqo9uvSF6ZZ7-DsF8dMsud-_88CLlezI5pVHcIS69zUt2Sv5DLYjsurK2lX8X9OOusKn7dDI0', '864222025612941', 0, '2016-08-03 09:10:54'),
-(1065, 'APA91bFDrwkLqQ4zOQcPKk2kvgI_ig1l9MglNwqLXVXFmsfLRZc7giS2LeI8nLuB0eqIQUoDLDRCAc1FIAnx1sckOAuQcwZ5Kk1-YLMTgeu2xcpqiC7g_OA', '869327020536642', 0, '2017-07-08 13:01:40'),
+(1065, 'APA91bFDrwkLqQ4zOQcPKk2kvgI_ig1l9MglNwqLXVXFmsfLRZc7giS2LeI8nLuB0eqIQUoDLDRCAc1FIAnx1sckOAuQcwZ5Kk1-YLMTgeu2xcpqiC7g_OA', '869327020536642', 0, '2017-09-26 04:59:56'),
 (1066, 'APA91bHQGR5wPxDdha8HZwMiU1KB7p2oScS_6DcBoTDI-ySLRhrOFjkE_zrab2pgGd2tEXDqak2uuluDP3n5TZiWLUKrq7NDbQ2EuJYscNXjnaxCWH9o6jI', '861228030551878', 0, '2016-09-18 10:24:25'),
 (1067, 'APA91bGOocMc6ZiTCmyDMlHEj-KA1E5f9YZUFpGdYByI6vmLuAFBfPhOJMFN-UHlKzF7bgXDNtV_MPPCWBkyx_dSlAF0o_BP283cT9Jo723RECbMi8OzLwg', '355970050129928', 0, '2016-09-04 10:45:18'),
 (1068, 'APA91bEOjq6pppQT6NQqcUhys1IWJd67bEb1tEdCTRojvw_0-f53gKwk7Fuhbh2BI976_crg0B-vPgvvWC7ymwX9qPTSCfZSCDiWSRBueUjwi_zJwBfyT7g', '860905033697979', 0, '2016-08-03 10:45:33'),
@@ -8976,7 +8056,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1149, '', '862704028557373', 0, '2016-08-10 05:57:51'),
 (1150, 'APA91bEygV5sG3LJd-H3HAl6veBzpIIGNihNu2sCxxe4ikmvY1jt38GjGwJvB9FmsV0W4_weJsiLjfpuJeGd9O1-BwUqev1kVtwg_rRc3TbsGcxnEyYWW88', '860905030615537', 0, '2016-08-10 06:44:30'),
 (1151, 'APA91bFAm-y9QJY-ng3QXYxEaw9vJwCb6QzDaRzgq-0mMoTMThiFhbb7EqGeZ4qUPHN4a-3i1HDX1K2lwSPer7LSzEM61xifEIKVhUkeWL9c4x1fkuzpQQA', '911417453788337', 0, '2016-08-10 07:25:26'),
-(1152, 'APA91bHbmy74lLvHrPIZa1l3FNARQ4IEhoLsKtGmLpFEkF6jisn7_zcqWElv2wsvuGxF_DbY0ioHT9i2rWag0HYhUe4xcsWaOKHVVdkZ8vrOoGLAgP5qOwY', '', 765, '2017-08-13 08:38:03'),
+(1152, 'APA91bFuqK3SGQt-CADBIYQPc_E1wbE6I3Ee1LAXqBr3Qm_4fwTKyUwToV-R0nDD1fn6b9R-nRaWZEBdAazNXn7CN2-1374_abs4fFvmT4IMIGdekkxGnZo', '', 815, '2018-02-11 14:29:08'),
 (1153, 'APA91bHGF8b_Dr7MsBxhGwL3zQc6e3By0TbuDHRXP7CQWyCx6EQP57UIxEk42FFun-VZG678MeyFtG6nPV2faF64yfFKmYW67G66oOMofSYNvZy0XEHrW9E', '860848036759547', 0, '2016-08-10 14:18:56'),
 (1154, 'APA91bGYvgKF7zonTVnFCS-2XRcdMAO2Qk0DLiUcmCdeewANxcWbR-_aimWsA2dmps0R4go2GMLhP57_3GFc0lDfivlQMxQDxV8kFz6BsiBkj7v1pzsZnvQ', '911499751911043', 0, '2016-08-10 15:05:55'),
 (1155, 'APA91bGMk_1bN9T8_WLuxqiwJnUwta7jokuAYPyj6tL83aqt7qZ95vnrRLtsI3LUHEgIBcKImeE3FfTZgB0kKiXXS5Ni0ef048r6eCSl3_5ynCP9hdUWuk8', '359057061420318', 0, '2016-08-13 15:46:05'),
@@ -9035,7 +8115,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1208, 'APA91bGKFWAEyhB9PzdQ-vut-QK6XJjPGrY0ViTFNBVUyGEt6vk19qGd2bB9mAmG80dHkkFeJgYoTGaxtGb-9e6mgDXUAnDicrQkGaQdNczI8f43CMz8zgM', '868791024320736', 387, '2016-12-30 08:08:20'),
 (1209, 'APA91bFSAcwpeMRuBNzRTRgpZ3nOLE-SNQGpxPlCeKVf9T0vAUKcLH-hv-GnZLLQbYlP3MVg0__D_6XLmcI44phUXZftpeICYBsj7P0rJokt0cnWxFnd2As', '355819062992841', 0, '2016-08-20 14:44:20'),
 (1210, 'APA91bEdPPO7tpfOCz82rdT3V5ZYA6-sC8tXrPCJq_7kMCO3wqpEYP7BMqYVgORn7EBCPH-A67n9SmQpkkJApR_Dzk8I8vFfJt1JOovdP4FAxEDR-cOF6RY', '911444007350935', 0, '2016-08-21 01:03:28'),
-(1211, 'APA91bErTs434q9Fg6b5iwcDkgHGe3CPjpXKZadZSGKEy2JHkMNm3D63oJP_rIoNc_--yOQyc4Z7gj2mGi2AB1TUEIS2OIOXztygRyKVoVc-6wwYCkb2vb0', '868573024114172', 0, '2017-07-19 01:15:44'),
+(1211, 'APA91bErTs434q9Fg6b5iwcDkgHGe3CPjpXKZadZSGKEy2JHkMNm3D63oJP_rIoNc_--yOQyc4Z7gj2mGi2AB1TUEIS2OIOXztygRyKVoVc-6wwYCkb2vb0', '868573024114172', 0, '2018-01-21 01:25:03'),
 (1212, 'APA91bHde-R_rso4ci1sybOOVbiQ_R2bIq547Dq-_Y1kBfe7IvjBfsBs9Qu7L9dXdkIZgOD2CXMFlmF1GJT2IGAboh9SsKsGNNBSb4e5GEcOO81MORJAZdI', '356271074620433', 0, '2016-08-21 10:17:23'),
 (1213, 'APA91bFTgGjJYaVuXEQ2MCcp111Mp4Yoeyv27LUD4oIGQTVWQeb16ixQ1nyHS57zNuHKiaOVN1SZobr9LYFBf9PCZexxFlERHVVDKDs3UiezYsg4yuD7V2o', '911353105316435', 0, '2016-08-22 14:04:20'),
 (1214, 'APA91bEcUVnoMpd3MxIg35aUn86dfPOvK-bVx3p4sh-e7IM3I3OMi0WyEJnqxqE1brD6XK21OlNAfmESWoCm4sd-F_GMiTdvgVyiclXcjkcmoteV98EQ3cE', '359601060333186', 0, '2016-08-22 14:37:26'),
@@ -9100,7 +8180,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1272, 'APA91bGvGXGDvkax4Bx0kMeabnD90zJ8EBwM0mJF-zoltOc1XcpknG5k1vG1su8PfON5ZaZL658vo4M37qzksm0KirJWYLQ2Wgssf0rKo7p-SYGN_kzjA8k', '358268052950525', 0, '2016-08-29 02:26:05'),
 (1273, 'APA91bHhbiHXzuX9xh1VFvsISP7WmdEUqZtiY0c9El1_WZuJ3nGPk6bmBI50OEx_XEAlUi3tdj-Mi_PWLTD0T-BieU2KG3S_bZVE7frmafzzS-0OIQT5v0I', '867274028028515', 0, '2016-08-29 02:26:37'),
 (1274, 'APA91bH8xg8Z0O0AhqPBoB-2KQjzAio5G1566BcT-gvMIJu970ug2LLURkkAo1Ut_-W0yJQ5Gz5nNhvDq7uJj0ZpBn7Qh29vPXZwWH3rw3770N0AWJG2ee0', '357376050055261', 0, '2016-08-29 02:26:44'),
-(1275, 'APA91bER5MRmY-k1Qm18hga0Lu8Yl3Yx9ygIu2F-A7vwKJZjw0Mk4JZKdDV-tGz9zcgT53X6KOY7xodDJ3CQ0_bg_gwIcIdudGrKcViSTxGZS8B-wjdUX_Q', '357629064782480', 0, '2016-08-29 02:28:29'),
+(1275, 'APA91bER5MRmY-k1Qm18hga0Lu8Yl3Yx9ygIu2F-A7vwKJZjw0Mk4JZKdDV-tGz9zcgT53X6KOY7xodDJ3CQ0_bg_gwIcIdudGrKcViSTxGZS8B-wjdUX_Q', '357629064782480', 0, '2017-08-31 07:44:20'),
 (1276, 'APA91bF6Z0LJK_zPTfSVD8uZ6Ayx6cpXvG8WHqmeI4_qZt7FZLuLOEyBPehZfbPaP7STVwPglPElOTf6-zEM0YomsbBScVbfi9m6rpPJMOZ8wQrIP4-sJao', '861228031041036', 0, '2017-05-25 05:00:35'),
 (1277, 'APA91bHk8g175VTM3U3xW9AgdGb4NXAa7ZSXGSwSWBcF1XQm-sodzbzBvQxAVFAP-0tWCeBo5lSyaib1SnUGtF_sBtEN_vQWh5GrdT3HmYUkcR_9XsFMDkw', '860933039519310', 0, '2016-08-29 02:33:04'),
 (1278, 'APA91bFp2g0L9J9-Mo4n2DUgXm8A8_W__8CJwx1ggiMzHEPSEtmzDwOoelp8q66ij2f8gSss3jC3xPv4N4I1dBLVFYJbn6PiL3la7iFvZdJSysdWBCUmzH4', '355935070750896', 0, '2016-08-29 02:34:17'),
@@ -9234,7 +8314,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1406, 'APA91bHCN5CNDoC4Ero53WJeWOlnqnop8mE67GOHAfB0dRCy8-Y9rUWQz8b_8A3GUEXbBf2F_YxypIGnnWFoFLwYiRgwGcnwqHBCO0rIC645wx-qaGnora0', '353267065137083', 0, '2016-08-29 09:05:01'),
 (1407, 'APA91bHCqEvUSfIUK9Uept0X-cIdN15Lno6odkWYM3KH7eCJChY68KUthwX0qFWWfogReqsyP9yWZeNJB0KiucrmYc2Wa2Yc6G4IQHvoAEC7-hNZ2jB6JI0', '355004052793455', 442, '2016-08-29 09:08:33'),
 (1408, 'APA91bFx38uYQ-tQWTCC9NQ7H9F4Nz6t_BPI7SZvQqzZD5keXCW0k_mWHhaX1RlR_0s_vG2440ig6-JXtI-4SxOmVowQecR2PEXBjvdqOuRYZs6ZCPSrbVk', '868573025043370', 0, '2016-08-29 09:14:39'),
-(1409, 'APA91bHtSEwdamgB6ivwv9YS5xOlYpAou3l0kX7n8MKnM6Ttobzybwl2MFSHBI2EivSvqHeK8M0fKeLWWVX_8zPxkPX1VhZZTn6zuDNFXqOlobD-iFB-P1M', '356273072378279', 0, '2017-01-28 06:10:43'),
+(1409, 'APA91bHtSEwdamgB6ivwv9YS5xOlYpAou3l0kX7n8MKnM6Ttobzybwl2MFSHBI2EivSvqHeK8M0fKeLWWVX_8zPxkPX1VhZZTn6zuDNFXqOlobD-iFB-P1M', '356273072378279', 0, '2017-09-13 02:11:13'),
 (1410, 'APA91bF6Mqgl-1M7YQ-xjE1Ie7FqeCCicAvbqdZOa3ZpB9jOt8Z_sEmKh5eFbnlW4KFB_I3WNVQaY6zOxzbhrF6j3mDfNNj9WAMGwZp9eKFyCfZYEgavWiE', 'A1000037E21421', 0, '2016-08-29 09:21:35'),
 (1411, 'APA91bGTcKFdfFl4n0jTmJ-dI-kI7-HGtsBfTxvW68RXYbHOfXeeGZs6yozvmtCHAv8pMZJdHTn9owgzO9hZ3Ae3yc8UwuuVU8JfYKPbuZT0ecZmBTiWOvg', '355004051784984', 0, '2016-08-29 09:29:43'),
 (1412, 'APA91bGL2o4NR0PnKKb4nkJDQKk-LIFTQV9fKYHsPVW7MJAeWYiYR-Kn0mStPiUtx463mbYF_hhWRwvRhpy8z2m6s_L5wp51V6ZuL_iUwEEBhxuBSXjb6pQ', '355370063717720', 0, '2016-12-20 09:15:24'),
@@ -9266,7 +8346,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1438, 'APA91bFCyEm-gVe4uw2HELp0zPZUoOvlbc9s0JG2CwajHAPE-_Y3YlJw3btKIEy1bS7_3LMEda7D1xOoBA6Atj_E57JGQ8ILIgjNnBh3-QGfATkgkby7MmM', '866376020310626', 0, '2016-08-29 11:18:38'),
 (1439, 'APA91bFvnFiISs7jV8cKAkO5rbI-qqdhgYqIgkRit-ZZIlnF7kYIumoS1Z-XzSsdVVh3XbHoivK8nlRX6M8E4GLtbu44uZGF5DlinStWsy-Dj2itfWDL3JA', '352672070100995', 0, '2016-08-29 11:27:34'),
 (1440, 'APA91bG5ztF3M0R-hzGLRHUf6weDhKjPYvT_Zm-XRUH-uzCuzXXStz8O13WHxfKkyFiyP6BgxNbe7-JUa0hytCUBNvUMEy-ZMIkEiQmAGWsrCdJe9flp5B0', '911422356164784', 0, '2016-08-29 13:45:51'),
-(1441, 'APA91bG2UfgsUQ91Y2dbc9RCA7f3668KfGN3i3JhOBFuON0NV0RrhX7ui2GuyAaAI7GDxanFLDHF5n81fzU27-8o7F2d8RYbyMHK_3Y9TZz6wOoL3FNh-Gk', '869313020253461', 0, '2017-04-12 09:26:55'),
+(1441, 'APA91bG2UfgsUQ91Y2dbc9RCA7f3668KfGN3i3JhOBFuON0NV0RrhX7ui2GuyAaAI7GDxanFLDHF5n81fzU27-8o7F2d8RYbyMHK_3Y9TZz6wOoL3FNh-Gk', '869313020253461', 0, '2017-09-18 03:04:03'),
 (1442, 'APA91bEbUFKBhDZ5PbrFrbVBW3q-crn4uIg1h_0rnCmD9ewUBqmWph3AX76VLRYL05XB2Q2VW9lOx4y1LnKNUlsGtZ5RzakzA6K8UWOUh5_emtM52esaTxY', '911422355838818', 0, '2016-08-29 11:44:22'),
 (1443, 'APA91bEUePs9lk1YJkUheAy2fx7j4BiX4yf8fkQfaLWH6nd3g1OoMKz4PMSuPQ3ElLyOIKgc9bZupyzk0pCuRtlRpy1X_XEvfXP-113IoOsgB3gf4adCAqQ', '356893050229846', 0, '2016-08-29 11:48:33'),
 (1444, 'APA91bFTnr4MncjE-Y6XMpnMhURzayIFNy-l5KOvJYKcbWudNpdyK5FbbSGOi-SBuFqMNbzwyLFHNYTrFV3Fo-G-UOTGWcOTZzNxp8mNqN-ERDBiMBNCc_A', '356273073983879', 415, '2016-08-29 11:50:28'),
@@ -9326,7 +8406,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1498, 'APA91bF3_9W7BpKZLvkuH0RjDNaFgK21SSHaIDxOM0unNRdBa7-RNyXVt7-2RWnMe96y9KGoG4KOoobWoTPnno8OfLD32qH1QoI90PMskc1uL7cRRc5cEgs', '869813024478386', 0, '2016-08-30 00:33:59'),
 (1499, 'APA91bHz46ErnYzqbmNOJ6drVg_S8H5sXNqciR5SHcNu0WAlnEEaPDDbxO4jRucJ47mxtqK0sb0S6WS8xI9GvWuxS_gMM8ukGsIE9a1fmBunuj4AeGGSHY8', '352302078338351', 0, '2017-01-08 06:03:26'),
 (1500, 'APA91bG4n4lpFoVHggsJeTYXzu4FA3ywj2iBZ8dzeuCAei3qdqrxgHfYO3yH0fq5L8Want2agkRXEbiKScTyyEyzlqaP0OxPsiCDL0-I1EfQld7OqtOSxkQ', '354733070721152', 0, '2016-08-30 01:35:22'),
-(1501, 'APA91bEOuHhggAnYTXrXNcIdjxOAx5VHAjkxzSN6kNCBVyACUoaVPwbzjwjOMBUeN4iNF-102EE_Mgj5BBmcOFNryGADyOiWX2U2yoiyFfqDtUH4eFNMruQ', '911458700259854', 0, '2016-08-30 02:47:09'),
+(1501, 'APA91bGQb-FBQxmHNRpQOx16v1saWEtzpktrKgig9ZE9X8eHZvLkI2X9GYoHMT0y7EvgbLTVJHXPQ0favJLBGrZ9C6QBX674D0toSMQTwXvCYQtveVUcf1Y', '911458700259854', 0, '2018-02-23 15:00:24'),
 (1502, 'APA91bHhbqmJIgHqRz-I57hg7ykWQvi1d8iD12S18zsdpRic55NswfCwEQJrZ6cBpcpnb8ajfVuUbXuEpxusokTR-RReoP_MQwBYu-Fjgoow_MVXSeJpd8A', '911425208767910', 0, '2016-08-30 03:12:27'),
 (1503, 'APA91bEs4DCkHLlV1GqF1L17WOogZM8E5EP11KGfftjRokh_hEwLyjSzEmg-_cfcYZcUu87mZTKqLkanWMinL5zLaXewGiv6YxLGVZjgtC5q4hTQLW3O1t8', '865980029037766', 0, '2016-08-30 03:29:18'),
 (1504, 'APA91bE3tcSG4oQfRmo1pHUtVbGdQ56XVEl1aZOU68-FgtTdnt3WcIjJblDjmJPynuiucU8SSroIkwvfYORrodL-80_AactuVO2mVnQcVmDSSlcqTEb_iAA', '355038060186708', 0, '2016-08-30 04:06:54'),
@@ -9420,13 +8500,13 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1591, 'APA91bGjTy0v4PP-1SAt9jt7tiqF60_2yjNOYhiF2G1bqOFB629S6qBX4U7f0FdgBHtRSbpto5mXBaDl6CazkqCza9gvt9Q1Hsj_ZIw7k0FV1J7gxP3av9Q', '359710050512350', 0, '2016-09-06 14:08:37'),
 (1592, 'APA91bGmtn67gSx4lW1lfNgjSNAcqqQYlCwqjze21Zc4OM7etopRasG91T6BKhAs4AoZEU1YdOpRnHJQgpDHpRZYxHgx-LBstPq3qxw1L5hLwakRsB8VXnk', '358271063445261', 0, '2016-09-06 15:25:37'),
 (1593, 'APA91bFAypOJbemNGPW-3D5jt3HVFTMuzYM8nFS9GmQISHIVZgYjtAGE9uONCvr9-C0oerSmHaNjshlZMhzdcbQmwUzMMYIgXVayT4pCEm5Q_AX95W48QpY', 'bd2636fc04bb5592', 0, '2016-09-07 11:21:24'),
-(1594, 'APA91bEEoFHMVw17HRbJIo4FB0YZdgqP5hbdaZC8bWjQBRrbubm-dA15AF9Ps36CF1rapNxPFOHfhuvSOkzL84gfgYU7JwMQwT6EAl3PmycCAE-QSG4t9uE', '860830030299183', 0, '2016-09-06 17:24:07'),
+(1594, 'APA91bEEoFHMVw17HRbJIo4FB0YZdgqP5hbdaZC8bWjQBRrbubm-dA15AF9Ps36CF1rapNxPFOHfhuvSOkzL84gfgYU7JwMQwT6EAl3PmycCAE-QSG4t9uE', '860830030299183', 0, '2018-02-04 13:40:10'),
 (1595, 'APA91bHwkDDuA8G-GKHk90KjpLwOldrVRQWDdeZHauYTNg2vOSM_h8BQ8ego9sFMEBZnzWhxdP095e3VV5YcWfWJGmg6Pf3U0Ty7joycCWI6oo1ZzTJ8ChY', '351540061417705', 0, '2016-09-06 17:51:59'),
 (1596, 'APA91bE1u0isY95wleTRetFGqscCSP9WRbkuNEPwn6UiJ842c5EMlQK-mIKpjoWK3ylDTSePW01EGhBvMNUSDNShMSqGy856pZc2sPRMiMmlpdbg_hJczlI', '861226037101093', 0, '2016-09-06 19:25:24'),
 (1597, 'APA91bHVykbMbEZhqXXy325IBIhV49mA4MdGUx1UEWUxkSv2USiEH89VRbAFQU8_iRb-AFsw-SUIue2P6hkhTmloqVK2_2wQtsL1Ip7XdYbyBA2EvPgTSIY', '861863030472574', 445, '2016-09-07 03:52:13'),
 (1598, 'APA91bHm3aQOLQb6ZF90WN8XriKLqYS855llWUAnq4Ka9J78bsjCx7YZiALWtJebfugkmJxc86tDCHxq52oPb3SGWZ5p_F2R2z-FMQPM8QlbBeYbRbhtGhk', '911309353316238', 0, '2016-09-07 05:12:32'),
 (1599, 'APA91bGTrMkR_T_gfUWB_pVGrl3XNLc4DB2-l57vgBiG-HAY14DRb7vgQ7f9CtgdEXvW-WLSV1H5UshbMQ2bGS3_hdEl3_t02-v1APRrIrmFZMr5HSUhTVU', '355259077594219', 0, '2016-09-07 06:13:50'),
-(1600, 'APA91bF1smQ4cwwMJXnChR2bXgBbsCDNjLnA6p3HZmhMtnstNv4XKl7hVBtJ0Ve4OuWc237xF3UrBrjlRCg5q-QxyTrdNFNZMHCgQhwAtRc6NpCVCm_68_w', '862782027016674', 0, '2017-07-26 04:33:24'),
+(1600, 'APA91bHszzXmxut9D2Qv1V8K_tpWHtTlhvM0cNuDg-_GEc87hlooP5f2JFUWw7Dtcs7vjxZJ80BORSq_D1dETmSH2RuYvd58v81PVwzkhUR1KfWXJj5aQaA', '862782027016674', 0, '2018-05-04 08:11:09'),
 (1601, 'APA91bG48YF-UYqTPUZ6VUdEPmBQSyRxuKjQEudGA26RBfuDSlynJcxuFyUiPbwTBv7DLhDbx2Y3IDA8dSwPdHPZoImiKEurNfdklyC6aga1smSTZtSpLko', '355259073902689', 0, '2016-09-07 07:48:39'),
 (1602, 'APA91bHZ3_qwOkJQB7UbUk66HbaR4m9vRiSU61fZUZFOrG3pumAvd1jN-yGbBYUsyq8GS8hmUpQ02jy5-qGfN_Yqa6ZLf3UbTAIBvUcEYo7-Dt_ZyiwKXrA', '869328023728202', 0, '2016-09-07 08:08:53'),
 (1603, 'APA91bFMY9SSfzuZ_PbPeLWbbutMEoTYg8GTOAyn_B1uuTlwwe2Sz19_BasJ1lFdwFXmTuHZTRsO_k1GXrfky8rBghHyzyxb-2YyevnT_NairqqDBCRyKq4', '359670064354803', 0, '2016-09-07 08:12:55'),
@@ -9582,7 +8662,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1753, 'APA91bFqtspjAFqMHOdem6F427f9m63NVBekp5EWnEPzCtboTm14azBJ5kp726B0KrVwp-Jb_2lalGNz7m3si7jCR1u5tRkPShZxiJVNvMxvd_nlx0xxg_U', '865800022084039', 530, '2017-01-22 16:27:55'),
 (1754, 'APA91bHwatv5In3R0S6FI8UyFE1T_iPZgejFwCLTC0c23sMLk2XUoOGdnO78xxY4fMOT4VIE1D8RjmHUXmhY03LE0HjgQwAiP9g5ZTqRbwwphOsXL0zAp-w', '869698023986103', 528, '2016-10-14 06:17:14'),
 (1755, 'APA91bH2PJC9nJXCmLBWY-tnthOS1YRuA5rTpAONWIRyrUdaRxc6cg9T7wzc6jqysf6az55zlqQlhdQviG3T0a79KszbEOVvji2c9mUWJdRDOwayHDKcLw0', '863057028433262', 618, '2016-10-20 07:41:51'),
-(1756, 'APA91bEOE7OVsIO6G6mqdfUWwSe8zrFfJL9wPofAbZFdj0O9km3sPeUauVroXthhMYPw791JG4nTd3uKZf-9AVcaHtoKEF-c4vyOhgUJptmgtTxRzrrOhLk', '867935023944902', 529, '2016-10-15 04:20:05'),
+(1756, 'APA91bGHQbEtfiisScGe71beKJ-V0SB3vjC4VsEkowRv8UPAVH8A_cpijbJVD4pEUgzevYtXLsL-ZEh0FVFe2pzTmOYZH8pNDgtoDOOtyZiStS8QsnnwnRw', '867935023944902', 529, '2017-08-24 04:24:31'),
 (1757, 'APA91bF5aTzK-8xmkbtDGfAg4aUlqXbb3wTwzdR4VsBqX6Pd8NCMVzMn4-UOPuib_bQkbzQfB4jg6SydH0VuWUa6sgrm3k6Sh5X-3CLnVaYQBuMKvmD_6Gk', '352221060473614', 0, '2016-10-15 07:16:05'),
 (1758, 'APA91bFhETP0699Hvpsq_O0KRTeEM7k4wu9dUbzfYpAExcdziTzZw39QJ8Vs62w3qXPzVDtF50_7uXMjMBI8Sh9O4ey02Fup5K2o23GOkiCszw8q14EwwuE', '359932063678305', 0, '2016-10-15 08:50:22'),
 (1759, 'APA91bFBeDZ6xmeP8pMx_aLk1SiPqsfG9-iNSN33jx5QmN2YF2iPJjuEc7VjntrjZX-aRbkbq20lAOtM-jtIK0aWqNlRHn_5tgJIUAAO88V8muuhqoUSWNM', '355259074500961', 0, '2016-10-15 13:05:25'),
@@ -9603,9 +8683,9 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1774, 'APA91bHBFfVyOVt51LbXvKYcPnxSi-dddkcn6b0xd0r6geRD4-m2VwuY1-XotUbAr1Z6Dq62_i7uqZ1Hr5QYuQjOeD20z8iwBY3f8xNnGSq5RqWWIFBMs2E', '862188034226027', 0, '2016-10-22 11:19:41'),
 (1775, 'APA91bGUtZO03OvJLVOtO6NMH80GpNfliF1UzYmjPMikcV-uo1KgEucKxZZFDjyn2Go7Th6d_EHrUbeOY-kyK7KSQv8zWleOXsY7_--4XcEYfdALqDefv5o', '353278085454416', 0, '2016-10-22 15:27:24'),
 (1776, 'APA91bHS0m6W-fU2o8Zi-XEDaFYg9IDA_6kYz8m0Y5IRROGpHzbOPFxU0M-POB7uXehk7KOYzsOXdB3w5FJLMP5cA2Fx-qKN29yzupWPKjPhlHcCOq8iEcI', '911498050327034', 0, '2016-10-23 07:36:27'),
-(1777, 'APA91bE_TulaH1QRxuWVgiuHZwKXKxhx9iSc-6BKNG0f5X7iLIsnTc5jWEbLw10DSB-_cotQv0tPNwgr0EBpgZkC_AZgT7GxNKPVAMhEsGSQybtGULTZIYU', '911401500843378', 771, '2017-04-30 04:35:12'),
+(1777, 'APA91bENx3M2mvJsgXolLjSc2TtgzulnyKWQCSE-t1fAU3EmXEa1l1j9EHP6ytM6CH2n5DFSishga4gqEpWbkgf8PI6GvLSLGkLzAspF2VEivKum_mh04YA', '911401500843378', 781, '2017-11-14 04:11:34'),
 (1778, 'APA91bGO22mXogZevDa3a2q8yLJc-diGkUiSZPCY3JLvKBCxWxO2oOyexP_WR9UPb4ESC6tkhIKmNhif8DNIrujaeIgLqzc8qSpNr0X5txAsVdyI0fRXmZA', '862188038475422', 0, '2016-10-25 10:40:58'),
-(1779, 'APA91bH0m4BOjjwQUEaaTpCcyG7mm310aM0yOAydRsoTlILElnYS_JfPSs8XbOKYtTfjvS388CaqjXigyD8uuBf0y-C5MG2fDQsHbgiK2Ig4zSIWjaN4Avs', '911457551822711', 0, '2017-05-04 09:50:17'),
+(1779, 'APA91bGmBU5iN2uYeN8gRf5Eo0ta3Vt49IG6DlLGQnWwbZLlRzc1DtMfZKW6rKE2pN5fgdnbZlipBFj4BAq-Ek-u2BX5nsks666bQaLloVnV073u4IUnEF0', '911457551822711', 0, '2017-10-08 01:38:44'),
 (1780, 'APA91bGnsv_ALPD3Mcp1X1CV-vPy3UwK5F6acySoiG_jlVLGEn3pQCSZLshXxHXgx9WjjeKp9o3ei_falzvA9taoKRay3Tv1ZKlK77Aotta_HOBxkgNnI10', '352196072565468', 0, '2016-10-28 13:03:56'),
 (1781, 'APA91bGQaNUO-DTTLk_bTMD9GRzB5VBE3tEeYFn_FAiNIYe1bbPV89Dk2O49jdruKGzBECN8VTqf5qCcezziC5eFjB2EbAxb4p2Qew_nr6Zz2MZQI3ASm5w', '353278089391242', 0, '2016-10-29 06:10:41'),
 (1782, 'APA91bF9BGHHHvE_UZvCBCvQqEDowvSQpO-Oxxse_5TC94EGsewTMfHyVYrsJ0LUtFsZ1xPCxQdpuk9nXgtSGnfiFdD67ph09OCC4sBCVUsvV9tEKpimdc8', '356637055207061', 0, '2016-10-29 19:26:20'),
@@ -9629,7 +8709,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1800, 'APA91bGPePYU9OTFtcCdZpx5HhkNxnHgcRytZZowKxQdxyM1eVJ4DkS2LOryZ5KuqVHNG2twp92-lkm9NJ3EfWlEDdDZhHAVJV1s896bn9mv42RzNNzx6sg', '911401505039477', 0, '2016-11-07 09:46:31'),
 (1801, 'APA91bEmJnXYG4P8Y3C2J8v2EZi-8xUzU95NeRHTOq5Re9fNJPjjfftcP6KlRYaR50wumktRFHL0PIivvY5WMpoK_E_9BTuDGqknYIT8VfbzS1cFpbiBxKQ', '911446352041407', 0, '2016-11-07 12:21:39'),
 (1802, 'APA91bE5qocysoffqUST8vWv_5AiPgfImX7nvmhv9tdk3Rt4fhw91hdkXJm5bvQjqoF4SVAqObmG9GJQRATpCww8KnTK9LiSQU4S8B_ZiN-ukYIvGpauXTo', '862628035688287', 0, '2016-11-07 12:24:04'),
-(1803, 'APA91bG6vWANK97k6rZ6LFWxqR5qqfDNIOlMqf0FN_mFseTcO2rD2TQqoOgjolwNsSy0TNsJEBYin2UV_sgct5AnwjeQ1KT8F-BrN9JoILY4s-UYCV9fYJw', '868347029198815', 0, '2017-01-01 10:42:45'),
+(1803, 'APA91bG6vWANK97k6rZ6LFWxqR5qqfDNIOlMqf0FN_mFseTcO2rD2TQqoOgjolwNsSy0TNsJEBYin2UV_sgct5AnwjeQ1KT8F-BrN9JoILY4s-UYCV9fYJw', '868347029198815', 0, '2018-01-16 01:31:11'),
 (1804, 'APA91bH8jTdQ6LghzaWhvuXi4-gU3d_8aXgOM-bnsa9DkR2HmW8Fo5ECLOnW3j84MfMdKuBZtrQKNzIBJj_8YtW7U8OPsxO8-9r7WEzwdcgSsIGmejwsb1I', '911467704469849', 0, '2016-11-07 15:52:28'),
 (1805, 'APA91bEiG76DxoJi4JEysm4PdpFrGp7lHUhM8-UWYUcJbVdTp7nmmDQhSqYS8-pCJBe2Jf6pUg6l776Dq9o0GCYSGPzhe6mJNDfLujBZ9X-l9jPbJQFtVwc', '352954061747970', 0, '2016-11-08 07:13:44'),
 (1806, 'APA91bEzYNMKuKhn3U8LIsJX1kXoaIwAaq3-0FEzeo8-91LOye549kiQ-JgNL8ZvNe4pZq9pl31elRWp7lAR4jG6BKStfM_oI81gWbilFgBzhiGaZOl9CqA', '868139020599707', 0, '2017-04-09 08:04:08'),
@@ -9637,7 +8717,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1808, 'APA91bGtvIvEenWjL7UJl29Gm399V_mrpTVcq7Wx4BHTd5n9MjfP4GybBZvQ0gKEoq3whVMBApeZFTaXrKc079IU7ajj2s2xO_xnorR17ebkiYqdL_yKiAE', '911430703203510', 0, '2016-11-10 02:32:54'),
 (1809, 'APA91bFmxskg9EcW5FlPcfPPdE-mW7fXVrqTujvrf13O4fmZBiM2_CHquTuBLsNRyQNYQu-RDM2un_-XH_Nbh0PzJQ_L6jn0rYkxRmaLH-xLVmtRMFBShIE', '911381804671792', 0, '2016-11-10 04:44:35'),
 (1810, 'APA91bHwItxSdVjXwz5lckYUVNdu5X85iS2pBa_3Qd8K2pe5fZQE-zczSq7sAqRMf9g_l814TuVOho70cF7BSAMNpAeO6NzMnI36UOAaW2wEpDqeJ2ZjIfY', '867935020205232', 0, '2016-11-10 10:31:58'),
-(1811, 'APA91bEE8CTVGVJWZ0ineXDQ8oa7fdYUwcX_z43Axbv6o9odrfGYm4Z9cC0fRAXpweEkmxZm00fMa_a03-6iuSmBhXL-yZo6AwXJ_LZmyc6L5aT0jEPDZHo', '863217039993304', 0, '2017-08-02 08:43:38'),
+(1811, 'APA91bEX4-bZ2wmY6s3OHSKjXlHdBLUUk8ljqH9sGnmk0sewehjQf2-47r4yZwMOC3U97C5_q9160FJ23Xlx_KddJLanBj0XHbopNxCyTf7miAM4dMq93Gw', '863217039993304', 0, '2017-09-20 08:08:32'),
 (1812, 'APA91bGEGMffPYIexv1X5fkHRJMPP1qRbgbXo6U_E01Fef8nTO8yMqaaoj7YcAxST3YuPo-Z6nyhB1wPZ7on3p_070UF5Wqe9Pvty2yHSjwX16XzMQrhJt8', '355259072141016', 0, '2016-11-13 04:31:34'),
 (1813, 'APA91bGT86DZRK1KBfgzAf3qS06k-YU5xn7a5IuaVb6Kio-GNoyr_a_dFiDTEUFwbNc_vfVWrkFrdPjIBIRQltGLcqIu5j3ebuUjybP1CA1vpM_TSj2NqXw', '352116060672175', 0, '2016-11-13 17:24:19'),
 (1814, 'APA91bELRTclman7kzabSmfqnvvLhHhNB2LZpzPZx-7aD1NYfzdQDLPOQ-uuw_Z2iMNOkE4_ZUicVDl2DAjiYBR4tqrN2GQPwJCTQL0k6wvyMktzCvDkMhE', '861327034983531', 0, '2017-01-14 09:37:45'),
@@ -9720,7 +8800,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1890, 'APA91bEa6O9iqW95LzwvvZSUDv4rVm0Ksh3_4If5qmH07_v9dFgGcAlLt3f0LZb6VLvecwqf1xTrk8YGAz3rmTqkY7olrQBYvFYrEauSelZlDWf71RWlna8', '911444004629356', 0, '2017-05-22 06:35:17'),
 (1891, 'APA91bF4BkDEOSaRV-qyj3ORrzMB2bj9pTjcSZzd85Q8AyD1oeEG9ydFZwmHEt6g4vD4cMjjKl92Ghd0XyTZEot9IDHmP3g8dElpoFdmJ8saHM2OtenR7RM', '357091058467869', 0, '2016-12-10 13:10:18'),
 (1892, 'APA91bG-sBl86Tf3iW9P69Hz0qfdD9h_InyaUXQZKLlD8x11sQLeCThpO7ADGFGQ8dl8kPeF_gLsVA75rxXpzEWUGBu-dXWdvI1-0KOMHn8fJ16qrSJADi4', '911501500138040', 601, '2016-12-22 10:59:01'),
-(1893, 'APA91bHm89rDHmm-QQjJ5ps7MTdFmoaFtJ3-XL3YlRc95XMNPl4vfo6h2t56ITSE1bJ2lbpar5-kAkzGWx20DA0A50P1QVHf1MCcrSkhd68ImomgX976830', '863408032239098', 0, '2017-05-01 09:15:50'),
+(1893, 'APA91bHm89rDHmm-QQjJ5ps7MTdFmoaFtJ3-XL3YlRc95XMNPl4vfo6h2t56ITSE1bJ2lbpar5-kAkzGWx20DA0A50P1QVHf1MCcrSkhd68ImomgX976830', '863408032239098', 0, '2018-01-03 16:14:50'),
 (1894, 'APA91bFKNRM3jHvrtfgX2Alt_GhpBOGqUU00lJlXVNd_b4oJiWOy_zKfYt22Om2YTlnIl0ntpU0vAHIYZHl8d7o-Wfo81nFS7UeSxVnrX3C2B1wHXfcDJZU', '356823079110826', 0, '2016-12-24 02:49:17'),
 (1895, 'APA91bHXkMyVmTzBgi0p3JhxAwbgqzNSDMzpZOWN3zWTG8RfHduOcVVoC9ikVKk8koX3pjNBmKgJzuD80yciok5-dpKW_P9_U38454t8HWiyfDqEjJkSn90', '354920065048051', 0, '2016-12-13 08:20:59'),
 (1896, 'APA91bGTs5eSfP5pH-HqY3De-jmVp8fDQRLgXoad80vdcev9UrHUKXIabPbJXJbnFjHpiIEUrBD0q0TD3EIYdNGw6w1Wn92p2iCmRtZRxUOC5n9LcBJpDfM', '351819071809287', 0, '2016-12-13 09:16:47'),
@@ -9740,17 +8820,17 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1910, 'APA91bH_LoaOLWMNd34xSR7i9KAnumOnZLSbNXn6boo9YjRacVYtBXpI4Hz4F2U6zZJs77v1UtJN5wTI2_wNWbPdGb1FAoUQTRmD50-qhz9XFK-PUkyN94U', '911510505946281', 0, '2017-02-09 05:13:04'),
 (1911, 'APA91bGM0wibfs5-RdiewOFj-lZXH8k2_ibUu8yp-HyHD_dK-sDH5hLgEUW5lI7nhqdmL5mNMHMQcwZhcucrXd_hsZu1vX-zyCzlNJXMunDI-vrKO5Py6Qg', '351602064485152', 615, '2016-12-18 04:07:53'),
 (1912, 'APA91bHVRCExp04gpL7hYNPH5r7cgtq-XVn9_-uZEK82QRjprC2vDLi1HR-KNTTH3QQ3lZ4hPaJ38w8S4Jawm7WcDzFNWiVrEpEwnWyVvNx9KxqQMcdpi6A', '359268078503869', 0, '2016-12-19 05:59:41'),
-(1913, 'APA91bERvTqJt-PbWs3MEDwWPtpdmvS8aM-i-psMozHOQrbL3W6PVI4C2juEZ5lMx8kITJRvxHFgD-NtPY9avT5Oojv_5rWoh1oQVxyWbu6IzUJdVLuEXaY', '863084036303519', 627, '2017-06-23 10:07:55'),
+(1913, 'APA91bERvTqJt-PbWs3MEDwWPtpdmvS8aM-i-psMozHOQrbL3W6PVI4C2juEZ5lMx8kITJRvxHFgD-NtPY9avT5Oojv_5rWoh1oQVxyWbu6IzUJdVLuEXaY', '863084036303519', 627, '2017-09-28 02:03:18'),
 (1914, 'APA91bHjaerSdIs_3wUYO9z12N3vw4Iq5qckss45Y6uEkttyt9-WG1sy8q-K1nWdGY46KPTppEU0R1MkpIHY8tkaq8bdAZFtaKmN42Wi7B0TSg827ulQNfE', '357738060077330', 0, '2016-12-19 11:01:43'),
 (1915, 'APA91bGpXU1UvK8kuXqq9hFtrC1LPhkbNhdfRWABjlAw7GcheX2b2_nfjM3kc5YNIuledxYADzIE16GBUIGxZDlc9pzKB71gFrRyU1V779QSUlY5fyjz4Oc', '911425153267510', 605, '2016-12-19 13:51:33'),
 (1916, 'APA91bHnp0bQRr1yfTeT-26fFKZEULgmVyopxlTQPBQdlHkwIYXJiF9lhVANKFcLdzx4xWAfX5BAUqOU28vXtfkX2aLnBogtbRr7Y75qLElz59RJCQbbm2M', '863497032254959', 0, '2016-12-20 07:44:10'),
 (1917, 'APA91bHDEmE0G6Z_ObA7ykmmskm-U6EoX72fVXZ7RChLmPAK4cnmkmShwj2ZzJE9XkewAjGSqLeRd5uMhLvMZiKwLA0rFbmEbgNwRPFF5-x4ClUOBZGZo5Y', '861226033352419', 0, '2016-12-20 11:53:02'),
 (1918, 'APA91bHqJuyTQxMfVDaIm0kOWaovrJ_UyCZwYUJDKnWUT7xZi1qqSikzBDT9ORT_15TdZULbqCtWkRqQ0ZzL8HRE3CkU0IZgVkpPE_ksgAERolofs52cTmE', '356894062924176', 0, '2016-12-21 12:41:43'),
 (1919, 'APA91bE7-qgr9zSe5-zkuF_INaaNsv32VKqHpk3czERBHdsdwSR2tGt1ZrzBCscSWIKfHu6p5uM82GW-BDOrEDbzfjigAjNTy4lbqMwQEOOLckJ5zlbvcAE', '911451754687328', 0, '2016-12-22 10:17:32'),
-(1920, 'APA91bGXx7Ci5ZLx_oyfxPiWrPqlSr_FfgB82HVuDO8VDAvfA6WrdujYml9F0o7KP1DUGibZ0uprUar0t97pkttA95guXD7dC9o-8W3Hj9zQiFTKWaNj73s', '351819071567745', 0, '2017-05-03 09:12:57'),
+(1920, 'APA91bGXx7Ci5ZLx_oyfxPiWrPqlSr_FfgB82HVuDO8VDAvfA6WrdujYml9F0o7KP1DUGibZ0uprUar0t97pkttA95guXD7dC9o-8W3Hj9zQiFTKWaNj73s', '351819071567745', 0, '2018-04-15 08:42:42'),
 (1921, 'APA91bElCTczojmkB5f8AT6p8d2nMDtFzhfaoyPNza928AQsD1szJVxn5SJAxVlH6Mh7Y17PFJ1jHxPZZRsqzMXCfzaolNYb993-SOyiL5SZidExl96drIw', '869313021690224', 0, '2016-12-24 03:24:46'),
 (1922, 'APA91bHh7wFToVaBPRkO-tsjOnG6MhhpQUJ8_nvCQxRRSGSAwXcfKCSlbHMKqDkHSlco4u8q25-N84onUqeq2yZzIVVb-OiCY_M9SGaJc3OKYnxBCEVb6lg', '12bbb5671aace9b0', 0, '2016-12-26 04:03:06'),
-(1923, 'APA91bH01Zug3Czwyh_xedaKUXJXjPCKmyyZgfRW9jpcizKeaLhkh_wT7A4ednxXPc45mnPUSEuguoz6nL8NkzJjEQ1l5OLBFfoHeo9l74F8t9E4wDxDvPs', '356273072985750', 0, '2017-07-07 12:53:42'),
+(1923, 'APA91bH01Zug3Czwyh_xedaKUXJXjPCKmyyZgfRW9jpcizKeaLhkh_wT7A4ednxXPc45mnPUSEuguoz6nL8NkzJjEQ1l5OLBFfoHeo9l74F8t9E4wDxDvPs', '356273072985750', 0, '2017-09-25 05:51:49'),
 (1924, 'APA91bGuxTVrb2gj1nRP6KvBlSoyl9T8VztsRDoqHE31BuYmXcyOyDxFgDJ_7beDbBONNjnVPgQOOO5xQ1Yleto6cu5Es3n8a0h-dpS83eZaQkEJSMmxKyI', '865374023192951', 0, '2016-12-26 11:27:19'),
 (1925, 'APA91bH6MBx0B-rJmBWoqsgItxIYGq1d0hg9YWD484wnWQj54baWp4uluCwL9DZmnfy32RGZvijGbgz4rosapV8rqh_zXix9qB8CNW7yJ-OilHhUlFS-AO0', '869813024479004', 0, '2016-12-29 04:46:38'),
 (1926, 'APA91bHmINifumYt-Km_YJtuOrKTIR3kHufSDa1ONGs7oNaksLLSPOVXfsshcINLZLAqtbBKOgL-6hOZju64kONLbb6hIfGEN0twJKcXEe3bpiAj_qHp1tw', '869060021835586', 0, '2016-12-29 12:55:50'),
@@ -9788,7 +8868,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1958, 'APA91bHuv3YY-2mDaPWsKhBbxfT9f-GGCb46pckvH2Hbc33Qt8aFz6TXl6JLwawnFyMtlMdzzKhCj3oPQGlJrljqpC0u09W3fB3Hzvf8RvAzLn5EofqWugU', '861750030599979', 0, '2017-01-15 17:40:27'),
 (1959, 'APA91bHMZl5Mrn8cn5UpUT7rc94z1QtYDW-xg5BBlaH5N-JuBjLvC8vvIL9SAt8NRO-e8eDZT7--7rtHIQGMHdppGa4CjvU-QWtL9DUx0Ud1RwOc7NpKQig', '863084033345737', 0, '2017-01-16 06:44:16'),
 (1960, 'APA91bFQQC8zAEPP1k7nG78-4ZWcI5SVPoUQzBPmcx7l14q8iTGTB3T37EY7PyNzB51NVFRG3GSdZ_Ysk6HSdKDFgnX1JXhKIDCV5ptnOeYw61Bpdjie1wk', '865901024084280', 619, '2017-01-17 11:37:25'),
-(1961, 'APA91bGq-vZFZ1SNjEoQAg3qROlyPzAwWP302wxPkd7JoR0cxAaFiLlTaet-t2L8Cth-Pdo9QJcrqdYrefNfyLchxMO5Ta0Awf0yOGcrt_XUbAH2Uw9uOnM', '911375707536417', 0, '2017-01-18 06:02:14'),
+(1961, 'APA91bFNkDzkLG3G-sptHEzUhmNHi9nSXZmIcdpPK2vyP9vFl0sTcixt_A3wC_nwUjM31cXncQhd9chGMEetYQdSx3LRmsh59WKJAUtEGVQn21s75HlZQo0', '911375707536417', 0, '2017-10-24 05:25:12'),
 (1962, 'APA91bEoioOjzCagRmyyw0ZL_OqKrevUWJDTpJfJx77zP3XljcbHDjjEi7NMwZm2ZRTc65kkmTGtBrdc2f7bplHgydl40hh5KQpvdHQktzqRo0db-41StS0', '358271063322148', 0, '2017-01-18 08:17:38'),
 (1963, 'APA91bEq8X0HX0af5b69HJ2uSn8iBafGhAkZZELjx-eBD1Jsvcr4b08z7Cr6EfDhkQpvYGNzAFbM4_FMN9KinrJUHT9fmvxl0ji_VVtoIza-nroafGlIh5Q', '358030064678753', 0, '2017-01-18 08:24:49'),
 (1964, 'APA91bFtZmILSqxEo9KgfhNDlfHRs6g87X60Ke4I5tpWjjcqSFxCarQsKlZ7_NeBv1mqO5C9onbCQJfjt7AavquEb1ysla0azGT41SDok2qBsqh-m2qQAWQ', '869328023654580', 0, '2017-01-18 10:08:33'),
@@ -9806,7 +8886,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1976, 'APA91bEq2cMXR_RTgiWaVQ2B4H459ejlGfBUzJQxRovW2ApGtmIuoAhBtSPvmz4181AG2isjZLSOesrM43YfKhIUNHjb57xKy81KKyxbzpOAh4xwVnOeCUs', '358030066574091', 623, '2017-01-28 09:19:53'),
 (1977, 'APA91bGhPcLP-T3YEScQR8qiZyOeJFXgp79jz_tYOE4HGBKPyxFltg9zlHbQO1nUpBn4OaYcUL_LWkF8RczxmvMCCY0C20pP2Y8XpDqHk-M4vXmaVj7kWaM', '869025022576802', 0, '2017-01-28 14:36:50'),
 (1978, 'APA91bHhetsjKo97kKBD7HyEsfiVVBtjf4dxaFth1VxXlV9mphvcDvlKi-EhWrn5nKObQlsvrryPBD3JuMQjQeeg0wDOzxz9rACWp4wvseIt3sftlGbo3nY', '911457550719181', 0, '2017-01-28 16:11:22'),
-(1979, 'APA91bHIYEASgvi-J3M-CPttAyOy6EH_FtPlsIHg2N665CCjNYbu29hSSyf9J3tWYBjKgB2PKB0gvnR_p7LYSYgswpqsV2Au7gfg4-qmDr9XcMscXCsHe6E', '911509601289869', 0, '2017-05-10 12:27:15'),
+(1979, 'APA91bHIYEASgvi-J3M-CPttAyOy6EH_FtPlsIHg2N665CCjNYbu29hSSyf9J3tWYBjKgB2PKB0gvnR_p7LYSYgswpqsV2Au7gfg4-qmDr9XcMscXCsHe6E', '911509601289869', 0, '2017-10-16 10:48:18'),
 (1980, 'APA91bGOMRtnmYdHMPzCNAhuti_VdgmrwVhDDh3GGklYQ8sx7TnRX3SOzdcvB7ON2PW3c8scKq5P3GqjoDCCNQ0vryZMkAiGbCFI9ovR4IjMDaLQzvncd2E', '354865075906766', 0, '2017-01-29 17:51:36'),
 (1981, 'APA91bGOkc2qyCFBB0taqmQSIpvEyl6_I3IFRkW2JxeOcXUpFtd20pUJdIEizd4bY44kiWjHiAVifWv_iMrJlMFf07qNWpvNDrJSrL3PJcOdjchLxsZjOxo', '869698020833332', 0, '2017-01-30 04:52:13'),
 (1982, 'APA91bGjLQr3iCLSUHOhYhH5eRiC70Aj2Hy2O37fl9tst3h8p-US_NS-UeCK7k3-Mdi0yItMPEEIqNBkFlBzvRWAtfWXmigN1cmTqyutpqHIktcUn-Ux1lY', '359209029249350', 0, '2017-01-31 06:21:02'),
@@ -9814,7 +8894,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (1984, 'BLACKLISTED', '355266042219582', 0, '2017-02-03 09:44:39'),
 (1985, 'APA91bFvwbJG_8HlCOM_T2nKenX9LXTedDmEPpGDx_xgaIlbYte2ns9k_Ht8Z-NY9jt5SUJAcbr5C_jXbReglhPtd70JkhgVaD4lROjiif1Hav0kU_vjP_c', '354010080492490', 0, '2017-02-03 11:20:15'),
 (1986, 'APA91bGJGUuQYeL2VtkMW8whPD_vR7PFSJMK8W_QkqLA1bZEIrvCF3wHf-j4ZCDSQ04lRcsNiE6xm-io91ostPxqaSkb8NG0ogLmQ-vqxpyWnewn9FNtiDQ', '911464404029486', 0, '2017-02-05 16:34:04'),
-(1987, 'APA91bF_fzYreyy6xSlnBRNf08FNJ00-CWSxG2xbmP-IH34Rvw0K1n8lmswTmWauj4Gvem0gpVSjnhM_F_YN-8F1niX-9-5vOFQgtGm7vd7jgm6hZ4dVcUk', '863084035807452', 0, '2017-02-06 01:17:17'),
+(1987, 'APA91bF_fzYreyy6xSlnBRNf08FNJ00-CWSxG2xbmP-IH34Rvw0K1n8lmswTmWauj4Gvem0gpVSjnhM_F_YN-8F1niX-9-5vOFQgtGm7vd7jgm6hZ4dVcUk', '863084035807452', 0, '2018-04-28 10:24:40'),
 (1988, 'APA91bHTl0EeRHxIlefhNmYmZgeqP1-KMKvkg-xiIMwNwus56aH8JkfVRPK5QqPk7SF2inVufqbpIIGYQTuTDDv8uNPgkZKRa4AUUpAuhCH8XALZWNsJo9Y', '867935020804349', 0, '2017-05-02 01:17:15'),
 (1989, 'APA91bG9YW7ij6hfTZu5JI5bgPspxDZVXD6CvHaOU3ru8TSxq8_HXUzL7Qfym-qjGZHGO1zvIhqc36L_0xWx4xbMmGm4Ms5qo5vsrJL7xxNn2G35ezkbtxU', '869060021938885', 0, '2017-02-07 08:10:02'),
 (1990, 'APA91bE4jKMXmHjl1XPQEyMxe3sewvvWBHdQzFIeDQjrqDN9mEzu7bsplbPYmStDZK6jpzuKRnZr89-dwAMk6PnT0-UU1Ov8ourZhBBFW6p4k04vHTIO6-U', '860848031526933', 0, '2017-02-09 03:24:40'),
@@ -9863,13 +8943,13 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2033, 'BLACKLISTED', '355266042684686', 0, '2017-04-12 10:44:45'),
 (2034, 'APA91bGqUSh8Vm2scRsY_UkSWaEeTWZOg91rE7p2TulatwO9AGe8HHsG-hezpi9UZSRklioww6QaymwDoo_LiPrhBw0RgEMwBXw2xMdkC4RR29gIivdBrNA', '351832060769875', 0, '2017-04-12 14:33:40'),
 (2035, 'APA91bFRxRLYZC659qfYnlZ8MmtrZcsXLS_XxO3_D9qWTG1ajSwEqhhSXmlt6DbEK_bt_Srk5GlUBa426Fe0Ryx3_QDSiUv4C-XfPw-hebpbAsIoGhgh7FY', '911498056683141', 0, '2017-04-12 16:48:43'),
-(2036, 'APA91bEg_Gil1xYEst_s9rIp5LEf5qBc4BYGIXc06nK44UMEesGH7PAMLQZPrSwe_dR_1EPYg9VUSNwg2BjK55ehlWA60sDYKQEANc00aQXaodJThu4TGJo', '869770024685438', 0, '2017-04-13 02:43:35'),
+(2036, 'APA91bEg_Gil1xYEst_s9rIp5LEf5qBc4BYGIXc06nK44UMEesGH7PAMLQZPrSwe_dR_1EPYg9VUSNwg2BjK55ehlWA60sDYKQEANc00aQXaodJThu4TGJo', '869770024685438', 0, '2017-10-10 01:52:49'),
 (2037, 'APA91bG2N33O-_4MmdxRcgL-WJJ4Qk455P2NcmD3l8rCILqG-k1fhatTvddlB8ZW1FcjVMnB5tlgrU0-7zzTMe_mXgP_rCMjyQ1OAyH0Fi-bhs4JYYWXNuM', '911508952714020', 0, '2017-04-13 03:03:31'),
 (2038, 'APA91bEqbT07d-zf1VNauw95AFwlpIowxk0rXd59F0NAE9K-q45vvZ-Ag132BfTuVx_5oEgjYACaCGQfxIw-NRoNZs4CVA_Q0Pr5ZrFyIfUk0P_th5GctTQ', '356271074487833', 0, '2017-04-13 08:05:07'),
 (2039, 'APA91bE5N1duZ9O7Hvk-J0tUcIE358zKrmqGd35PXQgxGKXQCG8d6lcrWhTPn9b_T0k95eCt4Mmuj7RkFZOdMiAMFuZnwH0QqUyfu7aObhLQRULmbeBAX0o', '911455050886583', 0, '2017-04-13 08:18:36'),
 (2040, 'APA91bF4m4m28Tt49m06GP0hEm-_yJ4M0f-VFxsU6TcAHCQrIkjmrftfan0rVX-MDlioRK4k5eDYaIKFcxpJeW9Ix8sg2IbxtIdKBMdtFtnCHe1AMt1eT_8', '864215035014835', 0, '2017-04-14 06:11:32'),
 (2041, 'APA91bGb0WcwQ3x56oh_Q4FRvAxRP1XHB9tT0hMA2CWueSYV3IYbDbNrM5HG1P9nk9-ZSfKTI4KaUzJT83uqfOEgHSqIP_Qcp1fr9btqNJahrPuvCudc-sU', '352672079728341', 0, '2017-04-21 04:56:27'),
-(2042, 'APA91bH3ZNvgD0r2mXj4TRoKqjzZstj1COZd5RKPj4g0wQvcj8fKOXwXSSYH_AUla_ghptnJ5ji11kW7NJBf1kxc2bPV9r3OvhzZU3j1eIGouSyM_biNR8M', '869990025244031', 0, '2017-07-06 02:30:37'),
+(2042, 'APA91bFLJFIQlGSEkES2i0AnZeX3N7SPyQhlRdJilgkQWR2S0MlM1nQnosZWVtv3QET8NvZN3BOA-gxopx0ZIUvWaqYqY6bXpYC8U4yqXW_PVoN4OtCMGjo', '869990025244031', 0, '2018-05-10 09:32:16'),
 (2043, 'BLACKLISTED', '355266042716041', 0, '2017-04-14 11:03:06'),
 (2044, 'APA91bGT79FkRS2eRaji8u4deUfQQpR_6Sj5mbdIMm2XPJhYpuZ3oKHa1uaFcIw0dzOztijUTfUGjC8pQRuh1q-13HcmwXig5Xc5dsM5bGoAaUGRR4rMrak', '355306067094161', 0, '2017-04-14 11:38:48'),
 (2045, 'APA91bGjiyvwzjm5UghZV4Hn-5HYIOMb2g2UStZzzVLsfXLZ6AI6fL7TI3Lo6VjUoTHWuwPl4pVzvA2sUV8FF_nFO5IGUF5B6rDxkTjHkPNzPhqVheDLXP8', '860406030210361', 0, '2017-05-02 11:24:28'),
@@ -9903,7 +8983,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2073, 'APA91bGqEYC_XP_9YaW5ij38XdFSPv-hjAmf3mHYVTzN9ic2tivre_Nhdww4oqQeKyGtTP8b0hRGSZQFZsfcgGbBXQH2QEK_1pmuoAoZ2rKMcBL3W_c27Js', '355259072705299', 0, '2017-04-25 06:04:37'),
 (2074, 'APA91bHsge11gBNyu_79wHp-lJdWX9CjzD0ya_VJKYP4qwc_J8-5mx0GbWHMqkUrmGLbpVeDJyqGN7xggHeXm8N7OPHld3E5BnAJ2L0KqsZE5JUbxzK5TJo', '911441754574535', 0, '2017-04-25 07:08:55'),
 (2075, 'APA91bGgNc6H6qCwPsdIdJUSuz5RzOet1JCnylQL-3LChpz9w2BjlHgmZs2Rp5LmBiM86CkCDPZbBwpziMG62IqsXfdr_bLFZdg2pqit5sHptv0KYE2nmvQ', '911457753627074', 0, '2017-04-25 10:41:02'),
-(2076, 'APA91bFHLsDlFXAsi0CXQsrMQZRTPM_9eV6rnS-Wf1Ev_Fw_A2ZjeL2kVDIsQauvwhtTqY35IOunGx0oda8wbUFQcYRo5t7c8lZtQanQZI6me90LhmWNgbQ', '357740051513984', 0, '2017-04-27 08:09:10'),
+(2076, 'APA91bFHLsDlFXAsi0CXQsrMQZRTPM_9eV6rnS-Wf1Ev_Fw_A2ZjeL2kVDIsQauvwhtTqY35IOunGx0oda8wbUFQcYRo5t7c8lZtQanQZI6me90LhmWNgbQ', '357740051513984', 0, '2017-10-07 06:22:33'),
 (2077, 'APA91bEB5HvgeceKPhgcWrbVjjJkOFRnEWn1hlccGFZAV5ULWfxLDleugkEcNIQJ1lGabMvEy-o0AG_nDnPzqUHk8bhgQILuqHp469ktL0No1SdkOyN8oGI', '911498050866502', 0, '2017-04-27 08:09:40'),
 (2078, 'APA91bGatKfgchwgPcrOoetg1DT09TuSYHfHvZ2NxMp2DYKNan_EbAlxTxzR4-E0K3W259h4m9MEyt9Xi28QBDtLDDXup3y8qxzld7MjXxelVExH_DEO_Uo', '359209029516139', 643, '2017-04-28 05:50:18'),
 (2079, 'APA91bF7vul4S2jQUjZYMyZ0Zyn1uyAn5EzdE2qacQwvJY8hl_aUt0IZazlFWLNZwrMsNVaDKawt1-OCCp_CDUsPCSKgb_XHnWVvK2Ua49DDtdViSIz-72k', '911389950002928', 0, '2017-04-28 08:26:38'),
@@ -9913,7 +8993,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2083, 'APA91bGAKW2egM8gLK221mo8wM81uJxznivMjGWEynv1q7G1D9a-RxDCc5Vhu9KMS3HQtWEYf268TMFBKmOOClhYc-jJfKso28us2-8JM2BTylQPdoGeLMQ', '353558078064896', 0, '2017-04-30 09:57:22'),
 (2084, 'APA91bGYAQ7lANNkD9YgfrvihSXhI3rHlSdYnhAwK5IUJPpiwjBndOlByzZxX1NXb7Q7Cy2NRSmk9VR2GFNa_m0Y7m7cjAiaMD7i2G-57OhERdCLstEZ8bs', '359451064720040', 0, '2017-04-30 15:15:18'),
 (2085, 'APA91bFLtFNerS-OsXAn-e50SzSQ7B9vVbx4ykR1cunh1y-tzgMtkrej8NM4T7Emj3qB2GD5oU5qBro8nxlK5y8rFJL6IM3y96Gi4YL2XnnKey9R4SrJupY', '861228036895238', 0, '2017-05-01 06:22:19'),
-(2086, 'APA91bEjQ7e1Kun1fy2SEcMbHfEtAziAbA_TokApe-FWIoy_2b9gofttwxX3on0v5vxvWv4-m5bV1_mhLg-jIqTs3vmBbk9FjVagpZkUu3F5OC50CrYz49g', '863497035411796', 0, '2017-05-01 06:22:31'),
+(2086, 'APA91bEjQ7e1Kun1fy2SEcMbHfEtAziAbA_TokApe-FWIoy_2b9gofttwxX3on0v5vxvWv4-m5bV1_mhLg-jIqTs3vmBbk9FjVagpZkUu3F5OC50CrYz49g', '863497035411796', 0, '2017-12-16 18:03:59'),
 (2087, 'APA91bHAPYh249da7KGIVCEQmG1JH43bYl1jUZ90rStmScM-zu7jO3A1kgMRn7D-1oXg9qYyW2DbNkou2KxENpHSq-rc_zysTbCHvgxTyck39mEqCxRrbh8', '860905036447133', 0, '2017-05-01 06:34:05'),
 (2088, 'APA91bGapCr6Fq7D0sJssmAYtsQDTrAVsLu5vAcvlhx0kWWbONhvtn-93HY_CnKWLq4cNOleePlIm5LW3sBB2hcGj2g2KNOtKd0sPEwn6xXvkBSroWbfRGo', '911401505227254', 0, '2017-05-01 11:52:30'),
 (2089, 'APA91bGca7YMLD4eXq-eCupgSJLH6irwJ1ixdP9abtJceHVQeNVtY0WY-1x42K6S_e4hq-lgsZYrmriMx_K7METiajyZwlO4vCzhx-64Ztb92EuN0tYwdVc', '865747028090488', 0, '2017-05-02 02:00:38'),
@@ -9932,7 +9012,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2102, 'APA91bGHWjI7cDaj1Wga-LqaGs6ZXJwcAfymOHN7PKbJWX2IPpvl6kRrqLZd0D2f6NdPOr4gEJWhd6VTGL_xtxeXBL18H49qI5yaIt3M5dgbflqKW9_sGK8', '911508950143834', 0, '2017-05-11 00:08:25'),
 (2103, 'APA91bFGWKkNXAb10vlKgKjkoeT_3vXMJ0ABicdpC-fp6z0e4JP511DumBWppcGOFV8OrtKG6qCM6jr0jyjkUj2QUzVJcPZC0EregS-Kmd0CkBk7V1HMvyM', '359906050486963', 0, '2017-05-11 13:44:08'),
 (2104, 'APA91bH_BBA2l_d7913j1NgckYxZydg0Y_szPOqDB2w1-WHWPd89ad0fSIwJdAEMwqi-ahxl4ODPl7ddiDMtdmWDDNOZ23TVWvkJ80x3gd8y1DRYJwYipCc', '864465028450088', 0, '2017-05-12 08:39:09'),
-(2105, 'APA91bGRa20y5vIidxV7yg5U6fEAtMbogpVMo1m4aBzec8KqAkdUlNL6AL49gLxpMo_YusRKQLzRy0Qp3LvMp_CHrutnR_dqkAtSSZc3lVlsRoaLXj5SdzU', '358312062078420', 0, '2017-05-13 07:06:48'),
+(2105, 'APA91bGRa20y5vIidxV7yg5U6fEAtMbogpVMo1m4aBzec8KqAkdUlNL6AL49gLxpMo_YusRKQLzRy0Qp3LvMp_CHrutnR_dqkAtSSZc3lVlsRoaLXj5SdzU', '358312062078420', 0, '2017-10-14 07:30:37'),
 (2106, 'APA91bH65r8JyM-mueXuMPRP8KvpRLBM4qjeF49-Hzmnj0KWbRVix0UX_2fYBMMbCOs7XqEbs7aVjrn9_s4GEts0cqNOTNHF30ZwhcpZ1u1ZohrV_gxb4Qc', '862101032217799', 0, '2017-05-13 07:32:34'),
 (2107, 'BLACKLISTED', '355266040679555', 0, '2017-05-15 04:52:12'),
 (2108, 'APA91bHGF-F5mXnQpdXsBK6emdopoqEYoeqYQV3rag0xSukcKbNq3N2_nUVrqXm6Wfu7tJi9KCvwabqQkTXvGd3DQtqsg1zmAcvCEK__IsnJoxwZVWZYm44', '911510507748925', 0, '2017-05-16 05:53:02'),
@@ -9947,7 +9027,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2117, 'APA91bHyNLcjoPcGBdJZsWZuSMtWPJ4n0uL29f_wH_NheLvuwt-Wnuke0axFhbcD4Eh2tCSSb_0TvUoGdZYb6dNIl0pIPT5783s_zbhTSj-41c1l234f7Kg', '911469801482113', 0, '2017-05-18 14:37:44'),
 (2118, 'APA91bH8-QD8XHRS2cdkK8o0kD6gCeh8I-t9xy3w2fpU4v1W9FtSdyIklkA24ekqgNfT7VAfJ-4W_BnMwbhHLQmYBUf1BzMhLacITghAufzJelqRmZ78ABQ', '355261072597569', 0, '2017-05-20 06:30:24'),
 (2119, 'APA91bH7I4WLGGyWmgf7IKCyzT-29gs8wKknmcv5SD0IKnxhaHrn4MWgZbK1rv0_vSYgmRupzmQXr1bdP55Mwur7O2fGn9V03p3lWuqZ5QV70vdKRUpcBmk', '358827060795410', 0, '2017-05-20 06:47:31'),
-(2120, 'APA91bH4qSSEwWsPscXjJ263ie_docYg2YO8e3PGIhNE09UHynL9m2JXkgFD7uxZqdxr45uh0SRwT4CdiTJH9F2FXJvmkOYJNQhuArSQCKW9emmhtmVcazc', '867626021361195', 0, '2017-05-20 07:22:23'),
+(2120, 'APA91bEkn7mqfxblLAPGtXCoK_WTfHd3t1vOIWLUGVA2j0DNBLTrHCAw8jjuERjPsM8-PaZN9-4sQN7Z366xiOpHycigvXMypAn727-_gTeA0TgNLBPN9_g', '867626021361195', 0, '2017-09-06 12:08:36'),
 (2121, 'APA91bGkVZv_y2gtncikrM03MWDdxCQ0wW9awWUr5cv2GOzieyI3bkWAe4XMEbXj-XG0-rUDagvJAzfAh3SDgo5C0IOe_lRYDBuNzknTebdI9so5b15SHQ0', '352373058284600', 0, '2017-05-23 07:56:45'),
 (2122, 'BLACKLISTED', '355266043686938', 0, '2017-05-23 09:49:11'),
 (2123, 'APA91bGSyL_A2JqTRU31nKhC82709uOwj04TMhlL9kI-otPsdlz26030hdrpyOHBZk4vknZsbRkQgh1PY9ns6P9IK15zaM1p4HvoSMwLY0K8luyYfilQw_g', '863260031792092', 0, '2017-05-23 16:04:04'),
@@ -9957,7 +9037,7 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2127, 'APA91bFKc4avQcwMuIY0Y7rAo47GbnSClhgFpen6ZoyIQkK1SyB__MfHEvI2mnCRPvy-BnW-FrYFeAfdZbgodOqksx8aozqJ0zNaMIaHCMbdwMop96RsMtM', '911504301266267', 0, '2017-05-25 07:59:50'),
 (2128, 'APA91bGKja0XYKUiL4aJ_fN66IT1wFwi0lEGDFvkJKYfWtYO0ooQvwwP2_-u0yw6IN9VBoZOwrfpNFDhh21QBIxVvOdBKkXaOcD6B_l2Sf9zn9d3mYLMbwo', '869737024415892', 0, '2017-05-25 09:32:40'),
-(2129, 'APA91bFVYgmmDEXxIY1TPP0E3kMEpYWxBRTt7nSiWR-o5NTdT6inG9mH6Ns7ijyuE9oJrmF2uJ90ciQCNXaXoJcytqoCowaiRBka7HIIXp59CVKfdGgIIG4', '861227032570712', 0, '2017-05-26 05:25:26'),
+(2129, 'APA91bFVYgmmDEXxIY1TPP0E3kMEpYWxBRTt7nSiWR-o5NTdT6inG9mH6Ns7ijyuE9oJrmF2uJ90ciQCNXaXoJcytqoCowaiRBka7HIIXp59CVKfdGgIIG4', '861227032570712', 0, '2017-12-17 14:58:17'),
 (2130, 'APA91bHg88AAnOizZJ21oGsqQyG6u4sqyIy4xKTeiGqqsuwVQCpFf-PQLhqJDeIhQJI_un-9roojT9HZRV0rXVcakW8RF2XEbWf83UccJDa-KBIbVTOvRdk', '911510504184017', 0, '2017-05-27 08:22:07'),
 (2131, 'APA91bERPpz_jP9fsMiNxvQCloqMmbcDyHn7-PDCFgOH3W--G5ZZOF8WXX3to9PjjJMq-zqOmXf3usZkGt88wlOG5PMhyy6_E-X__fzfWLXJ3FVVMU-8CXU', '867529029840022', 0, '2017-05-28 04:54:57'),
 (2132, 'APA91bEHqu1i-v3r2kgGlO83PMv4FSeOpNv-BWQc3cXHtjNEtIlBptBo-H-yZdaJP9pW-eDgoUusmM9Ij5OZnDejwQBZJ0YEDnl-ZJzkioaHMqeKycoiGNA', 'bc94149283419a42', 0, '2017-05-30 05:00:00'),
@@ -9979,15 +9059,15 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2148, 'APA91bGwm8PpfBYNIE-8-P1_HcXh2UNLOD7Ic9VTqmbCykkXMfv3hRMe4Kv3bZ3d1r3ZBAe9P_Y2vN1T-uWqwmOBsVxyjl109RHXYwjAOBMpzUX2V9skkAQ', '359475071226162', 0, '2017-06-06 05:53:15'),
 (2149, 'APA91bEQFG84O9BlH0D5uTtXT98fulKGG5_ejYgte22dBNuAFiNp7iM3f8sO466PJDy90fzbjXSxjGrVkLOqictC2ca2H--X9ubHbBDuaoSTvGYg01Kfh94', '865871024202978', 0, '2017-06-28 12:06:50'),
 (2150, 'BLACKLISTED', '355266047439276', 0, '2017-06-08 08:10:49'),
-(2151, 'APA91bFdSmjC16DPPzW1trxr-fT9d6f_K2d2e9E6dirhVTdlsXZq0KEiU5R03K06pnJkLXuIpYNfKPfLr-9tCx3a15WsekD7SDdJzUe-zQU7b-wUo8d1L1o', '911438700986623', 0, '2017-06-09 09:17:34'),
+(2151, 'APA91bE3LF7frStDK77yD-73U3Hu1vT28ki2MVad_-A1_HdLh0RumK271mRyYH2vZUstXEKS4OLRBJ5uU31VkNdZzRf2WNyYcuXRSJofQ9DIPTN43_fs9sg', '911438700986623', 0, '2017-10-19 03:21:51'),
 (2152, 'APA91bF0VZvEz4qcv5tH51Vc3ckQFkxKS42hgJbC0mDsQXG3uzwRVjHrDqC25pfDKm_YCOuKR_ZnXeeGN-C5T9bGuSF8gwCb-gLrSCptsIwvuDXeGYKQtd0', '863499033373713', 0, '2017-06-09 18:12:11'),
 (2153, 'APA91bG1CzW2TRH5MCu_-o4oE-_AM73yCIpg-cZ201mK8xzNGrqYOjbRcLnagQCKOKDJoz9jmoxqbwjIzUxsXlVJslAm_ju4M65nHCJ_sHqWxjRtJIkjsww', '867708023310253', 773, '2017-06-12 13:08:31'),
-(2154, 'APA91bHF_R1Elkn0jnoagesegHJhMYNsAsUtZnx8MVYhRSp0xJ9eHN8WUq3jIE4hYhLA8tZQuam7IC8LBuVtH60J9HUUAbeK74PWexVaOJNNhG1lY4-LP20', '860905036459898', 0, '2017-06-13 03:57:59'),
+(2154, 'APA91bHF_R1Elkn0jnoagesegHJhMYNsAsUtZnx8MVYhRSp0xJ9eHN8WUq3jIE4hYhLA8tZQuam7IC8LBuVtH60J9HUUAbeK74PWexVaOJNNhG1lY4-LP20', '860905036459898', 0, '2018-01-23 01:28:46'),
 (2155, 'APA91bF6wSNG46mUR1gp1SZK7qJt1auoeR-yEYiJyogE6o5bc8vbItzB0QpikT38Li9H3B7OLOUc6QHelQKk4p9ZLbezO8rTde6d-A_4OdijejyjEdnZJ5w', '864262034848755', 0, '2017-06-14 08:25:22'),
 (2156, 'BLACKLISTED', '355266046522825', 0, '2017-06-16 12:35:32'),
 (2157, 'APA91bHagV9XYd6OZNJKNdDhfK9ePVOn_Fg4EkoDA9y7S9qyogV4RR1SIKlyXdCSk0vYiMrWmbKREnJ3x7jdfmVDDuORZbUHkHldBj3nsYXYdIJyfRGhigs', '865346021733309', 0, '2017-06-18 07:34:45'),
-(2158, 'APA91bHatQE4crszCdRmFRf2ahGZ464hhaDIta99gz7eIxsQDZBEj7zkBoiHrV-g_oWc9cwyfhtaj_c15DpccJaQU12wC2xq-a1M3Af3NHaEERzWARreFhU', '355484070428559', 0, '2017-06-18 16:30:47'),
-(2159, 'APA91bGBhsG2z24EcSd4WgugzbGWJiLUNQ0-GWTKv1tN1mq8wAs7mXCdU58x7r_WDaWzZ_kMFjThVZHEH96hVa1rBOK5s0MKGczEtSmpsFFFUDWDbc1jp3w', '862188032756058', 0, '2017-06-20 12:49:07'),
+(2158, 'APA91bGaWzYthwvKdC1byViewe2jx0OOf9KdbfQV1QlERuJY2lzX58__47zbt8byIoh0xAgseISxds52VKer-rRT6gL7ns7H8Hp-kdBi_yMLKSKE-tKFamo', '355484070428559', 0, '2018-03-06 03:59:35'),
+(2159, 'APA91bGBhsG2z24EcSd4WgugzbGWJiLUNQ0-GWTKv1tN1mq8wAs7mXCdU58x7r_WDaWzZ_kMFjThVZHEH96hVa1rBOK5s0MKGczEtSmpsFFFUDWDbc1jp3w', '862188032756058', 0, '2017-10-16 15:40:02'),
 (2160, 'APA91bFRIpbDDro_zPpV9qzsBz0WwTWTKzCL22ImrQaNjrlO54klERwKbbx2fuh8hcPkXx7Qt2AGpQ6BI7UgyQcMse_3Kd6DRzPD84__OA2iOeYHXKbuauU', '351962070926833', 0, '2017-06-20 17:49:25'),
 (2161, 'APA91bGMRfNELkXLlhTFRmP08y6LDeWIZTZKf8CYL4lBesp-OlxispMm65zigDsajHhH0UJ2L42wUPAFsNKHI0BSzwvirmVK6ZAHxmNsOMjf9soVjjYb_R4', '911510802446159', 0, '2017-06-23 10:01:11'),
 (2162, 'BLACKLISTED', '355266049300666', 0, '2017-06-24 10:20:30'),
@@ -10010,18 +9090,18 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2179, 'APA91bH1Dxk6NoxW5_1rxzqTzqxjBBDlJCzCgVS-zs5X62SKNi39bNNDSDePSCBEf8zg1MIZFpNv3IqE8CO0O5bxKJ37e-xj2CocMS4c4D2FFjMXVl-tiB8', '860732034483450', 0, '2017-07-21 17:20:33'),
 (2180, 'APA91bH1ZhHY8NPVX2cOTgA1gLcRiZfZS3M8TOjn7hHWwQ_MX1vHBIZyjokXjcBHUnh98-WYts7XY1gA-9rrSGToHqGZ3dMwpoO-gwvild218afG8O_wTjc', '865157032947634', 0, '2017-07-22 05:03:31'),
 (2181, 'APA91bG-HJ8WY5tdJdfNRKQvzPc7ar-_UUbbWVMqnhPpf9HyanBeTwqUWp8DHZ_j-ulOCAgzZdJpE4T-yrKMKE8q2vWPT75GOkxCW8qir_FuX1yYemPfzTQ', '359593074008393', 0, '2017-07-24 02:24:35'),
-(2182, 'APA91bFybXmBFF1f7H-Jc9Q1OmC6DazsW8jtAp9Inl2plrMhK2yZgmzCYWm8m3bYySJWZ-b1XrIVNDveWckyxZhQHishYR2NN_k_ehXnMubFWs_5Y1vFKD0', '354919087781475', 0, '2017-08-01 10:38:16'),
+(2182, 'APA91bET6ZfGOXf9FWwDYerALFhWwLo7SFpU0qyPB5aCT3nOaVrqSsdMI5LxQWCGq9uGeyQGwebUSeaKGsmjQDdnhRtnKDU2_oYVCMO2yIIrG1Ihiqi4GSw', '354919087781475', 0, '2017-09-25 12:36:43'),
 (2183, 'APA91bFxON53SQiROn4iMa-3szsB940vidHeh7ep7V3WmiotwDDlAvrZqit_f12eoMNqyWPMyq7tS9CuaPUxEQHkVE7v6St34FDjSAmMa_8Ccu0RPGD9xE4', '351823057761702', 745, '2017-07-24 15:04:06'),
 (2184, 'APA91bHl74o0z-sbUNugyUkNw52p6V1YJOEWhAq888oE2WIY8qrAaaQ_ujUGdAw2x0GEgUnppM1rmpgSxS0QM8AjN8qn0L_xCxYbBfFXexbhdg_bVffHL60', '869698028108091', 0, '2017-07-25 05:16:35'),
-(2185, 'APA91bHio0HF_PE_qfM1_Y0IPyhbkdz5ktl41-k76zy9mmRAoiW1STZVkAabWEw6DdjaVmCN7KXrqhAyYW7l0Oy4VX2Kb1tFg-1YdoNuwNpP5fmfvH5AR_U', '911476102168747', 0, '2017-07-25 05:18:25'),
+(2185, 'APA91bFp2rhFK-wW_GBE71ZFkjWwKTMPE6eZdNBBu7JjTamDbAqoQk6yT2LuYMBPGNVPoCHfOOejJQPN0NctCNdcynBIbQmg4jrThF7YyB_SwcPkDUVwAEE', '911476102168747', 0, '2017-09-12 11:43:00'),
 (2186, 'APA91bEtEsRz0MkQyEjp1qtZI9PA-pbNfNten70Ai9tKASja14iEwwXLE5fvDXHaEcnehibshZxm__xqp6qp0M8pHBlqal2ZrzeuwCo2KhN0mV5vYfzFSXw', '868143021883359', 0, '2017-07-25 07:10:35'),
 (2187, 'APA91bHXaFc_RT8BhRi6nRJ2llvnLf5Q-1Io6V0cvP0c0w6fYx6J2gaC1WX31obSnGCXcIEaOBAbFFx69aDHTQxgPVRlAqAu2tJCtOzDv0-odm6eB43Va64', '911509600841629', 0, '2017-07-28 06:48:51'),
 (2188, 'BLACKLISTED', '355266041177443', 0, '2017-07-28 11:13:20'),
-(2189, 'APA91bFRM98nU8j2eu-WeZNjQcSFKRMpAEWG39bAAvFXBLtx0imM2nkxthc4LCGMvrpVeNptWL2lLqj5fp0l5WhPB6Oe20R627zDOCEeOZOHSytsImicnpE', '354915051163823', 0, '2017-07-31 06:29:05'),
+(2189, 'APA91bFRM98nU8j2eu-WeZNjQcSFKRMpAEWG39bAAvFXBLtx0imM2nkxthc4LCGMvrpVeNptWL2lLqj5fp0l5WhPB6Oe20R627zDOCEeOZOHSytsImicnpE', '354915051163823', 0, '2017-10-07 14:40:51'),
 (2190, 'APA91bHWl7hWLnmfLTrydoJlA4rPEE9J_vgQnFriVwdL0AqoGxWU2Jjmbh1Fkf1kiatj83BQimQLtv8UcZiz_uQ7hvZX-mTOGfj5lwSFt3lhsHx9Q8tEQ0s', '358185062621377', 0, '2017-08-02 06:42:16'),
 (2191, 'APA91bHuE7qqjFhxQLyRwPTswZgorSg9eV6ZOgw7lso4y589zAZbtzagFAJycQ-L_5iBayZ-0EBTAnBa62lPJ22T3ycdO0FKuFpoaDoVclMbty_r_MdSQvI', '911510550642942', 0, '2017-08-02 09:08:48'),
 (2192, 'APA91bEEdr8vzBQD_YoA3mA28V9Cl9LdjWJTNvloOnlLJormVKY-OGJ7pOwwle6oe1TUCCV82IXNUyMvMxXOwtD6M7aGUOQZhMC1bGAmaqZ8x8ihDZsQ0Rw', '869328028147358', 0, '2017-08-02 11:17:45'),
-(2193, 'APA91bGXN3W7yBZ9U1z6BWg3GDoIR59PLjUwxMacQEyuK1fpAp4QK8SV3HNPtRuGGBwfhLGFdUz8BgqysiUX26ffIU78fQmYMI-UuWB9Hyk-roxWCMvC5ZA', '867371029476899', 0, '2017-08-03 04:52:38'),
+(2193, 'APA91bFjc-7rA7GRosq4-cp9qre3A5uvNFhYrKzIwZZ1xfiM33ff462WdvOc2uc_jyCpf9VYENWIX6xX2EbGzrzpiMVpDKOac39qiOYyCQuzFmGjsD1YVIQ', '867371029476899', 0, '2017-09-06 16:37:50'),
 (2194, 'APA91bG2i4x3EsbGv1LyPvXe5b2x7_21XD4bLCU8LWHoEU0uPai0tu8vwwfZwQOIgUK3jo6hYTKyDa2xbEWMoEuCX-UCbrFIyOwh9mGmyBmdmwIElUwtQBg', '863497030193696', 0, '2017-08-03 12:23:57'),
 (2195, 'BLACKLISTED', '355266047362965', 0, '2017-08-04 05:55:54'),
 (2196, 'APA91bEu48ZsYX6ulnTT6i7RW8crc-GgYye4ngSJgx75Vu8yYbZXI72HwUUNmlAdO6CqrR0gXbPSMoVhG_WMh4Kpkf7JQAqi47-BJfx8vwJQc94dmcP8TJo', '868778020436491', 0, '2017-08-04 06:07:03'),
@@ -10036,7 +9116,211 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 (2205, 'APA91bEQN6SrXnruN3sd4TBTHXdYqTk2bCAFECOANs3Zb5ZnZm0ctKlHZ1UFZNsbQVtqo8-4uf1ZCbW98FM_U_jJ8deYKapmKr43HOMx6rdz4ou0m_K1AeU', '864711037819312', 0, '2017-08-11 17:50:53'),
 (2206, 'APA91bFFwLMlCehDr4UssCZRg57GIjVZX8wbvpgs5d-rcSzHs8Y-UfgqEkEUVtPyeJIgRrYuo470HN28I0y2oMRpSlRUf8mRKtTFc8QWTB3YNxw5kN2mBN8', '911417754191207', 0, '2017-08-12 01:34:43'),
 (2207, 'APA91bFTQyJ0cm9pP6ifYepBKIF91SRYQRPTurt6S_nV3GCKivnPG-RVlq1MXyEetCMxtu-S3H32s5ju-LrmOYZdlbiwWIyqQltvab5vljZ_wDdGmmZdQbk', '911510659208546', 0, '2017-08-12 01:49:42'),
-(2208, 'BLACKLISTED', '355266042045318', 0, '2017-08-12 04:56:56');
+(2208, 'BLACKLISTED', '355266042045318', 0, '2017-08-12 04:56:56'),
+(2209, 'APA91bHiAizzl4KV2OvHa63fCA2J2IFn6bljBU_qWvYIGqws0ktqFdDzxOVGb-yDqwq7cX9v9PsgHkCx-OWQfcZcYgY77Ctb_Pe_MyoGz9t7-CZ2UI0Ot9M', '358974087466383', 0, '2017-08-17 07:11:58'),
+(2210, 'BLACKLISTED', '355266041471036', 0, '2017-08-20 01:07:01'),
+(2211, 'APA91bHfj9hxelnxSEgwwbROqBuV_P-HVo9UJ0fRoWUss3M1Mb9oBhvxn6j4DN5WDfAxqf__SyQNbyA2nRLCIEUBv2a0DqmPtUIqV4GZcOwL5KZ5Iex9zdQ', '865636031009652', 0, '2017-08-26 07:56:10'),
+(2212, 'BLACKLISTED', '355266043862224', 0, '2017-08-28 15:30:51'),
+(2213, 'APA91bE6-ur0rX0LXgJvX_-YBk5Lauqqts7K6MLJNQ_oZ0IZU9cMXDNEfdidWS9k61dIA8K_mLRXfw39DLRx6bp46_dF4cy9FPA1eIT5-2gz_FCLg-5ZNvw', '2d4b42685dbc7ba', 811, '2018-03-05 03:18:19'),
+(2214, 'APA91bGoDbseBU4smELh-Sbuqyfzcias2mUbdPr5VBjQm30Oj7988Tl2xzQb1vHY2-tdBxQgnIWDLg_ovX6FF9AcWWQq2gQ2ORHGhm717uGbU-IRMF1KOAU', '7717f00b9d9dc6b9', 0, '2017-09-02 08:33:35'),
+(2215, 'APA91bEaJ-xA6d3QLHQEdvcHBf2_MroIBqvIYxuhtGOODp_zt_l84USU-UdK1kBM4vy0oYOJOhdvP3F90OLfS7Sd14-5RVfEBdx0ivMhcdKR4zdo1ZWm1lE', '351962071258442', 0, '2017-09-02 14:59:00'),
+(2216, 'BLACKLISTED', '355266047879687', 0, '2017-09-07 03:21:11'),
+(2217, 'APA91bEvuJ3CCfPbDkjigMXPYUqBhMbT5qeWGcipOJGDXTQ1xu2YsJYhbKYQevS4raXiXLtIRCOqN0wa8C7EUwDav-GAudGjC-p2lmLhRs1K4oUbhFufOwU', '863795036600410', 0, '2017-09-07 11:15:19'),
+(2218, 'APA91bGm2F6hFjc1ZUyOuzat0Z8-3L3Qm17ha3SlXEvSdjdV44vX49GNDjd_xTYZ861ZMApEbJ6nMcz99sjbDmvRLqIGoHoWF0-l6c2_94A42ChkmdYwsw8', '865980020759046', 0, '2017-09-07 15:16:41'),
+(2219, 'APA91bH31okhZ8pd6GI-lwrcQE28CUnbVpDxwm6Yha_6Lzmkxw6z31MgG9yS5uslFBAOB8YTy3IP1yRUU-S-INWznt6yDTNZ9aGBPOpJYl8cBEgx_hhdqFw', '869162022050080', 0, '2017-09-08 06:20:09'),
+(2220, 'APA91bEM2Es97mKZcpNCqa7O7AK0kGMoaH_IEo8inyii6Yr_4Km9QkBGfjrpCTJQubxDWujjtu_3DI7B_C9Ugx6CAstol27dGs9KEU2XZL4-p44_EPHWG04', '353509079730936', 0, '2017-09-09 14:47:16'),
+(2221, 'APA91bGNgbFQrRsllMt-skwTZ8-82KPkH2WY53Q646IY0uAiUkvEL_aZgxXBHP3Bqp-TOeqD-1Wqr8mFrnmXCo3OFJueQ-jxl7GPHR8ZYOGcgVqhPAur5KI', '869698023557136', 0, '2017-09-09 17:47:50'),
+(2222, 'APA91bF8umnDylT7UBcSBa-mxU2fUcVxhj3q0XluSSjIMqrBafMKuRJckWQIbLVQnqW86PrDv2163TGDqf4Vij0lJPCMuIRPKiDHhX6jQYlCe3H_JMz_cAA', '868087025630359', 0, '2017-09-10 06:06:15'),
+(2223, 'APA91bGJz06i8QAi4q6XouGkor68YvDLM3dFsEt6Zv_1bWhqW6tpAEGxxNviOVkSHxKNuHr26xtFck2XhuPYCcIpEDhtp2CZ_HyNYl5DByaNcBVKpvfyZTo', '911467750249095', 0, '2018-01-24 11:01:32'),
+(2224, 'APA91bGQzMKvt-365vHpgpr0i_9NO5bHilL9KnLmoFWqYFkDuZcln9I3oKhoItk2PPmcHlkThPpKYZsaZ1rZeRuQqojyRFDL9AihjEU2gRS77nbgyktc0Xo', '352871070107394', 0, '2017-09-14 05:27:34'),
+(2225, 'APA91bGropCbKOUDvHcc5Aj4b-v5IqE1ES1gJS2ATLy6jW8NepyqIBbfbIqPEOQW1BKB3UGz40UIVO_drGA7kC7Gvki1HK17ciJpQ_2tIZBMd5H1eMM_xus', '869698026037920', 0, '2017-09-15 01:12:49'),
+(2226, 'BLACKLISTED', '355266041510825', 0, '2017-09-15 07:09:34'),
+(2227, 'APA91bFhDKnlSpEpeQbwO05Fv93-w77drfiFppMnoL22xdtniDWf2HqWtRJE6rdmN-_7d86EEQJsvBlNN0de-xs3bWztXNjFZVv9n1OOavIk_abqaDau7zQ', '354855065994385', 0, '2017-09-16 15:38:33'),
+(2228, 'BLACKLISTED', '355266044659256', 0, '2017-09-18 15:16:56'),
+(2229, 'APA91bFyzVLHOUTlIOyocCH2i5ODWhpJaW9_-NZvGbVz-bFjZA5NA9Ejy3bAcRPZDtfjwt4f806eFDb1jq0_14MJWUz_nwXiIcmrYXrFlYUZd_5NBxMGaNg', 'df1e782d677f3e76', 0, '2017-09-20 09:23:48'),
+(2230, 'BLACKLISTED', '355266046328694', 0, '2017-09-27 15:11:58'),
+(2231, 'APA91bFEVBxo-KB2NDnMOV_e8qeFXNVqAJRvCwcWo2t6hEcoQbbnNGWcAXMMry-UiPi33HN3bexV6oYmEajJjuIR1ZEVSc9o_Qi2Mt5GWh1pIYhRaC5CpiY', '911432600096484', 0, '2017-10-03 08:44:40'),
+(2232, 'APA91bGuxEJ20hbdSGxiGhWMBwYGrmEyurTO8Xhf8g8dx4H1x2VVve_dB1cfrK9dxI5rzd5Di6i88_WP3LDFRxIcrve-Y8qLRI2DKF_MjnhtKCHdt5QflyA', '911417754797847', 0, '2017-10-04 07:36:23'),
+(2233, 'BLACKLISTED', '355266043228939', 0, '2017-10-05 02:56:28'),
+(2234, 'APA91bHab8Lz9r1CKFQiyXh699GDzDt0MoqKWu4AH_LJrFqujrH_GEnwyeIOB6GCr1HX7GApVnvRjV_RhWXKmPTUz1wP-eWFnYjukpMXGyQdFyfPG5C4--g', '862156038738016', 0, '2017-10-05 13:57:58'),
+(2235, 'APA91bGEdRUXxbR6LiC6H9JfuQ7aFsH6ZH3Nyxyx92fw7UjraTsEKO3qmiX4_SHF5YhemMkk6tdXtT-0FTebYBgSqS4nFc-GrqVV7SU0PcjTXIrgNN7vLl0', '865980020005390', 0, '2017-10-06 06:35:19'),
+(2236, 'APA91bGlua0Iwbq48mPw_Ktx9zsitwEtJ-OPjrKplec7w2Pyk3Y5POC6yZfmEdxwAcMP7jSNbPiXjrRStL293g0pnsvy_9HRd1pbG_fjqAxps5x6FEHBuio', '861171032537034', 0, '2017-10-06 06:46:27'),
+(2237, 'APA91bGdSIHhadQQmvpDlQSfSqyhVZhqcjXxuc04ZLMP2QKjISfq3XFp8IFotVc7HMUxqwXgbW3XF1hjwuK-0AKNFHlrVIOH6yit-sWagNS9EskFzDIR9zk', '355923070794742', 0, '2017-11-07 04:57:22'),
+(2238, 'APA91bHBZWcj53nwOIpK8CbmpYh7ioPXTzaeR8fRB3S6wT4bZV1ZKCX-uFnwuJgoLAcp-Z4kg9DufaxaQVbbN8qdhGVfvGn_ETIobbonz9PUKMupbTC9Tqs', '354919088165264', 0, '2017-10-10 05:08:49'),
+(2239, 'BLACKLISTED', '355266041118504', 0, '2017-10-16 17:05:41'),
+(2240, 'APA91bFHwey876UsfIrU2c95tK2KRXVBuOOL4g81zyI8eB282TEQ8Ibu8PhqW50C1cdS7FkLBdH6nN5wpkuzPn5Xxq17sLa5UPtuuMZnWyOjHwa4awf7DzQ', '355307071741102', 0, '2017-10-17 02:40:05'),
+(2241, 'BLACKLISTED', '355266043547197', 0, '2017-10-24 09:18:35'),
+(2242, 'APA91bFTUR6YFvm7-uoORrczn-29PBdhbwwRCjqUAOuyOqYai-cyFhzNpKOTPQZFh08Pnp2lDwWSX0c1tjBqum-PF1bKsp1FlS3RGUgMiXvUT8qD7xJtPFQ', '911444000516326', 0, '2018-05-07 14:09:20'),
+(2243, 'APA91bHgLqYPufZxhRikz9VBLvJOIMiy0nEVb70EahJ2aZJsl1YJJzH7QmIUEelHuxm_YYqdCE5tgD4tECKFqDbcuktbFQJyp-1SpBJqqwcyKjQkstPeVPE', '911510650029933', 0, '2017-12-12 05:47:16'),
+(2244, 'APA91bFfN9tu-BvaebD3NSGe5RMiGHFKv0Ydreq0cNAGktvDCk_iShbiFYQfr7Z6wJWsrEYHQATzMjHdJJJk5qPKFk6Zqd61-gmJ1sxAvYjbPyxdvta9n7I', '864465028197556', 0, '2017-11-03 03:59:02'),
+(2245, 'BLACKLISTED', '355266040279372', 0, '2017-11-02 03:36:16'),
+(2246, 'APA91bGeCRR8SnJwYY7ZZug92kex3GSr8beOi0IFPUS8z45cBwMmEIjmzlSMmCu1bBxk_uivrFYj3XXkcVr180lQDWJhV_VKeG7NpjUJpBYGN2sBmDOROCk', '869589027006792', 0, '2017-11-05 05:05:18'),
+(2247, 'APA91bHJzlBPu-JT-rFGTAkycFWCWiWPRbcfGMXQdK-Be3MZmrkv-D1Q91p-TVrm7qPKBheOkZ4-0j0pBfArtrx_hnOl3sFQ7_VJVmUvenPR3CsQZttyizU', '867793026451288', 792, '2017-11-24 07:52:31'),
+(2248, 'BLACKLISTED', '355266044476982', 0, '2017-11-10 05:41:14'),
+(2249, 'APA91bEyE1nL_0TuvpOkSh2QOTLKMZ8y-EGJ4ShkJg18Ju_Dlf1xujs_9FiTFbZlmwipdLoLlJbNy8U3U6lCDMR3y_GP4IvvtVjHatnwCgRwzqzv91nnedU', 'fa80e2ba5413648c', 808, '2017-11-13 09:23:59'),
+(2250, 'APA91bFYKZYthT4sKeEtbcdXXw2LpZ4NxDO-t7lN3VgA4op0kWH_RVIQSATcyDkIKuB1iMMsRDlVvqHcIKq8FsDAFpwSAxsiWbfk-breLhedBf_G33jRcnk', '1facd5371c40cf5a', 812, '2017-11-13 12:07:28'),
+(2251, 'APA91bFGEQxeFrdW-veTn4eiXhVsKF6HW9OkMvvDAlLe5e9NLQMMvzYH08Ov8hb8oRun8jWNI3Z2rMOzE9KB-nYZ9eKKtjGoqwSBgENVHHnz1tdu-g9ORzk', '359475072297477', 0, '2017-11-14 13:07:58'),
+(2252, 'APA91bFN8aS_Ia3vB57E1arUJPePv47G1XwzBftYo10Utf86Fbmkrts1-0sZq5gpxrEwUTislnbgcpRH2QdrZI_cyO3AUl2BgzJz3Gxu-9ElYGuAovS96kM', '353768070123968', 0, '2017-11-15 03:16:10'),
+(2253, 'APA91bGDGTFdphw8rgFRcpObkMMiTML4h9T8BzmkwaCbIOKuNDDi2VI73dlezfc_zQPihTk1y-7WDn9AENFQU-IL8jl5Gw74IB1KjSqj91xfkiE2xtEBmrw', '863176032058558', 0, '2017-12-26 15:51:33'),
+(2254, 'APA91bHHkppNvdmgkkOe-Jx-AE6i8lCqScSsZ5n8peJkVIiBXp1ppNYGh8hHgPBKYf2_vttaNi9-5yXADf0XSuWGMQ8nLIg9d8gzt-DVdCx0DF5yfdwIw-A', '863795031593719', 0, '2017-11-16 20:00:24'),
+(2255, 'APA91bFv-P8NV9ANX3kdmEdjQJMnlCV_yi4yOLPCOmsLLsexg3jDRRlImOlE17iv4n_EfJRgrh7rsPC3mwAlY-pMUMjTWIi4UnMBaMyGZkKX0Ueq_uOCQ_Y', '864216034297934', 0, '2017-11-17 12:21:37'),
+(2256, 'APA91bH4lXTBtn38Z9B95p2P8prbYodWcVOn5CTPVS_9Afm35nU0hZ4Wg5WdexJ2YNF_1QOcPZ3HxZa7WCYMY1ljgjrr8lTaTms0xmnYVOKjvMUE0LuJa84', '570d80dc0531ae2b', 0, '2017-11-17 12:58:39'),
+(2257, 'APA91bFX0l0ZEzsSCuYQeOXfRIIhqjI8_EL46u7M88YnZfTwzGQDX9zsFIl8wtQaSSnau-DB6k1jE6-0oT7AhmYLT_S8t8SC2-kHxqhMHfdVzldF4iRcnhw', '863084036342772', 0, '2017-11-18 07:05:26'),
+(2258, 'BLACKLISTED', '355266047525660', 0, '2017-11-18 10:30:54'),
+(2259, 'BLACKLISTED', '2e91c87607ea1e64', 0, '2017-11-21 10:09:56'),
+(2260, 'APA91bEUD1kHmc3l-eEBGoiFkerUQEr899nnwcI8TK2-ueTIkjZjJ9mynNPLarkX2If1IB93jIdXhZdt4WRtc4je6ONBX_T8AH4m7PCPaHrZNp7IywHh4tk', 'f3168cdb37328137', 0, '2017-11-21 10:42:40'),
+(2261, 'APA91bGi2VCOCRaO9kWT2JwHyu6klwge6HsoFhjqGeqcfrs2DC6DGcmMSdO9sio-5dWfdJL8ZKnAUMiSOk_LG_M1EuJP-HqUndGbQXgS0JunHpwbSO9G8xQ', '353278087831108', 0, '2017-11-21 11:17:26'),
+(2262, 'APA91bE0QyXJsCEfQe1cA6Q1TNn3Ak_mjrFG3v7OItDnfaF43oDEhT-nILHA9A4TMM359QFcZ53ailZ3rk-zaDViLmkEzkQn5kfzjYMeiQiH4HLTikXqIVU', '742183b825e9d44c', 0, '2017-11-22 07:55:50'),
+(2263, 'APA91bFii75V37ut6lB-iOSofTFj4WuhdpbeLEb7c-fz0R17DhtPYiAEBd-baPakreI4QQq34wpEdg8G9Eemid6PuqVKBngg0vZEkFkXfOwbBYWCgBxNKLo', '1402cae5882c002d', 0, '2017-11-22 08:15:03'),
+(2264, 'APA91bE7pM02hwNMW2IaSjvyk2vOL4wDey472MGFM9-RYTnmcFsL7e1cgviU7fQbguoe-HUeiWreNXxSasR09PhXLwbkLrx1WaAt4I98-wp7ZMLyVaou0Jg', 'a714e53b4f7cbdfd', 0, '2017-11-22 13:43:46'),
+(2265, 'APA91bEwNs4A_1gCpXwH9YLmya50yIi_8FzS_noj_4deXBlo9JFSG8-FrvKwqD8SqHO_CF6xPMqhE2APZd3FViCZpKJUyMamUdHhwyili1IocpcBV4SzQc0', '1bee98207f04e1d9', 0, '2017-11-24 07:32:14'),
+(2266, 'APA91bGciGwrp0Ucd8WOQxoKWZ51cQQjRxWqQTCftWHf3zrEKH2S5vF3nvGtPaGuLoqDL2Yu4SDxMYUJ2HEpRpIZmTQ958PZJ_F_nrYyCVDXtmMz3VpaJa4', '75dda4a8555818d3', 0, '2017-11-26 03:13:51'),
+(2267, 'APA91bE8Cb6JPElXD36heLq8A4Rnu2F6zRCWJ8Kvr6G-HAy0RQTwDQq5s-28OaanM1KmAQGNtLgZY6AyFjM0L_UcywXEYl-A0Wz_oATX_zhFX0tnqe3Rop4', '861227035747770', 0, '2017-11-26 06:49:09'),
+(2268, 'APA91bGFtXWGCiKtiqKO-zAaWxs3OHEZISMtRUa_7EgKavE9V0-w9XXNysPbVF7s6KQQ1a7ED_1nsJs-JYK4icPe8b7jCIHkAFnVflbrNYBvqI8LMBZMWEs', '43e4142e6f91ec0d', 0, '2017-11-26 11:11:20'),
+(2269, 'APA91bGfZiSDv7sSCrAB5-9IXfFFZKwFgu_fNf5epT2P_LsY5myaELt4SKxxHZXmTF_5rhkqIXeHN-YkYkTzBYvks8d8qc6GrkiEB6iLAbXm-a5ncNsI3iY', '2a6ae9b04c8c986f', 0, '2017-11-26 18:20:59'),
+(2270, 'APA91bHpcM8VApVYqzYTkaE2HxUP9kpByLz4xCf-toJzjwsArbUAIOJZhZq63QI70LNiR8AGFJKaSnwVaxs-6MF4S1INjS77yjdsFVJS2nnLqHr4lZtDpxw', '28fb3575b5a952fd', 0, '2017-11-27 14:28:55'),
+(2271, 'APA91bEsHu4lhAIMWOq6yGQoSmhCnlGsrDvjDzXkTS2vq1Pl0jUhKiaaLbt4iXv2Pt7djr7-aU-_Ma0qrO7QukjwfSzBkUe2UQs8tE2sDnPYSpdFmU49UMk', '30d7acc48bcf0d5c', 0, '2017-11-28 11:11:14'),
+(2272, 'APA91bFSLE4d7z6KOdhIgehgFx3rAzP2bhw8rEJ_SRm59oeJcT3qTkyTXtb6Z-ntjvvppC5pFs1wNFTI7Nf--yvuWX2SK6fQNAtQLNL5opq_KZ1m3sywlTI', 'f54035f4dbe8eb40', 0, '2017-11-28 13:47:04'),
+(2273, 'APA91bEAIpa3KP_gB-JyJwfYEk80DHVJVySCv0euhhjxHmcxRpNTmqKcbKyfNGbMvFPXoIZSt-G8OOxaF5jgyV1npcVGUJ9cOwibf2z3tEUXys-ae7EtLpE', '677d898f5da96780', 0, '2017-11-28 13:52:34'),
+(2274, 'BLACKLISTED', 'b281682a208a3849', 0, '2017-11-29 11:31:58'),
+(2275, 'APA91bFLz_u2DHeEYD7FWXSj_p4zOOj5F0Ke1e4EMjriecPKRhcFOS-9SCtxSE0t2Lc-TVptUIJdtcCHvz5SafjlJboriaATsye3ABOi9em2Dm8R9KzSoHc', 'ff38a7238055144d', 0, '2017-11-30 19:23:19'),
+(2276, 'APA91bG4HV1VNBCAb_XkAlFeUVr6MBO88b5r0pQKcAV6rBOGeCGZCCYZQ1nW-uJbdYoAINH_DH9vQBJNjvYkNE9rs-acARppJUoxUMGcBGBWMQ9Px1zdn8c', '71bb9368c094ead', 0, '2017-12-05 04:24:28'),
+(2277, 'APA91bEZbXV145ih3a7qtBRrVZWPsFXLFYKQkU1owKK5jvBa7WPz-y5goGsqTtHeFScc1HZ6dK_tKSD5MaiNLMO01TFJK_Wij_kpovVLZZKRGhNxsl5YJxE', '97e9831883298d9a', 0, '2017-12-05 16:16:51'),
+(2278, 'BLACKLISTED', 'f8db99f74b3574c4', 0, '2017-12-08 05:35:43'),
+(2279, 'BLACKLISTED', 'f846d1755c7ad6f3', 0, '2017-12-08 08:33:02'),
+(2280, 'APA91bHA4n4Nd4Z49GEhj0o_IWP25phK4QD1v1OsvvZuPOdw822olgmrSzMqk43uQPbcsbeUEBTLzC7ZtkBV1JOF-ylSP-uP-U-__w89fb4EeWPpXu79YKc', '6d68d867ec5ad8d0', 0, '2017-12-08 14:34:42'),
+(2281, 'APA91bEp7wPGHjH_d1plk_V1DdtZU-yTzws2rLS4EXoffMBHhiAK8QPEsOE54bUt4ma6bS2L52XFFwkcsCCJQTyXGIYtmZXCdAg5qE73Wmj0XQX0aGdHI64', '53dda8b930a2ecdb', 0, '2017-12-10 07:47:24'),
+(2282, 'APA91bE86lBB0jNTzt-wkHk5fRdouweniiuTRt7YkwRsJUZt5e_cVm_-KdFzxtXxGCVjZUy3dyhshEYcunY1YD7zJbcJ4CXlrIQB1lqGa9U64hduVIbmFEE', '9ac319380a57972d', 0, '2017-12-10 12:47:38'),
+(2283, 'APA91bH7DaHSLqvpuJVnYk-8-XL8gaY1NN5XgcAnqWsFYRphhbZkKooDDcwGSAzEBlq5mwdwy5TTJ5sYRScqNKuEWBcI2MXBH4_QlEsGUQjkCD2HM6Cn0Xg', '7364d03c52149159', 0, '2017-12-11 03:38:57'),
+(2284, 'APA91bGbsNyHCdu3o8ArNpdkEWO0jGBZzDyUOnEs9EVt07gRajdQRu1HTy4_l34I3oiQTLRpQbCT8txk6ie71S8oTxtjWb_B62H2xBZtVqkVkbJYtk-QwNA', 'a31ebe9bd810b724', 0, '2017-12-12 05:42:47'),
+(2285, 'APA91bGIi0TxCnsuinBY0ZbiY8kAm0sk3W1R4v-i7BFn25cQQuNuOa5ErXpjNTlQyfhFLLfuZqdOhufwvl3mJdZRmwgmigl9JXg5rMD9cE88S8wFH3N1bIE', 'fe4d8ad09ad1c46b', 0, '2017-12-12 06:49:46'),
+(2286, 'APA91bFCffZFUssVBFBoOoZEGDuBGsb6HstwxFzpTv1fNjt5AwdDCi7bcceCp7zImRw4sagzpmYp6oWXsL-dLZ6v0aqQDV-lL7VuTpHk2ve1dxnPwrUeKwE', '9166a6853bf699fd', 814, '2017-12-12 17:44:43'),
+(2287, 'APA91bG-ydUJOkbw0-jUMglYRTDdCttUGisMB2M729gjfxCKHdpO0QYOvzCRorV4WXhtAdGlEKj3a9HDEIEW3jqY7yd1Bcmz8kfJtxiV9nI6QE_dhtMRZxc', 'b31d6e1f71beedc8', 0, '2017-12-13 02:29:48'),
+(2288, 'APA91bERKLoo10xrxhitBb6LthbWTplJ68PZO1YqronrpiZSCnNAbGoSj10UQcgQmbbEmxkcL_DBzjJBTZ-WXLm2I1PrAnugZD7l845AlBf8SGejjLf3w4A', 'c0258a9c8218573c', 0, '2017-12-14 06:43:03'),
+(2289, 'APA91bFzP781jk-PcrC9jHhcYpWDIYGICCf6F86wl7nr0toDxoHpvRn-eNLzkR6IIIN7inqGaa5g7YNUHn7YP7efvo42mhNRPRdXb_FEBrNEl8ujVVRuFLw', 'ae4a7690e6ca43fd', 0, '2017-12-14 07:32:27'),
+(2290, 'APA91bGlfOvwUZZWeAzbM_3itEnIzwipT1XOvkxeStq_43I_UYXFnL0CTymUfOroTRJVE4w_UXC7CsgSP0BdNNnWhmDmBelN_J-tMFi9DSqbAM5tvL5Pfiw', 'a2a8c2762e63f898', 0, '2017-12-14 16:30:18'),
+(2291, 'APA91bHs6umCnvKoniW2kOIJMWD4AKbgkoNH756oQvhEONMS_qK6x_m8sWy_NQNWfjs7Dg6NFHHTIpyf3oTHXycfP9luvVTTtkA2k40xjnfghk6sBIY_-mg', '4df2285750d7fe39', 0, '2017-12-15 05:05:38'),
+(2292, 'APA91bF1gzZ8SUpwPC1nVHiaAW71wVex9f7w_HcNwZDFcZsX4p1TOCPAqiuW4QzNOox65Fec0343WzKAoY2RWoArfUrcW_EE_FTvUru7ddWOBcvXOBaZUPU', '914024a0b6905f82', 0, '2017-12-16 12:43:50'),
+(2293, 'BLACKLISTED', '646c0e4281b97809', 0, '2017-12-16 19:49:37'),
+(2294, 'APA91bEjaqLVb2vWKDJSbJzkFAKY6XK5Z_WbJGMf5ZHR5aHQo24QDIKArJ--rggiJQwza5qQ8u3AlEv8V8gKX6v-jpGC5V9aPy2lf0IStUUkgzyhDa3wLRE', '42f6029018d543d9', 0, '2017-12-17 05:48:57'),
+(2295, 'APA91bG1jHyJ9M_G1dKE9GZkabQvYaMuhNP0T8F9QSEku3bIS69eMcyf_icMYqaA95B1GcN3ZDDsyLmHNDV-Wi2wt0azlCpF8mKssqSWN15OuUGJcIu_7tk', '44f1fc0ac317ebdc', 0, '2017-12-17 12:30:50'),
+(2296, 'APA91bHRXWSOkC-N-bPAJBMpM6whFBqJrNPRiJJ117dbYEJsI9YyRZBbT8acbigs16UV09Iph6tnJO-usj77ELQDr5pbsxEQdObWqZt9TEhfpF2NShVeekQ', '4c6a7c73aafdb386', 0, '2017-12-19 04:14:16'),
+(2297, 'APA91bFY9C5tzNj5n-bKT8vREAjlF-Y2EooT2aitBW1TA-Ub_vWZjpukC5vW61qoDNlmMyQno-TnmyGfIckX4KsnVJSfnObVKGExWVhiNQHJkg6YsWttzss', '3a4d12664a9cec3c', 0, '2017-12-21 14:58:38'),
+(2298, 'APA91bHHmZh2OhH9e_RV0x2PzYAlnMFLEiPFGknuMzlm7Sn2D8gIhRXE7MB9mkja7m_7XsFml0IAdGihnJ7q7IMzl1zNX_C0Ee44ZYS29A_PQgowXW04rqA', '259a8a03ed417956', 0, '2017-12-23 12:06:26'),
+(2299, 'BLACKLISTED', 'dbc625f469bc3ec0', 0, '2017-12-24 06:10:20'),
+(2300, 'APA91bFfF75ySQYzJ30qQBIo-Gsi8TxHt8BFZSuPSelJfgNf4-HJjnTv4PYLRARmiXoak89lwDWxpYJ-R_viOlHAEl6_Y0V100hakqfgtf9eQIhMCJdCOpU', '26c43ed8d93bc03', 0, '2017-12-24 14:50:41'),
+(2301, 'APA91bHkveihlHOS02e-Exz_i1st9-e7Sbsf__TjeB1B7-GC66CIAReEypa4UEK0LVYEaOoPksZgSgWPX2CVbFoanbvhriglXzBohdIC64ZsHIGY8ZhJbgU', 'b9dbe4045bda4854', 0, '2017-12-25 15:31:33'),
+(2302, 'APA91bEj0uk98t8f9pdAqU3W9UMfxsU4RcCShrzk0eDbtpIrQ8R6yekKR2g3IxkZBN4VdeUDBlPwmMmRi6YjzT6q0wqABomcY4hhy9XZOUMHSAg191oc6vY', '29ddd7f68579e5f2', 0, '2018-03-13 15:58:36'),
+(2303, 'APA91bFeXsWvl6cXy5Ayde-JoMHOcl36IF-Bg_fVhwABB5NbOntrpd53co0_yi69USXoYdFPbDkq6a-I2d4rP6ZR2WETKhTDPGQSaH2JK50wVhQkil8ws6c', 'd3bd335118728669', 0, '2017-12-28 08:40:17'),
+(2304, 'APA91bHX-oX3ojV363cZ6ndnNg1nJF7xvtTG5DryFFL1WwdDT4FtWcr8tFO8BA7VQcGI_7D99Cat7gdwBOj36hWGL-_4Nh0Dz8Z0sDR2hQ-pw-SUewhd4Yo', '864209030989158', 0, '2017-12-29 18:43:29'),
+(2305, 'BLACKLISTED', '9f84deced2698429', 0, '2018-01-01 06:44:07'),
+(2306, 'APA91bFS2P3VEBv5ysU2aKylot630h9qFSu_Un292HVnA0Y2TJhuLrZSf-HnP8jAnbB_zQrJ_EillNhNhyz0xVIX3pqvxtV7dKMLCzWlPNhm0X4_wEDm8UY', 'c97d4184202d0b80', 0, '2018-01-01 14:34:10'),
+(2307, 'APA91bFSqImJFFEvN5Xbw7Vxk8hS39sPF3zVD87QriDDxaYM_KSeV9zDocvhmRgKFTzHR3Mu9UxyPujlkeitMIEUDDZAKpq8pBrPrWdo_Gp0GqeZd-C9JBY', 'cd222503c554f586', 816, '2018-01-02 20:46:25'),
+(2308, 'APA91bEwypioJjsyeJf9FbGENQN0hWcs84vPYR-i2OVXv7gtGWLoU5YpHUqidQeqMvV26x5zcEEpdQHfRFjz-Q4W9-ioEAg2GJHYTH-Waf6eZ_mmJAYsjyA', '359932063737408', 0, '2018-01-06 13:36:14'),
+(2309, 'APA91bGfyxz_05GB5xJx9ZuF2oGD3VB3eltR0gTAk2ugG1G1qHQFufAEZhiSi3UNbA38aJbCRez8zhM-MW8cW2pG254VGizYjF60pQu4xNT_Bvxk49AMLrQ', 'c364a502f42b9642', 817, '2018-01-11 15:03:34'),
+(2310, 'APA91bFEQ6L3TC8VkLzAT_kOD0ZG1qQJgwgM6o2lgF1nojvQy0ANVs5V52U8pMP8DmxtFWZRmZevhwBnXj6ruB0Y3bDSIkXNNT6FRQJKRPLpD6WR-L5lHEU', '342faeb96ae6ad42', 0, '2018-01-07 16:58:40'),
+(2311, 'APA91bHzvSRgavusuJdI0H00Wg46wgVdIJYJs2NlEUNhjfVEGYEWXkIpylKVxU9ObdsZEHLANBI36WBuz0UMhEyO9v37JqS2CVNZEgMGbLO3tctJ9A2Svv0', '6732576a3d291f09', 0, '2018-01-09 04:16:22'),
+(2312, 'APA91bHzRA9yRfjx2dYpV7ysr5W6gHkuu2GBLSCjmGirYcXaK-diiKA4tp-fv69R70XbZrz4MTAi9dukW7NRGvD96j985l2f8TGkSfrDIlPSAK5qEnVAoNY', 'ca48e18da2dd0e68', 0, '2018-01-09 15:21:13'),
+(2313, 'BLACKLISTED', '8b3f0529d8b17b02', 0, '2018-01-09 17:38:29'),
+(2314, 'APA91bGNdBCOEoe-jmZhQZu3sqmfG5Jorpeg0FNtOxY7CkiXXq0Kwp2LOXoxlaQvVE7wkuAHpLLBzKWgLirkItgImFW4NCBAm8HGcCBfoUrn54YI-p_WqZI', '753e49f5123531fc', 0, '2018-01-11 16:55:11'),
+(2315, 'APA91bHl8eQTmHZFfJy59EyfeFUU1FGTvY_PrpvX00JtCV1d40e-yr4EZfMC3TFIOJ4Xw_oomy5dYFC5VFtNFRwbzE-aUMGwprhPd9BZ_LooLQc41Z44CEA', 'a125a7d9dc16c128', 0, '2018-01-12 08:38:11'),
+(2316, 'APA91bFl-LpaocVyfQk6Cbxqf_xa465iY-Fb7tdhKaoOm4cA1j9Zya7WBhcVRn4keu1tf5v536pO9NBJjvTFW9sFtRAZCFzJZ6AmieVyWlPBwhONspcTQxY', '48df83e1f5b3bb52', 0, '2018-01-12 17:23:02'),
+(2317, 'APA91bFEfhp6q-d_o3_PlhlDicZTWNFjF6MeSqyf9oGBovd0UJKHnC5sDlIWNKvRkGkIBDuYubB4nsEOQsUPQYdrdYzlXGOwfNyLejTUCQf0RmHf7XV3CXo', 'b499c513439b461f', 0, '2018-01-15 03:36:45'),
+(2318, 'APA91bELc-udXzQj9anHHeOY0FBFSp8vYI4Wt4ubkj-HuQnUm2SoKnFMvza3DICuQOZNbmMBDidrU35Z-DJ1xuxNhTR4nSSczSIc4GDFIRF7zAjUDN4Q_w4', '7370090cb612b087', 0, '2018-01-23 09:44:13'),
+(2319, 'BLACKLISTED', '60bf0ed18da0e3f2', 0, '2018-01-17 02:18:44'),
+(2320, 'APA91bESD5x1F54lN8Yllynz0ZDeIEtzXQN4x2OP-R74r26qYt9cTC5obO6zm9GFmTtOQ4QEk2w2VdgK8su9rvebP4vzuqSrCPFlaPojeopq-2WUmiCFqME', '80719f608ab8224d', 0, '2018-01-19 01:45:28'),
+(2321, 'APA91bEHuWooYyLP4tA5gW7R38YK7tqUkPQaWxbb7Us3R6oT17nhjZ0LFmyhjeDaVaAiJjm8t4wvHO42HCBGzwr1dKu4g_GRycB75-TReYG3MraFd7wAHpc', '942d077a43abd4b4', 0, '2018-01-19 13:36:15'),
+(2322, 'APA91bExCVCLVXHrKedAk-3m4s4NzgtVuMZdA50yPtDFFos6E5mZJYlfJ4l5Be1gbV4LDQ_H39gpJXTci7O-MSoa4NxGWYF_K2Np5CscSpXh_xgc38AdNx4', '8fb158cd6bbcc059', 0, '2018-01-22 17:30:29'),
+(2323, 'APA91bGhZ9LWog_SwvmOQcAEF6gNykgvELWgDNLa_BCNrQ_v3l7ldHaLuSRF3ZXXp63NdWb-t4V1myrKSKqQB5hCo2x4KjqB6qMBgVunRbq_7gswq7O_cZ8', 'e4d1fe5897aed70c', 0, '2018-01-23 00:35:14'),
+(2324, 'APA91bGElrKLvpyFHdxv57wx7fS1qEAbAB9ge_YETe27EYZDjdiXrfu1zNnWL7Vyy8Kpf-mpF0Fr1ZYZ9_U9MEViS2k_SJJkE2_CVPTo0G1DYPa91j75-Tg', '48484edfecf7f59e', 0, '2018-01-23 11:27:19'),
+(2325, 'BLACKLISTED', 'e16d67ac942134d9', 0, '2018-01-25 03:15:50'),
+(2326, 'APA91bEY0Ej2YXpVn6xeD50qJhkvfCBX1HcPj_6N1sk5KbJUvzcTdPUlxYwzEPHO1SRLxhS4VfwVnQxJiMBGukjoockSzjYbZG2cojMPmLfmsIP00qFDQwg', '869698028465590', 0, '2018-01-25 18:17:52'),
+(2327, 'APA91bG4uhhMZnBPS5gEtTrZne5EJhpxM32EIaaTYWSv0cWN2lKnpm85ws4dfbxru_f2u6pxVeVgqxYS8Wn0hs7RATrxUcz4ltyOdG8VBcKul0yFXOohUJI', 'b46a21ab56e0e272', 0, '2018-01-28 01:48:11'),
+(2328, 'APA91bErY1yCRlezcSbrUwDyq_l_j1CgkvrRv1EqKoQVYXzWneHQUy0-dgnpwvqf23eG_50UPf7_8R_vj0o_X0q4ytzSFGr9q6XcIvyiQq22TUyvKPGOP6E', '54c4c9cd29eecf8a', 0, '2018-01-30 13:17:51'),
+(2329, 'APA91bE6UPofXBAJJ8YseXF8h__aTqnIif0VciOTkwya-tbPlrUQS-1VLVBW5ov7-Gcsx2tIc36pRoe3dT3MIwiq8jUDUOAnZghO02tKcH_8TfzYKyApJoE', 'a0194003b6f56460', 0, '2018-02-01 07:46:10'),
+(2330, 'BLACKLISTED', '44b65d836185da98', 0, '2018-02-02 06:13:52'),
+(2331, 'BLACKLISTED', 'dd0e1a0a608b14b0', 0, '2018-02-03 05:48:42'),
+(2332, 'APA91bFSg4t1-FYf51uBjS2cjHmb2Kch6XA8ShIQqBGsk1qON-gMznuqlxqKieBnanpTgxOlvsZWggp1nWdqdjdNZgm8avnJj_mPhOCZ_W6Y__Bnmqpay88', 'dbbb190575fe952d', 0, '2018-02-03 16:17:04'),
+(2333, 'APA91bG37ipo-kRN1_zoyh81hqT4zxlW0ZeVrgelS7C2QkoUJheOmCmu1-YBvabji7F2Rc_O1EJDySFZHEdDyoQFxLfjV_XhJrYAQF2mL1wR84nMUaSkitE', '863217034088142', 0, '2018-02-04 03:39:30'),
+(2334, 'APA91bHf8nOMG7KDvEEgu174awnoYaqhkLeBiuqgC4pbDD-PjTcGtHlqFj-SCeaGLMnmd0DQ507wUGdrZLEPG5A-WCK8ZpHO56Mi-I7V5s-psMlxKcuVkpE', '4b45b4b2395da4d', 0, '2018-02-09 07:48:15'),
+(2335, 'APA91bEU-Kms2809UFhoFy98dDs0tdgudqhL2sV9AxO6QWutTusY5-GEahL_YACeuPHmFIElceYjD8QE_tj59a0qr4TY-hvxAg65LjpdGeWfSUPzSk6Kugc', 'c842a31a1ba8baf8', 0, '2018-02-10 17:01:45'),
+(2336, 'BLACKLISTED', '8f15ddd45fc368ed', 0, '2018-02-11 13:54:39'),
+(2337, 'BLACKLISTED', '5df1e65b2f65a85d', 0, '2018-02-12 22:08:45'),
+(2338, 'APA91bEN8UoApTl04WnJWd02TizSv0nBoLDVkQb26EsL9irSlLoDBWLo5RreKjAPMYT2G-OQbYCunh6Xutd2FkeobbUMp-F_2Y8cPtaBPWn0CA7INqrpc9c', '6d2f3df110b0d6ee', 0, '2018-02-15 09:39:43'),
+(2339, 'APA91bGIt1We8C01q8hPkwTeZv4b08tNSU2a1ACYDo9pYTUBpkLrmf62fpWLvWnL6jf096MsV7mcL_72J1ZDA24-GHqJ5Fkknd9muGDZlp-wStC33e1lbDU', '353022075331337', 0, '2018-02-15 19:40:42'),
+(2340, 'APA91bEzgee4lw--y6RV2WVo-AAR6MBKUG5KLeQQOr79MZ7gMZnciVxCyXywfdln2yI75kDg80kz0wQ8-2mT-krHZPpBeTc-wpL_qGXn-hebDZHd9cCjlsU', '7b3764a929c6951a', 0, '2018-02-19 03:30:07'),
+(2341, 'APA91bEIufkh9ahjkdj4VYhtcxoaqk1y5kYbvmjddc14DT3WAleKltxC6ciqUKpRa7iRTCHoFNpYnT4_vIQ3ptslYvma1iCe-5QanCRK9oUHO5Rl3PXhnF0', '1e36f18babb804e6', 0, '2018-02-21 18:19:23'),
+(2342, 'APA91bHsq07ph4keY0KhEIRAqI7pgmfSNZ8GvT7DB35njXd_wyHOo7hLy4CWtecky9NgREELPipbY928ThWMoz_PFTlBAuY293p7qq-sHnKHZWHkbuC_njM', '911507500826245', 0, '2018-02-22 16:30:07'),
+(2343, 'APA91bGzzXh5U3BWRkaGCVb_xnruaYsVdCGFkYNu-P7Y1WPCqQtL-XjxFe6ed1XwS95h13MamzBe-4p0yGWxauFaEeRxRAMcj0UWzxSx43UmY8q0iPHCRiM', '863087031349197', 0, '2018-02-23 07:40:42'),
+(2344, 'APA91bGjRxJppfLWeaOEYLniFKxKHF0C6idUMfMEVfWaFv91_5hMzX2UWOm_YyrgvVMoKHRT60q3nJwTwQn3erbi_Jnq4JhV40YUxrorgDd1HrWW9RHSU4Y', '723a616de7d500e5', 0, '2018-02-24 11:23:03'),
+(2345, 'APA91bFfkrpanlJGsLcGFyfaihwa5Vwj56Ke_0DGYQ1a5gl1hLk-4L-b-YKbrHCs2uYYVtWF_0yz1_C-HHF4gIUUuObqQeuYtQLW7FKuSg5IuzUgosyvDvA', '59d9924c1288fd8', 0, '2018-02-24 20:07:21'),
+(2346, 'APA91bHbldmYjMVYh5HsLfb46w0H9PzpJsmwKNI4HS_AGB1KVs31dN_KNPOHQo4zKeXeId6z78cKQ10ZA9BvhL9RXUeaVA1Xd7cL3--BHEVzXNEVwcE_GoA', '358225088905550', 0, '2018-02-27 14:40:00'),
+(2347, 'APA91bErWGavoiyqob53eNGK0PjvBU7Z8PEGgHxglgEg6_Qnj4U8cwq5eVBictikWCHqg6SWtt4PuOKSq4Xa64LNNYeOzM0kMogaonjbBdIXT74FGhKhOIg', '6f1f8086133c94e1', 0, '2018-02-27 21:08:37'),
+(2348, 'APA91bHkOGPAoPdiA9K05xeTgLdr07HD28h4U-9OznP09YUwqJLBdLxUGAV9T2Ic-mIWMRggEAaPbs-TY3NB9617t1CE8sh6u3ABQxOvxva7ytkEL3g95H4', '970100de2fd22e3b', 0, '2018-03-04 16:10:27'),
+(2349, 'APA91bGOMsPIZsgL1UtWOv1a42EVdhzI-449B37MQvF_JvyGMIEj_K1Br3Le0BGubKXDWqkLn41_U7DhSM8-H35wPxRBWjKzs6s27qeyErGmJkdynuTnaAk', 'da5120250d614665', 0, '2018-03-05 06:14:53'),
+(2350, 'BLACKLISTED', '1c1e85a38f4b8060', 0, '2018-03-08 13:57:17'),
+(2351, 'APA91bEX2y2yVpPhQdocDE5OJEjHwK5QqN3PrbQlHYxlayFXPaxp4sc_zUuECygtqnWw1CF2aATnIqR_eWMJ5VGIJvDoJhpVn9mvHPZaXE_veuiex50VQeI', 'e04c064982f05e15', 0, '2018-03-12 14:16:03'),
+(2352, 'APA91bEDOGWRaU71P_mz1ABw8CjEl7v_-Kea-XkIOoE57RE6eT3TgOjSkzU2fYKC3dJKYQDkRNPOKwzS4RbaLmkCys-XTyu5Et2SDGrqbbVcJMHESF6Ay3Y', '911407302228916', 0, '2018-03-16 09:16:33'),
+(2353, 'APA91bECsoxUMf4IPY1bK6qzber4AaTpVd2hj32rpt6D3LmWaBdVAxEss0hPGcWy9ahZWZX_5iNV2ATuh3SD-zFBzLx39TlW_NtRsOc_Hg5X9ruvPxdIfLo', 'e0928143c36a2d18', 0, '2018-03-16 13:05:10'),
+(2354, 'BLACKLISTED', '6ef2b20876bab516', 0, '2018-03-19 07:22:59'),
+(2355, 'APA91bEF3Ig6mH4Y6_IxQVLIrZrCIL4uUA6yTt407yCovexOrlD6Msqe7xswu-ZcmWKGumn5Q0iN-hvtx-HtjWD9-hb7T-MmAfZHogrMSluiH6u66xJhYzQ', 'f1460297a3e90730', 0, '2018-03-19 10:54:59'),
+(2356, 'APA91bGyE32hPHVOGmPyazPStZFKKHLyn7nFnzjiPukD0r8pFxuSGDT5lsQsv8sHeb6JD6TTuD2xzBcWh5cJciEP4Vw4elG-kZs2xyVZ4vxyr6iHIs5yMGs', '6e10eb6964d7b93a', 0, '2018-03-19 16:01:36'),
+(2357, 'APA91bHtWIefEGWH4iDLKufeFVEOT2d7GLXgXQIBDEz_UfYm7TGD_we1IhHa_8sywJFphh_w4rzeYklxEu9PiKAwBGQL1_ob6knVe9aGDDD2mXGAYzem8AU', '99d837a203209e8a', 0, '2018-03-25 01:15:21'),
+(2358, 'APA91bEFxv9mVF6aunepvVSV_31QsH1Inw9J9QARcqghH81gog7WkhDzhwzMfhXEqGwUmxAQlWKKn_CImOSmOVUweoOWcwfZyBv8ERM4NBotJqxLnS0tSZQ', 'f8f3beaaa37802f0', 0, '2018-03-25 08:54:45'),
+(2359, 'APA91bHhDyND4-x9tY502wYXJtAtOzBQwutpm2eMBWz3CXCnr8kTlP8xoVnTFwyNwjyZJWlAVRTQ_XsTJny8dLEYp1pyMYcpOAH8xxulY5h-KB2-16PCV94', '359594060524005', 0, '2018-03-25 15:11:56'),
+(2360, 'BLACKLISTED', '501578baa90ac8a0', 0, '2018-03-27 05:40:58'),
+(2361, 'APA91bG3I6jLc6NTkZSVlpO0n1f_taYxe8yara6DgZ5HTpuWCFriPwJctsilk54n7CeXl5crQHL0b85N9_k2fdxGHP9Qen74G6cRFQGGmL08qN4scZPHGlo', '1d881ad05abc380d', 0, '2018-03-28 09:22:39'),
+(2362, 'APA91bFXhAMS0YDtir9ekE4290NLC-pDs0YluKBVqq0Xskf4JEQpB4mlSYm_va3OEp5Ugif0LWSj_rMFBkbdjTIXQ_AepGIA7vd1wzmcK97oxOco84l8igI', '2a9c410112e8c66', 0, '2018-03-28 13:23:39'),
+(2363, 'APA91bH7VqIMXC6nEUvS4rz2zLnEUEB_ClhvgWuVz1BGnw6txNeY7uboqeZL7BCodZ4Npk3zDzZ-Gox5P32mIdw2xdURQ4KyVoElwXBLiDkothPJW-PbVOI', '861327038914052', 0, '2018-03-28 14:51:24'),
+(2364, 'APA91bF_gCCF9Qb-18jkOSwlq5kJ9D1vjuc3GNXfYORizKlwGKEZ8R6cdm9W0l0DZ0PxRDCoX1ob0H6Wera9_hM4iI23MRC2vWAyvPq58mK5kV9kAuqhgOg', '359299056641611', 0, '2018-03-31 12:19:19'),
+(2365, 'APA91bGZx3y3et7vR5D8_f5DiEdiBKv7FIH2u8JRLcExmJrccHrhCtzkOm-M-ngxa0DQWEV2XRVNDtRDhMPKod6aAS8lyT0Has2RT-Lnjc-7quuWy4ZJAaM', '5eae153e269db3f7', 0, '2018-03-31 16:37:33'),
+(2366, 'BLACKLISTED', 'beebfe289c764e2c', 0, '2018-04-04 06:08:14'),
+(2367, 'APA91bHmdWzUTOGe4blQomduQnGrHvJJcQzeQN22MDaC3XwC_QZFIf-UL3XM_q62IzKoWkb4LbejBAtemMlwx27wCwgm3NrCz4oOXO3aLZIor_4FP7kU7tM', '4face831531b5b49', 0, '2018-04-04 06:51:49'),
+(2368, 'APA91bFfn57EX5u83xeV-X1u_y8APVXmwfJi7tEXuWQoVbnAXfc8I_oFysL6dLAsw35fxEHMmC3Xu8EZhXlqfsZQ35HWi4WcG0_inj-jQDni4vq2FzCQ71s', 'd5314f63a3774854', 0, '2018-04-07 06:01:08'),
+(2369, 'APA91bFbhlCgU4iT3xYc3d7kB3d12eW7FQF49locR_QT2_FsX7fzwknbh4gaQPZLnTgrhohekgfwyhfvhMAHh6761g_duvYIqO69-ixzKLo0eR5fk8YuwrE', '99a2c3cd15bd4bfa', 0, '2018-04-07 20:59:53'),
+(2370, 'APA91bFPxRm18-8_rsPTA9jxKn3UbN-Y2pF417hiSzkgpi6lam8CrPPNyeymLMH1AmEJgS-qDSIOtzeleSHjGg9EBPiditx_XRG8ye_U0N2K1_qfZdyshak', '352942082833382', 0, '2018-04-08 10:55:02'),
+(2371, 'APA91bG3Z_sTUtXGPkjipJmgIXjSoGo4_zsMorCwM9B4vuzR6ckH3F27bEnIgPlPlenHkVNrPTHZVAHU5TtR3QOW7gxK9yms3DShDyvPRoztbC2v-mnC_rA', 'cdff1dc8cdae5bf7', 0, '2018-04-10 04:33:07'),
+(2372, 'APA91bFfiOtAM1PHKall9PCFaQUt4wGHrlrFUDIjWYCfxXD0mje9CSCwa-8ho1OdilhPCKXJOqaGjptZEfqyb5uPnTG_SE5zRkSvfZT_9ROuk058ovTz55w', '1d395b9209a3b496', 0, '2018-04-11 10:26:37'),
+(2373, 'BLACKLISTED', '3248020a3467698c', 0, '2018-04-12 06:50:03'),
+(2374, 'APA91bEi06B_PvX5xV3rjQbQAIFvh8qt2uCBdd5mskn0XF0mu7aQpRCgpHfxuULbN-odozw_aMNbtWiFUvy6B1mcHUWSRagSupWKunrv_q712AnNOCI-_UI', 'f7566e28583e68a', 0, '2018-04-14 05:37:36'),
+(2375, 'APA91bG_SF0fw7nHPZWr7McT5vAXxkMZDWuuoHWorWkDU4cluyo_0UAoIm9GTM1njV53i0BqQEJ0sjjdzSJ9sSadwptBnVGNt7O1la_pORQJ_AOmo4PAh-Q', '2f2baee642e7672a', 0, '2018-04-14 11:34:07'),
+(2376, 'APA91bFmTc1EpNaJ1SGeO37oPUPKoK50BFBWVqdDgVavAzEpS6xS_CkFEXiYrbhCUOaDzLPBDA2nW-Jw0HdinbPql8WNnJHwl_eeQnJbaHXd9EtjQ71vL_s', '544143346fa5d5fe', 0, '2018-04-14 12:21:16'),
+(2377, 'APA91bE95W6lspT_L7zJr7jHyfbt8lNnTOFZsXFobKru7CoOQYGW-btbdkzUIx1qQCzlOSuX4h9I_0-nB3C4eBiBjEeMKSaAA8PUaaySbQIEOLvOPdoSRPU', '8d0f2c210f175f36', 0, '2018-04-15 13:43:28'),
+(2378, 'APA91bHKZtyUIxoLXFOPefOkG6IkdtLTqsBjg8WWCiUW9JsFmMszqZsOvwl70ijcJMVWoJ-UyR4GVsmnSn64yQC_9vCxs05OjSA_yQOwcY0KGS_4ZQXnKLI', 'b8b2c6b18127ffea', 0, '2018-04-16 06:18:12'),
+(2379, 'APA91bGe35ruLHe92VU52-8eX58BrnBHxJ9A3OnRomkkbXUTvus8-fBlvoRuad9gNQUjgZC_Px_8mjq22_NI8Rqy_CmkdwtUJG5fThK3heHx4Dq7meYzcCU', '69b0c39714b4d7e', 0, '2018-04-17 10:21:36'),
+(2380, 'APA91bGQLbgo-YMrB1OfXdU3CHJ41CAfmtFuh3UpoUZqT3KCWXDsAaIqs-CgGAnpxPJxIwsiTb8SbnG209zuyCznVQWzYkIUBe5v4dvEKFIDVeaTbh1XaSQ', 'd53a2d062e3e4577', 0, '2018-04-19 08:11:25'),
+(2381, 'BLACKLISTED', '39e9fe6afd5e5306', 0, '2018-04-20 02:16:15'),
+(2382, 'APA91bG9OnURlcyUBV9XZGWgcCCBftzDMhL8snHZ5juHdATJWd-KCHV9sg8Z09IvI-6o3nyqR92Rap291kUzZtrwELHa2pU3iFiftc0lpVbMA800jZOXcVo', 'ca5862c1e7cc25ee', 0, '2018-04-20 10:19:17'),
+(2383, 'APA91bGcJmlyzsDuxeyhm6PS_8nf6gmmh-GvcpCHBfNSZYgBXxC_9WuOG-gz4erkl0r8lLz-TwfceotYptTy1uhkzgw0O_FoctSOBWHlh6vFoN-6mPcsLSY', '396cff049eb845f', 0, '2018-04-23 06:50:00'),
+(2384, 'APA91bEgL1X16_MmGp4niqH1GQ0F4J0cGtDRrenP4oClGxUYygfmMS4Fv1eU330TiYLsCQatSthZmWvlK2bfJZawX9d4VCLXVCs3BvrCgxQZFxW0F0PeVoA', '6e0fa201053b6685', 0, '2018-04-27 23:32:47'),
+(2385, 'BLACKLISTED', '6a130be1323ed53d', 0, '2018-04-28 03:11:43'),
+(2386, 'APA91bGbmWuWq1zQLl1GiZbPrBpSYMiV28nDdX5-msEY-IxvdOrydoZPHVe8YnuOyCzQYvcYtTsjBn5YWfc8g90gJWkzDX5qF3418sLarqdjmltLvpsCUO8', 'cbc0144b4d53db5c', 0, '2018-05-04 03:56:02'),
+(2387, 'APA91bGQkqbDDDy56J9bfTyu_JR0DMr-3HhFGr52Q0fBIQqjc-7pjSADSkoXRUHe31l3F-TFE83czDgLxdQLGYihoiyQHJSb-Bx7beFUmLFZykF8vuSF7bw', 'a4791ce5e5627b76', 0, '2018-05-04 13:30:56'),
+(2388, 'BLACKLISTED', '0eb6f19b9506fdf6', 0, '2018-05-06 01:33:30'),
+(2389, 'APA91bHrHy1hxwySKBk45qsEeXVaOBqgiFuKnU0Nt4ln4a8pw6UACl3ohEcDu0LdaRvlFDoqxAWUQnquBjXWtNniPOjCVOoTVnwfu9Yb3KRKZUVFPjw-yPA', '99f167cd479d3076', 0, '2018-05-07 06:56:13'),
+(2390, 'APA91bFRT_hDfUS9wl38nHI07pHoT6Ttg13dLoZ8X5ErZgpDDY7X-XowjHFK16S5eabTiY4wPuci1DjhIiH0W5hKHiE2rZbm8dhVr0licvU2wRZA5GIhj0s', '35fd90a505052da6', 0, '2018-05-07 07:48:40'),
+(2391, 'APA91bGirdJv54XeQr4LYI-r09n3Ameel4wxUkYJPXCQPHfmB1D97zyF4_OtVYpWaE3FeW-C3gt5VDtTIi5HgMzPLTjJ6iaoax3IKmWH4XNfzGc5gknpatk', '7aa76397f72ad685', 0, '2018-05-09 02:32:16'),
+(2392, 'APA91bGMoKI0KRd6WLtdaeoSkJVKJMr4a31CHdeGB2K1fmJnsqE71vpr1_86NGnNL_5VjMVr2sJJ9vuGckyNqQTb8jN7QdQvpqzxkPLWdYQd8Ew7AYPa0PI', '1087e7e63fe7f9a3', 0, '2018-05-10 17:42:16'),
+(2393, 'APA91bFbpfU_CXrGDDyLDRFSYrUrh2pJlBmRniiaSTqt7wZmjxPlNzMrcoYcFOvmeIQyWsyIv4PmtfR3TVUXI3uw4BjTG8zC7ONuz5Iylw6M_M2w7MoVsms', '356541074092316', 0, '2018-05-13 22:20:57'),
+(2394, 'APA91bGzqmPbmFEz9bxVGeLnpA1xWIyCLcqo9DeKy42l7aWDYRzycVmhaRnSBEMnOpHWPUs2rYFJl3gxuzeXKMwBs7pKmQyncOEOqHvqj5rXgGCb_8ordKM', '1a570942a96c79', 0, '2018-05-13 22:27:46'),
+(2395, 'BLACKLISTED', '8cdbb57219bc47c0', 0, '2018-05-14 09:31:45'),
+(2396, 'BLACKLISTED', 'de93853e8adae6e1', 0, '2018-05-15 01:51:29'),
+(2397, 'APA91bFrJjn9etKRt1ggLOkGdpboccvRgl3fMRoCpEpI6Sqy3cptAP43NODFCluFVGeJ21xyUvve18YGGru9Tn2V8siv0a4O6WTx0wwbMwbURWmL4DjWWKQ', '44bbe67f37a4831b', 0, '2018-05-15 18:25:06'),
+(2398, 'APA91bHkM28hwXgwGlfLX9tedfj4OOW8MVPlArJmkgqjn5GfwuXb-ZU7o8gOKBgxwGAvwtpx2Auji-9-4JpQ0a5EhIX_sGUYe278LwqyZ1h8gGDxnKoFisY', 'b7cca5965614a53c', 0, '2018-05-18 04:48:45'),
+(2399, 'APA91bFLpCkDJ43PUprdb-MZWqcU4uttwrYHpMWWzPenONE8TVal5TG9w6VTH79rA5nY2F0UHtilzgy_H5GeU2Q9OG8FBdDnZa4iP9SLWNZ0t6-Xar0mV1w', '6f0335618bf82ab2', 0, '2018-05-19 07:17:24'),
+(2400, 'APA91bFbJQpBOsi3eXfqGhCZTUVHDmYy28CABd-_gcUA-HJpHo9G9AhVfRewNj9OZQjib0rxxlmezZwSi_MnYpvQRWteWQThwUFAVV0InJGJRzAkztSp9xI', 'b0262e43ed18a89b', 0, '2018-05-20 07:49:16'),
+(2401, 'APA91bGkHBYBK-fAajZY_O-7yqBclCF5SsIWbX7-KYmcuOFyJ9tpE-DOhASx48F6GUH2v67rIyb9EvvA1U0ruSxw095k-m0rV3Qlwu6tsYIS2zvCwgJNipM', '82d21789b0047a87', 0, '2018-05-21 23:37:21'),
+(2402, 'APA91bHwHhxHnQ4gRTyvWH-aGWdS_gycspO7_ScI9tYTA73Dtg4nb9RN4Tm4FmBlIR0ZEUVmtyeh7zzaVA571tVTT-n1a1RVILJRLMqiA1xQ5ifVu1MafkU', 'ee07eebaae9e9e6d', 0, '2018-05-22 10:15:14'),
+(2403, 'BLACKLISTED', '5b0420f7c3478400', 0, '2018-05-23 07:29:19'),
+(2404, 'APA91bGjF9LluHCJa143rM4Y6dL3xusFjz9bcZgVJt6723Q31A2VXyKmEv4jLkL-wsU8PTXnlDHShLf_aABxL-kYtUpQbPEDus7m5j2XYfs9lQcc_IfNbA0', '28a413c051ee7038', 0, '2018-05-25 18:27:27'),
+(2405, 'APA91bENA6wY3_ygn5xEMrqWd-ju-cHMfAjM-EpkYsAOEsbbp7g1L5hFyI4j-axoYhoFMcis5L65UhdQmPhW_w95VNE-WZQ38JbuMD9y_76tss5krm1yRgg', '861645032215766', 0, '2018-05-28 11:29:02'),
+(2406, 'APA91bEh7BB7QdMP4c10WkDWTvE4A0qr2AcL4rl46xfsuuMcVJAupZVhbWqpeeOqql7_fPk3CwMBNb_oxDPKKGz_h1Y0MefBJFc7bbCdLRWAEOZuI_Gm6EA', 'a85721f1c51539ac', 0, '2018-05-29 19:38:36'),
+(2407, 'APA91bGqBOkJnRwUR0qUqBBlomPYbE68TbFl5tmv_pH15AqP9TftDCnS0EhQJ_5s6sKldoLHSWSYTn8bWUsNhqkJvegUhZVPXLwWryxfA_I_5aVMJaBIDHo', '61d29a8c34f59136', 0, '2018-05-30 01:45:29'),
+(2408, 'APA91bH1aMXNnc-UU6x3U9-WNd90kOdLhgLWqx9mcJcvJkvIrSmeVBdrY9pdI4wGirLWhuiIxxbdZD39-5l964ESfO0kaNWKHbcvhhrM7nB-3EE9xftgPFE', '1b6e8d987afb3766', 0, '2018-05-31 08:26:58'),
+(2409, 'APA91bHWmpDGjVwhHYdAT6Etzky-jRg6SbV4Wrbh1cb00t3h6ky05lyBYXTOI0ZadycSQ59mF0vI2qWeT3-g-12bZWbq6qSRAKSFYBpDecVUvER-zXCjwQU', '4609f5d2721ae5a7', 0, '2018-05-31 11:28:41'),
+(2410, 'BLACKLISTED', '6d934ecca850e9fa', 0, '2018-06-01 01:44:22'),
+(2411, 'BLACKLISTED', '4afabce13535baea', 0, '2018-06-01 19:55:24'),
+(2412, 'APA91bGtkaZtJqfKLkMgn7FEriynOPccPujQLLRWFjmatFQgDgdKHVNGurHF6TTyeV6QIaTFzSVaifgzbUQsordaZtYCEYcBvLXbNi90rCQQ4zufptquBe0', '87d90f6532044654', 0, '2018-06-12 07:51:46');
 
 -- --------------------------------------------------------
 
@@ -10044,12 +9328,11 @@ INSERT INTO `gcmuser` (`id`, `gcmtextid`, `imei`, `userid`, `datetime`) VALUES
 -- Table structure for table `gcmusercitymapping`
 --
 
-CREATE TABLE IF NOT EXISTS `gcmusercitymapping` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `gcmusercitymapping` (
+  `id` int(11) NOT NULL,
   `gcmid` text COLLATE utf8_unicode_ci NOT NULL,
-  `cityid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6467 ;
+  `cityid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `gcmusercitymapping`
@@ -11654,11 +10937,6 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (4362, '1763', 1),
 (4363, '1763', 5),
 (4364, '1763', 4),
-(4365, '1756', 7),
-(4366, '1756', 6),
-(4367, '1756', 1),
-(4368, '1756', 5),
-(4369, '1756', 4),
 (4377, '1202', 1),
 (4381, '1761', 1),
 (4384, '1764', 1),
@@ -11712,7 +10990,6 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (4617, '1808', 1),
 (4618, '1809', 1),
 (4619, '1807', 1),
-(4620, '1441', 1),
 (4626, '1618', 4),
 (4627, '1618', 7),
 (4629, '1132', 1),
@@ -11923,7 +11200,6 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (5245, '1959', 1),
 (5248, '1960', 1),
 (5252, '1963', 1),
-(5255, '1961', 1),
 (5260, '1889', 1),
 (5261, '1964', 1),
 (5262, '1965', 1),
@@ -12061,7 +11337,6 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (5790, '1824', 1),
 (5793, '2026', 1),
 (5795, '2083', 1),
-(5803, '2086', 1),
 (5805, '1887', 1),
 (5806, '2089', 1),
 (5812, '2090', 1),
@@ -12109,7 +11384,6 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (5953, '2134', 1),
 (5960, '2136', 1),
 (5962, '2137', 4),
-(5963, '2042', 1),
 (5974, '2099', 1),
 (5977, '2140', 4),
 (5983, '2143', 1),
@@ -12117,17 +11391,13 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (5985, '1930', 1),
 (5991, '2146', 1),
 (5993, '2148', 1),
-(5994, '2120', 1),
 (5996, '2145', 1),
-(6002, '2151', 1),
 (6011, '1799', 4),
-(6012, '2154', 1),
 (6014, '2138', 1),
 (6018, '2155', 4),
 (6019, '2155', 1),
 (6020, '1823', 1),
 (6022, '2157', 1),
-(6023, '2158', 1),
 (6031, '2160', 4),
 (6032, '2160', 1),
 (6034, '2159', 1),
@@ -12146,7 +11416,6 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (6115, '2174', 1),
 (6122, '2175', 1),
 (6138, '1639', 1),
-(6144, '0', 1),
 (6147, '2176', 5),
 (6152, '2177', 5),
 (6164, '2153', 5),
@@ -12154,16 +11423,11 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (6250, '2183', 5),
 (6256, '2184', 5),
 (6257, '2185', 1),
-(6265, '1600', 1),
-(6293, '2182', 1),
-(6294, '2182', 5),
 (6318, '2187', 5),
 (6333, '2189', 5),
 (6349, '2190', 5),
 (6354, '2191', 5),
 (6363, '2192', 5),
-(6366, '2193', 5),
-(6372, '1777', 5),
 (6378, '2197', 1),
 (6383, '2198', 4),
 (6384, '2198', 5),
@@ -12171,18 +11435,160 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 (6407, '2200', 1),
 (6415, '1050', 1),
 (6427, '2202', 5),
-(6428, '609', 5),
-(6429, '609', 4),
-(6430, '609', 1),
 (6432, '2204', 5),
 (6437, '2201', 5),
 (6457, '2207', 4),
 (6458, '2207', 1),
-(6461, '1779', 1),
-(6463, '1811', 5),
-(6464, '1811', 4),
-(6465, '1811', 1),
-(6466, '1152', 1);
+(6492, '2209', 5),
+(6525, '1756', 1),
+(6526, '1756', 4),
+(6601, '2214', 4),
+(6602, '2214', 1),
+(6622, '2120', 1),
+(6623, '2193', 5),
+(6627, '2217', 1),
+(6638, '2221', 1),
+(6648, '2224', 4),
+(6649, '2224', 1),
+(6650, '2224', 5),
+(6654, '2225', 1),
+(6672, '1811', 5),
+(6673, '1811', 4),
+(6674, '1811', 1),
+(6676, '2229', 1),
+(6683, '2182', 5),
+(6697, '2232', 5),
+(6706, '2236', 1),
+(6708, '1779', 1),
+(6714, '2235', 1),
+(6715, '1441', 1),
+(6722, '2151', 1),
+(6730, '1961', 1),
+(6737, '2243', 1),
+(6793, '2249', 1),
+(6801, '2250', 1),
+(6804, '2251', 1),
+(6811, '2256', 1),
+(6814, '1152', 1),
+(6815, '1152', 4),
+(6822, '609', 1),
+(6825, '2261', 1),
+(6826, '2262', 1),
+(6827, '2263', 4),
+(6828, '2263', 1),
+(6829, '2265', 1),
+(6831, '2247', 5),
+(6832, '2267', 5),
+(6833, '2267', 4),
+(6834, '2267', 1),
+(6836, '2269', 1),
+(6839, '2271', 1),
+(6841, '2273', 1),
+(6844, '2276', 5),
+(6847, '2281', 1),
+(6849, '2283', 4),
+(6850, '1777', 1),
+(6851, '2286', 1),
+(6852, '2286', 5),
+(6853, '2286', 4),
+(6855, '2280', 1),
+(6859, '2086', 1),
+(6860, '2294', 5),
+(6861, '2294', 4),
+(6862, '2294', 1),
+(6863, '2295', 4),
+(6864, '2295', 1),
+(6872, '2297', 1),
+(6874, '2300', 1),
+(6877, '2304', 5),
+(6878, '2304', 4),
+(6879, '2304', 1),
+(6881, '2285', 1),
+(6882, '2306', 1),
+(6884, '2307', 1),
+(6886, '2287', 5),
+(6887, '2308', 1),
+(6890, '2310', 4),
+(6892, '2312', 1),
+(6893, '2309', 1),
+(6894, '2315', 1),
+(6896, '2316', 1),
+(6901, '2317', 5),
+(6902, '2317', 1),
+(6906, '2323', 1),
+(6907, '2154', 1),
+(6908, '2322', 1),
+(6909, '2318', 1),
+(6911, '2324', 1),
+(6912, '2223', 5),
+(6913, '2223', 4),
+(6914, '2223', 1),
+(6915, '2326', 1),
+(6917, '2327', 1),
+(6919, '2328', 1),
+(6920, '2329', 1),
+(6922, '2332', 1),
+(6923, '2333', 1),
+(6933, '2334', 1),
+(6936, '2340', 1),
+(6937, '2342', 5),
+(6940, '2343', 5),
+(6941, '2344', 1),
+(6942, '2344', 5),
+(6943, '2344', 4),
+(6944, '2346', 5),
+(6945, '2346', 4),
+(6946, '2346', 1),
+(6947, '2348', 5),
+(6948, '2213', 1),
+(6950, '2158', 1),
+(6951, '2338', 1),
+(6953, '2351', 5),
+(6954, '2302', 1),
+(6956, '2352', 1),
+(6958, '2355', 1),
+(6959, '2356', 5),
+(6960, '2356', 4),
+(6961, '2356', 1),
+(6962, '2357', 5),
+(6963, '2357', 4),
+(6964, '2357', 1),
+(6966, '2362', 1),
+(6968, '2364', 1),
+(6971, '2365', 4),
+(6973, '2367', 4),
+(6975, '2368', 1),
+(6976, '2370', 5),
+(6977, '2370', 4),
+(6978, '2370', 1),
+(6980, '2371', 5),
+(6981, '2376', 1),
+(6982, '2349', 1),
+(6983, '2380', 5),
+(6984, '2380', 4),
+(6985, '2380', 1),
+(6986, '2382', 5),
+(6988, '2383', 1),
+(6989, '0', 1),
+(6990, '0', 4),
+(6991, '0', 5),
+(6992, '1600', 4),
+(6994, '2387', 5),
+(6996, '2390', 1),
+(6997, '2242', 1),
+(6998, '2242', 4),
+(7000, '2391', 1),
+(7001, '2042', 1),
+(7002, '2393', 4),
+(7003, '2394', 1),
+(7004, '2397', 4),
+(7005, '2397', 1),
+(7006, '2398', 1),
+(7007, '2399', 1),
+(7009, '2404', 1),
+(7010, '2405', 1),
+(7011, '2409', 1),
+(7013, '2412', 1);
 
 -- --------------------------------------------------------
 
@@ -12190,15 +11596,14 @@ INSERT INTO `gcmusercitymapping` (`id`, `gcmid`, `cityid`) VALUES
 -- Table structure for table `hrrequirement`
 --
 
-CREATE TABLE IF NOT EXISTS `hrrequirement` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `hrrequirement` (
+  `id` int(11) NOT NULL,
   `heading` text COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   `userid` int(11) NOT NULL,
   `publishdatetime` datetime NOT NULL,
-  `expirydatetime` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+  `expirydatetime` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -12206,8 +11611,8 @@ CREATE TABLE IF NOT EXISTS `hrrequirement` (
 -- Table structure for table `jobs`
 --
 
-CREATE TABLE IF NOT EXISTS `jobs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `jobs` (
+  `id` int(11) NOT NULL,
   `catid` int(11) NOT NULL,
   `cityid` int(11) NOT NULL,
   `title` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -12222,9 +11627,8 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   `isactive` int(11) NOT NULL DEFAULT '0',
   `expdate` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `employerid` int(11) NOT NULL,
-  `minimumexp` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+  `minimumexp` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `jobs`
@@ -12245,13 +11649,12 @@ INSERT INTO `jobs` (`id`, `catid`, `cityid`, `title`, `salary`, `job_profile`, `
 -- Table structure for table `job_category`
 --
 
-CREATE TABLE IF NOT EXISTS `job_category` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `job_category` (
+  `id` int(11) NOT NULL,
   `name` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `sortorder` int(11) NOT NULL,
-  `isactive` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+  `isactive` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `job_category`
@@ -12297,12 +11700,11 @@ INSERT INTO `job_category` (`id`, `name`, `sortorder`, `isactive`) VALUES
 -- Table structure for table `job_cate_empl_mapping`
 --
 
-CREATE TABLE IF NOT EXISTS `job_cate_empl_mapping` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `job_cate_empl_mapping` (
+  `id` int(11) NOT NULL,
   `jobcateid` int(11) NOT NULL,
-  `empid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
+  `empid` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `job_cate_empl_mapping`
@@ -12352,7 +11754,9 @@ INSERT INTO `job_cate_empl_mapping` (`id`, `jobcateid`, `empid`) VALUES
 (41, 8, 81),
 (42, 8, 81),
 (43, 7, 83),
-(44, 7, 83);
+(44, 7, 83),
+(45, 4, 87),
+(46, 4, 87);
 
 -- --------------------------------------------------------
 
@@ -12360,8 +11764,8 @@ INSERT INTO `job_cate_empl_mapping` (`id`, `jobcateid`, `empid`) VALUES
 -- Table structure for table `job_employee`
 --
 
-CREATE TABLE IF NOT EXISTS `job_employee` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `job_employee` (
+  `id` int(11) NOT NULL,
   `username` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `password` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `isactive` int(11) NOT NULL DEFAULT '0',
@@ -12383,9 +11787,8 @@ CREATE TABLE IF NOT EXISTS `job_employee` (
   `isLogin` int(11) NOT NULL DEFAULT '1',
   `currentcompany` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `mstatus` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `achive` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=86 ;
+  `achive` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `job_employee`
@@ -12455,7 +11858,14 @@ INSERT INTO `job_employee` (`id`, `username`, `password`, `isactive`, `cityid`, 
 (82, 'onkarsinghbhati391@gmail.com', '5f8efb446e9ee431553a70f86cc28855', 0, 0, 0, 'Onkar Singh Bhati ', '', '', '', '', '9982981098', '', '', '', '', '', '', '', 1, '', '', ''),
 (83, 'mohit10121996@gmail.com', '6ea0b38b06c59d060e18ac765e64cf3b', 1, 5, 7, 'Mohit Solanki', 'Ramesh Chandra Solanki', 'Male', '1996/12/10', '12 th pass out', '7073185673', 'Naya Bass Balsmand mandore road jodhpur', 'fresher', '', '', '4477', '', '4478', 1, '', 'unmarried', ''),
 (84, 'manoharsingh9897@gmail.com', '8e298b5529027403298b43c0af9cbbf3', 0, 0, 0, 'manohar singh', '', '', '', '', '9950293639', '', '', '', '', '', '', '', 1, '', '', ''),
-(85, 'jitender97855@gmail.com', 'b37d5c5981cc04615de0d5bb69c1d054', 0, 0, 0, 'Jitender Sharma', '', '', '', '', '9785540075', '', '', '', '', '', '', '', 1, '', '', '');
+(85, 'jitender97855@gmail.com', 'b37d5c5981cc04615de0d5bb69c1d054', 0, 0, 0, 'Jitender Sharma', '', '', '', '', '9785540075', '', '', '', '', '', '', '', 1, '', '', ''),
+(86, 'Pkiant77@gmail.com', '8780eaa6a90eb6e12543611dc89e6ec7', 0, 0, 0, 'pardeep kumar', '', '', '', '', '7732920139', '', '', '', '', '', '', '', 1, '', '', ''),
+(87, 'RajjabKhan1985@gmail.com', 'f69dc1a6b39252978fde460db1d2061c', 1, 5, 4, 'RAJJAB KHAN', 'RAMJAN KHAN', 'MALE', '2017/10/03', 'B.A. & M.A.', '9829845375', 'DHAN MANDI JODHPUR', '', '', '', '4529', '', '4530', 1, '', 'Married', ''),
+(88, 'koteswar7777g@gmail.com', 'd14eb57371f4a7dbc7f7bd9982ac7cbf', 0, 0, 0, 'DARAJULA KOTESWARA RAO', '', '', '', '', '9676294224', '', '', '', '', '', '', '', 1, '', '', ''),
+(89, 'nk01325@gmail.com', 'c3d9ad57bef48052f5faab71d03457d0', 0, 0, 0, 'naresh kumar', '', '', '', '', '9931788844', '', '', '', '', '', '', '', 1, '', '', ''),
+(90, 'dheeraj41445@gmail.com', '0afc1a89021ea0c1f4c64569460b40b7', 0, 0, 0, 'Dheeraj yadav', '', '', '', '', '7014074014', '', '', '', '', '', '', '', 1, '', '', ''),
+(91, 'madaanvijay88@gmail.com', 'feed2f4fde3e9dd90a33eaf09290b32c', 0, 0, 0, 'Vijay madaan', '', '', '', '', '9914237951', '', '', '', '', '', '', '', 1, '', '', ''),
+(92, 'blazemoriarty95@gmail.com', 'f60b32d233c9a93e4641120b87be97e6', 0, 0, 0, 'autumn', '', '', '', '', '5124681741', '', '', '', '', '', '', '', 1, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -12463,15 +11873,14 @@ INSERT INTO `job_employee` (`id`, `username`, `password`, `isactive`, `cityid`, 
 -- Table structure for table `job_employer`
 --
 
-CREATE TABLE IF NOT EXISTS `job_employer` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `job_employer` (
+  `id` int(11) NOT NULL,
   `name` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `username` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `password` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `isactive` int(11) NOT NULL DEFAULT '0',
-  `number` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=67 ;
+  `number` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `job_employer`
@@ -12551,12 +11960,11 @@ INSERT INTO `job_employer` (`id`, `name`, `username`, `password`, `isactive`, `n
 -- Table structure for table `master_asset`
 --
 
-CREATE TABLE IF NOT EXISTS `master_asset` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `master_asset` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
-  `description` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+  `description` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `master_asset`
@@ -12575,13 +11983,12 @@ INSERT INTO `master_asset` (`id`, `name`, `description`) VALUES
 -- Table structure for table `master_control`
 --
 
-CREATE TABLE IF NOT EXISTS `master_control` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `master_control` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `description` text COLLATE utf8_unicode_ci NOT NULL,
-  `and_name` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+  `and_name` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `master_control`
@@ -12596,16 +12003,33 @@ INSERT INTO `master_control` (`id`, `name`, `description`, `and_name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `master_keys`
+--
+
+CREATE TABLE `master_keys` (
+  `id` int(11) NOT NULL,
+  `travel_key` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `master_keys`
+--
+
+INSERT INTO `master_keys` (`id`, `travel_key`) VALUES
+(1, '8e8cf615fcd4c7536d9fd90bf14ce0dc');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `master_txntype`
 --
 
-CREATE TABLE IF NOT EXISTS `master_txntype` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `master_txntype` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `description` text COLLATE utf8_unicode_ci NOT NULL,
-  `shortname` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+  `shortname` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `master_txntype`
@@ -12621,15 +12045,14 @@ INSERT INTO `master_txntype` (`id`, `name`, `description`, `shortname`) VALUES
 -- Table structure for table `offer`
 --
 
-CREATE TABLE IF NOT EXISTS `offer` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `offer` (
+  `id` int(11) NOT NULL,
   `heading` text COLLATE utf8_unicode_ci NOT NULL,
   `publishdatetime` datetime NOT NULL,
   `expirydatetime` datetime NOT NULL,
   `userid` int(11) NOT NULL,
-  `content` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=13 ;
+  `content` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `offer`
@@ -12655,13 +12078,12 @@ INSERT INTO `offer` (`id`, `heading`, `publishdatetime`, `expirydatetime`, `user
 -- Table structure for table `offerimage`
 --
 
-CREATE TABLE IF NOT EXISTS `offerimage` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `offerimage` (
+  `id` int(11) NOT NULL,
   `offerid` int(11) NOT NULL,
   `imageid` text COLLATE utf8_unicode_ci NOT NULL,
-  `sortorder` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+  `sortorder` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `offerimage`
@@ -12682,16 +12104,15 @@ INSERT INTO `offerimage` (`id`, `offerid`, `imageid`, `sortorder`) VALUES
 -- Table structure for table `passenger_detail`
 --
 
-CREATE TABLE IF NOT EXISTS `passenger_detail` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `passenger_detail` (
+  `id` int(11) NOT NULL,
   `name` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `age` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `gender` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `seatno` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `isacseat` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `t_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+  `t_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `passenger_detail`
@@ -12712,14 +12133,13 @@ INSERT INTO `passenger_detail` (`id`, `name`, `age`, `gender`, `seatno`, `isacse
 -- Table structure for table `payment`
 --
 
-CREATE TABLE IF NOT EXISTS `payment` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `payment` (
+  `id` int(11) NOT NULL,
   `assetid` int(11) NOT NULL,
   `txntypeid` int(11) NOT NULL,
   `txnid` int(11) NOT NULL,
-  `amount` double NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+  `amount` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `payment`
@@ -12739,8 +12159,8 @@ INSERT INTO `payment` (`id`, `assetid`, `txntypeid`, `txnid`, `amount`) VALUES
 -- Table structure for table `promocode`
 --
 
-CREATE TABLE IF NOT EXISTS `promocode` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `promocode` (
+  `id` int(11) NOT NULL,
   `tag` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `detail` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `discount_percentage` int(11) NOT NULL,
@@ -12752,9 +12172,8 @@ CREATE TABLE IF NOT EXISTS `promocode` (
   `start_date` datetime NOT NULL,
   `end_date` datetime NOT NULL,
   `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `image` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+  `image` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `promocode`
@@ -12770,14 +12189,13 @@ INSERT INTO `promocode` (`id`, `tag`, `detail`, `discount_percentage`, `discount
 -- Table structure for table `screen`
 --
 
-CREATE TABLE IF NOT EXISTS `screen` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `screen` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `catid` int(11) NOT NULL,
   `sortorder` int(11) NOT NULL,
-  `description` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=81 ;
+  `description` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `screen`
@@ -12845,17 +12263,16 @@ INSERT INTO `screen` (`id`, `name`, `catid`, `sortorder`, `description`) VALUES
 -- Table structure for table `sentnotification`
 --
 
-CREATE TABLE IF NOT EXISTS `sentnotification` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `sentnotification` (
+  `id` int(11) NOT NULL,
   `heading` text COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   `imageid` text COLLATE utf8_unicode_ci NOT NULL,
   `userid` int(11) NOT NULL,
   `successcount` int(11) NOT NULL,
   `failurecount` int(11) NOT NULL,
-  `datetime` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+  `datetime` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -12863,13 +12280,12 @@ CREATE TABLE IF NOT EXISTS `sentnotification` (
 -- Table structure for table `transaction`
 --
 
-CREATE TABLE IF NOT EXISTS `transaction` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `transaction` (
+  `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
   `date` datetime NOT NULL,
-  `description` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+  `description` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `transaction`
@@ -12886,11 +12302,10 @@ INSERT INTO `transaction` (`id`, `userid`, `date`, `description`) VALUES
 -- Table structure for table `transaction_status`
 --
 
-CREATE TABLE IF NOT EXISTS `transaction_status` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+CREATE TABLE `transaction_status` (
+  `id` int(11) NOT NULL,
+  `status` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `transaction_status`
@@ -12908,8 +12323,8 @@ INSERT INTO `transaction_status` (`id`, `status`) VALUES
 -- Table structure for table `transaction_travel`
 --
 
-CREATE TABLE IF NOT EXISTS `transaction_travel` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `transaction_travel` (
+  `id` int(11) NOT NULL,
   `payumoney_id` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `payumoney_payment_id` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `mantis_id` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -12931,9 +12346,8 @@ CREATE TABLE IF NOT EXISTS `transaction_travel` (
   `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ticket_date` datetime NOT NULL,
   `ticket_status` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `isrefunded` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=195 ;
+  `isrefunded` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `transaction_travel`
@@ -13001,58 +12415,58 @@ INSERT INTO `transaction_travel` (`id`, `payumoney_id`, `payumoney_payment_id`, 
 (59, 'iSeva1493896042709', '', '', '', '', '465.0', '', '5', 0, '1', 30, 'jamil mohammed', '9649000845', 'Jamilmohammed786@gmail.com', 'Suratgarh', 'Jodhpur', 1, 0, '2017-05-04 11:07:24', '2017-05-05 21:30:00', '', 0),
 (60, 'iSeva1494050048847', '', '', '', '', '695.0', '', '5', 0, '1', 31, 'Naresh', '9784845257', 'naresh.godara1990@gmail.com', 'Delhi', 'Sriganganagar', 1, 0, '2017-05-06 05:54:09', '2017-05-08 21:20:00', '', 0),
 (61, 'iSeva1494142809668', '', '', '', '', '695.0', '', '5', 0, '1', 31, 'Naresh Godara', '9784845257', 'naresh.godara1990@gmail.com', 'Delhi', 'Sriganganagar', 1, 0, '2017-05-07 07:40:10', '2017-05-08 21:20:00', '', 0),
-(62, 'iSeva1494662917703', '', '', '', '', '1347.0', '', '5', 0, '1', 33, 'Sanjay Gupta', '9799816830', 'sanjayji2004@yahoo.com', 'Ganganagar', 'Delhi', 0, 0, '2017-05-13 08:08:38', '2017-05-14 20:00:00', '', 0),
-(63, 'iSeva1494747914343', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'Jayshri Gaur', '9983542598', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 0, 0, '2017-05-14 07:45:21', '2017-05-16 21:00:00', '', 0),
+(62, 'iSeva1494662917703', '', '', '', '', '1347.0', '', '5', 0, '1', 33, 'Sanjay Gupta', '9799816830', 'sanjayji2004@yahoo.com', 'Ganganagar', 'Delhi', 1, 0, '2017-05-13 08:08:38', '2017-05-14 20:00:00', '', 0),
+(63, 'iSeva1494747914343', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'Jayshri Gaur', '9983542598', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 1, 0, '2017-05-14 07:45:21', '2017-05-16 21:00:00', '', 0),
 (64, 'iSeva1494747919081', '148732702', '17603272', '93313982-310791', '7304171811', '1271.0', '', '5', 0, '4', 20, 'Jayshri Gaur', '9983542598', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 1, 1, '2017-05-14 07:45:21', '2017-05-16 21:00:00', 'confirmed', 0),
-(65, 'iSeva1494946090909', '', '', '', '', '318.0', '', '5', 0, '1', 11, 'vikas', '9782908308', 'c@gmail.com', 'Ahmedabad', 'Baroda', 0, 0, '2017-05-16 14:48:12', '2017-05-17 02:05:00', '', 0),
-(66, 'iSeva1495022504730', '', '', '', '', '590.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-17 12:01:45', '2017-05-19 20:30:00', '', 0),
-(67, 'iSeva1495022505555', '', '', '', '', '590.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-17 12:01:50', '2017-05-19 20:30:00', '', 0),
-(68, 'iSeva1495022506352', '', '', '', '', '590.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-17 12:01:54', '2017-05-19 20:30:00', '', 0),
+(65, 'iSeva1494946090909', '', '', '', '', '318.0', '', '5', 0, '1', 11, 'vikas', '9782908308', 'c@gmail.com', 'Ahmedabad', 'Baroda', 1, 0, '2017-05-16 14:48:12', '2017-05-17 02:05:00', '', 0),
+(66, 'iSeva1495022504730', '', '', '', '', '590.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-17 12:01:45', '2017-05-19 20:30:00', '', 0),
+(67, 'iSeva1495022505555', '', '', '', '', '590.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-17 12:01:50', '2017-05-19 20:30:00', '', 0),
+(68, 'iSeva1495022506352', '', '', '', '', '590.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-17 12:01:54', '2017-05-19 20:30:00', '', 0),
 (69, 'iSeva1495092010328', '149173397', '17692021', '93762677-339009', '7304171812', '2389.0', '', '5', 0, '4', 35, 'deepak', '9829372390', 'deepak.jsj@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-05-18 07:20:11', '2017-05-19 21:15:00', 'confirmed', 0),
-(70, 'iSeva1495271942571', '', '', '', '', '1760.0', '', '5', 0, '1', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-20 09:19:02', '2017-05-20 21:30:00', '', 0),
-(71, 'iSeva1495272060953', '', '', '', '', '1760.0', '', '5', 0, '1', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-20 09:21:01', '2017-05-20 21:30:00', '', 0),
-(72, 'iSeva1495272084043', '', '', '', '', '1760.0', '', '5', 0, '1', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-20 09:21:24', '2017-05-20 21:30:00', '', 0),
+(70, 'iSeva1495271942571', '', '', '', '', '1760.0', '', '5', 0, '1', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-20 09:19:02', '2017-05-20 21:30:00', '', 0),
+(71, 'iSeva1495272060953', '', '', '', '', '1760.0', '', '5', 0, '1', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-20 09:21:01', '2017-05-20 21:30:00', '', 0),
+(72, 'iSeva1495272084043', '', '', '', '', '1760.0', '', '5', 0, '1', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-20 09:21:24', '2017-05-20 21:30:00', '', 0),
 (73, 'iSeva1495272187347', '149421926', '17754037', '94027406-358210', '7304171813', '1760.0', '', '5', 0, '4', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-05-20 09:23:07', '2017-05-20 21:30:00', 'confirmed', 0),
-(74, 'iSeva1495272245030', '', '', '', '', '760.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Chandigarh', 'Delhi', 0, 0, '2017-05-20 09:24:05', '2017-05-20 23:26:00', '', 0),
-(75, 'iSeva1495272465041', '', '', '', '', '1271.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Chandigarh', 'Delhi', 0, 0, '2017-05-20 09:27:45', '2017-05-20 23:45:00', '', 0),
+(74, 'iSeva1495272245030', '', '', '', '', '760.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Chandigarh', 'Delhi', 1, 0, '2017-05-20 09:24:05', '2017-05-20 23:26:00', '', 0),
+(75, 'iSeva1495272465041', '', '', '', '', '1271.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Chandigarh', 'Delhi', 1, 0, '2017-05-20 09:27:45', '2017-05-20 23:45:00', '', 0),
 (76, 'iSeva1495358511141', '149509289', '17785886', '94147840-367912', '7304171814', '1721.0', '', '5', 0, '4', 36, 'netram', '9460390538', 'netram_ipca@rediffmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-05-21 09:21:52', '2017-05-21 16:30:00', 'confirmed', 0),
 (77, 'iSeva1495638499703', '149884997', '17884474', '94540737-398105', '7304171815', '1175.0', '', '5', 0, '4', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Jaipur', 'Sriganganagar', 1, 1, '2017-05-24 15:08:19', '2017-05-25 22:15:00', 'confirmed', 0),
 (78, 'iSeva1495640840965', '149889220', '17885747', '94546470-398433', '7304171816', '590.0', '10', '5', 0, '4', 8, 'RAJESH BANSAL', '8562812923', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-05-24 15:47:20', '2017-05-26 21:00:00', 'cancelled', 1),
 (79, 'iSeva1495641579744', '149890292', '17886160', '94548100-398555', '7304171817', '590.0', '10', '5', 0, '4', 8, 'RAJESH BANSAL', '8562812923', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-05-24 15:59:39', '2017-05-27 21:00:00', 'cancelled', 1),
-(80, 'iSeva1495784044927', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
-(81, 'iSeva1495784056020', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
-(82, 'iSeva1495784056020', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
-(83, 'iSeva1495784056020', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
-(84, 'iSeva1495784342542', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:39:02', '2017-05-30 21:00:00', '', 0),
-(85, 'iSeva1495784527567', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:42:06', '2017-05-30 21:00:00', '', 0),
-(86, 'iSeva1495785339766', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH DEVI', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 07:55:40', '2017-05-30 21:00:00', '', 0),
-(87, 'iSeva1495786385233', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-05-26 08:13:06', '2017-05-30 20:30:00', '', 0),
+(80, 'iSeva1495784044927', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
+(81, 'iSeva1495784056020', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
+(82, 'iSeva1495784056020', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
+(83, 'iSeva1495784056020', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:34:15', '2017-05-30 21:00:00', '', 0),
+(84, 'iSeva1495784342542', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:39:02', '2017-05-30 21:00:00', '', 0),
+(85, 'iSeva1495784527567', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:42:06', '2017-05-30 21:00:00', '', 0),
+(86, 'iSeva1495785339766', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH DEVI', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 07:55:40', '2017-05-30 21:00:00', '', 0),
+(87, 'iSeva1495786385233', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-05-26 08:13:06', '2017-05-30 20:30:00', '', 0),
 (88, 'iSeva1495787092199', '150059972', '17939784', '94732712-414758', '7304171818', '3170.0', '', '5', 0, '4', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-05-26 08:24:52', '2017-05-30 21:00:00', 'confirmed', 0),
-(89, 'iSeva1495797333387', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 0, 0, '2017-05-26 11:15:32', '2017-05-31 21:00:00', '', 0),
+(89, 'iSeva1495797333387', '', '', '', '', '3170.0', '', '5', 0, '1', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 1, 0, '2017-05-26 11:15:32', '2017-05-31 21:00:00', '', 0),
 (90, 'iSeva1495798517577', '150082616', '17946770', '94756990-416989', '7304171819', '3170.0', '', '5', 0, '4', 8, 'BRIJESH BANSAL', '9782362072', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-05-26 11:35:17', '2017-05-31 21:30:00', 'confirmed', 0),
 (91, 'iSeva1495851240083', '150122871', '17962599', '94812539-421578', '7304171820', '1271.0', '', '5', 0, '4', 36, 'Pavan Kumar', '9828785074', 'netram_ipca@rediffmail.com', 'Hanumangarh', 'Jaipur', 1, 1, '2017-05-27 02:14:00', '2017-05-28 21:55:00', 'confirmed', 0),
-(92, 'iSeva1495947747885', '', '', '', '', '687.0', '', '5', 0, '1', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 0, 0, '2017-05-28 05:02:27', '2017-05-30 21:00:00', '', 0),
-(93, 'iSeva1495947804868', '', '', '', '', '687.0', '', '5', 0, '1', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 0, 0, '2017-05-28 05:03:25', '2017-05-30 21:00:00', '', 0),
+(92, 'iSeva1495947747885', '', '', '', '', '687.0', '', '5', 0, '1', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 1, 0, '2017-05-28 05:02:27', '2017-05-30 21:00:00', '', 0),
+(93, 'iSeva1495947804868', '', '', '', '', '687.0', '', '5', 0, '1', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 1, 0, '2017-05-28 05:03:25', '2017-05-30 21:00:00', '', 0),
 (94, 'iSeva1495947805918', '150221935', '18000592', '94951619-433340', '7304171821', '687.0', '', '5', 0, '4', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Sriganganagar', 'Jaipur', 1, 1, '2017-05-28 05:03:26', '2017-05-30 21:00:00', 'confirmed', 0),
 (95, 'iSeva1496123135523', '150419680', '18057489', '95181443-449513', '7304171822', '1565.0', '', '5', 0, '4', 37, 'Reena chhatwani', '9414708282', 'nareshpinjani@gmail.com', 'Sriganganagar', 'Delhi', 1, 1, '2017-05-30 05:45:35', '2017-05-30 21:00:00', 'confirmed', 0),
 (96, 'iSeva1496144224723', '150476695', '18068592', '95226241-452747', '7304171823', '373.0', '', '5', 0, '4', 8, 'MAMTA DADHICH', '7022888817', 'webs@indglobal.in', 'Bikaner', 'Jaipur', 1, 1, '2017-05-30 11:37:03', '2017-05-30 23:01:00', 'confirmed', 0),
-(97, 'iSeva1496307134417', '', '', '', '', '833.0', '', '5', 0, '1', 39, 'Vijay chawla', '9982038847', 'ajayphysics88@gmail.com', 'Delhi', 'Sriganganagar', 0, 0, '2017-06-01 08:52:16', '2017-06-01 17:30:00', '', 0),
-(98, 'iSeva1496381477666', '', '', '', '', '1108.0', '', '5', 0, '1', 39, 'Ajay chawla', '9982038847', 'ajayphysics88@gmail.com', 'Chandigarh', 'Delhi', 0, 0, '2017-06-02 05:31:20', '2017-06-03 01:15:00', '', 0),
+(97, 'iSeva1496307134417', '', '', '', '', '833.0', '', '5', 0, '1', 39, 'Vijay chawla', '9982038847', 'ajayphysics88@gmail.com', 'Delhi', 'Sriganganagar', 1, 0, '2017-06-01 08:52:16', '2017-06-01 17:30:00', '', 0),
+(98, 'iSeva1496381477666', '', '', '', '', '1108.0', '', '5', 0, '1', 39, 'Ajay chawla', '9982038847', 'ajayphysics88@gmail.com', 'Chandigarh', 'Delhi', 1, 0, '2017-06-02 05:31:20', '2017-06-03 01:15:00', '', 0),
 (99, 'iSeva1496388963586', '', '18150617', '95537592-477444', '7304171824', '656.0', '', '5', 0, '4', 40, 'Manish', '9309297989', 'manish_9July@yahoo.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-06-02 07:36:04', '2017-06-03 21:00:00', 'confirmed', 0),
 (100, 'iSeva1496496645117', '151026173', '18192837', '95697816-490017', '7304171825', '1149.0', '', '5', 0, '4', 21, 'radheshyam chhabra', '9252120092', 'chhabra.rinku03@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-06-03 13:30:46', '2017-06-08 21:30:00', 'confirmed', 0),
-(101, 'iSeva1496648577825', '', '', '', '', '577.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-06-05 07:42:58', '2017-06-06 05:05:00', '', 0),
-(102, 'iSeva1496673155717', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 0, 0, '2017-06-05 14:32:36', '2017-06-07 05:01:00', '', 0),
-(103, 'iSeva1496673242683', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 0, 0, '2017-06-05 14:34:03', '2017-06-07 05:01:00', '', 0),
-(104, 'iSeva1496673284557', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 0, 0, '2017-06-05 14:34:45', '2017-06-07 05:01:00', '', 0),
-(105, 'iSeva1496673403730', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 0, 0, '2017-06-05 14:36:45', '2017-06-07 05:01:00', '', 0),
-(106, 'iSeva1496673421680', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 0, 0, '2017-06-05 14:37:03', '2017-06-07 05:01:00', '', 0),
+(101, 'iSeva1496648577825', '', '', '', '', '577.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-06-05 07:42:58', '2017-06-06 05:05:00', '', 0),
+(102, 'iSeva1496673155717', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 1, 0, '2017-06-05 14:32:36', '2017-06-07 05:01:00', '', 0),
+(103, 'iSeva1496673242683', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 1, 0, '2017-06-05 14:34:03', '2017-06-07 05:01:00', '', 0),
+(104, 'iSeva1496673284557', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 1, 0, '2017-06-05 14:34:45', '2017-06-07 05:01:00', '', 0),
+(105, 'iSeva1496673403730', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 1, 0, '2017-06-05 14:36:45', '2017-06-07 05:01:00', '', 0),
+(106, 'iSeva1496673421680', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 1, 0, '2017-06-05 14:37:03', '2017-06-07 05:01:00', '', 0),
 (107, 'iSeva1496673524980', '151301409', '18246638', '95916988-505948', '7304171826', '695.0', '', '5', 0, '4', 8, 'SURENDRA KUMAR  SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Ratangarh', 1, 1, '2017-06-05 14:38:46', '2017-06-07 05:01:00', 'confirmed', 0),
-(108, 'iSeva1496728761688', '', '', '', '', '434.0', '', '5', 0, '1', 42, 'nandan', '9845349903', 'gnandanadas@gmail.com', 'Chennai', 'Bangalore', 0, 0, '2017-06-06 05:59:21', '2017-06-06 12:30:00', '', 0),
-(109, 'iSeva1496833315100', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA SAHARAN', '9414281924', 'iseva721@gmail.com', 'Jaipur', 'Sriganganagar', 0, 0, '2017-06-07 11:01:56', '2017-06-07 17:01:00', '', 0),
-(110, 'iSeva1496833535466', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA SAHARAN', '9414281924', 'iseva721@gmail.com', 'Jaipur', 'Sriganganagar', 0, 0, '2017-06-07 11:05:37', '2017-06-07 17:01:00', '', 0),
-(111, 'iSeva1496833809327', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA SAHARAN', '9414281924', 'iseva721@gmail.com', 'Jaipur', 'Sriganganagar', 0, 0, '2017-06-07 11:10:10', '2017-06-07 17:01:00', '', 0),
-(112, 'iSeva1496904373255', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 0, 0, '2017-06-08 06:46:14', '2017-06-08 21:30:00', '', 0),
-(113, 'iSeva1496912097051', '151671624', '', '', '', '5', '', '5', 0, '2', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Sriganganagar', 'Jaipur', 0, 0, '2017-06-08 08:54:58', '2017-06-09 05:35:00', '', 0),
+(108, 'iSeva1496728761688', '', '', '', '', '434.0', '', '5', 0, '1', 42, 'nandan', '9845349903', 'gnandanadas@gmail.com', 'Chennai', 'Bangalore', 1, 0, '2017-06-06 05:59:21', '2017-06-06 12:30:00', '', 0),
+(109, 'iSeva1496833315100', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA SAHARAN', '9414281924', 'iseva721@gmail.com', 'Jaipur', 'Sriganganagar', 1, 0, '2017-06-07 11:01:56', '2017-06-07 17:01:00', '', 0),
+(110, 'iSeva1496833535466', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA SAHARAN', '9414281924', 'iseva721@gmail.com', 'Jaipur', 'Sriganganagar', 1, 0, '2017-06-07 11:05:37', '2017-06-07 17:01:00', '', 0),
+(111, 'iSeva1496833809327', '', '', '', '', '695.0', '', '5', 0, '1', 8, 'SURENDRA SAHARAN', '9414281924', 'iseva721@gmail.com', 'Jaipur', 'Sriganganagar', 1, 0, '2017-06-07 11:10:10', '2017-06-07 17:01:00', '', 0),
+(112, 'iSeva1496904373255', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'anurag sharma', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 1, 0, '2017-06-08 06:46:14', '2017-06-08 21:30:00', '', 0),
+(113, 'iSeva1496912097051', '151671624', '', '', '', '5', '', '5', 0, '2', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Sriganganagar', 'Jaipur', 1, 0, '2017-06-08 08:54:58', '2017-06-09 05:35:00', '', 0),
 (114, 'iSeva1496913526232', '151675637', '18312163', '96185968-525643', '7304171827', '51.0', '10', '5', 0, '4', 43, 'Harsh', '8561070001', 'harsh.1729@gmail.com', 'Sriganganagar', 'Suratgarh', 1, 1, '2017-06-08 09:18:46', '2017-06-09 17:55:00', 'cancelled', 1),
 (115, 'iSeva1497181648679', '152075401', '18394393', '96524805-552566', '7304171828', '1175.0', '', '5', 0, '4', 44, 'USHA VYAS', '9929032685', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-06-11 11:47:29', '2017-06-12 20:01:00', 'confirmed', 0),
 (116, 'iSeva1497361936252', '152344380', '18437432', '96730793-565646', '7304171829', '778.0', '', '5', 0, '4', 46, 'rajeev', '9460690700', 'rajeevsurveyor500@gmail.com', 'Jammu', 'Sriganganagar', 1, 1, '2017-06-13 13:52:25', '2017-06-16 18:01:00', 'confirmed', 0),
@@ -13060,80 +12474,154 @@ INSERT INTO `transaction_travel` (`id`, `payumoney_id`, `payumoney_payment_id`, 
 (118, 'iSeva1497460913633', '152483835', '18462516', '96848940-572765', '7304171831', '571.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-06-14 17:21:54', '2017-06-17 20:00:00', 'confirmed', 0),
 (119, 'iSeva1497625533170', '152729472', '18506708', '97035850-587084', '7304171832', '1175.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-06-16 15:05:33', '2017-06-17 21:00:00', 'confirmed', 0),
 (120, 'iSeva1497689979896', '152809346', '18520530', '97092151-591480', '7304171833', '618.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-06-17 08:59:40', '2017-06-18 22:16:00', 'confirmed', 0),
-(121, 'iSeva1497769117191', '', '', '', '', '1175.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 0, 0, '2017-06-18 06:58:36', '2017-06-18 21:00:00', '', 0),
+(121, 'iSeva1497769117191', '', '', '', '', '1175.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 1, 0, '2017-06-18 06:58:36', '2017-06-18 21:00:00', '', 0),
 (122, 'iSeva1497769360146', '152912775', '18539448', '97176836-597406', '7304171834', '1175.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-06-18 07:02:39', '2017-06-18 21:00:00', 'confirmed', 0),
-(123, 'iSeva1497927083713', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'Anurag Sharma', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 0, 0, '2017-06-20 02:51:22', '2017-06-20 21:30:00', '', 0),
-(124, 'iSeva1497927084859', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'Anurag Sharma', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 0, 0, '2017-06-20 02:51:24', '2017-06-20 21:30:00', '', 0),
+(123, 'iSeva1497927083713', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'Anurag Sharma', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 1, 0, '2017-06-20 02:51:22', '2017-06-20 21:30:00', '', 0),
+(124, 'iSeva1497927084859', '', '', '', '', '1271.0', '', '5', 0, '1', 20, 'Anurag Sharma', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 1, 0, '2017-06-20 02:51:24', '2017-06-20 21:30:00', '', 0),
 (125, 'iSeva1497928596716', '153122885', '18576398', '97339890-608584', '7304171835', '1271.0', '', '5', 0, '4', 8, 'ANURAG SHARMA', '8696097888', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-06-20 03:16:36', '2017-06-20 21:30:00', 'confirmed', 0),
-(126, 'iSeva1497975303048', '', '', '', '', '618.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 0, 0, '2017-06-20 16:15:01', '2017-06-22 20:00:00', '', 0),
-(127, 'iSeva1497975587365', '', '', '', '', '618.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 0, 0, '2017-06-20 16:19:51', '2017-06-22 20:00:00', '', 0),
+(126, 'iSeva1497975303048', '', '', '', '', '618.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 0, '2017-06-20 16:15:01', '2017-06-22 20:00:00', '', 0),
+(127, 'iSeva1497975587365', '', '', '', '', '618.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 0, '2017-06-20 16:19:51', '2017-06-22 20:00:00', '', 0),
 (128, 'iSeva1497975976558', '153255812', '18592310', '97423330-613865', '7304171836', '618.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-06-20 16:26:15', '2017-06-22 20:00:00', 'confirmed', 0),
-(129, 'iSeva1498019458354', '', '', '', '', '1175.0', '', '5', 0, '1', 21, 'radheshyam chhabra', '9252120092', 'chhabra.rinku03@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-06-21 04:30:58', '2017-06-21 21:30:00', '', 0),
+(129, 'iSeva1498019458354', '', '', '', '', '1175.0', '', '5', 0, '1', 21, 'radheshyam chhabra', '9252120092', 'chhabra.rinku03@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-06-21 04:30:58', '2017-06-21 21:30:00', '', 0),
 (130, 'iSeva1498019765217', '153285104', '18597300', '97439331-615245', '7304171837', '1175.0', '', '5', 0, '4', 21, 'radheshyam chhabra', '9252120092', 'chhabra.rinku03@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-06-21 04:36:05', '2017-06-21 21:30:00', 'confirmed', 0),
 (131, 'iSeva1498139089863', '153539264', '18629577', '97603432-625841', '7304171838', '2930.0', '', '5', 0, '4', 48, 'Manish', '8824025122', 'Tantia.computer.tc@gmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-06-22 13:44:50', '2017-06-22 20:01:00', 'confirmed', 0),
 (132, 'iSeva1498211739221', '153657197', '18647469', '97681741-631611', '7304171839', '1175.0', '', '5', 0, '4', 49, 'manish', '9610518300', 'manishkumar.mk23@gmail.com', 'Sriganganagar', 'Jaipur', 1, 1, '2017-06-23 09:55:39', '2017-06-23 20:30:00', 'confirmed', 0),
-(133, 'iSeva1498283615436', '', '', '', '', '638.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-06-24 05:53:34', '2017-06-27 20:30:00', '', 0),
+(133, 'iSeva1498283615436', '', '', '', '', '638.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-06-24 05:53:34', '2017-06-27 20:30:00', '', 0),
 (134, 'iSeva1498407532940', '153958830', '18697340', '97927371-648385', '7304171840', '590.0', '', '5', 0, '4', 21, 'radheshyam chhabra', '9252120092', 'chhabra.rinku03@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-06-25 16:18:53', '2017-06-26 22:00:00', 'confirmed', 0),
-(135, 'iSeva1498627715381', '', '', '', '', '1565.0', '', '5', 0, '1', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 0, 0, '2017-06-28 05:28:34', '2017-07-02 20:40:00', '', 0),
-(136, 'iSeva1498627911783', '', '', '', '', '1565.0', '', '5', 0, '1', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 0, 0, '2017-06-28 05:31:54', '2017-07-02 20:40:00', '', 0),
-(137, 'iSeva1498627913151', '', '', '', '', '1565.0', '', '5', 0, '1', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 0, 0, '2017-06-28 05:31:54', '2017-07-02 20:40:00', '', 0),
+(135, 'iSeva1498627715381', '', '', '', '', '1565.0', '', '5', 0, '1', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 1, 0, '2017-06-28 05:28:34', '2017-07-02 20:40:00', '', 0),
+(136, 'iSeva1498627911783', '', '', '', '', '1565.0', '', '5', 0, '1', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 1, 0, '2017-06-28 05:31:54', '2017-07-02 20:40:00', '', 0),
+(137, 'iSeva1498627913151', '', '', '', '', '1565.0', '', '5', 0, '1', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 1, 0, '2017-06-28 05:31:54', '2017-07-02 20:40:00', '', 0),
 (138, 'iSeva1498628514858', '154254353', '18738491', '98138153-661939', '7304171841', '1565.0', '', '5', 0, '4', 50, 'Dinesh kaushik', '9015110193', 'rock.dineshkaushik@gmail.com', 'Ganganagar', 'Delhi', 1, 1, '2017-06-28 05:41:54', '2017-07-02 20:40:00', 'confirmed', 0),
-(139, 'iSeva1498632998626', '', '', '', '', '1467.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Delhi', 0, 0, '2017-06-28 06:56:37', '2017-06-30 20:40:00', '', 0),
-(140, 'iSeva1498802822999', '', '', '', '', '557.0', '', '5', 0, '1', 52, 'surwnder saharan', '9414281924', 'surender.saharan1@gmail.com', 'Sriganganagar', 'Sujangarh', 0, 0, '2017-06-30 06:01:31', '2017-06-30 20:15:00', '', 0),
+(139, 'iSeva1498632998626', '', '', '', '', '1467.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Delhi', 1, 0, '2017-06-28 06:56:37', '2017-06-30 20:40:00', '', 0),
+(140, 'iSeva1498802822999', '', '', '', '', '557.0', '', '5', 0, '1', 52, 'surwnder saharan', '9414281924', 'surender.saharan1@gmail.com', 'Sriganganagar', 'Sujangarh', 1, 0, '2017-06-30 06:01:31', '2017-06-30 20:15:00', '', 0),
 (141, 'iSeva1498808090240', '154576575', '18776890', '98337367-674305', '7304171842', '557.0', '', '5', 0, '4', 8, 'SURENDER SAHARAN', '9414281924', 'surender.saharan1@gmail.com', 'Ganganagar', 'Sujangarh', 1, 1, '2017-06-30 07:34:49', '2017-06-30 20:15:00', 'confirmed', 0),
 (142, 'iSeva1499142143422', '155133032', '18851922', '98676851-697575', '7304171843', '1163.0', '', '5', 0, '4', 4, 'suresh Aneja', '9828577025', 'aneja.suresh@gmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-07-04 04:22:22', '2017-07-07 20:01:00', 'confirmed', 0),
-(143, 'iSeva1499153303852', '', '', '', '', '1569.0', '', '5', 0, '1', 54, 'dk', '8384990181', 'dishantkumar040@gmail.com', 'Sriganganagar', 'Delhi', 0, 0, '2017-07-04 07:28:22', '2017-07-08 05:15:00', '', 0),
+(143, 'iSeva1499153303852', '', '', '', '', '1569.0', '', '5', 0, '1', 54, 'dk', '8384990181', 'dishantkumar040@gmail.com', 'Sriganganagar', 'Delhi', 1, 0, '2017-07-04 07:28:22', '2017-07-08 05:15:00', '', 0),
 (144, 'iSeva1499407689152', '155625050', '18908451', '98946494-715688', '7304171844', '1469.0', '', '5', 0, '4', 4, 'SURESH ANEJA', '9828577025', 'aneja.suresh@gmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-07-07 06:08:07', '2017-07-08 21:00:00', 'confirmed', 0),
 (145, 'iSeva1499585712402', '155927690', '18950047', '99144746-729500', '7304171845', '581.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-07-09 07:35:10', '2017-07-09 19:40:00', 'confirmed', 0),
 (146, 'iSeva1499586380802', '155929284', '18950266', '99145764-729575', '7304171846', '741.0', '', '5', 0, '4', 55, 'Tarun Modi', '8955388800', 'tarunmodi91@gmail.com', 'Sriganganagar', 'Delhi', 1, 1, '2017-07-09 07:46:20', '2017-07-13 20:45:00', 'confirmed', 0),
 (147, 'iSeva1499676628503', '156070758', '18966194', '99231191-734724', '7304171847', '658.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-07-10 08:50:26', '2017-07-10 22:00:00', 'confirmed', 0),
 (148, 'iSeva1499907389773', '156489866', '19000799', '99443138-746126', '7304171848', '581.0', '', '5', 0, '4', 44, 'RAKESH VYAS', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-07-13 00:56:28', '2017-07-14 19:40:00', 'confirmed', 0),
-(149, 'iSeva1500082933830', '', '', '', '', '311.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Bikaner', 0, 0, '2017-07-15 01:42:14', '2017-07-17 17:00:00', '', 0),
+(149, 'iSeva1500082933830', '', '', '', '', '311.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Bikaner', 1, 0, '2017-07-15 01:42:14', '2017-07-17 17:00:00', '', 0),
 (150, 'iSeva1500083312716', '156766581', '19034201', '99608250-757325', '7304171849', '311.0', '20', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Bikaner', 1, 1, '2017-07-15 01:48:33', '2017-07-17 17:00:00', 'cancelled', 1),
 (151, 'iSeva1500090835879', '156772868', '19035226', '99611214-757639', '7304171850', '695.0', '', '5', 0, '4', 55, 'Tarun Modi', '8955388800', 'tarunmodi91@gmail.com', 'Delhi', 'Sriganganagar', 1, 1, '2017-07-15 03:53:56', '2017-07-15 21:00:00', 'confirmed', 0),
-(152, 'iSeva1500115070178', '', '', '', '', '2213.0', '', '5', 0, '1', 56, 'surender singh', '9982298941', 'surenderrocks.rocks@gmail.com', 'Sriganganagar', 'Jaipur', 0, 0, '2017-07-15 10:37:52', '2017-07-17 05:00:00', '', 0),
+(152, 'iSeva1500115070178', '', '', '', '', '2213.0', '', '5', 0, '1', 56, 'surender singh', '9982298941', 'surenderrocks.rocks@gmail.com', 'Sriganganagar', 'Jaipur', 1, 0, '2017-07-15 10:37:52', '2017-07-17 05:00:00', '', 0),
 (153, 'iSeva1500124638263', '156852716', '19045317', '99662409-761186', '7304171851', '327.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Bikaner', 1, 1, '2017-07-15 13:17:18', '2017-07-17 04:26:00', 'confirmed', 0),
-(154, 'iSeva1500134511947', '', '', '', '', '584.0', '', '5', 0, '1', 37, 'Dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-07-15 16:01:12', '2017-07-16 21:30:00', '', 0),
-(155, 'iSeva1500134662737', '', '', '', '', '584.0', '', '5', 0, '1', 37, 'Dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-07-15 16:03:44', '2017-07-16 21:30:00', '', 0),
+(154, 'iSeva1500134511947', '', '', '', '', '584.0', '', '5', 0, '1', 37, 'Dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-07-15 16:01:12', '2017-07-16 21:30:00', '', 0),
+(155, 'iSeva1500134662737', '', '', '', '', '584.0', '', '5', 0, '1', 37, 'Dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-07-15 16:03:44', '2017-07-16 21:30:00', '', 0),
 (156, 'iSeva1500134665059', '156871072', '19047782', '99679413-762128', '7304171852', '584.0', '', '5', 0, '4', 37, 'Dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-07-15 16:03:45', '2017-07-16 21:30:00', 'confirmed', 0),
 (157, 'iSeva1500134665059', '156871072', '19047782', '99679413-762128', '7304171852', '584.0', '', '5', 0, '4', 37, 'Dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-07-15 16:03:45', '2017-07-16 21:30:00', 'confirmed', 0),
-(158, 'iSeva1500216075248', '', '', '', '', '633.0', '', '5', 0, '1', 58, 'kk', '7877574777', 'kushvakant786@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-07-16 14:41:17', '2017-07-16 20:30:00', '', 0),
-(159, 'iSeva1500216076915', '', '', '', '', '633.0', '', '5', 0, '1', 58, 'kk', '7877574777', 'kushvakant786@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-07-16 14:41:21', '2017-07-16 20:30:00', '', 0),
+(158, 'iSeva1500216075248', '', '', '', '', '633.0', '', '5', 0, '1', 58, 'kk', '7877574777', 'kushvakant786@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-07-16 14:41:17', '2017-07-16 20:30:00', '', 0),
+(159, 'iSeva1500216076915', '', '', '', '', '633.0', '', '5', 0, '1', 58, 'kk', '7877574777', 'kushvakant786@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-07-16 14:41:21', '2017-07-16 20:30:00', '', 0),
 (160, 'iSeva1500272774146', '156991553', '19067041', '99780548-768428', '7304171853', '465.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Bikaner', 'Ganganagar', 1, 1, '2017-07-17 06:26:13', '2017-07-17 18:45:00', 'confirmed', 0),
 (161, 'iSeva1500280399443', '157014980', '19069409', '99791701-769136', '7304171854', '584.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-07-17 08:33:19', '2017-07-17 20:01:00', 'confirmed', 0),
 (162, 'iSeva1500281320296', '157017421', '19069691', '99793008-769231', '7304171855', '557.0', '', '5', 0, '4', 59, 'Manish Pachouri', '8952825625', 'manishkumarpachouri@yahoo.in', 'Bikaner', 'Ganganagar', 1, 1, '2017-07-17 08:48:41', '2017-07-17 20:30:00', 'confirmed', 0),
 (163, 'iSeva1500453738841', '157252356', '19097174', '99940971-777994', '7304171856', '658.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-07-19 08:42:19', '2017-07-19 22:00:00', 'confirmed', 0),
 (164, 'iSeva1500698482142', '157559154', '19138413', '100159127-791037', '7304171857', '737.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-07-22 04:41:22', '2017-07-22 21:00:00', 'confirmed', 0),
 (165, 'iSeva1500808351264', '157691998', '19159693', '100273690-798250', '7304171858', '281.0', '', '5', 0, '4', 60, 'sumesh', '9024428718', 'sumeshcbz.sj@gmail.com', 'Jaipur', 'Bikaner', 1, 1, '2017-07-23 11:12:29', '2017-07-24 22:00:00', 'confirmed', 0),
-(166, 'iSeva1500910352480', '', '', '', '', '1197.0', '', '5', 0, '1', 61, 'jalam singh', '8890088821', 'jalamsingh2823@gmail.com', 'Jodhpur', 'Mumbai', 0, 0, '2017-07-24 15:32:32', '2017-08-07 21:30:00', '', 0),
-(167, 'iSeva1500910352658', '', '', '', '', '1197.0', '', '5', 0, '1', 61, 'jalam singh', '8890088821', 'jalamsingh2823@gmail.com', 'Jodhpur', 'Mumbai', 0, 0, '2017-07-24 15:32:32', '2017-08-07 21:30:00', '', 0),
+(166, 'iSeva1500910352480', '', '', '', '', '1197.0', '', '5', 0, '1', 61, 'jalam singh', '8890088821', 'jalamsingh2823@gmail.com', 'Jodhpur', 'Mumbai', 1, 0, '2017-07-24 15:32:32', '2017-08-07 21:30:00', '', 0),
+(167, 'iSeva1500910352658', '', '', '', '', '1197.0', '', '5', 0, '1', 61, 'jalam singh', '8890088821', 'jalamsingh2823@gmail.com', 'Jodhpur', 'Mumbai', 1, 0, '2017-07-24 15:32:32', '2017-08-07 21:30:00', '', 0),
 (168, 'iSeva1501044708418', '157958357', '19193223', '100459390-808392', '7304171859', '879.0', '', '5', 0, '4', 46, 'rajeev gupta', '9460690700', 'rajeevsurveyor500@gmail.com', 'Jammu', 'Sriganganagar', 1, 1, '2017-07-26 04:52:02', '2017-07-27 18:01:00', 'confirmed', 0),
-(169, 'iSeva1501049477550', '', '', '', '', '741.0', '', '5', 0, '1', 46, 'rajeev gupta', '9460690700', 'rajeevsurveyor500@gmail.com', 'Sriganganagar', 'Jammu', 0, 0, '2017-07-26 06:11:32', '2017-07-26 18:01:00', '', 0),
-(170, 'iSeva1501049753577', '', '', '', '', '741.0', '', '5', 0, '1', 46, 'rajeev gupta', '9460690700', 'rajeevsurveyor500@gmail.com', 'Sriganganagar', 'Jammu', 0, 0, '2017-07-26 06:16:08', '2017-07-26 18:01:00', '', 0),
+(169, 'iSeva1501049477550', '', '', '', '', '741.0', '', '5', 0, '1', 46, 'rajeev gupta', '9460690700', 'rajeevsurveyor500@gmail.com', 'Sriganganagar', 'Jammu', 1, 0, '2017-07-26 06:11:32', '2017-07-26 18:01:00', '', 0),
+(170, 'iSeva1501049753577', '', '', '', '', '741.0', '', '5', 0, '1', 46, 'rajeev gupta', '9460690700', 'rajeevsurveyor500@gmail.com', 'Sriganganagar', 'Jammu', 1, 0, '2017-07-26 06:16:08', '2017-07-26 18:01:00', '', 0),
 (171, 'iSeva1501051092551', '157973562', '19194492', '100467298-808826', '7304171860', '741.0', '', '5', 0, '4', 46, 'rajeev gupta', '9460690700', 'rajeevsurveyor500@gmail.com', 'Sriganganagar', 'Jammu', 1, 1, '2017-07-26 06:38:26', '2017-07-26 18:01:00', 'confirmed', 0),
-(172, 'iSeva1501392114775', '', '', '', '', '594.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 0, 0, '2017-07-30 05:21:55', '2017-08-04 20:00:00', '', 0),
+(172, 'iSeva1501392114775', '', '', '', '', '594.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 0, '2017-07-30 05:21:55', '2017-08-04 20:00:00', '', 0),
 (173, 'iSeva1501405709350', '158412078', '19250980', '100777059-827130', '7304171861', '1109.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Ajmer', 1, 1, '2017-07-30 09:08:29', '2017-07-30 20:15:00', 'confirmed', 0),
 (174, 'iSeva1501528881624', '158583338', '19272218', '100900725-834231', '7304171862', '594.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-07-31 19:21:21', '2017-08-05 20:00:00', 'confirmed', 0),
 (175, 'iSeva1501582812694', '158643769', '19279074', '100937994-836564', '7304171863', '1201.0', '', '5', 0, '4', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-08-01 10:20:11', '2017-08-01 17:01:00', 'confirmed', 0),
-(176, 'iSeva1501664727237', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:26', '2017-08-03 08:00:00', '', 0),
-(177, 'iSeva1501664733758', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:33', '2017-08-03 08:00:00', '', 0),
-(178, 'iSeva1501664737487', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:37', '2017-08-03 08:00:00', '', 0),
-(179, 'iSeva1501664750381', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:49', '2017-08-03 08:00:00', '', 0),
-(180, 'iSeva1501664752189', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:51', '2017-08-03 08:00:00', '', 0),
-(181, 'iSeva1501664755549', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:55', '2017-08-03 08:00:00', '', 0),
-(182, 'iSeva1501664756077', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:55', '2017-08-03 08:00:00', '', 0),
-(183, 'iSeva1501664756454', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
-(184, 'iSeva1501664756622', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
-(185, 'iSeva1501664756981', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
-(186, 'iSeva1501664757286', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 0, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
+(176, 'iSeva1501664727237', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:26', '2017-08-03 08:00:00', '', 0),
+(177, 'iSeva1501664733758', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:33', '2017-08-03 08:00:00', '', 0),
+(178, 'iSeva1501664737487', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:37', '2017-08-03 08:00:00', '', 0),
+(179, 'iSeva1501664750381', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:49', '2017-08-03 08:00:00', '', 0),
+(180, 'iSeva1501664752189', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:51', '2017-08-03 08:00:00', '', 0),
+(181, 'iSeva1501664755549', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:55', '2017-08-03 08:00:00', '', 0),
+(182, 'iSeva1501664756077', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:55', '2017-08-03 08:00:00', '', 0),
+(183, 'iSeva1501664756454', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
+(184, 'iSeva1501664756622', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
+(185, 'iSeva1501664756981', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
+(186, 'iSeva1501664757286', '', '', '', '', '5.0', '', '5', 0, '1', 62, 'gg', '9694959301', 'gg@gg.gg', 'Bangalore', 'Chennai', 1, 0, '2017-08-02 09:05:56', '2017-08-03 08:00:00', '', 0),
 (187, 'iSeva1501686676297', '158783699', '19299323', '101057103-843859', '7304171864', '584.0', '', '5', 0, '4', 17, 'chhagan', '7772084999', 'chhabrasc8@gmail.com', 'Jaipur', 'Sriganganagar', 1, 1, '2017-08-02 15:11:17', '2017-08-02 22:15:00', 'confirmed', 0),
-(188, 'iSeva1501864440371', '', '', '', '', '1109.0', '', '5', 0, '1', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-08-04 16:34:00', '2017-08-07 20:10:00', '', 0),
+(188, 'iSeva1501864440371', '', '', '', '', '1109.0', '', '5', 0, '1', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-08-04 16:34:00', '2017-08-07 20:10:00', '', 0),
 (189, 'iSeva1501904671486', '159011748', '19349941', '101297136-862660', '7304171865', '1109.0', '', '5', 0, '4', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-08-05 03:44:31', '2017-08-07 20:10:00', 'confirmed', 0),
-(190, 'iSeva1501951628783', '', '', '', '', '594.0', '', '5', 0, '1', 63, 'AVINASH SINGH SENGAR', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Jodhpur', 0, 0, '2017-08-05 16:47:09', '2017-08-06 20:00:00', '', 0),
-(191, 'iSeva1501951629765', '', '', '', '', '594.0', '', '5', 0, '1', 63, 'AVINASH SINGH SENGAR', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Jodhpur', 0, 0, '2017-08-05 16:47:13', '2017-08-06 20:00:00', '', 0),
+(190, 'iSeva1501951628783', '', '', '', '', '594.0', '', '5', 0, '1', 63, 'AVINASH SINGH SENGAR', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Jodhpur', 1, 0, '2017-08-05 16:47:09', '2017-08-06 20:00:00', '', 0),
+(191, 'iSeva1501951629765', '', '', '', '', '594.0', '', '5', 0, '1', 63, 'AVINASH SINGH SENGAR', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Jodhpur', 1, 0, '2017-08-05 16:47:13', '2017-08-06 20:00:00', '', 0),
 (192, 'iSeva1501952067708', '159093673', '19370704', '101395292-869364', '7304171866', '594.0', '', '5', 0, '4', 63, 'Avinash singh sengar', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Jodhpur', 1, 1, '2017-08-05 16:54:27', '2017-08-06 20:00:00', 'confirmed', 0),
 (193, 'iSeva1502239262849', '159359539', '19442817', '101708729-893491', '7304171867', '594.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-08-09 00:41:03', '2017-08-11 20:00:00', 'confirmed', 0),
-(194, 'iSeva1502527505650', '159710087', '19525751', '102081230-919304', '7304171868', '737.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-08-12 08:45:06', '2017-08-13 21:00:00', 'confirmed', 0);
+(194, 'iSeva1502527505650', '159710087', '19525751', '102081230-919304', '7304171868', '737.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-08-12 08:45:06', '2017-08-13 21:00:00', 'confirmed', 0),
+(195, 'iSeva1502791418687', '159966394', '19587465', '102380080-939650', '7304171869', '419.0', '', '5', 0, '4', 37, 'Naresh Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Jaipur', 'Bikaner', 1, 1, '2017-08-15 10:01:46', '2017-08-15 17:15:00', 'confirmed', 0),
+(196, 'iSeva1502878019831', '', '', '', '', '377.0', '', '5', 0, '1', 64, 'Jagsa Rathore', '9166022299', 'rjagsa@gmail.com', 'Jodhpur', 'Jaipur', 1, 0, '2017-08-16 10:06:59', '2017-08-16 17:00:00', '', 0),
+(197, 'iSeva1503126192031', '160335876', '19656334', '102730020-960350', '7304171870', '1261.0', '', '5', 0, '4', 20, 'Subhash Sharma', '9414482906', 'angshrm@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-08-19 07:03:11', '2017-08-20 21:30:00', 'confirmed', 0),
+(198, 'iSeva1503377328593', '', '', '', '', '584.0', '', '5', 0, '1', 65, 'Ashish Sethi', '9782035055', 'drsethiashish@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-08-22 04:48:47', '2017-08-22 20:30:00', '', 0),
+(199, 'iSeva1503377467120', '', '', '', '', '633.0', '', '5', 0, '1', 65, 'Ashish Sethi', '9782035055', 'drsethiashish@gmail.com', 'Ganganagar', 'Jaipur', 1, 0, '2017-08-22 04:51:05', '2017-08-22 21:30:00', '', 0),
+(200, 'iSeva1503451976856', '160681146', '19717390', '103051218-978545', '7304171871', '594.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-08-23 01:32:56', '2017-08-25 20:00:00', 'confirmed', 0),
+(201, 'iSeva1503650463271', '', '', '', '', '1469.0', '', '5', 0, '1', 66, 'Mohammed Ali', '9929041114', 'raj41114@gmail.com', 'Jodhpur', 'Ahmedabad', 1, 0, '2017-08-25 08:41:03', '2017-08-25 22:15:00', '', 0),
+(202, 'iSeva1503650529371', '160949707', '19758587', '103261481-991247', '7304171872', '1469.0', '', '5', 0, '4', 66, 'Mohammed Ali', '9929041114', 'raj41114@gmail.com', 'Jodhpur', 'Ahmedabad', 1, 1, '2017-08-25 08:42:10', '2017-08-25 22:15:00', 'confirmed', 0),
+(203, 'iSeva1503733315230', '161060739', '19773711', '103342360-995882', '7304171873', '1611.0', '', '5', 0, '4', 66, 'NILESH', '9414209168', 'raj41114@gmail.com', 'Ahmedabad', 'Jodhpur', 1, 1, '2017-08-26 07:41:55', '2017-08-26 23:00:00', 'confirmed', 0),
+(204, 'iSeva1504750074090', '', '', '', '', '607.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 0, '2017-09-07 02:07:53', '2017-09-07 20:00:00', '', 0),
+(205, 'iSeva1504750158855', '', '', '', '', '607.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Ganganagar', 'Jodhpur', 1, 0, '2017-09-07 02:09:18', '2017-09-07 20:00:00', '', 0),
+(206, 'iSeva1504768143995', '162414403', '19955299', '104352799-1054313', '7304171874', '695.0', '', '5', 0, '4', 63, 'Avinash singh', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Sardarshahr', 1, 1, '2017-09-07 07:09:02', '2017-09-07 18:00:00', 'confirmed', 0),
+(207, 'iSeva1504789255456', '162455027', '19960767', '104387458-1056058', '5017182442', '193.0', '', '5', 0, '4', 43, 'Harsh', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'Nagpur', 1, 1, '2017-09-07 13:00:54', '2017-09-08 18:30:00', 'confirmed', 0),
+(208, 'iSeva1504791714805', '', '', '', '', '649.0', '', '5', 0, '1', 67, 'om prakash', '8004737080', 'opj.insan@gmail.com', 'Ganganagar', 'Alwar', 1, 0, '2017-09-07 13:41:53', '2017-09-10 20:00:00', '', 0),
+(209, 'iSeva1504792686064', '162460900', '19961528', '104394687-1056311', '7304171875', '649.0', '', '5', 0, '4', 67, 'om prakash', '8004737080', 'opj.insan@gmail.com', 'Ganganagar', 'Alwar', 0, 1, '2017-09-07 13:58:05', '2017-09-10 20:00:00', 'confirmed', 0),
+(210, 'iSeva1504792851358', '', '', '', '', '381.0', '', '5', 0, '1', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'New Delhi', 1, 0, '2017-09-07 14:00:50', '2017-09-08 08:00:00', '', 0),
+(211, 'iSeva1504792900283', '', '', '', '', '381.0', '', '5', 0, '1', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'New Delhi', 1, 0, '2017-09-07 14:01:39', '2017-09-08 08:00:00', '', 0),
+(212, 'iSeva1504792968199', '162461406', '19961566', '104395038-1056334', '5017182443', '381.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'New Delhi', 0, 1, '2017-09-07 14:02:47', '2017-09-08 08:00:00', 'confirmed', 0),
+(213, 'iSeva1504868116153', '', '19975166', '104462833-1060924', '5017182493', '381.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'Nagpur', 1, 1, '2017-09-08 10:55:15', '2017-09-09 08:00:00', 'confirmed', 0),
+(214, 'iSeva1504873113767', '', '19976915', '104472069-1061496', '5017182501', '193.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'Nagpur', 1, 1, '2017-09-08 12:18:32', '2017-09-08 18:30:00', 'confirmed', 0),
+(215, 'iSeva1504937336500', '', '', '', '', '729.0', '', '5', 0, '1', 68, 'lakshay', '8005739087', 'lakshaybhambhufake@gmail.com', 'Ganganagar', 'Chandigarh', 1, 0, '2017-09-09 06:08:54', '2017-09-09 21:40:00', '', 0);
+INSERT INTO `transaction_travel` (`id`, `payumoney_id`, `payumoney_payment_id`, `mantis_id`, `pnr_no`, `ticket_no`, `total_fare`, `cancel_charge`, `extra_charge`, `coupan_id`, `transaction_status`, `user_id`, `user_name`, `phone`, `email`, `from_city`, `to_city`, `message_sent`, `email_sent`, `date_time`, `ticket_date`, `ticket_status`, `isrefunded`) VALUES
+(216, 'iSeva1504938637026', '', '19988113', '104525982-1064880', '5017182502', '193.0', '0', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Visakhapatnam', 'Hyderabad', 1, 1, '2017-09-09 06:30:36', '2017-09-09 18:30:00', 'cancelled', 0),
+(217, 'iSeva1504939159726', '', '19988326', '104526857-1064945', '5017182503', '381.0', '0', '5', 0, '4', 43, 'HARSH', '7043891873', 'harsh.1729@gmail.com', 'Visakhapatnam', 'Hyderabad', 1, 1, '2017-09-09 06:39:18', '2017-09-09 18:30:00', 'cancelled', 0),
+(218, 'iSeva1504939571051', '', '19988494', '104527507-1064984', '5017182504', '193.0', '0', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'Nagpur', 1, 1, '2017-09-09 06:46:10', '2017-09-09 18:30:00', 'cancelled', 0),
+(219, 'iSeva1504939657342', '', '19988535', '104527666-1064999', '5017182505', '381.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'Nagpur', 1, 1, '2017-09-09 06:47:36', '2017-09-09 18:30:00', 'confirmed', 0),
+(220, 'iSeva1504940383446', '', '19988791', '104528831-1065093', '5017182507', '193.0', '0', '5', 0, '4', 43, 'HARSH', '7043891873', 'harsh.1729@gmail.com', 'Kanpur', 'Nagpur', 1, 1, '2017-09-09 06:59:42', '2017-09-09 18:30:00', 'cancelled', 0),
+(221, 'iSeva1504941606000', '162623399', '19989236', '104530884-1065248', '5017182508', '381.0', '0', '5', 0, '4', 43, 'Sushil', '7043891873', 'harsh.1729@gmail.com', 'Bikaner', 'Sri Ganganagar', 1, 1, '2017-09-09 07:20:05', '2017-09-10 20:00:00', 'cancelled', 0),
+(222, 'iSeva1504943479100', '', '', '', '', '193.0', '', '5', 0, '1', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Sri Ganganagar', 'Bikaner', 1, 0, '2017-09-09 07:51:18', '2017-09-09 20:00:00', '', 0),
+(223, 'iSeva1505019910395', '162701588', '20003792', '104603169-1070192', '7304171876', '603.0', '', '5', 0, '4', 37, 'cris', '7742800878', 'nareshpinjani@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-09-10 05:02:15', '2017-09-10 16:00:00', 'confirmed', 0),
+(224, 'iSeva1505095230044', '162776055', '20017302', '104675850-1074801', '7304171877', '833.0', '', '5', 0, '4', 63, 'Avinash singh sengar', '8730996595', 'avinashsengar24@gmail.com', 'Sardarshahr', 'Ajmer', 1, 1, '2017-09-11 02:00:29', '2017-09-11 22:30:00', 'confirmed', 0),
+(225, 'iSeva1505126050476', '', '', '', '', '193.0', '', '5', 0, '1', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'New Delhi', 1, 0, '2017-09-11 10:34:09', '2017-09-11 18:30:00', '', 0),
+(226, 'iSeva1505126089099', '162832877', '20024123', '104712011-1077161', '5017182557', '193.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'New Delhi', 1, 1, '2017-09-11 10:34:46', '2017-09-11 18:30:00', 'confirmed', 0),
+(227, 'iSeva1505133903787', '', '20026293', '104725391-1077876', '5017182571', '193.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Kanpur', 'New Delhi', 1, 0, '2017-09-11 12:45:01', '2017-09-11 18:30:00', 'confirmed', 0),
+(228, 'iSeva1505198118124', '', '20034287', '104768324-1080199', '5017182591', '381.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Bangalore', 'Chennai', 1, 1, '2017-09-12 06:35:16', '2017-09-13 08:00:00', 'confirmed', 0),
+(229, 'iSeva1505198715008', '', '20034344', '104768541-1080251', '5017182592', '193.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Bangalore', 'Chennai', 1, 1, '2017-09-12 06:45:14', '2017-09-13 08:00:00', 'confirmed', 0),
+(230, 'iSeva1505201116429', '', '', '', '', '99.0', '', '5', 0, '3', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Chennai', 'Bangalore', 1, 0, '2017-09-12 07:25:15', '2017-09-13 21:30:00', '', 0),
+(231, 'iSeva1505201441982', '', '20035189', '104773268-1080500', '5017182595', '99.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Chennai', 'Bangalore', 1, 1, '2017-09-12 07:30:40', '2017-09-12 21:30:00', 'confirmed', 0),
+(232, 'iSeva1505201746466', '', '20035278', '104773702-1080530', '5017182596', '381.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Bangalore', 'Chennai', 1, 1, '2017-09-12 07:35:45', '2017-09-12 18:30:00', 'confirmed', 0),
+(233, 'iSeva1505205184864', '', '20036107', '104778426-1080797', '5017182601', '381.0', '', '5', 0, '4', 43, 'HARSH', '8561070001', 'harsh.1729@gmail.com', 'Bangalore', 'Chennai', 1, 1, '2017-09-12 08:33:03', '2017-09-12 18:30:00', 'confirmed', 0),
+(234, 'iSeva1505628027488', '', '', '', '', '581.0', '', '5', 0, '1', 4, 'suresh Aneja', '9828577025', 'aneja.suresh@gmail.com', 'Ganganagar', 'Jodhpur', 1, 0, '2017-09-17 06:00:28', '2017-09-17 19:40:00', '', 0),
+(235, 'iSeva1505628193315', '163449687', '20106068', '105158254-1104227', '7304171878', '581.0', '', '5', 0, '4', 4, 'suresh Aneja', '9828577025', 'aneja.suresh@gmail.com', 'Ganganagar', 'Jodhpur', 1, 1, '2017-09-17 06:03:13', '2017-09-17 19:40:00', 'confirmed', 0),
+(236, 'iSeva1505661566135', '163500645', '20115155', '105211881-1107533', '7304171879', '633.0', '', '5', 0, '4', 37, 'dikkshant Pinjani', '7742800878', 'nareshpinjani@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-09-17 15:16:15', '2017-09-17 21:30:00', 'confirmed', 0),
+(237, 'iSeva1505741700962', '163599726', '20126503', '105279508-1111391', '7304171880', '97.0', '', '5', 0, '4', 43, 'Harsh', '7043891873', 'harsh.1729@gmail.com', 'Bikaner', 'Lunkaransar', 1, 1, '2017-09-18 13:35:00', '2017-09-18 23:55:00', 'confirmed', 0),
+(238, 'iSeva1505829490467', '', '', '', '', '1477.0', '', '5', 0, '1', 70, 'subash', '7891067636', 'vijay.nehra49@gmail.com', 'Ganganagar', 'Jammu', 1, 0, '2017-09-19 13:58:10', '2017-09-22 20:01:00', '', 0),
+(239, 'iSeva1505829665912', '163718390', '20140574', '105360372-1116040', '7304171881', '1477.0', '', '5', 0, '4', 70, 'subash', '7891067636', 'vijay.nehra49@gmail.com', 'Ganganagar', 'Jammu', 1, 1, '2017-09-19 14:01:06', '2017-09-22 20:01:00', 'confirmed', 0),
+(240, 'iSeva1506230105089', '164219467', '20207295', '105719199-1138105', '7304171882', '737.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-09-24 05:15:06', '2017-09-24 21:00:00', 'confirmed', 0),
+(241, 'iSeva1506591322454', '', '', '', '', '713.0', '', '5', 0, '1', 37, 'Naresh Pinjani', '9828275374', 'nareshpinjani@gmail.com', 'Ganganagar', 'Ajmer', 0, 0, '2017-09-28 09:31:43', '2017-09-29 19:00:00', '', 0),
+(242, 'iSeva1506591344154', '164697473', '20282346', '106119634-1163179', '7304171883', '713.0', '', '5', 0, '4', 37, 'Naresh Pinjani', '9828275374', 'nareshpinjani@gmail.com', 'Ganganagar', 'Ajmer', 1, 1, '2017-09-28 09:32:04', '2017-09-29 19:00:00', 'confirmed', 0),
+(243, 'iSeva1506783119306', '164911533', '20331348', '106340614-1179507', '7304171884', '649.0', '', '5', 0, '4', 37, 'Naresh Pinjani', '9828275374', 'nareshpinjani@gmail.com', 'Ajmer', 'Ganganagar', 1, 1, '2017-09-30 14:48:13', '2017-10-01 18:00:00', 'confirmed', 0),
+(244, 'iSeva1506841940963', '', '', '', '', '1163.0', '', '5', 0, '1', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Jaipur', 'Ganganagar', 0, 0, '2017-10-01 07:12:18', '2017-10-13 22:15:00', '', 0),
+(245, 'iSeva1506842087953', '164951150', '20344022', '106390329-1184013', '7304171885', '1163.0', '', '5', 0, '4', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Jaipur', 'Ganganagar', 1, 1, '2017-10-01 07:14:45', '2017-10-13 22:15:00', 'confirmed', 0),
+(246, 'iSeva1506842670988', '', '', '', '', '1163.0', '', '5', 0, '1', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-10-01 07:24:28', '2017-10-22 21:00:00', '', 0),
+(247, 'iSeva1507520595112', '165813009', '20494130', '107171871-1236630', '7304171886', '768.0', '', '5', 0, '4', 63, 'avinash singh sengar', '8730996595', 'avinashsengar24@gmail.com', 'Sriganganagar', 'Sardarshahr', 1, 1, '2017-10-09 03:43:15', '2017-10-09 15:30:00', 'confirmed', 0),
+(248, 'iSeva1507574535698', '165934013', '20511300', '107266458-1242137', '7304171887', '584.0', '', '5', 0, '4', 17, 'chhagan', '8947070023', 'chhabrasc8@gmail.com', 'Ganganagar', 'Jaipur', 1, 1, '2017-10-09 18:42:15', '2017-10-15 21:15:00', 'confirmed', 0),
+(249, 'iSeva1507895808519', '166383261', '20590071', '107657764-1269125', '7304171888', '557.0', '', '5', 0, '4', 63, 'Avinash singh sengar', '8730996595', 'avinashsengar24@gmail.com', 'Sardarshahr', 'Jaipur', 1, 1, '2017-10-13 11:56:48', '2017-10-13 23:55:00', 'confirmed', 0),
+(250, 'iSeva1508030874121', '166529128', '20628772', '107833061-1282369', '7304171889', '700.0', '', '5', 0, '4', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 1, 1, '2017-10-15 01:27:53', '2017-10-15 21:00:00', 'confirmed', 0),
+(251, 'iSeva1508424520378', '166985966', '20732535', '108330119-1319016', '7304171890', '1017.0', '', '5', 0, '4', 66, 'Ibrahim', '8901961679', 'raj41114@gmail.com', 'Jodhpur', 'Udaipur', 1, 1, '2017-10-19 14:48:39', '2017-10-20 17:30:00', 'confirmed', 0),
+(252, 'iSeva1508510732342', '167076950', '20756302', '108431610-1327258', '7304171891', '1499.0', '', '5', 0, '4', 66, 'Raul Montiel', '9971800804', 'raj41114@gmail.com', 'Jodhpur', 'Delhi', 1, 1, '2017-10-20 14:45:31', '2017-10-22 20:30:00', 'confirmed', 0),
+(253, 'iSeva1508530388035', '', '', '', '', '661.0', '', '5', 0, '1', 66, 'Mohammed Ali', '9929041114', 'raj41114@gmail.com', 'Jodhpur', 'Udaipur', 0, 0, '2017-10-20 20:13:07', '2017-10-28 22:30:00', '', 0),
+(254, 'iSeva1509197395869', '167836845', '20927699', '109310460-1387975', '7304171892', '531.0', '', '5', 0, '4', 73, 'om prakash', '9782718614', 'jatinkukkar95@gmail.com', 'Jaipur', 'Hanumangarh', 1, 1, '2017-10-28 13:29:55', '2017-10-28 21:30:00', 'confirmed', 0),
+(255, 'iSeva1509357916463', '167981844', '20957762', '109472041-1398302', '7304171893', '691.0', '', '5', 0, '4', 72, 'ankit bajaj', '9001078000', 'bajajankit@gmail.com', 'Sriganganagar', 'Delhi', 1, 1, '2017-10-30 10:04:55', '2017-10-30 20:40:00', 'confirmed', 0),
+(256, 'iSeva1509452625150', '168105486', '20975813', '109577236-1404139', '7304171894', '1057.0', '', '5', 0, '4', 73, 'jatin kukkar', '8963048633', 'jatinkukkar95@gmail.com', 'Jaipur', 'Hanumangarh', 1, 0, '2017-10-31 12:23:43', '2017-10-31 21:30:00', 'confirmed', 0),
+(257, 'iSeva1509452909195', '168106077', '20975896', '109577828-1404182', '7304171895', '531.0', '', '5', 0, '4', 73, 'jatin kukkar', '8963048633', 'jatinkukkar95@gmail.com', 'Jaipur', 'Hanumangarh', 1, 0, '2017-10-31 12:28:29', '2017-10-31 21:30:00', 'confirmed', 0),
+(258, 'iSeva1509819014218', '', '', '', '', '700.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 0, 0, '2017-11-04 18:10:14', '2017-11-05 21:00:00', '', 0),
+(259, 'iSeva1509819211641', '', '', '', '', '700.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 0, 0, '2017-11-04 18:13:38', '2017-11-05 21:00:00', '', 0),
+(260, 'iSeva1509819219641', '', '', '', '', '700.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 0, 0, '2017-11-04 18:13:38', '2017-11-05 21:00:00', '', 0),
+(261, 'iSeva1509819219641', '', '', '', '', '700.0', '', '5', 0, '1', 44, 'Rakesh Vyas', '9414107729', 'itsvyasrakesh@rediffmail.com', 'Jodhpur', 'Ganganagar', 0, 0, '2017-11-04 18:13:38', '2017-11-05 21:00:00', '', 0),
+(262, 'iSeva1510043262885', '', '', '', '', '557.0', '', '5', 0, '1', 63, 'veepin suwalka', '9783118285', 'veepinsuwalka007@gmail.com', 'Jaipur', 'Sardarshahr', 0, 0, '2017-11-07 08:27:39', '2017-11-08 16:30:00', '', 0),
+(263, 'iSeva1510043578526', '168778287', '21088309', '110207749-1442856', '7304171896', '557.0', '', '5', 0, '4', 63, 'veepin suwalka', '9783118285', 'veepinsuwalka007@gmail.com', 'Jaipur', 'Sardarshahr', 1, 0, '2017-11-07 08:32:55', '2017-11-08 16:30:00', 'confirmed', 0),
+(264, 'iSeva1510070679210', '', '', '', '', '415.0', '', '5', 0, '1', 8, 'vikrant', '7230002908', 'iseva721@gmail.com', 'Ganganagar', 'Jaipur', 0, 0, '2017-11-07 16:04:36', '2017-11-23 21:30:00', '', 0),
+(265, 'iSeva1510635836905', '169468092', '21220642', '110827889-1483291', '7304171897', '1441.0', '', '5', 0, '4', 8, 'KARAN SHARMA', '9982255569', 'karansharmafeb@gmail.com', 'Delhi', 'Ganganagar', 1, 0, '2017-11-14 05:03:46', '2017-11-14 21:00:00', 'confirmed', 0),
+(266, 'iSeva1512703290764', '172021470', '21689594', '113224885-1637121', '7304171898', '1249.0', '', '5', 0, '4', 8, 'vikrant', '9602522381', 'iseva721@gmail.com', 'Jaipur', 'Sri Ganganagar', 1, 0, '2017-12-08 03:21:08', '2017-12-10 21:00:00', 'confirmed', 0),
+(267, 'iSeva1514031104465', '173779716', '22034797', '114880553-1744706', '7304171899', '350.0', '', '5', 0, '4', 60, 'sumesh joshi', '9024428718', 'sumeshcbz.sj@gmail.com', 'Jodhpur', 'Bikaner', 1, 0, '2017-12-23 12:11:14', '2017-12-24 06:15:00', 'confirmed', 0);
 
 -- --------------------------------------------------------
 
@@ -13141,14 +12629,13 @@ INSERT INTO `transaction_travel` (`id`, `payumoney_id`, `payumoney_payment_id`, 
 -- Table structure for table `treval_user`
 --
 
-CREATE TABLE IF NOT EXISTS `treval_user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `treval_user` (
+  `id` int(11) NOT NULL,
   `name` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `email` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `phone` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `password` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ;
+  `password` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `treval_user`
@@ -13217,7 +12704,21 @@ INSERT INTO `treval_user` (`id`, `name`, `email`, `phone`, `password`) VALUES
 (60, 'sumesh joshi', 'sumeshcbz.sj@gmail.com', '9024428718', '202020'),
 (61, 'jalamsingh', 'jalamsingh2823@gmail.com', '8890088821', '9351111515'),
 (62, 'gg', 'gg@gg.gg', '9694959301', 'gg'),
-(63, 'Avinash singh sengar', 'avinashsengar24@gmail.com', '8730996595', '12345624');
+(63, 'Avinash singh sengar', 'avinashsengar24@gmail.com', '8730996595', '12345624'),
+(64, 'Jagsa Rathore', 'rjagsa@gmail.com', '9166022299', '9983418418'),
+(65, 'Ashish Sethi', 'drsethiashish@gmail.com', '9782035055', '9782035055'),
+(66, 'Mohammed Ali', 'raj41114@gmail.com', '9929041114', 'ali@10650'),
+(67, 'om prakash', 'opj.insan@gmail.com', '8004737080', 'j8004737080'),
+(68, 'lakshay', 'lakshaybhambhufake@gmail.com', '8005739087', '01666259503'),
+(69, 'rohit sidana', 'rohitarora971@gmail.com', '9875293002', 'chariji@123'),
+(70, 'vijay', 'vinay.nehra49@gmail.com', '8058532789', 'vijay4209'),
+(71, 'Rohit Jora', 'jorarohit@gmail.com', '9414305465', 'jora1974'),
+(72, 'Ena narang', 'enanarang30@gmail.com', '7023965557', 'enankit'),
+(73, 'jatin kukkar', 'jatinkukkar95@gmail.com', '8963048633', '33551213'),
+(74, 'mack sain', 'mack.sain@gmail.com', '9660816091', '9660816091'),
+(75, 'Neeraj Kumar', 'neerajkumarcel@gmail.com', '8077810645', 'NK@123'),
+(76, 'Baburao gorige', 'gorigebaburao123@gmail.com', '9704849772', 'Babu9393@*'),
+(77, 'RAMESH', 'rameshpadappai@gmail.com', '9380735542', '1691');
 
 -- --------------------------------------------------------
 
@@ -13225,8 +12726,8 @@ INSERT INTO `treval_user` (`id`, `name`, `email`, `phone`, `password`) VALUES
 -- Table structure for table `user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
   `contact` text COLLATE utf8_unicode_ci NOT NULL,
   `email` text COLLATE utf8_unicode_ci NOT NULL,
@@ -13249,11 +12750,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `services` text COLLATE utf8_unicode_ci NOT NULL,
   `lat` double NOT NULL DEFAULT '0',
   `long` double NOT NULL DEFAULT '0',
-  `sortorder` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `promocode` (`promocode`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=774 ;
+  `sortorder` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `user`
@@ -13262,7 +12760,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
 (1, 'Vikrant Sharma', '9999999999', 'iseva721@gmail.com', 'vikrant.s', '92d457fe9814b39791cc3b02438bdd8e', 'Sri Ganganagar, Rajasthan', '164', 1, '0000-00-00 00:00:00', 2, 1, 1, 0, 1, 'iSeva', '7230002908', 'qwer', 0, 6, '', 0, 0, 0),
 (70, 'Ritesh Atri', '9660048465', 'royalriteshatri@gmail.com', 'ritesh.atri', 'fb5a118d9c2a0af2ab1aa1e3c5ae0d1f', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ritesh.atrica35', 0, 6, '', 0, 0, 0),
-(71, 'admin', '9314816515', 'admin@gmail.com', 'admin16', '9071e0ca7e4964a5cc69201ba2743650', '1A9 SUKHARIA NAGAR', '737', 0, '0000-00-00 00:00:00', 50, 1, 0, 0, 1, 'RAJASTHAN MEN''S WEAR', '9314816515', 'admin169071e', 0, 6, 'ALL KINDS OF MEN WEAR\nTROUSER\nTSHIRTS\nSUIT\nTIES\nDENIM AND NON DENIM JEANS\nPERFUME\nLATEST COLLECTION OF FORMAL SHIRTS', 0, 0, 0),
+(71, 'admin', '9314816515', 'admin@gmail.com', 'admin16', '9071e0ca7e4964a5cc69201ba2743650', '1A9 SUKHARIA NAGAR', '737', 0, '0000-00-00 00:00:00', 50, 1, 0, 0, 1, 'RAJASTHAN MEN\'S WEAR', '9314816515', 'admin169071e', 0, 6, 'ALL KINDS OF MEN WEAR\nTROUSER\nTSHIRTS\nSUIT\nTIES\nDENIM AND NON DENIM JEANS\nPERFUME\nLATEST COLLECTION OF FORMAL SHIRTS', 0, 0, 0),
 (72, 'ARJUN', '8696054050', 'arjun@gmail.com', 'arjun16', 'dee56804126794dd04be1d090c08f3f8', 'SRIGANGANAGAR\n18 BLOCK', '768', 0, '0000-00-00 00:00:00', 38, 1, 0, 0, 1, 'ARJUN GROVER', '8696054050', 'arjun1687434', 0, 6, 'plumber\nelectric service', 0, 0, 0),
 (73, 'RAAM', '9772749795', 'raam@gmail.com', 'RAAM123y', 'cd7e60a51ff989800ec77d3e9a823e04', '9z villege', '763', 0, '0000-00-00 00:00:00', 39, 1, 0, 0, 1, 'RAAM KUMAR', '9772749795', 'RAAM123y459f9', 0, 6, 'ELACTRICION', 0, 0, 0),
 (74, 'RAJANI', '8696051213', 'RAJANI@GMAIL.COM', 'singh12', '0ea6f050d88f604b23f169dae16435e6', '15 l block', '770', 0, '0000-00-00 00:00:00', 27, 1, 0, 0, 1, 'RAJANI SINGH', '8696051213', 'singh128d297', 0, 6, 'book stor', 0, 0, 0),
@@ -13296,7 +12794,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (102, 'DR INDERJEET SANDHU', '7742500222', 'aashirwadhospital.SGNR@gmail.com', 'inderjeet222', '0226350acce408eff48f1f5f2a63b34a', 'OBSTRICIAN AND GYNECOLOGIST', '925', 0, '0000-00-00 00:00:00', 74, 1, 1, 0, 1, 'DR INDERJEET SANDHU', '7742500222', 'inderjeet22215d', 0, 6, 'OT\nICU\nLABOUR ROOM\nAC ROOMS\nENDOSCOPY\nINFERTILITY CLINIC\nCANTEEN\nPHARMACY', 0, 0, 0),
 (103, 'Dr. dfhfh', '4353453457', 'dfhdfhdfh@gmail.com', 'username1', '7c6a180b36896a0a8c02787eeafb0e4c', 'xfgdgdf', '804', 0, '0000-00-00 00:00:00', 16, 1, 0, 0, 1, 'fdhgxfhbd', '4354535389', 'username12222b', 0, 6, 'dfghdfhdhdfhdfh', 0, 0, 0),
 (104, 'DR ADITYA MARKANDAY', '9828388889', 'aditya_@yahoo.co.in', 'aditya8889', '71f7ac03ed9471ddecfea9152c2184e3', 'BHAL HOSPITAL\nCHAHAL CHOWK', '2408', 0, '0000-00-00 00:00:00', 78, 1, 1, 0, 1, 'DR ADITYA MARKANDAY', '9828388889', 'aditya888971f7a', 0, 6, 'DENTAL IMPLANT\nSINGAL VISIT ROOT CANAL\nBLEACHING\nCOSMETIC DENTISTRY', 0, 0, 0),
-(105, 'DR. HIMANSHU GUPTA', '9799744464', 'himanshudr2th@gmail.com', 'himanshu4464', '839685b9796285d168c4f7f9a3b850b2', 'L D ''S DENTAL& IMPLANT CARE\n32 B BLOCK', '2411', 0, '0000-00-00 00:00:00', 72, 1, 1, 0, 1, 'DR HIMANSHU GUPTA', '9799744464', 'himanshu4464a57', 0, 6, '\nIMPLANTS\nFIXED TEETH\nCOSMETICS\nPEDIATRIC DENTISTRY\nADVANCED RCT', 0, 0, 0),
+(105, 'DR. HIMANSHU GUPTA', '9799744464', 'himanshudr2th@gmail.com', 'himanshu4464', '839685b9796285d168c4f7f9a3b850b2', 'L D \'S DENTAL& IMPLANT CARE\n32 B BLOCK', '2411', 0, '0000-00-00 00:00:00', 72, 1, 1, 0, 1, 'DR HIMANSHU GUPTA', '9799744464', 'himanshu4464a57', 0, 6, '\nIMPLANTS\nFIXED TEETH\nCOSMETICS\nPEDIATRIC DENTISTRY\nADVANCED RCT', 0, 0, 0),
 (106, 'DR NAINI MAYYAR', '9829317700', 'naini60mayyar@gmail.com', 'naini700', '3731fbc08ed339062b1a17bfa95c48d3', 'MAYYAR HOSPITAL\n7-H-A BLOCK\nSRIGANGANAGAR', '926', 0, '0000-00-00 00:00:00', 74, 1, 1, 0, 1, 'DR NAINI MAYYAR', '9829317700', 'naini7008d345', 0, 6, 'AC ROOMS\nOT\nLAB\nDELIVERY AND ALL OPERATIONS\nMEDICAL STORE\nAMBULANCE', 0, 0, 0),
 (107, 'DR RAMESH CHANDER JINDAL', '9414088789', 'jindalenthospital@gmail.com', 'rcjindal789\r\nrcjindal789', 'c4706f52135166133078c94cbd305132', 'JINDAL E.N.T. HOSPITAL & MEDICAL RESEARCH CENTRE\n4-E-1 , JAWAHAR NAGAR , MAIN ROAD HOUSING BOARD CHOWK', '810', 0, '0000-00-00 00:00:00', 79, 1, 1, 0, 1, 'DR RAMESH CHANDER JINDAL', '9414088789', 'rcjindal789\r\nrc', 0, 6, 'ALL KINDS OF ENT SURGERY , INCLUDING ENDOSCOPIC SINUS SURGERY\r\nALLERGY TESTS\r\nX-RAY\r\nTMT\r\nAUDIOMETERY\r\nBERA\r\nLAB\r\nBRONCHOSCOPY & OESOPHAGOSCOPY\r\nPHARMACY\r\nICU\r\n', 0, 0, 0),
 (108, 'DR SHAILESH GOYAL', '9414089231', 'arpansgnr@gmail.com', 'goyal231', '554f07f84b97229f486ac085665d59d2', 'ARPAN HOSPITAL\n1-B-2 ,SUKHARIA NAGAR,SRIGANGANAGAR', '932', 0, '0000-00-00 00:00:00', 79, 1, 1, 0, 1, 'DR SHAILESH GOYAL', '9414089231', 'goyal231554f0', 0, 6, 'ENT ENDOSCOPIC SURGERY\r\nGESTROSCOPY\r\nBRONCHOSCOPE\r\nDEAFNESS CLINIC\r\nICU\r\nLAB\r\nAUDIOMETERY\r\nTYMPANOMETERY\r\nOAE\r\nBERA\r\nASSR\r\nX RAY \r\nECG\r\n', 0, 0, 0),
@@ -13323,7 +12821,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (129, 'DHARMPAL PACCHAR', '9828654943', 'dharmcity@gmail.com', 'dharmcity1', 'c6fc236bd4482492774653f5a719fdbf', 'WARD NO 14, PURANI ABADI TOWER ROAD, NEAR SABJI MANDI', '999', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'CITY CYBER CAFE AND RS-CIT', '9413954943', 'dharmcity18a2bc', 0, 6, 'RS-CIT \nTELLY\nBASIC COMPUTER COURSE\nONLINE FORM\nPHOTO STATE\nFAX\nRS-CIT new April batch open \nadmission start last date 22 April \n', 0, 0, 2),
 (130, 'manveer', '8440933646', 'singhmanveer001@gmail.com', 'manveer singh', 'd3b5a02a3739a9bb41bb25f920acd465', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'manveer singh8c', 0, 6, '', 0, 0, 0),
 (131, 'MANJEET SINGH', '9414088005', 'binu.singh4@gmail.com', 'manjeet005', 'fd5b6e06d7b608bd75f56f66ecf0fc92', 'NEAR KOCHER HOSPITAL, PURANI ABADI SRIGANGANAGAR', '1005', 0, '0000-00-00 00:00:00', 46, 1, 1, 0, 1, 'ROBIN TOUR AND TRAVEL', '9414088005', 'manjeet005fd5b6', 0, 6, 'DESIRE CAR AVAILABLE FOR TOUR AND TRAVEL\nRATE DESIRE 8/-KM\n300 -KM MINIMUM\nINNOVA 10/- -KM\nBOLERO9/- -KM\nINDIGO & INDICA 7.50/-KM\n\n', 0, 0, 0),
-(132, 'mr. daljeet singh', '9983081110', 'princerupal0001@gmail.com', 'daljeet singh', '72aa083a59f97935e699ff8e1d26a2d8', 'karanpur road near rsc tailor jct meal road sri ganganagar (rajasthan)', '1041', 0, '0000-00-00 00:00:00', 40, 1, 1, 0, 1, 'Rupaal''s furnitures', '9983081110', 'daljeet singh5c', 0, 6, 'Whether you’re creating a stylish new room or finding\nfunctional style for your family, we’ve got something\nperfect for you. By the best manufacturer and at reasonable prices..... we make king size bed , sofas, dinning table, chairs and other wodden crafts and furnitures...you can also follow us on facebook.com/rupaalsfurnitures', 0, 0, 0),
+(132, 'mr. daljeet singh', '9983081110', 'princerupal0001@gmail.com', 'daljeet singh', '72aa083a59f97935e699ff8e1d26a2d8', 'karanpur road near rsc tailor jct meal road sri ganganagar (rajasthan)', '1041', 0, '0000-00-00 00:00:00', 40, 1, 1, 0, 1, 'Rupaal\'s furnitures', '9983081110', 'daljeet singh5c', 0, 6, 'Whether you’re creating a stylish new room or finding\nfunctional style for your family, we’ve got something\nperfect for you. By the best manufacturer and at reasonable prices..... we make king size bed , sofas, dinning table, chairs and other wodden crafts and furnitures...you can also follow us on facebook.com/rupaalsfurnitures', 0, 0, 0),
 (133, 'PAWAN CHAWLA', '9828338285', 'chawlashopee@gmail.com', 'chawla85', '43926019b044fee6a2654ffb066693b3', '370- VINOBA BASTI, DURGA MANDIR ROAD, RAMESH CHOWK, SRIGANGANAGAR', '1007', 0, '0000-00-00 00:00:00', 50, 1, 1, 0, 1, 'CHAWLA SHOPEE', '9828338235', 'chawla85058e4', 0, 6, 'ALL KINDS OF MEN WEAR\nTSHIRTS\nLOWER\nJEANS\nUNDERGARMENTS\nTIE\nBELTS\nSHIRTS CASUAL AND FORMAL\nDEO ,PERFUME\nALL KIND OF MEN ACCESSORIES\nAVAILABLE AT NOMINAL PRISE ', 0, 0, 0),
 (134, 'JAI MAA FASHION', '9024730820', 'Jaimaafashion@gmail.com', 'jaimaafashion20', '8054d7d135a5c0b9115824442700f127', '370- VINOBA BASTI, RAMESH CHOWK, DURGA MANDIR MARKET, SRI GANGANAGAR', '1013', 0, '0000-00-00 00:00:00', 51, 1, 1, 0, 1, 'JAI MAA FASHION LADIES AND KIDS WEAR', '9024730820', 'jaimaafashion20', 0, 6, 'ALL KINDS OF LADIES AND KIDS WEAR\nLEGGINGS\nJEANS\nTOP\nKURTIS\nLADIES SUIT\nLEHNGA SUIT\n\n\n\n\n\n', 0, 0, 0),
 (135, 'JASUJA BAKERS & CAKE HOUSE', '9529629236', 'jasujabakers91@gmail.com', 'JASUJA36', '5a5dd17aced31faa247fe575990501f2', '411 -VINOBA BASTI, NEAR DURGA MANDIR, SRIGANGANAGAR\nhttps://m.facebook.com/Jasuja-bakers-cake-house-378821928947364/', '1034', 0, '0000-00-00 00:00:00', 55, 1, 1, 0, 1, 'JASUJA BAKERS & CAKE HOUSE', '9529629236', 'JASUJA369288c', 0, 6, 'EGGLESS CAKES\nPASTRY\nBISCUITS \nCOOKIES\nSNACKS\nCHOCOLATES\nPUFFS\n& ALL BAKERY PRODUCTS & CONFECTIONERY\nICECREAMS\n\n', 0, 0, 0),
@@ -13331,7 +12829,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (137, 'NITIN BATRA', '9649669966', 'nitinbatra85@gmail.com', 'metallica5', '9b70c901913c50711f3eba3acc584291', '5-M-5 JAWAHAR NAGAR\nMEERA MARG SRI GANGANAGAR', '1043', 0, '0000-00-00 00:00:00', 19, 1, 1, 0, 1, 'METALLICA GYM', '9649669966', 'metallica59b70c', 0, 6, 'STRENGTH  DEVELOPMENT\nCARDIO\nAEROBICS\nFACTIONAL TRAINING\nSTEAM BATH\nJACCUZI\n', 0, 0, 2),
 (138, 'SUDESH', '9314097967', 'hotelprakash@gmail.com', 'hotelprakash67', '616149072d0c8a65be1df93d66a7a8ed', '11 -B GOLE BAZAR ,SRIGANGANAGAR', '1050', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'HOTEL PRAKASH', '9314097967', 'hotelprakash673', 0, 6, 'BOUTIQUE BUDGET HOTEL\nDEFINING LUXURY\nHYGIENE &CLEANLINESS\nIN THE HEART OF MAIN MARKET\nwww.hotelprakash.co.in', 0, 0, 0),
 (139, 'PULKIT', '7023975468', '', 'aroma68', '5bed4b70b9c3bd207868e66643e24aef', '39 H BLOCK,GODRA COLLEGE ROAD,HAPPY NIWAS,\nContact No: 8441819777,9660297033,7014781733,7014626377', '1147', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'AROMA BEAUTY MALL', '9660297033', 'aroma685bed4', 0, 6, 'HAIR CUT\nREBONDING ,SMOOTHINING\nHAIR COLOURING\nFACIAL\nBLEACH\nWAXING\nMANICURE\nPEDICURE\nPARTY MAKEUP\nBRIDAL MAKE UP\n★\nLADIES GARMENTS\nTOPS\nKURTIES\nJEANS\nlegging\n* LADIES PACKAGE 1000/- only ( validity till 31st DEC 2017)\n: One time hair cut\n: one time hair color \n: one time hair spa/ normal facial\n* LADIES PACKAGE \nONLY 1500/- Rs( Validity Till 31st Dec. 2017)\n: One Time Full Body wax\n: One Time Full body bleach\n: One Time Full Body Massage with Polishing \n\n* Gents Package \nonly 1000/- worth 4000/-( validity till 31st Dec 2017)\n: One Time Hair Cut\n: One Time Shave\n: One Time Aroma Ayurveda facial \n: One Time Get Full Body Massage \n\n* Massage 7000/- Rs ( OFFER VALID TILLMAY,JUNE,JULY2017)\n: 10 Full Body Massage\n\n* SPECIAL PACKAGE FOR LADIES 700/- ( Last Date 30 April )\n: One Time Hair cut\n: One time eyebrow \n: one time pedicure \n: one time manicure \n: one time facial \n: one time arms wax \n: one time under arm wax \n\n* Gents Package only (1300/-) worth 7000\n* One Time Hair cut\n* one time shave\n* one time facial oxy glow\n* one time full body polishing with massage.\n( validity till 31st Dec 2017) \n\n* LADIES COSMETIC ITEM\nUNISEX SALOON\nSPA CENTER\n\n* Gents Special Package \nonly 1250/- Worth 5000/-\n(validity till 31st Dec.2017)\n* 10 times HAIR CUTS\n* 20 times Shave \n\n* Gents Package 500/- Only worth 1500/-Rs.\n* 3 times Hair Cuts\n* 6 times shave \n(validity till 31st Dec 2017)', 0, 0, 3),
-(140, 'ABHIMANYU ', '9887333688', 'spkantia16@gmail.com', 'spkantia88', '66c179e33bccfed94b1ed6125a19de67', '9 RAVINDRA PATH ,KODA CHOWK, SRIGANGANAGAR', '1069', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'ABHIMANYU TRAVELS', '9829076351', 'spkantia8866c17', 0, 6, 'SRIGANGANAGAR TO DELHI \nTIMING 8:15 PM\nDELHI TO SRIGANGANAGAR\nTIMING 9:00 PM\nFARE UPPER SINGLE SLEEPER 600 R''S\nLOWER SINGLE SLEEPER 650 R''S\nCOMING SOON\nSGNR TO CHANDIGARH ,JAIPUR,UDAIPUR,LUDHIANA \nFACILITIES\nWI-FI FREE\nCHARGING POINT & EAR PHONE\nWATER BOTTEL\nGPRS\nBLANKET\nPILLOW\nEVERY SLEEPER LED FACILITY\nFOR BOOKING CONTAT NUMBER\n0154- 2474350\n7689999902\n905733303\n', 0, 0, 0),
+(140, 'ABHIMANYU ', '9887333688', 'spkantia16@gmail.com', 'spkantia88', '66c179e33bccfed94b1ed6125a19de67', '9 RAVINDRA PATH ,KODA CHOWK, SRIGANGANAGAR', '1069', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'ABHIMANYU TRAVELS', '9829076351', 'spkantia8866c17', 0, 6, 'SRIGANGANAGAR TO DELHI \nTIMING 8:15 PM\nDELHI TO SRIGANGANAGAR\nTIMING 9:00 PM\nFARE UPPER SINGLE SLEEPER 600 R\'S\nLOWER SINGLE SLEEPER 650 R\'S\nCOMING SOON\nSGNR TO CHANDIGARH ,JAIPUR,UDAIPUR,LUDHIANA \nFACILITIES\nWI-FI FREE\nCHARGING POINT & EAR PHONE\nWATER BOTTEL\nGPRS\nBLANKET\nPILLOW\nEVERY SLEEPER LED FACILITY\nFOR BOOKING CONTAT NUMBER\n0154- 2474350\n7689999902\n905733303\n', 0, 0, 0),
 (141, 'SHEKHAWAT TRAVELS', '9829333560', 'shekhawattravels@gmail.com', 'shekhawat60', '8e7a1b25ad66e41d542cc0d191f87258', 'NEAR ADARSH TAKIS PULIA KODA CHOWK SRIGANGANAGAR', '1078', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'SHEKHAWAT KALAPNA TRAVELS', '9829333560', 'shekhawat608e7a', 0, 6, 'SGNR TO BIKANER ,UDAIPUR\nAHEMDABA,BHILWARA,AJMER,JODHPUR,JAISLMER,DELHI\nBOOKING NUMBERS\n0154-2477051\n0154- 2477055\n0154- 2474351\nSGNR TO BIKANER AC BUS 4:15 PM\nMILAN TRAVEL\nBIKANER TO SGNR AC BUS 5:45 AM', 0, 0, 0),
 (142, 'TANTIA TRAVELS', '9529077126', 'tantiatravels@gmail.com', 'tantia26', '87c8e9cc823badb8452d2388339cdd07', 'SHOP NO 1 KODDA CHOWK, SRIGANGANAGAR', '1104', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'TANTIA TRAVELS & CARGO', '9529077126', 'tantia2687c8e', 0, 6, 'SRIGANGANAGAR TO JAIPUR 8:30PM & 9:00 PM, SLEEPER UPPER 550 RS,LOWER 600 RS.\nSGNR TO DELHI 8:40 PM\nLOWER SLEEPER 650 RS\nUPPER SLEEPER 600 RS\nJAIPUR TO SGNR ,9:30 & 10:15 PM\nFACILITY : WATER BOTTEL FREE\nGPRS TRACKER\nFREE WI-FI\nBLANKET,PILLOW,BEDSHEET\nONLINE BOOKING\nwww.tantiatravels.com\nCCTV CAMERA\nCONTACT :01542477126,2488126\n\n\n', 0, 0, 0),
 (143, 'VIRAT TRAVELS', '9024077666', 'higlorajiv@yahoo.co.in', 'virat666', 'd7e9a61a8d0776d7014ee5cca0fa16dc', 'KODA CHOWK,BUS STAND SRI GANGANAGAR', '1103', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'VIRAT TRAVELS ', '9024077666', 'virat666d7e9a', 0, 6, ' VIRAT TRAVELS AND SPEED CARGO\n1×2 AC AIR SUSPENSION SLEEPER COACH ,DAILY SERVICE\nSRIGANGANAGAR TO JAIPUR  8:30 PM & 9:00 PM\nSLEEPER UPPER 550,LOWER 600\nSRIGANGANAGAR TO JODHPUR 8:00 PM\nSLEEPER UPPER & LOWER 600 Rs\nSRIGANGANAGAR TO DELHI 8:15 PM\nSLEEPER UPPER600 AND LOWER 650\nSRIGANGANAGAR TO CHANDIGARH 9:40 PM\nSLEEPER UPPER 600 ,LOWER 650\nFACILITY : BLANKET & PILLOW\n\n', 0, 0, 0),
@@ -13342,7 +12840,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (148, 'GURUKRIPA CAREER INSTITUTE', '8104223223', 'gurukripasriganganar@gmail.com', 'gurukripa23', '7028f63a1fdd57ed0dea3d0e96dc06ad', '15 -H  BLOCK, NEAR NEHRU PARK,\nSRIGANGANAGAR\nPh:- 78219-66777', '3420', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'SHEKHAWATI GURUKRIPA CAREER INSTITUTE', '8104223223', 'gurukripa237028', 0, 6, 'SHEKHAWATI \nGURUKRIPA CAREER INSTITUTE ( शेखावाटी गुरूकृपा कैरियर इंस्टीट्यूट)\n\n20000 से ज्यादा Selection देने वाली शेखावाटी टीम का अपना शिक्षण संस्थान .\n\nDirectors And Team\n॰ मेघश्याम फौजदार \n( Geo. & Eco. )\n॰ हरगोविन्द राठौङ \n( Hist. & Cul. )\n॰ संदीप शेखावत \n( Maths & Reasoning )\n\n\nCOURSES AVAILABLE :\n\n\n॰ NET\n॰ SET\n॰ RAS\n॰ LECTURER\n॰ TEACHER GRADE -I ,II ,III \n॰ REET\n॰ PATWAR\n॰ POLICE          \n॰ SSC & BANK \n॰ NDA & CDS \n( DEFENCE )\n॰ RAILWAY \n॰ GRAMSEWAK \n॰ JET\n\n AND OTHER RPSC COURSES .\n\nFor All New Batches information visit our Institute or call us on given numbers .\n\nSalient Features :-\n॰ दक्ष,प्रतिबद्घ एव अनुभवी अध्यापकों द्वारा गुणात्मक शिक्षण\n॰ LCD PROJECTOR पर सभी कक्षाऐं\n॰ हर बैच के लिए नए UPDATED NOTES\n॰ नियमित DTS तथा DTP ( DAILY PRACTICE PAPER )\n॰ साप्ताहिक OMR SHEET TESTs\n॰ गत वषों की परीक्षाओं पर आधारित प्रशनोत्तरी\n॰ सभी विषयों के नियमित TOPIC WISE PRINTED NOTES\n॰ TRICKY MATHS & REASONING पढ़ाया नहीं, सिखाया जाता है\n\n', 0, 0, 5),
 (149, 'SARJEET DHUNDHARA', '9828034129', 'sarjeet_dhunbhara@yahoo.com', 'bhavishya29', '8d3de9140cb369dc4d31c821e20d7435', '10 MUKHARJEE NAGAR,NEAR BUS STAND,SRIGANGANAGAR', '1150', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'BHAVISHYA ACADEMY', '9828034129', 'bhavishya2993fa', 0, 6, 'BHAVISHYA ACADEMY\nTO MAKE YOUR FUTURE BRIGHT\nCOURSES:\nUPSC,RPSC,BANK,SSC,REET,PATWAR\n& ALL TYPE OF COMPETITIVE EXAMS\nSPECIAL FEATURES:\nFULLY AC CAMPUS\nQUALIFIED & EXPERIENCED FACULTY\nREGULAR TEST SERIES\nCOMPUTERISED NOTES\nLIBRARY FACILITY\nSPACE OF PARKING\nBANKING (SBI CLERK )BATCH START ON 14th APRIL 2016 IN MORNING AT 7:00 AM\nPATWAR TEST SERIES STARTED.\n\n ', 0, 0, 6),
 (150, 'BACHPAN , A PLAY SCHOOL', '9352700003', 'bachpan.sgnr@gmail.com', 'bachpan03', 'e0d66a416a15cbbbc9ad8855b85010a6', 'DURGESH PALACE ROAD, NAGPAL COLONY,SRI GANGANAGAR', '1162', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'BACHPAN ,A PLAY SCHOOL', '9352700003', 'bachpan03b2def', 0, 6, '1000 PLUS SCHOOL ALL OVER INDIA\nADMISSION OPEN\nBACHPAN ,A PLAY SCHOOL\nFUN,EDUCATION ,ETHICS & ADVENTURE\nLITERARY ACTIVITIES\nSCIENTIFIC ACTIVITIES\nCULTURAL ACTIVITIES\nART ACTIVITIES\nSPORTS ACTIVITIES\nAMAZING FACILITIES :\nPLEASANT & FRIENDLY ENVIRONMENT\nTHEMATIC ROOMS\nPRE- PRIMARY ACTIVITY ROOM\nEDUCATIONAL -AIDS\nINDOOR/OUTDOOR GAMES\nREGULAR HEALTH CHECK UPS\nENDEARING STAFF :\nSMALL TEACHER : PUPIL RATIO\nEXPERIENCED & QUALIFIED STAFF\nEFFECTIVE MONITORING\nDEDICATED SUPPORT STAFF\nTRAINED DRIVERS FOR VAN\nDO AND LEARN :\nMOCK INTERVIEWS\nFUN FILLED WORKSHOPS & SEMINARS\nSTAGE EXPOSURE\nONLINE QUIZ\nINTERACTIVE TEACHING AIDS\nCOMPUTER -AIDED LEARNING\nPRISMART -INTELLIGENT E-LEARNING SOLUTION :\n100% MAPPING WITH TEXTBOOKS AND CURRICULUM FOR LEVELS I,II &III\nMUSICALLY RENDERED POEMS AND STORIES\nATTRACTIVE AND VIBRANT VISUALS\nHD QUALITY\nFULLY 3D \nINTERACTIVE QUIZZES ,WORKSHEETS etc.\nWE CARE FOR YOU TOO,PARENTS\nAFFORDABLE FEE STRUCTURE\nREGULAR PARENTS -TEACHER MEETINGS\nOPEN TO FEEDBACK & SUGGESTIONS\n', 0, 0, 0),
-(151, 'RUPINA A. SHARMA', '9314678899', 'pathshala.sgnr@gmail.com', 'rupina99', '5f4e67552d456f9d36ce5ad57123e065', '2-F-8 JAWAHAR NAGAR, SRI GANGANAGAR', '3817', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'PATHSHALA ', '9314678899', 'rupina995f4e6', 0, 6, 'ENQUIRY START FOR EVENING TUITION WID HANDWRITING STARTING FROM 5 JULY 2017* PATHSHALA ,A LEADING ENGLISH MEDIUM PLAY SCHOOL CHAIN\nSUMMER CAMP ENROLLMENT OPEN FOR 5 /10 /15 JUNE CAMP\n*PRE NURSERY,NURSERY,LKG,UKG,STD. I TO V\n* A.C. CLASS ROOMS\nCCTV ACCESS\n* ACTIVITIES ON SATURDAY''S (FUN DAY)\nDAY BOARDING\n*HOBBY AND LEARNING CENTRE\n* TUITION CENTRE\n* BOOK WORLD\n* HANDWRITINGS EXPERTISE\n* COMPUTER HUB\n* BRAIN SCHOOL\n* DANCE\nSKATING / DANCE BY PROFESSIONAL \n\nBiggest SUMMER CAMP \n 5 JUNE 2017', 0, 0, 0),
+(151, 'RUPINA A. SHARMA', '9314678899', 'pathshala.sgnr@gmail.com', 'rupina99', '5f4e67552d456f9d36ce5ad57123e065', '2-F-8 JAWAHAR NAGAR, SRI GANGANAGAR', '3817', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'PATHSHALA ', '9314678899', 'rupina995f4e6', 0, 6, 'ENQUIRY START FOR EVENING TUITION WID HANDWRITING STARTING FROM 5 JULY 2017* PATHSHALA ,A LEADING ENGLISH MEDIUM PLAY SCHOOL CHAIN\nSUMMER CAMP ENROLLMENT OPEN FOR 5 /10 /15 JUNE CAMP\n*PRE NURSERY,NURSERY,LKG,UKG,STD. I TO V\n* A.C. CLASS ROOMS\nCCTV ACCESS\n* ACTIVITIES ON SATURDAY\'S (FUN DAY)\nDAY BOARDING\n*HOBBY AND LEARNING CENTRE\n* TUITION CENTRE\n* BOOK WORLD\n* HANDWRITINGS EXPERTISE\n* COMPUTER HUB\n* BRAIN SCHOOL\n* DANCE\nSKATING / DANCE BY PROFESSIONAL \n\nBiggest SUMMER CAMP \n 5 JUNE 2017', 0, 0, 0),
 (152, 'MICASA INTERNATIONAL SCHOOL', '8696097888', '', 'MICASA888', '67a009a9183f4503f933a8e7b39c1810', '20 VINOBA BASTI, SRIGANGANAGAR', '1179', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'MICASA INTERNATIONAL SCHOOL', '8696097888', 'MICASA88821689', 0, 6, 'MICASA INTERNATIONAL SCHOOL\nPLAY GROUP TO KINDERGARTEN\nACTIVITIES INVOLVED\nSENSORY TIME\nSTORY TIME\nWATER PLAY\nSAND PLAY\nCREATIVE TIME\nLIBRARY TIME\nCELEBRATION OF FESTIVAL AND SPECIAL DAYS\nPUPPET SHOWS AND SKITS\nFREE PLAY WITH TECHNOLOGY CORNER\nKEY AREA IN PG CURRICULUM:\nLEARNING BY EXPLORATION\nBUILDING COMMUNICATION SKILL\nENCOURAGING POSITIVE PEER INTERACTION\nTHEME BASED CONCEPT TIME\nMATH READINESS\nOPPORTUNITY FOR FINE AND GROSS MOTOR DEVELOPMENT\nPROMOTE COGNITIVE DEVELOPMENT', 0, 0, 0),
 (153, 'ACADEMIC HEIGHTS PUBLIC SCHOOL', '9414356400', 'bachpan.sgnr@gmail.com', 'bachpan003', '6767b744a08a8b7266bbee8ca538d3cd', 'DURGESH PALACE ROAD,NAGPAL COLONY SRIGANGANAGAR', '1190', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'ACADEMIC HEIGHTS PUBLIC SCHOOL', '9414356400', 'bachpan003e0d66', 0, 6, 'ACEADEMIC HEIGHTS PUBLIC SCHOOL\n100 + SCHOOLS NATION WIDE \nCBSE CURRICULUM\nwww.academicheights.in\nREGULAR TEACHER ORIENTATION\nOLYMPIADS\nINTER AHPS COMPETITION\nHOUSE SYSTEM\nPERSONALITY DEVELOPMENT\nCOMPUTER AIDED LEARNING\nDEEP ROOTED SUPPORT\nLABS AND RELATED MANULAS\nCOUNTRY WIDE PLATFORM\nINTERACTIVE CONTENT BASED ON OUR TEXT BOOKS\n', 0, 0, 0),
 (154, 'SHINE ON', '7073811181', 'shineon1610@gmail.com', 'shineon81', '33444131b0593f839f4de9fc6cf76c7a', '5-P BLOCK, CENTRAL MARKET, RADHESHYAM KOTHI ROAD, SRIGANGANAGAR', '1194', 0, '0000-00-00 00:00:00', 94, 1, 1, 0, 1, 'SHINE ON', '7073811181', 'shineon8133444', 0, 6, 'SHINE ON\nPRECCIOUS CREATIONS FOR PRECIOUS YOU\nDEALS IN:\nSTERLING SILVER JEWELLERY,\nARTIFICIAL JEWELLERY\nTROUSSEAU PACKING\n(WEDDING & SHAGAN) AT HOME DECOR\nCONTACT INFORMATION :\n01542478181,07073811181,\n9261818181,9251818181\n\n\n\n', 0, 0, 0),
@@ -13359,12 +12857,12 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (165, 'ROYAL UP THAI SPA', '8740020304', 'royalupthaispa@gmail.com', 'royal04', '8d03098678506bdcc7199b668ba5a92d', 'BEHIND HANUMAN MANDIR 132 L BLOCK ', '1409', 0, '0000-00-00 00:00:00', 90, 1, 0, 0, 1, 'ROYAL UP THAI SPA', '8740020304', 'royal0443664', 0, 6, 'FOOT SPA :\nTHAI FOOT REFLEXOLOGY - 30 MIN -999/-\nTHAI FOOT AND BACK MASSAGE -60 MIN-1999/-\nTHAI HEAD TO TOE MASSAGE 90 MIN-1999/-\nSOOTHING FOOT SCRUB 10 MIN-499/-\nREJUVENATING FACIAL MASK-10 MIN-699/-\nOIL BASED HEAD MASSAGE-10-15 MIN- 299/499/-\nDAY SPA:\nSWEDISH MASSAGE -1Hr- 2199/-\nBACK MASSAGE -30 MIN -999/-\nAROMA THERAPY MASSAGE -60 MIN-2999/-\nHEAD NECK SHOULDER MASSAGE -30 MIN 999/-\nAROMA THERAPY MASSAGE 1HR-2499/-\nTHAI MASSAGE -60 MIN -2499/-\nBODY POLISH 60 MIN- 2999/-\nNATURAL PROTEIN BODY WRAP -30 MIN- 999/-\nAYURVEDA MASSAGE 60 MIN- 3199/-\nAROMA THERAPHY MASSAGE-60MIN-2499/-\n', 0, 0, 0),
 (166, 'CAREER POINT', '9672977572', 'vikrantswm@gmail.com', 'careerpoint572', 'f3374d0b14163e1b6c10cd8c00454931', 'SHANTI MANSION, 23 J BLOCK, GAUSHALA ROAD BIRBAL CHOAK\nSRIGANGANAGAR \nPH- 0154- 2474748\n  0154-2474749', '1486', 0, '0000-00-00 00:00:00', 23, 1, 0, 0, 1, 'CAREER POINT', '9672977572', 'careerpoint572f', 0, 6, '●XI + FOUNDATION COURSE\n( CLASS 10 TO 11 MOVING)\n\n●XII+ FRESHER COURSE\n(CLASS 11 TO 12 MOVING)\n\n●TARGET COURSE\n(CLASS 12 APPEARED/ PASS)\n\n●PRE- FOUNDATION COURSE\n( CLASS 7 TO 10 STUDENTS )\n\nFACILITIES\n★ BEST FACULTY TEAM\n★ RESULT ORIENTED TEACHING METHODOLOGY\n★ SELF SUFFICIENT STUDY MATERIAL\n★ STUDY SUPPORT SCHOLARSHIP\n★ ONLINE SUPPORT\n★ ALL SUBJECTS UNDER ONE ROOF SAVES TIME & ENERGY', 0, 0, 11),
 (167, 'EURO WORLD SCHOOL', '9414281998', 'euroworldschool@outlook.com', 'euroworld998', '82976b80f9e6de3cbd96d147f3a30042', 'EKTA COLONY ,BEHIND BEHAL HOSPITAL', '1441', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'EURO WORLD SCHOOL\n ', '9829084780', 'euroworld998829', 0, 6, 'EURO WORLD SCHOOL\nADMISSION OPEN\n★PLAY SCHOOL TO 5th CLASS\n★POLLUTION FREE AND ECO FRIENDLY ENVIRONMENT\n★EXCELLENT ACADEMIC STAFF\n★ABACUS\n★DANCE\n★SKATING\n★MARTIAL ART\n★AEROBIC CLASSES\n★SAFE AND RELIABLE TRANSPORT\n\n\n\n\n\n', 0, 0, 0),
-(168, 'OXFORD', '8890345401', 'oxfordsgnr@gmail.com', 'oxford401', '98b3f593965d2db27a3a751d14523b5f', '1-H-BLOCK, 1st FLOOR,NEAR H-BLOCK DIGGI ,SRIGANGANAGAR ,CONTACT NO 0154-2471029', '1448', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'OXFORD IELTS', '8890345401', 'oxford40198b3f', 0, 6, 'OXFORD IELTS \n★ NEW BATCH START\n★AUSTRALIAN FACULTIES\n● SPECIAL BASIC CLASSES FOR NEWCOMERS\n● EXTRA WRITING & SPEAKING CLASSES\n● FREE DEMO CLASSES FOR 3 DAYS\n● EXPERIENCED AND TRAINED FACULTIES\n● AUSTRALIAN EXPERIENCE\n● A.C. CLASS ROOM\n● IMMIGRATION AND VISA FACILITY AVAILABLE \n DONT WASTE YOUR TIME MATE, A GOOD IELTS SCORE CAN LEAD YOU TO YOUR DREAMS\nCONTACT TO : \n■ SUNIL SAHARAN 8890345401\n■ SATISH SACHDEVA 9783358669', 0, 0, 0);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(168, 'OXFORD', '8890345401', 'oxfordsgnr@gmail.com', 'oxford401', '98b3f593965d2db27a3a751d14523b5f', '1-H-BLOCK, 1st FLOOR,NEAR H-BLOCK DIGGI ,SRIGANGANAGAR ,CONTACT NO 0154-2471029', '1448', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'OXFORD IELTS', '8890345401', 'oxford40198b3f', 0, 6, 'OXFORD IELTS \n★ NEW BATCH START\n★AUSTRALIAN FACULTIES\n● SPECIAL BASIC CLASSES FOR NEWCOMERS\n● EXTRA WRITING & SPEAKING CLASSES\n● FREE DEMO CLASSES FOR 3 DAYS\n● EXPERIENCED AND TRAINED FACULTIES\n● AUSTRALIAN EXPERIENCE\n● A.C. CLASS ROOM\n● IMMIGRATION AND VISA FACILITY AVAILABLE \n DONT WASTE YOUR TIME MATE, A GOOD IELTS SCORE CAN LEAD YOU TO YOUR DREAMS\nCONTACT TO : \n■ SUNIL SAHARAN 8890345401\n■ SATISH SACHDEVA 9783358669', 0, 0, 0),
 (169, 'LOREAL NEW LOOK HAIR AND BEAUTY SALON', '9460301777', 'deepak.jangid6@gmail.com', 'newlook777', 'd26c1b2c6be9bef105105711c6d7e20c', '78 D BLOCK, NEAR WAKILIN KIBDIGGI, SRIGSNGANAGAR', '1457', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'LOREAL NEW LOOK HAIR AND BEAUTY SALON', '9460301777', 'newlook777d26c1', 0, 6, 'all kinds of services for ladies and gents', 0, 0, 5),
 (170, 'BRIGHT STAR ACADEMY', '9982055513', 'cps3consultant@gmail.com', 'brightstar669', 'f6e761b1ac046bd613906b8835a6bb1e', '23, MUKHARJEE NAGAR ,OPP NEHRU PARK,BEHIND BUS STAND,SRIGANGANAGAR ,CONTACT NO 0154-2489513', '1477', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'BRIGHT STAR  ACADEMY', '9982055513', 'brightstar669f6', 0, 6, 'byBRIGHT STAR ACADEMY\n                         English In Your Way\n★ NEW BATCH START\n★ AUSTRALIAN FACULTIES\n★ EXPERIENCED AND TRAINED FACULTIES\n★ A.C. CLASS ROOM\n★ IELTS, SPOKEN ENGLISH ,P.T.E. & STUDY VISA\n ■ CONTACT 0154-2489513,\n Punit Kumar- 9680804800,\nC P Singh-9982055513', 0, 0, 0),
-(171, 'Raj rathore', '8441929144', 'Hunnylimzs1@gmail.com', 'royal up Thai spa', 'a77014815c25eeb37efdedbca9d8de13', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'royal up Thai s', 0, 6, '', 0, 0, 0),
-(173, 'BLOOMING DALES INTERNATIONAL SCHOOL', '9982416410', '', 'bdissgnr998', '34a2b54f6c2337dee670ce84ba6cf068', '2 M.L. NATHWALA, HANUMANGARH\n ROAD, 0154-2461423,0154-2462745', '1505', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'BLOOMING DALES INTERNATIONAL SCHOOL', '9982416410', 'bdissgnr9982f56', 0, 6, 'BLOOMING DALES INTERNATIONAL SCHOOL\n★(Under The Patronage Of Bharti Charitable Trust)\n★ Affiliated to C.B.S.E.\n★ www.bdis.in\n★ Facebook.com/bdiansbdians\n \nPROGRAM DETAILS :\n● PRE NURSERY TO 12th ( SCENCE,ART,COMMERCE)\n● ULTRA MODERN INFRASTRUCTURE\n● AC CLASSROOM\n● X''SEED CURRICULUM\n● TEACHNEXT SMART CLASSES\n● COMPETENT & CARING FACULTY\n● WELL MAINTAINED SPORTS GROUND\n● LAWN ,TENNIS  ,BASKETBALL ,BADMINTON,VOLLEYBALL,CRICKET\n● SKATING,JUDO,ATHLETIC,TABLE TENNIS ,CHESS\n● PIOUS & SERENE EVIRONMENT\n● SWIMMING POOL\n● MAGNIFICENT LIBRARY\n● MUSIC & ORCHESTRA\n● DANCE ROOM\n● COMPUTER LAB (NIIIT)\n● LABORATORIES ( PHYSICS,CHEMISTRY,BIOLOGY)\n● ABACUS & VEDIC MATHS\n● EXCURSION \n● INTERNATIONAL TOUR\n● DINNING HALL TO INCULCATE TABLE MANNERS\n● RESIDENTIAL SCHOOL\n● SEPARATE BOYS & GIRLS HOSTEL\n● YOGA & MEDITATION\n● VARIOUS INTERNATIONAL LEVEL OLYMPIAD\n■ PRINCIPAL : MRS. MEETU SHARMA\n                              9352701123\n■ P.A. TO PRINCIPAL : 9982416410', 0, 0, 0),
+(171, 'Raj rathore', '8441929144', 'Hunnylimzs1@gmail.com', 'royal up Thai spa', 'a77014815c25eeb37efdedbca9d8de13', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'royal up Thai s', 0, 6, '', 0, 0, 0);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(173, 'BLOOMING DALES INTERNATIONAL SCHOOL', '9982416410', '', 'bdissgnr998', '34a2b54f6c2337dee670ce84ba6cf068', '2 M.L. NATHWALA, HANUMANGARH\n ROAD, 0154-2461423,0154-2462745', '1505', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'BLOOMING DALES INTERNATIONAL SCHOOL', '9982416410', 'bdissgnr9982f56', 0, 6, 'BLOOMING DALES INTERNATIONAL SCHOOL\n★(Under The Patronage Of Bharti Charitable Trust)\n★ Affiliated to C.B.S.E.\n★ www.bdis.in\n★ Facebook.com/bdiansbdians\n \nPROGRAM DETAILS :\n● PRE NURSERY TO 12th ( SCENCE,ART,COMMERCE)\n● ULTRA MODERN INFRASTRUCTURE\n● AC CLASSROOM\n● X\'SEED CURRICULUM\n● TEACHNEXT SMART CLASSES\n● COMPETENT & CARING FACULTY\n● WELL MAINTAINED SPORTS GROUND\n● LAWN ,TENNIS  ,BASKETBALL ,BADMINTON,VOLLEYBALL,CRICKET\n● SKATING,JUDO,ATHLETIC,TABLE TENNIS ,CHESS\n● PIOUS & SERENE EVIRONMENT\n● SWIMMING POOL\n● MAGNIFICENT LIBRARY\n● MUSIC & ORCHESTRA\n● DANCE ROOM\n● COMPUTER LAB (NIIIT)\n● LABORATORIES ( PHYSICS,CHEMISTRY,BIOLOGY)\n● ABACUS & VEDIC MATHS\n● EXCURSION \n● INTERNATIONAL TOUR\n● DINNING HALL TO INCULCATE TABLE MANNERS\n● RESIDENTIAL SCHOOL\n● SEPARATE BOYS & GIRLS HOSTEL\n● YOGA & MEDITATION\n● VARIOUS INTERNATIONAL LEVEL OLYMPIAD\n■ PRINCIPAL : MRS. MEETU SHARMA\n                              9352701123\n■ P.A. TO PRINCIPAL : 9982416410', 0, 0, 0),
 (174, 'Dharmesh limba', '9571234730', '', 'dharmeshlimba', '5ac450e7e104f5f77663e54beb947a41', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'dharmeshlimba01', 0, 6, '', 0, 0, 0),
 (175, 'dharmesh limba ', '0957123470', '', 'dharmesh ', '5ac450e7e104f5f77663e54beb947a41', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'dharmesh d3cd1', 0, 6, '', 0, 0, 0),
 (176, 'SATYA LAKSHYA EURO WORLD SCHOOL', '9887375488', '', 'sleuroworld780', '1c4ca15c294c8db81599d11bdd8cffdc', 'RIICO AGRO FOOD PARK ROAD,SRIGANGANAGAR', '1501', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'SATYA LAKSHYA EURO WORLD SCHOOL', '9414281998', 'sleuroworld7801', 0, 6, '➡AFFILIATED TO CBSE,NEW DELHI\n★ ADMISSION OPEN\n★ PRE NURSERY TO 9th CLASS\n★ SPRAWLING BUILDING SPREAD OVER A VAST AREA IN AN IDYLLIC SURROUNDING WITH LUSH GREEN.\n★ POLLUTION FREE AND ECO FRIENDLY ENVIRONMENT.\n★ SEPARATE BUILDING FOR JUNIOR AND SENIOR WING\n★ OUTDOOR GAMES FACILITIES\n★ EXCELLENT ACADEMIC STAFF\n★ ABACUS ,DANCE,SKATING,MARTIAL ARTS & AEROBIC CLASSES \n★ SAFE AND RELIABLE TRANSPORT FACILITY. ', 0, 0, 0),
@@ -13398,7 +12896,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (205, 'Ambica trading company', '9462301592', '', 'hari gupta', '69cb313b42e9a09e011ee4e0c54bad58', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'hari guptaff36a', 0, 6, '', 0, 0, 0),
 (206, 'hari gupta', '9414501592', '', 'harikishan', 'ff36a6522774ff9c574c4ff16d0a4101', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'harikishan2265a', 0, 6, '', 0, 0, 0),
 (207, 'Ranjodh singh', '9646839667', '', 'ranjodh1', '245c5ac6cd491c7b55adc2254417c234', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ranjodh113ae0', 0, 6, '', 0, 0, 0),
-(208, 'THE BULLET BUS', '9057370999', '', 'bulletbus999', '5efc5e370c9da6f33369f818da635299', 'KODA CHOWK,NEAR ADARSH TALKIES PULIA,CONTACT 9057310999', '1658', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'THE BULLET BUS', '9057370999', 'bulletbus9995ef', 0, 6, '★ ★THE BULLET BUS\n★ A LUXURY VOLVO BUS SERVICE\n★ www.thebulletbus.com\n★ JAIPUR DAILY UP DOWN\n★ FAIR 750/-R''s.\n\n■  SRIGANGANGAR DEPARTURE 5:00AM\n■ JAIPUR ARRIVAL 11:40 AM\n\n■  JAIPUR DEPARTURE 5:00 PM\n■ SRIGANGANAGAR ARRIVAL 11:40 PM\n\n◆ FACILITY :\n ★ NEWS PAPER\n ★ WATER BOTTLE\n ★ CHARGING POINT\n ★ LED \n\n■ JAIPUR OFFICE CONTACT\n★  M.I. ROAD, NEAR PINK CITY PETROL PUMP (M) 9057380999,9057340999\n\n■ HANUMANGARH OFFICE CONTACT\nOPP. KUMAR PETROL PUMP\n★ ( M) 9057350999\n\n◆ RAWATSAR OFFICE\n★ (M) 01537-251155\n\n★ www.thebulletbus.com\nSriganganagar to Delhi \n4:30 am Morning\nDelhi to Sriganganagar\n5:00 pm from piragari \nFAIR : 850 Rs.\n\n\n', 0, 0, 0),
+(208, 'THE BULLET BUS', '9057370999', '', 'bulletbus999', '5efc5e370c9da6f33369f818da635299', 'KODA CHOWK,NEAR ADARSH TALKIES PULIA,CONTACT 9057310999', '1658', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'THE BULLET BUS', '9057370999', 'bulletbus9995ef', 0, 6, '★ ★THE BULLET BUS\n★ A LUXURY VOLVO BUS SERVICE\n★ www.thebulletbus.com\n★ JAIPUR DAILY UP DOWN\n★ FAIR 750/-R\'s.\n\n■  SRIGANGANGAR DEPARTURE 5:00AM\n■ JAIPUR ARRIVAL 11:40 AM\n\n■  JAIPUR DEPARTURE 5:00 PM\n■ SRIGANGANAGAR ARRIVAL 11:40 PM\n\n◆ FACILITY :\n ★ NEWS PAPER\n ★ WATER BOTTLE\n ★ CHARGING POINT\n ★ LED \n\n■ JAIPUR OFFICE CONTACT\n★  M.I. ROAD, NEAR PINK CITY PETROL PUMP (M) 9057380999,9057340999\n\n■ HANUMANGARH OFFICE CONTACT\nOPP. KUMAR PETROL PUMP\n★ ( M) 9057350999\n\n◆ RAWATSAR OFFICE\n★ (M) 01537-251155\n\n★ www.thebulletbus.com\nSriganganagar to Delhi \n4:30 am Morning\nDelhi to Sriganganagar\n5:00 pm from piragari \nFAIR : 850 Rs.\n\n\n', 0, 0, 0),
 (209, 'Dr Yashpal Singh Rathore\n\n', '9660572000', 'dr.yashpalrathore@gmail.com', 'dryashpalrathore', 'efc10f22bd79da2ac77eed11d08fa6d2', 'A 1,Madan Vihar, Sukhadia marg\n', '1669', 0, '0000-00-00 00:00:00', 92, 1, 1, 0, 1, 'Shri Ambey Hospital', '9660572000', 'dryashpalrathor', 0, 6, 'Brain and Spine Surgeon ( Neurosurgeon )', 0, 0, 0),
 (210, 'harman', '9587652671', '', 'harmanbrar', '9ec1a39ea04c98a6b0594d7f2eeee38b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'harmanbrar18e41', 0, 6, '', 0, 0, 0),
 (211, 'jitender jakhar ', '9602200556', '', 'jitender jakhar ', '06681eb1d3ff4e2f05899c2a9d28c6f9', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'jitender jakhar', 0, 6, '', 0, 0, 0),
@@ -13423,7 +12921,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (230, 'pankaj ', '9772997276', '', 'pankaj123', 'e5ba3e50387ab86792a8704556b238a8', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'pankaj123e5ba3', 0, 6, '', 0, 0, 0),
 (231, 'Lalit', '8385939208', '', 'lalitsinghal79@yahoo.com', '8e2b5ac13867f81da1f2e86da916452a', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'lalitsinghal79@', 0, 6, '', 0, 0, 0),
 (232, 'JOG CATERERS', '9414282175', '', 'jog94142', '415fb0a558efe4df8d6ffb1170eeb9e2', '34-D PUBLIC PARK GOLE BAZAR', '1702', 0, '0000-00-00 00:00:00', 66, 1, 1, 0, 1, 'JOG CATERERS', '9414282175', 'jog94142415fb', 0, 6, 'JOG CATERERS\n★ RAJKUMAR JOG HAlWAI AND COOK\n★ CONTACT FOR DELICIOUS AND ROYAL FOOD FOR MARRIAGE AND PARTIES\n★ ALL MARRIAGE PLACE CONTRACTOR\n★ MARRIAGE PARTY\n★ BIRTHDAY PARTY\n★ ANNIVERSARY \n★ ANY OTHER OCCASION \n★ INDOOR AND OUTDOOR CATERERING FACILITY AVAILABLE\n\n ', 0, 0, 0),
-(233, 'KINGS VILLE', '01542465469', 'SSD7677@gmail.com', 'kings0154', '4a65d41d49e56c988039cf9934942e6c', 'RIDHI SIDHI ENCLAVE-1, HANUMANGARH ROAD', '1714', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'King''s Ville Hotel and Restaurant', '9461066456', 'kings0154f43a0', 0, 6, 'KING''S VILLE RESTAURANT\n★ DELIGHT FOR VEGETARIANS IN CITY\n★ MARRIAGE HALL\n★ BANQUET HALL\n★ OPEN AIR RESTAURANT\n★ INDOOR AND OUTDOOR CATERING\n★ VEG AND NON VEG CATERING\n★ HALL AVAILABLE FOR BIRTHDAY / CONFERENCE /KITTY PARTY\n★ ALL-ROUND FACILITIES FOR MARRIAGE PARTIES \n\n ', 0, 0, 0),
+(233, 'KINGS VILLE', '01542465469', 'SSD7677@gmail.com', 'kings0154', '4a65d41d49e56c988039cf9934942e6c', 'RIDHI SIDHI ENCLAVE-1, HANUMANGARH ROAD', '1714', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'King\'s Ville Hotel and Restaurant', '9461066456', 'kings0154f43a0', 0, 6, 'KING\'S VILLE RESTAURANT\n★ DELIGHT FOR VEGETARIANS IN CITY\n★ MARRIAGE HALL\n★ BANQUET HALL\n★ OPEN AIR RESTAURANT\n★ INDOOR AND OUTDOOR CATERING\n★ VEG AND NON VEG CATERING\n★ HALL AVAILABLE FOR BIRTHDAY / CONFERENCE /KITTY PARTY\n★ ALL-ROUND FACILITIES FOR MARRIAGE PARTIES \n\n ', 0, 0, 0),
 (234, 'LIFE STYLE CLUB', '9782058503', '', 'lifestyle503', '556b205595fc31dbd09dca4b9b7e20d7', 'RIDHI SIDHI ENCLAVE Ist \n ,HANUMANGARH\n ROAD, CONTACT 9782058503', '1726', 0, '0000-00-00 00:00:00', 19, 1, 1, 0, 1, 'LIFE STYLE CLUB\nGYM & SWIMMING POOL\nA PLACE FOR FITNESS AND FUN FOR ALL', '9571620860', 'lifestyle503556', 0, 6, 'LIFE STYLE CLUB\n( 7 DAYS OPEN GYM)\nCLUB FACILITIES :\n★ GYM AND SPA\n★ SWIMMING POOL\n★ TABLE TENNIS\n★ DANCE CLASSES\n★ AEROBIC ACTIVITY\n★ FULL BODY MASSAGE\n★ HORSE RIDING\n\n■ SWIMMING POOL FACILITY :\n★ SAFE AND HYGIENIC POOL\n★ SWIMMING COACHING FACILITY\n★ SAFETY GUARD FACILITY FOR CHILDREN \n★ STATE AND NATIONAL LEVEL TOURNAMENT COACHING FOR CHILDREN \n★ SWIMMING ACCESSORIES LIKE TUBE,COSTUME,CAP,GOGGLES ON RENT AND PURCHASE FACILITY AVAILABLE\n★ VAN FACILITY AVAILABLE FOR CHILDREN ( TO AND FRO)\n★ SEPARATE BATCH FOR FEMALE FROM 4:00 PM TO 6:00 PM\n★ LEARNING TIME 6:00 AM TO 9:00 AM\nAND 4:00 PM TO 9:00 PM ( MONDAY TO SATURDAY)\n★ FAMILY TIMING 8:30 TO 10:00 PM\n★ LEARN SWIMMING IN 15 DAYS\n\n■ WE DEAL IN\n★ OBESITY /UNDER WEIGHT\n★ CERVICAL PAIN, BACKACHE\n★ KNEE PROBLEM ,HEEL PAIN\n★ OSTEO / Rh. ARTHRITIS\n★ PAIN AND FROZEN  SHOULDER\n★ MUSCULAR WEAKNESS/ PAIN\n★ NERVOUS WEAKNESS\n★ EARLY MENOPAUSE\n★ LACK OF SEXUAL DESIRE\n★ EARLY AGEING ,LACK OF CONFIDENCE\n★ CONSTIPATION\n★ FATIGUE, LACK / EXCESS SLEEP, SNORING\n★ INCORRECT FIGURE, INCORRECT POSTURE\n★ SHORT HEIGHT\n★ IRREGULAR M.CYCLE\n★ REDUCE WEIGHT UP TO 10 KG IN ONE MONTH\n★ INCREASE HEIGHT 1 TO 2 INCH IN A MONTH\n★ FOR ALL AGE GROUP 9 TO 99\n\n■ FITNESS TRAINER\nHARRY AULAKH\nCERTIFIED BY G.G.U ( DELHI)\nTRAINED BY DR S.P. CHHABRA\nHE AND SHE HEALTH CARE & CURE \n(SGNR & DELHI)\n\n\n\n \n\n\n\n\n', 0, 0, 3),
 (235, 'Dr I C Mundhra', '9414091909', '', 'Mundhra09', '3f8cebd680a9288ce20bfa09a99ab973', 'Rsngr', '1730', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'Dr I C Mundhra', '9414091909', 'Mundhra093f8ce', 0, 6, 'r7fhgdufug', 0, 0, 0),
 (236, 'CHOTI DHANI', '850000098', '', 'chotidhani98', 'daacc468b9d006c7d0e4826e3626f6a9', 'HANUMANGARH ROAD,NEAR CGR MALL,OPP.TAJ PALACE CONTACT 9782922288', '2215', 0, '0000-00-00 00:00:00', 29, 1, 0, 0, 1, 'CHOTI DHANI', '9782922283', 'chotidhani98daa', 0, 6, 'CHOTI DHANI\n★ A TRADITIONAL RESTAURENT\n★ BREAKFAST\n★ LUNCH \n★ BRUNCH\n★ DINNER\n★ PARTY HALL\n★ KITTY PARTY HALL\n★ TIFFIN SERVICE\n★ SPECIAL THALI\n★ FREE HOME DELIVERY\n★ PROFESSIONAL CHEF\n★ FRIENDLY QUALIFIED STAFF\n★ AC RESTAURANT\n★ HYGIENIC AND QUALITY TASTY FOOD  \n\n\n■ KOFIKUP GUEST HOUSE\n★ A/C & NON A/C ROOMS\n\n★ SPECIAL EXCLUSIVE CATERING SERVICE\n★ SPECIAL INDOOR & OUTDOOR CATERING\n', 0, 0, 0),
@@ -13445,18 +12943,18 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (252, 'Dr NEEL GAGAN', '9414955762', '', 'gagan762', '5f7c90010e0a5ff532ddeac2d11e92d5', 'DR NEELS DENTAL CLINIC', '2455', 0, '0000-00-00 00:00:00', 78, 1, 1, 0, 1, 'DR NEEL GAGAN', '9414955762', 'gagan7625f7c9', 0, 6, 'RCT\nORTHODONTICS\nIMPLANTS\nDENTURE FIXED TEETH', 0, 0, 0),
 (253, 'Dr C P AGARWAL', '9462177055', '', 'cpagarwal055', '8f3bedcb7cdd2b26571fc22b3f2ab0a7', 'AGGARWAL DENTAL CLINIC\nNEELKANTH COMPLEX\n16 G BLOCK', '2371', 0, '0000-00-00 00:00:00', 78, 1, 1, 0, 1, 'DR C P AGGARWAL', '9462177055', 'cpagarwal0558f3', 0, 6, 'RCT\nIMPLANTS\nORTHODONTIC TREATMENT', 0, 0, 0),
 (254, 'Dr ATUL AGGARWAL', '9887677927', '', 'atul927', '6eb72bc84b3d8571643cd1e0ddf29889', 'FAMILY DENTAL CARE\n2 C 10 JAWHAR NAGAR\nBEH SIHAG HOSPITAL\nSRIGANGANAGAR', '2458', 0, '0000-00-00 00:00:00', 78, 1, 1, 0, 1, 'DR ATUL AGGARWAL', '9887677927', 'atul9276eb72', 0, 6, 'ULTRA SONIC RCT\nALL TYPE OF DENTAL TREATMENT', 0, 0, 0),
-(255, 'YUMMY ROLLS', '9314111555', '', 'yummy555', 'adbc1152d133d807f28a78aaaaaf5f9c', '15-P BLOCK ', '1809', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'YUMMY ROLLS', '9314111555', 'yummy555adbc1', 0, 6, 'YUMMY ROLLS\n★ CHICKEN BURGER\n◆ CHEESY CHICKEN BURGAR\n\n★ CHEESY CHICKEN PIZZA\n◆ CHICKEN PIZZA\n\n★ CHICKEN CHOWMEIN\n◆ EGG CHOWMEIN\n\n★ CHICKEN GRILLED SANDWICH\n◆ CHICKEN GRILLED SANDWICH WITH CHEESE\n\n★ CHICKEN MOMO''S\n◆ FRIED CHICKEN MOMO''S\n◆ TANDOORI CHICKEN MOMO''S\n\n★ CHICKEN FRIED RICE\n◆ CHICKEN BIRYANI\n◆ RICE WITH BUTTER CHICKEN\n◆ RICE WITH CHICKEN CURRY\n\n★CHICKEN ROLL\n★ CHILLY CHICKEN ROLL\n★ CHICKEN /MUTTON SEEK ROLL\n★ BONELESS CHICKEN SNACK\n◆ CHICKEN PAKORA\n◆ CHILLY CHICKEN\n◆ JEERA CHICKEN\n◆ CHILLY SEEK KABAB\n◆ LEMON CHICKEN\n\n★ NON VEG STARTER / GRAVY CHICKEN\n\n\n', 0, 0, 0),
+(255, 'YUMMY ROLLS', '9314111555', '', 'yummy555', 'adbc1152d133d807f28a78aaaaaf5f9c', '15-P BLOCK ', '1809', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'YUMMY ROLLS', '9314111555', 'yummy555adbc1', 0, 6, 'YUMMY ROLLS\n★ CHICKEN BURGER\n◆ CHEESY CHICKEN BURGAR\n\n★ CHEESY CHICKEN PIZZA\n◆ CHICKEN PIZZA\n\n★ CHICKEN CHOWMEIN\n◆ EGG CHOWMEIN\n\n★ CHICKEN GRILLED SANDWICH\n◆ CHICKEN GRILLED SANDWICH WITH CHEESE\n\n★ CHICKEN MOMO\'S\n◆ FRIED CHICKEN MOMO\'S\n◆ TANDOORI CHICKEN MOMO\'S\n\n★ CHICKEN FRIED RICE\n◆ CHICKEN BIRYANI\n◆ RICE WITH BUTTER CHICKEN\n◆ RICE WITH CHICKEN CURRY\n\n★CHICKEN ROLL\n★ CHILLY CHICKEN ROLL\n★ CHICKEN /MUTTON SEEK ROLL\n★ BONELESS CHICKEN SNACK\n◆ CHICKEN PAKORA\n◆ CHILLY CHICKEN\n◆ JEERA CHICKEN\n◆ CHILLY SEEK KABAB\n◆ LEMON CHICKEN\n\n★ NON VEG STARTER / GRAVY CHICKEN\n\n\n', 0, 0, 0),
 (256, 'MAJESTIC BEAUTY STUDIO', '7222000979', '', 'majestic979', '0ce7f947a7a4cf7909e115eb13390b46', '25, TILAK NAGAR ,OPP TILAK NAGAR PARK', '1811', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'MAJESTIC\nBEAUTY STUDIO', '7222000979', 'majestic9790ce7', 0, 6, 'MAJESTIC BEAUTY STUDIO\n★ MEGHA BATRA\n★ DIFFERENT PACKAGE AVAILABLE\n★ FACIAL\n★ CUTTING\n★ MAKE-UP\n★ THREADING\n★ SMOOTHING\n★ REBONDING\n★ HAIR STYLING\n★ POLISHING & SPA\n', 0, 0, 8),
-(257, 'KRISPY ''N'' KRUNCHY', '9649096490', 'krispykrunchy@rediffmail.com', 'Krispy490', 'bbb16f3d5112750767570c44c0b416ce', '2-A-6 GAGAN PATH ,JAWAHAR NAGAR \nCONTACT 9649096490', '1995', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'KRISPY ''N'' KRUNCHY', '1542464490', 'Krispy49015cfa', 0, 6, 'KRISPY ''N'' KRUNCHY\n★ AC RESTAURANT\n★ PROFESSIONAL STAFF FOR EXCELLENT SERVICES\n★ QUALIFIED AND PROFESSIONAL CHEF \n★ FAST FOOD\n★ PARTY HALL\n★ INDOOR AND OUTDOOR CATERING\n★ PARKING FACILITY \n★ TAKE AWAY FACILITY\n★ HYGIENIC AND DELICIOUS FOOD\n★ BEST FOOD QUALITY   \n★ ENJOY HERE WITH\n■ INDIAN FOOD \n■ SOUTH INDIAN FOOD\n■ CHINESE FOOD\n■ TASTY & YUMMY CHAAT\n■ SHAKES AND BEVERAGE \n★★ONCE IN MONTH ENJOY MOUTHWATERING  \nRAJASTHANI FOOD DAL BATI CHURMA\n★ FAST FOOD\n■ PIZZA\n★ NAVRATRI VART SPECIAL FOOD\n★ TANDOORI DELIGHTS \n★ SNACKS\n★ BETTER AND FAST CUSTOMER SERVICE\n', 0, 0, 0),
-(258, 'NAGPAL MANGO BAR', '01542445090', '', 'nagpal90', '7c188076af0233b4acf02784d65693f6', '2-3-D PUBLIC PARK , CONTACT 9414948090', '1835', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'NAGPAL MANGO BAR ', '9414332890', 'nagpal907c188', 0, 6, 'NAGPAL MANGO BAR\n◆ AS FRESH AS FLOWER\n★ SANDWICHES\n★ SOUTH INDIAN\n★ SOUPS\n★ PIZZAS\n★ SHAKES\n★ BURGERS\n★ ICE CREAM\n★ ICE CREAM WITH SODA\n★ SHAKES WITH ICE CREAM\n★ SPECIAL FOR FAST\n★ SNACKS\n★ COLD N HOT\n★ CHINESE''S\n', 0, 0, 0),
+(257, 'KRISPY \'N\' KRUNCHY', '9649096490', 'krispykrunchy@rediffmail.com', 'Krispy490', 'bbb16f3d5112750767570c44c0b416ce', '2-A-6 GAGAN PATH ,JAWAHAR NAGAR \nCONTACT 9649096490', '1995', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'KRISPY \'N\' KRUNCHY', '1542464490', 'Krispy49015cfa', 0, 6, 'KRISPY \'N\' KRUNCHY\n★ AC RESTAURANT\n★ PROFESSIONAL STAFF FOR EXCELLENT SERVICES\n★ QUALIFIED AND PROFESSIONAL CHEF \n★ FAST FOOD\n★ PARTY HALL\n★ INDOOR AND OUTDOOR CATERING\n★ PARKING FACILITY \n★ TAKE AWAY FACILITY\n★ HYGIENIC AND DELICIOUS FOOD\n★ BEST FOOD QUALITY   \n★ ENJOY HERE WITH\n■ INDIAN FOOD \n■ SOUTH INDIAN FOOD\n■ CHINESE FOOD\n■ TASTY & YUMMY CHAAT\n■ SHAKES AND BEVERAGE \n★★ONCE IN MONTH ENJOY MOUTHWATERING  \nRAJASTHANI FOOD DAL BATI CHURMA\n★ FAST FOOD\n■ PIZZA\n★ NAVRATRI VART SPECIAL FOOD\n★ TANDOORI DELIGHTS \n★ SNACKS\n★ BETTER AND FAST CUSTOMER SERVICE\n', 0, 0, 0),
+(258, 'NAGPAL MANGO BAR', '01542445090', '', 'nagpal90', '7c188076af0233b4acf02784d65693f6', '2-3-D PUBLIC PARK , CONTACT 9414948090', '1835', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'NAGPAL MANGO BAR ', '9414332890', 'nagpal907c188', 0, 6, 'NAGPAL MANGO BAR\n◆ AS FRESH AS FLOWER\n★ SANDWICHES\n★ SOUTH INDIAN\n★ SOUPS\n★ PIZZAS\n★ SHAKES\n★ BURGERS\n★ ICE CREAM\n★ ICE CREAM WITH SODA\n★ SHAKES WITH ICE CREAM\n★ SPECIAL FOR FAST\n★ SNACKS\n★ COLD N HOT\n★ CHINESE\'S\n', 0, 0, 0),
 (259, 'FRENCH BACKERS', '9915775230', '', 'french555', '36f6cd5befbd1d5e4b4638f79244ee60', '6-B RAVINDRAPATH, NEAR GOLE\n BAZAR ,CONTACT 9915775230,7355530429', '1837', 0, '0000-00-00 00:00:00', 55, 1, 1, 0, 1, 'FRENCH BAKERS', '9915775230', 'french555f7bd4', 0, 6, '  \nFRENCH BAKERS \n■ MUKESH KUMAR\n★ DRY CAKE\n◆ HONEY ALMOND\n CAKE\n       \n◆ DOUBLE CHOCOLATE CAKE\n◆ FRUIT CAKE\n◆ CHOCOLATE CAKE\n◆  CHOCOLATE BRAWANI CAKE\n◆ DAT AND Wolnut CAKE\n\n★ SLICE DRY CAKE\n★ CHEESE CAKE\n◆ MANGO CHEESE CAKE\n◆ MIX FRUIT CHEESE CAKE\n◆ STRAWBERRY CHEESE CAKE\n◆ CHOCOLATE CHEESE CAKE\n◆ BLACK FOREST CHEESE CAKE\n◆ PINEAPPLE CHEESE CAKE \n◆ BLACK CURRENT CHEESE CAKE\n◆ BLUEBERRY CHEESE CAKE\n\n★ PASTRIES\n★ MUFFINS\n★ SNACKS\n◆ LAVASA\n◆ PIZZA SLICE\n◆ AMERICAN TOSS\n◆ ITALIAN ROLL\n◆ AALOO KULCHA\n◆ PASTA PATTIES\n◆ PANEER PATTIES\n◆ PASTA TRIANGLE\n\n★EXOTIC CHOCOLATE\n★ DESIGNER CAKE\n★ WEDDING AND PARTY CATERING\n★ EXCLUSIVE WEDDING BOXES\n★ MULTI CUISINE SNACKS\n★ PUDDING AND CONFECTIONERY\n★ COOKIES AND BISCUITS\n★ COFFEE ,SNACKS STALLS ETC.\n\n★ BY CHEF MUKESH KUMAR\n◆ B.Sc  HOSPITALITY AND TOURISM MANAGEMENT \n•job taj hotel in Delhi year 2013\ntwo year job cordia group of institution in Chandigarh post bakery AP', 0, 0, 0),
 (260, 'ZAMINDARA TRAVELS', '01542486897', '', 'ZAMINDARA154', '6c691f77697c05f6cc38f9a7e3875f27', 'KODA CHOWK,NEAR ADARSH TALKIES PULIA,CONTACT 01542486897,01545120338', '1844', 0, '0000-00-00 00:00:00', 47, 1, 1, 0, 1, 'ZAMINDARA TRAVELS', '1545120338', 'ZAMINDARA154d54', 0, 6, 'ZAMINDARA TRAVELS\n■ AC LUXURY BUS\n★ SRIGANGANAGAR TO JAIPUR (AC)\n◆8:45 PM DEPARTURE FROM KODA      CHOWK\n◆ UPPER & LOWER SLEEPER 600/-\n\n★ SRIGANGANAGAR TO DELHI (AC)\n     VIA ABOHAR\n◆ 8:00 PM FROM KODA CHOWK\n◆ UPPER AND LOWER SLEEPER 600/-\n\n★ SRIGANGANAGAR TO DELHI (AC)\n     VIA HANUMANGARH\n◆ 8:15 FROM KODA CHOWK\n◆ UPPER &  LOWER SLEEPER 600/-\n\n★ SRIGANGANAGAR TO JODHPUR (AC)\n◆ 8:00 PM FROM KODA CHOWK\n◆ UPPER & LOWER SLEEPER 600/-\n◆ SEAT 400/-\n\n★ SRIGANGANAGAR TO JAMMU\n◆ NON AC\n◆ 6:00 PM FROM KODA CHOWK\n◆ SLEEPER 600/-\n◆ SEAT 500/-\n\nFACILITY:\n★ PILLOW\n★ BED SHEET\n★ BLANKET\n★ MOBILE CHARGING POINT\n\n★ CARGO FACILITY AVAILABLE FOR DELHI ,JAIPUR,JODHPUR\n\n★ JAIPUR TO SRIGANGANAGAR\n◆ 9:15 PM FROM OM TOWER,MI ROAD NEAR POLO VICTORY\n\n★ DELHI TO SRIGANGANAGAR\n◆ 9:00 PM FROM OLD DELHI ,FATHEPURI ,SHOP NO 17\n◆ 9:30 PM FROM OLD DELHI\n,FATHEPURI ,SHOP NO 17\n\n★ JODHPUR TO SRIGANGANAGAR \n◆ 8:30 PM FROM LAXMI TRAVELS KALPATRU\n\n★ JAMMU TO SRIGANGANAGAR\n◆ 6:00 PM FROM BC ROAD ,OUTSIDE MAIN BUS STAND\n\n★ HAPPY JOURNEY\n\n', 0, 0, 0),
 (261, 'NOOR CATERERS', '9828327031', 'vickybhavjeet@gmail.com', 'noor031', 'd04ab0936b0702ab87d7c5e36594a3d2', '104-P BLOCK DIGGI ,CONTACT 9828327031,9983384888,OFFICE : 7665050507', '2103', 0, '0000-00-00 00:00:00', 66, 1, 1, 0, 1, 'NOOR CATERERS \n& EVENT ORGANIZERS', '9983384888', 'noor031d04ab', 0, 6, 'NOOR CATERERS & EVENT ORGANIZERS \n★ INDOOR AND OUTDOOR CATERING\n★ MARRIAGE PARTY\n★ANNIVERSARY PARTY\n★ BIRTHDAY PARTY\n★ LADIES SANGEET\n★ ALL KIND OF OCCASIONS \n★ CONTACT US FOR ANY EVENT ORGANIZATION LIKE MARRIAGE,ANNIVERSARY,BIRTHDAY,\nKITTY PARTY ETC.\n\n■ EVENT ORGANIZERS \n◆ VICKY DHILLON & ROCKY BRAR\n', 0, 0, 0),
 (262, 'jaadu', '9536525380', 'jaadu@jhappi.com', 'jaaduuser', '2138cb5b0302e84382dd9b3677576b24', 'ask San me', '1866', 0, '0000-00-00 00:00:00', 47, 1, 0, 0, 1, 'jaadu ki jhappi', '9563256385', 'jaaduuser6e4da', 0, 6, 'jaded ki jhappi date main.', 0, 0, 0),
-(263, 'YUMMY ROLLS.', '9784949005', '', 'yummy005', 'b7267e2b6989d28320499435c04c4e69', '15-P BLOCK, CONTACT 9314111555', '1870', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'YUMMY ROLLS', '9784949005', 'yummy005b7267', 0, 6, 'YUMMY ROLLS \n★ KATHI ROLLS\n★ MOMO''S\n★ BURGER\n★ PIZZA\n★ SHAKES\n', 0, 0, 0),
-(264, 'SATKAR''S', '94149747788', '', 'satkar88', 'b7a99a39f72b3a6b0cb28cde038e2816', '136 SUKHARIA SHOPPING CENTRE CONTACT 9414947788', '1972', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'SATKAR''S\nDAY "N" NIGHT FOOD', '9782566067', 'satkar88b7a99', 0, 6, 'SATKAR''S\nDAY "N"NIGHT FOOD\n★ PURE VEG\n★ PURE BITE\n★ FAST FOOD\n★ LUNCH\n★ BREAKFAST\n★ DINNER\n★ PARTY HALL\n★ INDOOR AND OUTDOOR CATERING FOR ALL KIND OF OCCASION\n◆ BIRTHDAY\n◆ ANNIVERSARY\n◆ MARRIAGE\n★ FREE HOME DELIVERY ', 0, 0, 0),
-(265, 'HOTEL CITY SHINE', '9782534614', 'hotelcityshine@gmail.com', 'cityshine614', '6bf025d72a7e84a9b29e867847d603de', 'CITY MALL ,SUKHARIA CIRCLE\nCONTACT 01542478344,01542479344,9549427222', '1909', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'HOTEL CITY SHINE', '1542479344', 'cityshine6146bf', 0, 6, 'HOTEL CITY SHINE\nMAKE YOUR SELF AT HOME IN THIS COMFORTABLE\n★ DINE ''N'' DANCE RESTAURANT\n     This is the beat of my heart\n\n★ FUN AND FOOD\n     Food court and Game zone\n\n★ DISCOTHÈQUE\n\n★ CONFERENCE HALL \n\n★ TERIFF PLAN\n■ STANDARD -1800/-\n■ DELUXE -2300/-\n■ EXTRA PERSON 300/-\n★ TAX APPLICABLE\n', 0, 0, 0),
-(266, 'K S FOOD MART', '9414087409', 'ksfoodmart@yahoo.com', 'ksfm409', '01af28f0ec813d78c5228a166138bfcd', '2-A/2 SUKHADIA NAGAR ,NEAR IDBI BANK,CONTACT 9414087409', '1885', 0, '0000-00-00 00:00:00', 53, 1, 1, 0, 1, 'K S FOOD MART\nA Unit of Kesar Singh''s Food Mart Pvt. Ltd.\nkesarfoodmart.com', '9829597566', 'ksfm40901af2', 0, 6, '★K S FOOD MART\nQUALITY IS OUR SPECIALITY\n★ HOME DELIVERY FACILITY AVAILABLE\n★ FULLY AC \n★ ALL KIND OF DAILY ITEMS AVAILABLE\n■ SUGAR AND LIKES\n■ CEREALS AND FLOURS\n■ PULSE\n■ MASALA\n■ WASHING AND CLEANING\n■ LIQUID DETERGENT \n■ GHEE AND COOKING MEDIA\n■ COSMETIC\n■ PICKLE, CHUTNEY AND SAUCES\n■ FUN FOODS\n■ CHINESE & THAI\n■ INSTANT FOOD AND SOUPS\n■ FOR ICE CREAM ,CAKE & BACKING ITEMS\n■ READYMADE SPICE\n■ DRY FRUITS\n■ DAILY NEED\n■ TIN STUFF\n■ SAVOURY AND DAILY PRODUCTS\n■ FOR BABIES \n■ CHILDREN FAVOURITE\n■ FRYING ARTICLE\n■ SUMMER SPECIAL\n■ WINTER TONIC\n■ PRESERVATIVES\n■ POOJA & HAWAN ITEM\n■ AYURVEDIC ITEMS\n■ COLD DRINKS, JUICE,ICE CREAM,WATER,\n*IMPORTED ITEMS LIKE CHOCOLATE,JUICES,FRUIT BAKERY,TOYS,PLASTIC CROCKERY,STATIONERY .\n\n\n ', 0, 0, 0),
+(263, 'YUMMY ROLLS.', '9784949005', '', 'yummy005', 'b7267e2b6989d28320499435c04c4e69', '15-P BLOCK, CONTACT 9314111555', '1870', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'YUMMY ROLLS', '9784949005', 'yummy005b7267', 0, 6, 'YUMMY ROLLS \n★ KATHI ROLLS\n★ MOMO\'S\n★ BURGER\n★ PIZZA\n★ SHAKES\n', 0, 0, 0),
+(264, 'SATKAR\'S', '94149747788', '', 'satkar88', 'b7a99a39f72b3a6b0cb28cde038e2816', '136 SUKHARIA SHOPPING CENTRE CONTACT 9414947788', '1972', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'SATKAR\'S\nDAY \"N\" NIGHT FOOD', '9782566067', 'satkar88b7a99', 0, 6, 'SATKAR\'S\nDAY \"N\"NIGHT FOOD\n★ PURE VEG\n★ PURE BITE\n★ FAST FOOD\n★ LUNCH\n★ BREAKFAST\n★ DINNER\n★ PARTY HALL\n★ INDOOR AND OUTDOOR CATERING FOR ALL KIND OF OCCASION\n◆ BIRTHDAY\n◆ ANNIVERSARY\n◆ MARRIAGE\n★ FREE HOME DELIVERY ', 0, 0, 0),
+(265, 'HOTEL CITY SHINE', '9782534614', 'hotelcityshine@gmail.com', 'cityshine614', '6bf025d72a7e84a9b29e867847d603de', 'CITY MALL ,SUKHARIA CIRCLE\nCONTACT 01542478344,01542479344,9549427222', '1909', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'HOTEL CITY SHINE', '1542479344', 'cityshine6146bf', 0, 6, 'HOTEL CITY SHINE\nMAKE YOUR SELF AT HOME IN THIS COMFORTABLE\n★ DINE \'N\' DANCE RESTAURANT\n     This is the beat of my heart\n\n★ FUN AND FOOD\n     Food court and Game zone\n\n★ DISCOTHÈQUE\n\n★ CONFERENCE HALL \n\n★ TERIFF PLAN\n■ STANDARD -1800/-\n■ DELUXE -2300/-\n■ EXTRA PERSON 300/-\n★ TAX APPLICABLE\n', 0, 0, 0),
+(266, 'K S FOOD MART', '9414087409', 'ksfoodmart@yahoo.com', 'ksfm409', '01af28f0ec813d78c5228a166138bfcd', '2-A/2 SUKHADIA NAGAR ,NEAR IDBI BANK,CONTACT 9414087409', '1885', 0, '0000-00-00 00:00:00', 53, 1, 1, 0, 1, 'K S FOOD MART\nA Unit of Kesar Singh\'s Food Mart Pvt. Ltd.\nkesarfoodmart.com', '9829597566', 'ksfm40901af2', 0, 6, '★K S FOOD MART\nQUALITY IS OUR SPECIALITY\n★ HOME DELIVERY FACILITY AVAILABLE\n★ FULLY AC \n★ ALL KIND OF DAILY ITEMS AVAILABLE\n■ SUGAR AND LIKES\n■ CEREALS AND FLOURS\n■ PULSE\n■ MASALA\n■ WASHING AND CLEANING\n■ LIQUID DETERGENT \n■ GHEE AND COOKING MEDIA\n■ COSMETIC\n■ PICKLE, CHUTNEY AND SAUCES\n■ FUN FOODS\n■ CHINESE & THAI\n■ INSTANT FOOD AND SOUPS\n■ FOR ICE CREAM ,CAKE & BACKING ITEMS\n■ READYMADE SPICE\n■ DRY FRUITS\n■ DAILY NEED\n■ TIN STUFF\n■ SAVOURY AND DAILY PRODUCTS\n■ FOR BABIES \n■ CHILDREN FAVOURITE\n■ FRYING ARTICLE\n■ SUMMER SPECIAL\n■ WINTER TONIC\n■ PRESERVATIVES\n■ POOJA & HAWAN ITEM\n■ AYURVEDIC ITEMS\n■ COLD DRINKS, JUICE,ICE CREAM,WATER,\n*IMPORTED ITEMS LIKE CHOCOLATE,JUICES,FRUIT BAKERY,TOYS,PLASTIC CROCKERY,STATIONERY .\n\n\n ', 0, 0, 0),
 (267, 'BHARAT BAKERY AND CAKE HOUSE', '9982743985', '', 'bharat985', '60ded825e7b45c3c6b3e8d5cdbdbc4ec', '24-A PUBLIC PARK,OPP AMRIT MISTHAN\nBRANCH : 2-D-1 JAWAHAR NAGAR\nCONTACT 8387874546', '1889', 0, '0000-00-00 00:00:00', 55, 1, 0, 0, 1, 'BHARAT BACKERY & CAKE HOUSE', '9982743985', 'bharat98560ded', 0, 6, 'BHARAT BAKERY &  CAKE HOUSE\n★ CONTACT BOOKING FOR MARRIAGE AND PARTY', 0, 0, 0),
 (268, 'SHE BEAUTY CLINIC & SPA', '9928370243', '', 'shebeauty7822', 'ad5253acf63543524c53b1c9e3f1ea23', '71-H BLOCK , CONTACT 7822-93-7822', '1894', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'SHE BEAUTY CLINIC & SPA', '9928370243', 'shebeauty7822ad', 0, 6, 'SHE BEAUTY CLINIC & SPA\n\n BRIDALS\n FACIALS\n PRE NUPTIAL            TREATMENTS\nPEDICURE , MANICURE\nwww.shebeautyclinic.in', 0, 0, 9),
 (269, 'OCEAN EASE', '8003009393', '', 'ocean800', 'f912662b95d760bf1eaf0eb890faebf9', 'PLOT NO 77, F BLOCK\nCONTACT 8003009393,01542474477', '1898', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'OCEAN EASE\nA PROFESSIONAL HAIR & BEAUTY & INSTITUTE', '8003009494', 'ocean800f9126', 0, 6, ' OCEAN EASE\n★  A PROFESSIONAL HAIR & BEAUTY & INSTITUTE \n★ 50% OFF ON TUESDAY,THURSDAY,SATURDAY  ', 0, 0, 10),
@@ -13464,16 +12962,16 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (271, 'KHALSA TOUR & TRAVEL', '01542481274', '', 'khalsa274', '5cc68729f1a181f126a87716bd3fe072', '10-C RAVINDRA PATH ,NEAR SHIVALYA\nCONTACT 01542481274,9414088274', '1904', 0, '0000-00-00 00:00:00', 46, 1, 1, 0, 1, 'KHALSA TOUR & TRAVELS', '1542483274', 'khalsa2745cc68', 0, 6, 'KHALSA TOUR & TRAVELS\nCONTACT FOR\n★ INNOVA\n★ SCORPIO\n★ INDICO\n★ CRUISER\n★ WINGER\n★ TRAVLLER\n\n\n◆ SHERRY - 9414088274', 0, 0, 0),
 (272, 'TANDOORI NIGHTS', '9352700011', '', 'tnights11', '02f69b38810e4909de767f7325923a34', '160 SUKHARIA SHOPPING CENTER,OPP. VODAFONE STORE', '1913', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'TANDOORI NIGHTS', '9352700011', 'tnights1102f69', 0, 6, 'TANDOORI NIGHTS\n★ BEST NON VEG RESTAURANT \n★ PROFESSIONAL CHEF\n★ QUALIFIED STAFF FOR BETTER SERVICE\n★ TAKE AWAY FACILITY\n★ GOOD PARKING FACILITY\n★ DELICIOUS HYGIENIC FOOD \n■ BUTTER CHICKEN\n■CHICKEN PAKORA\n■ FISH\n■ TANDOORI CHICKEN\n■ AND MANY MORE MOUTHWATERING YUMMY CHICKEN RECIPE . \n■ REASONABLE PRICE\n■ BETTER AND FAST SERVICE \n\n\n\n★ WAH JI WAH\n■ AMRITSARI KULCHE CHOLE \n● NOW YOU CAN ENJOY AMARITSARI TASTE AT SRIGANGANAGAR, WITH SUPER TASTE ENJOY AMARITSARI CHOLE KULCHE ,AND WE ENSURE WITH OUR QUALITY AND SERVICE  YOU WILL ALSO  SAY WAH JI WAH\n29 PUBLIC PARK ,NEAR SBBJ BRANCH & ADITYA NRSING HOME', 0, 0, 0),
 (273, 'LAZEEZ', '9414318301', '', 'lazeez01', '02f6c8ee19d1316361f7a0d573b573bd', 'S-55 TRACTOR MARKET ,BEHIND HANUMAN JI KI MURTI, SURATGARH ROAD ,CONTACT 9414318301', '1964', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'LAZEEZ\nINDIAN RESTAURANT', '9461078602', 'lazeez0102f6c', 0, 6, '★ LAZEEZ,INDIAN RESTAURANT\n \n★ SPECIALIST OF FISH PAKODA & TANDOORI FISH\n★ CATERING FACILITY AVAILABLE FOR ALL KIND OF FAMILY OCCASION.\n★ PROFESSIONAL CHEF FOR BEST QUALITY FOOD\n★ HYGIENIC \n★ AC RESTAURANT\n  \n\n', 0, 0, 0),
-(274, 'BRAR,S FOOD', '9024324324', '', 'brar324', 'b980b5db8c2ffc9961ebbba0051cdf48', 'A-9 SECTOR 17,HANUMANGARH ROAD ,CONTACT 9261420009', '1924', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'BRAR''S FOOD', '9024324324', 'brar324b980b', 0, 6, ' BRAR''S FOOD\n★ QUALITY AND TASTY NON VEG\n★ QUALIFIED AND PROFESSIONAL CHEF\n★ HYGIENIC\n★ AC RESTAURANT\n★ TAKE AWAY FACILITY\n\n★ AFGANI CHICKEN\n★ TANDOORI CHICKEN\n★ CHILLI CHICKEN\n★ CHICKEN TIKKA\n★ JIRA TANDOORI\n★ CHICKEN KARI\n★ BUTTER CHICKEN\n★ KADAI CHCKEN\n★ CHICKEN MASALA\n★ ISTU CHICKEN\n★ TANDOORI FISH\n★ JIRA CHICKEN\n \n', 0, 0, 0),
+(274, 'BRAR,S FOOD', '9024324324', '', 'brar324', 'b980b5db8c2ffc9961ebbba0051cdf48', 'A-9 SECTOR 17,HANUMANGARH ROAD ,CONTACT 9261420009', '1924', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'BRAR\'S FOOD', '9024324324', 'brar324b980b', 0, 6, ' BRAR\'S FOOD\n★ QUALITY AND TASTY NON VEG\n★ QUALIFIED AND PROFESSIONAL CHEF\n★ HYGIENIC\n★ AC RESTAURANT\n★ TAKE AWAY FACILITY\n\n★ AFGANI CHICKEN\n★ TANDOORI CHICKEN\n★ CHILLI CHICKEN\n★ CHICKEN TIKKA\n★ JIRA TANDOORI\n★ CHICKEN KARI\n★ BUTTER CHICKEN\n★ KADAI CHCKEN\n★ CHICKEN MASALA\n★ ISTU CHICKEN\n★ TANDOORI FISH\n★ JIRA CHICKEN\n \n', 0, 0, 0),
 (275, 'RAJU CHICKEN CENTER', '9314184650', '', 'raju650', 'a80563e98c4007e507ed763e36625c4e', 'NEAR SHIV CHOWK ,OPP CANERA BANK,NEW DHAN MANDI,CONTACT 9314184650,', '1963', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'RAJU CHICKEN CENTER ', '9314184650', 'raju650a8056', 0, 6, '★ RAJU CHICKEN CENTER \n★ YUMMY AND LAZEEZ CHICKEN\n★ BEST PROFESSIONAL CHEF\n★ TAKE AWAY ,PACKING FACKILITY\n★ CONTACT FOR CATERING IN MARRIAGE PARTY ,KITTY PARTY AND ALL FAMILY OCCASION \n\n★  BUTTER CHICKEN\n★ CHILLI CHICKEN\n★ AFGANI CHICKEN\n★ JIRA TANDOORI\n★ CHICKEN TIKKA\n★ CHICKEN MASALA\n★ KADAI CHICKEN\n★ TANDOORI MACHI\n★ TANDOORI CHICKEN', 0, 0, 0),
-(276, 'BLACK PANTHER', '01542466175', 'booking@hotelblackpanther.com\ninfo@hotelblackpanther.com', 'blackp175', '7e665c5aab5f6528d049c8b9d18accec', 'CGR MALL ,7th FLOOR, CONTACT 9680064242,9610973638', '1933', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'BLACK PANTHER\nBAR ★ BANQUET ★ RESTAURANT \nwww.hotelblackpanther.com', '1542463263', 'blackp1757e665', 0, 6, 'HOTEL BLACK PANTHER\n★ BAR\n★ BANQUET \n★ RESTAURANT\n★ VEG. AND NON VEG. FOOD\n★ KITTY PARTY HALL\n★ MARRIAGE HALL\n★ CONFERENCE HALL \n★ PARTY HALL\n★ PROFESSIONAL & QUALIFIED STAFF FOR EXCELLENT SERVICES\n★ PROFESSIONAL CHEF FOR QUALITY & HYGIENIC FOOD  \n★ WI-FI INTERNET FACILITY\n★ PARKING FACILITY\n\n\n★ TARIFF \n■ SUPER DELUXE ROOM-2100/-(SINGLE OCCUPANCY\n■ SUPER DELUXE ROOM -2500/- (DOUBLE OCCUPANCY)\n■ SUIT ROOM -3500/-\n■ BLACK PANTHER SPECIAL SUIT-4000/-\n● TAXES APPLICABLE\n■ INCLUSIVE COMPLIMENTARY BUFFET BREAKFAST (7:15 AM TO 10:00 AM)\n■ CHECK IN / CHECK OUT 24 HRS\n\n★ ROOM FACILITY\n■ LAUNDRY SERVICE \n■ POWER GENERATION BACKUP\n■ COMPLIMENTARY WI-FI\n■ MINI BAR\n■ TEA -COFFEE MAKER \n■ COMPLIMENTARY NEWS PAPER & TOILET KIT\n■ STUDY TABLE WITH MIRROR\n■ COMPLIMENTARY GYM\n\n\n', 0, 0, 0);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(276, 'BLACK PANTHER', '01542466175', 'booking@hotelblackpanther.com\ninfo@hotelblackpanther.com', 'blackp175', '7e665c5aab5f6528d049c8b9d18accec', 'CGR MALL ,7th FLOOR, CONTACT 9680064242,9610973638', '1933', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'BLACK PANTHER\nBAR ★ BANQUET ★ RESTAURANT \nwww.hotelblackpanther.com', '1542463263', 'blackp1757e665', 0, 6, 'HOTEL BLACK PANTHER\n★ BAR\n★ BANQUET \n★ RESTAURANT\n★ VEG. AND NON VEG. FOOD\n★ KITTY PARTY HALL\n★ MARRIAGE HALL\n★ CONFERENCE HALL \n★ PARTY HALL\n★ PROFESSIONAL & QUALIFIED STAFF FOR EXCELLENT SERVICES\n★ PROFESSIONAL CHEF FOR QUALITY & HYGIENIC FOOD  \n★ WI-FI INTERNET FACILITY\n★ PARKING FACILITY\n\n\n★ TARIFF \n■ SUPER DELUXE ROOM-2100/-(SINGLE OCCUPANCY\n■ SUPER DELUXE ROOM -2500/- (DOUBLE OCCUPANCY)\n■ SUIT ROOM -3500/-\n■ BLACK PANTHER SPECIAL SUIT-4000/-\n● TAXES APPLICABLE\n■ INCLUSIVE COMPLIMENTARY BUFFET BREAKFAST (7:15 AM TO 10:00 AM)\n■ CHECK IN / CHECK OUT 24 HRS\n\n★ ROOM FACILITY\n■ LAUNDRY SERVICE \n■ POWER GENERATION BACKUP\n■ COMPLIMENTARY WI-FI\n■ MINI BAR\n■ TEA -COFFEE MAKER \n■ COMPLIMENTARY NEWS PAPER & TOILET KIT\n■ STUDY TABLE WITH MIRROR\n■ COMPLIMENTARY GYM\n\n\n', 0, 0, 0),
 (277, 'R.D. BANQUET', '9414318389', 'karan.makkar80@gmail.com', 'rd00022', '212c71ecb5faf57fa7641e1311a33d33', 'NEAR RAM SHARNAM ASHRAM , BEHIND BALAJI DHAM HANUMANGARH ROAD,CONTACT-9829400022', '2016', 0, '0000-00-00 00:00:00', 67, 1, 1, 0, 1, 'R.D.BANQUET', '9829400022', 'rd00022212c7', 0, 6, '\n★ R.D. BANQUET HALL WITH ITS ELEGANT INTERIOR  DESIGN, IS PERFECT FOR WEDDING RECEPTION ,ANNIVERSARY PARTIES OR COMPANY CONFERENCE. \n★ THE NEWLY REMODELED BANQUET HALL ACCOMMODATION UP TO 100 TO 800 PEOPLE.\n★ PERMANENT STAGE \n★ FULLY A.C. HALL\n★ ATTRACTIVE LAWN\n★ A.C. ROOM \n★ INDOOR AND OUTDOOR CATERING FACILITY   AVAILABLE\n', 0, 0, 0),
 (278, 'FOOD COURT', '9509959957', '', 'foodcourt9957', 'b68a970894ee563e33727da3d786e1bd', 'CGR MALL ,4th FLOOR', '1983', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'FOOD COURT\nPure Veg.', '0000000000', 'foodcourt9957b6', 0, 6, '★FOOD COURT\n★ PURE VEGETARIAN RESTAURANT\n★ DELICIOUS AND TASTY FOOD\n★ PROFESSIONAL STAFF\n★ QUALIFIED AND PROFESSIONAL CHEF \n★ FREE 4G-WI-FI\n★ HYGIENIC FOOD\n★ HERE YOU CAN ENJOY WITH\n■ INDIAN FOOD\n■ SOUTH INDIAN FOOD\n■ CHINESE FOOD\n■ FAST FOOD\n■ DESERT\n■ CHAAT\n■ SHAKES AND BEVERAGE \n■ TANDOORI\n\n★ PARKING FACILITY\n★ PACKING FACILITY\n★ AC RESTAURANT \n★ GAME ZONE \n★ ENJOY UNLIMITIED FREE 4G-WI-FI\n\n\n ', 0, 0, 0),
 (279, 'ANNPURNA ', '01542441444', '', 'balaji444', 'd3b028337d0e383bd57ec0dc34ee7a2d', '20-A ,RAVINDRA PATH ,NEAR GOLE BAZAR ,CONTACT 9985371111', '1946', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'SHREE BALAJI ANNPURNA\nPURE VEG HOTEL', '9414246367', 'balaji444d3b02', 0, 6, '★ SHREE BALAJI ANNPURNA \n★ PURE VEG. RESTAURANT \n★ OUTDOOR CATERING FACILITY AVAILABLE FOR ALL FAMILY OCCASION\n★ AC RESTAURANT\n★ PROFESSIONAL QUALIFIED STAFF\n★ PROFESSIONAL CHEF\n★ BEST QUALITY& HYGIENIC FOOD  \n★ PACKING FACILITY AVAILABLE\n★ BREAKFAST\n★ LUNCH \n★ DINNER\n★ ANNPURNA VART SPECIAL\n★ SPECIAL THALI \n★ PUNABI KULFI\n★ MALAI PANEER\n★ BANANA SHAKE \n★ COLD COFFEE\n★ LASSI\n★ MANGO SHAKE \n★ FRENCH FRY\n★ FRUIT CREAM\n★ DAHI BALLAE\n★ SABUDANA KHICDA \n\n\n', 0, 0, 0),
-(280, 'MEENAKSHI SETIA AROVANSH GIRLS COLLEGE', '1542462405', 'agcsgnr12@gmail.com', 'arorvansh405', '622da06bfb1429353c2f0e4f542ddb87', 'TEHSIL ROAD,JAWAHAR NAGAR CONTACT 01542462405', '1953', 0, '0000-00-00 00:00:00', 26, 1, 1, 0, 1, 'MEENAKSHI SETIA\nARORVANSH GIRLS COLLEGE', '9413562405', 'arorvansh405622', 0, 6, '★ MEENAKSHI SETIA ARORVANSH GIRLS COLLEGE\n★ www.msagc.in\n★ ADMISSION OPEN FOR\n■ B.COM (HINDI & ENGLISH MEDIUM)\n■ B.A. ( HINDI & ENGLISH MEDIUM)\n■ PREPARATION OF COMPETITIVE EXAM LIKE \n● SSC \n● BANKING\n● UPSC & MANY MORE\n● SPORTS FACILITY\n● QUALIFIED TEACHERS\n● CULTURAL ACTIVITY\n● EDUCATIONAL ENVIRONMENT ', 0, 0, 0),
+(280, 'MEENAKSHI SETIA AROVANSH GIRLS COLLEGE', '1542462405', 'agcsgnr12@gmail.com', 'arorvansh405', '622da06bfb1429353c2f0e4f542ddb87', 'TEHSIL ROAD,JAWAHAR NAGAR CONTACT 01542462405', '1953', 0, '0000-00-00 00:00:00', 26, 1, 1, 0, 1, 'MEENAKSHI SETIA\nARORVANSH GIRLS COLLEGE', '9413562405', 'arorvansh405622', 0, 6, '★ MEENAKSHI SETIA ARORVANSH GIRLS COLLEGE\n★ www.msagc.in\n★ ADMISSION OPEN FOR\n■ B.COM (HINDI & ENGLISH MEDIUM)\n■ B.A. ( HINDI & ENGLISH MEDIUM)\n■ PREPARATION OF COMPETITIVE EXAM LIKE \n● SSC \n● BANKING\n● UPSC & MANY MORE\n● SPORTS FACILITY\n● QUALIFIED TEACHERS\n● CULTURAL ACTIVITY\n● EDUCATIONAL ENVIRONMENT ', 0, 0, 0);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
 (281, 'WAP SYSTEM', '1542475070', 'wapsystem@yahoo.in', 'waps070', '5b6b26681711e30f2dc8dd88f9585b1a', '238-HOMELAND,FIRST FLOOR SURATGARH ROAD CONTACT 01542475070,9680895258,9414246126', '1961', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'WAP SYSTEM', '9414432070', 'waps0705b6b2', 0, 6, '★ WAP SYSTEM\n★ RS-CIT COURSE\n★ GOLDEN OPPORTUNITY FOR ESTABLISH NEW RKCL CENTER AT SRIGANGANAGAR ,HANUMANGARH & BIKANER\n★ APPLICATION FORM AVAILABLE ON www.rkcl.in/ncr\n★ FOR EXCELLENT SERVICES CONTACT TO WAP SYSTEM\n★ RS-CIT COURSE IS STRONG STEP TOWARD FUTURE\n★ RS-CIT COURSE IS BASIC NEED FOR GOVT JOB\n★ COMPUTER LAB\n★ QUALIFIED ACADEMIC TEACHER\n★ AC CLASS ROOM   \n\n', 0, 0, 13),
-(282, 'SUMEGHA', '9413517695', 'sumeghabonding@gmail.com', 'sumegha95', 'd19f0627a4e59b32037716e1f011a668', '1-G-33 JAWAHAR NAGAR ,NEAR ARORVANSH SCHOOL, Contact -9929288865', '1984', 0, '0000-00-00 00:00:00', 70, 1, 1, 0, 1, 'SUMEGHA\nA Unique boutique for today''s women', '9413517695', 'sumegha95d19f0', 0, 6, '★  SUMEGHA\n● A UNIQUE BOUTIQUE FOR TODAY''S WOMEN\n★ OFFER UNIQUE APPAREL ,AND ACCESSORIES  TO WOMEN WHO VALUE VERSATILITY,STYLE,AND COMFORT. SUMEGHA PRIDE ITSELF ON PROVIDING EXCELLENT CUSTOMER SERVICE. THERE IS ALWAYS A FRIENDLY FACE TO GREET YOU AT THE DOOR AND HELP YOU FIND WHATEVER YOU NEED. WE HAVE WOMEN''S CLOTHING AND ACCESSORIES TO FIT ALL BUDGET WHILE MAINTAINING QUALITY. \n★ ONE STOP SHOP\n★ OUR AIM TO MAKE YOU BEAUTIFUL LOOK AND FEEL GOOD\n★ SUMEGHA BRING FOR YOU EXCLUSIVE COLLECTION,LATEST DESIGNS AT AFFORDABLE PRICE, UNDER ONE ROOF\n★ TIMING 11:00 AM TO 7:00 PM\n*SUNDAY CLOSED\n★ SUIT\n★ SAREES\n★ LEHNGAS\n★ BRIDAL LEHANGA\n★ TUNICS\n★ BEDSHEET\n★ WE HELP YOU TO EXPRESS YOUR STYLE\n\n', 0, 0, 0),
+(282, 'SUMEGHA', '9413517695', 'sumeghabonding@gmail.com', 'sumegha95', 'd19f0627a4e59b32037716e1f011a668', '1-G-33 JAWAHAR NAGAR ,NEAR ARORVANSH SCHOOL, Contact -9929288865', '1984', 0, '0000-00-00 00:00:00', 70, 1, 1, 0, 1, 'SUMEGHA\nA Unique boutique for today\'s women', '9413517695', 'sumegha95d19f0', 0, 6, '★  SUMEGHA\n● A UNIQUE BOUTIQUE FOR TODAY\'S WOMEN\n★ OFFER UNIQUE APPAREL ,AND ACCESSORIES  TO WOMEN WHO VALUE VERSATILITY,STYLE,AND COMFORT. SUMEGHA PRIDE ITSELF ON PROVIDING EXCELLENT CUSTOMER SERVICE. THERE IS ALWAYS A FRIENDLY FACE TO GREET YOU AT THE DOOR AND HELP YOU FIND WHATEVER YOU NEED. WE HAVE WOMEN\'S CLOTHING AND ACCESSORIES TO FIT ALL BUDGET WHILE MAINTAINING QUALITY. \n★ ONE STOP SHOP\n★ OUR AIM TO MAKE YOU BEAUTIFUL LOOK AND FEEL GOOD\n★ SUMEGHA BRING FOR YOU EXCLUSIVE COLLECTION,LATEST DESIGNS AT AFFORDABLE PRICE, UNDER ONE ROOF\n★ TIMING 11:00 AM TO 7:00 PM\n*SUNDAY CLOSED\n★ SUIT\n★ SAREES\n★ LEHNGAS\n★ BRIDAL LEHANGA\n★ TUNICS\n★ BEDSHEET\n★ WE HELP YOU TO EXPRESS YOUR STYLE\n\n', 0, 0, 0),
 (283, 'sbhujit', '8446605115', '', 'abhikng', 'a0eccbbe6fa34c4bc8b872ef757b130e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'abhiknge2e02', 0, 6, '', 0, 0, 0),
 (284, 'DR L D GUPTA', '01542471464', '', 'gupta222', 'c34ffccd774feef7d1807cfaeceb3f0a', 'L Ds MULTISPECIALTY DENTAL & IMPLANT CARE\n32,B BLOCK \nSRIGANGANAGAR', '2368', 0, '0000-00-00 00:00:00', 78, 1, 1, 0, 1, 'DR L D GUPTA', '1542471464', 'gupta222c34ff', 0, 6, 'ADVANCED RCT\nIMPLANTS \nFIXED TEETH \nCOSMETICS SURGERY\nPEDIATRIC DENTISTRY ', 0, 0, 0),
 (285, 'DR RENU JASUJA', '98285338004', '', 'renu004', '5cd3ffa2582d23c38f75060df5ccd80e', 'TOOTH CLINIC\nJASUJA DENTAL CLINIC \n118-119 SUKHRIA SHOPPING CENTER ', '2018', 0, '0000-00-00 00:00:00', 78, 1, 1, 0, 1, 'DR RENU JASUJA', '9828538004', 'renu0045cd3f', 0, 6, 'RCT\nCROWNS \nFIXED DENTURES \nSMILE DESIGNING ', 0, 0, 0),
@@ -13491,7 +12989,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (297, 'PUNJ TAARA RESTAURANT', '8059428653', '', 'punj653', 'b7f67e28394f43c69ea3d0762d31d7ad', 'D-30,SECTOR-17,HANUMANGARH ROAD', '2039', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'PANJ TAARA RESTAURANT', '8059428653', 'punj653b7f67', 0, 6, '★ PANJ TAARA RESTAURANT\n★ FAST FOOD\n■ BURGAR\n■ SNACKS\n■ SANDWICH\n■ PIZZA\n■ NOODLES\n★ INDIAN FOOD\n★ CHINESE FOOD\n★ SOUTH INDIAN FOOD\n\n● WE ORGANISE :\n◆ BIRTHDAY PARTY\n◆ KITTY PARTY\n◆ OTHER FAMILY OCCASION\n\n★ FREE HOME DELIVERY\n★ AC RESTAURANT\n★ PARKING FACILITY\n★ PROFESSIONAL CHEF\n★ WELL QUALIFIED FRIENDLY STAFF \n★ FAST SERVICE\n★ TAKE AWAY\n★ HYGIENIC FOOD \n★ FRIENDLY ENVIRONMENT \n', 0, 0, 0),
 (298, 'PANJ TAARA RESTAURANT', '7425025506', '', 'taara506', 'ca206811cd37d05d5a534f5c47dbf873', 'D-30, SECTOR 17-SECTOR ,HSNUMANGARH ROAD ,SRIGANGANAHAR', '2042', 0, '0000-00-00 00:00:00', 30, 1, 1, 0, 1, 'PANJ TAARA RESTAURANT', '7425025506', 'taara506ca206', 0, 6, '★ PANJ TAARA RESTAURANT\n■ NON VEGETARIAN FOOD AVAILABLE\n◆ AFGANI CHICKEN\n◆ TANDOORI CHICKEN\n◆ CHILLI CHICKEN\n◆ CHICKEN KARI\n◆ BUTTER CHICKEN\n◆ KADAI CHICKEN\n◆ CHICKEN MASALA\n\n★ AC RESTAURANT \n★ TAKE AWAY\n★ PROFESSIONAL CHEF\n★ FAST SERVIC\n★ QUALIFIED AND FRIENDLY STAFF\n\n\n ', 0, 0, 0),
 (299, 'AGRA CHAT BHANDAR', '9887900500', '', 'agra500', 'f2d64e5b11a0c027f22808a48a692903', '21-B NEW MARKET, CONTACT 9887900500', '2049', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'AGRA CHAT BHANDAR', '9828449500', 'agra500f2d64', 0, 6, '★ AGRA CHAT BHANDAR\n★ AGRA CHAT CORNER\n★ PROFESSIONAL CHEF\n★ TASTY ,YUMMY & HYGIENIC FOOD\n★ FRIENDLY STAFF\n★ FAST SERVICE\n★ PARKING FACILITY\n★ AC RESTAURANT \n★ FAMOUS FOR\n◆ AALOO TIKKI\n◆ DAHI BHALLA\n◆ BHALLA PAPDI MIX CHAT\n◆ PAPDI CHAT\n◆ PANEER CHILLA \n◆ GOLE GAPPAE ( SUZI & ATTA)\n◆  SOUTH INDIAN FOOD\n◆ CHINESE FOOD\n◆ FAST FOOD', 0, 0, 0),
-(300, 'NEW LIGHT JEWELLERS', '9829076950', 'khalsamangat2011@gmail.com', 'newlight950', '46307e85e54dfe6db887e685dceeee75', '85,JAWAHAR MARKET, CONTACT 9829076950,01542441779,2440779,FAX 01542444779', '2063', 0, '0000-00-00 00:00:00', 95, 1, 1, 0, 1, 'NEW LIGHT JEWELLERS', '9166666666', 'newlight9504630', 0, 6, '∆ WEB ADD: www.newlightjewellers.com\n★ NEW LIGHT JEWELLERS SINCE 1947 IN INDIA\n★ UNCOMPROMISING QUALITY AND CARFTMANSHIP \n★ NEW LIGHT JEWELLERS IS A PROMISE TO EVERY CUSTOMER , A PROMISE OF FULFILLING THE CUSTOMER''S NEED  TO THEIR EXTREME SATISFACTION AND SERVING ONLY THE BEST IN THE MARKET  ', 0, 0, 0),
+(300, 'NEW LIGHT JEWELLERS', '9829076950', 'khalsamangat2011@gmail.com', 'newlight950', '46307e85e54dfe6db887e685dceeee75', '85,JAWAHAR MARKET, CONTACT 9829076950,01542441779,2440779,FAX 01542444779', '2063', 0, '0000-00-00 00:00:00', 95, 1, 1, 0, 1, 'NEW LIGHT JEWELLERS', '9166666666', 'newlight9504630', 0, 6, '∆ WEB ADD: www.newlightjewellers.com\n★ NEW LIGHT JEWELLERS SINCE 1947 IN INDIA\n★ UNCOMPROMISING QUALITY AND CARFTMANSHIP \n★ NEW LIGHT JEWELLERS IS A PROMISE TO EVERY CUSTOMER , A PROMISE OF FULFILLING THE CUSTOMER\'S NEED  TO THEIR EXTREME SATISFACTION AND SERVING ONLY THE BEST IN THE MARKET  ', 0, 0, 0),
 (301, 'SETIA JEWELLERS', '9982099800', '', 'setia800', '315df1ddd7ef1c36bb722d8e7ed1b062', '87-91 JAWAHAR MARKET ,CONTACT  9982099800', '2065', 0, '0000-00-00 00:00:00', 95, 1, 0, 0, 1, 'SETIA JEWELLERS', '1542442103', 'setia800315df', 0, 6, '★ SETIA JEWELLERS\n★ SPL IN : HALLMARK GOLD,SILVER,AND DIAMOND ORNAMENTS\n★ MONTHLY SCHEME AVAILABLE \n★ SETIA JEWELERS DESTINATION OF CHOICE FOR EVERY OCCASION.\n★ HIGHLY TRAINED STAFF\n◆ ALL LATEST DESIGNS AVAILABLE\n◆BETTER CUSTOMER SATISFACTION\n\n★ SURENDER SETIA\n9351699625\n★ HARBANS SETIA \n9352702191', 0, 0, 0),
 (302, 'WAH JI WAH', '1542442517', '', 'guruji17', 'b68cd38920c4fdbb2ca1b60cc7dc98a1', '29 PUBLIC PARK', '2071', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'WAH JI WAH', '1542442517', 'guruji17b68cd', 0, 6, 'AMRITSARI KULCHA\n', 0, 0, 0),
 (303, 'SHREE BABOSA TRADERS', '1542441666', '', 'shree666', '44bf4c40512b937ebbd0df37cebc0295', '31-SADAR BAZAR, CONTACT 9414211666\n7073096666\n01542441666\n', '2072', 0, '0000-00-00 00:00:00', 94, 1, 1, 0, 1, 'SHREE BABOSA TRADERS', '9414211666', 'shree66644bf4', 0, 6, '★ SHREE BABOSA TRADERS\n★ ARTIFICIAL JEWELLERY\n◆ LATEST NEW DESIGN OF ARTIFICIAL JEWELLERY \n★ FANCY RAKHIYA\n★ FANCY BINDI\n★ FANCY GUT RABAD\n★ MADURA COATS THREADS\n★ COSMETIC HOSIERY\n★ GENERAL GOODS \n★ WHOLESELER', 0, 0, 0),
@@ -13519,7 +13017,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (325, 'NANDANI BEAUTY PARLOUR ', '1542470125', '', 'nandani125', '7a5021c62326fa4a19a82e4fb12c2432', '103 H BLOCK \nSRIGANGANAGAR ', '2229', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'NANDANI BEAUTY PARLOUR & TRAINING CENTER', '9351378298', 'nandani1257a502', 0, 6, '★ NANDANI BEAUTY PARLOUR\n★ TRAINED BY JAVED HABIB AT HAIR AND MAKEUP BY MAKEUP STUDIO DELHI\n★ ALL KIND OF HAIR AND SKIN TREATMENT\n★ HAIR SPA\n★ BODY SPA\n★ HAIR CUT\n★ PERMANENT COLOURING\n★ SMOOTHING\n★ REBOUNDING\n★ PERMING\n★ BRIDAL MAKEUP (MAKEUP STUDIO & KRYLON)\n★ PARTY MAKEUP\n★ NAIL ART\n★ HOME CARE PRODUCT AVAILABLE\n', 0, 0, 12),
 (326, 'Manoj Kumar Tripathy ', '7299045888', '', 'mmfms2015', '1e9dd566163ca18a52717939f0c9410c', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'mmfms20158f4d7', 0, 6, '', 0, 0, 0),
 (327, 'GURU NANAK GIRLS HOSTEL', '9413235093', '', 'gngh093', '77072d5dbb98480fb58792f44dbf5e24', '3/7-A- SHANKAR COLONY, RAVI DHARMKANTE WALI GALI,HANUMANGARH ROAD,', '2244', 0, '0000-00-00 00:00:00', 96, 1, 1, 0, 1, 'GURU NANAK GIRLS HOSTEL', '9413235093', 'gngh09377072', 0, 6, '★ GURU NANAK GIRLS HOSTEL\n★ 100% VEGETARIAN FOOD\n★ HOMEMADE QUALITY & HYGIENIC FOOD\n★ FULLY FURNISHED ROOM\n★ RO PURIFIER WATER FACILITY\n★ 24 HRS WATER & ELECTRICITY\n★ EDUCATED LADIES STAFF\n★ GOOD STUDY ENVIRONMENT \n★ COMPLETELY SAFE & SECURE\n■ GHAR JESA KHANA - GHAR JASE SUVIDHA    \nCONTACT US :\n9413235093- Mr. Radhyshyam Narang\n9660031642\n9413230193 - Smt. Sudesh Narang', 0, 0, 0),
-(328, 'ASHWARYA BEAUTY CLINIC', '9460430050', 'ashwaryabeauty@gmail.com', 'laveena50', 'd8e3ad82f43dc5490254e0da444c8dcf', '2/53-D SHANKAR COLONY, HANUMANGARH ROAD ,NEAR CGR ,CONTACT 9460430050', '2252', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'ASHWARYA BEAUTY CLINIC \nA COMPLETE WOMEN''S PARLOR', '9414581581', 'laveena50d8e3a', 0, 6, '★ ASHWARYA BEAUTY CLINIC\n★ ALL KIND OF SKIN & HAIR TREATMENT\n\n★ SKIN SERVICE\n● FRUIT FACIAL\n● FRESH FRUIT FACIAL\n● CRYSTAL FACIAL\n● LUXARY FACIAL\n● BLEACHING\n● FLAVOURED BLEACHING\n● WAXING\n● FLAVOURED WAXING\n\n★ BRIDAL SERVICES\n● MAKE UP\n● BRIDAL\n● BODY SPA\n● DRESS SETTING\n\n★ PRE BRIDAL SERVICES\n● PRE BRIDAL\n● PRE BRIDAL GOLDEN GLOW\n● PRE BRIDAL DELUXE GLOW\n● PRE BRIDAL SUPER DELUXE GLOW\n\n★ HAND & FOOT CARE SERVICES\n● FRENCH\n● LOTUS\n● PURE DEFENCE ANTI- POLLUTION\n\n★ HAIR SERVICES\n● HAIR STYLING \n● CRIMPING\n● PERMING\n● SMOOTHING\n● REBONDING\n● STRAIT THERAPY\n● UP STYLE / BRAIDING/ ROLLER SET\n◆ HAIR SPA\n◆ SPA TREATMENT\n■ HAIR WASH & DRY\n■ HAIR CUT\n■ HEAD MASSAGE \n■ HAIR COLOURING \n\n★ THREADING\n★ NAIL SERVICE \n\n', 0, 0, 13),
+(328, 'ASHWARYA BEAUTY CLINIC', '9460430050', 'ashwaryabeauty@gmail.com', 'laveena50', 'd8e3ad82f43dc5490254e0da444c8dcf', '2/53-D SHANKAR COLONY, HANUMANGARH ROAD ,NEAR CGR ,CONTACT 9460430050', '2252', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'ASHWARYA BEAUTY CLINIC \nA COMPLETE WOMEN\'S PARLOR', '9414581581', 'laveena50d8e3a', 0, 6, '★ ASHWARYA BEAUTY CLINIC\n★ ALL KIND OF SKIN & HAIR TREATMENT\n\n★ SKIN SERVICE\n● FRUIT FACIAL\n● FRESH FRUIT FACIAL\n● CRYSTAL FACIAL\n● LUXARY FACIAL\n● BLEACHING\n● FLAVOURED BLEACHING\n● WAXING\n● FLAVOURED WAXING\n\n★ BRIDAL SERVICES\n● MAKE UP\n● BRIDAL\n● BODY SPA\n● DRESS SETTING\n\n★ PRE BRIDAL SERVICES\n● PRE BRIDAL\n● PRE BRIDAL GOLDEN GLOW\n● PRE BRIDAL DELUXE GLOW\n● PRE BRIDAL SUPER DELUXE GLOW\n\n★ HAND & FOOT CARE SERVICES\n● FRENCH\n● LOTUS\n● PURE DEFENCE ANTI- POLLUTION\n\n★ HAIR SERVICES\n● HAIR STYLING \n● CRIMPING\n● PERMING\n● SMOOTHING\n● REBONDING\n● STRAIT THERAPY\n● UP STYLE / BRAIDING/ ROLLER SET\n◆ HAIR SPA\n◆ SPA TREATMENT\n■ HAIR WASH & DRY\n■ HAIR CUT\n■ HEAD MASSAGE \n■ HAIR COLOURING \n\n★ THREADING\n★ NAIL SERVICE \n\n', 0, 0, 13),
 (329, 'AASTHA GIRLS HOSTEL', '9414093844', '', 'aastha844', '57d7bda3f207f3d19a5d71ad2848cff8', '3/205 SHANKAR COLONY, HANUMANGARH ROAD ,NEAR CGR ,CONTACT 9461263444,9414093844,9782702785,01542465844', '2239', 0, '0000-00-00 00:00:00', 96, 1, 1, 0, 1, 'AASTHA GIRLS HOSTEL', '9414093844', 'aastha84457d7b', 0, 6, '★ AASTHA GIRLS HOSTEL\n★ 100% VEGETARIAN & HYGIENIC QUALITY FOOD\n★ FULLY FURNISHED CLEAN ROOM\n★ 24 HOURS WATER AND ELECTRICITY\n★ RO WATER\n★ GOOD EDUCATIONAL AND FRIENDLY ENVIRONMENT   \n★ PLEASE VISIT ONCE AT OUR HOSTEL TO SEE OUR FACILITY AND CARE', 0, 0, 0),
 (330, 'APNA GHAR', '9928539275', '', 'apna275', '2b29167569079d298bbf5553a62e2509', '147-H BLOCK ,MAIN ROAD, OPP BANK OF INDIA ,', '2243', 0, '0000-00-00 00:00:00', 96, 1, 1, 0, 1, 'APNA GHAR', '9928539275', 'apna2752b291', 0, 6, '★ APNA GHAR GIRLS HOSTEL\n★ AC FACILITY\n★ QUALITATIVE HYGIENIC HOME MADE FOOD\n★ 24 HOURS WATER AND ELECTRICITY\n★ RO WATER FACILITY\n★ GOOD STUDY ENVIRONMENT \n★ HOSTEL IN THE CITY OF HEART\n★ FULLY FURNISHED ROOM\n★ FULLY SECURE AND SAFE\n\n■ TO-LET FACILITY AVAILABLE, FOR HOUSE, SHOP,FLAT,ETC.', 0, 0, 0),
 (331, 'RISHTEY HI RISHTEY', '7568393579', '', 'chugh579', '33a735f10e64cf8251184d0045edbf55', '147- H BLOCK ,MAIN ROAD, OPP BANK OF INDIA ,CONTACT 9928539275', '2254', 0, '0000-00-00 00:00:00', 93, 1, 1, 0, 1, 'RISHTEY HI RISHTEY\nCHUGH MARRIAGE BUREAU', '7568393579', 'chugh57933a73', 0, 6, '★ RISHTEY HI RISHTEY\n★ FOR ALL CAST WE CREATE SUITABLE MATCH FOR YOU\n★ WE HELP YOU TO FIND OUT PERFECT LIFE PARTNER\n★ CONTACT US FOR ALL CAST\n★ PERFECT MARRIAGE BUREAU', 0, 0, 0),
@@ -13556,7 +13054,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (362, 'BITTU kumar', '7665434437', '', 'BITTU kumar', '6145a115d1e5c096510d8d6315164115', 'Bikner road gharsana', '2469', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'kucheria motord', '7665434437', 'BITTU kumard50a', 0, 6, 'two wellers to mahindra', 0, 0, 0),
 (363, 'DR NARESH PERIWAL', '1542433069', '', 'naresh069', '69557845fcd719e5bf67f80608b10a48', 'PERIWAL NURSING HOME\n2 A 10 SUKHRIA NAGAR', '2481', 0, '0000-00-00 00:00:00', 77, 1, 1, 0, 1, 'DR NARESH PERIWAL', '9587033069', 'naresh06969557', 0, 6, 'MS LAPROSCOPIC SURGEON', 0, 0, 0),
 (364, 'DR RAM KISHAN THAREJA', '9414087838', '', 'ramk838', '18c9e46d8ea76777210971f36c8a516f', 'THAREJA HOSPITAL\n83 G BLOCK', '2484', 0, '0000-00-00 00:00:00', 77, 1, 1, 0, 1, 'DR RAM KISHAN THAREJA', '9414087838', 'ramk83818c9e', 0, 6, 'SURGERY\nGYANE\nLAB\nOPD', 0, 0, 0),
-(365, 'DR BHUPENDRA BHUTNA', '9414087433', '', 'bhutna433', 'b0f111981199dfc1544de8ef7630b531', 'DR BHUTNA''S HOSPITAL\n2 A 3 SUKHRIA NAGAR', '2487', 0, '0000-00-00 00:00:00', 77, 1, 1, 0, 1, 'DR BHUPENDRA BHUTNA', '9414087433', 'bhutna433b0f11', 0, 6, 'OUT DOOR\nINDOOR\nOT\nPHARMACY\nLAB', 0, 0, 0),
+(365, 'DR BHUPENDRA BHUTNA', '9414087433', '', 'bhutna433', 'b0f111981199dfc1544de8ef7630b531', 'DR BHUTNA\'S HOSPITAL\n2 A 3 SUKHRIA NAGAR', '2487', 0, '0000-00-00 00:00:00', 77, 1, 1, 0, 1, 'DR BHUPENDRA BHUTNA', '9414087433', 'bhutna433b0f11', 0, 6, 'OUT DOOR\nINDOOR\nOT\nPHARMACY\nLAB', 0, 0, 0),
 (366, 'DR SHAILESH GOYAL', '1542470555', '', 'goyal555', '017521e097c77b1234137aeb0aec9fb2', 'ARPAN HOSPITAL\n1-B-2 SUKHRIA NAGAR', '2490', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'DR SHAILESH GOYAL', '9414089231', 'goyal55501752', 0, 6, 'ENT ENDOSCOPIC SURGERY\nGESTROSCOPY\nBRONCHOSCOPE\nDEAFNESS CLINIC\nICU\nLAB\nAUDIOMETERY\nTYMPANOMETERY\nOAE\nBERA\nASSR\nX RAY \nECG', 0, 0, 0),
 (367, 'DR PRITHVI SINGH CHAUDHARY', '1542472686', '', 'singh686', '43051fa3250b3c11381512ec0465382f', '2 C 15\nSUKHRIA NARAR', '2493', 0, '0000-00-00 00:00:00', 79, 1, 1, 0, 1, 'DR PRITHVI SINGH CHAUDHARY', '1542472686', 'singh68643051', 0, 6, 'OPD', 0, 0, 0),
 (368, 'DR ADITYA PERIWAL', '9988228822', '', 'periwal958', 'b5cef8b77d720378f7270f22d8ad1fad', 'PERIWAL NURSING HOME\nSUKHRIA NAGAR', '2494', 0, '0000-00-00 00:00:00', 81, 1, 1, 0, 1, 'DR ADITYA PERIWAL', '9988225522', 'periwal958b5cef', 0, 6, 'OPD', 0, 0, 0),
@@ -13573,25 +13071,25 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (385, 'HOTEL DESERT GOLD & RESTAURENT', '1542462300', '', 'desert2300', '6a251267e3f278deaeb79c95f25f7d65', 'M-4-MOTI VIHAR , OPP PRAKASH NURSING HOME ,NEAR SUKHARIA CIRCLE\nMOB:-- 9252062300\nSANDEEP ARORA \n( MANAGER)\nMOB:-- 7688888123', '2602', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'HOTEL DESERT GOLD & RESTAURENT', '1542462300', 'desert23006a251', 0, 6, 'HOTEL DESERT GOLD & RESTAURENT \nVisit us on:--\nwww.hoteldesertgold.com\nEmail us on:--\ndesertgold@outlook.com\n\nFACILITIES AND SERVICES :-\n\n* 24 HOURS BUSINESS CENTRE\n* 24 HOURS SECURITY\n* 24 HOURS FRONT DESK\n* 24 HOURS POWER BACK UP\n* ATM/BANKING\n* STANDARD,SEMI-DELUXE,DELUXE ROOMS ARE AVAILABLE\n* PROMPT ROOM SERVICE\n* HYGIENIC AND FRESH FOOD  \n* ARRANGEMENT OF KITTY  & BIRTH DAY PARTIES  \n*  BANQUET HALL\n*  RESTAURANT FACILITY AVAILABLE WITH TASTY AND HYGIENIC FOOD WITH HIGH QUALITY.\n* PROFESSIONAL & FRIENDLY  SERVING STAFF. \n\n \n', 0, 0, 0),
 (386, 'sample', '4523698523', '', 'sample.57', 'c24a542f884e144451f9063b79e7994e', 'cfhhh', '2553', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'dr. sample', '8875898636', 'sample.578bb00', 0, 6, 'vhgghb', 0, 0, 0),
 (387, 'sunil', '9782534690', '', 'sunilkumar', '89b4265ac9cdc688c6c6b1ce5dcc93b7', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'sunilkumar4d964', 0, 6, '', 0, 0, 0),
-(388, 'SHREE VINAYAK GIRLS PG', '9950706717', 'vikrantkukna@gmail.com', 'svgp717', 'f2335992f7a6247db0a8ec74b48f5304', '91 H BLOCK, NEAR H BLOCK DIGGI', '2561', 0, '0000-00-00 00:00:00', 96, 1, 1, 0, 1, 'SHREE VINAYAK GIRLS PG', '9950706717', 'svgp717f2335', 0, 6, '★ SHREE VINAYAK GIRLS PG HOSTEL\n★ FREE WI-FI INTERNET\n★ AIR COOLED FACILITY WITHOUT ANY EXTRA CHARGES\n★ WELL STUDY ENVIRONMENT\n★ 100 % VEG. & HYGIENIC FOOD\n★ HOME MADE FOOD WITH BEST QUALITY\n★ 24 HOURS ELECTRICITY FACILITY\n★ GENERATOR FACILITY\n★ AQUAGAURD CHILLED WATER FACILITY\n★  NEAR TO MARKET & COACHING CENTER\n', 0, 0, 0);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(388, 'SHREE VINAYAK GIRLS PG', '9950706717', 'vikrantkukna@gmail.com', 'svgp717', 'f2335992f7a6247db0a8ec74b48f5304', '91 H BLOCK, NEAR H BLOCK DIGGI', '2561', 0, '0000-00-00 00:00:00', 96, 1, 1, 0, 1, 'SHREE VINAYAK GIRLS PG', '9950706717', 'svgp717f2335', 0, 6, '★ SHREE VINAYAK GIRLS PG HOSTEL\n★ FREE WI-FI INTERNET\n★ AIR COOLED FACILITY WITHOUT ANY EXTRA CHARGES\n★ WELL STUDY ENVIRONMENT\n★ 100 % VEG. & HYGIENIC FOOD\n★ HOME MADE FOOD WITH BEST QUALITY\n★ 24 HOURS ELECTRICITY FACILITY\n★ GENERATOR FACILITY\n★ AQUAGAURD CHILLED WATER FACILITY\n★  NEAR TO MARKET & COACHING CENTER\n', 0, 0, 0),
 (389, 'TOHI ACADEMY & CAREER INSTITUTE', '9468758653', '', 'tohi653', '1c0bf14bf96b112fabc2b441640c1c64', '2ND FLOOR ,13 P BLOCK , NEAR NEHRU PARK - PAYAL CINEMA ROAD', '3468', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, ' टोही एकेडमी एंड कैरियर इंस्टिट्यूट', '9468758653', 'tohi6531c0bf', 0, 6, 'टोही एकेडमी एंड कैरियर इंस्टिट्यूट\n■ निदेशक :- इन्द्राज वर्मा\n मोबाइल : 9468758653\n9928980569\n\nसम्भाग की एकमात्र संस्था जहाँ सिलेबस कहानी विधि द्वारा याद करवाने की गारंटी ली जाती है \nएक बार की फीस में पेपर्स तक तैयारी \n2 दिन की फ्री डेमो कक्षाओं में दूसरी एकेडमियों से अंतर स्वयं जाने \n\n> एकेडमी प्रत्येक छात्र को निशुल्क पुस्तक प्रदान करेगी\n> साप्ताहिक टेस्ट शृंखला \n> हर माह ईनामी प्रतियोगिता आयोजित की जाती है \n> पहचान पत्र निशुल्क प्रदान किए जाते है\n> रात्रिकालीन कक्षाओं की व्यवस्था\n\nनिम्नलिखित प्रतियोगी परीक्षाओ की तैयारी करवाई जाती है\n* RPSC Ist & IInd Grade \n* RAS\n* PATWAR\n* REET\n* GRAM SEWAK \n* SSC\n* BANK (PO)\n* HIGH COURT- LDC\n* RAJ POLICE - SI & CONSTABLE \n* ITI (ELECTRICIAN,PLUMBER,FITTER\n', 0, 0, 17),
 (390, 'BHASKAR ACADEMY ', '9784371212', '', 'bhaskar12', 'd3c5f4a9aa47158364c680e6a105dbc9', 'NEAR NEHRU PARK, BEHIND BUS STAND, NEHRU PARK-PAYAL CINEMA ROAD\nContact :- 96026-42200\n99834-84005', '2565', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'BHASKAR ACADEMY', '9784371212', 'bhaskar12d3c5f', 0, 6, 'BHASKAR ACADEMY ( A COMPLETE AGRICULTURAL INSTITUTE FOR JET-ICAR)\nHINDI & ENGLISH MEDIUM \nSRI GANGANAGAR\n\nTHE BEST AND BIGGEST COACHING CENTRE IN SRI GANGANAGAR FOR\n\n* JET\n* ICAR\n* KRISHI  PARYAVEKSHAK\n* GRAM SEWAK  \n\nWE HAD GIVEN HIGHEST MERITS WITH HIGHEST SELECTIONS IN  AGRICULTURE COLLEGES AND UNIVERSITIES IN RAJASTHAN .\n\n* BEST RESULTS\n* EXPERIENCED AND WELL QUALIFIED STAFF\n* TEST SERIES AND PRINTED NOTES\n* A.C. CLASSROOMS\n\nGET PREPARED FOR JET AND ICAR WITH 11th AND 12th PREPARATIONS  \n\n\nDIRECTOR :- \nMANGALDEEP MAHAR(M.Sc. , B.Ed )\n', 0, 0, 18),
 (391, 'BROTHERS RESTAURANT', '1542481118', '', 'brothers118', '2019167d07f5c66f78c47f1d59511c35', '42-P BLOCK,NEAR NEHRU PARK,PAYAL CINEMA ROAD', '2568', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'BROTHERS RESTAURANT', '1542481118', 'brothers1182019', 0, 6, 'BROTHERS RESTAURANT \n\nPURE VEGETARIAN\n\nCONTACT MOB \n94130-81118 ', 0, 0, 0),
 (392, 'GURU GOVIND SINGH GIRLS PG HOSTEL', '0151222201', 'guru@gmail.com', 'guru201', '3be8b5d0b9b70c927e372efc08b45759', 'NEAR MAIN BUS STANFNURHRRU PARJ', '2578', 0, '0000-00-00 00:00:00', 96, 1, 0, 0, 1, 'GURU GOVIND SINGH GIRLS PG HOSTEL', '0151220147', 'guru2013be8b', 0, 6, '★ GURUUGHJKK\n★ FREE WI FI\n★ FGHJJJJ\ndfgjjk', 0, 0, 0),
 (393, 'BESAR DE MUG', '8952850800', '', 'besar800', '173ec7e554e4a88dd934765be894118c', '20 VINAYAK VIHAR, NEAR SIHAG HOSPITAL\nLL#154-2466936', '2644', 0, '0000-00-00 00:00:00', 29, 1, 1, 0, 1, 'BESAR DE MUG', '8952850800', 'besar800173ec', 0, 6, 'Wake up n smell the COFFEE with\nBESAR DE MUG \n( COFFEE N SNACKS)\n\nOWNED N RUN BY\nHIMANSHU SINGH KHICHI', 0, 0, 0),
 (394, 'Harjeet singh', '9660005725', '', 'Harjeet singh', '6ee937e275f7ee818d10991c11dc3293', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Harjeet singh1e', 0, 6, '', 0, 0, 0),
-(395, 'STAR FITNESS WORLD', '9829131110', '', 'star110', 'cf003bc2d94c0d1a8baeacc62abcf29b', '148- G BLOCK , \n2nd FLOOR ,\nMETRO SHOE BUILDING , NEAR SUKHARIA CIRCLE\nPH :- 154-2479110', '2589', 0, '0000-00-00 00:00:00', 19, 1, 1, 0, 1, 'STAR FITNESS WORLD', '9829131110', 'star110cf003', 0, 6, 'STAR FITNESS WORLD \n( OWNED BY Mr DEEPAK MISHRA)\n\nHEALTHY BODY HEALTHY MIND\n\nSERVICES:--\n\n* STRENGTH\n* CARDIO\n* SAUNA BATH\n* TABATA\n* PILATES\n* STRETCHING\n* YOGA\n* CROSSFIT WORKOUT\n* WEIGHTLOSS WORKOUT\n* WEIGHT GAINING\n* BODY BUILDING\n* BODY FITNESS\n\n* WE OFFER PERSONAL TRAINING ALSO WITH PROPER DIET CHART AND REGULAR FOLLOW UP\n\nFACILITIES:--\n* CCTV SURVEILLANCE\n* FILTERED WATER\n* PROPER HYGEINE\n* LOCKERS\n* FREE WEIGHT AREA\n* FULLY A.C.\n* ALL NEW MACHINES \n\nOPENING HOURS:-\n\nMORNING : -\n6 AM TO 12 PM\n\nEVENING :-\n3 PM TO 10 PM\n\nSUNDAY CLOSED\n\n\n', 0, 0, 5),
+(395, 'STAR FITNESS WORLD', '9829131110', '', 'star110', 'cf003bc2d94c0d1a8baeacc62abcf29b', '148- G BLOCK , \n2nd FLOOR ,\nMETRO SHOE BUILDING , NEAR SUKHARIA CIRCLE\nPH :- 154-2479110', '2589', 0, '0000-00-00 00:00:00', 19, 1, 1, 0, 1, 'STAR FITNESS WORLD', '9829131110', 'star110cf003', 0, 6, 'STAR FITNESS WORLD \n( OWNED BY Mr DEEPAK MISHRA)\n\nHEALTHY BODY HEALTHY MIND\n\nSERVICES:--\n\n* STRENGTH\n* CARDIO\n* SAUNA BATH\n* TABATA\n* PILATES\n* STRETCHING\n* YOGA\n* CROSSFIT WORKOUT\n* WEIGHTLOSS WORKOUT\n* WEIGHT GAINING\n* BODY BUILDING\n* BODY FITNESS\n\n* WE OFFER PERSONAL TRAINING ALSO WITH PROPER DIET CHART AND REGULAR FOLLOW UP\n\nFACILITIES:--\n* CCTV SURVEILLANCE\n* FILTERED WATER\n* PROPER HYGEINE\n* LOCKERS\n* FREE WEIGHT AREA\n* FULLY A.C.\n* ALL NEW MACHINES \n\nOPENING HOURS:-\n\nMORNING : -\n6 AM TO 12 PM\n\nEVENING :-\n3 PM TO 10 PM\n\nSUNDAY CLOSED\n\n\n', 0, 0, 5);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
 (396, 'SYNTHESIS', '01512206735', '', 'synthesis800', 'cc7645961c674ccf4f4739cd3b3bde45', 'GYAN TOWER, NEAR SHIV BARI CIRCLE,OLD SHIV BARI ROAD\n8003094891,92,93', '2594', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'SYNTHESIS\nExclusively for Pre-Medical', '8003094891', 'synthesis800cc7', 0, 6, '★ SYNTHESIS\n★ EXCLUSIVELY FOR PRE-MEDICAL SINCE 2006\n★ UNMATCHED FACULTY TEAM OF PRE -MEDICAL\n★ PHYSICS - \n● MR. KAMLESH LALWANI \n● MR. GIRISH SHARMA\n● ER. RAJEEV AGGARWAL\n● MR. M.K. SOLANKI\n● ER. AMIT SEN\n● ER. DINESH CHOUDHARY\n\n★ CHEMISTRY \n● MR. MANOJ BAJAJ\n● MR. D.D. CHARAN\n● DR. JOGENDRA SINGH\n● MR. MAHENDRA OSTWAL\n● MR. MANOJ BHATT\n\n★ ZOOLOGY\n● DR. SHWET GOSWAMI\n● DR RAMESH PUROHIT \n● MR. AMIT VERMA\n● MR ATUL ARORA\n● MS. BHAGYASHREE\n\n★ BOTANY\n● MR. JETHMAL SUTHAR\n● DR. JYOTSANA RANGA\n● MR. RAJKUMAR BHASKAR\n● MS. PRATIBHA KALANI\n\n★ QUALIFIED SYNTHESIAN IN AIPMT & RPMT 2006 TO 2015\n● 2006-54\n● 2007- 58\n● 2008- 66\n● 2009-71\n● 2010- 85\n● 2011- 120\n● 2012- 172\n● 2013- 352\n● 2014- 554\n● 2015-594\n', 0, 0, 19),
 (397, 'EVA CLASSES', '7877161535', '', 'eva1535', '79f9bf363d6b54d7a054ce0c1f1f9b54', 'V-D-21,HUDCI QTRS, JAI NARAYAN VYAS COLONY,NEAR RSV SCHOOL,9413388280', '2601', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'EVA CLASSES', '7877161535', 'eva153579f9b', 0, 6, '★ EVA CLASSES\n\n\n', 0, 0, 20),
 (398, 'nk', '9829285781', '', 'nkverma', 'c15973589b0b50a54e446500d813b670', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'nkverma8c7db', 0, 6, '', 0, 0, 0),
 (399, 'GAGAN REFRIGERATION & ELECTRICL ', '9549222220', '', 'gagan20', '052f9ac8bc176ec7e938511cea16a89f', '5-6-7, KOTWALI ROAD, OPP CHANDRA TRAVELS\nMOB:- GAGAN 95872-22220\nDEEPAK 95492-22220', '2607', 0, '0000-00-00 00:00:00', 45, 1, 1, 0, 1, 'GAGAN REFRIGERATION & ELECTRICAL', '9549222220', 'gagan20052f9', 0, 6, 'GAGAN REFRIGERATION & ELECTRICAL\n\n* SALE  & SERVICE UNDER ONE ROOF\n\n* WE BELIEVE IN QUALITY AND EFFICIENCY \n\n* CUSTOMER SATISFACTION IS OUR AIM \n\nAUTHORISED  DEALERs FOR :- \n\n* GREE\n AIR CONDITIONER ( WORLD CLASS QUALITY )\n\n* WHIRLPOOL\n\n* VOLTAS', 0, 0, 0),
-(400, 'RSV HIGHER SECONDARY SCHOOL', '01512220410', 'rsvjnvc@gmail.com', 'RSV1510', 'c1fc181ca094ea1c9ef5ec12285434ce', 'SECTOR-V, JNV COLONY\nwww.rsvschool.com', '2617', 0, '0000-00-00 00:00:00', 25, 4, 1, 0, 1, 'RSV HIGHER SECONDARY SCHOOL', '1512220411', 'RSV15103923b', 0, 6, '★ RSV HIGHER SECONDARY SCHOOL\n★ AFFILIATED TO\n\n\n\n\n\n CBSE,CO-EDUCATIONAL9 ENGLISH MEDIUM SCHOOL\n★ NURSERY TO XII\n★ PHONE NO. 01512220410,2220411,2231510\n★PRINCIPAL- Mr SUBHASH SWAMI\n\n\n\n\n★ FEATURE OF SCHOOL\n● COMPLETE AIR CONDITIONED BUILDING ( INDIVIDUAL AC''s IN EVERY CLASS)\n● CCTV CAMERAS TO MOINTIOR THE CLASSES\n● THREE TYPE OF SECTIONS AVAILABLE FOR STUDENTS\n■ BOYS SECTION\n■ CO-EDUCATIONAL SECTION\n■ SEPARATE GIRLS SECTIONS FROM CLASS IV ONWARD.\n● DAILY VEDIC PRAYER TO INCULATE VALUES IN CHILDREN\n● DAILY HAWAN BY STUDENT\n● YOGA,MEDITATION ON REGULAR TURNS\n● EMPHASIS ON SPOKEN ENGLISH\n● SATURDAY ACTIVITIES (DEBATE,DRAWING,POEM WRITING Etc.)\n● INTERSCHOOL COMPETITION,SCHOOL BASED COMPETITION\n● SEPARATE PRIZES ARE AWARDED TO STUDENTS FOR EACH COMPETITION.     \n● OPTIONAL ABACUS CLASSES FOR STUDENTS AS PER PARENTS REQUIREMENTS FOR CLASSES PRIMARY & MIDDLE.\n● REGULAR CLASS TEST & TEST SERIES TO EVALUATE THE PERFORMANCE OF STUDENTS.\n● SPORTS FACILITIES ARE PROVIDED ACCORDING TO THE REQUIREMENTS OF CLASSES.\n★ EXHIBITIONS,EXCURSION,TOURS,PICNICS HELD FROM TIME TO TIME .\n★ STRESS ON STUDIES WITH THE HELP OF SMART CLASSES\n★ VARIOUS CAMP ARE ORGANISED FOR STUDENTS LIKE DIVYA JEEVAN NIRMAN SHIVIR- A RESIDENTIAL CAMP FOR BOYS AND GIRLS ORGANIZED SEPARATELY.\n★ WELL FURNISHED LIBRARY & WELL EQUIPPED LABS FOR PHYSICS,CHEMISTRY,BIOLOGY,& MATHS\n★ THREE COMPUTERS LABS MORE 40-50 COMPUTERS\n★ COMPUTER SUBJECTS FOR STUDENTS START FROM CLASS I ONWARDS.\n★ TWO TYPES OF CURRICULUM FOR CLASSES PRE-NURSERY TO VII\n● XSEED\n●NORMAL\n★ REFRESHMENT CLASSES FOR SLOW LEARNER STUDENTS AFTER SCHOOL TIMING (1 HOUR)\n★ DIFFERENT OLYMPIAD ARE CONDUCTED LIKE NSO,ISO,KYPY,NTSC,STSE\n★ CELEBRATION OF ALL FESTIVAL IS DONE IN SCHOOL SO AS DEVELOP MORAL AND CULTURAL SPRIT AMONG STUDENTS\n★ CAREER COUNSELLING LECTURES FOR THE STUDENTS\n★ MEDICAL FACILITIES\n★ SCHOLARSHIP IS AWARDED  FOR OUTSTANDING PERFORMANCE OF STUDENTS IN CLASS X \n★ FACILITY OF LIFT IS AVAILABLE \n★ SCHOOL HAS ITS OWN WEBSITE TO MAINTAIN THE TEACHER-PARENTS COMMUNICATION\n★ OWN SOFTWARE FOR SENDING SMS TO GIVE INFORMATION (ABSENTIVE ,HOLIDAYS,PTM Etc)\n★ GRAND ANNUAL FUNCTION IS CELEBRATED EVERY YEAR\n★ PARTICIPATING IN NATIONAL PROGRAMMES LIKE SWACHH BHARAT ABHIYAN\n★ PRIZE ARE AWARDED FOR VARIOUS ACTIVITIES \n★ SUMMER CAMPS ARE ORGANISED FOR STUDENTS FREE OF COST   \n  \n', 0, 0, 0),
+(400, 'RSV HIGHER SECONDARY SCHOOL', '01512220410', 'rsvjnvc@gmail.com', 'RSV1510', 'c1fc181ca094ea1c9ef5ec12285434ce', 'SECTOR-V, JNV COLONY\nwww.rsvschool.com', '2617', 0, '0000-00-00 00:00:00', 25, 4, 1, 0, 1, 'RSV HIGHER SECONDARY SCHOOL', '1512220411', 'RSV15103923b', 0, 6, '★ RSV HIGHER SECONDARY SCHOOL\n★ AFFILIATED TO\n\n\n\n\n\n CBSE,CO-EDUCATIONAL9 ENGLISH MEDIUM SCHOOL\n★ NURSERY TO XII\n★ PHONE NO. 01512220410,2220411,2231510\n★PRINCIPAL- Mr SUBHASH SWAMI\n\n\n\n\n★ FEATURE OF SCHOOL\n● COMPLETE AIR CONDITIONED BUILDING ( INDIVIDUAL AC\'s IN EVERY CLASS)\n● CCTV CAMERAS TO MOINTIOR THE CLASSES\n● THREE TYPE OF SECTIONS AVAILABLE FOR STUDENTS\n■ BOYS SECTION\n■ CO-EDUCATIONAL SECTION\n■ SEPARATE GIRLS SECTIONS FROM CLASS IV ONWARD.\n● DAILY VEDIC PRAYER TO INCULATE VALUES IN CHILDREN\n● DAILY HAWAN BY STUDENT\n● YOGA,MEDITATION ON REGULAR TURNS\n● EMPHASIS ON SPOKEN ENGLISH\n● SATURDAY ACTIVITIES (DEBATE,DRAWING,POEM WRITING Etc.)\n● INTERSCHOOL COMPETITION,SCHOOL BASED COMPETITION\n● SEPARATE PRIZES ARE AWARDED TO STUDENTS FOR EACH COMPETITION.     \n● OPTIONAL ABACUS CLASSES FOR STUDENTS AS PER PARENTS REQUIREMENTS FOR CLASSES PRIMARY & MIDDLE.\n● REGULAR CLASS TEST & TEST SERIES TO EVALUATE THE PERFORMANCE OF STUDENTS.\n● SPORTS FACILITIES ARE PROVIDED ACCORDING TO THE REQUIREMENTS OF CLASSES.\n★ EXHIBITIONS,EXCURSION,TOURS,PICNICS HELD FROM TIME TO TIME .\n★ STRESS ON STUDIES WITH THE HELP OF SMART CLASSES\n★ VARIOUS CAMP ARE ORGANISED FOR STUDENTS LIKE DIVYA JEEVAN NIRMAN SHIVIR- A RESIDENTIAL CAMP FOR BOYS AND GIRLS ORGANIZED SEPARATELY.\n★ WELL FURNISHED LIBRARY & WELL EQUIPPED LABS FOR PHYSICS,CHEMISTRY,BIOLOGY,& MATHS\n★ THREE COMPUTERS LABS MORE 40-50 COMPUTERS\n★ COMPUTER SUBJECTS FOR STUDENTS START FROM CLASS I ONWARDS.\n★ TWO TYPES OF CURRICULUM FOR CLASSES PRE-NURSERY TO VII\n● XSEED\n●NORMAL\n★ REFRESHMENT CLASSES FOR SLOW LEARNER STUDENTS AFTER SCHOOL TIMING (1 HOUR)\n★ DIFFERENT OLYMPIAD ARE CONDUCTED LIKE NSO,ISO,KYPY,NTSC,STSE\n★ CELEBRATION OF ALL FESTIVAL IS DONE IN SCHOOL SO AS DEVELOP MORAL AND CULTURAL SPRIT AMONG STUDENTS\n★ CAREER COUNSELLING LECTURES FOR THE STUDENTS\n★ MEDICAL FACILITIES\n★ SCHOLARSHIP IS AWARDED  FOR OUTSTANDING PERFORMANCE OF STUDENTS IN CLASS X \n★ FACILITY OF LIFT IS AVAILABLE \n★ SCHOOL HAS ITS OWN WEBSITE TO MAINTAIN THE TEACHER-PARENTS COMMUNICATION\n★ OWN SOFTWARE FOR SENDING SMS TO GIVE INFORMATION (ABSENTIVE ,HOLIDAYS,PTM Etc)\n★ GRAND ANNUAL FUNCTION IS CELEBRATED EVERY YEAR\n★ PARTICIPATING IN NATIONAL PROGRAMMES LIKE SWACHH BHARAT ABHIYAN\n★ PRIZE ARE AWARDED FOR VARIOUS ACTIVITIES \n★ SUMMER CAMPS ARE ORGANISED FOR STUDENTS FREE OF COST   \n  \n', 0, 0, 0),
 (401, 'JEWAR JEWELLERS', '1542472201', '', 'jewar6000', '253039a35d028599482390e34e13db1b', 'RAVINDRA PATH, BEHIND VAN HEUSEN MENS WEAR , 5-C-BLOCK.\nPH:- 0154-2472201', '2621', 0, '0000-00-00 00:00:00', 94, 1, 1, 0, 1, 'ZEVAR JEWELLERS', '9352706000', 'jewar600025303', 0, 6, 'ZEVAR JEWELLERS\n\nA NAME OF QUALITY , PURITY AND TRUST.\n\nWE DEALS IN \n\n*ARTIFICIAL  JEWELLERY\n*WE ALSO DEALS IN GOLD AND SILVER JEWELLERY\n\nALL NEW STYLISH ARTIFICIAL JEWELLERY IS AVAILABLE FOR ALL OCCASIONS AND DAILY WEAR.\n\n* WE OFFER ON RENT ALSO\n* YOU CAN EXCHANGE THE ARTIFICIAL JEWELLERY IF YOU NOT SATISFY WITH ANY MODEL.\n\nCUSTOMER SATISFACTION IS OUR AIM .\n\nVISIT US ON FACEBOOK\n/# Zevar Jewellers ', 0, 0, 0),
 (402, 'saurabh kawatra', '9928854741', '', 'officecomputer', '997c00baa3ef375014ab559bcf63b3b3', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'officecomputer0', 0, 6, '', 0, 0, 0),
 (403, 'Anmol Batra', '7877055075', '', 'anmolbatra', 'e7e4a8789a35a6fa87c4f9fe63c50913', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'anmolbatrad5e41', 0, 6, '', 0, 0, 0),
 (404, 'Amit Sharma', '9928361064', '', 'amitgaur', 'ce8724150e6fdcad631f5432d5c9dc3d', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'amitgaurfad18', 0, 6, '', 0, 0, 0),
-(405, 'NADIM TANWAR', '9460264750', 'nadimtanwar786@gmail. com', 'nadimtanwar123', 'e572b377604027d6cc9bdba80ba00f8f', 'old abadi near tower', '2625', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'nadim', '9460264750', 'nadimtanwar1238', 0, 6, 'wholesale men''s clothes', 0, 0, 0),
+(405, 'NADIM TANWAR', '9460264750', 'nadimtanwar786@gmail. com', 'nadimtanwar123', 'e572b377604027d6cc9bdba80ba00f8f', 'old abadi near tower', '2625', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'nadim', '9460264750', 'nadimtanwar1238', 0, 6, 'wholesale men\'s clothes', 0, 0, 0),
 (406, 'Vishal Choudhary', '9928710001', '', 'Vishalnain', '918e6616d9a5885edd927ffaa34ba2d3', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Vishalnainc5c99', 0, 6, '', 0, 0, 0),
 (407, 'Vimal Bansal', '9251420000', 'exporthaatsgnr@gmail.com', 'exporthaatsgnr@gmail.com', '49499c5fce85033dfb1d9287efd71da0', '2-P-BLOCK, RADHESHYAM ROAD', '2626', 0, '0000-00-00 00:00:00', 50, 1, 1, 0, 1, 'EXPORT HAAT', '9251420000', 'exporthaatsgnr@', 0, 6, 'EXPORTHAAT\n( ॰MEN ॰ WOMEN ॰ KIDS ॰ NEW BORN)\n\nOwned by ...\nMr Vimal Bansal \n\nMENS BRANDED STOCK @DISCOUNTED PRICES 12MONTHS... FLAT 40% OFF ON SUMMER ARTICLES & UPTO 80% OFF ON ALL STOCK\n\nVARIETIES:-\n॰ CASUAL WEARS\n॰ FORMAL WEARS\n॰ FOOT WEARS \n॰ ACCESSORIES\n\nVisit Us on :--\n\nWeb : www.exporthaat.com\n\nFb : www.facebook.com/exporthaatsgnr\n', 0, 0, 0),
 (408, 'DR ADITYA ARORA', '9413229111', '', 'dradi123', '4216e92c6b10bde2669a8c703e1d4a64', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'dradi123eb9be', 0, 6, '', 0, 0, 0),
@@ -13627,9 +13125,9 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (438, 'Sunil kumar goyal ', '9414093228', '', 'Sunilgoyal', 'c9e7e78890963a0af3781576b38dd70e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Sunilgoyald33d5', 0, 6, '', 0, 0, 0),
 (439, 'Naveen Kalra', '9414444595', '', 'Naveen K', '0f266dcbc887b23352609cc0851838fa', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Naveen K73e68', 0, 6, '', 0, 0, 0),
 (440, 'Suraksha', '09414062444', '', 'Rajinder Bansal ', '863f2cf619103a0fc817550e57678368', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Rajinder Bansal', 0, 6, '', 0, 0, 0),
-(441, 'Dr. PRINCE SIDANA', '9414580057', '', 'prince0057', '6140b8fe67ed090dab27de0d5a08a65b', 'VIDHYA''S DENTAL CARE\n485-VINOBA BASTI, NEAR RAMESH CHOWK, DURGA MANDIR\nPH:- 0154-2488057', '2752', 0, '0000-00-00 00:00:00', 78, 1, 0, 0, 1, 'Dr. PRINCE SIDANA', '9414580057', 'prince00576140b', 0, 6, '\nVidya''s Dental Care', 0, 0, 0),
+(441, 'Dr. PRINCE SIDANA', '9414580057', '', 'prince0057', '6140b8fe67ed090dab27de0d5a08a65b', 'VIDHYA\'S DENTAL CARE\n485-VINOBA BASTI, NEAR RAMESH CHOWK, DURGA MANDIR\nPH:- 0154-2488057', '2752', 0, '0000-00-00 00:00:00', 78, 1, 0, 0, 1, 'Dr. PRINCE SIDANA', '9414580057', 'prince00576140b', 0, 6, '\nVidya\'s Dental Care', 0, 0, 0),
 (442, 'mander singh', '9414628019', '', 'Sukhwinder singh', 'da3c8543bed5c9479c8d7b3d6ee08c0f', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Sukhwinder sing', 0, 6, '', 0, 0, 0),
-(443, 'GOYAL COLLECTION', '1542445341', '', 'goyal341', '2c70b5b73980a679dfa8bb833c336255', '21-A PUBLIC PARK,OPP AGRA TIKKIWALA\nPRADEEP GOYAL 94140-89441\nRAMAN GOYAL 97994-97341', '2793', 0, '0000-00-00 00:00:00', 50, 1, 1, 0, 1, 'GOYAL COLLECTION', '9799497341', 'goyal3412c70b', 0, 6, '★ GOYAL COLLECTION\n\n★ GOYAL COLLECTION IS FAMOUS FOR ALL TYPE OF BRANDED READYMADE  MENSWEAR AND MENS ACCESSORIES. \n \nBRANDS AVAILABLE AT OUR STORE:-\nVAN HUSSEIN\nMUFTI\nBLACKBERRY''S\nLEE\nOCTAVE\nSPYKAR\nKILLER\nLEVIS\nGESTURE\nNUMERO UNO\nBLACKBERRY\nLOUIS PHILLIPE\nTOUCH\nCOPPER STONE\nMONTE CARLO\nHALL MARK\nMANYAWAR\nSWEET DREAM\nCONFIDENCE\nBEEVEE\nWRANGLER \n\n\n* LATEST READYMADE SHERVANIs, MENS KURTAs,TRENDY INDIAN JACKETS ALSO AVAILABLE\n \n\nLATEST ,SPECIAL AND ATTRACTIVE  WEARS FOR GROOMES \n\nLATEST DESIGNS FOR MARRIAGE AND OTHER PARTY FUNCTIONS .\n\nACCESORIES :-\nBRANDED TIEs\nBRANDED BELTS\nBRANDED CAPS\nCUFF LINGS\nHANKIES\nSOCKS ', 0, 0, 0),
+(443, 'GOYAL COLLECTION', '1542445341', '', 'goyal341', '2c70b5b73980a679dfa8bb833c336255', '21-A PUBLIC PARK,OPP AGRA TIKKIWALA\nPRADEEP GOYAL 94140-89441\nRAMAN GOYAL 97994-97341', '2793', 0, '0000-00-00 00:00:00', 50, 1, 1, 0, 1, 'GOYAL COLLECTION', '9799497341', 'goyal3412c70b', 0, 6, '★ GOYAL COLLECTION\n\n★ GOYAL COLLECTION IS FAMOUS FOR ALL TYPE OF BRANDED READYMADE  MENSWEAR AND MENS ACCESSORIES. \n \nBRANDS AVAILABLE AT OUR STORE:-\nVAN HUSSEIN\nMUFTI\nBLACKBERRY\'S\nLEE\nOCTAVE\nSPYKAR\nKILLER\nLEVIS\nGESTURE\nNUMERO UNO\nBLACKBERRY\nLOUIS PHILLIPE\nTOUCH\nCOPPER STONE\nMONTE CARLO\nHALL MARK\nMANYAWAR\nSWEET DREAM\nCONFIDENCE\nBEEVEE\nWRANGLER \n\n\n* LATEST READYMADE SHERVANIs, MENS KURTAs,TRENDY INDIAN JACKETS ALSO AVAILABLE\n \n\nLATEST ,SPECIAL AND ATTRACTIVE  WEARS FOR GROOMES \n\nLATEST DESIGNS FOR MARRIAGE AND OTHER PARTY FUNCTIONS .\n\nACCESORIES :-\nBRANDED TIEs\nBRANDED BELTS\nBRANDED CAPS\nCUFF LINGS\nHANKIES\nSOCKS ', 0, 0, 0),
 (444, 'ADARSH NURSING HOME AND STONE CLINIC PVT.LTD.', '01542475086', '', 'anhsc5086', '1edfbc4a492a50572e9dab0c52645f5b', '1-B-5 SUKHADIA NAGAR', '2766', 0, '0000-00-00 00:00:00', 16, 1, 1, 0, 1, 'ADARSH NURSING HOME & STONE CLINIC PVT LTD.', '1542475086', 'anhsc50861edfb', 0, 6, '★ ADARSH NURSING HOME AND STONE CLINIC PVT LTD.\n★ BHAMASHAH SWASTHYA BIMA YOJNA PACKAGE\n■ LITHOTRIPSY \n■ LAPROSCOPIC SURGERY\n■ SURGERY \n■ ENDO UROLOGY\n■ PITASHYA KI PATHRI KA OPERTION THROUGH DURBIN \n■ GADDU KA BARMAE SAE OPERATION \n■ PATHRI KA BINA OPERATION KIRNO /DURBIN SAE ILAZ \n\n★ DR PRAVEEN KUMAR GUPTA\nMBBS,MS,FICS,D.PEL GERMANY (SURGEON) RMC710/8679\n★ DR P.L. OHARI \nMBBS,MS GYNECOLOGIST \n\nCONTACT : 0154247506,2484086', 0, 0, 0),
 (445, 'ashok bhardwaj', '9414088910', '', 'ashok.sgnr', 'fd3c847c50e3944ad9497bb8c49fca01', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ashok.sgnr59152', 0, 6, '', 0, 0, 0),
 (446, 'NAYAN MANDIR ANKHO KA HOSPITAL', '01542462102', 'drrajeshchalans@yahoo.com', 'nayan2102', 'f1f56ec8ca8c4400b28efc985968d988', ' 5-M-19 JAWAHAR NAGAR,AGRSEN CHOWK\n0154-2462102,0154-2462101', '2772', 0, '0000-00-00 00:00:00', 16, 1, 1, 0, 1, 'NAYAN MANDIR ANKHO KA HOSPITAL', '1542462102', 'nayan2102f1f56', 0, 6, '* NAYAN MANDIR ANKHO KA HOSPITAL\n* BHAMASHAH SWASTHYA BIMA YOJNA PACKAGE\n* BUCKLE REMOVAL\n* CYCLOCRYOTHERAPY\n* GLAUCOMA SURGERY\n( KALA MOTIA)\n* LIMBAL DERMOID REMOVAL\n* PERFORATING CORNEO SCLERAL INJURY\n* IRIS PROLAPSE-REPAIR\n* TRABECULECTOMY-RIGHT\n* IRIDECTOMY\n* CHALAZION- BOTH EYE\n* CHALAZION - ONE EYE\n*  EPICANTUHUS CORRECTION\n* LID TEAR\n* SQUINT CORRECTION\n* TERIGIUM REMOVAL\n* RETROBULAR INJECTION BOTH EYES & ONE EYE\n* SYRINGING OF LACRIMAL SAC FOR BOTH AND ONE EYES\n\n* DR RAJESH CHALANA\nMS EYE\nRMC/ 7680/12693', 0, 0, 0),
@@ -13649,22 +13147,22 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (460, 'CHETAK COACHING CLASSES ', '7737136273', '', 'chetak273', 'b0156d2aa05568f6b42d8766796b24c9', 'KATHURIA COLONY ,BRANCH OFFICE -BEHIND BABABRAMDEV TEMPLE SUJANDESER', '2855', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'CHETAK COACHING CLASSES\nHEMANT SIR\nB.TECH,M.A.NET,PGDCA', '7737136272', 'chetak273b0156', 0, 6, '★ CHETAK CLASSES\n★ HEMANT SIR (B.TECH,M.A.,NET,PGDCA)\n★ OPERATED BY DELHI FACULTY \n★ DO NOT COMPROMISE WITH QUALITY\n★ 3 DAYS FREE DEMO CLASSES\n★ A TO Z ENGLISH FOR ALL COMPLETION EXAMS BY HEMANT SIR\n★  SPECIAL BATCH FOR  ENGLISH,MATHS,G.K.,REASONING \n★ COURSES AVAILABLE\n◆ IAS\n◆ RAS\n◆ UGC NET-JRF\n(PAPER I COMMON FOR ALL)\n(PAPER II-III HISTORY)\n◆ GRAMSEVAK\n◆ PATWARI\n◆ CONSTABLE\n◆ S.I.\n◆ Ist,IInd,IIIrd GRADE TEACHER\n◆ IBPS (CLERK,PO,SO)\n◆ SI\n◆ SSC\n◆ 10+2 (CGL-C.P.O.)\n◆ 8th TO 10th ALL SUBJECT\n◆ 11th TO 12th ( ART,SCIENCE,COMMERCE,TYPING)\n\n★SPECIAL DISCOUNT FOR FIRST 50 STUDENTS\n\n★ HEAD OFFICE- KATHURIA COLONY BIKANER\n★  BRANCH OFFICE- SUJANDESAR', 0, 0, 22),
 (461, 'AADHAR CLASSES', '9667786378', '', 'aadhar378', '596a0a7aa062b794703297b651107258', 'D-11,KANTA KHATURIA COLONY,NEAR SANSAKAR SADAN,BIKANER\nCONTACT :7597809550', '2857', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'AADHAR CLASSES\nTHE BASE', '9929585853', 'aadhar378596a0', 0, 6, '★ ADDHAR CLASSES\n★ SRI VIDHYASAGAR YADAV (DIRECTOR)\n★ BEST PLACE IN BIKANER FOR ALL COMPLETION EXAMS PREPARATION\n★ BEST ACADEMIC SOUND,QUALIFIED FACULTY\n★  BEST QUALITY PRINTED NOTES\n★ HEALTHY STUDY ENVIRONMENT\n★ AFFORDABLE FEES\n★ REGULAR ASSIGNMENTS FOR REVISION AND PRACTICE\n★ IAS\n★ RAS\n★ SSC\n★ BANK-PO,CLERK\n★ I,II,III GRADE TEACHERS\n★ CONSTABLE\n★ S.I.\n★ GRAMSEVAK\n★ PATWARI\n ', 0, 0, 23),
 (462, 'JAI SHREE SHYAM P.G. HOSTEL', '7597809550', '', 'jaiss378', '192e1bef5b21d99d95031cecd5ea8fe1', 'D-11,KANTHA KATHURIA COLONY,NEAR     SANSAKAR SADAN ,CONTACT 9667786378', '2858', 0, '0000-00-00 00:00:00', 96, 4, 1, 0, 1, 'JAI SHREE SHYAM P.G.HOSTEL', '9929585853', 'jaiss378192e1', 0, 6, '★ JAI SHREE SHYAM P.G. HOSTEL\n★ SEPARATE ACCOMMODATION FOR GIRLS AND BOYS\n★ TEA,BREAKFAST,LUNCH,DINNER AND BEST ARRANGEMENT FOR STAY\n★ FULLY FURNISHED CLEAN  ROOM WITH ATTACHED BATHROOM\n★ R.O. WATER FACILITY\n★ 24 HOURS ELECTRICITY \n★ 100% PURE VEGETARIAN WITH HIGH QUALITY AND HYGIENIC HOME MADE FOOD\n★ PROFESSIONAL CHEF AND FAMILY ENVIRONMENT\n★ CCTV CAMERAS\n★ GOOD STUDY ENVIRONMENT\n★ NEAR TO MARKET AND COACHING CENTRE\n★ COMPLETELY SAFE AND SECURE HOSTEL CAMPUS\n★ WELL EDUCATED AND PROFESSIONAL STAFF\n★ AC AND COOLER FACILITY \n★ LOCATED IN HEART OF THE CITY      \n★ PLEASE ONCE VISIT AND LOOK OUR FACILITIES AND CARE FOR STUDENTS\n\n             ★ JAI SHREE SHYAM★    ', 0, 0, 0),
-(463, 'CONCEPT', '9828111865', '', 'concept651', '9041586c93b38f4063b699f51da486e3', 'PATEL NAGAR\nBIKANER -334003\nPH:- 0151-2240651 & 2240352', '2942', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'CONCEPT EDUCARE PVT LTD (CEPL)', '9828111865', 'concept65190415', 0, 6, 'CONCEPT EDUCARE PVT LTD. (CEPL)\n...where EVERY STUDENT matters...\n\nA Most Trusted & Leading coaching Institute of Western Rajasthan , mentoring thousands of aspirants of JEE , Medical  & Foundations since 1999\n\nWe Are Having Separate Units for IIT- JEE & Pre-Medical :--\n\nCONCEPT ( Premier Institute For IIT-JEE)\n\nMEDICON ( FOR PRE MEDICAL ) \n\nVISIT US ON \nwww.concept.ac.in\nwww.conceptiitjee.com\nFb: CONCEPT EDUCARE PVT LTD\nTw: CONCEPTEDUCARE\nEmail : info@conceptiitjee.com & concept.bikaner@gmail.com\n\nHIGHLIGHTS OF CONCEPT:-\n\n* USE OF MODERN EQUIPMENT /DEVICES IN CLASSROOMS. EXTENSIVE USE OF PRESENTATIONS, CHARTS, PRACTICAL DEMONSTRATIONS, ROLE PLAYS & GROUP DISCUSSIONS TO MAKE LEARNING EASY & INTERESTING.\n* PERIODIC MINOR AND MAJOR TESTS, APTITUDE TESTS ARE CONDUCTED TO EVALUATE/ ANALYSE THE PERFORMANCE OF STUDENTS .\n* SEPARATE PROBLEM SOLVING/DOUBT REMOVAL CLASSES\n* INTERACTIVE SEMINARS, WORKSHOPS, PRACTICE SESSIONS ARE CONDUCTED.\n* STUDENT REWARD PROGRAM\n* RESULTS BY SMS AND POST \n* STUDENT COUNSELING SESSIONS FOR MOTIVATION, ENCOURAGEMENT & STRESS FREE STATE OF MIND .\n* FEEDBACK SYSTEM:- STUDENTS VIEWS ARE TAKEN IN THE FORM OF A QUESTIONNAIRE TO UNDERSTAND THE QUALITY OF COACHING, EVALUATE THE COMPETENCY \n/ BEHAVIOR OF THE FACULTY AND TO KNOW THE PROBLEMS FACED BY THEM.\n* COMPREHENSIVE AND IN-DEPT STUDY MATERIAL AND FULLY UPDATED NOTES.\n* TRICKS AND SHORTCUT TECHNIQUES TO PREPARE FOR COMPETITION EXAMS.\n* EXCELLENT HOSTEL, TRANSPORTATION AND MESS FACILITY.\n\nCOURSES :-\n\nA. PRE-FOUNDATION :-\nI. PATH FINDER - VII TO VIII MOVING STUDENTS FOR VIII CLASS\nII. FOCUS-- VIII TO IX MOVING STUDENTS FOR IX CLASS\nIII. LASER-- IX TO X MOVING STUNDENTS FOR X CLASS\n\nB. MEDICON COURSES:-\n\n@FOUNDATION COURSES:- \n\nI. GENESIS -- 1 YEAR FOUNDATION COURSE FOR (AIIMS/AIPMT) AFTER XI CLASS\nII. GENESIS -- 2 YEAR FOUNDATION COURSE FOR (AIIMS/AIPMT) AFTER XII\n\n@TARGET COURSES\n\nSYNAPSE :-\n1 YEAR TARGET (AIIMS/AIPMT) COURSES FOR PRE-MEDICAL (AFTER XII CLASS)\n\nENGINEERING :-\n\nFOUNDATION COURSES:-\n\nA. EARLY LEAD-- 2 YEARS FOUNDATION COURSE FOR IIT-JEE(MAIN+ADVANCE) HINDI AND ENGLISH MEDIUM AFTER 10TH \nB. EARLY LEAD:-- 1 YEAR FOUNDATION COURSE FOR JEE (MAIN+ADVANCE) AFTER 11TH\nC. XI NCERT-- FOUNDATION COURSE ( XI NCERT SYLLABUS HINDI AND ENGLISH MEDIUM )\nD. XII NCERT -- FOUNDATION COURSE ( XII NCERT SYLLABUS HINDI AND ENGLISH MEDIUM )\n\nTARGET COURSES:-\nA. EAGLE ''S EYE-- 1 YEAR TARGET COURSE AFTER XII FOR IIT-JEE (MAIN+ADVANCE)\nB. WINNING EDGE:-- 1 YEAR TARGET COURSE AFTER XII FOR JEE-MAINS', 0, 0, 24),
+(463, 'CONCEPT', '9828111865', '', 'concept651', '9041586c93b38f4063b699f51da486e3', 'PATEL NAGAR\nBIKANER -334003\nPH:- 0151-2240651 & 2240352', '2942', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'CONCEPT EDUCARE PVT LTD (CEPL)', '9828111865', 'concept65190415', 0, 6, 'CONCEPT EDUCARE PVT LTD. (CEPL)\n...where EVERY STUDENT matters...\n\nA Most Trusted & Leading coaching Institute of Western Rajasthan , mentoring thousands of aspirants of JEE , Medical  & Foundations since 1999\n\nWe Are Having Separate Units for IIT- JEE & Pre-Medical :--\n\nCONCEPT ( Premier Institute For IIT-JEE)\n\nMEDICON ( FOR PRE MEDICAL ) \n\nVISIT US ON \nwww.concept.ac.in\nwww.conceptiitjee.com\nFb: CONCEPT EDUCARE PVT LTD\nTw: CONCEPTEDUCARE\nEmail : info@conceptiitjee.com & concept.bikaner@gmail.com\n\nHIGHLIGHTS OF CONCEPT:-\n\n* USE OF MODERN EQUIPMENT /DEVICES IN CLASSROOMS. EXTENSIVE USE OF PRESENTATIONS, CHARTS, PRACTICAL DEMONSTRATIONS, ROLE PLAYS & GROUP DISCUSSIONS TO MAKE LEARNING EASY & INTERESTING.\n* PERIODIC MINOR AND MAJOR TESTS, APTITUDE TESTS ARE CONDUCTED TO EVALUATE/ ANALYSE THE PERFORMANCE OF STUDENTS .\n* SEPARATE PROBLEM SOLVING/DOUBT REMOVAL CLASSES\n* INTERACTIVE SEMINARS, WORKSHOPS, PRACTICE SESSIONS ARE CONDUCTED.\n* STUDENT REWARD PROGRAM\n* RESULTS BY SMS AND POST \n* STUDENT COUNSELING SESSIONS FOR MOTIVATION, ENCOURAGEMENT & STRESS FREE STATE OF MIND .\n* FEEDBACK SYSTEM:- STUDENTS VIEWS ARE TAKEN IN THE FORM OF A QUESTIONNAIRE TO UNDERSTAND THE QUALITY OF COACHING, EVALUATE THE COMPETENCY \n/ BEHAVIOR OF THE FACULTY AND TO KNOW THE PROBLEMS FACED BY THEM.\n* COMPREHENSIVE AND IN-DEPT STUDY MATERIAL AND FULLY UPDATED NOTES.\n* TRICKS AND SHORTCUT TECHNIQUES TO PREPARE FOR COMPETITION EXAMS.\n* EXCELLENT HOSTEL, TRANSPORTATION AND MESS FACILITY.\n\nCOURSES :-\n\nA. PRE-FOUNDATION :-\nI. PATH FINDER - VII TO VIII MOVING STUDENTS FOR VIII CLASS\nII. FOCUS-- VIII TO IX MOVING STUDENTS FOR IX CLASS\nIII. LASER-- IX TO X MOVING STUNDENTS FOR X CLASS\n\nB. MEDICON COURSES:-\n\n@FOUNDATION COURSES:- \n\nI. GENESIS -- 1 YEAR FOUNDATION COURSE FOR (AIIMS/AIPMT) AFTER XI CLASS\nII. GENESIS -- 2 YEAR FOUNDATION COURSE FOR (AIIMS/AIPMT) AFTER XII\n\n@TARGET COURSES\n\nSYNAPSE :-\n1 YEAR TARGET (AIIMS/AIPMT) COURSES FOR PRE-MEDICAL (AFTER XII CLASS)\n\nENGINEERING :-\n\nFOUNDATION COURSES:-\n\nA. EARLY LEAD-- 2 YEARS FOUNDATION COURSE FOR IIT-JEE(MAIN+ADVANCE) HINDI AND ENGLISH MEDIUM AFTER 10TH \nB. EARLY LEAD:-- 1 YEAR FOUNDATION COURSE FOR JEE (MAIN+ADVANCE) AFTER 11TH\nC. XI NCERT-- FOUNDATION COURSE ( XI NCERT SYLLABUS HINDI AND ENGLISH MEDIUM )\nD. XII NCERT -- FOUNDATION COURSE ( XII NCERT SYLLABUS HINDI AND ENGLISH MEDIUM )\n\nTARGET COURSES:-\nA. EAGLE \'S EYE-- 1 YEAR TARGET COURSE AFTER XII FOR IIT-JEE (MAIN+ADVANCE)\nB. WINNING EDGE:-- 1 YEAR TARGET COURSE AFTER XII FOR JEE-MAINS', 0, 0, 24),
 (464, 'SRI RAM HOSPITAL', '1512226666', '', 'sriram666', 'b254069f314c7a9b4192cf81cb141ebb', 'OPPOSIT OF P B M CHILD HOSPITAL\nBIKANER', '2866', 0, '0000-00-00 00:00:00', 16, 4, 1, 0, 1, 'SRI RAM HOSPITAL', '1512226666', 'sriram666b2540', 0, 6, 'sri ram hospital', 0, 0, 0),
 (465, 'DIVINE SAVIOR PUBLIC SCHOOL', '9784523238', 'dddoda8787@gmail.com', 'dsps238', '0e6b67f7cf028882df5ca540f34f06bd', '\nNEAR VINOBA BASTI  PARK\nSRIGANGANAGAR', '2918', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'DIVINE SAVIOR PUBLIC SCHOOL', '9784523238', 'dsps2380e6b6', 0, 6, 'DIVINE SAVIOR PUBLIC SCHOOL\n( AN ENGLISH MEDIUM CO-EDUCATIONAL SCHOOL)\nPLAY GROUP TO 5TH \n\nHIGHLIGHTS:-\n* PLAYWAY METHOD OF LEARNING\n* TRAINED CARING STAFF\n* AC CLASSROOMS\n* AUDIO VISUAL LEARNING\n* OWN TRANSPORT\n* DANCE CLASSES\n* SITUATED IN THE HEART OF THE CITY\n* EASILY APPROACHABLE\n* EMPHASIS ON SPOKEN ENGLISH AND HANDWRITING IMPROVEMENT \n\nPRINCIPAL:\nMR. D.D. DODA\n', 0, 0, 0),
 (466, 'REVOLUTION', '1512233021', '', 'revolution021', '902347649eba80a6400df6f5b2c5b8ba', 'A-2 KANTA KHATHURIA COLONY\nNEAR JNV GIRUDAWARA\nBIKANER\n', '2881', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'REVOLUTION\nA Career Institute', '1512233021', 'revolution02190', 0, 6, 'BRANCH OFFICE\nA-9-10 , M.D.V.j COLONY, \nBIKANER-334001 \n+91-95296-74669\n\n** SPECIAL SCHOLARSHIP PROGRAMME FOR NEET 2016 QUALIFIED\n', 0, 0, 25),
-(467, 'ACHIEVERS ACADEMY', '9521435454', '', 'achievers54', '0ec4c827cfdfd3ce309838c57afc5947', 'ITI CIRCLE\nBEHIND VARDHAN HOSPITAL\nJ.N.V COLONY\nBIKANER\nCONTACT:- +91-95214-95454 & 9521435454', '3052', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'ACHIEVERS ACADEMY', '9521435454', 'achievers540ec4', 0, 6, 'ACHIEVERS ACADEMY\n( OUR MOTTO : INDIVIDUAL ATTENTION TO EACH STUDENT)\n\nBE AN ACHIEVER WITH THE BEST SSC teacher''s TEAM....\n\nSPECIAL FEATURES OF COURSE:-\n\n* ALL FACULTIES ARE SSC SELECTED\n* WEEKLY TEST SERIES\n* SPECIAL OUESTION SHEETS AND STUDY MATERIAL\n* SEPARATE PRACTICE TEST AFTER EACH TOPIC\n* PROBLEM SOLVING SESSIONS\n* EXTRA CLASSES FOR WEAK STUDENTS\n* LIBRARY FACILITY\n\nTEST SERIES ALSO AVAILABLE FOR SSC CGLE AND 10+2 , CPO ASPIRANTS', 0, 0, 26),
+(467, 'ACHIEVERS ACADEMY', '9521435454', '', 'achievers54', '0ec4c827cfdfd3ce309838c57afc5947', 'ITI CIRCLE\nBEHIND VARDHAN HOSPITAL\nJ.N.V COLONY\nBIKANER\nCONTACT:- +91-95214-95454 & 9521435454', '3052', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'ACHIEVERS ACADEMY', '9521435454', 'achievers540ec4', 0, 6, 'ACHIEVERS ACADEMY\n( OUR MOTTO : INDIVIDUAL ATTENTION TO EACH STUDENT)\n\nBE AN ACHIEVER WITH THE BEST SSC teacher\'s TEAM....\n\nSPECIAL FEATURES OF COURSE:-\n\n* ALL FACULTIES ARE SSC SELECTED\n* WEEKLY TEST SERIES\n* SPECIAL OUESTION SHEETS AND STUDY MATERIAL\n* SEPARATE PRACTICE TEST AFTER EACH TOPIC\n* PROBLEM SOLVING SESSIONS\n* EXTRA CLASSES FOR WEAK STUDENTS\n* LIBRARY FACILITY\n\nTEST SERIES ALSO AVAILABLE FOR SSC CGLE AND 10+2 , CPO ASPIRANTS', 0, 0, 26),
 (468, 'PULSE 72 FITNESS CLUB', '8559962707', '', 'PULSE07', '9b97d1ba90276327477bb996064b445b', 'ABOVE PUMA SHOWROOM,  NEAR PANCHSHATI CIRCLE,SADULGANJ', '2889', 0, '0000-00-00 00:00:00', 19, 4, 1, 0, 1, 'PULSE 72 FITNESS CLUB', '8559962707', 'PULSE079b97d', 0, 6, 'PULSE 72 FITNESS CLUB\n\nFACILITIES:--\n\nGYM\nSTEAM\nCARDIO\nPHYSIQUE\nDIETICIAN\nBODY BUILDING\nPERSONAL TRAINERS\n\nFULLY EQUIPPED WITH LATEST MACHINES FOR BEST WORKOUT ', 0, 0, 6),
 (469, 'PARI HEIGHTS\nPG HOSTEL FOR GIRLS', '9828091091', '', 'pari091', '77c2e36ee94177414a87779409cb479d', 'RATANDEEP, 2- E - 162\nJNV COLONY\nNEAR SCIENCE PARK\n', '2899', 0, '0000-00-00 00:00:00', 96, 4, 1, 0, 1, 'PARI HEIGHTS\nPG HOSTEL FOR GIRLS', '9828091091', 'pari09177c2e', 0, 6, 'PARI HEIGHTS\nPG FOR GIRLS\nAC & AIR COOLED ROOMS\nRO WATER PLANT\nINVERTER FACILITIES\nWI FI CONNECTIVITY\nHYGIENIC FOOD\n\nEco Friendly hygienic environment at affordable price.\n', 0, 0, 0),
-(470, 'AXON\nIGNITE YOUR POTENTIAL', '1512224444', '', 'axon4444', '4847c7c3aeeecd554c45f12387441b1a', '4-E 455,456 JNV COLONY\nBIKANER\nPh:- 0151-6999000\n0151-6999333\nTOLL FREE\n1800-180-6232', '2999', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'AXON™ ACADEMY', '1512224444', 'axon44444847c', 0, 6, 'AN INNOVATIVE INSTITUTE FOR PRE-MEDICAL\n\nWe Are Available on @ Facebook.com/axonbikaner\n\n@ Twitter\ntwitter.com/axonbikaner\n\n@ Web:--\nwww.axonbikaner.com\n\n AXON™ ACADEMY\n( IGNITE YOUR POTENTIAL )\n\nOUR AIM......\nOur passion is to deliver quality of education bases on pre-medical pattern. We explain topics in such a way that visualize in brain which enhance memory and concise the subject. This teaching tactics mesmerizes the students in class room . \n\nESCALATING WITH...\n\n*Best Faculty\n*Value Based Education\n* Indiscriminate Teaching \n* Ultimate Student Care\n\nFACILITIES.....\n\n* Hostel\n* Fully Air Conditioned Lecture Theater\n* Doubt Removal Counter\n* Medical Consultation \n\nSPECIAL FEATURES......\n\n* ACU ( AXON CARE UNIT ) To Resolve Academic, Non-academic, Administrative affairs\n* Attendance Monitoring : By Biometric System \n* Encouraging Session: Distribution of Silver Medal to the top performers of periodic test .\n\nCLASSROOM COURSES FOR PRE-MEDICAL :--\n\n1st . { NURTURE }\nAIPMT Oriented Programme for XI Appearing Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 59000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 35000\n2nd Installment : Rs 24000\n\nCommencement Date : 7th April,2016 \n( Both English & Hindi Medium ) \n\n2nd. { ENTHUSE }\nAIPMT Oriented Programme for XII Appearing Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 59000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 35000\n2nd Installment : Rs 24000\n\nCommencement Date : 7th April,2016 \n( Both English & Hindi Medium ) \n\nFOR XII APPEARING AND XII PASSED:--\n\n1st . { ACHIEVER PHASE-1 }\nAIPMT Oriented Programme for XII Appearing Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 59000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 69000\n2nd Installment : Rs 29000\n\nCommencement Date : 12th May,2016 \n( Both English & Hindi Medium ) \n\n2ND . { ACHIEVER PHASE II,III }\nAIPMT Oriented Programme for XII Passed Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 69000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 40000\n2nd Installment : Rs 29000\n\n\n( Both English & Hindi Medium ) \n\nWe provide cordial environment at half cost of Kota, without commercialization .', 0, 0, 27);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
-(471, 'TIME\nWE CARE FOR YOUR CARRIER', '1512233299', '', 'time3299', 'e1d472b2c451f291283392b8dd4b99c8', '4- CHANAKAYA NAGAR BASEMENT\nNEW SHIVBARI  ROAD\nNEAR ITI CIRCLE\nCONTACT\n9785599699', '2907', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'TIME INSTITUTE ', '1512233299', 'time3299e1d47', 0, 6, 'TIME\nWE CARE FOR YOUR CARRIER\n\n\n\n* TRAINING PROGRAMME FOR CAT/XAT/IIFT/CMAT ETC.\n* EXCLUSIVE COURSES FOR STATE SPECIFIC CETs\n\nPROGRAMMES FOR CAT PREPARATION:---\n\nCLASSROOM COURSES:--\nA. SUPER LONG TERM : MORE THAN 12 MONTHS\nB. LONG TERM: BETWEEN 3-12 MONTHS\nC. CRASH COURSES: LESS THEN 3 MONTHS\n\nTEST SERIES:----\nAIMCAT BASIC:- THIS PACKAGE WILL CONSIST OF 34 FULL LENGTH MOCK TESTS AND 75 ON-LINE SECTIONAL TESTS.\n\nAIMCAT ENHANCED : THIS PACKAGE WILL CONSIST OF 74 FULL LENGHT MOCK TESTS AND 200 ON-LINE\nSECTIONAL TESTS.\n\n** CORRESPONDENCE PROGRAMMES AVAILABLE\n\n* GDPI MODULE:-- MOCK INTERVIEWS, SERIES OF GK LECTURES  & DETAILED FEEDBACK FROM PREVIOUS BATCHES WHO GOT SELECTED IN CAT  PREVIOUSLY  AND \nCURRENT BATCH FEEDBACK  \n* EXTENSIVE PRACTICE  SESSIONS\n\nAI-MCATs\nALL INDIA MOCK CATs:--- WIDELY REPUTED AS THE BEST AND THE CLOSEST TEST TO ACTAL CAT. \nEVERY YEAR AROUND 70000 UNIQUE TEST TAKERS ATTEMPT OUR AIMCATs. IT BRINGS BEST OUT OF YOU FOR PREPARTION OF CAT.\n\nFACULTY AND COURSE SPECIALITY:-\n\n* OUR FACULTY TEAM COMPRISES EXPERIENCED AND DEDICATED TEAM OF DOCTORATES,POST-GRADUATES AND GRADUATES FROM IITs,IIMs,XLRI AND VARIOUS OTHER TOP-NOTCH INSTITUTES OF THE COUNTRY.\n* COURSE MATERIAL :- WELL STRUCTURED, FOCUSED AND QUALITY CHECKED , UP TO DATE WITH THE LATEST EXAM PATTERN OF CAT.\n* WE ORGANIZE REGULAR DOUBT CLEARING SESSIONS WITH DISCUSSION OF PERFORMANCE AND PREPARTION TO ENSURE STRONG GRIP ON EVERY COVERED TOPICS . IT CAN BE INDIVIDUAL BASIS AS PER REQUIREMENTS. \n\nONLINE CONTENT:----\nREGULAR CHAT SESSIONS  WITH SUBJECT MATTER EXPERTS ARE CONDUCTED OVER A 90 MINUTE WINDOW AROUND 10 TIMES A MONTH. STUDENTS CAN ENGAGE IN DISCUSSIONS ON A VARIETY OF TOPICS SUCH AS B-SCHOOL SELECTION, LAST MINUTE TIPS FOR VARIOUS EXAMS,SOP GUIDANCE( VIA EMAIL) , FORM FILLING GUIDANCE( ON OUR WEBSITE)  ETC.\n\nOTHER SUPPORT:--\n* SEMINARS ARE CONDUCTED ON TOPICS/ISSUES THAT ARE CRUCIAL TO A STUDENT''S SELECTION INTO A TOP MANAGEMENT INSTITUTE,SUCH AS TEST-TAKING STRATEGIES ,INSTITUTE SELECTION, ECONOMY BASICS AND HOW TO CRACK CAT.\n* ''MBA EDUCATION AND CAREERS'' IS A MONTHLY MAGAZINE CONTAINING INFORMATION ON CAT PREPARATION ,SELECTION OF MANAGEMENT INSTITUTE,GK ,CURRENT AFFAIRS, ECONOMIC TERMS ETC. IT IS INDISPENSIBLE  FOR PREPARING FOR OMETs (OTHER MANAGEMENT ENTRANCE TESTS) AND CONTAINS PLENTY OF ARTICLES BY IIM ALUMNI.   \n\n\nSOPHISTICATED TRAINING TECHNIQUES:--\n\n* CONCEPTS TRAINING---BASIC KNOWLEDGE AND SKILL LEVEL IMPROVEMENT THROUGH HANDOUTS AND TESTS.  SPECIAL ATTENTION TO NON-MATHEMATICS STUDENTS.\n* SECTION WISE TESTING:--\nFOUNDATION TESTS\nINTERMEDIATE TESTS\nADVANCE TESTS\n\n( WITH AROUND 150 SECTIONAL TESTS ACROSS VERBAL,LOGICAL REASONING .DI AND QUANTITATIVE AREAS) \n\nCOMPREHENSIVE TESTING :--\n* SELF -ADMINISTRATED MOCK CATs ( SAMCATs- 25 NOs.)\n* ALL INDIA MOCK CATs ( AIMCATS- 25 NOs)\n\nTRAINING FOR OTHER EXAMS:--\nXAT,SNAP,IIFT,ATMA,MAT, OMATs\n\nESSAY,GD, & INTERVIEW TRAINING:--\nMODULE 1 -- INCLUDES FOUNDATION AND PRACTICE SESSIONS WITH INDIVIDUAL AND GROUP FEEDBACK\nMODULE 2 --- CONSIST OF EXTENSIVE PRACTICE SESSIONS, INCLUDING MOCK INTERVIEWS AND A SERIES OF GK LECTURES FOR STUDENTS WHO GET SHORTLISTED FOR THE GDPI ROUND. YOU ALSO GET THE BENEFIT OF THOROUGH FEEDBACK FROM OUR FACULTY,WHO  ARE SEASONED EXPERTS IN THIS DOMAIN.', 0, 0, 28),
+(470, 'AXON\nIGNITE YOUR POTENTIAL', '1512224444', '', 'axon4444', '4847c7c3aeeecd554c45f12387441b1a', '4-E 455,456 JNV COLONY\nBIKANER\nPh:- 0151-6999000\n0151-6999333\nTOLL FREE\n1800-180-6232', '2999', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'AXON™ ACADEMY', '1512224444', 'axon44444847c', 0, 6, 'AN INNOVATIVE INSTITUTE FOR PRE-MEDICAL\n\nWe Are Available on @ Facebook.com/axonbikaner\n\n@ Twitter\ntwitter.com/axonbikaner\n\n@ Web:--\nwww.axonbikaner.com\n\n AXON™ ACADEMY\n( IGNITE YOUR POTENTIAL )\n\nOUR AIM......\nOur passion is to deliver quality of education bases on pre-medical pattern. We explain topics in such a way that visualize in brain which enhance memory and concise the subject. This teaching tactics mesmerizes the students in class room . \n\nESCALATING WITH...\n\n*Best Faculty\n*Value Based Education\n* Indiscriminate Teaching \n* Ultimate Student Care\n\nFACILITIES.....\n\n* Hostel\n* Fully Air Conditioned Lecture Theater\n* Doubt Removal Counter\n* Medical Consultation \n\nSPECIAL FEATURES......\n\n* ACU ( AXON CARE UNIT ) To Resolve Academic, Non-academic, Administrative affairs\n* Attendance Monitoring : By Biometric System \n* Encouraging Session: Distribution of Silver Medal to the top performers of periodic test .\n\nCLASSROOM COURSES FOR PRE-MEDICAL :--\n\n1st . { NURTURE }\nAIPMT Oriented Programme for XI Appearing Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 59000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 35000\n2nd Installment : Rs 24000\n\nCommencement Date : 7th April,2016 \n( Both English & Hindi Medium ) \n\n2nd. { ENTHUSE }\nAIPMT Oriented Programme for XII Appearing Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 59000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 35000\n2nd Installment : Rs 24000\n\nCommencement Date : 7th April,2016 \n( Both English & Hindi Medium ) \n\nFOR XII APPEARING AND XII PASSED:--\n\n1st . { ACHIEVER PHASE-1 }\nAIPMT Oriented Programme for XII Appearing Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 59000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 69000\n2nd Installment : Rs 29000\n\nCommencement Date : 12th May,2016 \n( Both English & Hindi Medium ) \n\n2ND . { ACHIEVER PHASE II,III }\nAIPMT Oriented Programme for XII Passed Students.\n\nCourse Duration :- 1 Year\n\nTotal Academic Charges :- Approx 69000 ( Including Reg Fees, Student Kit & Taxes as applicable ) \n1st Installment : Rs 40000\n2nd Installment : Rs 29000\n\n\n( Both English & Hindi Medium ) \n\nWe provide cordial environment at half cost of Kota, without commercialization .', 0, 0, 27),
+(471, 'TIME\nWE CARE FOR YOUR CARRIER', '1512233299', '', 'time3299', 'e1d472b2c451f291283392b8dd4b99c8', '4- CHANAKAYA NAGAR BASEMENT\nNEW SHIVBARI  ROAD\nNEAR ITI CIRCLE\nCONTACT\n9785599699', '2907', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'TIME INSTITUTE ', '1512233299', 'time3299e1d47', 0, 6, 'TIME\nWE CARE FOR YOUR CARRIER\n\n\n\n* TRAINING PROGRAMME FOR CAT/XAT/IIFT/CMAT ETC.\n* EXCLUSIVE COURSES FOR STATE SPECIFIC CETs\n\nPROGRAMMES FOR CAT PREPARATION:---\n\nCLASSROOM COURSES:--\nA. SUPER LONG TERM : MORE THAN 12 MONTHS\nB. LONG TERM: BETWEEN 3-12 MONTHS\nC. CRASH COURSES: LESS THEN 3 MONTHS\n\nTEST SERIES:----\nAIMCAT BASIC:- THIS PACKAGE WILL CONSIST OF 34 FULL LENGTH MOCK TESTS AND 75 ON-LINE SECTIONAL TESTS.\n\nAIMCAT ENHANCED : THIS PACKAGE WILL CONSIST OF 74 FULL LENGHT MOCK TESTS AND 200 ON-LINE\nSECTIONAL TESTS.\n\n** CORRESPONDENCE PROGRAMMES AVAILABLE\n\n* GDPI MODULE:-- MOCK INTERVIEWS, SERIES OF GK LECTURES  & DETAILED FEEDBACK FROM PREVIOUS BATCHES WHO GOT SELECTED IN CAT  PREVIOUSLY  AND \nCURRENT BATCH FEEDBACK  \n* EXTENSIVE PRACTICE  SESSIONS\n\nAI-MCATs\nALL INDIA MOCK CATs:--- WIDELY REPUTED AS THE BEST AND THE CLOSEST TEST TO ACTAL CAT. \nEVERY YEAR AROUND 70000 UNIQUE TEST TAKERS ATTEMPT OUR AIMCATs. IT BRINGS BEST OUT OF YOU FOR PREPARTION OF CAT.\n\nFACULTY AND COURSE SPECIALITY:-\n\n* OUR FACULTY TEAM COMPRISES EXPERIENCED AND DEDICATED TEAM OF DOCTORATES,POST-GRADUATES AND GRADUATES FROM IITs,IIMs,XLRI AND VARIOUS OTHER TOP-NOTCH INSTITUTES OF THE COUNTRY.\n* COURSE MATERIAL :- WELL STRUCTURED, FOCUSED AND QUALITY CHECKED , UP TO DATE WITH THE LATEST EXAM PATTERN OF CAT.\n* WE ORGANIZE REGULAR DOUBT CLEARING SESSIONS WITH DISCUSSION OF PERFORMANCE AND PREPARTION TO ENSURE STRONG GRIP ON EVERY COVERED TOPICS . IT CAN BE INDIVIDUAL BASIS AS PER REQUIREMENTS. \n\nONLINE CONTENT:----\nREGULAR CHAT SESSIONS  WITH SUBJECT MATTER EXPERTS ARE CONDUCTED OVER A 90 MINUTE WINDOW AROUND 10 TIMES A MONTH. STUDENTS CAN ENGAGE IN DISCUSSIONS ON A VARIETY OF TOPICS SUCH AS B-SCHOOL SELECTION, LAST MINUTE TIPS FOR VARIOUS EXAMS,SOP GUIDANCE( VIA EMAIL) , FORM FILLING GUIDANCE( ON OUR WEBSITE)  ETC.\n\nOTHER SUPPORT:--\n* SEMINARS ARE CONDUCTED ON TOPICS/ISSUES THAT ARE CRUCIAL TO A STUDENT\'S SELECTION INTO A TOP MANAGEMENT INSTITUTE,SUCH AS TEST-TAKING STRATEGIES ,INSTITUTE SELECTION, ECONOMY BASICS AND HOW TO CRACK CAT.\n* \'MBA EDUCATION AND CAREERS\' IS A MONTHLY MAGAZINE CONTAINING INFORMATION ON CAT PREPARATION ,SELECTION OF MANAGEMENT INSTITUTE,GK ,CURRENT AFFAIRS, ECONOMIC TERMS ETC. IT IS INDISPENSIBLE  FOR PREPARING FOR OMETs (OTHER MANAGEMENT ENTRANCE TESTS) AND CONTAINS PLENTY OF ARTICLES BY IIM ALUMNI.   \n\n\nSOPHISTICATED TRAINING TECHNIQUES:--\n\n* CONCEPTS TRAINING---BASIC KNOWLEDGE AND SKILL LEVEL IMPROVEMENT THROUGH HANDOUTS AND TESTS.  SPECIAL ATTENTION TO NON-MATHEMATICS STUDENTS.\n* SECTION WISE TESTING:--\nFOUNDATION TESTS\nINTERMEDIATE TESTS\nADVANCE TESTS\n\n( WITH AROUND 150 SECTIONAL TESTS ACROSS VERBAL,LOGICAL REASONING .DI AND QUANTITATIVE AREAS) \n\nCOMPREHENSIVE TESTING :--\n* SELF -ADMINISTRATED MOCK CATs ( SAMCATs- 25 NOs.)\n* ALL INDIA MOCK CATs ( AIMCATS- 25 NOs)\n\nTRAINING FOR OTHER EXAMS:--\nXAT,SNAP,IIFT,ATMA,MAT, OMATs\n\nESSAY,GD, & INTERVIEW TRAINING:--\nMODULE 1 -- INCLUDES FOUNDATION AND PRACTICE SESSIONS WITH INDIVIDUAL AND GROUP FEEDBACK\nMODULE 2 --- CONSIST OF EXTENSIVE PRACTICE SESSIONS, INCLUDING MOCK INTERVIEWS AND A SERIES OF GK LECTURES FOR STUDENTS WHO GET SHORTLISTED FOR THE GDPI ROUND. YOU ALSO GET THE BENEFIT OF THOROUGH FEEDBACK FROM OUR FACULTY,WHO  ARE SEASONED EXPERTS IN THIS DOMAIN.', 0, 0, 28),
 (472, 'JASLOK MEDICAL HALL', '1542477582', '', 'jaslok98', '2e316171b88db30c86ce1dc8ac07e56c', '148 - H BLOCK\nSRIGANGANAGAR', '2903', 0, '0000-00-00 00:00:00', 18, 1, 1, 0, 1, 'JASLOK MEDICAL HALL', '1542477582', 'jaslok982e316', 0, 6, 'JASLOK MEDICAL HALL\n(SINCE 1994 )\n\nPHARMACIST & OWNER :-\nMr. JASPREET SINGH\n98297-97198\n\n* ALL KIND OF GENERAL AND SPECIALISED BRANDED  MEDICINE AVAILABLE.\n* WE ATTEND RX OF ALL DOCTORS OF SRI GANGANAGAR DISTRICT AND OUTSTATION DOCTORS ALSO .\n* SPECIFIED COSMETICS AND OTC PRODUCTS ALSO AVAILABLE .\n\nTIMING:-\n8 AM - 11 PM\n', 0, 0, 0),
 (473, 'FIBER FITNESS FACTORY\n( THE GYM )', '9414139682', '', 'dhruv682', '6718b3ab6ed2623343fc92de2da3ccfd', 'A-13, KANTA KATHURIA COLONY', '2905', 0, '0000-00-00 00:00:00', 19, 4, 1, 0, 1, 'F3-FIBER FITNESS FACTORY\n( THE GYM )', '9414139682', 'dhruv6826718b', 0, 6, 'F3- FIBER FITNESS FACTORY ( THE GYM )\n\nOWNED BY\nRAMESH KUMAR\nDHRUV SEWDA', 0, 0, 7),
 (474, 'Pawan Bishnoi', '9587555358', '', 'Mr. Bishnoi', '72a38b3c59fd7c0f758b3092c03dbf5f', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Mr. Bishnoib264', 0, 6, '', 0, 0, 0),
-(475, 'SONA BAL SEC. SCHOOL', '9414636929', '', 'SONA929', '8592e5facc722a287ab94220fd0b4a7b', 'D-12, KATHURIA COLONY, NEAR SANSKAR SADAN ,\nSHIVBARI CIRCLE, BIKANER', '2915', 0, '0000-00-00 00:00:00', 25, 4, 1, 0, 1, 'SONA BAL SEC. SCHOOL', '9414636929', 'SONA9298592e', 0, 6, 'SONA BAL SEC. SCHOOL\n\nLKG TO 5TH ENGLISH MEDIUM\n\n6TH TO 10TH HINDI MEDIUM( RBSE)\n\nTRANSPORTATION FACILITY FOR ALL CITY \n\nSPECIAL BUS FOR ARMY CAMPUS STUDENTS \n\nEXPERIENCE D AND TRAINED STAFF\n\nTEACHING WITH HELP OF LATEST AIDS\n\nADDITIONAL EVENING CLASSES FOR WEAK STUDENTS\n\nPG HOSTEL FACILITY SEPARATELY FOR BOYS AND GIRLS\n', 0, 0, 0),
+(475, 'SONA BAL SEC. SCHOOL', '9414636929', '', 'SONA929', '8592e5facc722a287ab94220fd0b4a7b', 'D-12, KATHURIA COLONY, NEAR SANSKAR SADAN ,\nSHIVBARI CIRCLE, BIKANER', '2915', 0, '0000-00-00 00:00:00', 25, 4, 1, 0, 1, 'SONA BAL SEC. SCHOOL', '9414636929', 'SONA9298592e', 0, 6, 'SONA BAL SEC. SCHOOL\n\nLKG TO 5TH ENGLISH MEDIUM\n\n6TH TO 10TH HINDI MEDIUM( RBSE)\n\nTRANSPORTATION FACILITY FOR ALL CITY \n\nSPECIAL BUS FOR ARMY CAMPUS STUDENTS \n\nEXPERIENCE D AND TRAINED STAFF\n\nTEACHING WITH HELP OF LATEST AIDS\n\nADDITIONAL EVENING CLASSES FOR WEAK STUDENTS\n\nPG HOSTEL FACILITY SEPARATELY FOR BOYS AND GIRLS\n', 0, 0, 0);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
 (476, 'MAHARAJA HOTEL', '1542462955', 'maharajahotelsgnr@gmail.com', 'maharaja955', '7c25b6ebd1fb705f8dd3ccdbf6c810b8', 'NH-62, Near Nissan Singh Petrol Pump\nSuratgarh Road,\n Sri Ganganagar\nPH: 0154-2462955\n0154-2463955\nMr Ramesh Verma\n94624-86955', '2925', 0, '0000-00-00 00:00:00', 65, 1, 1, 0, 1, 'MAHARAJA HOTEL', '1542462955', 'maharaja9557c25', 0, 6, 'MAHARAJA HOTEL\n\nVisit us on \nwww.maharajahotel.co.in\n\nOnly the most comfortable and modern hotel in the town which is located on NH-62,Suratgarh road and approx 1 km from bus stand & railway station.\nThe Hotel has graceful architecture blends aesthetically with modern facilities\n\n◆Spacious Room\n◆ Restaurant\n◆ Bar\n◆ For Entertainment LCD\n◆ Round the clock room service\n◆ Lift facility\n◆ Mini Bar\n◆ Internet Facility\n◆ Individual Climate control\n◆ Same day laundry\n◆ 100 % Power backup\n◆ Sound proof Windows\n◆ MASTER & VISA Cards accepted.\n◆ Doctor on call\n◆ Baggage storage\n◆ Secure Parking for self driven cars\n◆ Accommodation for Drivers in common Dormitory.\n◆ Party Hall\n◆ Conference Hall\n\n● RESTAURANT●\n\nDiscover the delights of fine Cuisine- Indian, Mughlai, American\nContinental & Chinese food with impressive menu & Impeccable service.\n\n● Home delivery available\n\n【ROOM TARIFF】\n∆ Deluxe\nSingle 2200/-\nDouble 2550/-\n\n∆Super Deluxe\nSingle 2600/-\nDouble 2950/-\n\n∆ Maharaja Suite\nSingle/Double\n2990/-\nExtra Person Charge 400/-\n', 0, 0, 0),
-(477, 'PHOENIX ACADEMY', '1516550104', '', 'phoenix104', 'f67b1f5ee338459c49c331224c051c14', 'A-156 SADULGANG\nOPPOSITE SBI BANK,\nPANCHSHATI CIRCLE\nPH : 0151- 6550105', '2989', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'PHOENIX IIT ACADEMY', '1516550104', 'phoenix104f67b1', 0, 6, 'PHOENIX ACADEMY\n( IIT PREPARATION SPECIALIST )\n\nRISE,DREAM,FLY\n\nABOUT PHOENIX.....\n\nPhoeniox Academy is a premier coaching institute for the preparation of IIT-JEE, Pre-medical (AIPMT/AIIMS), Pre-Nurture (Class VIII to X) & Career Foundation. Our vision is to be the most trusted and successful training institution "Exclusively for IIT-JEE"\r\n\nCOURSES:-\nPre-Nurture Wing - Class 7th | 8th | 9th\n\nFIRE OF PHOENIX: “Three Years Foundation Course for Class X”\r\n(For Class 9th to 10th Moving Students)\n\nRISE OF PHOENIX: “Two Years Foundation Course for Class XI”\r\n(For Class 10th to 11th Moving Students)\n\nFLIGHT OF PHOENIX\r\nFor class 11th to 12th moving students\n\nFLIGHT OF PHOENIX\r\nFor class 11th to 12th moving students\n\nDETAILED INFORMATION ABOUT ALL COURSES AVAILABLE ON OUR WEBSITE:--\nwww.phoenix.ac.in\n\nOUR INNOVATIONS:--\n\nMASTER STROKE\nPHOENIX FRIEND\nDREAM OF PHOENIX\nPHOENIX TIMES MAGZINE\nPHOENIX SCHOLARSHIP PROGRAMME\n\n\nPHOENIX IIT ACADEMY INFRASTRUCTURE\n(CAMPUS AND HOSTEL )\r\n\r\n*First ever institute of Bikaner to have Physics and Chemistry Lab facilities in the institute campus.\r\n*First ever institute of Bikaner to have Digital Smart Classes for IIT JEE preparation.\r\n*First ever institute of Bikaner to have computer lab for online pattern of IIT-JEE in future, with fully prepared online tests.\r\n*First ever institute of Bikaner to have a rich library with separate study areas and doubt classes.\r\n*First ever institute of Bikaner to have a separate state-of-the-art conference hall for mentor ship programs and motivational seminars.\r\n*First ever institute of Bikaner to have fully air-conditioned classrooms.\r\n*First ever institute of Bikaner to understand and maintain least student - teacher ratio.\r\n*First ever institute of Bikaner to have coaching and hostel facilities in the same campus.\n\r\nPhoenix IIT Academy is located in the heart of the city, free from sound and air pollution. \nHostel facility is available in the same campus for outside students along with clean and hygienic dining hall. \nSpecial care has been taken for maintaining proper light and ventilation, hygienic toilets, filtered drinking water and ample parking space. \nTransportation facility is arranged for the students.\nManagement team of Phoenix IIT Academy strives to maintain the highest quality infrastructure for students and faculties.', 0, 0, 29),
+(477, 'PHOENIX ACADEMY', '1516550104', '', 'phoenix104', 'f67b1f5ee338459c49c331224c051c14', 'A-156 SADULGANG\nOPPOSITE SBI BANK,\nPANCHSHATI CIRCLE\nPH : 0151- 6550105', '2989', 0, '0000-00-00 00:00:00', 23, 4, 1, 0, 1, 'PHOENIX IIT ACADEMY', '1516550104', 'phoenix104f67b1', 0, 6, 'PHOENIX ACADEMY\n( IIT PREPARATION SPECIALIST )\n\nRISE,DREAM,FLY\n\nABOUT PHOENIX.....\n\nPhoeniox Academy is a premier coaching institute for the preparation of IIT-JEE, Pre-medical (AIPMT/AIIMS), Pre-Nurture (Class VIII to X) & Career Foundation. Our vision is to be the most trusted and successful training institution \"Exclusively for IIT-JEE\"\r\n\nCOURSES:-\nPre-Nurture Wing - Class 7th | 8th | 9th\n\nFIRE OF PHOENIX: “Three Years Foundation Course for Class X”\r\n(For Class 9th to 10th Moving Students)\n\nRISE OF PHOENIX: “Two Years Foundation Course for Class XI”\r\n(For Class 10th to 11th Moving Students)\n\nFLIGHT OF PHOENIX\r\nFor class 11th to 12th moving students\n\nFLIGHT OF PHOENIX\r\nFor class 11th to 12th moving students\n\nDETAILED INFORMATION ABOUT ALL COURSES AVAILABLE ON OUR WEBSITE:--\nwww.phoenix.ac.in\n\nOUR INNOVATIONS:--\n\nMASTER STROKE\nPHOENIX FRIEND\nDREAM OF PHOENIX\nPHOENIX TIMES MAGZINE\nPHOENIX SCHOLARSHIP PROGRAMME\n\n\nPHOENIX IIT ACADEMY INFRASTRUCTURE\n(CAMPUS AND HOSTEL )\r\n\r\n*First ever institute of Bikaner to have Physics and Chemistry Lab facilities in the institute campus.\r\n*First ever institute of Bikaner to have Digital Smart Classes for IIT JEE preparation.\r\n*First ever institute of Bikaner to have computer lab for online pattern of IIT-JEE in future, with fully prepared online tests.\r\n*First ever institute of Bikaner to have a rich library with separate study areas and doubt classes.\r\n*First ever institute of Bikaner to have a separate state-of-the-art conference hall for mentor ship programs and motivational seminars.\r\n*First ever institute of Bikaner to have fully air-conditioned classrooms.\r\n*First ever institute of Bikaner to understand and maintain least student - teacher ratio.\r\n*First ever institute of Bikaner to have coaching and hostel facilities in the same campus.\n\r\nPhoenix IIT Academy is located in the heart of the city, free from sound and air pollution. \nHostel facility is available in the same campus for outside students along with clean and hygienic dining hall. \nSpecial care has been taken for maintaining proper light and ventilation, hygienic toilets, filtered drinking water and ample parking space. \nTransportation facility is arranged for the students.\nManagement team of Phoenix IIT Academy strives to maintain the highest quality infrastructure for students and faculties.', 0, 0, 29),
 (478, 'STAR TRACK SEN. SEC. SCHOOL\n(ARTS & COMMERCE)', '1512230234', '', 'startrack34', 'ef4b04207ec5425c90728ec8d33e3eee', 'C-105, KANTA KHATURIYA COLONY, BIKANER (RAJ.)\nNEAR JNV POLICE STATION\n0151- 2230234\n 9414324983', '3168', 0, '0000-00-00 00:00:00', 25, 4, 1, 0, 1, 'STARTRACK  SEN.SEC SCHOOL\n( ART & COMMERCE)', '1512230234', 'startrack34ef4b', 0, 6, 'STAR TRACK SENIOR SECONDARY SCHOOL ( ARTS AND COMMERCE)\nC-105, KANTA KHATURIYA COLONY\nNEAR JNV POLICE STATION, BIKANER (RAJ.)\n0151-2230234\n9414324983\n\nFACILITY-:\n* NURSERY TO V - ENGLISH MEDIUM (CBSE).\n* VI TO XII - ENGLISH AND HINDI MEDIUM BOTH (RAJASTHAN BOARD).\n* C.C CAMERAS.\n* CO.- CURRICULAR ACTIVITIES.\n* SEPARATE COMPUTER LAB.\n* LEARN BY FUN WORD.\n* NOMINAL FEES.\n* TAXI FACILITY.\n* GENERATOR AND WATER COOLER FACILITY.\n* EXPERIENCED STAFF FOR EVERY SUBJECT.\n\nCONTACT PERSON-:\nAJEET SINGH', 0, 0, 0),
 (479, 'SONI MEDICAL STORE', '9887181137', '', 'soni137', 'a5a47b85b5ebfc402ce8c6b45e310f58', 'OPPOSITE BHATIA PETROL PUMP\nGAUSHALA ROAD\nSRIGANGANAGAR', '3032', 0, '0000-00-00 00:00:00', 18, 1, 1, 0, 1, 'SONI MEDICAL STORE', '9887181137', 'soni137a5a47', 0, 6, 'SONI MEDICAL STORE ( SINCE 1997)\nOWNER\nMr VINOD SONI\n\n◆ALL KIND OF GENERAL AND SPECIALISED BRANDED  MEDICINE AVAILABLE.\n◆ WE ATTEND RX OF ALL DOCTORS OF SRI GANGANAGAR DISTRICT AND OUTSTATION DOCTORS ALSO .\n◆ SPECIFIED COSMETICS AND OTC PRODUCTS ALSO AVAILABLE .\n> AYURVEDIC MEDICINES ALSO AVAILABLE\n> ALL TYPE OF VACCINES AVAILABLE ON DEMAND.\n\n\nTIMING:-\n10 AM - 11 PM\n', 0, 0, 0),
 (480, 'RIDHI SIDHI COSMETICS', '9414500708', '', 'ridhisidhi708', '5388f5f9fc6b9ea7276d4a329fa7cf77', '54-D-BLOCK ,\nNEAR VAKILON WALI DIGGI,\nPH :- 0154-2480003\nMOB:83869-80003 & 94145-00708\nWHATS APP @ 88902-80003', '3040', 0, '0000-00-00 00:00:00', 53, 1, 1, 0, 1, 'RIDHI SIDHI COSMETICS', '9414500708', 'ridhisidhi70853', 0, 6, 'RIDHI SIDHI COSMETICS\n\nALL TYPE OF COSMETIC ITEMS ( WHOLESALE AND RETAIL) \n\n** ALL BRANDED AND QUALITY COSMETIC ITEMS AVAILABLE\n** DAILY USE OTC PRODUCTS ALSO AVAILABLE', 0, 0, 0),
@@ -13700,7 +13198,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (510, 'ANAND DJ', '9460787053', 'anandkaushal2526@gmail.com', 'anand053', '1edcdeee1d411a32b9e9e6073f97e828', 'PAWANPURI, SOUTH EXTENSION, NEAR NAGNICHI MANDIR, BIKANER (RAJ.)\n9460787053', '3164', 0, '0000-00-00 00:00:00', 117, 4, 1, 0, 1, 'ANAND DJ', '9460787053', 'anand0531edcd', 0, 6, 'ANAND DJ\nPAWAN PURI, SOUTH EXTENSION, NEAR NAGNICHI MANDIR, BIKANER(RAJASTHAN)\n9460787053\n8005525027\n\nFACILITY :-\n*  MARRIAGE PARTY.\n*  LADIES SANGEET.\n*   BIRTHDAY PARTY.\n*   PUBLIC EVENT & OTHER.\n*  TRUSS DJ.\n*   FLOOR DJ.\n*   DANCING NIGHT.\n*   MOBILE DJ.\n*   HI- FI SYSTEM.\n\nCONTACT PERSON:-\nANAND KAUSAL', 0, 0, 0),
 (511, 'KRISHNA COMPUTECH & ELECTRONIC', '9783638063', '', 'Krishna063', 'c83eb54e99de966b473afc7281f95567', 'KRISHNA COMPUTECH & ELECTRONIC\n6-A-5 SOUTH EXTENSION, PAWANPURI, BIKANER (RAJ.)\n9783638063', '3126', 0, '0000-00-00 00:00:00', 42, 4, 1, 0, 1, 'KRISHNA COMPUTECH & ELECTRONIC', '9783638063', 'Krishna0634d0a6', 0, 6, 'KRISHNA COMPUTECH & ELECTRONIC\n6-A-5, SOUTH EXTENSION, PAWANPURI, BIKANER (RAJ.)\n9783638063\n\nFACILITY :-\n* NEW PC AND LAPTOP SALE.\n* LAPTOP AND PC PART.\n* REPAIR ALL COMPANY PC AND LAPTOP.\n\nCONTACT PERSON:-\nSUNIL JHAMB\n', 0, 0, 0),
 (512, 'SUGAM CATERERS', '8890007975', 'sugam.caterers@gmail.com', 'sugam975', 'f1c6dac5fd86961e0b307e522679bf3f', 'SUGAM CATERERS\n6-B-1, PAWANPURI, SOUTH EXTENSION, BIKANER (RAJ.)\n8890007975', '3128', 0, '0000-00-00 00:00:00', 66, 4, 1, 0, 1, 'SUGAM CATERERS', '8890007975', 'sugam975f1c6d', 0, 6, 'SUGAM CATERERS\n6-B-1, PAWANPURI, SOUTH EXTENSION, BIKANER (RAJ.)\n8890007975\n9461117712\nWEBSITE :-\nEVENT@SUGAMCATERERSSERVICE.COM\n\nFACILITY :-\n*  WEDDING PLANNER.\n*   THEME DECORATION.\n*   MUSICAL EVENTS.\n*   BALOON DECORATION.\n*   CELEBRITY SHOWS.\n*    VEDIO GRAPHY.\n*    TENT DECORATION.\n\nCONTACT PERSON:-\nVINOD SHARMA\nVAIBHAV SHARMA', 0, 0, 0),
-(513, 'CAREER MAKERS ACADEMY ', '9414577511', '', 'cma7511', '2a3c7eea6d78a452fcdd94bd8b7db05e', 'K-22,MODEL TOWN Ist OPP GOVT HOSPITAL \nCONTACT 9414577511 ', '3133', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'CAREER MAKER''S ACADEMY', '7230800007', 'cma75112a3c7', 0, 6, '* CAREER MAKER''S ACADEMY\n* RESULTED ORIENTED CLASSES\n* AC CLASS ROOM\n* PROFESSIONAL ACADEMIC STAFF\n* REGULAR 4 HOURS CLASSES\n* COMPUTERISED PRINTED NOTES\n* AFFORDABLE FEE \n* WI-FI CAMPUS\n* REGULAR TEST SERIES,WEEKLY OMR TEST\n* SPECIAL PROBLEM SOLVING CLASSES\n* REGULAR ASSIGNMENT FOR REVISION AND PRACTICE \n* RECEPTION COUNTER\n* COMPUTER CLASSES\n* MOTIVATIONAL CLASSES  \n\n* ALL KIND OF COMPETITIVE EXAMS \n*  SSC - (10+2)(CGL)(FCI)\n*  BANK\n*  LIC\n*  CDS\n*  RAILWAY\n*  CSAT\n* CPO\n* SI\n* DELHI POLICE\n* RPSC\n\n* SSC MAIN BATCH START FROM 4 OCT 2016 TIME :8:15 AM\n* SSC PRE BATCH TIME 11:15 AM (5th OCT 2016\n\n* DIRECTOR :\nMR. SAHARAN BALVEER\n94145-77511\n7230800007\n\n', 0, 0, 32),
+(513, 'CAREER MAKERS ACADEMY ', '9414577511', '', 'cma7511', '2a3c7eea6d78a452fcdd94bd8b7db05e', 'K-22,MODEL TOWN Ist OPP GOVT HOSPITAL \nCONTACT 9414577511 ', '3133', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'CAREER MAKER\'S ACADEMY', '7230800007', 'cma75112a3c7', 0, 6, '* CAREER MAKER\'S ACADEMY\n* RESULTED ORIENTED CLASSES\n* AC CLASS ROOM\n* PROFESSIONAL ACADEMIC STAFF\n* REGULAR 4 HOURS CLASSES\n* COMPUTERISED PRINTED NOTES\n* AFFORDABLE FEE \n* WI-FI CAMPUS\n* REGULAR TEST SERIES,WEEKLY OMR TEST\n* SPECIAL PROBLEM SOLVING CLASSES\n* REGULAR ASSIGNMENT FOR REVISION AND PRACTICE \n* RECEPTION COUNTER\n* COMPUTER CLASSES\n* MOTIVATIONAL CLASSES  \n\n* ALL KIND OF COMPETITIVE EXAMS \n*  SSC - (10+2)(CGL)(FCI)\n*  BANK\n*  LIC\n*  CDS\n*  RAILWAY\n*  CSAT\n* CPO\n* SI\n* DELHI POLICE\n* RPSC\n\n* SSC MAIN BATCH START FROM 4 OCT 2016 TIME :8:15 AM\n* SSC PRE BATCH TIME 11:15 AM (5th OCT 2016\n\n* DIRECTOR :\nMR. SAHARAN BALVEER\n94145-77511\n7230800007\n\n', 0, 0, 32),
 (514, 'mukul', '9672260024', '', 'mukulsomani78', 'a932313da061a7f832b855c550980244', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'mukulsomani78bc', 0, 6, '', 0, 0, 0),
 (515, 'WAY AHEAD', '8890207924', 'mailwayahead@gmail.com', 'wayahead924', '9d8c9abf21a0c1ab26587947a5d7f67c', '10A-H BLOCK\n0154-2484377', '3144', 0, '0000-00-00 00:00:00', 122, 1, 0, 0, 1, 'WAY AHEAD INSTITUTE PVT. LTD.', '8890207924', 'wayahead9249d8c', 0, 6, '* WAY AHEAD INSTITUTE PVT.LTD.\n* POWER IELTS\n* BRITISH COUNCIL\n* CANADA SPECIALIST \n*  NEW ZEALAND EDUCATION SPECIALIST\n* www.wayahead.in \n\n* DIRECTOR \nVIJAY CHAND \nMA (English),LL.B.\n\n', 0, 0, 0),
 (516, 'mukul', '7062189358', '', 'somanimukul9@gmail.com', 'a932313da061a7f832b855c550980244', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'somanimukul9@gm', 0, 6, '', 0, 0, 0),
@@ -13714,25 +13212,24 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (524, 'amritbir', '8968896906', '', 'amritbir', 'fdfc37c1b09b8ba2952eebc41472ee80', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'amritbird96d9', 0, 6, '', 0, 0, 0),
 (525, 'Utpal pramanick', '8906602909', 'priyaeventsalution@gmail.com', 'priyanka das', 'e807f1fcf82d132f9bb018ca6738a19f', 'kolkata.l', '3258', 0, '0000-00-00 00:00:00', 148, 1, 0, 0, 1, 'priya event & solution in kolkata', '8906602909', 'priyanka das0a9', 0, 6, 'I promed by any event program.\nand A.D. event program.', 0, 0, 0),
 (526, 'amritbir singh', '7888310425', '', 'amritbir singh\n\n\namritbir singh\n\namritbir singh', 'c55ad635c603f54f390e68c8c31be278', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'amritbir singh\n', 0, 6, '', 0, 0, 0),
-(527, 'priyanka das', '8335809535', 'Prius event saluting mail.com', 'P.E.S.I.KOLKATA''', 'e807f1fcf82d132f9bb018ca6738a19f', 'Kolkata', '3261', 0, '0000-00-00 00:00:00', 146, 1, 0, 0, 1, 'priya event & solution in Kolkata ', '8906602909', 'P.E.S.I.KOLKATA', 0, 6, 'any event program argument and promoson  Advisement  .', 0, 0, 0),
+(527, 'priyanka das', '8335809535', 'Prius event saluting mail.com', 'P.E.S.I.KOLKATA\'', 'e807f1fcf82d132f9bb018ca6738a19f', 'Kolkata', '3261', 0, '0000-00-00 00:00:00', 146, 1, 0, 0, 1, 'priya event & solution in Kolkata ', '8906602909', 'P.E.S.I.KOLKATA', 0, 6, 'any event program argument and promoson  Advisement  .', 0, 0, 0),
 (528, 'kishori lal subhash chander', '7568622001', '', 'kishori lal subhash chander', 'e63489531ef708796c18bb7926b60e1f', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'kishori lal sub', 0, 6, '', 0, 0, 0),
 (529, 'mukul', '8005524131', '', 'Mukul Suthar', 'ad85ccb204d928fa18d1318cf07c2737', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Mukul Sutharcef', 0, 6, '', 0, 0, 0),
 (530, 'Shiva Textile', '9116112346', '', 'shiva.textile@gmail.com', 'b30b27333a628a652017e872434e8004', '', '', 0, '0000-00-00 00:00:00', 0, 0, 1, 0, 1, '', '', 'shiva.textile@g', 0, 6, '', 0, 0, 0),
-(531, 'SHRI GURUNANAK PRINTERS', '8560001181', 'sgpsgnr@gmail.com', 'ravi181', '23e0e27cf5cd2535aa053074a9ee762c', 'SHOP NO -19, 1st FLOOR, NEELKANTH COMPLEX, 16-G BLOCK', '3288', 0, '0000-00-00 00:00:00', 147, 1, 1, 0, 1, 'SHRI GURUNANAK PRINT', '8560001181', 'ravi18123e0e', 0, 6, 'SHRI GURUNANAK PRINT\n( Complete Printing Solution )\n\nOwners:- \nDAVENDER CHHABRA 98292-49905\n\nRAVINDER CHHABRA\n85600-01181\n\nWEB :--\nwww.sgpsgnr.com\ninfo@sgpsgnr.com\n\n\nWe Offer All Kind of :--\n\n॰ DESIGNING \n॰ PRINTING\n॰ BRAND PROMOTION\n॰ THESIS WORK\n॰ DATA ENTRY JOB\n॰ WEB OFFSET MACHINE''s ERECTION, MAINTENANCE, SPARE PARTS & SALE PURCHASE ', 0, 0, 0),
+(531, 'SHRI GURUNANAK PRINTERS', '8560001181', 'sgpsgnr@gmail.com', 'ravi181', '23e0e27cf5cd2535aa053074a9ee762c', 'SHOP NO -19, 1st FLOOR, NEELKANTH COMPLEX, 16-G BLOCK', '3288', 0, '0000-00-00 00:00:00', 147, 1, 1, 0, 1, 'SHRI GURUNANAK PRINT', '8560001181', 'ravi18123e0e', 0, 6, 'SHRI GURUNANAK PRINT\n( Complete Printing Solution )\n\nOwners:- \nDAVENDER CHHABRA 98292-49905\n\nRAVINDER CHHABRA\n85600-01181\n\nWEB :--\nwww.sgpsgnr.com\ninfo@sgpsgnr.com\n\n\nWe Offer All Kind of :--\n\n॰ DESIGNING \n॰ PRINTING\n॰ BRAND PROMOTION\n॰ THESIS WORK\n॰ DATA ENTRY JOB\n॰ WEB OFFSET MACHINE\'s ERECTION, MAINTENANCE, SPARE PARTS & SALE PURCHASE ', 0, 0, 0),
 (532, 'NISHTHA TRADING COMPANY ( निष्ठा ट्रेडिंग कंपनी )', '9887096124', 'nishthatradingcompany@gmail.com', 'sankalp24', 'ca93f6f14185cb22062b13ed33894f53', '24 - MINNI MAYAPURI, SRI GANGANAGAR \n24 - मिन्नी मायापुरी , श्री गंगानगर \nPh:- 01542476124', '3465', 0, '0000-00-00 00:00:00', 137, 1, 1, 0, 1, 'NISHTHA TRADING COMPANY ( निष्ठा ट्रेडिंग कंपनी )', '9887096124', 'sankalp24ca93f', 0, 6, 'NISHTHA TRADING COMPANY\n* DISTRIBUTOR OF POWER ZONE BATTERIES AND INVERTERS MFG.BY AMAZONE\n* ALL KIND OF SERVICE AVAILABLE FOR BATTERY AND INVERTERS\n* WE ALSO EXCHANGE OLD BATTERY AND INVERTERS \n* NEW BATTERY AND INVERTER FITTING WITH HOME DELIVERY\n* BATTERY CHARGING FACILITY AVAILABLE\n* BATTERY AND INVERTER SERVICE AVAILABE\n* HOME SERVICE FACILITY \n* CUSTOMER SATISFACTION IS OUR MAIN AIM   \n\n', 0, 0, 0),
 (533, 'धमीजा रेडियोज एण्ड लाउडस्पीकर्स', '9214834389', 'dhamijadj.sgnr@gmail.com', 'dhamijadj89', 'fd9b80331211dab63628cfa9d81716fb', 'नजदीक साहिल होटल, रविन्द्र पथ, \nबड़ा मन्दिर के सामने, \nश्री गंगानगर \nसंम्पर्क :- 9214834389\n9214834379 , 01542443079', '3437', 0, '0000-00-00 00:00:00', 117, 1, 1, 0, 1, 'धमीजा DJ रेडियोज एण्ड लाउडस्पीकर्स ', '9352702789', 'dhamijadj89fd9b', 0, 6, '* Specialist in D.J. and Mobile D.J.\n* Specialist in Announcement Recording For Marketing \n( चुनाव प्रसार एवं विज्ञापन अनाउंसमेंट रिकॉर्डिंग )\n\nअनाउंसर :- दिनेश धमीजा', 0, 0, 0),
 (534, 'सूर्योदय सैनेट्री एण्ड टाईल्स', '9414040407', 'sgnr.sanitary@gmail.com', 'manish07', '270aba9a068342b69caff8204a744814', 'दुकान नं. 8,  बालाजी धाम वाली गली, हनुमानगढ़ रोड, श्री गंगानगर', '3476', 0, '0000-00-00 00:00:00', 133, 1, 1, 0, 1, 'सूर्योदय सैनेट्री एण्ड टाईल्स', '9414040407', 'manish07270ab', 0, 6, 'ॐॐ\nसूर्योदय सैनेट्री एण्ड टाईल्स\n\n* We Promise for Rate & Quality...\n\n*  ALL KIND OF BRANDED SANITARY ITEMS AND EXCLUSIVE RANGE OF TILES AVAILABLE \n*  PRINCE PIPE AND FITTING\n* EVEREADY HOME APPLIANCE \n* LIVEPURE RO+VV+VF\n* WATER PURIFIER\n* GAS GEYSER  \n* SINK ,WASHBASIN ,TAPS,CPVC,UPVC,PVC,PIPE & FITTING\n* MOTOR WATER TANK\n* BRASS TAPS,SHOWERS \n* TABLE TOP,COUNTER,WASH BASIN,MIRROR etc.\n* PROFESSIONAL ELECTRICIAN AND PLUMBER AVAILABLE \n', 0, 0, 0),
 (535, 'AROGYAM FITNESS ZONE', '9740926111', '', 'arogyam111', '1a557b51e07787f9c8b0c15bf1688d52', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'arogyam111e81e9', 0, 6, '', 0, 0, 0),
-(536, 'S.N DJ', '9414325219', '', 'sndj219', '86cf575083078586d9e200a29b755eb0', 'NEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER (RAJ.)\n9414325219 and 9829515145', '3333', 0, '0000-00-00 00:00:00', 117, 4, 1, 0, 1, 'S.N DJ', '9414325219', 'sndj21986cf5', 0, 6, 'S.N DJ\nNEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER (RAJ.)\n9414325219\n\nFACILITIES-:\n1.Mobile DJ\n2.Rath , Ghori , Baghhi , Jhad \n3. Floor DJ\n4. Light n Decoration with DJ\n5. DJ Systems available as per Party Requirements\n6. Public Events And All Parties \n7. Announcement Recording  \n\nCONTACT PERSON-:\nBHARAT', 0, 0, 0);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(536, 'S.N DJ', '9414325219', '', 'sndj219', '86cf575083078586d9e200a29b755eb0', 'NEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER (RAJ.)\n9414325219 and 9829515145', '3333', 0, '0000-00-00 00:00:00', 117, 4, 1, 0, 1, 'S.N DJ', '9414325219', 'sndj21986cf5', 0, 6, 'S.N DJ\nNEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER (RAJ.)\n9414325219\n\nFACILITIES-:\n1.Mobile DJ\n2.Rath , Ghori , Baghhi , Jhad \n3. Floor DJ\n4. Light n Decoration with DJ\n5. DJ Systems available as per Party Requirements\n6. Public Events And All Parties \n7. Announcement Recording  \n\nCONTACT PERSON-:\nBHARAT', 0, 0, 0),
 (537, 'VINOD DJ', '9252706295', 'djvinod317@gmail.com', 'vinod295', 'a1d60de36338f374cc038100be0f721d', 'NEAR GIRLS ITI COLLEGE, PATEL NAGAR, BIKANER (RAJ.)\n9252706295', '3339', 0, '0000-00-00 00:00:00', 117, 4, 1, 0, 1, 'VINOD DJ', '9252706295', 'vinod295a1d60', 0, 6, 'VINOD DJ\nNEAR GIRLS ITI COLLEGE, PATEL NAGAR, BIKANER (RAJ.)\n9252706295\n\nFACILITY :-\n* MARRIAGE PARTY.\n* LADIES SANGEET.\n* BIRTHDAY PARTY.\n* PUBLIC EVENT AND OTHERS.\n* TRUSS DJ.\n* FLOOR DJ.\n* MOBILE DJ.\n* DANCING NIGHTS.\n* RATH, GHORI, BAGGI AND JHAD.\n* LIGHT & DECORATION.\n* ANNOUNCEMENT RECORDING.\n\nCONTACT PERSON -:\nVINOD\n', 0, 0, 0),
 (538, 'KHANDELWAL TENT HOUSE', '9214948829', '', 'khandelwal829', '6e4e84e1f51f35671cd5079ae8658cd8', 'OLD SHIVBARI ROAD, BIGGA MARKET 2, NARAYAN VIHAR COLONY, BIKANER (RAJ.)\n9214948829\n9214670198\n8875357708', '3327', 0, '0000-00-00 00:00:00', 148, 4, 1, 0, 1, 'KHANDELWAL TENT HOUSE', '9214948829', 'khandelwal8296e', 0, 6, 'KHANDELWAL TENT HOUSE\nOLD SHIVBARI ROAD, BIGGA MARKET 2, NARAYAN VIHAR COLONY, BIKANER (RAJ.)\n9214948829\n9214670198\n8875357708\n\nFACILITY:-\n* ', 0, 0, 0),
 (539, 'AROGYAM FITNESS ZONE', '09740926111', '', 'arogayam111', '79a3924db4f9ea6133c7e72a551a05f2', 'PLOT NO - 72, ABOVE NEW AIRTEL OFFICE, PANCHSHATI CIRCLE, BIKANER (RAJ.)\n9740926111', '3407', 0, '0000-00-00 00:00:00', 19, 4, 1, 0, 1, 'AROGYAM FITNESS ZONE', '9740926111', 'arogayam11179a3', 0, 6, 'AROGYAM FITNESS ZONE\nPLOT NO - 72, ABOVE NEW AIRTEL OFFICE, PANCHSATI CIRCLE, BIKANER (RAJ.)\n9740926111 \n\nFACILITIES:-\n*  GYM.\n*  STEAM.\n*  CARDIO.\n*  PHYSIQUE.\n*  DIETICIAN.\n*  BODY BUILDING.\n*  PERSONAL TRAINER.\n*  FULLY EQUIPPED WITH LATEST MACHINES FOR BEST WORKOUT.\n\nCONTACT PERSON:-\nBHASKAR SHARMA', 0, 0, 8),
 (540, 'RAJASTHAN EDUCATIONAL STORE', '9460094846', '', 'RES94846', '21e0c1d88bf0d72ee9f755c639febd0b', '56-GOLE BAZAR, KOTWALI ROAD, \nSRI GANGANAGAR\nPH:- 01542442556', '3347', 0, '0000-00-00 00:00:00', 27, 1, 1, 0, 1, 'RAJASTHAN EDUCATIONAL STORE', '9460094846', 'RES9484621e0c', 0, 6, 'RAJASTHAN EDUCATION STORE\n* B.D.S. DENTAL BOOKS\n* DENTAL INSTRUMENTS \n* NAME PLATE\n* APRON\n* UP TO 50% DISCOUNT** ON DENTAL BOOK\n* ALL DENTAL INSTRUMENT AVAILABLE HERE\n* APRON WITH COLLEGE LOGO\n* STATIONARY GOODS,ETC\n* DELIVERY TOWARDS HOSTEL OR P.G. IS FREE\n* CONTACT US ON\n9460094846\n0154-2442556 ', 0, 0, 0),
 (541, 'BHATIA PRINTERS', '9414246348', 'bhatiaprinter@gmail.com', 'bhatia48', 'ba142358a2a280c502b3dc1c77c5d759', '49-50 PATEL MARKET ,\nSRI GANGANAGAR', '3350', 0, '0000-00-00 00:00:00', 147, 1, 1, 0, 1, 'BHATIA PRINTERS', '9414246348', 'bhatia48ba142', 0, 6, 'BHATIA PRINTERS\n\nContact For All Printing and Designing Related works:-\nKAPIL BHATIA\n9530133333\nKAMAL BHATIA\n9530233333', 0, 0, 0),
-(542, 'HEERALAL''S', '1512204455', '', 'hlr4455', '91e3b69bc07fc02f065040f46156432c', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'hlr445591e3b', 0, 6, '', 0, 0, 0),
+(542, 'HEERALAL\'S', '1512204455', '', 'hlr4455', '91e3b69bc07fc02f065040f46156432c', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'hlr445591e3b', 0, 6, '', 0, 0, 0),
 (543, 'HEERALAL RESTAURANT', '1512205552', '', 'heeralal52', 'ae0c88d7cd3171fafc70e1d645ab083f', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'heeralal52ae0c8', 0, 6, '', 0, 0, 0),
-(544, 'HEERALAL''S RESTAURANT', '1512205553', '', 'heeralal53', 'f64cef6ecc63104c1f1aa068d9c65b45', 'HEERALAL MALL, OPP RAILWAY STATION, BIKANER', '3355', 0, '0000-00-00 00:00:00', 29, 4, 1, 0, 1, 'HEERALAL''S RESTAURANT', '1512204455', 'heeralal53f64ce', 0, 6, 'HEERALAL''S RESTAURANT\n\nPURE VEG FOOD..\n\n॰ FAST FOOD\n॰ BREAKFAST\n॰ LUNCH \n॰ DINNER', 0, 0, 0),
+(544, 'HEERALAL\'S RESTAURANT', '1512205553', '', 'heeralal53', 'f64cef6ecc63104c1f1aa068d9c65b45', 'HEERALAL MALL, OPP RAILWAY STATION, BIKANER', '3355', 0, '0000-00-00 00:00:00', 29, 4, 1, 0, 1, 'HEERALAL\'S RESTAURANT', '1512204455', 'heeralal53f64ce', 0, 6, 'HEERALAL\'S RESTAURANT\n\nPURE VEG FOOD..\n\n॰ FAST FOOD\n॰ BREAKFAST\n॰ LUNCH \n॰ DINNER', 0, 0, 0),
 (545, 'SONY EXCLUSIVE SHOWROOM', '01512543512', 'siddhartha. com@gmail.com', 'sony512', 'b69f68b1567b3ec295081948c5a0a0cb', 'OPP. KOTE GATE, POLICE STATION, STATION ROAD, BIKANER - 334001\n0151-2543512\n7665555238', '3359', 0, '0000-00-00 00:00:00', 136, 4, 1, 0, 1, 'SONY EXCLUSIVE SHOWROOM', '1512543512', 'sony512b69f6', 0, 6, 'SONY EXCLUSIVE SHOWROOM\nOPP. KOTE GATE, POLICE STATION, STATION ROAD, BIKANER - 334001\n0151-2543512\n7665555238\n\nFACILITY : -\n* SONY LCD, LED AND SMART T.V.\n* SONY EXPRIYA SMART PHONE.\n* SONY DVD PLAYER AND HOME THEATRE.\n\nCONTACT PERSON :-\nS.K BOTHRA', 0, 0, 0),
 (546, 'IGLOO THE ICE CREAM HUB', '7665555238', 'Siddhartha.com@gmail.com', 'igloo238', 'a90035fe5d2ec93e18bf02a585962a77', 'BELOW SONY EXCLUSIVE STORE, STATION ROAD, BIKANER - 334001\n0151-2543512\n7665555238', '3378', 0, '0000-00-00 00:00:00', 134, 4, 1, 0, 1, 'IGLOO THE ICE CREAM HUB', '7665555238', 'igloo238a9003', 0, 6, 'IGLOO THE ICE CREAM HUB\nBELOW SONY EXCLUSIVE STORE, STATION ROAD, BIKANER - 334001\n0151-2543512\n7665555238\n\nFACILITY : -\n*  ICE CREAM SIZZLERS.\n*  AMERICAN THICK SHAKE.\n*  CHOCOLATE DRINKS.\n*  FALUDAZz.\n\n', 0, 0, 0),
 (547, 'PAWAN WASHING CENTER', '9214405925', '', 'pawan925', 'ca95b8e381857cdfdf470e40b2f0451a', 'NEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER - 334001', '3393', 0, '0000-00-00 00:00:00', 142, 4, 1, 0, 1, 'PAWAN WASHING CENTER', '9214405925', 'pawan925ca95b', 0, 6, 'PAWAN WASHING CENTER\nNEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER - 334001\n9214405925\n7425985925\n8561931786\n\nFACILITY :-\n*  ALL VECHILE DENTING, PAINTING AND WASHING CENTER.\n\nCONTACT PERSON:-\nPAWAN', 0, 0, 0),
@@ -13740,8 +13237,9 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (549, 'POSTER WALA ADVERTISING COMPANY', '7597390242', 'posterwalaonline@gmail.com', 'poster242', '150ef94366238d4c357e885376e22bd6', 'NEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER - 334001\n8740996488\n7597390242', '3400', 0, '0000-00-00 00:00:00', 147, 4, 1, 0, 1, 'POSTER WALA ADVERTISING COMPANY', '7597390242', 'poster242150ef', 0, 6, 'POSTER WALA ADVERTISING COMPANY\nNEAR MAHILA ITI COLLEGE, PATEL NAGAR, BIKANER - 334001\n8740996488\n7597390242', 0, 0, 0),
 (550, 'Gourav ', '9896710950', '', 'gouravbajaj0210', 'c9131442b4f727498e58abff0c9c2d8e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'gouravbajaj0210', 0, 6, '', 0, 0, 0),
 (551, 'SHIVA TEXTILE', '8824936016', 'Shiva.textile@rediffmail.com', 'shiva016', 'e0824a5159cae3ad3d47a66744fa5cd9', 'MAIN BAZAR SRIGANGANAGAR', '3421', 0, '0000-00-00 00:00:00', 50, 1, 1, 0, 1, 'SHIVA TEXTILE', '8824936016', 'shiva016e0824', 0, 6, '* SHIVA TEXTILE \n* EXCLUSIVE SHOWROOM OF BOMBAY DYEING \n*  MEN SUITING SHIRTING \n* BEDSHEETS\n* PILLOW COVERS\n* TOWELS\n* AND MANY MORE \n\n\n* DIRECTOR \n* UPENDRA SHARMA\n8824936016 \n', 0, 0, 0),
-(552, 'विनायक Career and Defence Academy', '9352881111', 'vinayakacademy001@gmail.com', 'vinayak11', '59f451205a179dfdb8c4a3983b5de723', '53- रमेश चौक \n\n, श्री गंगानगर', '3624', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'Shree VINAYAK  Career and Defence Academy', '9667205260', 'vinayak1159f45', 0, 6, 'श्री विनायक कैरियर & डिफेन्स अकादमी\n\nनिम्नलिखित प्रतियोगी परीक्षाओं की तैयारी करवाई जाती है।\n\n॰ SSC\n॰ BANK\n॰ RAS\n॰ RPSC\n॰ REET\n॰ ग्राम सेवक\n॰ पटवार\n॰ राज. पुलिस\n॰ दिल्ली पुलिस\n॰ CONSTABLE\n॰ ARMY\n॰ NAVY\n॰ AIR FORCE\n\nSPECIALITIES:--\n\n० FREE CLASSES OF MATHS\n० AFFORDABLE FEE STRUCTURE\n० PRINTED NOTES AND BAG FOR EACH STUDENT\n० TEACHING BY QUALIFIED & EXPERIENCED STAFF\n० PROBLEM SOLVING CLASSES \n० TRICKY METHOD TEACHING FOR QUICK LEARNING''S \n० FREE DEMO CLASSES\n० WEEKLY TEST\n\nOUR FACULTY:—\n\n**ANIL CHAUDHARY\n( 5 YEAR TEACHING EXPERIENCE OF MATHS  & REASONING )\n\n** JEEVRAJ SINGH \n( 5 YEAR TEACHING EXPERIENCE OF POLITICAL SCIENCE )\n\n** MURARI JANGIR\n( 2 YEAR EXPERIENCE OF COMPUTER AND SCIENCE  TEACHING )\n\n\n', 0, 0, 34),
-(553, 'RISING STAR MUSIC ACADEMY', '7062469968', '', 'rising70', '91e459d9b8bb07d1b3211348e9c69e06', '11-L-BLOCK, RADHESHYAM MLA ROAD, NEAR STUDENT TYPE COLLEGE, \nSRI GANGANAGAR', '3448', 0, '0000-00-00 00:00:00', 28, 1, 1, 0, 1, 'RISING STAR MUSIC ACADEMY', '7062469968', 'rising7091e45', 0, 6, '{RISING STAR MUSIC ACADEMY}\n\n॰ VOCAL & INSTRUMENTAL\n\nIN VOCAL :--\nINDIAN CLASSIC & SEMI CLASSIC\n* GAZAL\n* BHAJAN\n* SHABAD KIRTAN\n\nFOLK :--\n* PUNJABI\n* RAJASTHANI\n\nLIGHT MUSIC :--\n* BOLLYWOOD SONGS\n* PUNJABI SONGS\n\nIN INSTRUMENTAL :--\n\n* GUITAR\n* DHOLAK\n* TABLA\n* HARMONIUM\n* KEYBOARD\n* OCTOPAD\n* DRUM\n\nNOTE:--\nSPECIAL PRACTICAL/THEORY CLASSES SYLLABUS OF B.A./M.A. MUSIC\n\nTEACHING FACULTY AND INSTRUCTORS:--\nPUSHPA KHANNA\n7062469968\nAKASH DODA\n9782553004', 0, 0, 0),
+(552, 'विनायक Career and Defence Academy', '9352881111', 'vinayakacademy001@gmail.com', 'vinayak11', '59f451205a179dfdb8c4a3983b5de723', '53- रमेश चौक \n\n, श्री गंगानगर', '3624', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'Shree VINAYAK  Career and Defence Academy', '9667205260', 'vinayak1159f45', 0, 6, 'श्री विनायक कैरियर & डिफेन्स अकादमी\n\nनिम्नलिखित प्रतियोगी परीक्षाओं की तैयारी करवाई जाती है।\n\n॰ SSC\n॰ BANK\n॰ RAS\n॰ RPSC\n॰ REET\n॰ ग्राम सेवक\n॰ पटवार\n॰ राज. पुलिस\n॰ दिल्ली पुलिस\n॰ CONSTABLE\n॰ ARMY\n॰ NAVY\n॰ AIR FORCE\n\nSPECIALITIES:--\n\n० FREE CLASSES OF MATHS\n० AFFORDABLE FEE STRUCTURE\n० PRINTED NOTES AND BAG FOR EACH STUDENT\n० TEACHING BY QUALIFIED & EXPERIENCED STAFF\n० PROBLEM SOLVING CLASSES \n० TRICKY METHOD TEACHING FOR QUICK LEARNING\'S \n० FREE DEMO CLASSES\n० WEEKLY TEST\n\nOUR FACULTY:—\n\n**ANIL CHAUDHARY\n( 5 YEAR TEACHING EXPERIENCE OF MATHS  & REASONING )\n\n** JEEVRAJ SINGH \n( 5 YEAR TEACHING EXPERIENCE OF POLITICAL SCIENCE )\n\n** MURARI JANGIR\n( 2 YEAR EXPERIENCE OF COMPUTER AND SCIENCE  TEACHING )\n\n\n', 0, 0, 34),
+(553, 'RISING STAR MUSIC ACADEMY', '7062469968', '', 'rising70', '91e459d9b8bb07d1b3211348e9c69e06', '11-L-BLOCK, RADHESHYAM MLA ROAD, NEAR STUDENT TYPE COLLEGE, \nSRI GANGANAGAR', '3448', 0, '0000-00-00 00:00:00', 28, 1, 1, 0, 1, 'RISING STAR MUSIC ACADEMY', '7062469968', 'rising7091e45', 0, 6, '{RISING STAR MUSIC ACADEMY}\n\n॰ VOCAL & INSTRUMENTAL\n\nIN VOCAL :--\nINDIAN CLASSIC & SEMI CLASSIC\n* GAZAL\n* BHAJAN\n* SHABAD KIRTAN\n\nFOLK :--\n* PUNJABI\n* RAJASTHANI\n\nLIGHT MUSIC :--\n* BOLLYWOOD SONGS\n* PUNJABI SONGS\n\nIN INSTRUMENTAL :--\n\n* GUITAR\n* DHOLAK\n* TABLA\n* HARMONIUM\n* KEYBOARD\n* OCTOPAD\n* DRUM\n\nNOTE:--\nSPECIAL PRACTICAL/THEORY CLASSES SYLLABUS OF B.A./M.A. MUSIC\n\nTEACHING FACULTY AND INSTRUCTORS:--\nPUSHPA KHANNA\n7062469968\nAKASH DODA\n9782553004', 0, 0, 0);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
 (554, 'EXPORT HAAT ', '9001848001', 'exporthaatsgnr@gmail.com', 'ehaat9000', '81a6b7b2818e273064b4ddb9e396dfcb', '2-P-BLOCK, RADHESHYAM KOTHI ROAD , SRI GANGANAGAR', '3458', 0, '0000-00-00 00:00:00', 51, 1, 1, 0, 1, 'EXPORT HAAT', '9001848001', 'ehaat900081a6b', 0, 6, '{EXPORT HAAT}\n\nONE STOP SHOP FOR POCKET FRIENDLY SHOPPING....\n\nOWNED BY:--\nMR VIMAL BANSAL\n( MOB : 9251420000 & 9001848001 )\n\nVARIETIES OF :--\n॰ PARTY WEAR\n॰ CASUAL WEAR\n॰ FOOT WEAR\n॰ ACCESSORIES \n\nVisit us on:--\n\nFb:- www.facebook.com/exporthaatsgnr\n\nWeb :- www.exporthaat.com\n\n', 0, 0, 0),
 (555, 'DR CHARANJEET SINGH', '1542471477', 'sgnhh@yahoo.com', 'sgnh433', '22e7499026963f089aec4d61fa03c0e5', '1-H-BLOCK, SANTOSHI MATA MANDIR ROAD, SRI GANGANAGAR\nDr. Mob : 9414225433 \nAppointment : 9529550013 & 1542471477', '3469', 0, '0000-00-00 00:00:00', 98, 1, 1, 0, 1, 'DR CHARANJEET SINGH \nB.Sc. , BHMS , MD(Hom) HOMEOPATHIC PHYSICIAN & CONSULTANT', '1542471477', 'sgnh43322e74', 0, 6, 'SHRI GURUNANAK HOMEOPATHIC HOSPITAL\n\n० HOSPITAL TIMING:- \nMONDAY TO SATURDAY\n1:00 PM TO 8:00 PM\n\nSUNDAY OFF\n\nNote:-\n* Appointment is must for Old and New patients .\n*  Call in the Morning After 10:40 AM on given numbers for Appointment Booking .\n* Old Patients have to carry card number/file number or old date for continuation of medicine.  \n* Chronic case patients please get appointment for your history making profile for best treatment in order to long term successful  treatment .\n* New patients have to Carry reports for severe or chronic case discussion.\n* Follow the guidelines and treatment schedule.\n* Dengue and chickengunia treatment  is available here.\n\n० Cancer patients also treated here on special Appointments.\n\nCONSULTATION FEES:--\n॰ CHRONIC CASE  500 Rs.\n॰ MEDICINE CHARGE FOR 1 WEEK - 150 Rs and as per requirement of number of days.\n\n\n\n\n\n', 0, 0, 0),
 (556, 'सूर्योदय सैनेट्री एण्ड टाईल्स', '7023590100', 'sgnr.sanitary@gmail.com', 'surya100', '4a0c972f224df09681ca35fb357b8d41', 'दुकान न 8, बालाजी धाम वाली गली, हनुमानगढ़ रोड, श्री गंगानगर', '3477', 0, '0000-00-00 00:00:00', 38, 1, 1, 0, 1, 'सूर्योदय सैनेट्री एण्ड टाईल्स', '7023590100', 'surya1004a0c9', 0, 6, 'ॐॐ', 0, 0, 0),
@@ -13773,16 +13271,16 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (583, 'GANGA PANEER HOUSE', '9610200004', '', 'pkrs004', 'c8b8d71e99ff03b0642abafc09e4093b', 'दुकान नः 5-6, अरोड़वंश मार्किट, नजदीक बीरबल चौक, सब्जी मंडी,\nश्रीगंगानगर', '3571', 0, '0000-00-00 00:00:00', 146, 1, 1, 0, 1, 'गंगा पनीर हाऊस', '9610200004', 'pkrs004c8b8d', 0, 6, '० गंगा पनीर हाऊस ०\n\n** क्वालिटी ही हमारी पहचान है **\n\nहर समय उपलब्ध हैं:--\n\nउच्च क्वालिटी का सादा पनीर,\nनमकीन पनीर,\nखोया(मावा), \nदानेदार खोया, \nदिलखुश दही, \nदेसी घी,\nमक्खन,\nक्रीम,\nसफल मटर\n\nनोट:- विवाह-शादियों एवं पार्टियों के आर्डर बुक किये जाते हैं।\n\nसंपर्क:-\nप्रेम कुमार पोपली,  \nरमेश पोपली, \nसुरेश \n01542444441\n9414087441\n9610200004', 0, 0, 0),
 (584, 'BALAJI DAIRY AND PANEER HOUSE', '9414210422', '', 'balajidp22', 'a91be596448957d9733123b2466add24', 'यूआईटी रोड,नजदीक चहल चौक, \nश्री गंगानगर\n9667056111\n7790917111', '3573', 0, '0000-00-00 00:00:00', 146, 1, 1, 0, 1, 'बालाजी डेयरी व पनीर हाऊस', '9414210422', 'balajidp22a91be', 0, 6, '।।जय श्री बालाजी।।\n\n० बालाजी डेयरी व पनीर हाऊस ०\n\n** हमारी पहचान - शुद्धता व गुणवत्ता **\n\nहर समय उपलब्ध :-\n\nशुद्ध देशी घी\nपनीर\nदूध\nमक्खन\nक्रीम\nदही\nलोकल खोया\n\nनोट:-- विवाह-शादियों व पार्टियों के आर्डर बुक किये जाते हैं।\n\nसंपर्क:--\nमहेश सारस्वत\n9414210422\n9667056111\n\nमहेंद्र शर्मा\n7790917111', 0, 0, 0),
 (585, 'BALAJI PROPERTIES', '9667056111', '', 'balajipro70', '30b9dec70c8165b9f54278654e0b51f6', 'यूआईटी रोड, नजदीक चहल चौक, \nश्री गंगानगर\n9414210422', '3575', 0, '0000-00-00 00:00:00', 64, 1, 1, 0, 1, 'बालाजी प्रोपर्टीज', '9667056111', 'balajipro7030b9', 0, 6, '० बालाजी प्रोपर्टीज ०\n\nमकान, दुकान, प्लाट, कोठी, जमीन-जायदाद खरीदने व बेचने के लिए संपर्क करें।\n\nमहेश सारस्वत\n9414210422\n9667056111', 0, 0, 0),
-(586, 'BHATIA DISPOSAL', '9887058311', '', 'joybhatia58', 'd246a0927257c876c94c1d97a24d8b4f', '43-B-पब्लिक पार्क, अम्बेडकर चौक,\nगोल बाजार,\nश्री गंगानगर \n9413236687', '3577', 0, '0000-00-00 00:00:00', 119, 1, 0, 0, 1, 'BHATIA DISPOSAL\n( भाटिया डिस्पोजल )', '9887058311', 'joybhatia58d246', 0, 6, 'BHATIA DISPOSAL..\n\n"भाटिया डिस्पोजल"\n\n० हमारे यहां पर हर तरह का पैकिंग मैटिरियल उपलब्ध है।\n० विवाह-शादियों,पार्टियों,होटलों में उपयोग होने वाली एवं रेगुलर यूज की डिस्पोजेबल क्रोकरी हर समय उपलब्ध है।\n\nसंपर्क:-\nमंजीत सिंह\n9413236687\n\nजोय\n9887058311', 0, 0, 0),
+(586, 'BHATIA DISPOSAL', '9887058311', '', 'joybhatia58', 'd246a0927257c876c94c1d97a24d8b4f', '43-B-पब्लिक पार्क, अम्बेडकर चौक,\nगोल बाजार,\nश्री गंगानगर \n9413236687', '3577', 0, '0000-00-00 00:00:00', 119, 1, 0, 0, 1, 'BHATIA DISPOSAL\n( भाटिया डिस्पोजल )', '9887058311', 'joybhatia58d246', 0, 6, 'BHATIA DISPOSAL..\n\n\"भाटिया डिस्पोजल\"\n\n० हमारे यहां पर हर तरह का पैकिंग मैटिरियल उपलब्ध है।\n० विवाह-शादियों,पार्टियों,होटलों में उपयोग होने वाली एवं रेगुलर यूज की डिस्पोजेबल क्रोकरी हर समय उपलब्ध है।\n\nसंपर्क:-\nमंजीत सिंह\n9413236687\n\nजोय\n9887058311', 0, 0, 0),
 (587, 'LAMINATION HOUSE', '9314677778', '', 'manoj946', '22d5f010ed4cc1ade3f64423c8770e3b', '94-बी-ब्लाक, दुकान नं -6,\n(सिमरन ओटोमोबाईल के सामने', '3578', 0, '0000-00-00 00:00:00', 115, 1, 0, 0, 1, 'लेमिनेशन हाऊस', '9314677778', 'manoj94622d5f', 0, 6, 'लेमिनेशन हाऊस\n\nनक्कालों से सावधान,, हमारीअन्य कोई ब्रांच नहीं है।\n\n मोबाइल, लैपटॉप,कैमरे एलसीडी, मोटरसाइकिल (पेपर लैमिनेश्न )इत्यादि  scratchproof डिजाइन मैट, ग्लासी लैमिनेशन की जाती है।\n** फैन्सी एसैस्सरीज व लैमिनेशन का एक मात्र शोरूम', 0, 0, 0),
 (588, 'DISHANT KUMAR', '8384990181', '', 'METRO DEPARTMENTAL STORE', 'c3b520100e5f5360713ef6c40ec42fc7', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'METRO DEPARTMEN', 0, 6, '', 0, 0, 0),
 (589, 'Kamal Kumar', '7976030782', '', 'Kamal0159', 'db2c4ecb5b0ace967a1f5047bc3a099b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Kamal01593f18c', 0, 6, '', 0, 0, 0),
 (590, 'BIKANER PANEER', '1542440553', '', 'bhishans00', '01ebab6948d0e8867a84f70e92c423ed', '', '', 0, '0000-00-00 00:00:00', 0, 0, 1, 0, 1, '', '', 'bhishans0001eba', 0, 6, '', 0, 0, 0),
-(591, 'NITIN ELECTRONICS', '9829075700', 'nitinelectronics@gmail.com', 'nitinele700', '73b17bcbe1804253dab94a884aea8740', '1-C-RAVINDRA PATH \n1-C रविन्द्र पथ,श्रीगंगानगर\n9829075700\n9829556188\n01542478564', '3589', 0, '0000-00-00 00:00:00', 136, 1, 0, 0, 1, 'NITIN ELECTRONICS ( नितिन इलैक्ट्रोनिक्स )', '9829046200', 'nitinele70073b1', 0, 6, '{ NITIN ELECTRONICS }\n\n* A COMPLETE MOBILE & ELECTRONICS GOODS SHOP*\n\nProduct Range Available:--\n \n* MOBILE\n* LED-LCD TVs\n* DTH\n* DVD PLAYERS\n* VIDEO GAMES\n* DIGITAL CAMERA\n* TRIMMER\n* SHAVER\n* EPEELATER\n* STRAIGHTENERS\n* HOME THEATERS\n* AIR CONDITIONERS \n* DRYERS \n* WI-FI DONGLES & INTERNET ROUTERS \n* CCTV CAMERA''S WITH FITTING ASSISTANCE \n* MOBILE ACCESSORIES\n* OTHER ELECTRONICS ITEMS\n\n** INVERTERS AND BATTERIES ALSO AVAILABLE \n( MICROTEK AND V-GUARD )\n\n\n DEALER of :--\n* I PHONE\n* SAMSUNG\n* SONY\n* HTC\n* GIONEE\n* MICROMAX\n* OPPO\n* VIVO\n* HONOR\n* LENOVO\n* I-TEL\n* JIO-LYF\n* NOKIA\n* TATA SKY\n* DISH TV\n* CARRIER\n* PHILIPS\n* LLOYD\n\nNOTE:--\n० ALL DEBIT/CREDIT CARDS ACCEPTED\n० WE WELCOME PAYMENT THROUGH PAYTM \n० EMI & BAJAJ FINANCE FACILITY AVAILABLE \n० ALL COMPANIES MOBILE RECHARGE & DTH RECHARGE AVAILABLE\n\n\nOWNERS:--\nSANDEEP ANEJA\nBOBBY ANEJA', 0, 0, 0),
+(591, 'NITIN ELECTRONICS', '9829075700', 'nitinelectronics@gmail.com', 'nitinele700', '73b17bcbe1804253dab94a884aea8740', '1-C-RAVINDRA PATH \n1-C रविन्द्र पथ,श्रीगंगानगर\n9829075700\n9829556188\n01542478564', '3589', 0, '0000-00-00 00:00:00', 136, 1, 0, 0, 1, 'NITIN ELECTRONICS ( नितिन इलैक्ट्रोनिक्स )', '9829046200', 'nitinele70073b1', 0, 6, '{ NITIN ELECTRONICS }\n\n* A COMPLETE MOBILE & ELECTRONICS GOODS SHOP*\n\nProduct Range Available:--\n \n* MOBILE\n* LED-LCD TVs\n* DTH\n* DVD PLAYERS\n* VIDEO GAMES\n* DIGITAL CAMERA\n* TRIMMER\n* SHAVER\n* EPEELATER\n* STRAIGHTENERS\n* HOME THEATERS\n* AIR CONDITIONERS \n* DRYERS \n* WI-FI DONGLES & INTERNET ROUTERS \n* CCTV CAMERA\'S WITH FITTING ASSISTANCE \n* MOBILE ACCESSORIES\n* OTHER ELECTRONICS ITEMS\n\n** INVERTERS AND BATTERIES ALSO AVAILABLE \n( MICROTEK AND V-GUARD )\n\n\n DEALER of :--\n* I PHONE\n* SAMSUNG\n* SONY\n* HTC\n* GIONEE\n* MICROMAX\n* OPPO\n* VIVO\n* HONOR\n* LENOVO\n* I-TEL\n* JIO-LYF\n* NOKIA\n* TATA SKY\n* DISH TV\n* CARRIER\n* PHILIPS\n* LLOYD\n\nNOTE:--\n० ALL DEBIT/CREDIT CARDS ACCEPTED\n० WE WELCOME PAYMENT THROUGH PAYTM \n० EMI & BAJAJ FINANCE FACILITY AVAILABLE \n० ALL COMPANIES MOBILE RECHARGE & DTH RECHARGE AVAILABLE\n\n\nOWNERS:--\nSANDEEP ANEJA\nBOBBY ANEJA', 0, 0, 0),
 (592, 'TAYAL AGENCIES', '9460102889', 'tayal351@gmail.com', 'tayalagn38', 'ca146876c47896600cb2396dfeb0bb53', '54 माडल टाउन, राजकीय चिकित्सालय के पास, सूरतगढ़ रोड, श्रीगंगानगर', '3592', 0, '0000-00-00 00:00:00', 133, 1, 1, 0, 1, 'तायल एजेन्सीज', '9460102889', 'tayalagn38ca146', 0, 6, 'तायल एजेन्सीज', 0, 0, 0),
 (593, 'बीकानेर पनीर', '7742286000', '', 'bhishan77', 'c3018afb47c195d928f98262c173c64a', '77-ए पुरानी धान मंडी,\nश्रीगंगानगर', '3601', 0, '0000-00-00 00:00:00', 146, 1, 0, 0, 1, 'बीकानेर पनीर', '1542440553', 'bhishan77c3018', 0, 6, '{ बीकानेर पनीर }\n\nहमारे यहां निम्नलिखित डेयरी उत्पाद हर समय उपलब्ध हैं:-- \nदूध\nदही\nक्रीम\nमक्खन\nपनीर\nखोया(मावा)\nछाछ\nशुद्ध देशी घी \n\nनोट:- विवाह-शादियों के आर्डर भी बुक किये जाते हैं\n\nसंपर्क:-\nगणेशाराम जी सारस्वत\n9460429553\n7742286000\nबिशन सारस्वत\n8824444449', 0, 0, 0),
 (594, 'Aarti Montessori Academy', '1542463878', '', 'ama25418', '18451b4962a458f86865ac45de071d3f', '156-157 RANA PRATAP COLONY, SRI GANGANAGAR', '3627', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'AARTI MONTESSORI ACADEMY', '1542463878', 'ama2541818451', 0, 6, '॥ AARTI MONTESSORI ACADEMY ॥\n\n* Quality Education with Courage and Faith\n* Spacious Education Building with Well Furnished Neat and Air Cooled Classrooms.\n* Power Back-up with Generator\n* Water Purifier and Water Cooler Facility to Maintain Hygiene.\n* Digital Classrooms with CCTV Camera Facility.\n* Computer Classes Powered by NIIT.\n* Motherly touch and Homely Atmosphere making learning a pleasure \n* Half Yearly Medical Check-up of Every Student.\n* Abacus and Calligraphy Classes\n* Picnic, Education Tour and Grand Annual Function \n* Well Planned Co-curricular activities On every Festival and Special Occasions like Rakhi, Holi, Diwali , Fancy Dress Competition , Card Makings , Balloon Brusting and sports.\n* Regular Parent-Teacher meetings for mutual feedbacks. \n\n\n\n\nDIRECTOR \nMR RAJEEV KHETAN\nM. Com. (EAFM), \nM.A. ( History ),\nM.A. ( Pol. Science ),\nB. Ed .\n9414225418', 0, 0, 0),
-(595, 'STAR DOLPHIN''s INTERNATIONAL SCHOOL', '1542460674', '', 'sdis725', '3fcde5ee4b60cc2ac1ab354d9ae57638', '3-E-1 JAWAHAR NAGAR,  SRI GANGANAGAR\n9462897279\n9414316908\n8003938725', '3608', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'STAR DOLPHIN''S INTERNATIONAL SCHOOL ', '1542460674', 'sdis7253fcde', 0, 6, '{ STAR DOLPHIN''S INTERNATIONAL SCHOOL }\n\nTwo Priceless treasures we hope to give your child:--\n          One is Roots..............\nthe other Wings.......\n\n\nTHE BEST SCHOOL OF SRI GANGANAGAR......\n\nSALIENT FEATURE:--\n\n* MONTESSORI EDUCATION LEARNING BY DOING\n* INTERNATIONAL STANDARD AMBIENCE\n* WORLD CLASS INFRASTRUCTURE\n* COMPLETE ENGLISH SPEAKING ENVIRONMENT\n* AUDIO VISUAL ZONE\n* FULLY AC CLASSROOMS\n* REGULAR PICNIC & EDUCATIONAL TOURS\n* REASONABLE & AFFORDABLE FEE STRUCTURE\n* AFFECTIONATE , FRIENDLY TEACHER-STUDENT RELATIONSHIP\n* COUNSELING ZONE-FOR STUDENTS & PARENTS\n\nAdmissions in Full Swing for:--\nPLAY GROUP\nPREP\nNURSERY\nKG \nIst to VIth STANDARD', 0, 0, 0),
+(595, 'STAR DOLPHIN\'s INTERNATIONAL SCHOOL', '1542460674', '', 'sdis725', '3fcde5ee4b60cc2ac1ab354d9ae57638', '3-E-1 JAWAHAR NAGAR,  SRI GANGANAGAR\n9462897279\n9414316908\n8003938725', '3608', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'STAR DOLPHIN\'S INTERNATIONAL SCHOOL ', '1542460674', 'sdis7253fcde', 0, 6, '{ STAR DOLPHIN\'S INTERNATIONAL SCHOOL }\n\nTwo Priceless treasures we hope to give your child:--\n          One is Roots..............\nthe other Wings.......\n\n\nTHE BEST SCHOOL OF SRI GANGANAGAR......\n\nSALIENT FEATURE:--\n\n* MONTESSORI EDUCATION LEARNING BY DOING\n* INTERNATIONAL STANDARD AMBIENCE\n* WORLD CLASS INFRASTRUCTURE\n* COMPLETE ENGLISH SPEAKING ENVIRONMENT\n* AUDIO VISUAL ZONE\n* FULLY AC CLASSROOMS\n* REGULAR PICNIC & EDUCATIONAL TOURS\n* REASONABLE & AFFORDABLE FEE STRUCTURE\n* AFFECTIONATE , FRIENDLY TEACHER-STUDENT RELATIONSHIP\n* COUNSELING ZONE-FOR STUDENTS & PARENTS\n\nAdmissions in Full Swing for:--\nPLAY GROUP\nPREP\nNURSERY\nKG \nIst to VIth STANDARD', 0, 0, 0),
 (596, 'Bhanwar lal', '9983094393', 'bhanwarlal26061997@gmail.com', 'Bhanwar', 'f041188516dfb159765f6bc712151422', 'Sgnr', '3609', 0, '0000-00-00 00:00:00', 125, 1, 0, 0, 1, 'Bhanwar lal', '9983094393', 'Bhanwar4e6e7', 0, 6, 'Gci in manejing', 0, 0, 0),
 (597, 'PUNIA UNIFORMS', '8875720008', 'puniauniform@gmail.com', 'puniauni08', '31b997da07ebefb9c9e284629f69f719', '72-KOTWALI ROAD, BEHIND LG SHOPEE ( PUNIA ELECTRONICS )', '3611', 0, '0000-00-00 00:00:00', 101, 1, 1, 0, 1, 'PUNIA UNIFORMS', '8875720008', 'puniauni0831b99', 0, 6, '{PUNIA UNIFORMS}', 0, 0, 0),
 (598, 'PUNIA ELECTRONICS', '1542442747', 'puniaelect@gmail.com', 'puniaelec33', '106597505b2dcb6f20212f9a44afc580', 'LG SHOPPE , 72-KOTWALI ROAD\nMOB: 9983339933', '3612', 0, '0000-00-00 00:00:00', 136, 1, 1, 0, 1, 'PUNIA ELECTRONICS\n(LG SHOPPE)', '1542442747', 'puniaelec331065', 0, 6, '॥ LG SHOPPE ॥\n( PUNIA ELECTRONICS )', 0, 0, 0),
@@ -13805,7 +13303,7 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (615, 'Test', '1000000000', '', 'test123', 'e10adc3949ba59abbe56e057f20f883e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'test123cc03e', 0, 6, '', 0, 0, 0),
 (616, 'Bhanwarlal', '7689897282', '', 'Bhanwarlal\n', 'f041188516dfb159765f6bc712151422', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Bhanwarlal\n63b5', 0, 6, '', 0, 0, 0),
 (617, 'Mukesh Kumar', '9783612882', 'mukeshsinwar005@gmail\nmukeshsinwar005@gmail.com\ncom', 'bulksms29', '344268cbf6305dbdc5d7055904752a3d', 'suratgarh', '3660', 0, '0000-00-00 00:00:00', 42, 1, 0, 0, 1, 'Mukesh', '8107817570', 'bulksms29b14a8', 0, 6, 'bulk SMS , Calling , email marketing.\nmukesh sinwar', 0, 0, 0),
-(618, 'Hungry Now', '9829100850', 'vasuc46@gmail.com ', 'hungry850', '510dbb270e3b31cfb41efc34f60896d6', 'Opp Ramleela Ground,\n Near Great Deal Store', '3661', 0, '0000-00-00 00:00:00', 29, 1, 0, 0, 1, 'Chawla''s HUNGRY NOW\n Fast Food', '8432666000', 'hungry850510db', 0, 6, 'Chawla''s\nHUNGRY NOW\nFast Food \n\nContact :--\nVICKY CHAWLA\n8432666000\n9829100850', 0, 0, 0),
+(618, 'Hungry Now', '9829100850', 'vasuc46@gmail.com ', 'hungry850', '510dbb270e3b31cfb41efc34f60896d6', 'Opp Ramleela Ground,\n Near Great Deal Store', '3661', 0, '0000-00-00 00:00:00', 29, 1, 0, 0, 1, 'Chawla\'s HUNGRY NOW\n Fast Food', '8432666000', 'hungry850510db', 0, 6, 'Chawla\'s\nHUNGRY NOW\nFast Food \n\nContact :--\nVICKY CHAWLA\n8432666000\n9829100850', 0, 0, 0),
 (619, 'Daljeet Singh ', '9950416346', 'bholadewsoft.virdi71@gmail.com ', 'Bholavirdi ', '629d4731cdbffffaeb7772d4882c3ed8', 'Raisinghnagar ', '3662', 0, '0000-00-00 00:00:00', 46, 1, 0, 0, 1, 'Bhola travels ', '9950416346', 'Bholavirdi 764c', 0, 6, 'Bhola travels ', 0, 0, 0),
 (620, 'Kamal Kumar Midha', '9887106106', 'kamalmidha1@gmail.com', 'kamalmidha', 'df860360358a425dbb0b6959bed679f1', '59 G Block, Sri Ganganagar', '3663', 0, '0000-00-00 00:00:00', 109, 1, 0, 0, 1, 'Digit Travels', '9950892550', 'kamalmidha8c7d4', 0, 6, 'Tours and Travels, Ticketing etc.', 0, 0, 0),
 (621, 'Umesh Kumar', '9252880007', '', 'Umesh Kumar', 'e034e8be7e76619cc115d1b9ddc40755', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Umesh Kumard709', 0, 6, '', 0, 0, 0),
@@ -13818,28 +13316,28 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (628, 'Dr G N SAXENA', '9414043426', '', 'drgnsaxena26', '450fa283fda75660fb58be43ce7d502d', '', '', 0, '0000-00-00 00:00:00', 0, 0, 1, 0, 1, '', '', 'drgnsaxena26450', 0, 6, '', 0, 0, 0),
 (636, 'fhhxhh', '9874524542', '', 'Viki.vki', '0a74c2bdc322ef81ec4c80f3af2c6bf1', 'fgvb', '3710', 0, '0000-00-00 00:00:00', 72, 1, 0, 0, 1, 'fhhj', '9874512365', 'Viki.vki991b9', 0, 6, 'help', 23.022539949586207, 72.55066461861132, 0),
 (637, 'Rajni ', '9680470382', '', 'Rajnigarg88', '63e2c382487dc59df7ffeb6ea9862184', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Rajnigarg88a6fa', 0, 6, '', 0, 0, 0),
-(638, 'IGNITED HEIGHTS INTITUTE', '7230002909', '', 'ignited909', 'ec712b5e1cf2bb5908389c634d54ba68', '3-A-7 JAWAHAR NAGAR ,OPP M.GRAMIN BANK ,INDIRA VATIKA ROAD, 7230002909 ', '3725', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'IGNITED HEIGHT INSTITUTE', '9680470382', 'ignited909b4b3f', 0, 6, 'CLASS VI TO X ( ALL SUBJECT)\n* NTSE / NSTSE  OLYMPIADS\n* PARENTS TEACHER INTERACTION\n* PROPER SITTING ARRANGEMENT \n* SPECIAL CARE FOR AVERAGE STUDENT   \n', 29.9141944, 73.8854587, 1),
+(638, 'IGNITED HEIGHTS INTITUTE', '7230002909', '', 'ignited909', 'ec712b5e1cf2bb5908389c634d54ba68', '3-A-7 JAWAHAR NAGAR ,OPP M.GRAMIN BANK ,INDIRA VATIKA ROAD, 7230002909 ', '3725', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'IGNITED HEIGHT INSTITUTE', '7230002909', 'ignited909b4b3f', 0, 6, 'CLASS VI TO X ( ALL SUBJECT)\n* NTSE / NSTSE  OLYMPIADS\n* PARENTS TEACHER INTERACTION\n* PROPER SITTING ARRANGEMENT \n* SPECIAL CARE FOR AVERAGE STUDENT   \n', 0, 0, 1),
 (639, 'THE GLAM LOUNGE\nA FAMILY SALON', '9001078000', '', 'glam000', '4e2e22780c969b54c54bc39b50e2d190', '23,SHRI VINAYAK VIHAR PHARMACY ROAD,OPP SIHAG HOSPITAL ,\nCONTACT 9001078000,9414095503', '4111', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'THE GLAM LOUNGE\nA FAMILY SALON\nExclusive by : LOREAL PROFESSIONNEL', '9001078000', 'glam0004e2e2', 0, 6, '* THE GLAM LOUNGE \n*  A FAMILY SALON\n* ALL KIND OF HAIR, SKIN & MAKEUP SERVICES AVAILABLE \n* SPECIAL OFFER \n* HEAD TO TOE\n   : MANICURE\n   : PEDICURE \n   : THREADING \n   : WAXING \n   : FACIAL\n   : HAIR CUT \n   : BLEACH\n   : HAIR SPA \nmonthly offer:-\nENJOY upto 40 % OFF \non all hair and skin services\nget upto 30% off on prebridal +bridal bookings', 0, 0, 1),
-(640, 'ROCKWILL CONVENT SCHOOL', '01542464507', '', 'rockwill07', '22482f8e66e8805eed044d9e9b668d23', '51-LAXMI NAGAR,NEAR JAIN SABHA,AGGARSAIN NAGAR \nCONTACT 9214345507', '3739', 0, '0000-00-00 00:00:00', 24, 1, 0, 0, 1, 'ROCKWILL CONVENT SCHOOL\nAN ACTUAL EDUCATIONAL POINT', '1542464507', 'rockwill0722482', 0, 6, '* ROCKWILL CONVENT SCHOOL\n* An Actual Educational  Point \n* A COMPLETE VALUE BASED SCHOOL WITH ALL THE BASIC FACILITIES.\nLIKE : \n* STRONG TEACHING STAFF\n*  COMPUTER LAB\n* FILTERED COOL WATER\n* COOL AIR\n* VENTILATION \n* CCTV\n* AC CLASSES\n* CONVINCE\n\n* CRY IS THE LANGUAGE OF CHILD,SO DON''T WORRY  ABOUT THAT,ALWAYS SAY TRUTH TO THE CHILD FOR HIS/ HER FOUNDATION.\n\n', 0, 0, 0),
-(641, 'ROCKWILL CONVENT SCHOOL', '9214345507', '', 'rockwill507', 'a3132bbdcbfafb928a63028d34a4819c', '51-Laxmi Nagar,Near Jain Sabha,Aggarsain Nagar,\n0154-2464507,9351764507', '3746', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'ROCKWILL CONVENT SCHOOL\nAn Actual Educational Point', '9214345507', 'rockwill507a313', 0, 6, '* ROCKWILL CONVENT SCHOOL\n* An Actual Educational Point\n* STRONG TEACHING STAFF\n* COMPUTER LAB\n* FILTERED COOL WATER\n* COOL AIR\n* VENTILATION \n* CCTV\n* AC CONVINCE \n\n* Cry is the language of child,so don''t worry about that,always say truth to the child for his/her foundation. \n', 29.9115944, 73.8928084, 0),
-(642, 'ROCKWILL CONVENT SCHOOL', '9351764507', 'rockwillconventschool@gmail.com', 'rockwill93', '1e5b49fb218bf0c897f402e98518a314', '51-LAXMI NAGAR,NEAR JAIN SABHA,AGGARSAIN NAGAR', '3756', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'ROCKWILL CONVENT SCHOOL\nAn Actual Educational Point', '9413309507', 'rockwill931e5b4', 0, 6, '* ROCKWILL CONVENT SCHOOL\n* STRONG TEACHING STAFF\n* COMPUTER LAB\n* FILTERED LAB\n* CCTV\n* AC CONVINCE \n* COOL AIR  ', 0, 0, 0);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(640, 'ROCKWILL CONVENT SCHOOL', '01542464507', '', 'rockwill07', '22482f8e66e8805eed044d9e9b668d23', '51-LAXMI NAGAR,NEAR JAIN SABHA,AGGARSAIN NAGAR \nCONTACT 9214345507', '3739', 0, '0000-00-00 00:00:00', 24, 1, 0, 0, 1, 'ROCKWILL CONVENT SCHOOL\nAN ACTUAL EDUCATIONAL POINT', '1542464507', 'rockwill0722482', 0, 6, '* ROCKWILL CONVENT SCHOOL\n* An Actual Educational  Point \n* A COMPLETE VALUE BASED SCHOOL WITH ALL THE BASIC FACILITIES.\nLIKE : \n* STRONG TEACHING STAFF\n*  COMPUTER LAB\n* FILTERED COOL WATER\n* COOL AIR\n* VENTILATION \n* CCTV\n* AC CLASSES\n* CONVINCE\n\n* CRY IS THE LANGUAGE OF CHILD,SO DON\'T WORRY  ABOUT THAT,ALWAYS SAY TRUTH TO THE CHILD FOR HIS/ HER FOUNDATION.\n\n', 0, 0, 0),
+(641, 'ROCKWILL CONVENT SCHOOL', '9214345507', '', 'rockwill507', 'a3132bbdcbfafb928a63028d34a4819c', '51-Laxmi Nagar,Near Jain Sabha,Aggarsain Nagar,\n0154-2464507,9351764507', '3746', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'ROCKWILL CONVENT SCHOOL\nAn Actual Educational Point', '9214345507', 'rockwill507a313', 0, 6, '* ROCKWILL CONVENT SCHOOL\n* An Actual Educational Point\n* STRONG TEACHING STAFF\n* COMPUTER LAB\n* FILTERED COOL WATER\n* COOL AIR\n* VENTILATION \n* CCTV\n* AC CONVINCE \n\n* Cry is the language of child,so don\'t worry about that,always say truth to the child for his/her foundation. \n', 29.9115944, 73.8928084, 0),
+(642, 'ROCKWILL CONVENT SCHOOL', '9351764507', 'rockwillconventschool@gmail.com', 'rockwill93', '1e5b49fb218bf0c897f402e98518a314', '51-LAXMI NAGAR,NEAR JAIN SABHA,AGGARSAIN NAGAR', '3756', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'ROCKWILL CONVENT SCHOOL\nAn Actual Educational Point', '9413309507', 'rockwill931e5b4', 0, 6, '* ROCKWILL CONVENT SCHOOL\n* STRONG TEACHING STAFF\n* COMPUTER LAB\n* FILTERED LAB\n* CCTV\n* AC CONVINCE \n* COOL AIR  ', 0, 0, 0),
 (643, 'a', '4', '', 'Ffjsshj', '5155f03b315861be32781f763362a7da', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Ffjsshj1c6a4', 0, 6, '', 0, 0, 0),
-(644, 'MOTHER''S PRIDE SCHOOL', '9672990991', '', 'mother991', 'd4d2bd827088d5ebe1943dc6ef408e94', '1-G-4,5 JAWAHAR NAGAR,TEHSIL ROAD', '3810', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'MOTHER''S PRIDE SCHOOL\nPlay Group  to 5th ', '9672990991', 'mother991d4d2b', 0, 6, '* MOTHER''S PRIDE SCHOOL\n* PLAY GROUP TO Vth \n* MPS IS A FULL FLEDGE ENGLISH MEDIUM SCHOOL FOR BOY AND GIRLS FROM CLASS PLAYGROUP TO 5th.\n\n*  THE SCHOOL YEAR COMMENCES IN APRIL AND CLOSES IN MARCH WITH ONE MONTH VACATION IN SUMMER FROM 1st JUNE TO FIRST JULY AND FORTHNIGHTS BREAK IN WINTER.\n\n* FULLY AIR COOL ROOMS\n\n* SPECIALIST IN DAY BOARDING & CRUCHE\n\n* COMPLETE & CARING FACULTY\n\n* PERSONALITY DEVELOPMENT\n\n* SMART CLASS WITH LARGE LCD\n\n* GAMES & SPORTS\n\n* CO- CURRICULAR ACTIVITIES \n\n* SPECIAL VARIETIES OF EDUCATIONAL TOYS\n\n* ART & CRAFT : PAINTING,DANCE,MUSIC ,DRAWING ,KARATE CLASS & FANCY WORK IN PAPER \n\n* CAMPS,PICNICS AND EDUCATIONAL & HISTORICAL TOURS.\n\n* WIDE RANGE AND VARIETY OF CO- CURRICULAR ACTIVITIES.\n\n* FEES SHOULD BE REMITTED BEFORE 10th OF APRIL,JULY,OCTOBER AND JANUARY.\n* PARENTS INVOLMENTS\n* CCTV CAMERA FACILITY\n* BUS AND VAN TRASPOTATION FACILITY\n* WATER PURIFIER \n* DAILY AEROBICS ,YOGA,CRICKET AND SMART CLASS  \n* PRINCIPAL \n: SUNAINA TANDON \n: 9672990991\n\n* KAPIL TANDON \n: DIRECTOR \n* 9610088999 \n\n\n \n\n', 0, 0, 0),
-(645, 'SANTIAN INTERNATIONAL SCHOOL', '01542461386', '', 'pcsantian154', '28bbd40669655b40308fde5e71071a2c', '4-A-5 A NEW AGARSEN NAGAR 01542461386', '3824', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'SANTIAN INTERNATIONAL SCHOOL\nIndia''s First Brain school Based on DMI', '9530207436', 'pcsantian15428b', 0, 6, '* SANTIAN INTERNATIONAL SCHOOL \n* INDIA''S FIRST BRIAN SCHOOL BASED ON DMI\n* ADMISSION OPEN\n* PLAY GROUP TO 5th  CLASS \n* NO ADMISSION FEE\n* LIGHT WEIGHT BAGS\n* LOW TEACHER CHILD RATIO \n* THREE WAYS LEARNING STYLE AUDITORY,VISUAL,KINESTHETICS\n* SELF CONFIDENCE ENHANCEMENT \n* BOTH HAND WORKING\n* LEARNING BY DOING\n* DANCE AND SKATING CLASSES\n* CONCENTRATION ON FOOD HABITS & ETIQUETTES\n* ENGLISH SPEAKING ENVIRONMENT \n* FULLY A.C. CAMPUS\n* CCTV CAMERA SECURITY \n* VAN TRANSPORTATION\n* WATER PURIFIER AND WATER COOLER \n\n* THINK TWICE BEFORE YOUR BABY''S ADMISSION AND JUST COME AND VISIT OUR SCHOOLS.AFTER VISITING ,YOU WILL FEEL THE DIFFERENCE BETWEEN KNOWLEDGE AND EDUCATION." WE ARE SPECIALIZED IN KINDERGARTEN SCHOOL.\n\n* BRANCH 1 :\n4-A-5 NEW AGARSEN NAGAR,SRI GANGANAGAR\nCONTACT NO : 0154-2461386,9530207436\n\n* BRANCH 2:\n15-H BLOCK,NEAR NEHRU PARK ,SRIGANGANAGAR\nCONTACT NO : \n0154-2470005,09462026178\n', 0, 0, 0),
-(646, 'KALINDI PUBLIC SCHOOL', '01542470711', '', 'kalindi711', 'f326763e08262e18c214f61ef0917499', '322 VINOBA BASTI ', '3843', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'KALINDI PUBLIC SCHOOL\nPlay Group to VIII ', '9462358236', 'kalindi7117c1c0', 0, 6, '* ENGLISH MEDIUM WITH NCERT SYLLABUS\n\n* PLAY GROUP TO CLASS VIII ( GOVT RECOGNIZED)\n\n* FIRST SCHOOL IN BLOCK AREA  WHO INTRODUCED NEW ASPECT OF E- TEACHING ( TABLETS) TO EDUCATE OUR STUDENT AS THE NEED OF MODERN ERA.\n\n* FIRST IN REGION WHO STARTED SMART CLASSES THROUGH PROJECTOR.\n\n* EACH LESSON OF EACH SUBJECTS FOR ALL CLASSES IS EXPLAINED THROUGH PROJECTOR IN ANIMATED WAY JUST LIKE CINEMA HALL.\n\n* ONE PERIOD IS USED IN A DAY TO IMPROVE THE SKILL OF SPOKEN ENGLISH.\n\n* MORE & MORE EMPHASIZE IS GIVEN TO IMPROVE THE HAND WRITING OF STUDENT.\n\n* TESTS ARE CONDUCTED ON THE PATTERN OF CBSE.\n\n* CLASSES OF YOGA & PHYSICAL EXERCISE ARE CONDUCTED IN ROUTINE TO KEEP STUDENTS HEALTHY \n\n* LESS BURDEN OF HOMEWORK FOR STUDENTS.\n\n* LIFE SKILL EDUCATION IS PROVIDED WITH MORAL VALUES AND ANIMATED STORIES TO DEVELOP CHILD''S PERSONALITY.\n\n* ITS COMPULSORY FOR STUDENT TO PARTICIPATE IN SPORTS AND CULTURAL ACTIVITIES TO INCREASE THE PHYSICAL STRENGTH AND TO DEVELOP THEIR MENTAL ABILITY. THEY ARE ALSO TRAINED FOR HOUSEHOLD WORKS.\n\n* HISTORICAL AND EDUCATIONAL TOURS ARE CONDUCTED FOR ALL CLASSES.\n\n* APART OF MAIN LIBRARY,WE ALSO PROVIDE LIBRARY IN EACH CLASS.\n\n* SCHOOL HAS ALL BASIC FACILITIES LIKE: WELL EQUIPPED COMPUTER LAB WITH INTERNET ,TWO MULTIMEDIA PROJECTOR ROOMS,WELL FURNISHED AIR- CONDITIONED MULTIMEDIA HALL AND SPORTS ARENA.\n\n* VISIT US BEFORE DECIDE.\n\n* WE DEVELOP BRAIN TO THINK NIT TO CRAM,BECAUSE THINKER ARE ALWAYS BETTER THAN CRAMMERS.    \n \n * IT IS COMPULSORY TO EVERY STUDENT THAT HE  OR SHE SHOULD PARTICIPATE IN SPEECH, DEBATE  & GROUP DISCUSSION SO STUDENT CAN IMPROVE HIS OR HER STAGE PRESENCE AND REMOVE MIKE HESITATION.', 29.9115019, 73.8751687, 0),
-(647, 'IELTS HUB', '9529666652', 'ieltshubsgnr@gmail.com', 'hub6666', 'f1f443693f29e8bed0c5b3808cb82120', '31,MUKHARJEE NAGAR ,BEHIND BUS STAND\nHELPLINES NO: 9529666652,9549100002', '3869', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'IELTS HUB\nA Place To Learn', '9549100002', 'hub6666f1f44', 0, 6, ' * IELTS HUB \n* JOIN US FOR ACHIEVING YOUR DREAMS \n\n* ABOUT US : \nFOUNDED 2015. IELTS HUB IS THE BEST INSTITUTION IN SRIGANGANAGAR.IELTS HUB IS POPULAR CHOICE OF STUDENTS BECAUSE WE MAKE THE DIFFERENCE. WE HAVE  EXPERIENCED FACULTY WHO HELP YOU TO POLISH YOUR ENGLISH SKILL''S.WE WELCOME STUDENTS WHO WANT TO UPGRADE THEIR ENGLISH PROFICIENCY.\n\n* KEY FEATURE : \n*  IELTS \n*  BASIC GRAMMAR CONCEPTS \n* FOUR MODULES EVERYDAY \n* GET YOUR ORIGINAL LEVEL ASSESSED \n* ONE TO ONE SPEAKING EVERYDAY \n* REGULAR TESTING OF PROGRESS \n* INTERACTIVE CLASSES TO PREPARE FOR EXAM\n* QUALITATIVE EDUCATION\n* LATEST MATERIAL \n* NOTEBOOK CORRECTION \n* FRESH LISTENING & READING BOOKLETS EVERYDAY \n*  DEVELOP YOUR ALL FOUR SKILLS.\n\n* IELTS OPENS THE DOOR OF INTERNATIONAL OPPORTUNITIES \n: AUSTRALIA \n: CANADA\n: USA\n: NEW ZEALAND \n: IRELAND \n    ', 0, 0, 0),
+(644, 'MOTHER\'S PRIDE SCHOOL', '9672990991', '', 'mother991', 'd4d2bd827088d5ebe1943dc6ef408e94', '1-G-4,5 JAWAHAR NAGAR,TEHSIL ROAD', '3810', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'MOTHER\'S PRIDE SCHOOL\nPlay Group  to 5th ', '9672990991', 'mother991d4d2b', 0, 6, '* MOTHER\'S PRIDE SCHOOL\n* PLAY GROUP TO Vth \n* MPS IS A FULL FLEDGE ENGLISH MEDIUM SCHOOL FOR BOY AND GIRLS FROM CLASS PLAYGROUP TO 5th.\n\n*  THE SCHOOL YEAR COMMENCES IN APRIL AND CLOSES IN MARCH WITH ONE MONTH VACATION IN SUMMER FROM 1st JUNE TO FIRST JULY AND FORTHNIGHTS BREAK IN WINTER.\n\n* FULLY AIR COOL ROOMS\n\n* SPECIALIST IN DAY BOARDING & CRUCHE\n\n* COMPLETE & CARING FACULTY\n\n* PERSONALITY DEVELOPMENT\n\n* SMART CLASS WITH LARGE LCD\n\n* GAMES & SPORTS\n\n* CO- CURRICULAR ACTIVITIES \n\n* SPECIAL VARIETIES OF EDUCATIONAL TOYS\n\n* ART & CRAFT : PAINTING,DANCE,MUSIC ,DRAWING ,KARATE CLASS & FANCY WORK IN PAPER \n\n* CAMPS,PICNICS AND EDUCATIONAL & HISTORICAL TOURS.\n\n* WIDE RANGE AND VARIETY OF CO- CURRICULAR ACTIVITIES.\n\n* FEES SHOULD BE REMITTED BEFORE 10th OF APRIL,JULY,OCTOBER AND JANUARY.\n* PARENTS INVOLMENTS\n* CCTV CAMERA FACILITY\n* BUS AND VAN TRASPOTATION FACILITY\n* WATER PURIFIER \n* DAILY AEROBICS ,YOGA,CRICKET AND SMART CLASS  \n* PRINCIPAL \n: SUNAINA TANDON \n: 9672990991\n\n* KAPIL TANDON \n: DIRECTOR \n* 9610088999 \n\n\n \n\n', 0, 0, 0),
+(645, 'SANTIAN INTERNATIONAL SCHOOL', '01542461386', '', 'pcsantian154', '28bbd40669655b40308fde5e71071a2c', '4-A-5 A NEW AGARSEN NAGAR 01542461386', '3824', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'SANTIAN INTERNATIONAL SCHOOL\nIndia\'s First Brain school Based on DMI', '9530207436', 'pcsantian15428b', 0, 6, '* SANTIAN INTERNATIONAL SCHOOL \n* INDIA\'S FIRST BRIAN SCHOOL BASED ON DMI\n* ADMISSION OPEN\n* PLAY GROUP TO 5th  CLASS \n* NO ADMISSION FEE\n* LIGHT WEIGHT BAGS\n* LOW TEACHER CHILD RATIO \n* THREE WAYS LEARNING STYLE AUDITORY,VISUAL,KINESTHETICS\n* SELF CONFIDENCE ENHANCEMENT \n* BOTH HAND WORKING\n* LEARNING BY DOING\n* DANCE AND SKATING CLASSES\n* CONCENTRATION ON FOOD HABITS & ETIQUETTES\n* ENGLISH SPEAKING ENVIRONMENT \n* FULLY A.C. CAMPUS\n* CCTV CAMERA SECURITY \n* VAN TRANSPORTATION\n* WATER PURIFIER AND WATER COOLER \n\n* THINK TWICE BEFORE YOUR BABY\'S ADMISSION AND JUST COME AND VISIT OUR SCHOOLS.AFTER VISITING ,YOU WILL FEEL THE DIFFERENCE BETWEEN KNOWLEDGE AND EDUCATION.\" WE ARE SPECIALIZED IN KINDERGARTEN SCHOOL.\n\n* BRANCH 1 :\n4-A-5 NEW AGARSEN NAGAR,SRI GANGANAGAR\nCONTACT NO : 0154-2461386,9530207436\n\n* BRANCH 2:\n15-H BLOCK,NEAR NEHRU PARK ,SRIGANGANAGAR\nCONTACT NO : \n0154-2470005,09462026178\n', 0, 0, 0),
+(646, 'KALINDI PUBLIC SCHOOL', '01542470711', '', 'kalindi711', 'f326763e08262e18c214f61ef0917499', '322 VINOBA BASTI ', '3843', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'KALINDI PUBLIC SCHOOL\nPlay Group to VIII ', '9462358236', 'kalindi7117c1c0', 0, 6, '* ENGLISH MEDIUM WITH NCERT SYLLABUS\n\n* PLAY GROUP TO CLASS VIII ( GOVT RECOGNIZED)\n\n* FIRST SCHOOL IN BLOCK AREA  WHO INTRODUCED NEW ASPECT OF E- TEACHING ( TABLETS) TO EDUCATE OUR STUDENT AS THE NEED OF MODERN ERA.\n\n* FIRST IN REGION WHO STARTED SMART CLASSES THROUGH PROJECTOR.\n\n* EACH LESSON OF EACH SUBJECTS FOR ALL CLASSES IS EXPLAINED THROUGH PROJECTOR IN ANIMATED WAY JUST LIKE CINEMA HALL.\n\n* ONE PERIOD IS USED IN A DAY TO IMPROVE THE SKILL OF SPOKEN ENGLISH.\n\n* MORE & MORE EMPHASIZE IS GIVEN TO IMPROVE THE HAND WRITING OF STUDENT.\n\n* TESTS ARE CONDUCTED ON THE PATTERN OF CBSE.\n\n* CLASSES OF YOGA & PHYSICAL EXERCISE ARE CONDUCTED IN ROUTINE TO KEEP STUDENTS HEALTHY \n\n* LESS BURDEN OF HOMEWORK FOR STUDENTS.\n\n* LIFE SKILL EDUCATION IS PROVIDED WITH MORAL VALUES AND ANIMATED STORIES TO DEVELOP CHILD\'S PERSONALITY.\n\n* ITS COMPULSORY FOR STUDENT TO PARTICIPATE IN SPORTS AND CULTURAL ACTIVITIES TO INCREASE THE PHYSICAL STRENGTH AND TO DEVELOP THEIR MENTAL ABILITY. THEY ARE ALSO TRAINED FOR HOUSEHOLD WORKS.\n\n* HISTORICAL AND EDUCATIONAL TOURS ARE CONDUCTED FOR ALL CLASSES.\n\n* APART OF MAIN LIBRARY,WE ALSO PROVIDE LIBRARY IN EACH CLASS.\n\n* SCHOOL HAS ALL BASIC FACILITIES LIKE: WELL EQUIPPED COMPUTER LAB WITH INTERNET ,TWO MULTIMEDIA PROJECTOR ROOMS,WELL FURNISHED AIR- CONDITIONED MULTIMEDIA HALL AND SPORTS ARENA.\n\n* VISIT US BEFORE DECIDE.\n\n* WE DEVELOP BRAIN TO THINK NIT TO CRAM,BECAUSE THINKER ARE ALWAYS BETTER THAN CRAMMERS.    \n \n * IT IS COMPULSORY TO EVERY STUDENT THAT HE  OR SHE SHOULD PARTICIPATE IN SPEECH, DEBATE  & GROUP DISCUSSION SO STUDENT CAN IMPROVE HIS OR HER STAGE PRESENCE AND REMOVE MIKE HESITATION.', 29.9115019, 73.8751687, 0),
+(647, 'IELTS HUB', '9529666652', 'ieltshubsgnr@gmail.com', 'hub6666', 'f1f443693f29e8bed0c5b3808cb82120', '31,MUKHARJEE NAGAR ,BEHIND BUS STAND\nHELPLINES NO: 9529666652,9549100002', '3869', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'IELTS HUB\nA Place To Learn', '9549100002', 'hub6666f1f44', 0, 6, ' * IELTS HUB \n* JOIN US FOR ACHIEVING YOUR DREAMS \n\n* ABOUT US : \nFOUNDED 2015. IELTS HUB IS THE BEST INSTITUTION IN SRIGANGANAGAR.IELTS HUB IS POPULAR CHOICE OF STUDENTS BECAUSE WE MAKE THE DIFFERENCE. WE HAVE  EXPERIENCED FACULTY WHO HELP YOU TO POLISH YOUR ENGLISH SKILL\'S.WE WELCOME STUDENTS WHO WANT TO UPGRADE THEIR ENGLISH PROFICIENCY.\n\n* KEY FEATURE : \n*  IELTS \n*  BASIC GRAMMAR CONCEPTS \n* FOUR MODULES EVERYDAY \n* GET YOUR ORIGINAL LEVEL ASSESSED \n* ONE TO ONE SPEAKING EVERYDAY \n* REGULAR TESTING OF PROGRESS \n* INTERACTIVE CLASSES TO PREPARE FOR EXAM\n* QUALITATIVE EDUCATION\n* LATEST MATERIAL \n* NOTEBOOK CORRECTION \n* FRESH LISTENING & READING BOOKLETS EVERYDAY \n*  DEVELOP YOUR ALL FOUR SKILLS.\n\n* IELTS OPENS THE DOOR OF INTERNATIONAL OPPORTUNITIES \n: AUSTRALIA \n: CANADA\n: USA\n: NEW ZEALAND \n: IRELAND \n    ', 0, 0, 0),
 (648, 'REVIVE', '01542460260', 'manishkumar.mk23@gmail.com', 'revive260', '8f9bb12d7051752c2b33438057933194', '47 VINYAK VIHAR,OPP SIHAG HOSPITAL GAGANPATH', '3876', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'REVIVE HAIR BEAUTY SPA....\nAN ISO 9001 CERTIFIED ', '9610518300', 'revive26076164', 0, 6, '* REVIVE (HAIR BEAUTY SPA) A FAMILY SALON\n* HAIR CUTS\n* ADV. HAIR CUT\n* HAIR COLOUR \n* HAIR SPA\n* HEAD MASSAGE\n* FACIAL \n* D-TAN\n* MANICURE\n* PEDICURE \n\n* MAKE UP *\n* PARTY MAKE-UP\n* HD PARTY MAKE UP\n* PRE- BRIDAL\n* HD- BRIDAL MAKE UP\n* HD- ENGAGEMENT MAKE UP\n* CELEBRITY MAKE UP\n* NUDE MAKE UP\n* MINERAL MAKE UP\n* GLOSSY MAKE UP\n* MATTE MAKE UP\n\n* * WAXING **\n* RICA WAX\n* BRAZILIAN WAX\n* WHITE WAX\n* CHOCOLATE ETC. \n\n* REBOUNDING & SMOOTHENING \n( SPECIAL OFFER JUST 4999/-Rs.) \n\n* BRIDAL MAKEUP + PRE BRIDAL \n( SPECIAL OFFER JUST 9999/-Rs.)\n\n* OTHER BEAUTY TREATMENT  FLAT 40% OFF ( TERMS & CONDITION APPLY)', 0, 0, 1),
 (649, 'DR. NEERAJ GOSWAMI', '8104385687', '', 'drneerajgoswami', '30d795799d5dc18b7c2c8c087f30a619', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'drneerajgoswami', 0, 6, '', 0, 0, 0),
 (650, 'VLCC HEALTH CARE', '01542466663', '', 'VLCC6666', '8030264370ee7e106b9fb8210c7f2e43', '2nd FLOOR,CGR MALL', '4149', 0, '0000-00-00 00:00:00', 68, 1, 1, 0, 1, 'VLCC SALON \nFor Men & Women ', '1542466663', 'VLCC666680302', 0, 6, '* VLCC HEALTH CARE\n* HAIR CUT\n* MAKE UP\n* BRIDAL \n* MANICURE\n* PEDICURE \n* HAIR IRONING \n* HAIR CURLING ', 29.9069755, 73.8839887, 2),
 (651, 'SHANTI JUNIORS', '9610197893', '', 'shanti101', '6857cb164958818f092e259162304369', '1-E-5 JAWAHAR NAGAR \n9610197893,9414090656', '3891', 0, '0000-00-00 00:00:00', 24, 1, 1, 0, 1, 'SHANTI JUNIORS \nThe Most Preferred Pre- School', '9414090656', 'shanti1016857c', 0, 6, '* SHANTI JUNIORS \n\n* ADMISSION OPEN FOR ACADEMIC YEAR 2017-18\n\n* IN THIS PRE - SCHOOL THE CHILD EXPLORE THE NEW PLANET OF LEARNING \n\n* SHANTI JUNIORS HAS BEEN ANNOUNCED AS INNOVATION IN PRE- SCHOOL BY ELETS 7th WORLD EDUCATION SUMMIT 2016 BY JUNIORS APP LEARN.\n\n* SHANTI JUNIORS IS PROUD TO BE THE FIRST IN INDIA TO LAUNCH APP BASED LEARNING IN THE FORM OF DIGITAL WORKSHEET.\n\n* DIRECTOR \nMOHIT KAKKAR\n9610197894/9414090656', 0, 0, 0),
-(652, 'S.G.L. CHILDREN ACADEMY & SR.SEC. SCHOOL', '9460645715', '', 'ajay154', 'f92b6244444aef70f468eefb373b11f4', 'VRIDH ASHRAM ROAD,HANUMAN NAGAR,5-E-CHHOTI\n9460645715,9462483058,01542465234', '3912', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'S.G.L. CHILDREN ACADEMY & SR.SEC. SCHOOL', '9460645715', 'ajay154f92b6', 0, 6, '* S.G.L. CHILDREN ACADEMY & SR. SEC. SCHOOL\n\n* ADMISSION OPEN \n\n* GIVE YOU REASON,GIVES YOU FIRE,TAKES YOU HIGHER & IT MAKES YOU " CHAMPIONS"\n\n* CLASS NURSERY TO 12th \n\n* ENGLISH & HINDI MEDIUM \n\n* 5th,8th,10th,12th\n( Board of sec.Edu.Ajmer in Eng.Medium)\n\n* OUR FACULTY \n( Science ,Commerce,Art, Agriculture )\n\n* FEATURES:- \n* THE SCHOOL WHERE YOU FIND THE JOY OF LEARNING AND THE WAY OF LEARNING FOR YOUR CHILD.\n\n* INNOVATION METHODS TO TEACH EVERY CONCEPT.\n\n* TEACHING THROUGH L.E.D. & ENGLISH LANGUAGE FOR KIDS.\n\n* PERSONAL AND INTENSIVE CARE ON SLOW LEARNERS.\n\n* WE ASSES EVERY CHILD AND PROVIDE INDIVIDUAL FEEDBACK.\n\n* PERSONALITY DEVELOPMENT & COMMUNICATION SKILL TRAINING.\n\n* JOIN YOUR CHILD AND EXPERIENCE THE CHANGE.\n\n* PRINCIPAL\n* SRI AJAY SHARMA', 0, 0, 0),
-(653, 'GLORIOUS CONVENT SCHOOL\nPlay Group to 8th Std.', '7372900420', '', 'glorious95', '3397da5231cd5a88fac3b9b0f7976075', '3- UIT ROAD,NEAR CHAHAL CHOWK ', '3898', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'GLORIOUS CONVENT SCHOOL\nPLAY GROUP TO 8th Std.', '9799544436', 'glorious953397d', 0, 6, '*  GLORIOUS CONVENT SCHOOL \n\n* PLAY GROUP TO 8th Std.\n\n* ADMISSION OPEN FOR ACADEMIC YEAR 2017-18\n\n* PLAY LEARN AND GROW TOGETHER\n\n* FEATURES :-\n\n* SMART CLASSES\n\n* A.C. CLASS ROOMS\n\n* PLAY GROUND \n\n* TEACHER - STUDENT RATIO : 1:20\n\n* TOTALLY ENGLISH SPEAKING ENVIRONMENT \n\n* GUARANTEED IMPROVEMENT IN WEAKER STUDENT \n\n* HI- TECH COMPUTER LAB\n\n* TEACHING THROUGH PLAY - WAY - METHOD IN JUNIORS SECTIONS \n\n*  E.C.S. PAYMENT MODE ( CITY''S ONLY SCHOOL)\n\n* DOOR TO DOOR VAN FACILITY \n\n* SPORTS CLASSES, DANCE CLASSES ,SKATING & VARIOUS OTHER COMPETITIVE ACTIVITIES.\n \n', 0, 0, 0),
+(652, 'S.G.L. CHILDREN ACADEMY & SR.SEC. SCHOOL', '9460645715', '', 'ajay154', 'f92b6244444aef70f468eefb373b11f4', 'VRIDH ASHRAM ROAD,HANUMAN NAGAR,5-E-CHHOTI\n9460645715,9462483058,01542465234', '3912', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'S.G.L. CHILDREN ACADEMY & SR.SEC. SCHOOL', '9460645715', 'ajay154f92b6', 0, 6, '* S.G.L. CHILDREN ACADEMY & SR. SEC. SCHOOL\n\n* ADMISSION OPEN \n\n* GIVE YOU REASON,GIVES YOU FIRE,TAKES YOU HIGHER & IT MAKES YOU \" CHAMPIONS\"\n\n* CLASS NURSERY TO 12th \n\n* ENGLISH & HINDI MEDIUM \n\n* 5th,8th,10th,12th\n( Board of sec.Edu.Ajmer in Eng.Medium)\n\n* OUR FACULTY \n( Science ,Commerce,Art, Agriculture )\n\n* FEATURES:- \n* THE SCHOOL WHERE YOU FIND THE JOY OF LEARNING AND THE WAY OF LEARNING FOR YOUR CHILD.\n\n* INNOVATION METHODS TO TEACH EVERY CONCEPT.\n\n* TEACHING THROUGH L.E.D. & ENGLISH LANGUAGE FOR KIDS.\n\n* PERSONAL AND INTENSIVE CARE ON SLOW LEARNERS.\n\n* WE ASSES EVERY CHILD AND PROVIDE INDIVIDUAL FEEDBACK.\n\n* PERSONALITY DEVELOPMENT & COMMUNICATION SKILL TRAINING.\n\n* JOIN YOUR CHILD AND EXPERIENCE THE CHANGE.\n\n* PRINCIPAL\n* SRI AJAY SHARMA', 0, 0, 0),
+(653, 'GLORIOUS CONVENT SCHOOL\nPlay Group to 8th Std.', '7372900420', '', 'glorious95', '3397da5231cd5a88fac3b9b0f7976075', '3- UIT ROAD,NEAR CHAHAL CHOWK ', '3898', 0, '0000-00-00 00:00:00', 25, 1, 1, 0, 1, 'GLORIOUS CONVENT SCHOOL\nPLAY GROUP TO 8th Std.', '9799544436', 'glorious953397d', 0, 6, '*  GLORIOUS CONVENT SCHOOL \n\n* PLAY GROUP TO 8th Std.\n\n* ADMISSION OPEN FOR ACADEMIC YEAR 2017-18\n\n* PLAY LEARN AND GROW TOGETHER\n\n* FEATURES :-\n\n* SMART CLASSES\n\n* A.C. CLASS ROOMS\n\n* PLAY GROUND \n\n* TEACHER - STUDENT RATIO : 1:20\n\n* TOTALLY ENGLISH SPEAKING ENVIRONMENT \n\n* GUARANTEED IMPROVEMENT IN WEAKER STUDENT \n\n* HI- TECH COMPUTER LAB\n\n* TEACHING THROUGH PLAY - WAY - METHOD IN JUNIORS SECTIONS \n\n*  E.C.S. PAYMENT MODE ( CITY\'S ONLY SCHOOL)\n\n* DOOR TO DOOR VAN FACILITY \n\n* SPORTS CLASSES, DANCE CLASSES ,SKATING & VARIOUS OTHER COMPETITIVE ACTIVITIES.\n \n', 0, 0, 0),
 (654, 'BARBARIAN POWER GYM ', '9982170001', '', 'barbarian821', 'bd6631b3f88fb381df7f0ffd8a2d8fa8', '6th FLOOR , CGR MALL ', '3905', 0, '0000-00-00 00:00:00', 19, 1, 1, 0, 1, 'BARBARIAN POWER GYM', '9351111134', 'barbarian821bd6', 0, 6, '* BARBARIAN POWER GYM \n\n* FACILITIES :\n\n* STRENGTH TRAINING \n\n* THE FREE WEIGHT AREA \n\n* PERSONAL TRAINING \n\n* SPINNING BIKES \n\n* CARDIO\n\n* GROUP EXERCISE \n\n* AEROBICS \n\n* MASSAGES \n\n* JUICE BAR\n\n* SCHEDULE CARD\n\n* CERTIFIED TRAINERS \n\n* FITNESS TESTING \n\n* PHYSIOTHERAPIST \n\n* WEIGHT LOSS TRAINING \n\n* BODY BUILDING TRAINING \n\n* LOCKERS \n\n* DIET CHART \n\n* GYM EQUIPMENT \n\n* YOGA CLASSES \n\n* A GREAT SPACE FOR WORKOUT \n\n* FAMILY GYM \n\n* CAFETERIA \n\n* SUPPLEMENT AVAILABILITY \n\n* SPECIAL BATCH FOR GIRLS \n\n* YOU ARE PROVIDED THE FACILITY OF TWO DAYS DEMO ......\nGIVE US A CHANCE TO HELP YOU TO GET A GOOD BODY SHAPE AND GET THE PROUD OF BEING BARBARIAN\n\n* DIRECTOR \n* RAJ SONI', 29.9090173, 73.8813245, 1),
 (655, 'JASON NICKS', '9982298941', 'jasonnickssgnr@gmail.com', 'jasonn22', '9a4fc50ab3e6d22db7ee06d02e7a3356', '42 H BLOCK, 2nd FLOOR,NEAR NEHRU\n PARK..9982298941 9660340031', '3927', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'JASON NICKS\nENGLISH ACADEMY ', '9982298941', 'jasonn229a4fc', 0, 6, 'STUDYING ENGLISH ?\n    PREPARING FOR IELTS ?\nTHEN JUST CHOOSE.....\n\n* JASON NICKS \n         ENGLISH ACADEMY\n\n* WE EQUIP YOU WITH :-\n* LISTENING AND READING :- WE PROVIDE YOU WITH A NEW LISTENING AND READING TEST EVERYDAY IN THE CLASS. THE PAPERS ARE DISCUSSED IN DETAIL IN THE CLASS AND ALL YOUR DOUBTS AND WRONG ANSWER ARE EXPLAINED TO YOU. YOUR SOURCE ARE MONITORED ON DAILY BASIS AND TIPS AND STRATEGIES ARE PROVIDED EVERYDAY ON HOW TO IMPROVE YOUR SCORES. \n\n* WRITING :- EXTENSIVE STUDY MATERIAL IS PROVIDED FOR WRITING SECTION, WHICH CONSISTS OF EXPECTED TOPIC AND THEIR SOLVED ANSWERS FOR HIGHER BAND.\n\n* SPEAKING:-\nWE PREPARE YOU FOR DIFFERENT TOPICS AND ASSURE YOU THAT THE TOPIC YOU GET DURING YOUR EXAM WOULD BE OUT OF THE ONCE WHICH WE HAVE PREPARED YOU ON. EXTENSIVE PRACTICE IS GIVEN TO STUDENTS THROUGH MOCK SESSIONS . \n\n\n* AC CLASS ROOM\n\n* EXPERT FACULTY \n\n* WE ARE SPECIALIST IN BRITISH ACCENT \n\n* SPECIAL WRITING & SPEAKING MODULES   \n\n* SPOKEN ENGLISH\n\n* P.D. CLASSES \n\nCONTACT US :\n+91 96 60 340031\n+91 99 82 298941', 0, 0, 0),
 (656, 'I.T. GURU', '01542462200', '', 'guru200', '50b2264e81496d76eebc60cd827c6f89', '6th FLOOR,CGR MALL', '3930', 0, '0000-00-00 00:00:00', 23, 1, 1, 0, 1, 'IT GURU INSTITUTE ', '9799297915', 'guru200ca770', 0, 6, '* IT GURU INSTITUTE \n\n* COURSES AVAILABLE :\n\n* ANDROID \n\n* WEB DEVELOPMENT \n\n* ANIMATION \n\n* GRAPHIC DESIGN \n\n* AUTO CAD\n\n* 3D MAX\n\n* MAYA\n\n* CAREER GURU \n\n* COURSES AVAILABLE \n\n* BANK\n\n* SSC\n\n* DEFENCE \n\n* SPOKEN ENGLISH \n\n* ALL COMPETITION EXAMS PREPARATION\n\n* QUALIFIED EXPERT FACULTY \n\n* GOOD STUDY ENVIRONMENT\n\n* FREE PARKING FACILITY FOR OUR STUDENTS\n\n* CCTV CAMERA SECURITY \n\n* A.C. CLASS ROOMS\n\n* SECURITY GUARD \n\n* PURIFIED WATER FACILITY \n\n* COMPUTER NOTES AND OTHER STUDY MATERIAL.\n\n* RESULT ORIENTED STUDY . \n\n ', 0, 0, 0),
 (657, 'ROYAL DANCE HOUSE', '9649999444', '', 'royal915', 'b495e9e2ae407f84efaadd63cd1ea298', '6th FLOOR, CGR MALL', '3932', 0, '0000-00-00 00:00:00', 28, 1, 1, 0, 1, 'ROYAL DANCE CLASS', '9799297915', 'royal915b495e', 0, 6, '* ROYAL DANCE CLASS\n\n* A.C. DANCE CLASS\n\n* EXPERT CHOREOGRAPHER MR HONEY \n\n* ALL TYPE OF DANCE \n\n* CCTV CAMERA SECURITY \n\n* FRIENDLY AND FAMILY ENVIRONMENT \n\n* FREE PARKING FOR OUR STUDENTS \n\n* SO JOIN US AND LETS DANCE BECAUSE ANY BODY CAN DANCE..... ', 0, 0, 0),
-(658, 'GSM VISA & STUDY HUB', '9116135001', 'gsmsgnr@gmail.com ', 'gsm91161', '481575b4b34e9f2e6b738c897d082e64', '42-H BLOCK ,NEAR NEHARU PARK \n01542481193', '3939', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'GSM VISA & STUDY HUB', '9116135002', 'gsm911617c79c', 0, 6, '* GSM VISA & STUDY HUB\n\n* NOW ITS EASY TO GO ABROAD\n\n* NO ADVANCE MONEY \n\n* ALL TYPE OF VISA FACILITY AVAILABLE \n\n* VISITOR VISA\n\n* STUDY VISA \n\n* WORK VISA \n\n* NANNY \n\n* DO NANNY AFTER +2 AND GET OPPORTUNITY OF PR AT CANADA \n\n* BATCH START FOR\n\n* IELTS \n\n* SPOKEN ENGLISH \n\n* PTE \n\nCONTACT FOR MORE DETAILS : \n\nPRAMJEET SINGH : 9571356193\n\nRAJVEER SINGH : 9530206076\n\nRANJEET SINGH : 8699225320\n\nOFFICE : 0154-2481193\n9116135001\n9116135002\n9116135003\n9116135004\n9116135005\n9116135006\n\n* BEST QUALIFIED AND EXPERT FACULTY \n\n* CCTV CAMERA SECURITY \n\n* PROFESSIONAL STUDY ENVIRONMENT\n\n* PARKING FACILITY \n\n* AC CLASS ROOM \n\n ', 0, 0, 0),
+(658, 'GSM VISA & STUDY HUB', '9116135001', 'gsmsgnr@gmail.com ', 'gsm91161', '481575b4b34e9f2e6b738c897d082e64', '42-H BLOCK ,NEAR NEHARU PARK \n01542481193', '3939', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'GSM VISA & STUDY HUB', '9116135002', 'gsm911617c79c', 0, 6, '* GSM VISA & STUDY HUB\n\n* NOW ITS EASY TO GO ABROAD\n\n* NO ADVANCE MONEY \n\n* ALL TYPE OF VISA FACILITY AVAILABLE \n\n* VISITOR VISA\n\n* STUDY VISA \n\n* WORK VISA \n\n* NANNY \n\n* DO NANNY AFTER +2 AND GET OPPORTUNITY OF PR AT CANADA \n\n* BATCH START FOR\n\n* IELTS \n\n* SPOKEN ENGLISH \n\n* PTE \n\nCONTACT FOR MORE DETAILS : \n\nPRAMJEET SINGH : 9571356193\n\nRAJVEER SINGH : 9530206076\n\nRANJEET SINGH : 8699225320\n\nOFFICE : 0154-2481193\n9116135001\n9116135002\n9116135003\n9116135004\n9116135005\n9116135006\n\n* BEST QUALIFIED AND EXPERT FACULTY \n\n* CCTV CAMERA SECURITY \n\n* PROFESSIONAL STUDY ENVIRONMENT\n\n* PARKING FACILITY \n\n* AC CLASS ROOM \n\n ', 0, 0, 0);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
 (659, 'SHRI AATM VALLABH JAIN GIRLS COLLEGE', '01542463771', 'avj12@refiffmail.com', 'avj0154', '63031845784ad3ef7989cd319296a052', 'SUDAMA NAGAR,NEAR BALA JI DHAM,HANUMANGARH ROAD ', '3945', 0, '0000-00-00 00:00:00', 26, 1, 1, 0, 1, 'SHRI ATAM VALLABH JAIN GIRLS  PG COLLEGE\nAn Institute of Management & Technology ', '9414537731', 'avj015463031', 0, 6, '* SHRI ATAM VALLABH JAIN GIRLS PG COLLEGE \n\n* AN INSTITUTE OF MANAGEMENT & TECHNOLOGY \n\n* PROGRAMS : \n* UNDER RTU:-\n* MBA \n: DURATION 2 YEARS\n: SEAT 120\n: ELIGIBILITY 10+2+3 IN ANY SUBJECT WITH MIN.50% MARKS\n: ADMISSION THROUGH C- MAT ,STRICTLY ACCORDING TO THE MERIT \n\n\n* MCA :-\n( AFTER BCA COMPLETED MCA 3 YEARS DURATION COURSE)\n: SEATS :- 120\n: GRADUATION WITH MIN 50% MARKS \n: ADMISSION THROUGH :- \nRMCAAT,AND THROUGH MERIT \n\n* UNDER MGSU :---\n* M.A.\n* M.SC\n* M.COM\n* B.C.A. \n* B.B.A.\n* B.A.\n* B.COM\n* B.Sc\n\n* EXPERT ACADEMIC FACULTY \n\n* GREEN CAMPUS \n\n* THREE COMPUTER LABS\n\n* WELL FURNISHED HYGIENIC CAFETERIA \n\n* WELL MAINTAIN  SCIENCE LAB.\n\n* LIBRARY WITH APPROX 35000 PLUS BOOKS \n\n* SPACIOUS HOSTEL WITH 350 SEAT.\n\n* SECURITY WITH CCTV CAMERA & ERP \n\n* GOOD TRANSPORT FACILITY\n\n* WELL MAINTAIN AC SEMINAR HALL WITH WI- FI CONNECTIVITY AND OTHER DIGITAL FACILITY \n\n* ALL FACILITY OF SPORTS ARE AVAILABLE \n\n* TRAINING AND CAMPUS PLACEMENT \n\n* AVJ COLLGE ALSO OFFERING BA.B.ED &    BSC B.ED  INTEGRATED COURSE TO STUDENTS   ', 0, 0, 0),
 (660, 'WESTPOINT MIGRATION SOLUTIONS AUSTRALIA', '01542483151', '', 'westpoint151', '9b981f377606651947133c03417b4893', '106-H BLOCK,NEAR NEHARU PARK ROAD,BEHIND SAHU LAB 9829403151', '3954', 0, '0000-00-00 00:00:00', 122, 1, 1, 0, 1, 'WESTPOINT MIGRATION SOLUTIONS AUSTRALIA', '9782000078', 'westpoint1514c2', 0, 6, '* WESTPOINT MIGRATION SOLUTIONS AUSTRALIA \n\n* ONLY AUSTRALIAN MIGRATION FIRM IN SRIGANGANAGAR \n\n* NOW AUSTRALIAN MARA OFFICER IN SRIGANGANAGAR\n\n* FIRST BRANCH OF AUSTRALIA BRISBANE\n\n* WANT TO STUDY ABROAD........????\n\n* NOW  ITS EASY TO FLY AUSTRALIA \n\n* MOREOVER :-----\n* AUSTRALIA \n* CANADA\n* NEW ZEALAND \n\n* WE ALSO PROVIDE COACHING FOR IELTS SPEAKING  BY RAJNI MAM ( IELTS BAND 8.0 FROM AUSTRALIA )\n\n* WESTPOINT MIGRATION SOLUTIONS AUSTRALIA \nHEAD OFFICE : BRISBANE AUSTRALIA +61425342966,+61430809966\n\n* FREE CONSULTATION FOR 457 P.R. AUSTRALIA  \n \n* EDUCATIONAL CONSULTANT INDIA : MR. LUCKY SHAH \n9829403151\n0154-2483151\n\nVISIT US :\nwestpointmigration.com.au\n', 29.9280934, 73.8700235, 0),
 (661, 'kk', '66', '', 'kkdfcidj', 'c878cb11d06b694bf05e9561b9170946', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'kkdfcidje6e2f', 0, 6, '', 0, 0, 0),
@@ -13900,36 +13398,36 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (716, ' HOTEL,BADARI PALACE', '9829882222', '', 'hotalbadari22', '65c60ddaea56cc1103c3ee100dcba58b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'hotalbadari2265', 0, 6, '', 0, 0, 0),
 (717, 'ASHAPURA SCHOOL', '9829882233', '', 'ashapura33', '70008fac944feebf48f9333311e727ac', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ashapura3370008', 0, 6, '', 0, 0, 0),
 (718, 'JAI SHREE BEAUTY PARLOUR', '7426878111', '', 'jaishree111', '17691e8b4ee1276b8fd6a848a60bc7ee', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'jaishree1111769', 0, 6, '', 0, 0, 0),
-(719, 'JAI SHRI BEAUTY PARLOUR', '7426878112', 'jaishri112@gmail.com', ' jaishri112', 'c30b0279f23195a9c1133febb35b9710', '93 JAGDAMBHA NAGAR', '4275', 0, '0000-00-00 00:00:00', 90, 5, 0, 0, 1, 'JAI SHREE BEAUTY', '7426878112', ' jaishri112dac5', 0, 6, '* HAIRSTYLE\n\n* MAKEUP\n\n* BODY MASSAGE\n\nEYE BROWS\n\n', 25.7938182, 73.3345602, 0);
-INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(719, 'JAI SHRI BEAUTY PARLOUR', '7426878112', 'jaishri112@gmail.com', ' jaishri112', 'c30b0279f23195a9c1133febb35b9710', '93 JAGDAMBHA NAGAR', '4275', 0, '0000-00-00 00:00:00', 90, 5, 0, 0, 1, 'JAI SHREE BEAUTY', '7426878112', ' jaishri112dac5', 0, 6, '* HAIRSTYLE\n\n* MAKEUP\n\n* BODY MASSAGE\n\nEYE BROWS\n\n', 25.7938182, 73.3345602, 0),
 (720, 'ASHAPURA SCHOOL ', '7426878113', 'ashapura113@gmail.com', 'ashapura113', 'c433d253aabf35e3d8d8399657eaeede', '93 JAGDAMBHA NAGAR', '4282', 0, '0000-00-00 00:00:00', 25, 5, 0, 0, 1, 'ASHAPURASCHOOL', '7426878113', 'ashapura113c433', 0, 6, '* DANCING\n* PERFORMANCE\n* PLY GAME\n* BEST AWARD\n', 25.7938182, 73.3345602, 0),
 (721, 'DR ASHUTOS', '9829889999', 'drashutos99@gmail.com', 'drashutos99', 'ce7de41fdb0be607dfd1e43852708762', 'COLLEGE ROAD', '4286', 0, '0000-00-00 00:00:00', 72, 5, 0, 0, 1, 'DRASHUTOS', '9829889999', 'drashutos99ce7d', 0, 6, '* BODY CHECK UP\n* CHILDREN CHECK\n* & OTHERS\n', 25.7938182, 73.3345602, 0),
 (722, 'HOTEL PAWAN INTERNATIONAL', '9829777777', '', 'hotal777', 'fc04db78a2fd24262cf26c5327245d9e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'hotal777fc04d', 0, 6, '', 0, 0, 0),
 (723, 'LAMA KAI KARATE SCHOOL OF INDIA', '9521394799', '', 'lamakai99', 'c9d304fa8b6e88a438f778c3262a94ca', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'lamakai99c9d30', 0, 6, '', 0, 0, 0),
-(724, 'LAMA KAI KARATE SCHOOL  OF INDIA ', '9828127627', 'mangalsingh2222@yahoo.com', 'lamakai27', '78ca2ce8539230017c4da2bfe99c4b49', 'BHATI BHAWAN ,OPP. AIR FORCE  MAIN GATE , JODHPUR  (RAJ. )', '4291', 0, '0000-00-00 00:00:00', 25, 5, 1, 0, 1, 'LAMA KAI KARATE SCHOOL  OF INDIA ', '9521394799', 'lamakai2778ca2', 0, 6, '■ KARATE \n■ YOGA CLASSES \n■ YOUTH  AFFAIRS \nSPORTS ', 0, 0, 0),
-(725, 'MANGAL SINGH', '9785695144', 'mangalsingh2222@yahoo.com\n', 'mangal44', '13554f50bd93974ae8e8e0631de785ef', 'BHATI BHAVAN , OPP. AIR FORCEBMAIN GATE', '4292', 0, '0000-00-00 00:00:00', 64, 5, 1, 0, 1, 'MANGAL SINGH', '9828127627', 'mangal4413554', 0, 6, '* SALE & PURCHASE\n* ALL TYPE OF   PROPERTY.               \n* HOMETOWN AWELEBLE\n', 26.2893064, 73.0310432, 0),
+(724, 'LAMA KAI KARATE SCHOOL  OF INDIA ', '9828127627', 'mangalsingh2222@yahoo.com', 'lamakai27', '78ca2ce8539230017c4da2bfe99c4b49', 'BHATI BHAWAN ,OPP. AIR FORCE  MAIN GATE , JODHPUR  (RAJ. )', '4291', 0, '0000-00-00 00:00:00', 25, 5, 0, 0, 1, 'LAMA KAI KARATE SCHOOL  OF INDIA ', '9521394799', 'lamakai2778ca2', 0, 6, '■ KARATE \n■ YOGA CLASSES \n■ YOUTH  AFFAIRS \nSPORTS ', 0, 0, 0),
+(725, 'MANGAL SINGH', '9785695144', 'mangalsingh2222@yahoo.com\n', 'mangal44', '13554f50bd93974ae8e8e0631de785ef', 'BHATI BHAVAN , OPP. AIR FORCEBMAIN GATE', '4292', 0, '0000-00-00 00:00:00', 64, 5, 0, 0, 1, 'MANGAL SINGH', '9828127627', 'mangal4413554', 0, 6, '* SALE & PURCHASE\n* ALL TYPE OF   PROPERTY.               \n* HOMETOWN AWELEBLE\n', 26.2893064, 73.0310432, 0),
 (726, 'GIRISH RAJ MEWARA', '8233090009', '', 'girishraj09', '9807df721f9df40f82f36c855454221d', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'girishraj099807', 0, 6, '', 0, 0, 0),
 (727, 'divya', '9694691687', '', 'kanikashekhawat9442@gmail.com', '2aa563c05ef4f8af734cf0635f6b8dcf', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'kanikashekhawat', 0, 6, '', 0, 0, 0),
 (728, 'THE BLUE TURBAN', '9166881127', 'theblueturbanjodhpur@gmail.com', 'turban1127', 'fd475d683109f95e8dce77781c599061', 'MAKARANA MOHALLA,NEAR TUVAR JI KA JHALRA \n9783099302', '4293', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'THE BLUE TURBAN\nHotel • Hostel • Cafe • Restaurant ', '9783099302', 'turban1127fd475', 0, 6, '* THE BLUE TURBAN\n\n* HOTEL • HOSTEL • CAFE • RESTAURANT\n\n* NEAT & CLEAN ROOM WITH TRADITIONALLY JODHPURI STYLE \n\n* FIRST CHOICE OF TOURIST & FOREIGNERS \n\n* QUALIFIED AND COOPERATIVE HOTEL STAFF \n\n* HYGIENIC FOOD ,TRADITIONAL FOOD ALSO AVAILABLE\n\n* QUALIFIED AND PROFESSIONAL COOK \n\n* NEAR TO RAILWAY &  BUS STAND \n\n* WI- FI FACILITY \n\n* ONLINE HOTEL ROOM BOOKING FACILITY AVAILABLE\n\n* BEAUTIFUL MEHARANGARH FORT VIEW FROM ROOF TOP OF HOTEL \n\n* ROOF TOP AVAILABLE FOR PHOTOSHOOT, PRE- WEDDING SHOOT ,FOR MODELING PURPOSE \n\n* WE PROVIDING HOSTEL FACILITY ALSO FOR STUDENTS. \n\n* VISIT US ON :-\nwww.theblueturbanjodhpur.com\n\n* Like Us on Facbook Page \ntheblueturban\n\n* Write us on \ntheblueturbanjodhpur@gmail.com', 29.9173004, 73.8835247, -1),
-(729, 'THE CURRY''S', '9782370765', '', 'currys765', '202f3a622da2b39bddb2180f8f50c429', 'MAKRANA MOHALLA,TUVAR JI KA JHALRA ,NEAR HOTEL RAAS ', '4308', 0, '0000-00-00 00:00:00', 29, 5, 1, 0, 1, 'THE CURRY''S\nRoof Top Restaurant ', '9782370765', 'currys765202f3', 0, 6, '* THE CURRY''S\n\n* VEG, NON VEG ,INDIAN & RAJASTHANI FOOD,BREAKFAST ,LUNCH AND CANDEL LIGHT DINNER\n\n* ROOF TOP RESTAURANT \n\n* BEAUTIFUL VIEW  OF MEHARANGARH FORT \n\n* QUALIFIED & PROFESSIONAL COOK \n\n* HYGIENIC FOOD WITH BEST QUALITY \n\n* AC RESTAURANT \n\n* COMPLETELY HYGIENIC RESTAURANT \n\n* FIRST CHOICE OF TOURIST AND FOREIGNERS \n\nSO IF YOU ARE LOOKING FOR GOOD FOOD,FRIENDLY ENVIRONMENT,AND GOOD SERVICES JUST VISIT THE CURRY''S\n\n* CONTACT US ON\n\nHARI SINGH BHATI \n+ 919782370765\n\nARJUN SINGH CHAMPAWAT \n+9190010-77800\n', 29.9173004, 73.8835247, 0),
-(730, 'THE CURRYS ', '9001077800', '', 'currys800', '8a7358c124eb663d791dc90d25933424', 'MAKRANA MOHALLA, TUVAR JI KA JHALRA ,NEAR HOTEL RAAS ', '4315', 0, '0000-00-00 00:00:00', 30, 5, 1, 0, 1, 'THE CURRY''S', '9782370765', 'currys8008a735', 0, 6, '* THE CURRY''S \n\n* ROOF TOP RESTAURANT \n\n* BEAUTIFUL VIEW OF MEHARANGARH FORT \n\n* NON VEG RESTAURANT \n\n* QUALIFIED AND PROFESSIONAL COOK \n\n* HYGIENIC NON VEG DELICIOUS FOOD \n\n* DIFFERENT KIND OF NON VEG FOOD VARIETY \n\n* QUALIFIED ,PROFESSIONAL,COOPERATIVE, FRIENDLY STAFF FOR SERVE YOU BETTER \n\n* JUST VISIT US FOR MOUTHWATERING NON VEG FOOD \n\n* WE ALSO SERVE RAJASTHANI FOOD IN TRADITIONAL WAY \n\nCONTACT US ON \n+919782370765- HARI SINGH BHATI \n\n+919001077800 - ARJUN SINGH CHAMPAWAT     ', 29.9173004, 73.8835247, 0),
+(729, 'THE CURRY\'S', '9782370765', '', 'currys765', '202f3a622da2b39bddb2180f8f50c429', 'MAKRANA MOHALLA,TUVAR JI KA JHALRA ,NEAR HOTEL RAAS ', '4308', 0, '0000-00-00 00:00:00', 29, 5, 1, 0, 1, 'THE CURRY\'S\nRoof Top Restaurant ', '9782370765', 'currys765202f3', 0, 6, '* THE CURRY\'S\n\n* VEG, NON VEG ,INDIAN & RAJASTHANI FOOD,BREAKFAST ,LUNCH AND CANDEL LIGHT DINNER\n\n* ROOF TOP RESTAURANT \n\n* BEAUTIFUL VIEW  OF MEHARANGARH FORT \n\n* QUALIFIED & PROFESSIONAL COOK \n\n* HYGIENIC FOOD WITH BEST QUALITY \n\n* AC RESTAURANT \n\n* COMPLETELY HYGIENIC RESTAURANT \n\n* FIRST CHOICE OF TOURIST AND FOREIGNERS \n\nSO IF YOU ARE LOOKING FOR GOOD FOOD,FRIENDLY ENVIRONMENT,AND GOOD SERVICES JUST VISIT THE CURRY\'S\n\n* CONTACT US ON\n\nHARI SINGH BHATI \n+ 919782370765\n\nARJUN SINGH CHAMPAWAT \n+9190010-77800\n', 29.9173004, 73.8835247, 0),
+(730, 'THE CURRYS ', '9001077800', '', 'currys800', '8a7358c124eb663d791dc90d25933424', 'MAKRANA MOHALLA, TUVAR JI KA JHALRA ,NEAR HOTEL RAAS ', '4315', 0, '0000-00-00 00:00:00', 30, 5, 1, 0, 1, 'THE CURRY\'S', '9782370765', 'currys8008a735', 0, 6, '* THE CURRY\'S \n\n* ROOF TOP RESTAURANT \n\n* BEAUTIFUL VIEW OF MEHARANGARH FORT \n\n* NON VEG RESTAURANT \n\n* QUALIFIED AND PROFESSIONAL COOK \n\n* HYGIENIC NON VEG DELICIOUS FOOD \n\n* DIFFERENT KIND OF NON VEG FOOD VARIETY \n\n* QUALIFIED ,PROFESSIONAL,COOPERATIVE, FRIENDLY STAFF FOR SERVE YOU BETTER \n\n* JUST VISIT US FOR MOUTHWATERING NON VEG FOOD \n\n* WE ALSO SERVE RAJASTHANI FOOD IN TRADITIONAL WAY \n\nCONTACT US ON \n+919782370765- HARI SINGH BHATI \n\n+919001077800 - ARJUN SINGH CHAMPAWAT     ', 29.9173004, 73.8835247, 0),
 (731, 'JANTA SWEET HOME', '02912636666', 'jshpl.jodhpur@gmail.com', '6666janta', 'ce43a5465479b146482322bc1a59c8ae', '3,NAI SADAK , STATION ROAD ', '4323', 0, '0000-00-00 00:00:00', 29, 5, 1, 0, 1, 'JANTA SWEET HOME (P) LTD\n', '2912625559', '6666jantace43a', 0, 6, '* JANTA SWEET HOME ( P) LTD \n\n* Welcome to Janta Sweet Home. Janta Sweet Home is a leading name in the Sweets and Namkeen in India.We are famous in various kind of namkeens and sweets. We prepares the best quality sweets and namkeens in jodhpur.We will have diversified client-age all over the world. Janta Sweet Home specializes in Sweets and Namkeen. We have wide Varieties and Quality Food Products in Fast Food & Ice Cream. We welcome any customized demand from our esteemed customers and visitors.\n', 29.9173004, 73.8835247, 0),
 (732, 'MODERN BEAUTY PARLOUR', '7296883057', '', 'modern 57', '84e71decf7ccd0969e4ee75d635c00c6', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'modern 572c659', 0, 6, '', 0, 0, 0),
 (733, 'JAY SHREE SALES', '823309003', 'jss_raj222@yahoo.in', 'jayshree03\njayshree03', '7057ca91bf42a9c64f0c4a11390dd202', 'L/s  SOJATI GATE ,NEAR BATA SHOP, 342001', '4330', 0, '0000-00-00 00:00:00', 64, 5, 0, 0, 1, 'JAI SHREE SALES', '8233090009', 'jayshree03\njays', 0, 6, ' * PROPERTIES  ADVISERS \n*  WHOLE SELL  DILING\n\n', 26.2893064, 73.0310432, 0),
-(734, 'KEVAI PROPERTY DEALER ', '95406647878', 'mahendrasinghdahiya@gmail.com', 'kevai7878', 'f63015ea96e6a7c95438e2c6eb1b4354', 'PLOT NO 476, RAHADA HOUSE, MOHAN NAGAR B, B.J.S. COLONY ,02913207475', '4331', 0, '0000-00-00 00:00:00', 64, 5, 1, 0, 1, 'KEVAI PROPERTY DEALER ', '9540667878', 'kevai7878f6301', 0, 6, '* KEVAI PROPERTY DEALER\n\n* SALE AND PURCHASE ALL KIND OF PROPERTY \n\n* WE ARE DEALS IN PLOT ,SHOP, APARTMENT,HOUSE,SHOWROOMS AND MANY MORE \n\n* CONTACT US FOR BEST LOCATION PROPERTY IN JODHPUR AND NEAR BY AREA .\n\n', 0, 0, 0),
+(734, 'KEVAI PROPERTY DEALER ', '95406647878', 'mahendrasinghdahiya@gmail.com', 'kevai7878', 'f63015ea96e6a7c95438e2c6eb1b4354', 'PLOT NO 476, RAHADA HOUSE, MOHAN NAGAR B, B.J.S. COLONY ,02913207475', '4331', 0, '0000-00-00 00:00:00', 64, 5, 0, 0, 1, 'KEVAI PROPERTY DEALER ', '9540667878', 'kevai7878f6301', 0, 6, '* KEVAI PROPERTY DEALER\n\n* SALE AND PURCHASE ALL KIND OF PROPERTY \n\n* WE ARE DEALS IN PLOT ,SHOP, APARTMENT,HOUSE,SHOWROOMS AND MANY MORE \n\n* CONTACT US FOR BEST LOCATION PROPERTY IN JODHPUR AND NEAR BY AREA .\n\n', 0, 0, 0),
 (735, 'THE UMMED ', '02916621111', '', 'ummed1111', 'eff5a83367ebdd04506ec6ba5e0e6ef5', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ummed1111eff5a', 0, 6, '', 0, 0, 0),
 (736, 'THE UMED', '02912654093', 'llpjodhpur@gmail.com\nhoteltheumed@hotmail.com\nWEBSITE : www.theumed.com', 'umed093', '61e45cb4f5a2fb9c360484723cc788f9', 'BERIO KA MOHALLA,OPP UMAID KANYA SCHOOL,NEAR ANAND CINEMA ,RAILWAY STATION ROAD', '4338', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'THE UMED\n( a unit of lodha hospitality )\nHOTEL & RESTAURANT ', '9828031291', 'umed09361e45', 0, 6, '* THE UMED \n\n* Welcome to Hotel The Umed.. finest centralised air condition boutique hotel. We are located near the railway station & old blue city. WE have been blessed by you, our guests, with nearly 1 years of abundance. The success of The Umed ground on the property, our hotel committed to heritage Indian art. The Umed is named for our father and caters to the all kind of budget-minded crowd. \n\nRun by a jain family, Hotels jodhpur - The Umed is one of the finest hotels in Jodhpur. Built in traditional style, there are beautifully carved balconies, attractive courtyards, open terraces, comfortable rooms with antique furnishings. The Umed offers unique exotic traditional Rajasthani ambience found only in some of the Hotels in Jodhpur.\n\n* FACILITIES : \n\n* FREE PARKING \n\n* TRAVEL HELP DESK \n\n* ROOF TOP BONFIRE \n\n* DOCTOR ON CALL\n\n* LAUNDRY FACILITIES \n\n* ROOM SERVICE \n\n* RESTAURANT & DINING HALL \n\n* WAITING LOUNGE\n \n* CAMEL SAFARI\n\n* SECURITY GUARD \n\n* FREE NEWSPAPER IN LOBBY \n\n* QUALIFIED & PROFESSIONAL STAFF \n\n* HYGIENIC FOOD \n\n* DELUXE ROOM WITH 1500 TARIFF \n\n* AMENITIES :-----\n\n* LARGE ROOM SIZE \n\n* 1 KING SIZE BED \n\n* ATTACHED BATHROOM\n\n* AC FACILITY\n\n* WATER GEYSERS\n\n* LED TV \n\n* BEDSIDE CARPET \n\n* TEA COFFEE MAKER \n\n* WELCOME DRINK ON ARRIVAL \n\n* 1 WATER BOTTLE COMPLIMENTARY  PER DAY\n\n* INTERCOM\n\n* CHAIR AND WRITING DESK\n\n* VISIT US ON \n* www.theumed.com\n\n* Write us on :--\nllpjodhpur@gmail.com\nhoteltheumed@gmail.com\n\n* CONTACT US ON :--\n\n0291-2654093\n+91-9828031291 \n+91- 9828130905\n\n\n\n', 0, 0, 0),
-(737, 'APPLE', '02912556803', 'hotelapple@live.com\nWEBSITE : www.hotelapple.com', 'apple0291', 'd53d3f5c1824e78341589f6fde82d57c', '23-A SHANTI NAGAR, 1 STREET , NEAR RELIANCE FRESH PAOTA ''C'' ROAD ', '4345', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'APPLE', '9530346345', 'apple0291d53d3', 0, 6, '* APPLE \n\n* HOME STAY & ROOF RESTAURANT \n\n* Welcome to one of the best run Jodhpur hotels. Hotel Apple Jodhpur is a modern heritage hotel with a budget hotel tariff providing world class Rajasthani style accommodation. Our hotel is highly recommended by Lonely Planet, Let''s go, Foot print travel guides on Jodhpur Hotels and Jodhpur Budget Hotels.\n\nRun by a family of Jain, Hotels Jodhpur - Hotel Apple is one of the finest hotels in Jodhpur. Built in traditional style, there are beautifully carved balconies, attractive courtyards, open terraces, lovely garden and comfortable rooms with antique furnishings. Hotel Apple offers unique exotic traditional Rajasthani ambience found only in some of the Hotels in Jodhpur.\n\nRanked as one of the best run budget hotels in Jodhpur by the Lonely Planet international travel guide book, Hotel Apple offers guests a pleasant and comfortable home away from home with traditional Rajput hospitality.\n\n* HOTEL & ROOM SERVICE\n\n* AIR CONDITIONED ROOMS,SUITES \n\n* RAJASTHANI CUISINE \n\n* STUDY DESKS IN ROOM \n\n* DIRECT CABEL TELEVISION \n\n* EUROPEAN STYLE BATHROOM \n\n* MULTI CUISINE RESTAURANT \n\n* 24 HRS FRONT DESK \n\n* CAR HIRE SERVICE \n\n* LAUNDRY AND DRY CLEAN \n\n* POSTAL / PARCEL SERVICE \n\n* DAILY NEWS PAPER \n\n* AYURVEDIC  MASSAGE \n\n* BANQUET FACILITY \n\n* SAFE DEPOSIT LOCKERS \n\n* VALET PARKING \n\n* TRAVEL ASSISTANCE\n\n* DESERT SAFARI \n\nVISIT US ON :\nwww.hotelapple.com\n\n\n* Write us on :  \ninfo@hotelapple.com\nhotelapple@live.com\n\n\n* CONTACT US ON \n\n* +91-2912556803\n\n* +91-95303-46343\n   +91-94143-82945\n   +91-82902-11745', 0, 0, 0),
-(738, 'THE BLUE HOUSE', '02912621396', 'bluehouse36@hotmail.com\nWEBSITE : www.guesthousejodhpur.com\nwww.bluehousejodhpur.com\nwww.hoteljodhpur.co.in', '396blue', '5697ed5b63807dae741fcf29bf94146e', 'SUMER BHAWAN, MOTI CHOWK ', '4352', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'THE BLUE HOUSE', '9828031291', '396blue5697e', 0, 6, '\n* THE BLUE HOUSE \n\n* Jain Family owned and run guest house called The Blue House, Oldest Guest House & roof-top restaurant, full of the love and welcome that makes India so wonderful and a trip here so unique. As an honoured guest in their home you will be afforded every luxury, comfort and convenience needed or desired to make your stay in Jodhpur and India an experience you will cherish for the rest of your long life.\n\n \n\nThe Blue House ROOF-TOP RESTAURANT where cooked food prepared by family according to centuries-old recipes. ROOF-TOP RESTAURANT with Full views of the Majestic Mehrangarh Fort and Blue City\n\n There are 15-rooms with an atmosphic and cheerful decorated with cultural themes of Rajasthan. All rooms with attached modern bathroom with round the clock hot and cold water with Free Wifi services. \n\n \n\nRemember The Blue House is oldest guest house of old ciy, In a old blue haveli where  2-famous-movies done. We don''t have lift facility in our place.\n\n* 24 HRS FROBT DESK \n\n* CURRENCY EXCHANGE \n\n* CAR HIRE SERVICE \n\n* LAUNDRY AND DRY CLEANING \n\n* POSTAL / PARCEL SERVICE \n\n* SHOPPING ARCADE\n\n* AIR PORT AND RAILWAY STATION TRANSFER\n\n* VILLAGE SAFARI\n\n* BABY SITTING \n\n* DAILY NEWS PAPER \n\n* MAGICIAN ON CALL \n\n* DESERT SAFARI \n\n* AYURVEDIC MASSAGE \n\n* BANQUET FACILITY \n\n* SAFE DEPOSIT LOCKER \n\n* VALET PARKING \n\n* TRAVEL ASSISTANCE\n\n* DOCTOR ON CALL \n\n* LIBRARY \n\n\nCONTACT US \n+91-9828031291\n0291-2622621396\n \n\n \n', 0, 0, 0),
+(737, 'APPLE', '02912556803', 'hotelapple@live.com\nWEBSITE : www.hotelapple.com', 'apple0291', 'd53d3f5c1824e78341589f6fde82d57c', '23-A SHANTI NAGAR, 1 STREET , NEAR RELIANCE FRESH PAOTA \'C\' ROAD ', '4345', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'APPLE', '9530346345', 'apple0291d53d3', 0, 6, '* APPLE \n\n* HOME STAY & ROOF RESTAURANT \n\n* Welcome to one of the best run Jodhpur hotels. Hotel Apple Jodhpur is a modern heritage hotel with a budget hotel tariff providing world class Rajasthani style accommodation. Our hotel is highly recommended by Lonely Planet, Let\'s go, Foot print travel guides on Jodhpur Hotels and Jodhpur Budget Hotels.\n\nRun by a family of Jain, Hotels Jodhpur - Hotel Apple is one of the finest hotels in Jodhpur. Built in traditional style, there are beautifully carved balconies, attractive courtyards, open terraces, lovely garden and comfortable rooms with antique furnishings. Hotel Apple offers unique exotic traditional Rajasthani ambience found only in some of the Hotels in Jodhpur.\n\nRanked as one of the best run budget hotels in Jodhpur by the Lonely Planet international travel guide book, Hotel Apple offers guests a pleasant and comfortable home away from home with traditional Rajput hospitality.\n\n* HOTEL & ROOM SERVICE\n\n* AIR CONDITIONED ROOMS,SUITES \n\n* RAJASTHANI CUISINE \n\n* STUDY DESKS IN ROOM \n\n* DIRECT CABEL TELEVISION \n\n* EUROPEAN STYLE BATHROOM \n\n* MULTI CUISINE RESTAURANT \n\n* 24 HRS FRONT DESK \n\n* CAR HIRE SERVICE \n\n* LAUNDRY AND DRY CLEAN \n\n* POSTAL / PARCEL SERVICE \n\n* DAILY NEWS PAPER \n\n* AYURVEDIC  MASSAGE \n\n* BANQUET FACILITY \n\n* SAFE DEPOSIT LOCKERS \n\n* VALET PARKING \n\n* TRAVEL ASSISTANCE\n\n* DESERT SAFARI \n\nVISIT US ON :\nwww.hotelapple.com\n\n\n* Write us on :  \ninfo@hotelapple.com\nhotelapple@live.com\n\n\n* CONTACT US ON \n\n* +91-2912556803\n\n* +91-95303-46343\n   +91-94143-82945\n   +91-82902-11745', 0, 0, 0),
+(738, 'THE BLUE HOUSE', '02912621396', 'bluehouse36@hotmail.com\nWEBSITE : www.guesthousejodhpur.com\nwww.bluehousejodhpur.com\nwww.hoteljodhpur.co.in', '396blue', '5697ed5b63807dae741fcf29bf94146e', 'SUMER BHAWAN, MOTI CHOWK ', '4352', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'THE BLUE HOUSE', '9828031291', '396blue5697e', 0, 6, '\n* THE BLUE HOUSE \n\n* Jain Family owned and run guest house called The Blue House, Oldest Guest House & roof-top restaurant, full of the love and welcome that makes India so wonderful and a trip here so unique. As an honoured guest in their home you will be afforded every luxury, comfort and convenience needed or desired to make your stay in Jodhpur and India an experience you will cherish for the rest of your long life.\n\n \n\nThe Blue House ROOF-TOP RESTAURANT where cooked food prepared by family according to centuries-old recipes. ROOF-TOP RESTAURANT with Full views of the Majestic Mehrangarh Fort and Blue City\n\n There are 15-rooms with an atmosphic and cheerful decorated with cultural themes of Rajasthan. All rooms with attached modern bathroom with round the clock hot and cold water with Free Wifi services. \n\n \n\nRemember The Blue House is oldest guest house of old ciy, In a old blue haveli where  2-famous-movies done. We don\'t have lift facility in our place.\n\n* 24 HRS FROBT DESK \n\n* CURRENCY EXCHANGE \n\n* CAR HIRE SERVICE \n\n* LAUNDRY AND DRY CLEANING \n\n* POSTAL / PARCEL SERVICE \n\n* SHOPPING ARCADE\n\n* AIR PORT AND RAILWAY STATION TRANSFER\n\n* VILLAGE SAFARI\n\n* BABY SITTING \n\n* DAILY NEWS PAPER \n\n* MAGICIAN ON CALL \n\n* DESERT SAFARI \n\n* AYURVEDIC MASSAGE \n\n* BANQUET FACILITY \n\n* SAFE DEPOSIT LOCKER \n\n* VALET PARKING \n\n* TRAVEL ASSISTANCE\n\n* DOCTOR ON CALL \n\n* LIBRARY \n\n\nCONTACT US \n+91-9828031291\n0291-2622621396\n \n\n \n', 0, 0, 0),
 (739, 'RAVLA RESTAURANT ', '8890413264', '', 'ravla091', '4541c7e9023322fa727d449e9b58647c', 'MAKRANA MOHALLA,NEAR TUVAR JI KA JHALRA ,BEHIND CLICK TOWER ', '4359', 0, '0000-00-00 00:00:00', 29, 5, 0, 0, 1, 'RAVLA RESTAURANT\nRoof Top Restaurant  ', '8890413264', 'ravla0914541c', 0, 6, ' * RAVLA RESTAURANT \n\n* VEG & NON VEG \n\n* ROOF TOP RESTAURANT \n\n* BEST & BEAUTIFUL VIEW FROM RAVLA RESTAURANT \n\n* QUALIFIED AND PROFESSIONAL STAFF \n\n* WE KNOWN FOR OUR BEST AND EXTRAORDINARY SERVICES \n\n* WE SERVE TRADITIONAL FOOD IN OUR JODHPURI TRADITIONAL STYLE \n\n* HYGIENIC AND DELICIOUS FOOD \n\n* PROFESSIONAL COOK\n\n* AVAILABLE ALL KIND OF FOOD \n\n* CONTACT US ON \n+91-8890413264\n ', 0, 0, 0),
 (740, 'JHANKAR CHOTI HAVELI RESTAURANT ', '02912612590', '', '98jhankar91', '0dd1adf722770bf449d9893f63115599', 'MAKARANA MOHALLA NEAR FORT,BEHIND CLOCK TOWER, GULAB SAGAR ', '4366', 0, '0000-00-00 00:00:00', 29, 5, 1, 0, 1, 'JHANKAR CHOTI HAVELI ', '9828031291', '98jhankar910dd1', 0, 6, '* JHANKAR CHOTI HAVELI RESTAURANT \n\n* CUISINE : INDIAN, ASIAN ,CHINESE ETC.\n\n* HYGIENIC FOOD QUALITY \n\n* PROFESSIONAL COOK\n\n* NEAR MEHARNGARH FORT \n\n* FIRST CHOICE OF FOREIGNERS \n\n* GOOD SERVICES \n\n* TRADITIONAL JODHPURI OR RAJASTHANI FOOD ALSO AVAILABLE.\n\nCONTACT US ON \n+91-  9828031291\n\n\nLIKE US ON FACEBOOK \nhttps://www.Facebook.com/jhankarchotihavelirestaurant  \n\nVISIT OUR RESTAURANT TO SEE BEAUTIFUL VIEW OF MEHARANGARH FORT AND CLOCK TOWER  \n\n ', 0, 0, 0),
 (741, 'RANI MAHAL', '9929999595', '', 'ranim9595', '3d2ce02d4accd74c2ee1836e9f0f9c10', 'NAVCHOKIYA, FATEH POL ROAD', '4373', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'RANI MAHAL', '9929999595', 'ranim95953d2ce', 0, 6, '* HOTEL RANI MAHAL\n\n* NEAR TO MEHARNGARH FORT \n\n* BEST VIEW OF CITY AND FORT FROM HOTEL \n\n* DOCTOR ON CALL\n\n* BUSINESS CENTRE \n\n* WI- FI ZONE\n\n* VILLAGE SAFARI\n\n* HERITAGE ROOM & HERITAGE ANTIQUE FURNITURE \n\n* TRAVEL ASSISTANCE\n\n* RENTAL CAR SERVICES \n\n* LAUNDRY FACILITIES \n\n* ROOM SERVICE\n\n* RESTAURANT & DINING HALL\n\n* CAMEL SAFARI \n\nCONTACT US ON :-\n09929999595 \n\n', 0, 0, 0),
 (742, 'alex', '9956233529', '', 'alexdicosta', 'a8698009bce6d1b8c2128eddefc25aad', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'alexdicostaca5a', 0, 6, '', 0, 0, 0),
-(743, 'PUKHRAJ PRALADKUMAR', '9680975277', '', 'pukhraj77', '100c44ea1394e43b17a4a07356e8124e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'pukhraj77100c4', 0, 6, '', 0, 0, 0),
-(744, 'S.D. CATERING', '7339713954', 'sdcatering54@gmail.com', 'sdcatering54', '8889608158e45c1b1dc6571e8f9c30a0', 'NAYA BAS, BALSAMAND', '4385', 0, '0000-00-00 00:00:00', 66, 5, 1, 0, 1, 'S. D. CATERING', '7339713954', 'sdcatering54888', 0, 6, '* VIP WAITERS ( LADIES & GENTS )\n \n* CATERING SERVICE\n\n* BAR SET UP\n\n* LABOUR SUPPLIER\n\n* MARRIAGE ,ANNIVERSARY ,BIRTHDAY PARTY OTHER ALL GOOD OCCASION CONTACT US FOR CATERING \n\n ', 0, 0, 0),
+(743, 'PUKHRAJ PRALADKUMAR', '9680975277', '', 'pukhraj77', '100c44ea1394e43b17a4a07356e8124e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'pukhraj77100c4', 0, 6, '', 0, 0, 0);
+INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `address`, `imageid`, `isadmin`, `datetime`, `catid`, `cityid`, `isactive`, `ispublished`, `ismerchant`, `firmname`, `firmcontact`, `promocode`, `referredbyuserid`, `max_limit`, `services`, `lat`, `long`, `sortorder`) VALUES
+(744, 'S.D. CATERING', '7339713954', 'sdcatering54@gmail.com', 'sdcatering54', '8889608158e45c1b1dc6571e8f9c30a0', 'NAYA BAS, BALSAMAND', '4385', 0, '0000-00-00 00:00:00', 66, 5, 0, 0, 1, 'S. D. CATERING', '7339713954', 'sdcatering54888', 0, 6, '* VIP WAITERS ( LADIES & GENTS )\n \n* CATERING SERVICE\n\n* BAR SET UP\n\n* LABOUR SUPPLIER\n\n* MARRIAGE ,ANNIVERSARY ,BIRTHDAY PARTY OTHER ALL GOOD OCCASION CONTACT US FOR CATERING \n\n ', 0, 0, 0),
 (745, 'MANWAR GUEST HOUSE & RESTAURANT ', '9461482017', '', 'manwar017', '4e61c432b33c41ce01abd965058d55eb', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'manwar0174e61c', 0, 6, '', 0, 0, 0),
 (746, 'ASHOKA HOTEL', '02912615209', 'ashokahoteljodhpur@gmail.com', 'ashoka261', 'e352d7662d5369bcc631af067bd0d657', 'NEAR RAIWAY STATION ', '4386', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, 'ASHOKA HOTEL ', '2912615209', 'ashoka261e352d', 0, 6, '* ASHOKA HOTEL \n\n* WELCOME TO HOTEL ASHOKA LOCATED NEAR RAILWAY STATION & OLD BLUE CITY.\n\n* AC ROOM ,NON AC ROOM & DORMITORY AVAILABLE.\n\n* AFFORDABLE BEST TARIFF PLAN\n\n* DOCTOR ON CALL\n\n* ROOM SERVICE \n\n* LAUNDRY FACILITIES \n\n* RENTAL TAXI \n\n* SAFARI \n\n* NEAT & CLEAN ROOM\n\n* HYGIENIC FOOD\n\n* TRAVEL ASSISTANCE\n\n* COOPERATIVE STAFF  \n\n* ALL KIND OF FACILITY AVAILABLE    ', 0, 0, 0),
-(747, 'KALINGA', '029126158471', 'info@kalingahotel.com\nbooking@kalingahotel.com\nWEBSITE : www.kalingahotel.com ', 'kalinga261', 'f58c7d9a03d264cd1a412a355d40b935', 'NEAR RAILWAY STATION', '4391', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'KALINGA\nHOTEL • RESTAURANT • BAR', '2912615872', 'kalinga261f58c7', 0, 6, '* KALINGA*\n\n* HOTEL • RESTAURANT • BAR\n\n* SERVICES :---\n\n* DOCTOR ON CALL\n\n* BUSINESS CENTER \n\n* WI - FI ZONE \n\n* CAR RENTAL \n\n* LAUNDRY SERVICE \n\n* WELL PROFESSIONAL & QUALIFIED STAFF \n\n* DESERT & VILLAGE SAFARI \n\n* TRAVEL DESK \n\n* ON LINE HOTEL BOOKING \n\n* CAR PARKING \n\n* LOCAL SITE SEEING \n\n* HYGIENIC FOOD \n\nCONTACT US ON :---\n\n* 02912615871\n* 02912615872\n\nFAX :  02912627314\n\n* VISIT US ON\nkalingahotel.com ', 0, 0, 0),
+(747, 'KALINGA', '029126158471', 'info@kalingahotel.com\nbooking@kalingahotel.com\nWEBSITE : www.kalingahotel.com ', 'kalinga261', 'f58c7d9a03d264cd1a412a355d40b935', 'NEAR RAILWAY STATION', '4391', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, 'KALINGA\nHOTEL • RESTAURANT • BAR', '2912615872', 'kalinga261f58c7', 0, 6, '* KALINGA*\n\n* HOTEL • RESTAURANT • BAR\n\n* SERVICES :---\n\n* DOCTOR ON CALL\n\n* BUSINESS CENTER \n\n* WI - FI ZONE \n\n* CAR RENTAL \n\n* LAUNDRY SERVICE \n\n* WELL PROFESSIONAL & QUALIFIED STAFF \n\n* DESERT & VILLAGE SAFARI \n\n* TRAVEL DESK \n\n* ON LINE HOTEL BOOKING \n\n* CAR PARKING \n\n* LOCAL SITE SEEING \n\n* HYGIENIC FOOD \n\nCONTACT US ON :---\n\n* 02912615871\n* 02912615872\n\nFAX :  02912627314\n\n* VISIT US ON\nkalingahotel.com ', 0, 0, 0),
 (748, 'HOTEL SHREEVKRISHNA PLACE ', '02912551555', '', 'shreekp555', 'dd634b8d71fdb839091ae296ee768fcd', '157,NAI SARAK,SBBJ BANK BUILDING ', '4397', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'HOTEL SHREE KRISHNA PLACE', '8559919412', 'shreekp555dd634', 0, 6, '* HOTEL SHREE KRISHNA PLACE \n\n* HEART OF THE CITY \n\n* HYGIENIC ROOMS \n\n* CAR RENTAL SERVICE \n\n* TRAVEL ASSISTANCE\n\n* GOOD ROOM SERVICE\n\n* PROFESSIONAL AND QUALIFIED STAFF  \n\n* NEAR RAILWAY STATION \n\n* LAUNDRY SERVICE \n\n* WELL FURNISHED ROOM\n\n* CAR PARKING FACILITY   ', 0, 0, 0),
 (749, 'HOTEL PARDESHI ', '02912511097', '', 'pardeshi110', '4b35607bf34b9c87c4da7f0784614b19', '158, Nai sarak ,Jodhpur-342001 (RAJ.)', '4404', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, ' HOTEL PARDESHI', '9166643666', 'pardeshi1104b35', 0, 6, '* CENTRALLY LOCATED 1/2 KM FROM BUS  & RAILWAY STATION \n\n* COMFORTABLE & HOME LIKE FACILITY \n\n* LUXURIOUS ROOM  \n\n* INTERCOM FACILITY IN EVERY ROOM\n\n* GROUP BOOKING & MARRIAGE BOOKING FACILITY \n\n* RUNNING HOT AND COLD WATER \n\n* PROFESSIONAL & TRAINED STAFF \n\n* ALL CHANNEL  AND MOVIES \n\nCONTACT US ON :--\n0291-2511097\n9166643666\n', 0, 0, 0),
 (750, 'HOTEL MARUDHAR', '02912627108', '', 'hotelmaru9126', 'bf502e5cb1beafe3e7dd84bbdfc479ef', '12 NAI SARAK ,NEAR NATIONAL HANDLOOM ,RAWATON KA BASS ', '4411', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'HOTEL MARUDHAR', '9602922173', 'hotelmaru9126bf', 0, 6, '* HOTEL MARUDHAR\n\n* CENTRALLY LOCATED ,NEAR RAILWAY & BUS STAND \n\n* GOOD ROOM SERVICE \n\n* ALL KIND IF AC NON AC DELUXE ROOM AVAILABLE\n\n* PROFESSIONAL AND TRAINED STAFF\n\n* LAUNDRY SERVICE \n\n* HYGIENIC ENVIRONMENT\n\n* BUDGET HOTEL \n\n* TRAVEL DESK\n\n* CAR RENTAL \n\n* SAFARI AND VILLAGE \n\n* SIGHT SEEING JODHPUR \n\n* HOT AND COLD WATER FACILITY \n\nCONTACT US ON :-\n02912627108    \n\n ', 0, 0, 0),
@@ -13940,22 +13438,61 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 (755, 'HOTEL CITY PALACE', '9119356299', 'hotelcitypalace41@gmail.com', 'citypalace93', '6e7194d95ce0893ddd13ed67e9bbe1a9', '32 NAI SARAK', '4434', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'HOTEL CITY PALACE ', '9119356299', 'citypalace936e7', 0, 6, '* HOTEL CITY PALACE \n\n* CENTRALLY LOCATED HOTEL ,NEAR BUS & RAILWAY STATION.\n\n* BEST ROOM SERVICE \n\n* PROFESSIONAL AND TRAINED HOTEL STAFF \n\n* HYGIENIC FOOD WITH GOOD QUALITY\n\n* TRAVEL ASSISTANCE\n\n* LAUNDRY AND DRY CLEAN SERVICE\n\n* SAFARI AND SIGHT SEEING \n\n* HOT AND COLD WATER \n\n* BOOK ONLINE \n\n* AC ,NON AC, DELUXE ROOM AVAILABLE\n\n* PARKING FACILITY \n\nCONTACT US ON \n\n0291-2627130\n+91-9119356299\n\n* VISIT US ON :-\nwww.citypalacejodhpur.com\n\nwww.hotelcitypalace.in\n\n* WRITE US ON \n\nhotelcitypalace41@gmail.com', 0, 0, 0),
 (756, 'MANWAR GUEST HOUSE AND RESTAURANT', '7976294204', 'manwarguesthouse@gmail.com', 'manwar94', '82d9d05c1ede6f5200033512d4dfeb7a', 'PLOT NO 9 , JOHARI NAGAR ,BALSAMAND LACK PALACE ROAD', '4441', 0, '0000-00-00 00:00:00', 29, 5, 0, 0, 1, 'MANWAR GUEST HOUSE & RESTAURANT ', '9461782017', 'manwar9482d9d', 0, 6, '* MANWAR GUEST HOUSE AND RESTAURANT \n\n* VEG AND NON VEG FOOD \n\n* AC ROOF TOP RESTAURANT \n\n* PRIVATE PARTY BOOKING \n\n* AC NON AC ROOM AVAILABLE \n\n* FOOD PACKING FACILITY\n\n* HYGIENIC FOOD \n\n* PROFESSIONAL AND TALENTED COOK \n\n* SPACE AVAILABLE  FOR PARTIES  ', 0, 0, 0),
 (757, 'HOTEL VINAYAK PALACE &  VINAYAK RESTAURANT ', '02915101152', 'sunilpanwar4155@gmail.com', 'vinayak 1152', '127ea2755f8e4abeef9a08c5b9791a0f', '155 NAI SARAK,CLOCK TOWER ROAD ', '4448', 0, '0000-00-00 00:00:00', 29, 5, 1, 0, 1, 'HOTEL VINAYAK PALACE & VINAYAK RESTAURANT ', '9829471783', 'vinayak 1152a30', 0, 6, '* HOTEL VINAYAK PALACE AND VINAYAK RESTAURANT \n\n* TASTY ,HYGIENIC,GOOD QUALITY OF FOOD \n\n* GOOD SERVICE AND BEST HOSPITALITY \n\n* PROFESSIONAL AND TALENTED COOK\n\n* TRADITION FOOD SERVE IN TRADITION STYLE \n\n* VINAYAK RESTAURANT FIRST CHOICE OF FOREIGNERS IN JODHPUR \n\n* WE KNOWN FOR GOOD SERVICE,GOOD QUALITY ,GOOD HOSPITALITY .\n\n* PACKING FACILITY AVAILABLE \n\n* AC RESTAURANT \n\n* PADHARO SA ....', 0, 0, 0),
-(758, 'HOTEL MONA', '9269991061', 'amjed4@gmail.com', 'mona999', 'e95c39574d270ab47a9c43c1e856e353', '136 NAI SARAK ', '4460', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'HOTEL MONA', '9828036217', 'mona999e95c3', 0, 6, '* HOTEL MONA \n\n* CENTRALLY LOCATED NEAR TO RAILWAY STATION & BUS STAND \n\n* AC AND NON AC ROOMS\n\n*  PARKING FACILITY \n\n* TRAVEL ASSISTANCE\n\n* LAUNDRY SERVICE \n\n* HOT AND COLD WATER FACILITY \n\n* GOOD ROOM SERVICE \n\n* PROFESSIONAL AND COOPERATIVE HOTEL STAFF \n\n* WAITING LOUNGE  \n\n* HYGIENIC AND QUALITY FOOD \n\n* SAFARI AND SIGHT SEEING SERVICE   \n\n* CONTACT US ON \n\n+91-9269991061\n+91-7790973056\n+91-9828036217  \n\n* LETS VISIT US FOR GOOD STAY AND GOOD HOSPITALITY \n', 0, 0, 0),
+(758, 'HOTEL MONA', '9269991061', 'amjed4@gmail.com', 'mona999', 'e95c39574d270ab47a9c43c1e856e353', '136 NAI SARAK ', '4460', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, 'HOTEL MONA', '9828036217', 'mona999e95c3', 0, 6, '* HOTEL MONA \n\n* CENTRALLY LOCATED NEAR TO RAILWAY STATION & BUS STAND \n\n* AC AND NON AC ROOMS\n\n*  PARKING FACILITY \n\n* TRAVEL ASSISTANCE\n\n* LAUNDRY SERVICE \n\n* HOT AND COLD WATER FACILITY \n\n* GOOD ROOM SERVICE \n\n* PROFESSIONAL AND COOPERATIVE HOTEL STAFF \n\n* WAITING LOUNGE  \n\n* HYGIENIC AND QUALITY FOOD \n\n* SAFARI AND SIGHT SEEING SERVICE   \n\n* CONTACT US ON \n\n+91-9269991061\n+91-7790973056\n+91-9828036217  \n\n* LETS VISIT US FOR GOOD STAY AND GOOD HOSPITALITY \n', 0, 0, 0),
 (759, 'GARIB BAKERY', '02912653021', 'garibbakery1948@gmail.com', 'garib3021', '71e6b98b4fac589767d0c3f406a95782', '2nd B ROAD SARDARPURA', '4466', 0, '0000-00-00 00:00:00', 55, 5, 0, 0, 1, 'GARIB BAKERY\nSINCE 1948', '9414722472', 'garib302171e6b', 0, 6, ' * GARIB BACKERY\n\n* SINCE 1948 IN YOUR SERVICE\n\n* WE ARE SPECIALIST IN ALL KIND OF BAKERY ITEMS \n\n* ALL KIND OF BIRTHDAY DAY DECORATION ITEMS AVAILABLE.\n\n* AVAILABLE ALL KIND OF BAKERY PRODUCT AS WELL CONFECTIONARY ITEMS \n\n* AVAILABLE :---\n\n* PIZZA\n\n* COOKIES \n\n* BISCUITS\n\n* CHOCOLATE \n\n* VEG. BURGER\n\n* SANDWICH     \n\n* CAKE AVAILABLE IN ALL FLAVORS AS WELL SPECIAL CAKE LIKE ANNIVERSARY CAKE ,WEDDING CAKE \n\n* DIFFERENT KIND OG PASTRIES \n\n    ', 0, 0, 0),
 (760, 'CITY VIEW', '9875033665', 'cityview65', 'cityview65', 'b05de45c6b59defecb4e85bb7ae3d55a', 'JALORI GATE,GOLE BUILDING,ROAD', '4473', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, 'CITY VIEW', '9875033665', 'cityview65b05de', 0, 6, '* NORMAL ROOM\n\n* SUPER DELUXE \n\n* A.C ROOM\n\n* SUPER A.C\n\n ', 0, 0, 0),
 (761, 'Mohammed Anas', '9314086672', '', 'anas177', '1e35f591fd9166adffe4ec9de8faa78d', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'anas177e3456', 0, 6, '', 0, 0, 0),
 (762, 'ANIL MIRCHANDANI', '9352288883', '', 'DEEPU883\ndeepu883\ndeepu883', 'c8ef5cd25fbaa07de9d43796ccab6ed2', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'DEEPU883\ndeepu8', 0, 6, '', 0, 0, 0),
 (763, 'SNEHA BOUTIQUE', '7976235548', '', 'sneha548', 'fc38347f8ecce400a3b234dcc4a34397', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'sneha548fc383', 0, 6, '', 0, 0, 0),
-(764, 'LAL''S BANDHANI EMPORIUM', '9414195664', 'bandhani88@gmail.com', 'lal methwani', '0a96e3a52087bacdff07feb7d5157262', 'ground floor,hotal jodhpur dourmetry .corner plot 1st nai sarak 342001', '4479', 0, '0000-00-00 00:00:00', 51, 5, 0, 0, 1, 'lal BANDHANI EMPORIUM\nLal BANDHANI EMPORIUM', '9414195664', 'lal methwani59b', 0, 6, 'WORLD FAMOUS JODHPURI TIE & DIE SAREES', 26.285750068554723, 73.02263382822275, 0),
-(765, 'LAL'' S BANDHANI EMPORIUM\nBANDHANI EMPORIUM', '9636648888', '', 'lal8888', '8d4e9387ba9ae68028d59df3c6befb14', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'lal88888d4e9', 0, 6, '', 0, 0, 0),
-(766, 'LAL''S BANDHANI EMPORIAM', '9636648889', '', 'lalbandhni889', 'fc285d401f96b981ea011c253e7998a5', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'lalbandhni889fc', 0, 6, '', 0, 0, 0),
-(767, 'LAL''S BANDHANI EMPORIUM', '963664336', 'lalmathwani@.gmail.com', 'lals963', '5aef55d15dc807348e379ced9137e9db', 'WORLD  FAMOUS JODHPU\nGROUND FLOOR, HOTELDOURMETRY, CORNER PLOT 1st, NAI SARAK,JODHPUR 342001', '4482', 0, '0000-00-00 00:00:00', 51, 5, 0, 0, 1, 'LAI MATHWANI', '9636648886', 'lals9635aef5', 0, 6, 'WORLD FAMOUS JODHPURI TIE & DIE SAREES SALWARSUITS, WORK SAREES, LEHANGA CHUNNI & DUPATTA', 26.285750068554723, 73.02263382822275, 0),
-(768, 'LAL''S BANDHANI EMPORIUM', '9636648885', 'lalmathwani@ gmail.com', 'lalmathwani', '3035fd78215058068bed3b727f926bfc', 'GROUND FLOOR, HOTEL JODHPUR DOURMETRY, CORNER PLOT 1ST, NAI SARAK, JODHPUR 342001', '4483', 0, '0000-00-00 00:00:00', 51, 5, 0, 0, 1, 'LAL MATHWANI', '9636648885', 'lalmathwani167b', 0, 6, 'WORLD FAMOUS JODHPURI TIE & DIE SAREES SALWARSUITS, WORK SAREES, LEHANGA CHUNNI & DUPATTA', 26.285750068554723, 73.02263382822275, 0),
-(769, 'HOTEL ARVIND AND GOLDEN BAR', '8949017684', '', 'arvind176', '2792f4a452d392a4011cb22f6f9ca45b', '134-35 NAI SARAK ', '4485', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'HOTEL ARVIND AND GOLDEN BAR', '8949017684', 'arvind1762792f', 0, 6, '* HOTEL ARVIND AND GOLDEN BAR\n\n* AC, NON AC, DELUXE ROOM\n\n* BAR FACILITY \n\n* PARKING FACILITY AVAILABLE \n\n* WE KNOWN FOR OUR QUALITY SERVICE AND HOSPITALITY \n\n* CLEAN AND HYGIENIC  ROOM\n\n* PROFESSIONAL AND WELL TRAINED HOTEL STAFF \n\n* TRAVEL ASSISTANCE\n\n* ONLINE BOOKING FACILITY  \n\n\n', 0, 0, 0),
-(770, 'HOTEL REAL RESIDENCY', '9828292301', 'hotelrealresidency@gmail.com', 'real2398', 'd5ecb30e94b9dce6dc50d53b0b381234', 'OPP HEAD POST OFFICE ,RAILWAY STATION ROAD 02912625900', '4490', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'HOTEL REAL RESIDENCY ', '9828292301', 'real2398d5ecb', 0, 6, '*  HOTEL REAL RESIDENCY \n\n* CENTRALLY LOCATED NEAR RAILWAY STATION \n\n* WELL TRAINED HOTEL STAFF\n\n* WE KNOWN FOR OUR HOSPITALITY AND BEST SERVICES \n\n* TRAVEL ASSISTANCE\n\n* AC, NON AC, DELUXE ROOM \n\n* CLEAN AND HYGIENIC ROOM \n\n* HYGIENIC AND QUALITY OF FOOD \n\n* PARKING FACILITY  \n', 0, 0, 0),
+(764, 'LAL\'S BANDHANI EMPORIUM', '9414195664', 'bandhani88@gmail.com', 'lal methwani', '0a96e3a52087bacdff07feb7d5157262', 'ground floor,hotal jodhpur dourmetry .corner plot 1st nai sarak 342001', '4479', 0, '0000-00-00 00:00:00', 51, 5, 0, 0, 1, 'lal BANDHANI EMPORIUM\nLal BANDHANI EMPORIUM', '9414195664', 'lal methwani59b', 0, 6, 'WORLD FAMOUS JODHPURI TIE & DIE SAREES', 26.285750068554723, 73.02263382822275, 0),
+(765, 'LAL\' S BANDHANI EMPORIUM\nBANDHANI EMPORIUM', '9636648888', '', 'lal8888', '8d4e9387ba9ae68028d59df3c6befb14', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'lal88888d4e9', 0, 6, '', 0, 0, 0),
+(766, 'LAL\'S BANDHANI EMPORIAM', '9636648889', '', 'lalbandhni889', 'fc285d401f96b981ea011c253e7998a5', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'lalbandhni889fc', 0, 6, '', 0, 0, 0),
+(767, 'LAL\'S BANDHANI EMPORIUM', '963664336', 'lalmathwani@.gmail.com', 'lals963', '5aef55d15dc807348e379ced9137e9db', 'WORLD  FAMOUS JODHPU\nGROUND FLOOR, HOTELDOURMETRY, CORNER PLOT 1st, NAI SARAK,JODHPUR 342001', '4482', 0, '0000-00-00 00:00:00', 51, 5, 0, 0, 1, 'LAI MATHWANI', '9636648886', 'lals9635aef5', 0, 6, 'WORLD FAMOUS JODHPURI TIE & DIE SAREES SALWARSUITS, WORK SAREES, LEHANGA CHUNNI & DUPATTA', 26.285750068554723, 73.02263382822275, 0),
+(768, 'LAL\'S BANDHANI EMPORIUM', '9636648885', 'lalmathwani@ gmail.com', 'lalmathwani', '3035fd78215058068bed3b727f926bfc', 'GROUND FLOOR, HOTEL JODHPUR DOURMETRY, CORNER PLOT 1ST, NAI SARAK, JODHPUR 342001', '4483', 0, '0000-00-00 00:00:00', 51, 5, 0, 0, 1, 'LAL MATHWANI', '9636648885', 'lalmathwani167b', 0, 6, 'WORLD FAMOUS JODHPURI TIE & DIE SAREES SALWARSUITS, WORK SAREES, LEHANGA CHUNNI & DUPATTA', 26.285750068554723, 73.02263382822275, 0),
+(769, 'HOTEL ARVIND AND GOLDEN BAR', '8949017684', '', 'arvind176', '2792f4a452d392a4011cb22f6f9ca45b', '134-35 NAI SARAK ', '4485', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, 'HOTEL ARVIND AND GOLDEN BAR', '8949017684', 'arvind1762792f', 0, 6, '* HOTEL ARVIND AND GOLDEN BAR\n\n* AC, NON AC, DELUXE ROOM\n\n* BAR FACILITY \n\n* PARKING FACILITY AVAILABLE \n\n* WE KNOWN FOR OUR QUALITY SERVICE AND HOSPITALITY \n\n* CLEAN AND HYGIENIC  ROOM\n\n* PROFESSIONAL AND WELL TRAINED HOTEL STAFF \n\n* TRAVEL ASSISTANCE\n\n* ONLINE BOOKING FACILITY  \n\n\n', 0, 0, 0),
+(770, 'HOTEL REAL RESIDENCY', '9828292301', 'hotelrealresidency@gmail.com', 'real2398', 'd5ecb30e94b9dce6dc50d53b0b381234', 'OPP HEAD POST OFFICE ,RAILWAY STATION ROAD 02912625900', '4490', 0, '0000-00-00 00:00:00', 65, 5, 0, 0, 1, 'HOTEL REAL RESIDENCY ', '9828292301', 'real2398d5ecb', 0, 6, '*  HOTEL REAL RESIDENCY \n\n* CENTRALLY LOCATED NEAR RAILWAY STATION \n\n* WELL TRAINED HOTEL STAFF\n\n* WE KNOWN FOR OUR HOSPITALITY AND BEST SERVICES \n\n* TRAVEL ASSISTANCE\n\n* AC, NON AC, DELUXE ROOM \n\n* CLEAN AND HYGIENIC ROOM \n\n* HYGIENIC AND QUALITY OF FOOD \n\n* PARKING FACILITY  \n', 0, 0, 0),
 (771, 'PATWA HAWELI ', '7727863199', 'patwahaweli@gmail.com\nwww.patwahaweli.com', 'patwa7727', '46d1bd04cf0f884db6bb2fea436ff046', 'SARAFO KI POLE ,SARAFA BAZAR ', '4498', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'PATWA HAWELI', '8890424666', 'patwa772746d1b', 0, 6, '* PATWA HAVELI\n\n* BEAUTIFUL VIEW OF MEHARANGARH FORT \n\n* TRADITIONAL HOTEL \n\n* STAY HERE AND ENJOY HOSPITALITY OF RAJASTHANI WAY\n\n*  WELL TRAINED AND PROFESSIONAL HOTEL STAFF \n\n* PARKING FACILITY \n\n* TRAVEL ASSISTANCE\n\n* CAR RENTAL\n\n* SAFARI AND VILLAGE SIGHT SEEING \n\n* HYGIENIC AND CLEAN ROOMS\n\n* AC, NON AC , DELUXE ROOM \n\n \n\n', 0, 0, 0),
 (772, 'MODERN BEAUTI PARlOUR\n\nMODERN BEAUTI PARLOUR', '7296883056', 'modernbeauty57@gmail.com', 'modern 057', '3a6f2f8bf44ecaf9d1af404284c681e0', '14/c, VIDHYA PARK , AIRFORCE', '4505', 0, '0000-00-00 00:00:00', 68, 5, 0, 0, 1, 'MODERN   BEAUTY  PARLOUR', '7296883057', 'modern 05750421', 0, 6, '★ HIGHLY TRAIND BEAUTICIAN\n★ ALL TYPE OF CUTTINGS\n★ FACIALS BRIDAL, \n★ PARTY MAKEUP\n★ MEHANDI \n\n', 26.2857524, 73.0225851, 0),
-(773, 'SHIVA', '9828931874', '', 'shiva874', '68d445aa583ab39ab3e92f765fc5c883', 'RAILWAY STATION,ROAD', '4507', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'SHIVA', '9828931874', 'shiva87468d44', 0, 6, '* HOTEL SHIVA\n\n* BEST BUDGET HOTEL WITH GOOD FACILITIES.\n\n* CENTRALLY LOCATED NEAR TO RAILWAY STATION \n\n* QUALITY OF SERVICE AND WE TRAINED HOTEL STAFF \n\n* CLEAN AND HYGIENIC ROOM\n\n* HOT AND COLD WATER FACILITY\n\n* PARKING FACILITY\n\n* CONTACT US FOR CONFERENCE AND EVENTS \n\n* QUALITY AND HYGIENIC FOOD \n\n       \n', 0, 0, 0);
+(773, 'SHIVA', '9828931874', '', 'shiva874', '68d445aa583ab39ab3e92f765fc5c883', 'RAILWAY STATION,ROAD', '4507', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'SHIVA', '9828931874', 'shiva87468d44', 0, 6, '* HOTEL SHIVA\n\n* BEST BUDGET HOTEL WITH GOOD FACILITIES.\n\n* CENTRALLY LOCATED NEAR TO RAILWAY STATION \n\n* QUALITY OF SERVICE AND WE TRAINED HOTEL STAFF \n\n* CLEAN AND HYGIENIC ROOM\n\n* HOT AND COLD WATER FACILITY\n\n* PARKING FACILITY\n\n* CONTACT US FOR CONFERENCE AND EVENTS \n\n* QUALITY AND HYGIENIC FOOD \n\n       \n', 0, 0, 0),
+(774, 'RAJ E MITRA ', '9929041114', 'raj41114@gmail.com', 'remitra111', '1ed9cd08c997ee3e97cf2f8290cb7af7', 'MAKARANA MOHALLA POST OFFICE WALI GALI JODHPUR ', '4514', 0, '0000-00-00 00:00:00', 152, 5, 1, 0, 1, 'RAJ E MITRA ', '9929041114', 'remitra1111ed9c', 0, 6, '* RAJ E MITRA \n\n* ALL KIND OF E MITRA FACILITIES AVAILABLE HERE\n\n* ONLINE FORM\n\n* JOB WORK\n\n* COLOUR AND B/W PRINT \n\n* KUNDALI \n\n* ALL KIND OF RECHARGE AND SIM AVAILABLE \n\n* PHOTO STATE \n\n* URGENT PASSPORT PHOTO PRINT \n\n* ANY MANY MORE ONLINE SERVICES AVAILABLE. ', 0, 0, 0),
+(775, 'CITY VIEW', '7742139240', '', 'Cityview40', '86785e521294ba40fb369df422820357', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Cityview40a644d', 0, 6, '', 0, 0, 0),
+(776, 'City view ', '7742139244', '', 'Cityview44', '50ffeaf0a15de7b908ef92faa7e18d0e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Cityview445580b', 0, 6, '', 0, 0, 0),
+(777, 'CITY VIEW ', '9875033770', '', 'Cityview770', 'c864c43138cd54f29efba89193da368d', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Cityview770c506', 0, 6, '', 0, 0, 0),
+(778, 'CITY VIEW ', '9875033780', '', 'Cityview780', '78a853147fcd3d879f47e0f3fb574c0a', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Cityview780e3c1', 0, 6, '', 0, 0, 0),
+(779, 'CITY VIEW ', '9875033766', '', 'Cityview766', 'acaaabe4fe8e1fe2198185e9bffa378b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Cityview76642dc', 0, 6, '', 0, 0, 0),
+(780, 'SHRI BABA', '8890039999', '', 'Shribaba999', '418c987459004b03e25247620ab82516', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Shribaba999cef2', 0, 6, '', 0, 0, 0),
+(781, 'JEE RE HAVELI ', '9351733007', 'info@jeerehaveli.com', 'jeere0007', 'eb220a7e8308680ee7a35c9c8dedeb1c', 'NEAR RAJ MAHAL SENIOR SECONDAR SCHOOL, GULAB SAGAR ', '4525', 0, '0000-00-00 00:00:00', 65, 5, 1, 0, 1, 'JEE RE HAVELI', '9351733007', 'jeere0007eb220', 0, 6, '* HOTEL JEE RE HAVELI \n\n* TRADITIONAL HOTEL \n\n* KNOWN FOR OUR HOSPITALITY AND SERVICES \n\n* AC, NON AC, DELUXE ROOM\n\n* QUALIFIED HOTEL STAFF AND COOK\n\n* HYGIENIC ROOMS \n\n* PARKING FACILITY \n\n* SIGHT SEEING AND SAFARI  FACILITY AVAILABLE\n\n* TRAVEL ASSISTANCE  \n\n* VISIT US ON :-\njeerehaveli.com \n\nCONTACT US ON :-\n\n0291-2540007\n9351722007\n9351733007', 0, 0, 0),
+(782, 'NAKODA RESTOURENT ', '9649861910', '', 'Nakoda910', '355ec7fd55c85cc5846345aab666aa7e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Nakoda9102d900', 0, 6, '', 0, 0, 0),
+(783, 'NAKODA RESTOURENT ', '9413319749', '', 'Nakoda749', 'b7519db3a3a88e3534c7dda39b9f5480', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Nakoda74934f4e', 0, 6, '', 0, 0, 0),
+(784, 'VIP INDUSTRIES LTD. ', '02912655042', '', 'Vipindltd5042', '56a1f5b0a88820c98cda698bd1983766', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'Vipindltd5042eb', 0, 6, '', 0, 0, 0),
+(790, 'COSMOPOLITAN HOTEL', '0291265511114', '', 'cosmo114', '0c2e7131163b4f59b906fed4ced82013', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'cosmo1140c2e7', 0, 6, '', 0, 0, 0),
+(791, 's\nSHREE JAIN BOOK DIPO', '9773144441', '', 'shreejain41@gmail.com\n', '1413f652093157b3df179957adb187a7', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'shreejain41@gma', 0, 6, '', 0, 0, 0),
+(792, 'RATHORE EMPLYFIRE', '8875705840', '', 'rathoreishwer840@gmail.com', '1d7e588a42c62b97b241e9028ddbac0b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'rathoreishwer84', 0, 6, '', 0, 0, 0),
+(793, 'sushi fish', '9694959301', '', 'sushi123', '211c42bb02f7a9e63d30e9a12222577c', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'sushi123211c4', 0, 6, '', 0, 0, 0),
+(794, 'testing', '9952299856', '', 'test1234', '16d7a4fca7442dda3ad93c9a726597e4', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'test123416d7a', 0, 6, '', 0, 0, 0),
+(795, 'testing gopal', '9800725007', '', 'testgopal', '88f8ec571e3fba57977decfcb75d4857', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'testgopal82ce1', 0, 6, '', 0, 0, 0),
+(796, 'testgg', '9985621555', '', 'testingnow', '7a7dec98a0f364ae312057a6ae512be4', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'testingnow48e14', 0, 6, '', 0, 0, 0),
+(797, 'test name', '9852544136', '', 'testjjak1', 'cecfea3276078fe596feb025bdb02da1', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'testjjak1e1445', 0, 6, '', 0, 0, 0),
+(798, '\ntest g', '9865524689', '', 'ggkahricj', '1e33019f2af078bf2b81495cb6b54565', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ggkahricjf27b5', 0, 6, '', 0, 0, 0),
+(799, 'test k', '9855264997', '', 'hfjanfjf23', '7aafcacbe93ee572aa2cfdd4791a46b8', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'hfjanfjf237b959', 0, 6, '', 0, 0, 0),
+(800, 'test it', '9855267459', '', 'fjjvjnssf11', 'c6ac814e06acfd4121caae4222c0af4b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'fjjvjnssf1107c0', 0, 6, '', 0, 0, 0),
+(801, 'testing it', '9800569885', '', 'gryyfrhbggj', '91a05f356934562f6425e9977a697fd3', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'gryyfrhbggjfc9e', 0, 6, '', 0, 0, 0),
+(802, 'testing g', '9855215886', '', 'fjshfjddhc', '57769c0be5edd30612bb302d0ebaa89e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'fjshfjddhc92e13', 0, 6, '', 0, 0, 0),
+(803, 'Sushil', '7043889469', '', 'sushil.lintel', '4ff5a5e65085b2ebdca2984007eedfa3', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'sushil.lintelb6', 0, 6, '', 0, 0, 0),
+(804, 'sushil test', '9672474125', '', 'sushil.tak', '6113e47408275abfbd5a75f0981ed1bd', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'sushil.tak83de1', 0, 6, '', 0, 0, 0),
+(805, 'test', '8599615336', '', 'fyhvffg', 'e9189485aa3ceb134e716fed0a657b46', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'fyhvffg5e6b0', 0, 6, '', 0, 0, 0),
+(806, 'test', '9985224475', '', 'gjbgggg', '46720931d27ba3d35bbbe69dc6493a7d', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'gjbggggba33a', 0, 6, '', 0, 0, 0),
+(807, 'test', '9558441526', '', 'gegfhgf', '9dd1304af11fee2ccbcca4b306ca12a0', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'gegfhgf57bd3', 0, 6, '', 0, 0, 0),
+(808, 'test', '9685636442', 'fjsjjcsnjc@jfjdjd.cis', 'teston6.0', 'f696282aa4cd4f614aa995190cf442fe', 'fjajjcsjc jfnajc', '4531', 0, '0000-00-00 00:00:00', 16, 1, 0, 0, 1, 'test', '9541288542', 'teston6.049b03', 0, 6, 'device ', 23.0205053, 72.5543538, 0),
+(809, 'test', '9865445599', 'fjwjfjdj@gjskv.cjd', 'teston7.0', 'a743d7ced25f2c1ada3065b9f8eb135c', 'fjjajfjr jdjfjsjjd ', '4534', 0, '0000-00-00 00:00:00', 50, 1, 0, 0, 1, 'test', '8856974335', 'teston7.0f18dc', 0, 6, 'godaddy', 23.0204957, 72.5543593, 0),
+(810, 'test', '6855250852', '', 'gjytyhg', 'd0cfb0972405ca77136122da20093445', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'gjytyhg4caf1', 0, 6, '', 0, 0, 0),
+(811, 'test', '8852399852', '', 'gfhhfff55', '451fecabe26db4bc62572e8a4a687178', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'gfhhfff55194e0', 0, 6, '', 0, 0, 0),
+(812, 'test', '9985244855', '', 'ggcgbgh', '022ecf71c8d0ce8dd2b34bf08ecf64e3', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'ggcgbgh29a05', 0, 6, '', 0, 0, 0),
+(813, 'test', '8566432985', 'ffsjfgdsf@fjsfc.fsf', 'teston5.0', 'd1e98bcd0a7db9eca6b231e422a03108', 'fkakfo dsij', '4537', 0, '0000-00-00 00:00:00', 16, 1, 0, 0, 1, 'fjsjccf', '8886495162', 'teston5.0373e4', 0, 6, 'fjajcjf', 23.0205053, 72.5543538, 0),
+(814, 'naresh ', '9931788844', '', 'nareshkr', 'e10adc3949ba59abbe56e057f20f883e', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'nareshkrecb08', 0, 6, '', 0, 0, 0),
+(815, 'Dinesh sharma', '8094815980', '', 'dnsharma', '25d55ad283aa400af464c76d713c07ad', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'dnsharmabc096', 0, 6, '', 0, 0, 0),
+(816, 'raj rathore', '9521438144', '', 'kamsola', '0a4ac6123f3e0f0416ce02f474bd70ba', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'kamsola763b9', 0, 6, '', 0, 0, 0),
+(817, 'Baburao Gorige', '9704849772', '', 'syamalavishnu', '377fcf5ec5117fd15fb14d221647f48b', '', '', 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 1, '', '', 'syamalavishnuca', 0, 6, '', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -13963,13 +13500,12 @@ INSERT INTO `user` (`id`, `name`, `contact`, `email`, `username`, `password`, `a
 -- Table structure for table `userrating`
 --
 
-CREATE TABLE IF NOT EXISTS `userrating` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `userrating` (
+  `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
   `rating` int(11) NOT NULL,
-  `ratergcmid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+  `ratergcmid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `userrating`
@@ -13986,13 +13522,12 @@ INSERT INTO `userrating` (`id`, `userid`, `rating`, `ratergcmid`) VALUES
 -- Table structure for table `user_image`
 --
 
-CREATE TABLE IF NOT EXISTS `user_image` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user_image` (
+  `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
   `imageid` int(11) NOT NULL,
-  `sort_order` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9287 ;
+  `sort_order` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_image`
@@ -15317,7 +14852,6 @@ INSERT INTO `user_image` (`id`, `userid`, `imageid`, `sort_order`) VALUES
 (7024, 636, 3711, 1),
 (7025, 636, 3712, 2),
 (7026, 636, 3713, 3),
-(7054, 638, 3726, 1),
 (8555, 639, 3890, 6),
 (8554, 639, 3888, 5),
 (8553, 639, 3733, 4),
@@ -15523,12 +15057,12 @@ INSERT INTO `user_image` (`id`, `userid`, `imageid`, `sort_order`) VALUES
 (8714, 686, 4169, 4),
 (8715, 686, 4170, 5),
 (8716, 686, 4168, 6),
-(8763, 687, 4173, 6),
-(8762, 687, 4178, 5),
-(8761, 687, 4177, 4),
-(8760, 687, 4175, 3),
-(8759, 687, 4172, 2),
-(8758, 687, 4176, 1),
+(9340, 687, 4173, 6),
+(9339, 687, 4178, 5),
+(9338, 687, 4172, 4),
+(9337, 687, 4176, 3),
+(9336, 687, 4177, 2),
+(9335, 687, 4175, 1),
 (8916, 693, 4212, 3),
 (8874, 689, 4187, 5),
 (8873, 689, 4190, 4),
@@ -15732,7 +15266,21 @@ INSERT INTO `user_image` (`id`, `userid`, `imageid`, `sort_order`) VALUES
 (9262, 771, 4504, 5),
 (9263, 771, 4502, 6),
 (9277, 772, 4506, 1),
-(9280, 773, 4508, 1);
+(9319, 773, 4508, 1),
+(9296, 774, 4516, 5),
+(9295, 774, 4515, 4),
+(9294, 774, 4519, 3),
+(9293, 774, 4517, 2),
+(9292, 774, 4518, 1),
+(9329, 808, 4532, 1),
+(9318, 781, 4526, 3),
+(9317, 781, 4528, 2),
+(9316, 781, 4527, 1),
+(9330, 808, 4533, 2),
+(9331, 809, 4535, 1),
+(9332, 809, 4536, 2),
+(9333, 813, 4538, 1),
+(9334, 813, 4539, 2);
 
 -- --------------------------------------------------------
 
@@ -15740,14 +15288,12 @@ INSERT INTO `user_image` (`id`, `userid`, `imageid`, `sort_order`) VALUES
 -- Table structure for table `user_registered_number`
 --
 
-CREATE TABLE IF NOT EXISTS `user_registered_number` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user_registered_number` (
+  `id` int(11) NOT NULL,
   `name` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `deviceid` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `number` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=147 ;
+  `number` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_registered_number`
@@ -15817,7 +15363,7 @@ INSERT INTO `user_registered_number` (`id`, `name`, `deviceid`, `number`) VALUES
 (62, 'Rajesh BHADU', '867274028028515', '9828835555'),
 (63, 'Kishor', '911455600006567', '7014328179'),
 (64, 'Ajay gupta', '353508079914409', '9414211666'),
-(65, '2व"@', '356271071424037', '6440018NN'),
+(65, '2व\"@', '356271071424037', '6440018NN'),
 (66, 'vikrant', '911401500819428', '9314816515'),
 (67, 'mohit sharma', '861061031295538', '7619763335'),
 (68, 'D D Doda', '868347025178472', '9784523238'),
@@ -15898,7 +15444,20 @@ INSERT INTO `user_registered_number` (`id`, `name`, `deviceid`, `number`) VALUES
 (143, 'Dr Bheronsingh shekhawat', '', '9510729457'),
 (144, 'jalam singh', '354919087781475', '8890088821'),
 (145, 'Sushil Solanki', '911495350263505', '7043889469'),
-(146, 'sumesh joshi', '', '9024428718');
+(146, 'sumesh joshi', '', '9024428718'),
+(147, 'Ashish', '861645038824082', '9782035055'),
+(148, 'vijay chawla', '911478806127334', '9982038847'),
+(149, 'Mohammed Ali', '', '9929041114'),
+(150, 'mool Singh Rather\n', '', '9079725380'),
+(151, 'Netram', '867626021361195', '9460390538'),
+(152, 'mool singh rathore', '', '9079725380'),
+(153, 'jalam singh', '354919087781475', '8890088821'),
+(154, 'Kumar Gaurav singh', '351993070496931', '9461315801'),
+(155, 'Swati ', '', '9782693725'),
+(156, 'jatin kukkar', '911510650029933', '8963048633'),
+(157, 'bharat', '358312061394828', '9799028882'),
+(158, 'sharvan', '911467750249095', '7232000244'),
+(159, 'Vijay Chawla ', '2631f9e831f8ee26', '9982038847');
 
 -- --------------------------------------------------------
 
@@ -15906,12 +15465,11 @@ INSERT INTO `user_registered_number` (`id`, `name`, `deviceid`, `number`) VALUES
 -- Table structure for table `version`
 --
 
-CREATE TABLE IF NOT EXISTS `version` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `version` (
+  `id` int(11) NOT NULL,
   `name` text COLLATE utf8_unicode_ci NOT NULL,
-  `version` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+  `version` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `version`
@@ -15921,6 +15479,495 @@ INSERT INTO `version` (`id`, `name`, `version`) VALUES
 (1, 'category', 325),
 (2, 'city', 8);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `asset`
+--
+ALTER TABLE `asset`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `business_extra`
+--
+ALTER TABLE `business_extra`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `business_extra_images`
+--
+ALTER TABLE `business_extra_images`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `business_extra_master`
+--
+ALTER TABLE `business_extra_master`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `call_number`
+--
+ALTER TABLE `call_number`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `catcontrolmapping`
+--
+ALTER TABLE `catcontrolmapping`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catcontroluservalue`
+--
+ALTER TABLE `catcontroluservalue`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `city`
+--
+ALTER TABLE `city`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`),
+  ADD UNIQUE KEY `pincode` (`pincode`);
+
+--
+-- Indexes for table `commition_travel`
+--
+ALTER TABLE `commition_travel`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `controls`
+--
+ALTER TABLE `controls`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `controlsmetadata`
+--
+ALTER TABLE `controlsmetadata`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `epaper`
+--
+ALTER TABLE `epaper`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `epaper_user`
+--
+ALTER TABLE `epaper_user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `gallery`
+--
+ALTER TABLE `gallery`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gcmuser`
+--
+ALTER TABLE `gcmuser`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gcmusercitymapping`
+--
+ALTER TABLE `gcmusercitymapping`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hrrequirement`
+--
+ALTER TABLE `hrrequirement`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `job_category`
+--
+ALTER TABLE `job_category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `job_cate_empl_mapping`
+--
+ALTER TABLE `job_cate_empl_mapping`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `job_employee`
+--
+ALTER TABLE `job_employee`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `job_employer`
+--
+ALTER TABLE `job_employer`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `master_asset`
+--
+ALTER TABLE `master_asset`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `master_control`
+--
+ALTER TABLE `master_control`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `master_keys`
+--
+ALTER TABLE `master_keys`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `master_txntype`
+--
+ALTER TABLE `master_txntype`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `offer`
+--
+ALTER TABLE `offer`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `offerimage`
+--
+ALTER TABLE `offerimage`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `passenger_detail`
+--
+ALTER TABLE `passenger_detail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `promocode`
+--
+ALTER TABLE `promocode`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `screen`
+--
+ALTER TABLE `screen`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sentnotification`
+--
+ALTER TABLE `sentnotification`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `transaction`
+--
+ALTER TABLE `transaction`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `transaction_status`
+--
+ALTER TABLE `transaction_status`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `transaction_travel`
+--
+ALTER TABLE `transaction_travel`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `treval_user`
+--
+ALTER TABLE `treval_user`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `promocode` (`promocode`);
+
+--
+-- Indexes for table `userrating`
+--
+ALTER TABLE `userrating`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user_image`
+--
+ALTER TABLE `user_image`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user_registered_number`
+--
+ALTER TABLE `user_registered_number`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `version`
+--
+ALTER TABLE `version`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `asset`
+--
+ALTER TABLE `asset`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `business_extra`
+--
+ALTER TABLE `business_extra`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=229;
+--
+-- AUTO_INCREMENT for table `business_extra_images`
+--
+ALTER TABLE `business_extra_images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=304;
+--
+-- AUTO_INCREMENT for table `business_extra_master`
+--
+ALTER TABLE `business_extra_master`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `call_number`
+--
+ALTER TABLE `call_number`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `catcontrolmapping`
+--
+ALTER TABLE `catcontrolmapping`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
+--
+-- AUTO_INCREMENT for table `catcontroluservalue`
+--
+ALTER TABLE `catcontroluservalue`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1159;
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
+--
+-- AUTO_INCREMENT for table `city`
+--
+ALTER TABLE `city`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `commition_travel`
+--
+ALTER TABLE `commition_travel`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `controls`
+--
+ALTER TABLE `controls`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
+--
+-- AUTO_INCREMENT for table `controlsmetadata`
+--
+ALTER TABLE `controlsmetadata`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `epaper`
+--
+ALTER TABLE `epaper`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1068;
+--
+-- AUTO_INCREMENT for table `epaper_user`
+--
+ALTER TABLE `epaper_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+--
+-- AUTO_INCREMENT for table `gallery`
+--
+ALTER TABLE `gallery`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4543;
+--
+-- AUTO_INCREMENT for table `gcmuser`
+--
+ALTER TABLE `gcmuser`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2413;
+--
+-- AUTO_INCREMENT for table `gcmusercitymapping`
+--
+ALTER TABLE `gcmusercitymapping`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7014;
+--
+-- AUTO_INCREMENT for table `hrrequirement`
+--
+ALTER TABLE `hrrequirement`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `job_category`
+--
+ALTER TABLE `job_category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+--
+-- AUTO_INCREMENT for table `job_cate_empl_mapping`
+--
+ALTER TABLE `job_cate_empl_mapping`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+--
+-- AUTO_INCREMENT for table `job_employee`
+--
+ALTER TABLE `job_employee`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+--
+-- AUTO_INCREMENT for table `job_employer`
+--
+ALTER TABLE `job_employer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+--
+-- AUTO_INCREMENT for table `master_asset`
+--
+ALTER TABLE `master_asset`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `master_control`
+--
+ALTER TABLE `master_control`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `master_keys`
+--
+ALTER TABLE `master_keys`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `master_txntype`
+--
+ALTER TABLE `master_txntype`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `offer`
+--
+ALTER TABLE `offer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `offerimage`
+--
+ALTER TABLE `offerimage`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `passenger_detail`
+--
+ALTER TABLE `passenger_detail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `promocode`
+--
+ALTER TABLE `promocode`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `screen`
+--
+ALTER TABLE `screen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+--
+-- AUTO_INCREMENT for table `sentnotification`
+--
+ALTER TABLE `sentnotification`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `transaction`
+--
+ALTER TABLE `transaction`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `transaction_status`
+--
+ALTER TABLE `transaction_status`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `transaction_travel`
+--
+ALTER TABLE `transaction_travel`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=268;
+--
+-- AUTO_INCREMENT for table `treval_user`
+--
+ALTER TABLE `treval_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=818;
+--
+-- AUTO_INCREMENT for table `userrating`
+--
+ALTER TABLE `userrating`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `user_image`
+--
+ALTER TABLE `user_image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9341;
+--
+-- AUTO_INCREMENT for table `user_registered_number`
+--
+ALTER TABLE `user_registered_number`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=160;
+--
+-- AUTO_INCREMENT for table `version`
+--
+ALTER TABLE `version`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
